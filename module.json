@@ -20,5 +20,8 @@
   "scripts": 
   [
     "scripts/test.js"
-  ]
+  ],
+  "url": "https://github.com/OhhLoz/Harvester",
+  "manifest": "https://github.com/OhhLoz/Harvester/blob/master/module.json",
+  "download": "https://github.com/OhhLoz/Harvester"
 }
