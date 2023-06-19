@@ -1,0 +1,24 @@
+{
+  "id": "harvester",
+  "title": "Better Harvesting & Looting",
+  "description": "A QoL mod to improve the harvesting and looting experience",
+  "authors": 
+  [
+    {
+    "name": "Loz"
+    },
+    {
+    "name": "Geri"
+    },
+  ],
+  "version": "1.0.0",
+  "compatibility": 
+  {
+    "minimum": "10",
+    "verified": "10"
+  },
+  "scripts": 
+  [
+    "scripts/test.js"
+  ]
+}
