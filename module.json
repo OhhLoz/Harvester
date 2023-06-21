@@ -31,6 +31,17 @@
       "flags": {}
     }
   ],
+  "relationships": {
+    "systems": [
+        {
+            "id": "dnd5e",
+            "type": "system",
+            "compatibility": {
+                "minimum": "2.1.5"
+            }
+        }
+    ]
+  },
   "id": "harvester",
   "manifest": "https://raw.githubusercontent.com/OhhLoz/Harvester/master/module.json",
   "download": "https://github.com/OhhLoz/Harvester/releases/download/v0.0.1/harvester.zip"
