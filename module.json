@@ -44,5 +44,5 @@
   },
   "id": "harvester",
   "manifest": "https://raw.githubusercontent.com/OhhLoz/Harvester/master/module.json",
-  "download": "https://github.com/OhhLoz/Harvester/releases/download/v0.0.1/harvester.zip"
+  "download": "https://github.com/OhhLoz/Harvester/releases/download/v0.0.2/harvester.zip"
 }
