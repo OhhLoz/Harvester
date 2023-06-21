@@ -1,8 +1,9 @@
 {
-  "id": "harvester",
   "title": "Better Harvesting & Looting",
   "description": "A QoL mod to improve the harvesting and looting experience",
-  "authors": 
+  "url": "https://github.com/OhhLoz/Harvester",
+  "version": "1.0.0",
+  "authors":
   [
     {
     "name": "Loz"
@@ -11,17 +12,26 @@
     "name": "Geri"
     }
   ],
-  "version": "1.0.0",
-  "compatibility": 
+  "compatibility":
   {
     "minimum": "10",
     "verified": "10"
   },
-  "scripts": 
+  "scripts":
   [
     "scripts/test.js"
   ],
-  "url": "https://github.com/OhhLoz/Harvester",
+  "packs": [
+    {
+      "name": "harvest",
+      "label": "Harvest",
+      "path": "packs/harvest.db",
+      "private": false,
+      "type": "Item",
+      "flags": {}
+    }
+  ],
+  "id": "harvester",
   "manifest": "https://raw.githubusercontent.com/OhhLoz/Harvester/master/module.json",
-  "download": "https://github.com/OhhLoz/Harvester"
+  "download": "https://github.com/OhhLoz/Harvester/releases/download/v0.0.1/harvester.zip"
 }
