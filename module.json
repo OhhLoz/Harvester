@@ -26,6 +26,7 @@
       "name": "harvest",
       "label": "Harvest",
       "path": "packs/harvest.db",
+      "system": "dnd5e",
       "private": false,
       "type": "Item",
       "flags": {}
