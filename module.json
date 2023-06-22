@@ -17,10 +17,8 @@
     "minimum": "10",
     "verified": "10"
   },
-  "scripts":
-  [
-    "scripts/test.js"
-  ],
+  "scripts": [],
+  "esmodules": ["scripts/module.js"],
   "packs": [
     {
       "name": "harvest",
