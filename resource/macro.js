@@ -24,24 +24,42 @@ if(canvas.grid.measureDistance(controlledToken, targetedToken) > 9)
    ui.notifications.warn(controlledToken.name + " is too far away to harvest materials.");
    return;
 }
-if(targetedToken.document.getFlag('harvester','harvestable') === false)
+if(targetedToken.document.actorData.system.attributes.hp.value != 0)
 {
-   ui.notifications.warn(targetedToken.name + " isn't able to be harvested");
+   ui.notifications.warn(targetedToken.name + " is not dead");
    return;
 }
 
-//console.log(game.packs)
-//console.log(harvestCompendium.indexFields)
+var isDead = false;
+targetedToken.document.actorData.effects?.forEach(element =>
+{
+   if (element.label == "Dead")
+      isDead = true;
+});
+
+if(!isDead && !game.settings.get("harvester", "requireDeadEffect"))
+{
+   ui.notifications.warn(targetedToken.name + " is not dead");
+   return;
+}
+
+if(targetedToken.document.hasPlayerOwner && game.settings.get("harvester", "npcOnlyHarvest"))
+{
+   ui.notifications.warn(targetedToken.name + " is not an NPC");
+   return;
+}
+
+
 var harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
 //console.log(harvestCompendium);
 var harvestArr = [];
 var actor = await game.actors.get(targetedToken.document.actorId);
-console.log(actor);
+//console.log(actor);
 harvestCompendium.forEach(doc =>
 {
    if (doc.system.source.includes(actor.name))
    {
-      harvestArr.push(doc.name);
+      harvestArr.push(doc);
    }
 })
 
