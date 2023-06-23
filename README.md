@@ -3,7 +3,7 @@ A QoL FoundryVTT module to improve the harvesting and looting experience.
 
 ## Getting Started
 
-Install it by providing this link: https://raw.githubusercontent.com/OhhLoz/Harvester/master/module.json to the FoundryVTT Application
+Install it by providing this link: https://github.com/OhhLoz/Harvester/releases/download/v0.0.3/module.json to the FoundryVTT Application
 
 ## License
 

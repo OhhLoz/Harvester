@@ -13,11 +13,13 @@ Hooks.on("ready", function()
 
 Hooks.on("targetToken", function(user, token, targeted)
 {
-  //console.log(user);
-  //console.log(token);
-  //console.log(user.name + " Targeted " + token.document.name + ": " + targeted);
   if(!targeted)
-    return;
+  return;
+
+  token.document.setFlag('harvester', 'harvestable', false);
+  //console.log(user);
+  console.log(token);
+  //console.log(user.name + " Targeted " + token.document.name + ": " + targeted);
 
   if(user.targets.size != 1)
     return;
@@ -36,5 +38,5 @@ Hooks.on("targetToken", function(user, token, targeted)
     return;
 
   console.log(user.name + " can harvest " + token.document.name)
-  //await token.document.setFlag('harvester', 'harvestable', true);
+  token.document.setFlag('harvester', 'harvestable', true);
 });
