@@ -8,7 +8,7 @@ Hooks.on("init", function()
 
 Hooks.on("ready", function()
 {
-  console.log("This code runs once core initialization is ready and game data is available.");
+  console.log("harvester | ready()");
 });
 
 Hooks.on("targetToken", function(user, token, targeted)
@@ -18,7 +18,7 @@ Hooks.on("targetToken", function(user, token, targeted)
 
   token.document.setFlag('harvester', 'harvestable', false);
   //console.log(user);
-  console.log(token);
+  //console.log(token);
   //console.log(user.name + " Targeted " + token.document.name + ": " + targeted);
 
   if(user.targets.size != 1)
@@ -26,13 +26,7 @@ Hooks.on("targetToken", function(user, token, targeted)
   if(token.document.actorData.system.attributes.hp.value != 0)
     return;
 
-  var isDead = false;
-  token.document.actorData.effects?.forEach(element => {
-    if (element.label == "Dead")
-      isDead = true;
-  });
-
-  if(!isDead && !game.settings.get("harvester", "requireDeadEffect"))
+  if(!checkDeadEffect(token) && !game.settings.get("harvester", "requireDeadEffect"))
     return;
   if(token.document.hasPlayerOwner && game.settings.get("harvester", "npcOnlyHarvest"))
     return;
@@ -40,3 +34,13 @@ Hooks.on("targetToken", function(user, token, targeted)
   console.log(user.name + " can harvest " + token.document.name)
   token.document.setFlag('harvester', 'harvestable', true);
 });
+
+function checkDeadEffect(token)
+{
+  token.document.actorData.effects?.forEach(element =>
+  {
+    if (element.label == "Dead")
+      return true;
+  });
+  return false;
+}
