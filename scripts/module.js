@@ -51,21 +51,7 @@ async function validateHarvest(controlledToken, targetedToken)
     return;
   }
 
-
-  var harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
-  //console.log(harvestCompendium);
-  var harvestArr = [];
-  var actor = await game.actors.get(targetedToken.document.actorId);
-  //console.log(actor);
-  harvestCompendium.forEach(doc =>
-  {
-    if (doc.system.source.includes(actor.name))
-    {
-        harvestArr.push(doc);
-    }
-  })
-
-  console.log(harvestArr);
+  searchCompendium(targetedToken.document.actorId)
 }
 
 function checkDeadEffect(token)
@@ -76,4 +62,22 @@ function checkDeadEffect(token)
       return true;
   });
   return false;
+}
+
+function searchCompendium(actorId)
+{
+  var harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
+  //console.log(harvestCompendium);
+  var harvestArr = [];
+  var actor = await game.actors.get(actorId);
+  //console.log(actor);
+  harvestCompendium.forEach(doc =>
+  {
+    if (doc.system.source.includes(actor.name))
+    {
+        harvestArr.push(doc);
+    }
+  })
+
+  console.log(harvestArr);
 }
