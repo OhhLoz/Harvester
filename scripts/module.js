@@ -64,7 +64,7 @@ function checkDeadEffect(token)
   return false;
 }
 
-function searchCompendium(actorId)
+async function searchCompendium(actorId)
 {
   var harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
   //console.log(harvestCompendium);
