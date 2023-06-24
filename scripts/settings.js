@@ -30,14 +30,19 @@ export function registerSettings()
         default: true
     });
 
-    game.settings.register("harvester", "allActorMacro", {
-        name: "Assign Macro to All Actors",
-        hint: "Assigns the Harvest macro to all actors, present and future.",
+    game.settings.register("harvester", "allActorAction", {
+        name: "Automatically Assign Harvest Action",
+        hint: "Assigns the Harvest Action to the selected group.",
         scope: "world",
         config: true,
         requiresReload: true,
-        type: Boolean,
-        default: true
+        type: String,
+        choices: {
+            "All" : "All",
+            "PCOnly": "Player Characters Only",
+            "None" : "None"
+          },
+        default: "PCOnly"
     });
 
     game.settings.register("harvester", "gmOnly", {
@@ -58,7 +63,7 @@ export function getSettings()
         gmOnly: game.settings.get("harvester", "gmOnly"),
         requireDeadEffect: game.settings.get("harvester", "requireDeadEffect"),
         npcOnlyHarvest: game.settings.get("harvester", "npcOnlyHarvest"),
-        allActorMacro: game.settings.get("harvester", "allActorMacro")
+        allActorAction: game.settings.get("harvester", "allActorAction")
     }
 }
 

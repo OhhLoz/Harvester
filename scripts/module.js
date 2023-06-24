@@ -16,7 +16,39 @@ Hooks.on("ready", async function()
   harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
   harvestEffect = itemCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
   console.log("harvester | ready() - Assigned public functions & Fetched compendiums");
+  if (moduleSettings.allActorAction != "None") //
+  {
+    await addActionToActors();
+    console.log("harvester | ready() - Added Harvest Action to All Created Actors");
+  }
 });
+
+Hooks.on("createActor", (actor, data, options, id) =>
+{
+  if (moduleSettings.allActorAction != "None")
+  {
+    if(moduleSettings.allActorAction == "PCOnly" && actor.type == "npc")
+      return;
+    actor.createEmbeddedDocuments('Item', [itemCompendium[0]]);
+    console.log(`harvester | createActor() - Added Harvest Action to new Actor: ${actor.name}`);
+  }
+})
+
+function addActionToActors()
+{
+  var hasAction = false;
+  game.actors.forEach(actor =>
+  {
+    if(moduleSettings.allActorAction == "PCOnly" && actor.type == "npc")
+      return;
+    actor.items.forEach(item =>{
+      if(item.name === "Harvest")
+        hasAction = true;
+    })
+    if (!hasAction)
+      actor.createEmbeddedDocuments('Item', [itemCompendium[0]]);
+  })
+}
 
 // Hooks.on('renderChatMessage', function(message, html, messageData)
 // {
@@ -112,7 +144,7 @@ async function handleHarvest(targetedToken, controlledToken)
   var result = await controlActor.rollSkill(skillCheck);
   if (result)
   {
-    var lootMessage = "";// = "Looted from " + targetedToken.name + "<br>";
+    var lootMessage = "<h3>Harvesting</h3><ul>";// = "Looted from " + targetedToken.name + "<br>";
     var messageData = {content: {}, whisper: {}};
     if (moduleSettings.gmOnly)
       messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
@@ -132,7 +164,7 @@ async function handleHarvest(targetedToken, controlledToken)
     });
 
     if (lootMessage)
-      messageData.content = `<ul>${lootMessage}</ul>`;
+      messageData.content = `${lootMessage}</ul>`;
     else
       messageData.content = `${controlledToken.name} attempted to harvest resources from ${targetedToken.name} but failed to find anything.`
     ChatMessage.create(messageData);
