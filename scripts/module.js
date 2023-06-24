@@ -112,7 +112,7 @@ async function handleHarvest(targetedToken, controlledToken)
       if (parseInt(item.system.description.chat) <= result.total)
       {
         //console.log(item);
-        lootMessage += `<li>@UUID[${item.uuid}]</li><br>`
+        lootMessage += `<li>@UUID[${item.uuid}]</li>`
         if(!textOnly)
           controlActor.createEmbeddedDocuments('Item', [item]);
       }
