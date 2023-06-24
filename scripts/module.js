@@ -23,6 +23,15 @@ Hooks.on("ready", async function()
   }
 });
 
+Hooks.on("createActor", (actor, data, options, id) =>
+{
+  if (moduleSettings.allActorMacro)
+  {
+    actor.createEmbeddedDocuments('Item', [itemCompendium[0]]);
+    console.log(`harvester | createActor() - Added Harvest Action to new Actor: ${actor.name}`);
+  }
+})
+
 function addActionToActors()
 {
   var hasAction = false;
@@ -36,14 +45,6 @@ function addActionToActors()
       actor.createEmbeddedDocuments('Item', [itemCompendium[0]]);
   })
 }
-
-// Actors._onCreateDocuments(documents, result, options, userId)
-// {
-//   console.log(documents);
-//   console.log(result);
-//   console.log(options);
-//   console.log(userId);
-// }
 
 // Hooks.on('renderChatMessage', function(message, html, messageData)
 // {
