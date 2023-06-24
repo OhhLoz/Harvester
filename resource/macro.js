@@ -1,7 +1,7 @@
 const harvester = game.modules.get('harvester');
 if (!harvester)
 {
-  console.log('harvester module not found');
+    console.log('harvester module not found');
 }
 else
 {
