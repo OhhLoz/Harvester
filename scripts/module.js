@@ -1,4 +1,4 @@
-import { registerSettings, getSettings } from "./settings.js";
+import { registerSettings, getSettings, dragonIgnoreArr } from "./settings.js";
 
 var itemCompendium, harvestCompendium, harvestEffect, moduleSettings;
 
@@ -73,12 +73,27 @@ function checkEffect(token, effectName)
 function searchCompendium(actor)
 {
   var harvestArr = [];
+  var actorName = actor.name;
+  if (actorName.includes("Dragon"))
+    actorName = formatDragon(actorName);
+
   harvestCompendium.forEach(doc =>
   {
-    if (doc.system.source === actor.name)
+    if (doc.system.source === actorName)
       harvestArr.push(doc);
   })
   return harvestArr;
+}
+
+function formatDragon(actorName)
+{
+  var actorSplit = actorName.split(" ");
+  dragonIgnoreArr.forEach(element => {
+    actorSplit = actorSplit.filter(e => e !== element);
+  })
+
+  actorSplit = actorSplit.join(" ")
+  return actorSplit;
 }
 
 async function handleHarvest(targetedToken, controlledToken)
@@ -86,7 +101,12 @@ async function handleHarvest(targetedToken, controlledToken)
   var targetActor = await game.actors.get(targetedToken.document.actorId);
   var controlActor = await game.actors.get(controlledToken.document.actorId);
 
-  var itemArr = searchCompendium(targetActor);
+  var itemArr = await searchCompendium(targetActor);
+  if (itemArr.length == 0)
+  {
+    ui.notifications.warn(targetedToken.name + " has no materials to harvest");
+    return;
+  }
 
   var skillCheck = itemArr[0]?.system.description.unidentified.slice(0,3).toLowerCase();
   var result = await controlActor.rollSkill(skillCheck);

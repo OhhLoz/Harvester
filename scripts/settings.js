@@ -61,3 +61,26 @@ export function getSettings()
         allActorMacro: game.settings.get("harvester", "allActorMacro")
     }
 }
+
+export const dragonIgnoreArr =
+[
+    "Amethyst",
+    "Black",
+    "Blue",
+    "Brass",
+    "Bronze",
+    "Copper",
+    "Crystal",
+    "Deep",
+    "Emerald",
+    "Gold",
+    "Green",
+    "Lunar",
+    "Moonstone",
+    "Red",
+    "Sapphire",
+    "Silver",
+    "Solar",
+    "Topaz",
+    "White"
+]
