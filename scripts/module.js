@@ -1,10 +1,11 @@
 import { registerSettings } from "./settings.js";
 
-var itemCompendium, harvestCompendium, harvestEffect;
+var itemCompendium, harvestCompendium, harvestEffect, moduleSettings;
 
 Hooks.on("init", function()
 {
   registerSettings();
+  moduleSettings = getSettings();
   console.log("harvester | Init() - Registered settings.");
 });
 
@@ -35,22 +36,17 @@ async function validateHarvest(controlledToken, targetedToken)
     ui.notifications.warn("Please target only one token.");
     return;
   }
-  // if(canvas.grid.measureDistance(controlledToken, targetedToken) > 9)
-  // {
-  //   ui.notifications.warn(controlledToken.name + " is too far away to harvest materials.");
-  //   return;
-  // }
   if(targetedToken.document.actorData.system.attributes.hp.value != 0)
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
     return;
   }
-  if(!checkEffect(targetedToken, "Dead") && game.settings.get("harvester", "requireDeadEffect"))
+  if(!checkEffect(targetedToken, "Dead") && moduleSettings.requireDeadEffect)
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
     return;
   }
-  if(targetedToken.document.hasPlayerOwner && game.settings.get("harvester", "npcOnlyHarvest"))
+  if(targetedToken.document.hasPlayerOwner && moduleSettings.npcOnlyHarvest)
   {
     ui.notifications.warn(targetedToken.name + " is not an NPC");
     return;
@@ -80,10 +76,7 @@ function searchCompendium(actor)
   harvestCompendium.forEach(doc =>
   {
     if (doc.system.source === actor.name)
-    {
-        harvestArr.push(doc);
-        //console.log(doc)
-    }
+      harvestArr.push(doc);
   })
   return harvestArr;
 }
@@ -101,9 +94,9 @@ async function handleHarvest(targetedToken, controlledToken)
   {
     var lootMessage = "";// = "Looted from " + targetedToken.name + "<br>";
     var messageData = {content: {}, whisper: {}};
-    if (game.settings.get("harvester", "gmOnly"))
+    if (moduleSettings.gmOnly)
       messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
-    var textOnly = game.settings.get("harvester", "textOnly");
+    var autoAdd = moduleSettings.autoAdd;
 
     targetedToken.toggleEffect(harvestEffect);
 
@@ -113,7 +106,7 @@ async function handleHarvest(targetedToken, controlledToken)
       {
         //console.log(item);
         lootMessage += `<li>@UUID[${item.uuid}]</li>`
-        if(!textOnly)
+        if(autoAdd)
           controlActor.createEmbeddedDocuments('Item', [item]);
       }
     });
@@ -121,7 +114,7 @@ async function handleHarvest(targetedToken, controlledToken)
     if (lootMessage)
       messageData.content = `<ul>${lootMessage}</ul>`;
     else
-      messageData.content = `${controlledToken.name} attempted to harvest resources from ${targetedToken.name} but failed`
+      messageData.content = `${controlledToken.name} attempted to harvest resources from ${targetedToken.name} but failed to find anything.`
     ChatMessage.create(messageData);
   }
 }

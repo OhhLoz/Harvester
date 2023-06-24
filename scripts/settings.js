@@ -1,12 +1,13 @@
 export function registerSettings()
 {
-    game.settings.register("harvester", "textOnly", {
-        name: "Text Only Mode",
-        hint: "All harvested loot is displayed in the chat only.",
+    game.settings.register("harvester", "autoAdd", {
+        name: "Auto-add harvest to actor",
+        hint: "All harvested loot is added to characters automatically.",
         scope: "world",
         config: true,
+        requiresReload: true,
         type: Boolean,
-        default: false
+        default: true
     });
 
     game.settings.register("harvester", "npcOnlyHarvest", {
@@ -14,6 +15,7 @@ export function registerSettings()
         hint: "Only non player characters can be harvested.",
         scope: "world",
         config: true,
+        requiresReload: true,
         type: Boolean,
         default: true
     });
@@ -23,6 +25,7 @@ export function registerSettings()
         hint: "Requires the 'Dead' status effect to harvest. (Otherwise only needs 0 HP)",
         scope: "world",
         config: true,
+        requiresReload: true,
         type: Boolean,
         default: true
     });
@@ -32,6 +35,7 @@ export function registerSettings()
         hint: "Assigns the Harvest macro to all actors, present and future.",
         scope: "world",
         config: true,
+        requiresReload: true,
         type: Boolean,
         default: true
     });
@@ -41,7 +45,19 @@ export function registerSettings()
         hint: "Hides the Harvest Results from all users except the GM",
         scope: "world",
         config: true,
+        requiresReload: true,
         type: Boolean,
         default: false
     });
+}
+
+export function getSettings()
+{
+    return {
+        autoAdd: game.settings.get("harvester", "autoAdd"),
+        gmOnly: game.settings.get("harvester", "gmOnly"),
+        requireDeadEffect: game.settings.get("harvester", "requireDeadEffect"),
+        npcOnlyHarvest: game.settings.get("harvester", "npcOnlyHarvest"),
+        allActorMacro: game.settings.get("harvester", "allActorMacro")
+    }
 }
