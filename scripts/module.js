@@ -1,4 +1,4 @@
-import { registerSettings } from "./settings.js";
+import { registerSettings, getSettings } from "./settings.js";
 
 var itemCompendium, harvestCompendium, harvestEffect, moduleSettings;
 
