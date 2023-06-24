@@ -11,7 +11,7 @@ Hooks.on("init", function()
 Hooks.on("ready", async function()
 {
   game.modules.get("harvester").api = {validateHarvest};
-  itemCompendium = await game.packs.get("harvester.harvest-macro").getDocuments();
+  itemCompendium = await game.packs.get("harvester.harvest-action").getDocuments();
   harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
   harvestEffect = itemCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
   console.log("harvester | ready() - Assigned public functions & Fetched compendiums");
