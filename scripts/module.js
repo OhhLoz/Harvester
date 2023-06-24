@@ -16,7 +16,34 @@ Hooks.on("ready", async function()
   harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
   harvestEffect = itemCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
   console.log("harvester | ready() - Assigned public functions & Fetched compendiums");
+  if (moduleSettings.allActorMacro)
+  {
+    await addActionToActors();
+    console.log("harvester | ready() - Added Harvest Action to All Created Actors");
+  }
 });
+
+function addActionToActors()
+{
+  var hasAction = false;
+  game.actors.forEach(actor =>
+  {
+    actor.items.forEach(item =>{
+      if(item.name === "Harvest")
+        hasAction = true;
+    })
+    if (!hasAction)
+      actor.createEmbeddedDocuments('Item', [itemCompendium[0]]);
+  })
+}
+
+// Actors._onCreateDocuments(documents, result, options, userId)
+// {
+//   console.log(documents);
+//   console.log(result);
+//   console.log(options);
+//   console.log(userId);
+// }
 
 // Hooks.on('renderChatMessage', function(message, html, messageData)
 // {
