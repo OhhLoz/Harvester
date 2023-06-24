@@ -6,7 +6,7 @@ export function registerSettings()
         scope: "world",
         config: true,
         type: Boolean,
-        default: true
+        default: false
     });
 
     game.settings.register("harvester", "npcOnlyHarvest", {
@@ -20,7 +20,7 @@ export function registerSettings()
 
     game.settings.register("harvester", "requireDeadEffect", {
         name: "Dead Harvesting",
-        hint: "Requires the 'Dead' status effect to harvest. (Otherwise only needs 0hp)",
+        hint: "Requires the 'Dead' status effect to harvest. (Otherwise only needs 0 HP)",
         scope: "world",
         config: true,
         type: Boolean,
@@ -36,18 +36,12 @@ export function registerSettings()
         default: true
     });
 
-    game.settings.register("harvester", "visibility", {
-        name: "Chat visibility",
-        hint: "Visibility of Harvest messages.",
+    game.settings.register("harvester", "gmOnly", {
+        name: "Only GM sees Harvest Results",
+        hint: "Hides the Harvest Results from all users except the GM",
         scope: "world",
         config: true,
-        type: String,
-        choices: {
-        "GM": "GM Only",
-        "Assistant GM": "Assistant GM & Above",
-        "Trusted": "Trusted Players & Above",
-        "All": "All Players",
-        },
-        default: "All"
+        type: Boolean,
+        default: false
     });
 }

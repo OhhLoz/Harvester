@@ -1,31 +1,31 @@
 import { registerSettings } from "./settings.js";
 
+var itemCompendium, harvestCompendium, harvestEffect;
+
 Hooks.on("init", function()
 {
   registerSettings();
   console.log("harvester | Init() - Registered settings.");
 });
 
-Hooks.on("ready", function()
+Hooks.on("ready", async function()
 {
   game.modules.get("harvester").api = {validateHarvest};
-  console.log("harvester | ready() - Assigned public functions");
+  itemCompendium = await game.packs.get("harvester.harvest-macro").getDocuments();
+  harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
+  harvestEffect = itemCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
+  console.log("harvester | ready() - Assigned public functions & Fetched compendiums");
 });
 
-Hooks.on('renderChatMessage', function(message, html, messageData)
-{
-  if(message.flavor == "Harvest")
-    console.log(message);
-})
+// Hooks.on('renderChatMessage', function(message, html, messageData)
+// {
+//   if(message.flavor == "Harvest")
+//     console.log(message);
+// })
 
 async function validateHarvest(controlledToken, targetedToken)
 {
-  if (!controlledToken)
-  {
-    ui.notifications.warn("Please select a token.");
-    return;
-  }
-  if (!controlledToken.isOwner)
+  if (!controlledToken && !controlledToken.isOwner)
   {
     ui.notifications.warn("Please select an owned token.");
     return;
@@ -45,7 +45,7 @@ async function validateHarvest(controlledToken, targetedToken)
     ui.notifications.warn(targetedToken.name + " is not dead");
     return;
   }
-  if(!checkDeadEffect(targetedToken) && !game.settings.get("harvester", "requireDeadEffect"))
+  if(!checkEffect(targetedToken, "Dead") && game.settings.get("harvester", "requireDeadEffect"))
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
     return;
@@ -55,45 +55,28 @@ async function validateHarvest(controlledToken, targetedToken)
     ui.notifications.warn(targetedToken.name + " is not an NPC");
     return;
   }
-
-  // ADD HARVESTED STATUS EFFECT
-
-  var itemArr = await searchCompendium(targetedToken.document.actorId);
-  //console.log(itemArr);
-  var skillCheck = itemArr[0]?.system.description.unidentified.slice(0,3).toLowerCase();
-  var actor = await game.actors.get(controlledToken.document.actorId);
-  //console.log(skillCheck)
-  var result = await actor.rollSkill(skillCheck);
-  itemArr.forEach(item => {
-    if (parseInt(item.system.description.chat) <= result.total)
-    {
-      console.log(item);
-      // FORMAT MESSAGE
-      // CHECK USER PERMS FOR INVENTORY MANAGEMENT & SETTING FOR CHAT ONLY
-    }
-  });
-
-  // PRINT MESSAGE
-}
-
-function checkDeadEffect(token)
-{
-  token.document.actorData.effects?.forEach(element =>
+  if(checkEffect(targetedToken, "Harvested"))
   {
-    if (element.label == "Dead")
-      return true;
-  });
-  return false;
+    ui.notifications.warn(targetedToken.name + " has been harvested already");
+    return;
+  }
+  await handleHarvest(targetedToken, controlledToken);
 }
 
-async function searchCompendium(actorId)
+function checkEffect(token, effectName)
 {
-  var harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
-  //var harvestCompendium = await game.packs.get("world.harvestnew").getDocuments();
-  //console.log(harvestCompendium);
+  var returnBool = false;
+  token.document.actorData.effects.forEach(element =>
+  {
+    if (element.label == effectName)
+      returnBool = true;
+  });
+  return returnBool;
+}
+
+function searchCompendium(actor)
+{
   var harvestArr = [];
-  var actor = await game.actors.get(actorId);
-  //console.log(actor);
   harvestCompendium.forEach(doc =>
   {
     if (doc.system.source === actor.name)
@@ -103,4 +86,42 @@ async function searchCompendium(actorId)
     }
   })
   return harvestArr;
+}
+
+async function handleHarvest(targetedToken, controlledToken)
+{
+  var targetActor = await game.actors.get(targetedToken.document.actorId);
+  var controlActor = await game.actors.get(controlledToken.document.actorId);
+
+  var itemArr = searchCompendium(targetActor);
+
+  var skillCheck = itemArr[0]?.system.description.unidentified.slice(0,3).toLowerCase();
+  var result = await controlActor.rollSkill(skillCheck);
+  if (result)
+  {
+    var lootMessage = "";// = "Looted from " + targetedToken.name + "<br>";
+    var messageData = {content: {}, whisper: {}};
+    if (game.settings.get("harvester", "gmOnly"))
+      messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
+    var textOnly = game.settings.get("harvester", "textOnly");
+
+    targetedToken.toggleEffect(harvestEffect);
+
+    itemArr.forEach(item =>
+    {
+      if (parseInt(item.system.description.chat) <= result.total)
+      {
+        //console.log(item);
+        lootMessage += `<li>@UUID[${item.uuid}]</li><br>`
+        if(!textOnly)
+          controlActor.createEmbeddedDocuments('Item', [item]);
+      }
+    });
+
+    if (lootMessage)
+      messageData.content = `<ul>${lootMessage}</ul>`;
+    else
+      messageData.content = `${controlledToken.name} attempted to harvest resources from ${targetedToken.name} but failed`
+    ChatMessage.create(messageData);
+  }
 }
