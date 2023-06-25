@@ -2,7 +2,7 @@
   "title": "Better Harvesting & Looting",
   "description": "A QoL module to improve the harvesting and looting experience.",
   "url": "https://github.com/OhhLoz/Harvester",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "authors":
   [
     {
@@ -36,15 +36,6 @@
       "system": "dnd5e",
       "private": false,
       "type": "Item",
-      "flags": {}
-    },
-    {
-      "name": "harvest-macro",
-      "label": "Harvest Macro",
-      "path": "packs/harvest-macro.db",
-      "system": "dnd5e",
-      "private": false,
-      "type": "Macro",
       "flags": {}
     }
   ],
