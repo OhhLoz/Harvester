@@ -58,25 +58,23 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
 {
   if (item.name != "Harvest" && item.system.source != "Harvester")
     return;
-  var userTargets = game.user.targets;
   //console.log(item);
 
-  if(!validateHarvest(userTargets))
+  if(!validateHarvest(game.user.targets))
     return false;
-
-  var controlToken = item.parent.getActiveTokens()[0];
-  var targetToken = userTargets.first();
   //item.system.description.value = `Harvesting ${targetToken.name}`
   // edit rollcheck before output
-  handleHarvest(targetToken, controlToken);
 })
 
-// Hooks.on('dnd5e.useItem', function(item, config, options)
-// {
-//   //console.log(item);
-//   // console.log(config);
-//   // console.log(options);
-// })
+Hooks.on('dnd5e.useItem', function(item, config, options)
+{
+  if (item.name != "Harvest" && item.system.source != "Harvester")
+    return;
+
+  var controlToken = item.parent.getActiveTokens()[0];
+  var targetToken = game.user.targets.first();
+  handleHarvest(targetToken, controlToken);
+})
 
 function validateHarvest(userTargets)
 {
