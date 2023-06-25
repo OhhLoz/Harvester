@@ -50,24 +50,30 @@ function addActionToActors()
   })
 }
 
-// Hooks.on('renderChatMessage', function(message, html, messageData)
-// {
-//   if(message.flavor == "Harvest")
-//     console.log(message);
-// })
+Hooks.on('createChatMessage', function(message, options, id)
+{
+    if(message.flavor != "Harvest")
+      return;
 
-async function validateHarvest(controlledToken, targetedToken)
+    var targetToken = message.user.targets;
+    var controlToken = game.actors.get(message.speaker.actor).getActiveTokens()[0];
+
+    validateHarvest(controlToken, targetToken);
+})
+
+async function validateHarvest(controlledToken, targetToken)
 {
   if (!controlledToken && !controlledToken.isOwner)
   {
     ui.notifications.warn("Please select an owned token.");
     return;
   }
-  if (game.user.targets.size != 1)
+  if (targetToken.size != 1)
   {
     ui.notifications.warn("Please target only one token.");
     return;
   }
+  var targetedToken = targetToken.first();
   if(targetedToken.document.actorData.system.attributes.hp.value != 0)
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
@@ -144,11 +150,10 @@ async function handleHarvest(targetedToken, controlledToken)
   var result = await controlActor.rollSkill(skillCheck);
   if (result)
   {
-    var lootMessage = "<h3>Harvesting</h3><ul>";// = "Looted from " + targetedToken.name + "<br>";
+    var lootMessage = "";// = "Looted from " + targetedToken.name + "<br>";
     var messageData = {content: {}, whisper: {}};
     if (moduleSettings.gmOnly)
       messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
-    var autoAdd = moduleSettings.autoAdd;
 
     targetedToken.toggleEffect(harvestEffect);
 
@@ -156,17 +161,16 @@ async function handleHarvest(targetedToken, controlledToken)
     {
       if (parseInt(item.system.description.chat) <= result.total)
       {
-        //console.log(item);
         lootMessage += `<li>@UUID[${item.uuid}]</li>`
-        if(autoAdd)
+        if(moduleSettings.autoAdd)
           controlActor.createEmbeddedDocuments('Item', [item]);
       }
     });
 
     if (lootMessage)
-      messageData.content = `${lootMessage}</ul>`;
+      messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
     else
-      messageData.content = `${controlledToken.name} attempted to harvest resources from ${targetedToken.name} but failed to find anything.`
+      messageData.content = `<h3>Harvesting</h3><ul>${controlledToken.name} attempted to harvest resources from ${targetedToken.name} but failed to find anything.`
     ChatMessage.create(messageData);
   }
 }
