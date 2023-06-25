@@ -1,6 +1,6 @@
 import { registerSettings, getSettings, dragonIgnoreArr } from "./settings.js";
 
-var itemCompendium, harvestCompendium, harvestEffect, moduleSettings;
+var itemCompendium, harvestCompendium, harvestEffect, moduleSettings;//, socket;
 
 Hooks.on("init", function()
 {
@@ -16,12 +16,15 @@ Hooks.on("ready", async function()
   harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
   harvestEffect = itemCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
   console.log("harvester | ready() - Assigned public functions & Fetched compendiums");
-  if (moduleSettings.allActorAction != "None") //
-  {
-    await addActionToActors();
-    console.log("harvester | ready() - Added Harvest Action to All Created Actors");
-  }
+  if (moduleSettings.allActorAction != "None")
+    addActionToActors();
 });
+
+// Hooks.once("socketlib.ready", () => {
+// 	socket = socketlib.registerModule("harvester");
+// 	socket.register("addHarvestEffect", addHarvestEffect);
+//   console.log("harvester | Registed socketlib functions");
+// });
 
 Hooks.on("createActor", (actor, data, options, id) =>
 {
@@ -29,8 +32,8 @@ Hooks.on("createActor", (actor, data, options, id) =>
   {
     if(moduleSettings.allActorAction == "PCOnly" && actor.type == "npc")
       return;
-    actor.createEmbeddedDocuments('Item', [itemCompendium[0]]);
-    console.log(`harvester | createActor() - Added Harvest Action to new Actor: ${actor.name}`);
+
+    addItemToActor(actor, itemCompendium[0]);
   }
 })
 
@@ -46,55 +49,64 @@ function addActionToActors()
         hasAction = true;
     })
     if (!hasAction)
-      actor.createEmbeddedDocuments('Item', [itemCompendium[0]]);
+      addItemToActor(actor, itemCompendium[0]);
   })
+  console.log("harvester | ready() - Added Harvest Action to All Created Actors");
 }
 
-Hooks.on('createChatMessage', function(message, options, id)
+Hooks.on('dnd5e.preUseItem', function(item, config, options)
 {
-    if(message.flavor != "Harvest")
-      return;
+  if (item.name != "Harvest" && item.system.source != "Harvester")
+    return;
+  var userTargets = game.user.targets;
+  //console.log(item);
 
-    var targetToken = message.user.targets;
-    var controlToken = game.actors.get(message.speaker.actor).getActiveTokens()[0];
+  if(!validateHarvest(userTargets))
+    return false;
 
-    validateHarvest(controlToken, targetToken);
+  var controlToken = item.parent.getActiveTokens()[0];
+  var targetToken = userTargets.first();
+  //item.system.description.value = `Harvesting ${targetToken.name}`
+  // edit rollcheck before output
+  handleHarvest(targetToken, controlToken);
 })
 
-async function validateHarvest(controlledToken, targetToken)
+// Hooks.on('dnd5e.useItem', function(item, config, options)
+// {
+//   //console.log(item);
+//   // console.log(config);
+//   // console.log(options);
+// })
+
+function validateHarvest(userTargets)
 {
-  if (!controlledToken && !controlledToken.isOwner)
-  {
-    ui.notifications.warn("Please select an owned token.");
-    return;
-  }
-  if (targetToken.size != 1)
+  if (userTargets.size != 1)
   {
     ui.notifications.warn("Please target only one token.");
-    return;
+    return false;
   }
-  var targetedToken = targetToken.first();
+  var targetedToken = userTargets.first();
   if(targetedToken.document.actorData.system.attributes.hp.value != 0)
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
-    return;
+    return false;
   }
   if(!checkEffect(targetedToken, "Dead") && moduleSettings.requireDeadEffect)
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
-    return;
+    return false;
   }
   if(targetedToken.document.hasPlayerOwner && moduleSettings.npcOnlyHarvest)
   {
     ui.notifications.warn(targetedToken.name + " is not an NPC");
-    return;
+    return false;
   }
   if(checkEffect(targetedToken, "Harvested"))
   {
     ui.notifications.warn(targetedToken.name + " has been harvested already");
-    return;
+    return false;
   }
-  await handleHarvest(targetedToken, controlledToken);
+  return true;
 }
 
 function checkEffect(token, effectName)
@@ -134,6 +146,18 @@ function formatDragon(actorName)
   return actorSplit;
 }
 
+function addHarvestEffect(token)
+{
+  token.toggleEffect(harvestEffect);
+  console.log(`harvester | Added harvest effect to: ${token.name}`);
+}
+
+function addItemToActor(actor, item)
+{
+  actor.createEmbeddedDocuments('Item', [item]);
+  console.log(`harvester | Added item: ${item.name} to ${actor.name}`);
+}
+
 async function handleHarvest(targetedToken, controlledToken)
 {
   var targetActor = await game.actors.get(targetedToken.document.actorId);
@@ -150,12 +174,13 @@ async function handleHarvest(targetedToken, controlledToken)
   var result = await controlActor.rollSkill(skillCheck);
   if (result)
   {
-    var lootMessage = "";// = "Looted from " + targetedToken.name + "<br>";
+    var lootMessage = "";
     var messageData = {content: {}, whisper: {}};
     if (moduleSettings.gmOnly)
       messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
 
-    targetedToken.toggleEffect(harvestEffect);
+    //await socket.executeAsGM(addHarvestEffect, targetedToken);
+    addHarvestEffect(targetedToken);
 
     itemArr.forEach(item =>
     {
@@ -163,7 +188,7 @@ async function handleHarvest(targetedToken, controlledToken)
       {
         lootMessage += `<li>@UUID[${item.uuid}]</li>`
         if(moduleSettings.autoAdd)
-          controlActor.createEmbeddedDocuments('Item', [item]);
+          addItemToActor(controlActor, item);
       }
     });
 

@@ -1,7 +1,7 @@
 export function registerSettings()
 {
     game.settings.register("harvester", "autoAdd", {
-        name: "Auto-add harvest to actor",
+        name: "Auto-add harvested items to character sheet",
         hint: "All harvested loot is added to characters automatically.",
         scope: "world",
         config: true,
