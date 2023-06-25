@@ -1,6 +1,8 @@
 import { registerSettings, getSettings, dragonIgnoreArr } from "./settings.js";
 
-var itemCompendium, harvestCompendium, harvestEffect, moduleSettings;//, socket;
+var actionCompendium, harvestCompendium, harvestEffect, moduleSettings, socket;
+
+//var targetToken, controlToken;
 
 Hooks.on("init", function()
 {
@@ -12,19 +14,20 @@ Hooks.on("init", function()
 Hooks.on("ready", async function()
 {
   game.modules.get("harvester").api = {validateHarvest};
-  itemCompendium = await game.packs.get("harvester.harvest-action").getDocuments();
+  actionCompendium = await game.packs.get("harvester.harvest-action").getDocuments();
   harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
-  harvestEffect = itemCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
+  harvestEffect = actionCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
   console.log("harvester | ready() - Assigned public functions & Fetched compendiums");
   if (moduleSettings.allActorAction != "None")
     addActionToActors();
 });
 
-// Hooks.once("socketlib.ready", () => {
-// 	socket = socketlib.registerModule("harvester");
-// 	socket.register("addHarvestEffect", addHarvestEffect);
-//   console.log("harvester | Registed socketlib functions");
-// });
+Hooks.once("socketlib.ready", () => {
+	socket = globalThis.socketlib.registerModule("harvester");
+	socket.register("addHarvestEffect", addHarvestEffect);
+	//socket.register("addItemToActor", addItemToActor);
+  console.log("harvester | Registed socketlib functions");
+});
 
 Hooks.on("createActor", (actor, data, options, id) =>
 {
@@ -33,7 +36,7 @@ Hooks.on("createActor", (actor, data, options, id) =>
     if(moduleSettings.allActorAction == "PCOnly" && actor.type == "npc")
       return;
 
-    addItemToActor(actor, itemCompendium[0]);
+    addItemToActor(actor, actionCompendium[0]);
   }
 })
 
@@ -49,7 +52,7 @@ function addActionToActors()
         hasAction = true;
     })
     if (!hasAction)
-      addItemToActor(actor, itemCompendium[0]);
+      addItemToActor(actor, actionCompendium[0]);
   })
   console.log("harvester | ready() - Added Harvest Action to All Created Actors");
 }
@@ -144,10 +147,11 @@ function formatDragon(actorName)
   return actorSplit;
 }
 
-function addHarvestEffect(token)
+function addHarvestEffect(targetTokenId)
 {
-  token.toggleEffect(harvestEffect);
-  console.log(`harvester | Added harvest effect to: ${token.name}`);
+  var targetToken = canvas.tokens.get(targetTokenId)
+  targetToken.toggleEffect(harvestEffect);
+  console.log(`harvester | Added harvest effect to: ${targetToken.name}`);
 }
 
 function addItemToActor(actor, item)
@@ -177,8 +181,7 @@ async function handleHarvest(targetedToken, controlledToken)
     if (moduleSettings.gmOnly)
       messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
 
-    //await socket.executeAsGM(addHarvestEffect, targetedToken);
-    addHarvestEffect(targetedToken);
+    await socket.executeAsGM(addHarvestEffect, targetedToken.id);
 
     itemArr.forEach(item =>
     {
