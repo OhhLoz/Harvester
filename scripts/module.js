@@ -25,7 +25,7 @@ Hooks.on("ready", async function()
 Hooks.once("socketlib.ready", () => {
 	socket = globalThis.socketlib.registerModule("harvester");
 	socket.register("addHarvestEffect", addHarvestEffect);
-	//socket.register("addItemToActor", addItemToActor);
+	socket.register("addItemToActor", addItemToActor);
   console.log("harvester | Registed socketlib functions");
 });
 
@@ -36,7 +36,7 @@ Hooks.on("createActor", (actor, data, options, id) =>
     if(moduleSettings.allActorAction == "PCOnly" && actor.type == "npc")
       return;
 
-    addItemToActor(actor, actionCompendium[0]);
+      socket.executeAsGM(addItemToActor, actor.id, actionCompendium[0].id, actionCompendium[0].pack);
   }
 })
 
@@ -48,20 +48,19 @@ function addActionToActors()
     if(moduleSettings.allActorAction == "PCOnly" && actor.type == "npc")
       return;
     actor.items.forEach(item =>{
-      if(item.name === "Harvest")
+      if(item.name === "Harvest" && item.system.source == "Harvester")
         hasAction = true;
     })
     if (!hasAction)
-      addItemToActor(actor, actionCompendium[0]);
+      socket.executeAsGM(addItemToActor, actor.id, actionCompendium[0].id, actionCompendium[0].pack);
   })
-  console.log("harvester | ready() - Added Harvest Action to All Created Actors");
+  console.log("harvester | ready() - Added Harvest Action to All Actors specified in Settings");
 }
 
 Hooks.on('dnd5e.preUseItem', function(item, config, options)
 {
   if (item.name != "Harvest" && item.system.source != "Harvester")
     return;
-  //console.log(item);
 
   if(!validateHarvest(game.user.targets))
     return false;
@@ -154,8 +153,10 @@ function addHarvestEffect(targetTokenId)
   console.log(`harvester | Added harvest effect to: ${targetToken.name}`);
 }
 
-function addItemToActor(actor, item)
+function addItemToActor(actorId, itemId, packId)
 {
+  var actor = game.actors.get(actorId);
+  var item = game.packs.get(packId).get(itemId);
   actor.createEmbeddedDocuments('Item', [item]);
   console.log(`harvester | Added item: ${item.name} to ${actor.name}`);
 }
@@ -188,8 +189,9 @@ async function handleHarvest(targetedToken, controlledToken)
       if (parseInt(item.system.description.chat) <= result.total)
       {
         lootMessage += `<li>@UUID[${item.uuid}]</li>`
+
         if(moduleSettings.autoAdd)
-          addItemToActor(controlActor, item);
+          socket.executeAsGM(addItemToActor, controlActor.id, item.id, item.pack);
       }
     });
 
