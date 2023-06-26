@@ -69,7 +69,7 @@ export function registerSettings()
 export function getSettings()
 {
     return {
-        autoAdd: game.settings.get("harvester", "autoAddItems"),
+        autoAddItems: game.settings.get("harvester", "autoAddItems"),
         gmOnly: game.settings.get("harvester", "gmOnly"),
         requireDeadEffect: game.settings.get("harvester", "requireDeadEffect"),
         npcOnlyHarvest: game.settings.get("harvester", "npcOnlyHarvest"),
