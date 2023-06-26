@@ -1,4 +1,4 @@
-import { registerSettings, getSettings, dragonIgnoreArr } from "./settings.js";
+import { registerSettings, getSettings, dragonIgnoreArr, sizeHashMap } from "./settings.js";
 
 var actionCompendium, harvestCompendium, harvestEffect, moduleSettings, socket;
 
@@ -61,8 +61,8 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
 {
   if (item.name != "Harvest" && item.system.source != "Harvester")
     return;
-
-  if(!validateHarvest(game.user.targets))
+  var controlToken = item.parent.getActiveTokens()[0];
+  if(!validateHarvest(controlToken, game.user.targets))
     return false;
   //item.system.description.value = `Harvesting ${targetToken.name}`
   // edit rollcheck before output
@@ -78,7 +78,7 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
   handleHarvest(targetToken, controlToken);
 })
 
-function validateHarvest(userTargets)
+function validateHarvest(controlToken, userTargets)
 {
   if (userTargets.size != 1)
   {
@@ -86,6 +86,13 @@ function validateHarvest(userTargets)
     return false;
   }
   var targetedToken = userTargets.first();
+  var measuredDistance = canvas.grid.measureDistance(controlToken.center, targetedToken.center);
+  var targetSize = sizeHashMap.get(targetedToken.actor.system.traits.size)
+  if(measuredDistance > targetSize && moduleSettings.enforceRange)
+  {
+    ui.notifications.warn("You must be in range to Harvest.");
+    return false;
+  }
   if(targetedToken.document.actorData.system.attributes.hp.value != 0)
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
@@ -169,7 +176,8 @@ async function handleHarvest(targetedToken, controlledToken)
   var itemArr = await searchCompendium(targetActor);
   if (itemArr.length == 0)
   {
-    ui.notifications.warn(targetedToken.name + " has no materials to harvest");
+    ChatMessage.create({content: "<h3>Harvesting</h3>After examining the corpse you realise there is nothing you can harvest."});
+    await socket.executeAsGM(addHarvestEffect, targetedToken.id);
     return;
   }
 
