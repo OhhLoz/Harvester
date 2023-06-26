@@ -16,6 +16,8 @@ Hooks.on("ready", async function()
   harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
   harvestEffect = actionCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
   console.log("harvester | ready() - Assigned public functions & Fetched compendiums");
+  if (game.user?.isGM && !game.modules.get("socketlib")?.active)
+    ui.notifications.error("socketlib must be installed & enabled for harvester to function correctly.", { permanent: true });
   if (moduleSettings.autoAddActionGroup != "None")
     addActionToActors();
 });

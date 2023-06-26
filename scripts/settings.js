@@ -73,7 +73,7 @@ export function getSettings()
         gmOnly: game.settings.get("harvester", "gmOnly"),
         requireDeadEffect: game.settings.get("harvester", "requireDeadEffect"),
         npcOnlyHarvest: game.settings.get("harvester", "npcOnlyHarvest"),
-        allActorAction: game.settings.get("harvester", "allActorAction"),
+        autoAddActionGroup: game.settings.get("harvester", "autoAddActionGroup"),
         enforceRange: game.settings.get("harvester", "enforceRange")
     }
 }
