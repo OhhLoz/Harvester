@@ -1,7 +1,7 @@
 export function registerSettings()
 {
     game.settings.register("harvester", "autoAdd", {
-        name: "Auto-add harvested items to character sheet",
+        name: "Automatically Assign Harvest Items",
         hint: "All harvested loot is added to characters automatically.",
         scope: "world",
         config: true,
@@ -54,6 +54,16 @@ export function registerSettings()
         type: Boolean,
         default: false
     });
+
+    game.settings.register("harvester", "enforceRange", {
+        name: "Enforce Harvest range",
+        hint: "Force users to be in range to be able to harvest.",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: true
+    });
 }
 
 export function getSettings()
@@ -63,7 +73,8 @@ export function getSettings()
         gmOnly: game.settings.get("harvester", "gmOnly"),
         requireDeadEffect: game.settings.get("harvester", "requireDeadEffect"),
         npcOnlyHarvest: game.settings.get("harvester", "npcOnlyHarvest"),
-        allActorAction: game.settings.get("harvester", "allActorAction")
+        allActorAction: game.settings.get("harvester", "allActorAction"),
+        enforceRange: game.settings.get("harvester", "enforceRange")
     }
 }
 
@@ -89,3 +100,13 @@ export const dragonIgnoreArr =
     "Topaz",
     "White"
 ]
+
+export const sizeHashMap = new Map(
+[
+    ["tiny", 5],
+    ["sm", 5],
+    ["med", 5],
+    ["lg", 11],
+    ["huge", 14.2],
+    ["grg", 17.7]
+])
