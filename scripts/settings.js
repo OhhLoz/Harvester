@@ -1,6 +1,6 @@
 export function registerSettings()
 {
-    game.settings.register("harvester", "autoAdd", {
+    game.settings.register("harvester", "autoAddItems", {
         name: "Automatically Assign Harvest Items",
         hint: "All harvested loot is added to characters automatically.",
         scope: "world",
@@ -8,6 +8,21 @@ export function registerSettings()
         requiresReload: true,
         type: Boolean,
         default: true
+    });
+
+    game.settings.register("harvester", "autoAddActionGroup", {
+        name: "Automatically Assign Harvest Action",
+        hint: "Assigns the Harvest Action to the selected group.",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: String,
+        choices: {
+            "All" : "All",
+            "PCOnly": "Player Characters Only",
+            "None" : "None"
+          },
+        default: "PCOnly"
     });
 
     game.settings.register("harvester", "npcOnlyHarvest", {
@@ -28,21 +43,6 @@ export function registerSettings()
         requiresReload: true,
         type: Boolean,
         default: true
-    });
-
-    game.settings.register("harvester", "allActorAction", {
-        name: "Automatically Assign Harvest Action",
-        hint: "Assigns the Harvest Action to the selected group.",
-        scope: "world",
-        config: true,
-        requiresReload: true,
-        type: String,
-        choices: {
-            "All" : "All",
-            "PCOnly": "Player Characters Only",
-            "None" : "None"
-          },
-        default: "PCOnly"
     });
 
     game.settings.register("harvester", "gmOnly", {
@@ -69,7 +69,7 @@ export function registerSettings()
 export function getSettings()
 {
     return {
-        autoAdd: game.settings.get("harvester", "autoAdd"),
+        autoAdd: game.settings.get("harvester", "autoAddItems"),
         gmOnly: game.settings.get("harvester", "gmOnly"),
         requireDeadEffect: game.settings.get("harvester", "requireDeadEffect"),
         npcOnlyHarvest: game.settings.get("harvester", "npcOnlyHarvest"),

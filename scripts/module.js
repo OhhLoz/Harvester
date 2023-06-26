@@ -2,8 +2,6 @@ import { registerSettings, getSettings, dragonIgnoreArr, sizeHashMap } from "./s
 
 var actionCompendium, harvestCompendium, harvestEffect, moduleSettings, socket;
 
-//var targetToken, controlToken;
-
 Hooks.on("init", function()
 {
   registerSettings();
@@ -18,7 +16,7 @@ Hooks.on("ready", async function()
   harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
   harvestEffect = actionCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
   console.log("harvester | ready() - Assigned public functions & Fetched compendiums");
-  if (moduleSettings.allActorAction != "None")
+  if (moduleSettings.autoAddActionGroup != "None")
     addActionToActors();
 });
 
@@ -31,9 +29,9 @@ Hooks.once("socketlib.ready", () => {
 
 Hooks.on("createActor", (actor, data, options, id) =>
 {
-  if (moduleSettings.allActorAction != "None")
+  if (moduleSettings.autoAddActionGroup != "None")
   {
-    if(moduleSettings.allActorAction == "PCOnly" && actor.type == "npc")
+    if(moduleSettings.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
 
       socket.executeAsGM(addItemToActor, actor.id, actionCompendium[0].id, actionCompendium[0].pack);
@@ -45,7 +43,7 @@ function addActionToActors()
   var hasAction = false;
   game.actors.forEach(actor =>
   {
-    if(moduleSettings.allActorAction == "PCOnly" && actor.type == "npc")
+    if(moduleSettings.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
     actor.items.forEach(item =>{
       if(item.name === "Harvest" && item.system.source == "Harvester")
@@ -198,7 +196,7 @@ async function handleHarvest(targetedToken, controlledToken)
       {
         lootMessage += `<li>@UUID[${item.uuid}]</li>`
 
-        if(moduleSettings.autoAdd)
+        if(moduleSettings.autoAddItems)
           socket.executeAsGM(addItemToActor, controlActor.id, item.id, item.pack);
       }
     });
