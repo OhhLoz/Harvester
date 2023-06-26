@@ -11,7 +11,6 @@ Hooks.on("init", function()
 
 Hooks.on("ready", async function()
 {
-  game.modules.get("harvester").api = {validateHarvest};
   actionCompendium = await game.packs.get("harvester.harvest-action").getDocuments();
   harvestCompendium = await game.packs.get("harvester.harvest").getDocuments();
   harvestEffect = actionCompendium[0].effects.get("0plmpCQ8D2Ezc1Do");
@@ -36,7 +35,7 @@ Hooks.on("createActor", (actor, data, options, id) =>
     if(moduleSettings.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
 
-      socket.executeAsGM(addItemToActor, actor.id, actionCompendium[0].id, actionCompendium[0].pack);
+    socket.executeAsGM(addItemToActor, actor.id, actionCompendium[0].id, actionCompendium[0].pack);
   }
 })
 
