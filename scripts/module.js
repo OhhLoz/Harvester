@@ -64,8 +64,11 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
   var controlToken = item.parent.getActiveTokens()[0];
   if(!validateHarvest(controlToken, game.user.targets))
     return false;
-  //item.system.description.value = `Harvesting ${targetToken.name}`
-  // edit rollcheck before output
+
+  item._source.system.description.value = `${item.name}ing ${game.user.targets.first().name}`
+  //item._source.system.formula = "1d20 + @skills."+  +".mod"
+
+  // Add skill check instead of rolling later on, will likely need a map to replace the skills with ability check?
 })
 
 Hooks.on('dnd5e.useItem', function(item, config, options)
