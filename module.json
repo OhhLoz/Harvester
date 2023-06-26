@@ -2,14 +2,15 @@
   "title": "Better Harvesting & Looting",
   "description": "A QoL module to improve the harvesting and looting experience.",
   "url": "https://github.com/OhhLoz/Harvester",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "authors":
   [
     {
-    "name": "Loz"
+      "name": "Loz",
+      "url": "https://github.com/OhhLoz"
     },
     {
-    "name": "Geri"
+      "name": "Geri"
     }
   ],
   "compatibility":
@@ -19,6 +20,7 @@
   },
   "scripts": [],
   "esmodules": ["scripts/module.js"],
+  "socket": true,
   "packs": [
     {
       "name": "harvest",
@@ -47,6 +49,12 @@
         "compatibility": {
             "minimum": "2.1.5"
         }
+      }
+    ],
+    "requires": [
+      {
+        "id": "socketlib",
+        "type": "module"
       }
     ]
   },
