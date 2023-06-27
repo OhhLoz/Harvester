@@ -1,25 +1,25 @@
-import { registerSettings, getSettings, dragonIgnoreArr, sizeHashMap } from "./settings.js";
+import { registerSettings, SETTINGS, CONSTANTS, dragonIgnoreArr, sizeHashMap } from "./settings.js";
 
-var actionCompendium, harvestCompendium, lootCompendium, harvestEffect, lootEffect, moduleSettings, socket;
+var actionCompendium, harvestCompendium, lootCompendium, harvestAction, lootAction, socket;
 
 Hooks.on("init", function()
 {
   registerSettings();
-  moduleSettings = getSettings();
-  actionCompendium = game.packs.get("harvester.harvest-action").getDocuments();
-  harvestCompendium = game.packs.get("harvester.harvest").getDocuments();
-  lootCompendium = game.packs.get("world.loot");
   console.log("harvester | Init() - Registered settings & Fetched compendiums.");
 });
 
-Hooks.on("ready", function()
+Hooks.on("ready", async function()
 {
-  //lootCompendium = await game.tables.get("j7meAnkqPH4qO2zv");
-  harvestEffect = actionCompendium[1].effects.get("0plmpCQ8D2Ezc1Do");
-  lootEffect = actionCompendium[0].effects.get("gyGqnCpM8pGggHtB");
+  actionCompendium = await game.packs.get(CONSTANTS.actionCompendiumId).getDocuments();
+  harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
+  //lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId);
+
+  harvestAction = actionCompendium.find(a => a.id == CONSTANTS.harvestActionId);
+  lootAction = actionCompendium.find(a => a.id == CONSTANTS.lootActionId);
+
   if (game.user?.isGM && !game.modules.get("socketlib")?.active)
     ui.notifications.error("socketlib must be installed & enabled for harvester to function correctly.", { permanent: true });
-  if (moduleSettings.autoAddActionGroup != "None")
+  if (SETTINGS.autoAddActionGroup != "None")
     addActionToActors();
 });
 
@@ -32,13 +32,13 @@ Hooks.once("socketlib.ready", () => {
 
 Hooks.on("createActor", (actor, data, options, id) =>
 {
-  if (moduleSettings.autoAddActionGroup != "None")
+  if (SETTINGS.autoAddActionGroup != "None")
   {
-    if(moduleSettings.autoAddActionGroup == "PCOnly" && actor.type == "npc")
+    if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
 
-    socket.executeAsGM(addItemToActor, actor.id, actionCompendium[0].id, actionCompendium[0].pack);
-    socket.executeAsGM(addItemToActor, actor.id, actionCompendium[1].id, actionCompendium[1].pack);
+    socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
+    socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
   }
 })
 
@@ -48,7 +48,7 @@ function addActionToActors()
   var hasLoot = false;
   game.actors.forEach(actor =>
   {
-    if(moduleSettings.autoAddActionGroup == "PCOnly" && actor.type == "npc")
+    if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
     actor.items.forEach(item =>{
       if(item.name === "Harvest" && item.system.source == "Harvester")
@@ -57,9 +57,9 @@ function addActionToActors()
         hasLoot = true;
     })
     if (!hasHarvest)
-      socket.executeAsGM(addItemToActor, actor.id, actionCompendium[1].id, actionCompendium[1].pack);
+      socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
     if (!hasLoot)
-      socket.executeAsGM(addItemToActor, actor.id, actionCompendium[0].id, actionCompendium[0].pack);
+      socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
   })
   console.log("harvester | ready() - Added Harvest Action to All Actors specified in Settings");
 }
@@ -91,7 +91,6 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
 
 function validateAction(controlToken, userTargets, actionName)
 {
-  console.log(lootCompendium)
   if (userTargets.size != 1)
   {
     ui.notifications.warn("Please target only one token.");
@@ -100,7 +99,7 @@ function validateAction(controlToken, userTargets, actionName)
   var targetedToken = userTargets.first();
   var measuredDistance = canvas.grid.measureDistance(controlToken.center, targetedToken.center);
   var targetSize = sizeHashMap.get(targetedToken.actor.system.traits.size)
-  if(measuredDistance > targetSize && moduleSettings.enforceRange)
+  if(measuredDistance > targetSize && SETTINGS.enforceRange)
   {
     ui.notifications.warn("You must be in range to " + actionName);
     return false;
@@ -110,12 +109,12 @@ function validateAction(controlToken, userTargets, actionName)
     ui.notifications.warn(targetedToken.name + " is not dead");
     return false;
   }
-  if(!checkEffect(targetedToken, "Dead") && moduleSettings.requireDeadEffect)
+  if(!checkEffect(targetedToken, "Dead") && SETTINGS.requireDeadEffect)
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
     return false;
   }
-  if(targetedToken.document.hasPlayerOwner && moduleSettings.npcOnlyHarvest)
+  if(targetedToken.document.hasPlayerOwner && SETTINGS.npcOnlyHarvest)
   {
     ui.notifications.warn(targetedToken.name + " is not an NPC");
     return false;
@@ -169,9 +168,9 @@ function addEffect(targetTokenId, actionName)
 {
   var targetToken = canvas.tokens.get(targetTokenId)
   if(actionName == "Harvest")
-    targetToken.toggleEffect(harvestEffect);
+    targetToken.toggleEffect(harvestAction.effects.get(CONSTANTS.harvestActionEffectId));
   else
-    targetToken.toggleEffect(lootEffect);
+    targetToken.toggleEffect(lootAction.effects.get(CONSTANTS.lootActionEffectId));
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
@@ -208,7 +207,7 @@ async function handleAction(targetedToken, controlledToken, actionName)
 
   var lootMessage = "";
   var messageData = {content: {}, whisper: {}};
-  if (moduleSettings.gmOnly)
+  if (SETTINGS.gmOnly)
     messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
 
   await socket.executeAsGM(addEffect, targetedToken.id, actionName);
@@ -219,7 +218,7 @@ async function handleAction(targetedToken, controlledToken, actionName)
     {
       lootMessage += `<li>@UUID[${item.uuid}]</li>`
 
-      if(moduleSettings.autoAddItems)
+      if(SETTINGS.autoAddItems)
         socket.executeAsGM(addItemToActor, controlActor.id, item.id, item.pack);
     }
   });

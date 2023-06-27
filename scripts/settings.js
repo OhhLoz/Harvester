@@ -64,18 +64,34 @@ export function registerSettings()
         type: Boolean,
         default: true
     });
+
+    SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
+    SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
+    SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
+    SETTINGS.npcOnlyHarvest = game.settings.get("harvester", "npcOnlyHarvest");
+    SETTINGS.autoAddActionGroup = game.settings.get("harvester", "autoAddActionGroup");
+    SETTINGS.enforceRange = game.settings.get("harvester", "enforceRange");
 }
 
-export function getSettings()
+export const SETTINGS =
 {
-    return {
-        autoAddItems: game.settings.get("harvester", "autoAddItems"),
-        gmOnly: game.settings.get("harvester", "gmOnly"),
-        requireDeadEffect: game.settings.get("harvester", "requireDeadEffect"),
-        npcOnlyHarvest: game.settings.get("harvester", "npcOnlyHarvest"),
-        autoAddActionGroup: game.settings.get("harvester", "autoAddActionGroup"),
-        enforceRange: game.settings.get("harvester", "enforceRange")
-    }
+    autoAddItems: true,
+    gmOnly: false,
+    requireDeadEffect: true,
+    npcOnlyHarvest: true,
+    autoAddActionGroup: "",
+    enforceRange: true
+}
+
+export const CONSTANTS =
+{
+    harvestActionId : "ich3SV1HXRlq8K32",
+    harvestActionEffectId : "0plmpCQ8D2Ezc1Do",
+    lootActionId : "yaMtYJlcLh9mSBQI",
+    lootActionEffectId : "KiM9NV0Od4a27JmY",
+    actionCompendiumId : "harvester.harvest-action",
+    harvestCompendiumId : "harvester.harvest",
+    lootCompendiumId : "world.loot"
 }
 
 export const dragonIgnoreArr =
