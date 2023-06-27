@@ -12,7 +12,7 @@ Hooks.on("ready", async function()
 {
   actionCompendium = await game.packs.get(CONSTANTS.actionCompendiumId).getDocuments();
   harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
-  //lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId);
+  lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId).getDocuments();
 
   harvestAction = actionCompendium.find(a => a.id == CONSTANTS.harvestActionId);
   lootAction = actionCompendium.find(a => a.id == CONSTANTS.lootActionId);
@@ -46,8 +46,6 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
 {
   if (item.system.source != "Harvester")
     return;
-  var controlToken = item.parent.getActiveTokens()[0];
-  console.log(game.actors.get(controlToken.document.actorId))
 
   if(!validateAction(item.parent.getActiveTokens()[0], game.user.targets, item.name))
     return false;
@@ -112,45 +110,64 @@ async function handleAction(controlledToken, targetedToken, actionName)
 
   var itemArr = [];
   var result;
+  var lootMessage = "";
+  var messageData = {content: {}, whisper: {}};
+  if (SETTINGS.gmOnly)
+    messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
+
+  itemArr = await searchCompendium(targetActor, actionName);
+  if (itemArr.length == 0)
+  {
+    ChatMessage.create({content: `<h3>${actionName}ing</h3>After examining the corpse you realise there is nothing you can ${actionName.toLowerCase()}.`});
+    await socket.executeAsGM(addEffect, targetedToken.id, actionName);
+    return;
+  }
+
   if (actionName == "Harvest")
   {
-    itemArr = await searchCompendium(targetActor, actionName);
-    if (itemArr.length == 0)
-    {
-      ChatMessage.create({content: `<h3>${actionName}ing</h3>After examining the corpse you realise there is nothing you can ${actionName.toLowerCase()}.`});
-      await socket.executeAsGM(addEffect, targetedToken.id, actionName);
-      return;
-    }
-
     var skillCheck = itemArr[0]?.system.description.unidentified.slice(0,3).toLowerCase();
     result = await controlActor.rollSkill(skillCheck, {chooseModifier: false});
     if (!result)
       return;
   }
 
-  var lootMessage = "";
-  var messageData = {content: {}, whisper: {}};
-  if (SETTINGS.gmOnly)
-    messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
-
   await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
-  itemArr.forEach(item =>
+  if (actionName == "Harvest")
   {
-    if (parseInt(item.system.description.chat) <= result.total)
+    itemArr.forEach(item =>
     {
-      lootMessage += `<li>@UUID[${item.uuid}]</li>`
+        if (parseInt(item.system.description.chat) <= result.total)
+        {
+          lootMessage += `<li>@UUID[${item.uuid}]</li>`
 
-      if(SETTINGS.autoAddItems)
-        socket.executeAsGM(addItemToActor, controlActor.id, item.id, item.pack);
-    }
-  });
+          if(SETTINGS.autoAddItems)
+            socket.executeAsGM(addItemToActor, controlActor.id, item.id, item.pack);
+        }
+    });
 
-  if (lootMessage)
-    messageData.content = `<h3>${actionName}ing</h3><ul>${lootMessage}</ul>`;
-  else
-    messageData.content = `<h3>${actionName}ing</h3><ul>${controlledToken.name} attempted to ${actionName.toLowerCase()} resources from ${targetedToken.name} but failed to find anything.`
-  ChatMessage.create(messageData);
+    if (lootMessage)
+      messageData.content = `<h3>${actionName}ing</h3><ul>${lootMessage}</ul>`;
+    else
+      messageData.content = `<h3>${actionName}ing</h3><ul>${controlledToken.name} attempted to ${actionName.toLowerCase()} resources from ${targetedToken.name} but failed to find anything.`
+    ChatMessage.create(messageData);
+    return;
+  }
+
+  if (actionName == "Loot")
+  {
+    //const roll = await itemArr[0].draw({ rollMode: "gmroll" });
+
+    // console.log(itemArr[0])
+    // var canLoot = itemArr[0].description;
+    itemArr[0].description = ""
+    const roll = await itemArr[0].draw();
+    // console.log(roll)
+
+    // roll.compendium.metadata.id == CONSTANTS.lootCompendiumId
+    // if(SETTINGS.autoAddItems)
+    // Add currency to actor
+  }
 }
 
 function searchCompendium(actor, actionName)
@@ -163,10 +180,18 @@ function searchCompendium(actor, actionName)
   if(actionName == "Harvest")
   {
     harvestCompendium.forEach(doc =>
-      {
-        if (doc.system.source === actorName)
-          returnArr.push(doc);
-      })
+    {
+      if (doc.system.source === actorName)
+        returnArr.push(doc);
+    })
+  }
+  else if (actionName == "Loot")
+  {
+    lootCompendium.forEach(doc =>
+    {
+      if (doc.name === actorName)
+        returnArr.push(doc);
+    })
   }
 
   return returnArr;
@@ -221,7 +246,7 @@ function addEffect(targetTokenId, actionName)
   var targetToken = canvas.tokens.get(targetTokenId)
   if(actionName == "Harvest")
     targetToken.toggleEffect(harvestAction.effects.get(CONSTANTS.harvestActionEffectId));
-  else
+  else if (actionName == "Loot")
     targetToken.toggleEffect(lootAction.effects.get(CONSTANTS.lootActionEffectId));
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
