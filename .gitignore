@@ -33,6 +33,7 @@ src/harvester.zip
 yarn.lock
 
 package-lock.json
-resource/HarvestDB.csv
+resource/HarvesterDB_Loot.csv
+resource/HarvesterDB_Harvest.csv
 
 harvester.zip

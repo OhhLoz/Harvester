@@ -42,41 +42,21 @@ Hooks.on("createActor", (actor, data, options, id) =>
   }
 })
 
-function addActionToActors()
-{
-  var hasHarvest = false;
-  var hasLoot = false;
-  game.actors.forEach(actor =>
-  {
-    if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
-      return;
-    actor.items.forEach(item =>{
-      if(item.name === "Harvest" && item.system.source == "Harvester")
-        hasHarvest = true;
-      if(item.name === "Loot" && item.system.source == "Harvester")
-        hasLoot = true;
-    })
-    if (!hasHarvest)
-      socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
-    if (!hasLoot)
-      socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
-  })
-  console.log("harvester | ready() - Added Harvest Action to All Actors specified in Settings");
-}
-
 Hooks.on('dnd5e.preUseItem', function(item, config, options)
 {
   if (item.system.source != "Harvester")
     return;
   var controlToken = item.parent.getActiveTokens()[0];
-  if(!validateAction(controlToken, game.user.targets, item.name))
+  console.log(game.actors.get(controlToken.document.actorId))
+
+  if(!validateAction(item.parent.getActiveTokens()[0], game.user.targets, item.name))
     return false;
 
   item._source.system.description.value = `${item.name}ing ${game.user.targets.first().name}`
   // item._source.system.formula = "1d20 + @skills.ath.bonus"
   // item._source.system.actionType = "abil"
 
-  // Add skill check instead of rolling later on, will likely need a map to replace the skills with ability check?
+  // Add skill check instead of rolling later on, requires a custom roll formula as it needs skill rolls not ability scores, this displays "Other Formula" under the card which isnt ideal.
 })
 
 Hooks.on('dnd5e.useItem', function(item, config, options)
@@ -84,9 +64,7 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
   if (item.system.source != "Harvester")
     return;
 
-  var controlToken = item.parent.getActiveTokens()[0];
-  var targetToken = game.user.targets.first();
-  handleAction(targetToken, controlToken, item.name);
+  handleAction(item.parent.getActiveTokens()[0], game.user.targets.first(), item.name);
 })
 
 function validateAction(controlToken, userTargets, actionName)
@@ -127,62 +105,7 @@ function validateAction(controlToken, userTargets, actionName)
   return true;
 }
 
-function checkEffect(token, effectName)
-{
-  var returnBool = false;
-  token.document.actorData.effects.forEach(element =>
-  {
-    if (element.label == effectName)
-      returnBool = true;
-  });
-  return returnBool;
-}
-
-function searchCompendium(actor, actionName)
-{
-  var returnArr = [];
-  var actorName = actor.name;
-  if (actorName.includes("Dragon"))
-    actorName = formatDragon(actorName);
-
-  harvestCompendium.forEach(doc =>
-  {
-    if (doc.system.source === actorName)
-      returnArr.push(doc);
-  })
-  return returnArr;
-}
-
-function formatDragon(actorName)
-{
-  var actorSplit = actorName.split(" ");
-  dragonIgnoreArr.forEach(element => {
-    actorSplit = actorSplit.filter(e => e !== element);
-  })
-
-  actorSplit = actorSplit.join(" ")
-  return actorSplit;
-}
-
-function addEffect(targetTokenId, actionName)
-{
-  var targetToken = canvas.tokens.get(targetTokenId)
-  if(actionName == "Harvest")
-    targetToken.toggleEffect(harvestAction.effects.get(CONSTANTS.harvestActionEffectId));
-  else
-    targetToken.toggleEffect(lootAction.effects.get(CONSTANTS.lootActionEffectId));
-  console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
-}
-
-function addItemToActor(actorId, itemId, packId)
-{
-  var actor = game.actors.get(actorId);
-  var item = game.packs.get(packId).get(itemId);
-  actor.createEmbeddedDocuments('Item', [item]);
-  console.log(`harvester | Added item: ${item.name} to ${actor.name}`);
-}
-
-async function handleAction(targetedToken, controlledToken, actionName)
+async function handleAction(controlledToken, targetedToken, actionName)
 {
   var targetActor = await game.actors.get(targetedToken.document.actorId);
   var controlActor = await game.actors.get(controlledToken.document.actorId);
@@ -228,4 +151,85 @@ async function handleAction(targetedToken, controlledToken, actionName)
   else
     messageData.content = `<h3>${actionName}ing</h3><ul>${controlledToken.name} attempted to ${actionName.toLowerCase()} resources from ${targetedToken.name} but failed to find anything.`
   ChatMessage.create(messageData);
+}
+
+function searchCompendium(actor, actionName)
+{
+  var returnArr = [];
+  var actorName = actor.name;
+  if (actorName.includes("Dragon"))
+    actorName = formatDragon(actorName);
+
+  if(actionName == "Harvest")
+  {
+    harvestCompendium.forEach(doc =>
+      {
+        if (doc.system.source === actorName)
+          returnArr.push(doc);
+      })
+  }
+
+  return returnArr;
+}
+
+function addActionToActors()
+{
+  var hasHarvest = false;
+  var hasLoot = false;
+  game.actors.forEach(actor =>
+  {
+    if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
+      return;
+    actor.items.forEach(item =>{
+      if(item.name === "Harvest" && item.system.source == "Harvester")
+        hasHarvest = true;
+      if(item.name === "Loot" && item.system.source == "Harvester")
+        hasLoot = true;
+    })
+    if (!hasHarvest)
+      socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
+    if (!hasLoot)
+      socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
+  })
+  console.log("harvester | ready() - Added Harvest Action to All Actors specified in Settings");
+}
+
+function checkEffect(token, effectName)
+{
+  var returnBool = false;
+  token.document.actorData.effects.forEach(element =>
+  {
+    if (element.label == effectName)
+      returnBool = true;
+  });
+  return returnBool;
+}
+
+function formatDragon(actorName)
+{
+  var actorSplit = actorName.split(" ");
+  dragonIgnoreArr.forEach(element => {
+    actorSplit = actorSplit.filter(e => e !== element);
+  })
+
+  actorSplit = actorSplit.join(" ")
+  return actorSplit;
+}
+
+function addEffect(targetTokenId, actionName)
+{
+  var targetToken = canvas.tokens.get(targetTokenId)
+  if(actionName == "Harvest")
+    targetToken.toggleEffect(harvestAction.effects.get(CONSTANTS.harvestActionEffectId));
+  else
+    targetToken.toggleEffect(lootAction.effects.get(CONSTANTS.lootActionEffectId));
+  console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
+}
+
+function addItemToActor(actorId, itemId, packId)
+{
+  var actor = game.actors.get(actorId);
+  var item = game.packs.get(packId).get(itemId);
+  actor.createEmbeddedDocuments('Item', [item]);
+  console.log(`harvester | Added item: ${item.name} to ${actor.name}`);
 }
