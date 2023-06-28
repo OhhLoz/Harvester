@@ -39,7 +39,8 @@ Hooks.on("createActor", (actor, data, options, id) =>
       return;
 
     addItemToActor(actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
-    addItemToActor(actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
+    if(!SETTINGS.disableLoot)
+      addItemToActor(actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
   }
 })
 
@@ -69,48 +70,51 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
 
 Hooks.on('preCreateChatMessage', function(message, options, userId)
 {
-  console.log(message)
-  var isRollTable = "core.RollTable" in message.flags;
-  if(isRollTable)
+  if(!SETTINGS.disableLoot)
   {
-    var rollTableId = message.flags["core.RollTable"];
-    console.log(rollTableId)
-    var rollTable = game.tables.get(rollTableId)
-    console.log(rollTable)
-  }
-  currencyFlavors.forEach(flavour =>
-  {
-    if (message.flavor != flavour)
+    var isRollTable = "core.RollTable" in message.flags;
+    if(isRollTable)
+    {
+      console.log(message)
+      var rollTableId = message.flags["core.RollTable"];
+      console.log(rollTableId)
+      var rollTable = game.tables.get(rollTableId)
+      console.log(rollTable)
+    }
+    currencyFlavors.forEach(flavour =>
+    {
+      if (message.flavor != flavour)
+        return;
+
+      if (!message.isRoll && !message.isOwner && message.flavor == null)
       return;
 
-    if (!message.isRoll && !message.isOwner && message.flavor == null)
-    return;
+      if (SETTINGS.gmOnly)
+        message._source.whisper = game.users.filter(u => u.isGM).map(u => u._id);
 
-    if (SETTINGS.gmOnly)
-      message._source.whisper = game.users.filter(u => u.isGM).map(u => u._id);
-
-    if (SETTINGS.autoAddItems)
-    {
-      if (message.speaker.actor == null)
+      if (SETTINGS.autoAddItems)
       {
-        ui.notifications.warn("Currency not automatically added as token wasn't selected. Try again or manually add the currency.");
-        return false;
-      }
-      var controlActor = game.actors.get(message.speaker.actor);
-      var currencyRef = currencyMap.get(flavour);
-      var total = controlActor.system.currency[currencyRef] + message.rolls[0]._total;
-      controlActor.update(
-      {
-        system:
+        if (message.speaker.actor == null)
         {
-          currency:
-          {
-            [currencyRef] : total
-          }
+          ui.notifications.warn("Currency not automatically added as token wasn't selected. Try again or manually add the currency.");
+          return false;
         }
-      })
-    }
-  })
+        var controlActor = game.actors.get(message.speaker.actor);
+        var currencyRef = currencyMap.get(flavour);
+        var total = controlActor.system.currency[currencyRef] + message.rolls[0]._total;
+        controlActor.update(
+        {
+          system:
+          {
+            currency:
+            {
+              [currencyRef] : total
+            }
+          }
+        })
+      }
+    })
+  }
 })
 
 // Hooks.on('createChatMessage', function(message, options, userId)
@@ -163,7 +167,6 @@ async function handleAction(controlledToken, targetedToken, actionName)
 
   var itemArr = [];
   var result;
-  var lootMessage = "";
   var messageData = {content: {}, whisper: {}};
   if (SETTINGS.gmOnly)
     messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
@@ -180,14 +183,15 @@ async function handleAction(controlledToken, targetedToken, actionName)
   {
     var skillCheck = itemArr[0]?.system.description.unidentified.slice(0,3).toLowerCase();
     result = await controlActor.rollSkill(skillCheck, {chooseModifier: false});
-    if (!result)
+    if (!result) // If user doesn't roll then do nothing
       return;
   }
 
-  await socket.executeAsGM(addEffect, targetedToken.id, actionName);
+  //await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
   if (actionName == harvestAction.name)
   {
+    var lootMessage = "";
     itemArr.forEach(item =>
     {
         if (parseInt(item.system.description.chat) <= result.total)
@@ -209,9 +213,15 @@ async function handleAction(controlledToken, targetedToken, actionName)
 
   if (actionName == lootAction.name)
   {
-    var canLoot = itemArr[0].description;
-    if (!canLoot && !SETTINGS.lootBeasts)
+    var normalLoot = itemArr[0].description;
+    if (normalLoot == "false" && !SETTINGS.lootBeasts)
+    {
+      messageData.content = `<h3>${actionName}ing</h3><ul>${controlledToken.name} attempted to ${actionName.toLowerCase()} resources from ${targetedToken.name} but failed to find anything.`
+      ChatMessage.create(messageData);
       return;
+    }
+
+
     itemArr[0].description = ""
     var rollMode = "roll";
     if(SETTINGS.gmOnly)
@@ -265,7 +275,7 @@ function addActionToActors()
     })
     if (!hasHarvest)
       addItemToActor(actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
-    if (!hasLoot)
+    if (!hasLoot && !SETTINGS.disableLoot)
       addItemToActor(actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
   })
   console.log("harvester | ready() - Added Actions to All Actors specified in Settings");

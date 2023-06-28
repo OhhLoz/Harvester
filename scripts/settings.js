@@ -75,6 +75,16 @@ export function registerSettings()
         default: false
     });
 
+    game.settings.register("harvester", "disableLoot", {
+        name: "Disable Looting mechanic",
+        hint: "Disables the Loot mechanic, making it unavailable until enabled.",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false
+    });
+
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
     SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
@@ -82,6 +92,7 @@ export function registerSettings()
     SETTINGS.autoAddActionGroup = game.settings.get("harvester", "autoAddActionGroup");
     SETTINGS.enforceRange = game.settings.get("harvester", "enforceRange");
     SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
+    SETTINGS.disableLoot = game.settings.get("harvester", "disableLoot");
 }
 
 export const SETTINGS =
@@ -92,7 +103,8 @@ export const SETTINGS =
     npcOnlyHarvest: true,
     autoAddActionGroup: "",
     enforceRange: true,
-    lootBeasts: false
+    lootBeasts: false,
+    disableLoot: false
 }
 
 export const CONSTANTS =
@@ -103,7 +115,7 @@ export const CONSTANTS =
     lootActionEffectId : "KiM9NV0Od4a27JmY",
     actionCompendiumId : "harvester.actions",
     harvestCompendiumId : "harvester.harvest",
-    lootCompendiumId : "world.loot"
+    lootCompendiumId : "harvester.loot"
 }
 
 export const dragonIgnoreArr =
