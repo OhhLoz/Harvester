@@ -12,13 +12,13 @@ export function registerSettings()
 
     game.settings.register("harvester", "autoAddActionGroup", {
         name: "Automatically Assign Action",
-        hint: "Assigns the module Actions to the selected group.",
+        hint: "Gives the Actions to the selected group.",
         scope: "world",
         config: true,
         requiresReload: true,
         type: String,
         choices: {
-            "All" : "All",
+            "All" : "All Characters",
             "PCOnly": "Player Characters Only",
             "None" : "None"
           },
@@ -101,7 +101,7 @@ export const CONSTANTS =
     harvestActionEffectId : "0plmpCQ8D2Ezc1Do",
     lootActionId : "yaMtYJlcLh9mSBQI",
     lootActionEffectId : "KiM9NV0Od4a27JmY",
-    actionCompendiumId : "harvester.harvest-action",
+    actionCompendiumId : "harvester.actions",
     harvestCompendiumId : "harvester.harvest",
     lootCompendiumId : "world.loot"
 }

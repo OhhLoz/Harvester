@@ -28,7 +28,6 @@ Hooks.on("ready", async function()
 Hooks.once("socketlib.ready", () => {
 	socket = globalThis.socketlib.registerModule("harvester");
 	socket.register("addEffect", addEffect);
-	socket.register("addItemToActor", addItemToActor);
   console.log("harvester | Registed socketlib functions");
 });
 
@@ -39,8 +38,8 @@ Hooks.on("createActor", (actor, data, options, id) =>
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
 
-    socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
-    socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
+    addItemToActor(actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
+    addItemToActor(actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
   }
 })
 
@@ -70,33 +69,54 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
 
 Hooks.on('preCreateChatMessage', function(message, options, userId)
 {
-  if (message.isRoll && message.isOwner)
+  console.log(message)
+  var isRollTable = "core.RollTable" in message.flags;
+  if(isRollTable)
   {
-    currencyFlavors.forEach(flavour => {
-      if (message.flavor == flavour)
-      {
-        if (SETTINGS.gmOnly)
-          message._source.whisper = game.users.filter(u => u.isGM).map(u => u._id);
-        if (SETTINGS.autoAddItems)
-        {
-          var controlActor = game.actors.get(message.speaker.actor);
-          //controlActor.system.currency[currencyMap.get(flavour)] += message.rolls[0]._total;
-          var total = controlActor.system.currency[currencyMap.get(flavour)] + message.rolls[0]._total;
-          controlActor.update(
-          {
-            system:
-            {
-              currency:
-              {
-                [currencyMap.get(flavour)] : total
-              }
-            }
-          })
-        }
-      }
-    })
+    var rollTableId = message.flags["core.RollTable"];
+    console.log(rollTableId)
+    var rollTable = game.tables.get(rollTableId)
+    console.log(rollTable)
   }
+  currencyFlavors.forEach(flavour =>
+  {
+    if (message.flavor != flavour)
+      return;
+
+    if (!message.isRoll && !message.isOwner && message.flavor == null)
+    return;
+
+    if (SETTINGS.gmOnly)
+      message._source.whisper = game.users.filter(u => u.isGM).map(u => u._id);
+
+    if (SETTINGS.autoAddItems)
+    {
+      if (message.speaker.actor == null)
+      {
+        ui.notifications.warn("Currency not automatically added as token wasn't selected. Try again or manually add the currency.");
+        return false;
+      }
+      var controlActor = game.actors.get(message.speaker.actor);
+      var currencyRef = currencyMap.get(flavour);
+      var total = controlActor.system.currency[currencyRef] + message.rolls[0]._total;
+      controlActor.update(
+      {
+        system:
+        {
+          currency:
+          {
+            [currencyRef] : total
+          }
+        }
+      })
+    }
+  })
 })
+
+// Hooks.on('createChatMessage', function(message, options, userId)
+// {
+//   console.log(message)
+// })
 
 function validateAction(controlToken, userTargets, actionName)
 {
@@ -164,7 +184,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
       return;
   }
 
-  //await socket.executeAsGM(addEffect, targetedToken.id, actionName);
+  await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
   if (actionName == harvestAction.name)
   {
@@ -175,7 +195,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
           lootMessage += `<li>@UUID[${item.uuid}]</li>`
 
           if(SETTINGS.autoAddItems)
-            socket.executeAsGM(addItemToActor, controlActor.id, item.id, item.pack);
+            addItemToActor(controlActor.id, item.id, item.pack);
         }
     });
 
@@ -190,25 +210,15 @@ async function handleAction(controlledToken, targetedToken, actionName)
   if (actionName == lootAction.name)
   {
     var canLoot = itemArr[0].description;
+    if (!canLoot && !SETTINGS.lootBeasts)
+      return;
     itemArr[0].description = ""
     var rollMode = "roll";
     if(SETTINGS.gmOnly)
       rollMode = "gmroll";
+
     await itemArr[0].draw({ rollMode: rollMode })
-
-    // var rollTable = await itemArr[0].roll();
-    // //console.log(rollTable)
-    // var lootRoll = new Roll(rollTable.results[0].text);
-    // console.log(lootRoll);
-    // var rollMessage = await lootRoll.toMessage(messageData);
-    // console.log(rollMessage);
-    //ChatMessage.create(rollMessage);
-    // var rolled = await lootRoll.roll();
-    // console.log(rolled);
-
     // roll.compendium.metadata.id == CONSTANTS.lootCompendiumId
-    // if(SETTINGS.autoAddItems)
-    // Add currency to actor
   }
 }
 
@@ -254,9 +264,9 @@ function addActionToActors()
         hasLoot = true;
     })
     if (!hasHarvest)
-      socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
+      addItemToActor(actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
     if (!hasLoot)
-      socket.executeAsGM(addItemToActor, actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
+      addItemToActor(actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
   })
   console.log("harvester | ready() - Added Actions to All Actors specified in Settings");
 }
