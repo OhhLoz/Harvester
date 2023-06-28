@@ -1,8 +1,8 @@
 export function registerSettings()
 {
     game.settings.register("harvester", "autoAddItems", {
-        name: "Automatically Assign Harvest Items",
-        hint: "All harvested loot is added to characters automatically.",
+        name: "Automatically Assign Items",
+        hint: "All harvested loot and looted currency is added to characters automatically.",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -11,8 +11,8 @@ export function registerSettings()
     });
 
     game.settings.register("harvester", "autoAddActionGroup", {
-        name: "Automatically Assign Harvest Action",
-        hint: "Assigns the Harvest Action to the selected group.",
+        name: "Automatically Assign Action",
+        hint: "Assigns the module Actions to the selected group.",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -27,7 +27,7 @@ export function registerSettings()
 
     game.settings.register("harvester", "npcOnlyHarvest", {
         name: "NPC Only Harvesting",
-        hint: "Only non player characters can be harvested.",
+        hint: "Only non player characters can be looted/harvested.",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -36,8 +36,8 @@ export function registerSettings()
     });
 
     game.settings.register("harvester", "requireDeadEffect", {
-        name: "Dead Harvesting",
-        hint: "Requires the 'Dead' status effect to harvest. (Otherwise only needs 0 HP)",
+        name: "Dead Effect Required",
+        hint: "Requires the 'Dead' status effect to Harvest/Loot. (Otherwise only needs 0 HP)",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -46,8 +46,8 @@ export function registerSettings()
     });
 
     game.settings.register("harvester", "gmOnly", {
-        name: "Only GM sees Harvest Results",
-        hint: "Hides the Harvest Results from all users except the GM",
+        name: "Other players cannot see results",
+        hint: "Hides the Results from all other users except the GM",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -56,13 +56,23 @@ export function registerSettings()
     });
 
     game.settings.register("harvester", "enforceRange", {
-        name: "Enforce Harvest range",
-        hint: "Force users to be in range to be able to harvest.",
+        name: "Enforce Action Range",
+        hint: "Force users to be in range to be able to use Harvest/Loot.",
         scope: "world",
         config: true,
         requiresReload: true,
         type: Boolean,
         default: true
+    });
+
+    game.settings.register("harvester", "lootBeasts", {
+        name: "Loot All Creatures",
+        hint: "Allow looting of all possible creatures including beasts",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false
     });
 
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
@@ -71,6 +81,7 @@ export function registerSettings()
     SETTINGS.npcOnlyHarvest = game.settings.get("harvester", "npcOnlyHarvest");
     SETTINGS.autoAddActionGroup = game.settings.get("harvester", "autoAddActionGroup");
     SETTINGS.enforceRange = game.settings.get("harvester", "enforceRange");
+    SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
 }
 
 export const SETTINGS =
@@ -80,7 +91,8 @@ export const SETTINGS =
     requireDeadEffect: true,
     npcOnlyHarvest: true,
     autoAddActionGroup: "",
-    enforceRange: true
+    enforceRange: true,
+    lootBeasts: false
 }
 
 export const CONSTANTS =
@@ -116,6 +128,15 @@ export const dragonIgnoreArr =
     "Topaz",
     "White"
 ]
+
+export const currencyMap = new Map(
+[
+    ["Copper", "cp"],
+    ["Silver", "sp"],
+    ["Electrum", "ep"],
+    ["Gold", "gp"],
+    ["Platinum", "pp"]
+])
 
 export const sizeHashMap = new Map(
 [

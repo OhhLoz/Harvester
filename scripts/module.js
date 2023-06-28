@@ -1,6 +1,6 @@
-import { registerSettings, SETTINGS, CONSTANTS, dragonIgnoreArr, sizeHashMap } from "./settings.js";
+import { registerSettings, SETTINGS, CONSTANTS, dragonIgnoreArr, sizeHashMap, currencyMap } from "./settings.js";
 
-var actionCompendium, harvestCompendium, lootCompendium, harvestAction, lootAction, socket;
+var actionCompendium, harvestCompendium, lootCompendium, harvestAction, lootAction, socket, currencyFlavors;
 
 Hooks.on("init", function()
 {
@@ -16,6 +16,8 @@ Hooks.on("ready", async function()
 
   harvestAction = actionCompendium.find(a => a.id == CONSTANTS.harvestActionId);
   lootAction = actionCompendium.find(a => a.id == CONSTANTS.lootActionId);
+
+  currencyFlavors = Array.from(currencyMap.keys());
 
   if (game.user?.isGM && !game.modules.get("socketlib")?.active)
     ui.notifications.error("socketlib must be installed & enabled for harvester to function correctly.", { permanent: true });
@@ -63,6 +65,24 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
     return;
 
   handleAction(item.parent.getActiveTokens()[0], game.user.targets.first(), item.name);
+})
+
+Hooks.on('preCreateChatMessage', function(message, options, userId)
+{
+  currencyFlavors.forEach(flavour => {
+    if (message.flavor == flavour)
+    {
+      if (SETTINGS.gmOnly)
+        message._source.whisper = game.users.filter(u => u.isGM).map(u => u._id);
+      if (SETTINGS.autoAddItems)
+      {
+        var controlActor = game.actors.get(message.speaker.actor);
+        console.log(message)
+        console.log(controlActor.system.currency[currencyMap.get(flavour)])
+        controlActor.system.currency[currencyMap.get(flavour)] += parseInt(message.content);
+      }
+    }
+  })
 })
 
 function validateAction(controlToken, userTargets, actionName)
@@ -123,7 +143,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
     return;
   }
 
-  if (actionName == "Harvest")
+  if (actionName == harvestAction.name)
   {
     var skillCheck = itemArr[0]?.system.description.unidentified.slice(0,3).toLowerCase();
     result = await controlActor.rollSkill(skillCheck, {chooseModifier: false});
@@ -131,9 +151,9 @@ async function handleAction(controlledToken, targetedToken, actionName)
       return;
   }
 
-  await socket.executeAsGM(addEffect, targetedToken.id, actionName);
+  //await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
-  if (actionName == "Harvest")
+  if (actionName == harvestAction.name)
   {
     itemArr.forEach(item =>
     {
@@ -154,15 +174,16 @@ async function handleAction(controlledToken, targetedToken, actionName)
     return;
   }
 
-  if (actionName == "Loot")
+  if (actionName == lootAction.name)
   {
     //const roll = await itemArr[0].draw({ rollMode: "gmroll" });
 
-    // console.log(itemArr[0])
     // var canLoot = itemArr[0].description;
     itemArr[0].description = ""
-    const roll = await itemArr[0].draw();
-    // console.log(roll)
+    var rollMode = "roll";
+    if(SETTINGS.gmOnly)
+      rollMode = "gmroll";
+    await itemArr[0].draw({ rollMode: rollMode })
 
     // roll.compendium.metadata.id == CONSTANTS.lootCompendiumId
     // if(SETTINGS.autoAddItems)
@@ -177,7 +198,7 @@ function searchCompendium(actor, actionName)
   if (actorName.includes("Dragon"))
     actorName = formatDragon(actorName);
 
-  if(actionName == "Harvest")
+  if(actionName == harvestAction.name)
   {
     harvestCompendium.forEach(doc =>
     {
@@ -185,7 +206,7 @@ function searchCompendium(actor, actionName)
         returnArr.push(doc);
     })
   }
-  else if (actionName == "Loot")
+  else if (actionName == lootAction.name)
   {
     lootCompendium.forEach(doc =>
     {
@@ -206,9 +227,9 @@ function addActionToActors()
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
     actor.items.forEach(item =>{
-      if(item.name === "Harvest" && item.system.source == "Harvester")
+      if(item.name == harvestAction.name && item.system.source == "Harvester")
         hasHarvest = true;
-      if(item.name === "Loot" && item.system.source == "Harvester")
+      if(item.name == lootAction.name && item.system.source == "Harvester")
         hasLoot = true;
     })
     if (!hasHarvest)
@@ -244,9 +265,9 @@ function formatDragon(actorName)
 function addEffect(targetTokenId, actionName)
 {
   var targetToken = canvas.tokens.get(targetTokenId)
-  if(actionName == "Harvest")
+  if(actionName == harvestAction.name)
     targetToken.toggleEffect(harvestAction.effects.get(CONSTANTS.harvestActionEffectId));
-  else if (actionName == "Loot")
+  else if (actionName == lootAction.name)
     targetToken.toggleEffect(lootAction.effects.get(CONSTANTS.lootActionEffectId));
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
