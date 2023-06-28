@@ -65,16 +65,6 @@ export function registerSettings()
         default: true
     });
 
-    game.settings.register("harvester", "lootBeasts", {
-        name: "Loot All Creatures",
-        hint: "Allow looting of all possible creatures including beasts",
-        scope: "world",
-        config: true,
-        requiresReload: true,
-        type: Boolean,
-        default: false
-    });
-
     game.settings.register("harvester", "disableLoot", {
         name: "Disable Looting mechanic",
         hint: "Disables the Loot mechanic, making it unavailable until enabled.",
@@ -85,14 +75,35 @@ export function registerSettings()
         default: false
     });
 
+    game.settings.register("harvester", "lootBeasts", {
+        name: "Loot All Creatures",
+        hint: "Allow looting of all possible creatures including beasts",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false
+    });
+
+    game.settings.register("harvester", "rollLootDice", {
+        name: "Allow users to roll their own loot dice",
+        hint: "Allows users to roll the dice for the looted monster",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: true
+    });
+
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
     SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
     SETTINGS.npcOnlyHarvest = game.settings.get("harvester", "npcOnlyHarvest");
     SETTINGS.autoAddActionGroup = game.settings.get("harvester", "autoAddActionGroup");
     SETTINGS.enforceRange = game.settings.get("harvester", "enforceRange");
-    SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
     SETTINGS.disableLoot = game.settings.get("harvester", "disableLoot");
+    SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
+    SETTINGS.rollLootDice = game.settings.get("harvester", "rollLootDice");
 }
 
 export const SETTINGS =
@@ -103,8 +114,9 @@ export const SETTINGS =
     npcOnlyHarvest: true,
     autoAddActionGroup: "",
     enforceRange: true,
+    disableLoot: false,
     lootBeasts: false,
-    disableLoot: false
+    rollLootDice: true
 }
 
 export const CONSTANTS =

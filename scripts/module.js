@@ -70,7 +70,7 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
 
 Hooks.on('preCreateChatMessage', function(message, options, userId)
 {
-  if(!SETTINGS.disableLoot)
+  if(!SETTINGS.disableLoot && SETTINGS.rollLootDice)
   {
     var isRollTable = "core.RollTable" in message.flags;
     if(isRollTable)
