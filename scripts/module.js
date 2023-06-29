@@ -167,30 +167,25 @@ async function handleAction(controlledToken, targetedToken, actionName)
     if(SETTINGS.gmOnly)
       rollMode = "gmroll";
 
-    if(SETTINGS.rollLootDice)
-      await itemArr[0].draw({ rollMode: rollMode })
-    else
-    {
-      var rollTable = itemArr[0].roll({async: false});
-      var rollMap = formatLootRoll(rollTable.results[0].text);
-      var lootMessage = "";
+    var rollTable = itemArr[0].roll({async: false});
+    var rollMap = formatLootRoll(rollTable.results[0].text);
+    var lootMessage = "";
 
-      currencyFlavors.forEach(currency => {
-        if(!rollMap.has(currency))
-          return;
+    currencyFlavors.forEach(currency => {
+      if(!rollMap.has(currency))
+        return;
 
-        var roll = new Roll(rollMap.get(currency))
-        var rollResult = roll.roll({async: false});
-        lootMessage += `<li>${rollResult.total} ${currency}</li>`
-        if(SETTINGS.autoAddItems)
-          updateActorCurrency(controlActor, currency, rollResult.total);
-      })
+      var roll = new Roll(rollMap.get(currency))
+      var rollResult = roll.roll({async: false});
+      lootMessage += `<li>${rollResult.total} ${currency}</li>`
+      if(SETTINGS.autoAddItems)
+        updateActorCurrency(controlActor, currency, rollResult.total);
+    })
 
-      messageData.content = `<h3>${actionName}ing</h3>After examining the corpse you find:<ul>${lootMessage}</ul>`;
+    messageData.content = `<h3>${actionName}ing</h3>After examining the corpse you find:<ul>${lootMessage}</ul>`;
 
-      ChatMessage.create(messageData);
-      return;
-    }
+    ChatMessage.create(messageData);
+    return;
   }
 }
 
