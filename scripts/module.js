@@ -161,13 +161,14 @@ async function handleAction(controlledToken, targetedToken, actionName)
       ChatMessage.create(messageData);
       return;
     }
+    console.log(itemArr[0]);
 
     itemArr[0].description = ""
     var rollMode = "roll";
     if(SETTINGS.gmOnly)
       rollMode = "gmroll";
 
-    var rollTable = itemArr[0].roll({async: false});
+    var rollTable = await itemArr[0].roll({async: false});
     var rollMap = formatLootRoll(rollTable.results[0].text);
     var lootMessage = "";
 
