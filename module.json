@@ -2,15 +2,12 @@
   "title": "Better Harvesting & Looting",
   "description": "A QoL module to improve the harvesting and looting experience.",
   "url": "https://github.com/OhhLoz/Harvester",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "authors":
   [
     {
       "name": "Loz",
       "url": "https://github.com/OhhLoz"
-    },
-    {
-      "name": "Geri"
     }
   ],
   "compatibility":
@@ -32,12 +29,21 @@
       "flags": {}
     },
     {
-      "name": "harvest-action",
-      "label": "Harvest Action",
-      "path": "packs/harvest-action.db",
+      "name": "actions",
+      "label": "Actions",
+      "path": "packs/actions.db",
       "system": "dnd5e",
       "private": false,
       "type": "Item",
+      "flags": {}
+    },
+    {
+      "name": "loot",
+      "label": "Loot",
+      "path": "packs/loot.db",
+      "system": "dnd5e",
+      "private": false,
+      "type": "RollTable",
       "flags": {}
     }
   ],
