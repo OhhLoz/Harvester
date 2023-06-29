@@ -21,8 +21,8 @@ Hooks.on("ready", async function()
 
   if (game.user?.isGM && !game.modules.get("socketlib")?.active)
     ui.notifications.error("socketlib must be installed & enabled for harvester to function correctly.", { permanent: true });
-  if (SETTINGS.autoAddActionGroup != "None")
-    addActionToActors();
+
+  addActionToActors();
 });
 
 Hooks.once("socketlib.ready", () => {
@@ -53,8 +53,6 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
     return false;
 
   item._source.system.description.value = `${item.name}ing ${game.user.targets.first().name}`
-  // item._source.system.formula = "1d20 + @skills.ath.bonus"
-  // item._source.system.actionType = "abil"
 
   // Add skill check instead of rolling later on, requires a custom roll formula as it needs skill rolls not ability scores, this displays "Other Formula" under the card which isnt ideal.
 })
@@ -65,35 +63,6 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
     return;
 
   handleAction(item.parent.getActiveTokens()[0], game.user.targets.first(), item.name);
-})
-
-Hooks.on('preCreateChatMessage', function(message, options, userId)
-{
-  if(!SETTINGS.disableLoot && SETTINGS.rollLootDice)
-  {
-    currencyFlavors.forEach(flavour =>
-    {
-      if (message.flavor != flavour)
-        return;
-
-      if (!message.isRoll && !message.isOwner && message.flavor == null)
-      return;
-
-      if (SETTINGS.gmOnly)
-        message._source.whisper = game.users.filter(u => u.isGM).map(u => u._id);
-
-      if (SETTINGS.autoAddItems)
-      {
-        if (message.speaker.actor == null)
-        {
-          ui.notifications.warn("Currency not automatically added as token wasn't selected. Try again or manually add the currency.");
-          return false;
-        }
-
-        updateActorCurrency(game.actors.get(message.speaker.actor), flavour, message.rolls[0]._total)
-      }
-    })
-  }
 })
 
 function validateAction(controlToken, userTargets, actionName)
@@ -161,7 +130,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
       return;
   }
 
-  await socket.executeAsGM(addEffect, targetedToken.id, actionName);
+  //await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
   if (actionName == harvestAction.name)
   {
@@ -202,7 +171,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
       await itemArr[0].draw({ rollMode: rollMode })
     else
     {
-      var rollTable = await itemArr[0].roll();
+      var rollTable = itemArr[0].roll({async: false});
       var rollMap = formatLootRoll(rollTable.results[0].text);
       var lootMessage = "";
 
@@ -284,6 +253,8 @@ function searchCompendium(actor, actionName)
 
 function addActionToActors()
 {
+  if (SETTINGS.autoAddActionGroup == "None")
+    return;
   var hasHarvest = false;
   var hasLoot = false;
   game.actors.forEach(actor =>

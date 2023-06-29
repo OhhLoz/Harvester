@@ -85,16 +85,6 @@ export function registerSettings()
         default: false
     });
 
-    game.settings.register("harvester", "rollLootDice", {
-        name: "Allow users to roll their own loot dice",
-        hint: "Allows users to roll the dice for the loot action",
-        scope: "world",
-        config: true,
-        requiresReload: true,
-        type: Boolean,
-        default: false
-    });
-
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
     SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
@@ -103,7 +93,6 @@ export function registerSettings()
     SETTINGS.enforceRange = game.settings.get("harvester", "enforceRange");
     SETTINGS.disableLoot = game.settings.get("harvester", "disableLoot");
     SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
-    SETTINGS.rollLootDice = game.settings.get("harvester", "rollLootDice");
 }
 
 export const SETTINGS =
@@ -115,8 +104,7 @@ export const SETTINGS =
     autoAddActionGroup: "",
     enforceRange: true,
     disableLoot: false,
-    lootBeasts: false,
-    rollLootDice: false
+    lootBeasts: false
 }
 
 export const CONSTANTS =
