@@ -128,12 +128,9 @@ async function handleAction(controlledToken, targetedToken, actionName)
     result = await controlActor.rollSkill(skillCheck, {chooseModifier: false});
     if (!result) // If user doesn't roll then do nothing
       return;
-  }
 
-  await socket.executeAsGM(addEffect, targetedToken.id, actionName);
+    await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
-  if (actionName == harvestAction.name)
-  {
     var lootMessage = "";
     itemArr.forEach(item =>
     {
@@ -153,15 +150,17 @@ async function handleAction(controlledToken, targetedToken, actionName)
     return;
   }
 
-  if (actionName == lootAction.name)
+  if (actionName == lootAction.name && !SETTINGS.disableLoot)
   {
     var normalLoot = itemArr[0].description;
     if (normalLoot == "false" && !SETTINGS.lootBeasts)
     {
+      await socket.executeAsGM(addEffect, targetedToken.id, actionName);
       ChatMessage.create(messageData);
       return;
     }
-    console.log(itemArr[0]);
+
+    await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
     itemArr[0].description = ""
     var rollMode = "roll";
@@ -235,7 +234,7 @@ function searchCompendium(actor, actionName)
         returnArr.push(doc);
     })
   }
-  else if (actionName == lootAction.name)
+  else if (actionName == lootAction.name && !SETTINGS.disableLoot)
   {
     lootCompendium.forEach(doc =>
     {
@@ -298,7 +297,7 @@ function addEffect(targetTokenId, actionName)
   var targetToken = canvas.tokens.get(targetTokenId)
   if(actionName == harvestAction.name)
     targetToken.toggleEffect(harvestAction.effects.get(CONSTANTS.harvestActionEffectId));
-  else if (actionName == lootAction.name)
+  else if (actionName == lootAction.name && !SETTINGS.disableLoot)
     targetToken.toggleEffect(lootAction.effects.get(CONSTANTS.lootActionEffectId));
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
