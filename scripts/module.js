@@ -130,7 +130,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
       return;
   }
 
-  //await socket.executeAsGM(addEffect, targetedToken.id, actionName);
+  await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
   if (actionName == harvestAction.name)
   {
