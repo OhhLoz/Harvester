@@ -87,12 +87,12 @@ export function registerSettings()
 
     game.settings.register("harvester", "rollLootDice", {
         name: "Allow users to roll their own loot dice",
-        hint: "Allows users to roll the dice for the looted monster",
+        hint: "Allows users to roll the dice for the loot action",
         scope: "world",
         config: true,
         requiresReload: true,
         type: Boolean,
-        default: true
+        default: false
     });
 
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
@@ -116,7 +116,7 @@ export const SETTINGS =
     enforceRange: true,
     disableLoot: false,
     lootBeasts: false,
-    rollLootDice: true
+    rollLootDice: false
 }
 
 export const CONSTANTS =

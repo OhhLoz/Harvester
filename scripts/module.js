@@ -64,7 +64,6 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
   if (item.system.source != "Harvester")
     return;
 
-  //console.log(item)
   handleAction(item.parent.getActiveTokens()[0], game.user.targets.first(), item.name);
 })
 
@@ -72,15 +71,6 @@ Hooks.on('preCreateChatMessage', function(message, options, userId)
 {
   if(!SETTINGS.disableLoot && SETTINGS.rollLootDice)
   {
-    var isRollTable = "core.RollTable" in message.flags;
-    if(isRollTable)
-    {
-      console.log(message)
-      var rollTableId = message.flags["core.RollTable"];
-      console.log(rollTableId)
-      var rollTable = game.tables.get(rollTableId)
-      console.log(rollTable)
-    }
     currencyFlavors.forEach(flavour =>
     {
       if (message.flavor != flavour)
@@ -99,28 +89,12 @@ Hooks.on('preCreateChatMessage', function(message, options, userId)
           ui.notifications.warn("Currency not automatically added as token wasn't selected. Try again or manually add the currency.");
           return false;
         }
-        var controlActor = game.actors.get(message.speaker.actor);
-        var currencyRef = currencyMap.get(flavour);
-        var total = controlActor.system.currency[currencyRef] + message.rolls[0]._total;
-        controlActor.update(
-        {
-          system:
-          {
-            currency:
-            {
-              [currencyRef] : total
-            }
-          }
-        })
+
+        updateActorCurrency(game.actors.get(message.speaker.actor), flavour, message.rolls[0]._total)
       }
     })
   }
 })
-
-// Hooks.on('createChatMessage', function(message, options, userId)
-// {
-//   console.log(message)
-// })
 
 function validateAction(controlToken, userTargets, actionName)
 {
@@ -167,7 +141,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
 
   var itemArr = [];
   var result;
-  var messageData = {content: {}, whisper: {}};
+  var messageData = {content: `<h3>${actionName}ing</h3><ul>${controlledToken.name} attempted to ${actionName.toLowerCase()} resources from ${targetedToken.name} but failed to find anything.`, whisper: {}};
   if (SETTINGS.gmOnly)
     messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
 
@@ -187,7 +161,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
       return;
   }
 
-  //await socket.executeAsGM(addEffect, targetedToken.id, actionName);
+  await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
   if (actionName == harvestAction.name)
   {
@@ -205,8 +179,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
 
     if (lootMessage)
       messageData.content = `<h3>${actionName}ing</h3><ul>${lootMessage}</ul>`;
-    else
-      messageData.content = `<h3>${actionName}ing</h3><ul>${controlledToken.name} attempted to ${actionName.toLowerCase()} resources from ${targetedToken.name} but failed to find anything.`
+
     ChatMessage.create(messageData);
     return;
   }
@@ -216,20 +189,70 @@ async function handleAction(controlledToken, targetedToken, actionName)
     var normalLoot = itemArr[0].description;
     if (normalLoot == "false" && !SETTINGS.lootBeasts)
     {
-      messageData.content = `<h3>${actionName}ing</h3><ul>${controlledToken.name} attempted to ${actionName.toLowerCase()} resources from ${targetedToken.name} but failed to find anything.`
       ChatMessage.create(messageData);
       return;
     }
-
 
     itemArr[0].description = ""
     var rollMode = "roll";
     if(SETTINGS.gmOnly)
       rollMode = "gmroll";
 
-    await itemArr[0].draw({ rollMode: rollMode })
-    // roll.compendium.metadata.id == CONSTANTS.lootCompendiumId
+    if(SETTINGS.rollLootDice)
+      await itemArr[0].draw({ rollMode: rollMode })
+    else
+    {
+      var rollTable = await itemArr[0].roll();
+      var rollMap = formatLootRoll(rollTable.results[0].text);
+      var lootMessage = "";
+
+      currencyFlavors.forEach(currency => {
+        if(!rollMap.has(currency))
+          return;
+
+        var roll = new Roll(rollMap.get(currency))
+        var rollResult = roll.roll({async: false});
+        lootMessage += `<li>${rollResult.total} ${currency}</li>`
+        if(SETTINGS.autoAddItems)
+          updateActorCurrency(controlActor, currency, rollResult.total);
+      })
+
+      messageData.content = `<h3>${actionName}ing</h3>After examining the corpse you find:<ul>${lootMessage}</ul>`;
+
+      ChatMessage.create(messageData);
+      return;
+    }
   }
+}
+
+function formatLootRoll(result)
+{
+  var rollTableResult = result.replace(/(\[\[\/r\s)?(\]\])?(\}$)?/g,"").split("}");
+  var returnMap = new Map();
+
+  for(var i = 0; i < rollTableResult.length; i++)
+  {
+    var extractedRoll = rollTableResult[i].split("{");
+    returnMap.set(extractedRoll[1], extractedRoll[0])
+  }
+  return returnMap;
+}
+
+function updateActorCurrency(actor, currencyLabel, toAdd)
+{
+  var currencyRef = currencyMap.get(currencyLabel);
+  var total = actor.system.currency[currencyRef] + toAdd;
+  actor.update(
+  {
+    system:
+    {
+      currency:
+      {
+        [currencyRef] : total
+      }
+    }
+  })
+  console.log(`harvester | Added ${toAdd} ${currencyLabel} to: ${actor.name}`);
 }
 
 function searchCompendium(actor, actionName)
