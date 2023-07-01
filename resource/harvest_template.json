@@ -1,0 +1,25 @@
+{
+  "name": "{{title}}",
+  "type": "loot",
+  "img": "{{img}}",
+  "system":
+  {
+    "description":
+    {
+      "value": "{{description}}",
+      "chat": "{{dc}}",
+      "unidentified": "{{skill}}"
+    },
+    "source": "{{monster}}",
+    "quantity": 1,
+    "weight": {{weight}},
+    "price":
+    {
+      "value": {{price}},
+      "denomination": "{{denomination}}"
+    },
+    "rarity": "",
+    "identified": true
+  },
+  "effects": []
+}
