@@ -14,8 +14,8 @@ Hooks.on("ready", async function()
   harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
   lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId).getDocuments();
 
-  harvestAction = actionCompendium.find(a => a.id == CONSTANTS.harvestActionId);
-  lootAction = actionCompendium.find(a => a.id == CONSTANTS.lootActionId);
+  harvestAction = await actionCompendium.find(a => a.id == CONSTANTS.harvestActionId);
+  lootAction = await actionCompendium.find(a => a.id == CONSTANTS.lootActionId);
 
   currencyFlavors = Array.from(currencyMap.keys());
 
@@ -139,7 +139,7 @@ async function handleAction(controlledToken, targetedToken, actionName)
           lootMessage += `<li>@UUID[${item.uuid}]</li>`
 
           if(SETTINGS.autoAddItems)
-            addItemToActor(controlActor.id, item.id, item.pack);
+            addItemToActor(controlActor, item);
         }
     });
 
@@ -163,9 +163,6 @@ async function handleAction(controlledToken, targetedToken, actionName)
     await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
     itemArr[0].description = ""
-    var rollMode = "roll";
-    if(SETTINGS.gmOnly)
-      rollMode = "gmroll";
 
     var rollTable = await itemArr[0].roll({async: false});
     var rollMap = formatLootRoll(rollTable.results[0].text);
@@ -250,22 +247,29 @@ function addActionToActors()
 {
   if (SETTINGS.autoAddActionGroup == "None")
     return;
-  var hasHarvest = false;
-  var hasLoot = false;
+
   game.actors.forEach(actor =>
   {
+    var hasHarvest = false;
+    var hasLoot = false;
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
     actor.items.forEach(item =>{
       if(item.name == harvestAction.name && item.system.source == "Harvester")
+      {
+        console.log(actor.name + " has harvest");
         hasHarvest = true;
+      }
       if(item.name == lootAction.name && item.system.source == "Harvester")
+      {
+        console.log(actor.name + " has loot");
         hasLoot = true;
+      }
     })
     if (!hasHarvest)
-      addItemToActor(actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
+      addItemToActor(actor, harvestAction);
     if (!hasLoot && !SETTINGS.disableLoot)
-      addItemToActor(actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
+      addItemToActor(actor, lootAction);
   })
   console.log("harvester | ready() - Added Actions to All Actors specified in Settings");
 }
@@ -302,10 +306,8 @@ function addEffect(targetTokenId, actionName)
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
-function addItemToActor(actorId, itemId, packId)
+function addItemToActor(actor, item)
 {
-  var actor = game.actors.get(actorId);
-  var item = game.packs.get(packId).get(itemId);
   actor.createEmbeddedDocuments('Item', [item]);
   console.log(`harvester | Added item: ${item.name} to ${actor.name}`);
 }
