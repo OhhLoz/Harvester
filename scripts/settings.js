@@ -101,7 +101,7 @@ export const SETTINGS =
     gmOnly: false,
     requireDeadEffect: true,
     npcOnlyHarvest: true,
-    autoAddActionGroup: "",
+    autoAddActionGroup: "PCOnly",
     enforceRange: true,
     disableLoot: false,
     lootBeasts: false
