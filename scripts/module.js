@@ -256,15 +256,9 @@ function addActionToActors()
       return;
     actor.items.forEach(item =>{
       if(item.name == harvestAction.name && item.system.source == "Harvester")
-      {
-        console.log(actor.name + " has harvest");
         hasHarvest = true;
-      }
       if(item.name == lootAction.name && item.system.source == "Harvester")
-      {
-        console.log(actor.name + " has loot");
         hasLoot = true;
-      }
     })
     if (!hasHarvest)
       addItemToActor(actor, harvestAction);
