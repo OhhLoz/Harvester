@@ -45,6 +45,15 @@
       "private": false,
       "type": "RollTable",
       "flags": {}
+    },
+    {
+      "name": "license",
+      "label": "License",
+      "path": "packs/license.db",
+      "system": "dnd5e",
+      "private": false,
+      "type": "JournalEntry",
+      "flags": {}
     }
   ],
   "relationships": {
