@@ -80,7 +80,7 @@ function validateAction(controlToken, userTargets, actionName)
     ui.notifications.warn("You must be in range to " + actionName);
     return false;
   }
-  if(targetedToken.document.actorData.system.attributes.hp.value != 0)
+  if(targetedToken.document.delta.system.attributes.hp.value != 0)
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
     return false;
@@ -271,9 +271,9 @@ function addActionToActors()
 function checkEffect(token, effectName)
 {
   var returnBool = false;
-  token.document.actorData.effects.forEach(element =>
+  token.document.delta.effects.forEach(element =>
   {
-    if (element.label == effectName)
+    if (element.name == effectName)
       returnBool = true;
   });
   return returnBool;
