@@ -38,9 +38,9 @@ Hooks.on("createActor", (actor, data, options, id) =>
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
 
-    addItemToActor(actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
+    addItemToActor(actor, harvestAction);
     if(!SETTINGS.disableLoot)
-      addItemToActor(actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
+      addItemToActor(actor, lootAction);
   }
 })
 
