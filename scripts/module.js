@@ -33,14 +33,15 @@ Hooks.once("socketlib.ready", () => {
 
 Hooks.on("createActor", (actor, data, options, id) =>
 {
+  if (game.users.activeGM.id !== game.user.id) return
   if (SETTINGS.autoAddActionGroup != "None")
   {
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
 
-    addItemToActor(actor.id, CONSTANTS.harvestActionId, CONSTANTS.actionCompendiumId);
+    addItemToActor(actor, harvestAction);
     if(!SETTINGS.disableLoot)
-      addItemToActor(actor.id, CONSTANTS.lootActionId, CONSTANTS.actionCompendiumId);
+      addItemToActor(actor, lootAction);
   }
 })
 
@@ -292,11 +293,11 @@ function formatDragon(actorName)
 
 function addEffect(targetTokenId, actionName)
 {
-  var targetToken = canvas.tokens.get(targetTokenId)
+  var targetToken = canvas.tokens.get(targetTokenId);
   if(actionName == harvestAction.name)
-    targetToken.toggleEffect(harvestAction.effects.get(CONSTANTS.harvestActionEffectId));
+    targetToken.document.toggleActiveEffect({id: CONSTANTS.harvestActionEffectId, icon: "icons/svg/pawprint.svg", label: "Harvested"}, {active: true});
   else if (actionName == lootAction.name && !SETTINGS.disableLoot)
-    targetToken.toggleEffect(lootAction.effects.get(CONSTANTS.lootActionEffectId));
+    targetToken.document.toggleActiveEffect({id: CONSTANTS.lootActionEffectId, icon: "icons/svg/coins.svg", label: "Looted"}, {active: true});
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
