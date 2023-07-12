@@ -22,7 +22,8 @@ Hooks.on("ready", async function()
   if (game.user?.isGM && !game.modules.get("socketlib")?.active)
     ui.notifications.error("socketlib must be installed & enabled for harvester to function correctly.", { permanent: true });
 
-  addActionToActors();
+  if (game.users.activeGM.id !== game.user.id) return
+    addActionToActors();
 });
 
 Hooks.once("socketlib.ready", () => {
@@ -80,7 +81,7 @@ function validateAction(controlToken, userTargets, actionName)
     ui.notifications.warn("You must be in range to " + actionName);
     return false;
   }
-  if(targetedToken.document.actorData.system.attributes.hp.value != 0)
+  if(targetedToken.document.delta.system.attributes.hp.value != 0)
   {
     ui.notifications.warn(targetedToken.name + " is not dead");
     return false;
@@ -273,9 +274,9 @@ function addActionToActors()
 function checkEffect(token, effectName)
 {
   var returnBool = false;
-  token.document.actorData.effects.forEach(element =>
+  token.document.delta.effects.forEach(element =>
   {
-    if (element.label == effectName)
+    if (element.name == effectName)
       returnBool = true;
   });
   return returnBool;
@@ -294,11 +295,11 @@ function formatDragon(actorName)
 
 function addEffect(targetTokenId, actionName)
 {
-  var targetToken = canvas.tokens.get(targetTokenId)
+  var targetToken = canvas.tokens.get(targetTokenId);
   if(actionName == harvestAction.name)
-    targetToken.toggleEffect(harvestAction.effects.get(CONSTANTS.harvestActionEffectId));
+    targetToken.document.toggleActiveEffect({id: CONSTANTS.harvestActionEffectId, icon: "icons/svg/pawprint.svg", label: "Harvested"}, {active: true});
   else if (actionName == lootAction.name && !SETTINGS.disableLoot)
-    targetToken.toggleEffect(lootAction.effects.get(CONSTANTS.lootActionEffectId));
+    targetToken.document.toggleActiveEffect({id: CONSTANTS.lootActionEffectId, icon: "icons/svg/coins.svg", label: "Looted"}, {active: true});
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
