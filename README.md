@@ -1,4 +1,4 @@
-![All Releases](https://img.shields.io/github/downloads/ohhloz/harvester/total.svg) ![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fharvester&colorB=03ff1c&style=for-the-badge)
+![All Releases](https://img.shields.io/github/downloads/ohhloz/harvester/total.svg) [![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fharvester&colorB=03ff1c&style=for-the-badge)](https://forge-vtt.com/bazaar#package=harvester)
 # Better Harvesting and Looting
 A QoL FoundryVTT module to improve the harvesting and looting experience.
 
