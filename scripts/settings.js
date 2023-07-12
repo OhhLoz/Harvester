@@ -85,6 +85,16 @@ export function registerSettings()
         default: false
     });
 
+    game.settings.register("harvester", "customCompendium", {
+        name: "Alternate Custom Compendium Name",
+        hint: "Provide the alternate compendium name instead of the default 'Custom', leave blank to use default",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: String,
+        default: ""
+    });
+
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
     SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
@@ -93,6 +103,7 @@ export function registerSettings()
     SETTINGS.enforceRange = game.settings.get("harvester", "enforceRange");
     SETTINGS.disableLoot = game.settings.get("harvester", "disableLoot");
     SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
+    SETTINGS.customCompendium = game.settings.get("harvester", "customCompendium");
 }
 
 export const SETTINGS =
@@ -104,7 +115,8 @@ export const SETTINGS =
     autoAddActionGroup: "PCOnly",
     enforceRange: true,
     disableLoot: false,
-    lootBeasts: false
+    lootBeasts: false,
+    customCompendium: ""
 }
 
 export const CONSTANTS =
