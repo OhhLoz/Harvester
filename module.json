@@ -2,7 +2,7 @@
   "title": "Better Harvesting & Looting",
   "description": "A QoL module to improve the harvesting and looting experience.",
   "url": "https://github.com/OhhLoz/Harvester",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "authors":
   [
     {
@@ -13,7 +13,8 @@
   "compatibility":
   {
     "minimum": "10",
-    "verified": "10.291"
+    "verified": "10.303",
+    "maximum" : "10.303"
   },
   "scripts": [],
   "esmodules": ["scripts/module.js"],
@@ -62,7 +63,7 @@
         "id": "dnd5e",
         "type": "system",
         "compatibility": {
-            "minimum": "2.1.5"
+            "minimum": "2.2.2"
         }
       }
     ],
@@ -74,7 +75,6 @@
     ]
   },
   "id": "harvester",
-  "license" : "https://creativecommons.org/licenses/by/4.0/legalcode",
-  "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.3.3/module.json",
-  "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.3.3/harvester.zip"
+  "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.3.4/module.json",
+  "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.3.4/harvester.zip"
 }
