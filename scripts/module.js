@@ -38,9 +38,9 @@ Hooks.on("createActor", (actor, data, options, id) =>
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
 
-    addItemToActor(actor, harvestAction);
+    addItemToActor(actor, [harvestAction]);
     if(!SETTINGS.disableLoot)
-      addItemToActor(actor, lootAction);
+      addItemToActor(actor, [lootAction]);
   }
 })
 
@@ -263,9 +263,9 @@ function addActionToActors()
         hasLoot = true;
     })
     if (!hasHarvest)
-      addItemToActor(actor, harvestAction);
+      addItemToActor(actor, [harvestAction]);
     if (!hasLoot && !SETTINGS.disableLoot)
-      addItemToActor(actor, lootAction);
+      addItemToActor(actor, [lootAction]);
   })
   console.log("harvester | ready() - Added Actions to All Actors specified in Settings");
 }
