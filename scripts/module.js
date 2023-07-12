@@ -22,7 +22,8 @@ Hooks.on("ready", async function()
   if (game.user?.isGM && !game.modules.get("socketlib")?.active)
     ui.notifications.error("socketlib must be installed & enabled for harvester to function correctly.", { permanent: true });
 
-  addActionToActors();
+  if (game.users.activeGM.id !== game.user.id) return
+    addActionToActors();
 });
 
 Hooks.once("socketlib.ready", () => {
@@ -33,7 +34,6 @@ Hooks.once("socketlib.ready", () => {
 
 Hooks.on("createActor", (actor, data, options, id) =>
 {
-  if (game.users.activeGM.id !== game.user.id) return
   if (SETTINGS.autoAddActionGroup != "None")
   {
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
@@ -133,16 +133,18 @@ async function handleAction(controlledToken, targetedToken, actionName)
     await socket.executeAsGM(addEffect, targetedToken.id, actionName);
 
     var lootMessage = "";
+    var successArr = []
     itemArr.forEach(item =>
     {
-        if (parseInt(item.system.description.chat) <= result.total)
-        {
-          lootMessage += `<li>@UUID[${item.uuid}]</li>`
-
-          if(SETTINGS.autoAddItems)
-            addItemToActor(controlActor, item);
-        }
+      if (parseInt(item.system.description.chat) <= result.total)
+      {
+        lootMessage += `<li>@UUID[${item.uuid}]</li>`
+        successArr.push(item.toObject());
+      }
     });
+
+    if(SETTINGS.autoAddItems)
+      addItemToActor(controlActor, successArr);
 
     if (lootMessage)
       messageData.content = `<h3>${actionName}ing</h3><ul>${lootMessage}</ul>`;
@@ -303,6 +305,6 @@ function addEffect(targetTokenId, actionName)
 
 function addItemToActor(actor, item)
 {
-  actor.createEmbeddedDocuments('Item', [item]);
-  console.log(`harvester | Added item: ${item.name} to ${actor.name}`);
+  actor.createEmbeddedDocuments('Item', item);
+  console.log(`harvester | Added ${item.length} items to ${actor.name}`);
 }

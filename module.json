@@ -63,7 +63,7 @@
         "id": "dnd5e",
         "type": "system",
         "compatibility": {
-            "minimum": "2.1.5"
+            "minimum": "2.2.2"
         }
       }
     ],
