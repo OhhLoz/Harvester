@@ -19,6 +19,7 @@
   "scripts": [],
   "esmodules": ["scripts/module.js"],
   "socket": true,
+  "persistentStorage": true,
   "packs": [
     {
       "name": "harvest",
@@ -50,7 +51,7 @@
     {
       "name": "custom",
       "label": "Custom",
-      "path": "packs/custom.db",
+      "path": "storage/custom.db",
       "system": "dnd5e",
       "private": false,
       "type": "Actor",
