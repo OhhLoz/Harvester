@@ -54,6 +54,12 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
 
   if(!validateAction(item.parent.getActiveTokens()[0], game.user.targets, item.name))
     return false;
+
+  item.setFlag("harvester", "targetId", game.user.targets.first().id)
+  item.setFlag("harvester", "controlId", item.parent.getActiveTokens()[0].id)
+  game.packs.get(CONSTANTS.customCompendiumId).getDocuments().then(result => {
+    customCompendium = result;
+  });
 })
 
 Hooks.on('dnd5e.useItem', function(item, config, options)
@@ -61,16 +67,25 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
   if (item.system.source != "Harvester" || item.name == harvestAction.name || SETTINGS.disableLoot)
     return;
 
-  handleLoot(item.parent.getActiveTokens()[0], game.user.targets.first(), item.name);
+  handleLoot(item);
 })
 
 Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
 {
-  if (item.system.source != "Harvester" || item.name == lootAction.name)
+  if (item.system.source != "Harvester")
     return;
 
-  item.system.description.chat = game.user.targets.first().id
-  var matchedItems = searchCompendium(game.user.targets.first(), item.name)
+  var targetToken = game.user.targets.first();
+
+  var matchedItems = searchCompendium(targetToken, item.name)
+
+  if(item.name == lootAction.name)
+  {
+    if(matchedItems.length == 0)
+      chatData.content = chatData.content.replace("Scavenge valuables from corpses.",`After examining the corpse you realise there is nothing you can loot.`)
+
+    return;
+  }
 
   if(matchedItems.length != 0)
   {
@@ -82,41 +97,28 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
       skillCheckVerbose = matchedItems[0].items.find(element => element.type == "feat").name
 
     skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose)
-    item.system.formula = `1d20 + @skills.${skillCheck}.total`
-    chatData.content = chatData.content.replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Check</button>`).replace("Harvest valuable materials from corpses.",`${item.name}ing ${game.user.targets.first().name}`)
+    item.update({system: {formula: `1d20 + @skills.${skillCheck}.total`}})
+    chatData.content = chatData.content.replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`).replace("Harvest valuable materials from corpses.",`${item.name}ing ${targetToken.name}`)
   }
   else
   {
-    item.system.formula = ""
+    item.update({system: {formula: ""}})
+    item.setFlag("harvester", "targetId", "")
     chatData.content = chatData.content.replace("Harvest valuable materials from corpses.",`After examining the corpse you realise there is nothing you can harvest.`)
+    socket.executeAsGM(addEffect, targetToken.id, "Harvest");
   }
 })
 
-Hooks.on('dnd5e.preRollFormula', function(item, options)
+Hooks.on('dnd5e.rollFormula', function(item, roll)
 {
   if (item.system.source != "Harvester")
     return;
 
-  if(!validateAction(item.parent.getActiveTokens()[0], game.user.targets, item.name))
-    return false;
+  var targetToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
+  var controlToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
+  var controlActor = game.actors.get(controlToken.document.actorId);
 
-  if(game.user.targets.first().id != item.system.description.chat)
-  {
-    ui.notifications.warn("Please target the same creature");
-    return false;
-  }
-})
-
-Hooks.on('dnd5e.rollFormula', async function(item, roll)
-{
-  if (item.system.source != "Harvester")
-    return;
-
-  var targetToken = game.user.targets.first();
-  var controlActor = await game.actors.get(item.parent.getActiveTokens()[0].document.actorId);
-  customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
-
-  var matchedItems = await searchCompendium(targetToken, item.name)
+  var matchedItems = searchCompendium(targetToken, item.name)
 
   socket.executeAsGM(addEffect, targetToken.id, "Harvest");
 
@@ -195,23 +197,24 @@ function validateAction(controlToken, userTargets, actionName)
   return true;
 }
 
-async function handleLoot(controlledToken, targetedToken, actionName)
+function handleLoot(item)
 {
-  var targetActor = await game.actors.get(targetedToken.document.actorId);
-  var controlActor = await game.actors.get(controlledToken.document.actorId);
+  var targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
+  var controlledToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
+  var targetActor = game.actors.get(targetedToken.document.actorId);
+  var controlActor = game.actors.get(controlledToken.document.actorId);
 
-  var itemArr = [];
-  var messageData = {content: `<h3>${actionName}ing</h3><ul>${controlledToken.name} attempted to ${actionName.toLowerCase()} resources from ${targetedToken.name} but failed to find anything.`, whisper: {}};
+  var messageData = {content: `<h3>Looting</h3><ul>${controlledToken.name} attempted to loot resources from ${targetedToken.name} but failed to find anything.`, whisper: {}};
   if (SETTINGS.gmOnly)
     messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
 
-  itemArr = await searchCompendium(targetActor, actionName);
+  var itemArr = searchCompendium(targetActor, lootAction.name);
 
-  socket.executeAsGM(addEffect, targetedToken.id, actionName);
+  socket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
 
   if (itemArr.length == 0)
   {
-    ChatMessage.create({content: `<h3>${actionName}ing</h3>After examining the corpse you realise there is nothing you can ${actionName.toLowerCase()}.`});
+    item.setFlag("harvester", "targetId", "")
     return;
   }
 
@@ -224,25 +227,26 @@ async function handleLoot(controlledToken, targetedToken, actionName)
 
   itemArr[0].description = ""
 
-  var rollTable = await itemArr[0].roll({async: false});
-  var rollMap = formatLootRoll(rollTable.results[0].text);
-  var lootMessage = "";
+  itemArr[0].roll({async: false}).then(result => {
+    var rollMap = formatLootRoll(result.results[0].text);
+    var lootMessage = "";
 
-  currencyFlavors.forEach(currency => {
-    if(!rollMap.has(currency))
-      return;
+    currencyFlavors.forEach(currency => {
+      if(!rollMap.has(currency))
+        return;
 
-    var roll = new Roll(rollMap.get(currency))
-    var rollResult = roll.roll({async: false});
-    lootMessage += `<li>${rollResult.total} ${currency}</li>`
-    if(SETTINGS.autoAddItems)
-      updateActorCurrency(controlActor, currency, rollResult.total);
-  })
+      var roll = new Roll(rollMap.get(currency))
+      var rollResult = roll.roll({async: false});
+      lootMessage += `<li>${rollResult.total} ${currency}</li>`
+      if(SETTINGS.autoAddItems)
+        updateActorCurrency(controlActor, currency, rollResult.total);
+    })
 
-  messageData.content = `<h3>${actionName}ing</h3>After examining the corpse you find:<ul>${lootMessage}</ul>`;
+    messageData.content = `<h3>Looting</h3>After examining the corpse you find:<ul>${lootMessage}</ul>`;
 
-  ChatMessage.create(messageData);
-  return;
+    ChatMessage.create(messageData);
+    return;
+  });
 }
 
 function formatLootRoll(result)
@@ -372,7 +376,8 @@ function resetToDefault(item)
   if(item.name == lootAction.name)
     actionDescription = `Scavenge valuables from corpses.`
   item.update({
-    system: {formula: "", description: {chat: "", value: actionDescription}}
+    flags: {harvester: {targetId: "", controlId: ""}},
+    system: {formula: "", description: {value: actionDescription}}
   })
 }
 
