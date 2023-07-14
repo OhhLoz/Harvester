@@ -52,11 +52,20 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
   if (item.system.source != "Harvester")
     return;
 
-  if(!validateAction(item.parent.getActiveTokens()[0], game.user.targets, item.name))
+  if (game.user.targets.size != 1)
+  {
+    ui.notifications.warn("Please target only one token.");
+    return false;
+  }
+
+  var targetedToken = game.user.targets.first();
+  var controlToken = item.parent.getActiveTokens()[0];
+
+  if(!validateAction(controlToken, targetedToken, item.name))
     return false;
 
-  item.setFlag("harvester", "targetId", game.user.targets.first().id)
-  item.setFlag("harvester", "controlId", item.parent.getActiveTokens()[0].id)
+  item.setFlag("harvester", "targetId", targetedToken.id)
+  item.setFlag("harvester", "controlId", controlToken.id)
   game.packs.get(CONSTANTS.customCompendiumId).getDocuments().then(result => {
     customCompendium = result;
   });
@@ -98,7 +107,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
 
     skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose)
     item.update({system: {formula: `1d20 + @skills.${skillCheck}.total`}})
-    chatData.content = chatData.content.replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`).replace("Harvest valuable materials from corpses.",`${item.name}ing ${targetToken.name}`)
+    chatData.content = chatData.content.replace(`<button data-action="formula">Other Formula</button>`, ``).replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`).replace("Harvest valuable materials from corpses.",`Harvesting ${targetToken.name}`)
   }
   else
   {
@@ -107,6 +116,18 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
     chatData.content = chatData.content.replace("Harvest valuable materials from corpses.",`After examining the corpse you realise there is nothing you can harvest.`)
     socket.executeAsGM(addEffect, targetToken.id, "Harvest");
   }
+})
+
+Hooks.on('dnd5e.preRollFormula', function(item, options)
+{
+  if (item.system.source != "Harvester")
+    return;
+
+  var targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
+  var controlledToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
+
+  if(!validateAction(controlledToken, targetedToken, item.name))
+    return false;
 })
 
 Hooks.on('dnd5e.rollFormula', function(item, roll)
@@ -159,14 +180,8 @@ Hooks.on('dnd5e.rollFormula', function(item, roll)
   return;
 })
 
-function validateAction(controlToken, userTargets, actionName)
+function validateAction(controlToken, targetedToken, actionName)
 {
-  if (userTargets.size != 1)
-  {
-    ui.notifications.warn("Please target only one token.");
-    return false;
-  }
-  var targetedToken = userTargets.first();
   var measuredDistance = canvas.grid.measureDistance(controlToken.center, targetedToken.center);
   var targetSize = CONSTANTS.sizeHashMap.get(targetedToken.actor.system.traits.size)
   if(measuredDistance > targetSize && SETTINGS.enforceRange)
