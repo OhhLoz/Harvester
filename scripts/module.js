@@ -90,6 +90,8 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
   {
     if(matchedItems.length == 0)
       chatData.content = chatData.content.replace("Scavenge valuables from corpses.",`After examining the corpse you realise there is nothing you can loot.`)
+    else
+      chatData.content = chatData.content.replace("Scavenge valuables from corpses.",`Looting ${targetToken.name}`)
 
     return;
   }

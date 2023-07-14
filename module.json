@@ -2,7 +2,7 @@
   "title": "Better Harvesting & Looting",
   "description": "A QoL module to improve the harvesting and looting experience.",
   "url": "https://github.com/OhhLoz/Harvester",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "authors":
   [
     {
@@ -84,6 +84,6 @@
     ]
   },
   "id": "harvester",
-  "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.3.7/module.json",
-  "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.3.7/harvester.zip"
+  "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.3.8/module.json",
+  "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.3.8/harvester.zip"
 }
