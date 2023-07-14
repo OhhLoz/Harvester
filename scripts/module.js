@@ -240,7 +240,7 @@ function handleLoot(item)
     return;
   }
 
-  itemArr[0].description = ""
+  itemArr[0].description = "" //remove the boolean present in the description which describes if the entry is a beast that doesn't normally have loot
 
   itemArr[0].roll({async: false}).then(result => {
     var rollMap = formatLootRoll(result.results[0].text);
