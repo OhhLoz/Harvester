@@ -31,7 +31,7 @@ Hooks.on("ready", async function()
 Hooks.once("socketlib.ready", () => {
 	socket = globalThis.socketlib.registerModule("harvester");
 	socket.register("addEffect", addEffect);
-  console.log("harvester | Registed socketlib functions");
+  console.log("harvester | Registered socketlib functions");
 });
 
 Hooks.on("createActor", (actor, data, options, id) =>
@@ -304,32 +304,27 @@ function searchCompendium(actor, actionName)
 
   if(actionName == harvestAction.name)
   {
-    customCompendium.forEach(doc =>
-    {
-      if (doc.name == actor.name)
-      {
-        returnArr.push(doc);
-      }
-    })
+    returnArr = checkCompendium(customCompendium, "name", actor.name)
 
     if (returnArr.length != 0)
       return returnArr;
 
-    harvestCompendium.forEach(doc =>
-    {
-      if (doc.system.source == actorName)
-        returnArr.push(doc);
-    })
+    returnArr = checkCompendium(harvestCompendium, "system.source", actorName)
   }
   else if (actionName == lootAction.name && !SETTINGS.disableLoot)
-  {
-    lootCompendium.forEach(doc =>
-    {
-      if (doc.name == actorName)
-        returnArr.push(doc);
-    })
-  }
+    returnArr = checkCompendium(lootCompendium, "name", actorName)
 
+  return returnArr;
+}
+
+function checkCompendium(compendium, checkProperty, matchProperty)
+{
+  var returnArr = [];
+  compendium.forEach(doc =>
+  {
+    if (eval(`doc.${checkProperty}`) == matchProperty)
+      returnArr.push(doc);
+  })
   return returnArr;
 }
 
@@ -340,10 +335,12 @@ function addActionToActors()
 
   game.actors.forEach(actor =>
   {
-    var hasHarvest = false;
-    var hasLoot = false;
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
+
+    var hasHarvest = false;
+    var hasLoot = false;
+
     actor.items.forEach(item =>{
       if(item.name == harvestAction.name && item.system.source == "Harvester")
       {
@@ -356,6 +353,7 @@ function addActionToActors()
         resetToDefault(item)
       }
     })
+
     if (!hasHarvest)
       addItemToActor(actor, [harvestAction]);
     if (!hasLoot && !SETTINGS.disableLoot)
