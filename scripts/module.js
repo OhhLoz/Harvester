@@ -1,7 +1,7 @@
 import { registerSettings, SETTINGS } from "./settings.js";
 import { CONSTANTS } from "./constants.js";
 
-var actionCompendium, harvestCompendium, lootCompendium, customCompendium, harvestAction, lootAction, socket, currencyFlavors;
+var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestAction, lootAction, socket, currencyFlavors;
 
 Hooks.on("init", function()
 {
@@ -15,6 +15,7 @@ Hooks.on("ready", async function()
   harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
   lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId).getDocuments();
   customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
+  customLootCompendium = await game.packs.get(CONSTANTS.customLootCompendiumId).getDocuments();
 
   harvestAction = await actionCompendium.find(a => a.id == CONSTANTS.harvestActionId);
   lootAction = await actionCompendium.find(a => a.id == CONSTANTS.lootActionId);
@@ -31,7 +32,7 @@ Hooks.on("ready", async function()
 Hooks.once("socketlib.ready", () => {
 	socket = globalThis.socketlib.registerModule("harvester");
 	socket.register("addEffect", addEffect);
-  console.log("harvester | Registed socketlib functions");
+  console.log("harvester | Registered socketlib functions");
 });
 
 Hooks.on("createActor", (actor, data, options, id) =>
@@ -68,6 +69,9 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
   item.setFlag("harvester", "controlId", controlToken.id)
   game.packs.get(CONSTANTS.customCompendiumId).getDocuments().then(result => {
     customCompendium = result;
+  });
+  game.packs.get(CONSTANTS.customLootCompendiumId).getDocuments().then(result => {
+    customLootCompendium = result;
   });
 })
 
@@ -298,38 +302,41 @@ function updateActorCurrency(actor, currencyLabel, toAdd)
 function searchCompendium(actor, actionName)
 {
   var returnArr = [];
-  var actorName = actor.name;
-  if (actorName.includes("Dragon"))
-    actorName = formatDragon(actorName);
 
   if(actionName == harvestAction.name)
   {
-    customCompendium.forEach(doc =>
-    {
-      if (doc.name == actor.name)
-      {
-        returnArr.push(doc);
-      }
-    })
+    returnArr = checkCompendium(customCompendium, "name", actor.name)
 
     if (returnArr.length != 0)
       return returnArr;
 
-    harvestCompendium.forEach(doc =>
-    {
-      if (doc.system.source == actorName)
-        returnArr.push(doc);
-    })
+    returnArr = checkCompendium(harvestCompendium, "system.source", actorName)
   }
   else if (actionName == lootAction.name && !SETTINGS.disableLoot)
   {
-    lootCompendium.forEach(doc =>
-    {
-      if (doc.name == actorName)
-        returnArr.push(doc);
-    })
+    returnArr = checkCompendium(customLootCompendium, "name", actor.name)
+
+    if (returnArr.length != 0)
+      return returnArr;
+
+    var actorName = actor.name;
+    if (actorName.includes("Dragon"))
+      actorName = formatDragon(actorName);
+
+    returnArr = checkCompendium(lootCompendium, "name", actorName)
   }
 
+  return returnArr;
+}
+
+function checkCompendium(compendium, checkProperty, matchProperty)
+{
+  var returnArr = [];
+  compendium.forEach(doc =>
+  {
+    if (eval(`doc.${checkProperty}`) == matchProperty)
+      returnArr.push(doc);
+  })
   return returnArr;
 }
 
@@ -340,10 +347,12 @@ function addActionToActors()
 
   game.actors.forEach(actor =>
   {
-    var hasHarvest = false;
-    var hasLoot = false;
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
+
+    var hasHarvest = false;
+    var hasLoot = false;
+
     actor.items.forEach(item =>{
       if(item.name == harvestAction.name && item.system.source == "Harvester")
       {
@@ -356,6 +365,7 @@ function addActionToActors()
         resetToDefault(item)
       }
     })
+
     if (!hasHarvest)
       addItemToActor(actor, [harvestAction]);
     if (!hasLoot && !SETTINGS.disableLoot)
