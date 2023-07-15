@@ -302,6 +302,9 @@ function updateActorCurrency(actor, currencyLabel, toAdd)
 function searchCompendium(actor, actionName)
 {
   var returnArr = [];
+  var actorName = actor.name;
+  if (actorName.includes("Dragon"))
+    actorName = formatDragon(actorName);
 
   if(actionName == harvestAction.name)
   {
@@ -318,10 +321,6 @@ function searchCompendium(actor, actionName)
 
     if (returnArr.length != 0)
       return returnArr;
-
-    var actorName = actor.name;
-    if (actorName.includes("Dragon"))
-      actorName = formatDragon(actorName);
 
     returnArr = checkCompendium(lootCompendium, "name", actorName)
   }
