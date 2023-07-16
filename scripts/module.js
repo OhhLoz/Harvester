@@ -67,12 +67,6 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
 
   item.setFlag("harvester", "targetId", targetedToken.id)
   item.setFlag("harvester", "controlId", controlToken.id)
-  game.packs.get(CONSTANTS.customCompendiumId).getDocuments().then(result => {
-    customCompendium = result;
-  });
-  game.packs.get(CONSTANTS.customLootCompendiumId).getDocuments().then(result => {
-    customLootCompendium = result;
-  });
 })
 
 Hooks.on('dnd5e.useItem', function(item, config, options)
@@ -111,6 +105,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
       skillCheckVerbose = matchedItems[0].items.find(element => element.type == "feat").name
 
     skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose)
+    item.setFlag("harvester", "skillCheck", skillCheck)
     item.update({system: {formula: `1d20 + @skills.${skillCheck}.total`}})
     chatData.content = chatData.content.replace(`<button data-action="formula">Other Formula</button>`, ``).replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`).replace("Harvest valuable materials from corpses.",`Harvesting ${targetToken.name}`)
   }
@@ -123,7 +118,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
   }
 })
 
-Hooks.on('dnd5e.preRollFormula', function(item, options)
+Hooks.on('dnd5e.preRollFormula', async function(item, options)
 {
   if (item.system.source != "Harvester")
     return;
@@ -133,23 +128,20 @@ Hooks.on('dnd5e.preRollFormula', function(item, options)
 
   if(!validateAction(controlledToken, targetedToken, item.name))
     return false;
-})
 
-Hooks.on('dnd5e.rollFormula', function(item, roll)
-{
-  if (item.system.source != "Harvester")
-    return;
+  options.chatMessage = false;
 
-  var targetToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
-  var controlToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
-  var controlActor = game.actors.get(controlToken.document.actorId);
+  var result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {chooseModifier: false});
 
-  var matchedItems = searchCompendium(targetToken, item.name)
+  harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
+  customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
 
-  socket.executeAsGM(addEffect, targetToken.id, "Harvest");
+  var matchedItems = await searchCompendium(targetedToken, item.name)
+
+  socket.executeAsGM(addEffect, targetedToken.id, "Harvest");
 
   if(matchedItems[0].compendium.metadata.id == CONSTANTS.customCompendiumId)
-    matchedItems = matchedItems[0].items;
+      matchedItems = matchedItems[0].items;
 
   var lootMessage = "";
   var successArr = [];
@@ -167,7 +159,7 @@ Hooks.on('dnd5e.rollFormula', function(item, roll)
       else
         itemDC = item.system.source.match(/\d+/g)[0];
 
-      if(itemDC <= roll.total)
+      if(itemDC <= result.total)
       {
         lootMessage += `<li>@UUID[${item.uuid}]</li>`
         successArr.push(item.toObject());
@@ -176,13 +168,14 @@ Hooks.on('dnd5e.rollFormula', function(item, roll)
   });
 
   if(SETTINGS.autoAddItems)
-    addItemToActor(controlActor, successArr);
+    addItemToActor(controlledToken.actor, successArr);
 
   if (lootMessage)
     messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
 
   ChatMessage.create(messageData);
-  return;
+
+  return false;
 })
 
 function validateAction(controlToken, targetedToken, actionName)
