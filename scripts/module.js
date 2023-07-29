@@ -106,6 +106,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
       skillCheckVerbose = matchedItems[0].items.find(element => element.type == "feat").name
 
     skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose)
+    item.setFlag("harvester", "skillCheck", skillCheck)
     item.update({system: {formula: `1d20 + @skills.${skillCheck}.total`}})
     chatData.content = chatData.content.replace(`<button data-action="formula">Other Formula</button>`, ``).replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`).replace("Harvest valuable materials from corpses.",`Harvesting ${targetToken.name}`)
   }
@@ -118,7 +119,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
   }
 })
 
-Hooks.on('dnd5e.preRollFormula', function(item, options)
+Hooks.on('dnd5e.preRollFormula', async function(item, options)
 {
   if (item.system.source != "Harvester")
     return;
@@ -128,6 +129,54 @@ Hooks.on('dnd5e.preRollFormula', function(item, options)
 
   if(!validateAction(controlledToken, targetedToken, item.name))
     return false;
+
+  options.chatMessage = false;
+
+  var result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {chooseModifier: false});
+
+  harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
+  await refreshCustomCompendium();
+
+  var matchedItems = await searchCompendium(targetedToken, item.name)
+
+  socket.executeAsGM(addEffect, targetedToken.id, "Harvest");
+
+  if(matchedItems[0].compendium.metadata.id == CONSTANTS.customCompendiumId)
+      matchedItems = matchedItems[0].items;
+
+  var lootMessage = "";
+  var successArr = [];
+  var messageData = {content: "", whisper: {}};
+  if (SETTINGS.gmOnly)
+    messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
+
+  matchedItems.forEach(item =>
+  {
+    if (item.type == "loot")
+    {
+      var itemDC = 0;
+      if(item.compendium.metadata.id == CONSTANTS.harvestCompendiumId)
+        itemDC = parseInt(item.system.description.chat)
+      else
+        itemDC = item.system.source.match(/\d+/g)[0];
+
+      if(itemDC <= result.total)
+      {
+        lootMessage += `<li>@UUID[${item.uuid}]</li>`
+        successArr.push(item.toObject());
+      }
+    }
+  });
+
+  if(SETTINGS.autoAddItems)
+    addItemToActor(controlledToken.actor, successArr);
+
+  if (lootMessage)
+    messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
+
+  ChatMessage.create(messageData);
+
+  return false;
 })
 
 Hooks.on('dnd5e.rollFormula', function(item, roll)
