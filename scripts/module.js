@@ -131,7 +131,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
 
   options.chatMessage = false;
 
-  var result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {chooseModifier: false});
+  var result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {chooseModifier: SETTINGS.allowAbilityChange});
 
   harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
   customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
@@ -355,6 +355,8 @@ function addActionToActors()
       {
         hasLoot = true;
         resetToDefault(item)
+        if(SETTINGS.disableLoot)
+          actor.deleteEmbeddedDocuments("Item", [item.id]);
       }
     })
 
