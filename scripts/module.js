@@ -360,6 +360,8 @@ function addActionToActors()
       {
         hasLoot = true;
         resetToDefault(item)
+        if(SETTINGS.disableLoot)
+          actor.deleteEmbeddedDocuments("Item", [item.id]);
       }
     })
     if (!hasHarvest)
