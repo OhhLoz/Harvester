@@ -132,7 +132,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
 
   options.chatMessage = false;
 
-  var result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {chooseModifier: false});
+  var result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {chooseModifier: SETTINGS.allowAbilityChange});
 
   harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
   await refreshCustomCompendium();
