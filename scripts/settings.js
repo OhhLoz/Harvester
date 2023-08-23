@@ -65,6 +65,16 @@ export function registerSettings()
         default: true
     });
 
+    game.settings.register("harvester", "allowAbilityChange", {
+        name: "Allow ability score change on roll",
+        hint: "Used if DM's trust their players and/or wish to use a different ability score instead of the default without making a custom compendium entry",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false
+    });
+
     game.settings.register("harvester", "disableLoot", {
         name: "Disable Looting mechanic",
         hint: "Disables the Loot mechanic, making it unavailable until enabled.",
@@ -91,6 +101,7 @@ export function registerSettings()
     SETTINGS.npcOnlyHarvest = game.settings.get("harvester", "npcOnlyHarvest");
     SETTINGS.autoAddActionGroup = game.settings.get("harvester", "autoAddActionGroup");
     SETTINGS.enforceRange = game.settings.get("harvester", "enforceRange");
+    SETTINGS.allowAbilityChange = game.settings.get("harvester", "allowAbilityChange");
     SETTINGS.disableLoot = game.settings.get("harvester", "disableLoot");
     SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
 }
@@ -103,6 +114,7 @@ export const SETTINGS =
     npcOnlyHarvest: true,
     autoAddActionGroup: "PCOnly",
     enforceRange: true,
+    allowAbilityChange: false,
     disableLoot: false,
     lootBeasts: false
 }
