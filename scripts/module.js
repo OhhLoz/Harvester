@@ -144,7 +144,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   if(matchedItems[0].compendium.metadata.id == CONSTANTS.customCompendiumId)
       matchedItems = matchedItems[0].items;
 
-  var lootMessage = "";
+  var returnMessage = "";
   var successArr = [];
   var messageData = {content: "", whisper: {}};
   if (SETTINGS.gmOnly)
@@ -162,7 +162,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
 
       if(itemDC <= result.total)
       {
-        lootMessage += `<li>@UUID[${item.uuid}]</li>`
+        returnMessage += `<li>@UUID[${item.uuid}]</li>`
         successArr.push(item.toObject());
       }
     }
@@ -171,62 +171,12 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   if(SETTINGS.autoAddItems)
     addItemToActor(controlledToken.actor, successArr);
 
-  if (lootMessage)
-    messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
+  if (returnMessage)
+    messageData.content = `<h3>Harvesting</h3><ul>${returnMessage}</ul>`;
 
   ChatMessage.create(messageData);
 
   return false;
-})
-
-Hooks.on('dnd5e.rollFormula', function(item, roll)
-{
-  if (item.system.source != "Harvester")
-    return;
-
-  var targetToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
-  var controlToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
-  var controlActor = game.actors.get(controlToken.document.actorId);
-
-  var matchedItems = searchCompendium(targetToken, item.name)
-
-  socket.executeAsGM(addEffect, targetToken.id, "Harvest");
-
-  if(matchedItems[0].compendium.metadata.id == CONSTANTS.customCompendiumId)
-    matchedItems = matchedItems[0].items;
-
-  var lootMessage = "";
-  var successArr = [];
-  var messageData = {content: "", whisper: {}};
-  if (SETTINGS.gmOnly)
-    messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
-
-  matchedItems.forEach(item =>
-  {
-    if (item.type == "loot")
-    {
-      var itemDC = 0;
-      if(item.compendium.metadata.id == CONSTANTS.harvestCompendiumId)
-        itemDC = parseInt(item.system.description.chat)
-      else
-        itemDC = item.system.source.match(/\d+/g)[0];
-
-      if(itemDC <= roll.total)
-      {
-        lootMessage += `<li>@UUID[${item.uuid}]</li>`
-        successArr.push(item.toObject());
-      }
-    }
-  });
-
-  if(SETTINGS.autoAddItems)
-    addItemToActor(controlActor, successArr);
-
-  if (lootMessage)
-    messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
-
-  ChatMessage.create(messageData);
-  return;
 })
 
 function validateAction(controlToken, targetedToken, actionName)
