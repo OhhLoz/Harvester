@@ -13,8 +13,7 @@
   "compatibility":
   {
     "minimum": "10",
-    "verified": "10.303",
-    "maximum" : "10.303"
+    "verified": "10.303"
   },
   "scripts": [],
   "esmodules": ["scripts/module.js"],
