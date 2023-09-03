@@ -1,0 +1,29 @@
+.harvester-tab {
+  display: flex;
+  flex-direction: column;
+}
+
+.harvester-warnings {
+  flex: 1 0 auto !important;
+}
+
+.harvester-items-list {
+  height: 100%;
+}
+
+.harvester-item-detail {
+  text-align: center;
+  font-size: 12px;
+}
+
+.harvester-item-controls {
+  border-left: 1px solid #c9c7b8;
+}
+
+.dnd5e.sheet.item .harvester-drag-content {
+  height: 70px;
+  text-align: center;
+  color: #828180;
+  line-height: 5;
+  border: 2px #828180 dashed;
+}

@@ -1,5 +1,7 @@
 import { registerSettings, SETTINGS } from "./settings.js";
 import { CONSTANTS } from "./constants.js";
+import { ItemSheetHarvester } from "./sheet/ItemSheetHarvester.js";
+import { ItemSheetHarvesterBuilder } from "./sheet/ItemSheetHarvesterBuilder.js";
 
 var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestAction, lootAction, socket, currencyFlavors;
 
@@ -7,10 +9,20 @@ Hooks.on("init", function()
 {
   registerSettings();
   console.log("harvester | Init() - Registered settings & Fetched compendiums.");
+  
+  // Register  Item Sheet and do not make default
+  Items.registerSheet("dnd5e", ItemSheetHarvester, {
+    makeDefault: false,
+    label: "ItemSheetHarvester",
+    types: ["loot"],
+  });
 });
 
 Hooks.on("ready", async function()
 {
+
+  ItemSheetHarvesterBuilder.init();
+
   actionCompendium = await game.packs.get(CONSTANTS.actionCompendiumId).getDocuments();
   harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
   lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId).getDocuments();
@@ -263,6 +275,19 @@ function handleLoot(item)
 }
 
 function formatLootRoll(result)
+{
+  var rollTableResult = result.replace(/(\[\[\/r\s)?(\]\])?(\}$)?/g,"").split("}");
+  var returnMap = new Map();
+
+  for(var i = 0; i < rollTableResult.length; i++)
+  {
+    var extractedRoll = rollTableResult[i].split("{");
+    returnMap.set(extractedRoll[1], extractedRoll[0])
+  }
+  return returnMap;
+}
+
+function formatHarvesterRoll(result)
 {
   var rollTableResult = result.replace(/(\[\[\/r\s)?(\]\])?(\}$)?/g,"").split("}");
   var returnMap = new Map();
