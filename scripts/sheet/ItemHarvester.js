@@ -79,9 +79,9 @@ export class HarvesterItem {
    */
   _getItemTreeFlagMap() {
     const map = new Map();
-    this.itemTreeList.forEach((itemLeafFlag) => {
-      const id = itemLeafFlag.uuid.split(".").pop();
-      map.set(id, itemLeafFlag);
+    this.itemTreeList.forEach((itemSourceFlag) => {
+      const id = itemSourceFlag.uuid.split(".").pop();
+      map.set(id, itemSourceFlag);
     });
     this._itemTreeFlagMap = map;
     return map;
@@ -91,7 +91,7 @@ export class HarvesterItem {
    * Adds a given UUID to the item's item list
    * @param {string} providedUuid
    */
-  async addLeafToItem(providedUuid) {
+  async addSourceToItem(providedUuid) {
     // MUTATED if this is an owned item
     let uuidToAdd = providedUuid;
     const itemAdded = await fromUuid(uuidToAdd);
@@ -102,12 +102,12 @@ export class HarvesterItem {
     }
     
     if (!game.user.isGM) {
-      const shouldAddLeaf = await Dialog.confirm({
+      const shouldAddSource = await Dialog.confirm({
         title: game.i18n.localize(`${CONSTANTS.MODULE_ID}.dialog.warning.areyousuretoadd.name`),
         content: game.i18n.localize(`${CONSTANTS.MODULE_ID}.dialog.warning.areyousuretoadd.hint`),
       });
 
-      if (!shouldAddLeaf) {
+      if (!shouldAddSource) {
         return false;
       }
     }
@@ -122,8 +122,6 @@ export class HarvesterItem {
       ...this.itemTreeList,
       {
         uuid: uuidToAdd,
-        customLink: customType,
-        shortDescriptionLink: shortDescription,
       },
     ];
 
@@ -144,10 +142,10 @@ export class HarvesterItem {
    * Removes the relationship between the provided item and this item's items
    * @param {string} itemId - the id of the item to remove
    * @param {Object} options
-   * @param {boolean} [options.alsoDeleteEmbeddedLeaf] - Should the item be deleted also, only for owned items
+   * @param {boolean} [options.alsoDeleteEmbeddedSource] - Should the item be deleted also, only for owned items
    * @returns {Item} the updated or deleted item after having its parent item removed, or null
    */
-  async removeLeafFromItem(itemId, { alsoDeleteEmbeddedLeaf } = {}) {
+  async removeSourceFromItem(itemId, { alsoDeleteEmbeddedSource } = {}) {
     const itemToDelete = this.itemTreeFlagMap.get(itemId);
 
     // If owned, we are storing the actual owned item item's uuid. Else we store the source id.
@@ -161,17 +159,17 @@ export class HarvesterItem {
 
     const newActorSources = this.itemTreeList.filter(({ uuid }) => uuid !== uuidToRemove);
 
-    const shouldDeleteLeaf =
-      alsoDeleteEmbeddedLeaf &&
+    const shouldDeleteSource =
+      alsoDeleteEmbeddedSource &&
       (await Dialog.confirm({
         title: game.i18n.localize("harvester.MODULE_NAME"),
         content: game.i18n.localize("harvester.WARN_ALSO_DELETE"),
       }));
 
-    if (shouldDeleteLeaf) {
+    if (shouldDeleteSource) {
       this._itemTreeFlagMap?.delete(itemId);
       await this.item.setFlag("harvester", "actorSources", newActorSources);
-    } else if (!alsoDeleteEmbeddedLeaf) {
+    } else if (!alsoDeleteEmbeddedSource) {
       this._itemTreeFlagMap?.delete(itemId);
       await this.item.setFlag("harvester", "actorSources", newActorSources);
     }
@@ -180,134 +178,16 @@ export class HarvesterItem {
   }
 
   /**
-   * Removes the relationship between the provided item and this item's items
-   * @param {string} itemId - the id of the item to remove
-   * @param {Object} options
-   * @param {boolean} [options.alsoDeleteEmbeddedLeaf] - Should the item be deleted also, only for owned items
-   * @returns {Item} the updated or deleted item after having its parent item removed, or null
-   */
-  async createCustomLinkItem(itemId) {
-    const itemToUpdateLeaf = this.itemTreeFlagMap.get(itemId);
-
-    // If owned, we are storing the actual owned item item's uuid. Else we store the source id.
-    // const uuidToUpdate = this.item.isOwned ? itemToUpdate.uuid : itemToUpdate.getFlag("core", "sourceId");
-    const uuidToUpdate = itemToUpdateLeaf.uuid;
-    const itemUpdated = await fromUuid(uuidToUpdate);
-
-    if (Hooks.call("harvester.preUpdateSourceFromItem", this.item, itemUpdated, this.itemTreeList) === false) {
-      return;
-    }
-
-    const newActorSources = deepClone(this.itemTreeList);
-
-    let currentLeaf;
-    for (const leaf of this.itemTreeList) {
-      if (leaf.uuid === uuidToUpdate) {
-        currentLeaf = leaf;
-        break;
-      }
-    }
-
-    new Dialog({
-      title: "Update Custom Link Type",
-      //   content: `
-      //       <form>
-      //         <div class="form-group">
-      //             <label>Prefix</label>
-      //             <input type='text' name='prefix' value='${currentLeaf.prefix ?? ""}'></input>
-      //         </div>
-      //         <div class="form-group">
-      //             <label>Suffix</label>
-      //             <input type='text' name='suffix' value='${currentLeaf.suffix ?? ""}'></input>
-      //         </div>
-      //         <div class="form-group">
-      //           <label>Custom Link Type</label>
-      //           <input type='text' name='customLink' value='${currentLeaf.customLink ?? ""}'></input>
-      //         </div>
-      //       </form>`,
-      content: `
-            <form>
-            <div class="form-group">
-                <label>Custom Link Type</label>
-                <input type='text' name='shortDescriptionLink' value='${
-                  currentLeaf.shortDescriptionLink ?? ""
-                }'></input>
-            </div>
-            <div class="form-group">
-                <label>Custom Link Type</label>
-                <input type='text' name='customLink' value='${currentLeaf.customLink ?? ""}'></input>
-            </div>
-            </form>`,
-      buttons: {
-        update: {
-          icon: "<i class='fas fa-check'></i>",
-          label: `Update Custom Link Type`,
-          callback: async (html) => {
-            // let resultPrefix = html.find(`input[name='prefix']`);
-            // let resultSuffix = html.find(`input[name='suffix']`);
-            let resultCustomLink = html.find(`input[name='customLink']`);
-            let resultShortDescriptionLink = html.find(`input[name='shortDescriptionLink']`);
-            for (const leaf of newActorSources) {
-              if (leaf.uuid === uuidToUpdate) {
-                // leaf.prefix = resultPrefix.val() ?? "";
-                // leaf.suffix = resultSuffix.val() ?? "";
-                leaf.customLink = resultCustomLink.val() ?? "";
-                leaf.shortDescriptionLink = resultShortDescriptionLink.val() ?? "";
-                break;
-              }
-            }
-
-            // await this.item.setFlag("harvester", "actorSources", newActorSources);
-
-            // // Nothing more to do for unowned items.
-            // if (!this.item.isOwned) return;
-
-            // this update should not re-render the item sheet because we need to wait until we refresh to do so
-            await this.item.update(
-              {
-                flags: {
-                  ["harvester"]: {
-                    ["actorSources"]: newActorSources,
-                  },
-                },
-              },
-              { render: false }
-            );
-
-            // update this data manager's understanding of the items it contains
-            await this.refresh();
-
-            HarvesterItemSheet.instances.forEach((instance) => {
-              if (instance.harvesterItem === this) {
-                instance._shouldOpenTreeTab = true;
-              }
-            });
-
-            // now re-render the item sheets
-            this.item.render();
-
-            Hooks.call("harvester.postUpdateSourceFromItem", this.item, itemToUpdate, this.itemTreeList);
-          },
-        },
-      },
-      default: "update",
-      close: (html) => {
-        // Do nothing
-      },
-    }).render(true);
-  }
-
-  /**
    * Updates the given item's overrides
    * @param {*} itemId - item attached to this item
    * @param {*} overrides - object describing the changes that should be applied to the item
    */
-  async updateItemLeafOverrides(itemId, overrides) {
-    const itemLeafFlagsToUpdate = this.itemTreeFlagMap.get(itemId);
+  async updateItemSourceOverrides(itemId, overrides) {
+    const itemSourceFlagsToUpdate = this.itemTreeFlagMap.get(itemId);
 
-    itemLeafFlagsToUpdate.changes = overrides;
+    itemSourceFlagsToUpdate.changes = overrides;
 
-    this.itemTreeFlagMap.set(itemId, itemLeafFlagsToUpdate);
+    this.itemTreeFlagMap.set(itemId, itemSourceFlagsToUpdate);
 
     const newActorSourcesFlagValue = [...this.itemTreeFlagMap.values()];
 

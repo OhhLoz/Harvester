@@ -20,7 +20,7 @@
   border-left: 1px solid #c9c7b8;
 }
 
-.dnd5e.sheet.item .harvester-drag-content {
+.dnd5e.sheet.item .harvester-source-drag-content {
   height: 70px;
   text-align: center;
   color: #828180;

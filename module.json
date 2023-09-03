@@ -17,8 +17,16 @@
   },
   "scripts": [],
   "esmodules": ["scripts/module.js"],
+  "styles": ["styles/harvester.css"],
   "socket": true,
   "persistentStorage": true,
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "languages/en.json"
+    }
+  ],
   "packs": [
     {
       "name": "harvest",

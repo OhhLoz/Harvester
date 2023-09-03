@@ -68,13 +68,13 @@ export class ItemSheetHarvesterBuilder {
   /**
    * Renders the tree tab template to be injected
    */
-  async _renderLeafsList() {
+  async _renderSourcesList() {
     const actorSourcesArray = [...(await this.harvesterItem.itemTreeFlagMap).values()];
 
     const actorSourcesArrayTmp = [];
     // TOD made this better...
-    for (const leaf of actorSourcesArray) {
-      const itemTmp = await fromUuid(leaf.uuid);
+    for (const source of actorSourcesArray) {
+      const itemTmp = await fromUuid(source.uuid);
       if (itemTmp) {
         const i = {
           name: itemTmp.name,
@@ -84,11 +84,11 @@ export class ItemSheetHarvesterBuilder {
         };
         actorSourcesArrayTmp.push(i);
       } else {
-        console.warn(`${"harvester"} | there is a wrong item uuid ${leaf}`);
-        const uuidToRemove = leaf.uuid;
+        console.warn(`${"harvester"} | there is a wrong item uuid ${source}`);
+        const uuidToRemove = source.uuid;
         for (const [key, value] of this.harvesterItem.itemTreeFlagMap) {
           if (value.uuid === uuidToRemove) {
-            await this.harvesterItem.removeLeafFromItem(key, { alsoDeleteEmbeddedLeaf: false });
+            await this.harvesterItem.removeSourceFromItem(key, { alsoDeleteEmbeddedSource: false });
           }
         }
       }
@@ -126,7 +126,7 @@ export class ItemSheetHarvesterBuilder {
     // }
     // set the flag to re-open this tab when the update completes
     this._shouldOpenTreeTab = true;
-    return this.harvesterItem.addLeafToItem(data.uuid);
+    return this.harvesterItem.addSourceToItem(data.uuid);
   }
 
   /**
@@ -134,8 +134,8 @@ export class ItemSheetHarvesterBuilder {
    */
   async _handleItemClick(event) {
     const { itemId } = $(event.currentTarget).parents("[data-item-id]").data();
-    const itemLeaf = this.harvesterItem.itemTreeFlagMap.get(itemId);
-    const item = await fromUuid(itemLeaf.uuid);
+    const itemSource = this.harvesterItem.itemTreeFlagMap.get(itemId);
+    const item = await fromUuid(itemSource.uuid);
 
     item?.sheet.render(true, {
       editable: !!item.isOwned && !!item.isOwner,
@@ -150,18 +150,7 @@ export class ItemSheetHarvesterBuilder {
 
     // set the flag to re-open this tab when the update completes
     this._shouldOpenTreeTab = true;
-    await this.harvesterItem.removeLeafFromItem(itemId, { alsoDeleteEmbeddedLeaf: true });
-  }
-
-  /**
-   * Event Handler that create the custom link type between this item and the item
-   */
-  async _handleCreateCustomLinkClick(event) {
-    const { itemId } = $(event.currentTarget).parents("[data-item-id]").data();
-
-    // set the flag to re-open this tab when the update completes
-    this._shouldOpenTreeTab = true;
-    await this.harvesterItem.createCustomLinkItem(itemId);
+    await this.harvesterItem.removeSourceFromItem(itemId, { alsoDeleteEmbeddedSource: true });
   }
 
   /**
@@ -172,7 +161,7 @@ export class ItemSheetHarvesterBuilder {
 
     // set the flag to re-open this tab when the update completes
     this._shouldOpenTreeTab = true;
-    await this.harvesterItem.removeLeafFromItem(itemId, { alsoDeleteEmbeddedLeaf: true });
+    await this.harvesterItem.removeSourceFromItem(itemId, { alsoDeleteEmbeddedSource: true });
   }
 
   /**
@@ -227,7 +216,7 @@ export class ItemSheetHarvesterBuilder {
   async renderHeavy(treeTab) {
     // await this.harvesterItem.refresh();
     // Add the list to the tab
-    const treeTabHtml = $(await this._renderLeafsList());
+    const treeTabHtml = $(await this._renderSourcesList());
     treeTab.append(treeTabHtml);
 
     // Activate Listeners for this ui.
@@ -249,7 +238,7 @@ export class ItemSheetHarvesterBuilder {
 
     const dragDrop2 = {
       dragSelector: ".item",
-      dropSelector: ".item-source-drag-content",
+      dropSelector: ".harvester-source-drag-content",
       permissions: { drop: () => this.app.isEditable && !this.item.isOwned },
       callbacks: { drop: this._dragEnd },
     };
