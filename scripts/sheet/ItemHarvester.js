@@ -6,12 +6,12 @@
 const FakeEmptyItem = (uuid, parent) =>
   new Item.implementation(
     {
-      name: game.i18n.localize("harvester.MISSING_ITEM"),
+      name: game.i18n.localize("harvester.missing-item"),
       img: "icons/svg/hazard.svg",
       type: "spell",
       system: {
         description: {
-          value: game.i18n.localize("harvester.MISSING_ITEM_DESCRIPTION"),
+          value: game.i18n.localize("harvester.missing-item-description"),
         },
       },
       _id: uuid.split(".").pop(),
@@ -162,8 +162,8 @@ export class HarvesterItem {
     const shouldDeleteSource =
       alsoDeleteEmbeddedSource &&
       (await Dialog.confirm({
-        title: game.i18n.localize("harvester.MODULE_NAME"),
-        content: game.i18n.localize("harvester.WARN_ALSO_DELETE"),
+        title: game.i18n.localize("harvester.label"),
+        content: game.i18n.localize("harvester.warn-also-delete"),
       }));
 
     if (shouldDeleteSource) {
