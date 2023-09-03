@@ -2,6 +2,7 @@ import { registerSettings, SETTINGS } from "./settings.js";
 import { CONSTANTS } from "./constants.js";
 import { ItemSheetHarvester } from "./sheet/ItemSheetHarvester.js";
 import { ItemSheetHarvesterBuilder } from "./sheet/ItemSheetHarvesterBuilder.js";
+import API from "./api.js";
 
 var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestAction, lootAction, socket, currencyFlavors;
 
@@ -16,6 +17,12 @@ Hooks.on("init", function()
     label: "ItemSheetHarvester",
     types: ["loot"],
   });
+});
+
+Hooks.on("setup", async function()
+{
+  const data = game.modules.get("harvester");
+  data.api = API;
 });
 
 Hooks.on("ready", async function()
@@ -332,6 +339,8 @@ function searchCompendium(actor, actionName)
       return returnArr;
 
     returnArr = checkCompendium(harvestCompendium, "system.source", actorName)
+    const returnArr2 = checkCompendiumSourceActor(harvestCompendium, actor) ?? [];
+    returnArr.push(returnArr2);
   }
   else if (actionName == lootAction.name && !SETTINGS.disableLoot)
   {
@@ -353,6 +362,21 @@ function checkCompendium(compendium, checkProperty, matchProperty)
   {
     if (eval(`doc.${checkProperty}`) == matchProperty)
       returnArr.push(doc);
+  })
+  return returnArr;
+}
+
+function checkCompendiumSourceActor(compendium, actor)
+{
+  var returnArr = [];
+  compendium.forEach(doc =>
+  {
+    const arraySourcesLinked = doc.getFlag("harvester", "actorSources") ?? [];
+    for(const actorSource of arraySourcesLinked) {
+      if(actorSource.uuid === actor.uuid) {
+        returnArr.push(doc);
+      }
+    }      
   })
   return returnArr;
 }

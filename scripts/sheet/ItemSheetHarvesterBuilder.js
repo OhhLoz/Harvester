@@ -33,7 +33,7 @@ export class ItemSheetHarvesterBuilder {
    * Handles the item sheet render hook
    */
   static init() {
-    Hooks.on("renderItemSheet", (app, html) => {
+    Hooks.on("renderItemSheetHarvester", (app, html) => {
       if (!game.user.isGM) {
         return;
       }
