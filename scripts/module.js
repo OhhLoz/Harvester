@@ -1,8 +1,5 @@
 import { registerSettings, SETTINGS } from "./settings.js";
 import { CONSTANTS } from "./constants.js";
-import { ItemSheetHarvester } from "./sheet/ItemSheetHarvester.js";
-import { ItemSheetHarvesterBuilder } from "./sheet/ItemSheetHarvesterBuilder.js";
-import API from "./api.js";
 
 var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestAction, lootAction, socket, currencyFlavors;
 
@@ -10,26 +7,10 @@ Hooks.on("init", function()
 {
   registerSettings();
   console.log("harvester | Init() - Registered settings & Fetched compendiums.");
-  
-  // Register  Item Sheet and do not make default
-  Items.registerSheet("dnd5e", ItemSheetHarvester, {
-    makeDefault: false,
-    label: "ItemSheetHarvester",
-    types: ["loot"],
-  });
-});
-
-Hooks.on("setup", async function()
-{
-  const data = game.modules.get("harvester");
-  data.api = API;
 });
 
 Hooks.on("ready", async function()
 {
-
-  ItemSheetHarvesterBuilder.init();
-
   actionCompendium = await game.packs.get(CONSTANTS.actionCompendiumId).getDocuments();
   harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
   lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId).getDocuments();
@@ -294,19 +275,6 @@ function formatLootRoll(result)
   return returnMap;
 }
 
-function formatHarvesterRoll(result)
-{
-  var rollTableResult = result.replace(/(\[\[\/r\s)?(\]\])?(\}$)?/g,"").split("}");
-  var returnMap = new Map();
-
-  for(var i = 0; i < rollTableResult.length; i++)
-  {
-    var extractedRoll = rollTableResult[i].split("{");
-    returnMap.set(extractedRoll[1], extractedRoll[0])
-  }
-  return returnMap;
-}
-
 function updateActorCurrency(actor, currencyLabel, toAdd)
 {
   var currencyRef = CONSTANTS.currencyMap.get(currencyLabel);
@@ -339,8 +307,6 @@ function searchCompendium(actor, actionName)
       return returnArr;
 
     returnArr = checkCompendium(harvestCompendium, "system.source", actorName)
-    const returnArr2 = checkCompendiumSourceActor(harvestCompendium, actor) ?? [];
-    returnArr.push(returnArr2);
   }
   else if (actionName == lootAction.name && !SETTINGS.disableLoot)
   {
@@ -362,21 +328,6 @@ function checkCompendium(compendium, checkProperty, matchProperty)
   {
     if (eval(`doc.${checkProperty}`) == matchProperty)
       returnArr.push(doc);
-  })
-  return returnArr;
-}
-
-function checkCompendiumSourceActor(compendium, actor)
-{
-  var returnArr = [];
-  compendium.forEach(doc =>
-  {
-    const arraySourcesLinked = doc.getFlag("harvester", "actorSources") ?? [];
-    for(const actorSource of arraySourcesLinked) {
-      if(actorSource.uuid === actor.uuid) {
-        returnArr.push(doc);
-      }
-    }      
   })
   return returnArr;
 }
