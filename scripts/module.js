@@ -12,7 +12,7 @@ Hooks.on("init", function()
 Hooks.on("ready", async function()
 {
   actionCompendium = await game.packs.get(CONSTANTS.actionCompendiumId).getDocuments();
-  harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
+  harvestCompendium = await game.packs.get(SETTINGS.harvestCompendiumId ?? CONSTANTS.harvestCompendiumId).getDocuments();
   lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId).getDocuments();
   customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
   customLootCompendium = await game.packs.get(CONSTANTS.customLootCompendiumId).getDocuments();
@@ -99,7 +99,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
   {
     var skillCheckVerbose, skillCheck = "Nature"
 
-    if(matchedItems[0].compendium.metadata.id == CONSTANTS.harvestCompendiumId)
+    if(matchedItems[0].compendium.metadata.id == SETTINGS.harvestCompendiumId ?? CONSTANTS.harvestCompendiumId)
       skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
     else
       skillCheckVerbose = matchedItems[0].items.find(element => element.type == "feat").name
@@ -133,7 +133,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
 
   var result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {chooseModifier: SETTINGS.allowAbilityChange});
 
-  harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
+  harvestCompendium = await game.packs.get(SETTINGS.harvestCompendiumId ?? CONSTANTS.harvestCompendiumId).getDocuments();
   customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
 
   var matchedItems = await searchCompendium(targetedToken, item.name)
@@ -154,7 +154,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
     if (item.type == "loot")
     {
       var itemDC = 0;
-      if(item.compendium.metadata.id == CONSTANTS.harvestCompendiumId)
+      if(item.compendium.metadata.id == SETTINGS.harvestCompendiumId ??  CONSTANTS.harvestCompendiumId)
         itemDC = parseInt(item.system.description.chat)
       else
         itemDC = item.system.source.match(/\d+/g)[0];

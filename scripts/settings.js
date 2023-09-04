@@ -95,6 +95,16 @@ export function registerSettings()
         default: false
     });
 
+    game.settings.register("harvester", "harvestCompendiumId", {
+        name: "Harvest compendium id",
+        hint: "Setup the id to your own compendium id",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: String,
+        default: "harvester.harvest"
+    });
+
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
     SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
@@ -104,6 +114,7 @@ export function registerSettings()
     SETTINGS.allowAbilityChange = game.settings.get("harvester", "allowAbilityChange");
     SETTINGS.disableLoot = game.settings.get("harvester", "disableLoot");
     SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
+    SETTINGS.harvestCompendiumId = game.settings.get("harvester", "harvestCompendiumId");
 }
 
 export const SETTINGS =
