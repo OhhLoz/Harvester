@@ -83,8 +83,9 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
     return;
 
   var targetToken = game.user.targets.first();
+  var targetActor = game.actors.get(targetToken.document.actorId)
 
-  var matchedItems = searchCompendium(targetToken, item.name)
+  var matchedItems = searchCompendium(targetActor, item.name)
 
   if(item.name == lootAction.name)
   {
@@ -98,6 +99,9 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
   if(matchedItems.length != 0)
   {
     var skillCheckVerbose, skillCheck = "Nature"
+    var harvestMessage = targetToken.name;
+    if (harvestMessage != targetActor.name)
+      harvestMessage += ` (${targetActor.name})`
 
     if(matchedItems[0].compendium.metadata.id == SETTINGS.harvestCompendiumId ?? CONSTANTS.harvestCompendiumId)
       skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
@@ -107,7 +111,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
     skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose)
     item.setFlag("harvester", "skillCheck", skillCheck)
     item.update({system: {formula: `1d20 + @skills.${skillCheck}.total`}})
-    chatData.content = chatData.content.replace(`<button data-action="formula">Other Formula</button>`, ``).replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`).replace("Harvest valuable materials from corpses.",`Harvesting ${targetToken.name}`)
+    chatData.content = chatData.content.replace(`<button data-action="formula">Other Formula</button>`, ``).replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`).replace("Harvest valuable materials from corpses.",`Attempting to Harvest ${harvestMessage}`)
   }
   else
   {
@@ -124,6 +128,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
     return;
 
   var targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
+  var targetedActor = await game.actors.get(targetedToken.document.actorId)
   var controlledToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
 
   if(!validateAction(controlledToken, targetedToken, item.name))
@@ -136,7 +141,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   harvestCompendium = await game.packs.get(SETTINGS.harvestCompendiumId ?? CONSTANTS.harvestCompendiumId).getDocuments();
   customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
 
-  var matchedItems = await searchCompendium(targetedToken, item.name)
+  var matchedItems = await searchCompendium(targetedActor, item.name)
 
   socket.executeAsGM(addEffect, targetedToken.id, "Harvest");
 
@@ -213,15 +218,15 @@ function validateAction(controlToken, targetedToken, actionName)
 function handleLoot(item)
 {
   var targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
+  var targetedActor = game.actors.get(targetedToken.document.actorId)
   var controlledToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
-  var targetActor = game.actors.get(targetedToken.document.actorId);
   var controlActor = game.actors.get(controlledToken.document.actorId);
 
   var messageData = {content: `<h3>Looting</h3><ul>${controlledToken.name} attempted to loot resources from ${targetedToken.name} but failed to find anything.`, whisper: {}};
   if (SETTINGS.gmOnly)
     messageData.whisper = game.users.filter(u => u.isGM).map(u => u._id);
 
-  var itemArr = searchCompendium(targetActor, lootAction.name);
+  var itemArr = searchCompendium(targetedActor, lootAction.name);
 
   socket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
 
