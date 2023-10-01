@@ -77,7 +77,7 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
   handleLoot(item);
 })
 
-Hooks.on('dnd5e.preDisplayCard', async function(item, chatData, options)
+Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
 {
   if (item.system.source != "Harvester")
     return;
@@ -87,7 +87,11 @@ Hooks.on('dnd5e.preDisplayCard', async function(item, chatData, options)
 
   var matchedItems = [];
   if(game.settings.get("harvester", "enableBetterRollIntegration")) {
-    matchedItems = await checkHarvestWithBetterRollTables(targetActor, item.name);
+    if(item.name == harvestAction.name) {
+      matchedItems = retrieveTablesHarvestWithBetterRollTables(targetActor, item.name);
+    } else {
+      matchedItems = searchCompendium(targetActor, item.name)
+    }
   } else {
     matchedItems = searchCompendium(targetActor, item.name)
   }
@@ -108,26 +112,36 @@ Hooks.on('dnd5e.preDisplayCard', async function(item, chatData, options)
     if (harvestMessage != targetActor.name)
       harvestMessage += ` (${targetActor.name})`
     if(game.settings.get("harvester", "enableBetterRollIntegration")) {
-      skillCheckVerbose = getProperty(matchedItems[0], `system.description.unidentified`);
+      skillCheckVerbose = getProperty(matchedItems[0],`flags.better-rolltables.brt-skill-value`);
+      skillCheck = skillCheckVerbose;
     } else {
       if(matchedItems[0].compendium.metadata.id == CONSTANTS.harvestCompendiumId)
         skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
       else
         skillCheckVerbose = matchedItems[0].items.find(element => element.type == "feat").name
+
+      skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose)
     }
-    skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose)
+    
     item.setFlag("harvester", "skillCheck", skillCheck)
     item.update({system: {formula: `1d20 + @skills.${skillCheck}.total`}})
+    /*
     chatData.content = chatData.content
-    .replace(`<button data-action="formula">Other Formula</button>`, ``)
-    .replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`)
-    .replace("Harvest valuable materials from corpses.",`Attempting to Harvest ${harvestMessage}`)
+      .replace(`<button data-action="formula">Other Formula</button>`, ``)
+    chatData.content = chatData.content
+      .replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`)
+    */
+    chatData.content = chatData.content
+      .replace(`<button data-action="formula">Other Formula</button>`, `<button data-action="formula">${skillCheckVerbose} Skill Check</button>`)
+    chatData.content = chatData.content
+      .replace("Harvest valuable materials from corpses.",`Attempting to Harvest ${harvestMessage}`)
   }
   else
   {
     item.update({system: {formula: ""}})
     item.setFlag("harvester", "targetId", "")
-    chatData.content = chatData.content.replace("Harvest valuable materials from corpses.",`After examining the corpse you realise there is nothing you can harvest.`)
+    chatData.content = chatData.content
+      .replace("Harvest valuable materials from corpses.",`After examining the corpse you realise there is nothing you can harvest.`)
     socket.executeAsGM(addEffect, targetToken.id, "Harvest");
   }
 })
@@ -162,7 +176,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
 
   var matchedItems = [];
   if(game.settings.get("harvester", "enableBetterRollIntegration")) {
-    matchedItems = await checkHarvestWithBetterRollTables(targetedActor, item.name);
+    matchedItems = await retrieveItemsHarvestWithBetterRollTables(targetedActor, item.name);
 
     socket.executeAsGM(addEffect, targetedToken.id, "Harvest");
 
@@ -379,7 +393,56 @@ function checkCompendium(compendium, checkProperty, matchProperty)
   return returnArr;
 }
 
-async function checkHarvestWithBetterRollTables(targetedActor, actionName, dcValue = null, skillValue = null)
+function retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName)
+{
+  var returnArr = [];
+  var actorName = targetedActor.name;
+  if (actorName.includes("Dragon")) {
+    actorName = formatDragon(actorName);
+  }
+  if(actionName == harvestAction.name)
+  {
+    
+    // const dcValue = getProperty(xxx, `system.description.chat`);
+    // const skillValue = getProperty(xxx, `system.description.unidentified`);
+    const sourceValue = actorName ?? ""; // getProperty(xxx, `system.source`);
+
+    let skillDenom = "";
+    if (!skillValue) {
+      skillDenom = "";
+    } else {
+      const skillValueToCheck = String(skillValue).trim();
+      skillDenom = CONSTANTS.skillMap.get(skillValueToCheck);
+    }
+
+    let compendium = game.packs.get(`better-rolltables.brt-harvest-harvester`);
+    let tablesChecked = [];
+
+    // Try with the compendium first
+    const docs = compendium.contents;
+    for(const doc of docs) {
+      if (sourceValue.trim() === getProperty(doc,`flags.better-rolltables.brt-source-value`)?.trim()) {
+        tablesChecked.push(doc);
+      }
+    }
+    // Try on the tables imported
+    if(!tablesChecked || tablesChecked.length === 0) {
+      tablesChecked = game.tables.contents.filter((doc) => {
+        return sourceValue.trim() === getProperty(doc,`flags.better-rolltables.brt-source-value`)?.trim();
+      });
+    }
+    // We juts get the first
+    if(!tablesChecked || tablesChecked.length === 0) {
+      ui.notifications.warn(`No rolltable found for metadata sourceId '${sourceValue}'`);
+      return false;
+    }
+    return tablesChecked;
+  } else {
+    return [];
+  }
+}
+
+async function retrieveItemsHarvestWithBetterRollTables(targetedActor, actionName, dcValue = null, skillValue = null)
 {
   if(!dcValue) {
     dcValue = 0;
