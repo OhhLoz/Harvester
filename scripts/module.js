@@ -87,7 +87,9 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
   var targetActor = game.actors.get(targetToken.document.actorId)
 
   var matchedItems = [];
-  if(game.settings.get("harvester", "enableBetterRollIntegration") && item.name === harvestAction.name) {
+  if(game.settings.get("harvester", "enableBetterRollIntegration") 
+    && game.modules.get("better-rolltables")?.active
+    && item.name === harvestAction.name) {
     if(item.name == harvestAction.name) {
       matchedItems = retrieveTablesHarvestWithBetterRollTables(targetActor, item.name);
     } else {
@@ -112,7 +114,8 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
     var harvestMessage = targetToken.name;
     if (harvestMessage != targetActor.name)
       harvestMessage += ` (${targetActor.name})`
-    if(game.settings.get("harvester", "enableBetterRollIntegration")) {
+    if(game.settings.get("harvester", "enableBetterRollIntegration") 
+        && game.modules.get("better-rolltables")?.active) {
       skillCheckVerbose = getProperty(matchedItems[0],`flags.better-rolltables.brt-skill-value`);
       skillCheck = skillCheckVerbose;
     } else {
@@ -166,7 +169,9 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   }
 
   var matchedItems = [];
-  if(game.settings.get("harvester", "enableBetterRollIntegration") && item.name === harvestAction.name) {
+  if(game.settings.get("harvester", "enableBetterRollIntegration") 
+    && game.modules.get("better-rolltables")?.active
+    && item.name === harvestAction.name) {
     matchedItems = await retrieveItemsHarvestWithBetterRollTables(
       targetedActor, 
       item.name, 
