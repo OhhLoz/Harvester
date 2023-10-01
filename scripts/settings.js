@@ -95,14 +95,14 @@ export function registerSettings()
         default: false
     });
 
-    game.settings.register("harvester", "harvestCompendiumId", {
-        name: "Harvest compendium id",
-        hint: "Setup the id to your own compendium id",
+    game.settings.register("harvester", "enableBetterRollIntegration", {
+        name: "Enable integration with the module 'Better Rolltable'",
+        hint: "Integration with the module 'Better Rolltable', for a more randomized behavior during the harvester action and a better customization for the specific creature, formula, filter additional elements, ecc.",
         scope: "world",
         config: true,
         requiresReload: true,
-        type: String,
-        default: "harvester.harvest"
+        type: Boolean,
+        default: false
     });
 
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
@@ -114,7 +114,6 @@ export function registerSettings()
     SETTINGS.allowAbilityChange = game.settings.get("harvester", "allowAbilityChange");
     SETTINGS.disableLoot = game.settings.get("harvester", "disableLoot");
     SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
-    SETTINGS.harvestCompendiumId = game.settings.get("harvester", "harvestCompendiumId");
 }
 
 export const SETTINGS =
