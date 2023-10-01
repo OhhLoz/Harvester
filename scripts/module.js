@@ -16,8 +16,10 @@ Hooks.on("ready", async function()
   lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId).getDocuments();
   customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
   customLootCompendium = await game.packs.get(CONSTANTS.customLootCompendiumId).getDocuments();
-  harvestBetterRollCompendium = await game.packs.get(`better-rolltables.brt-harvest-harvester`).getDocuments();
-
+  if(game.settings.get("harvester", "enableBetterRollIntegration") 
+    && game.modules.get("better-rolltables")?.active) {
+    harvestBetterRollCompendium = await game.packs.get(`better-rolltables.brt-harvest-harvester`).getDocuments();
+  }
   harvestAction = await actionCompendium.find(a => a.id == CONSTANTS.harvestActionId);
   lootAction = await actionCompendium.find(a => a.id == CONSTANTS.lootActionId);
 
