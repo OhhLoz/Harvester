@@ -95,6 +95,16 @@ export function registerSettings()
         default: false
     });
 
+    game.settings.register("harvester", "enableBetterRollIntegration", {
+        name: "Enable integration with the module 'Better Rolltable'",
+        hint: "Integration with the module 'Better Rolltable', for a more randomized behavior during the harvester action and a better customization for the specific creature, formula, filter additional elements, ecc.",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false
+    });
+
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
     SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
