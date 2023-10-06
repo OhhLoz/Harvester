@@ -1,3 +1,4 @@
+![All Releases](https://img.shields.io/github/downloads/ohhloz/harvester/total.svg) [![Forge Installs](https://img.shields.io/badge/dynamic/json?label=Forge%20Installs&query=package.installs&suffix=%25&url=https%3A%2F%2Fforge-vtt.com%2Fapi%2Fbazaar%2Fpackage%2Fharvester&colorB=03ff1c&style=for-the-badge)](https://forge-vtt.com/bazaar#package=harvester)
 # Better Harvesting and Looting
 A QoL FoundryVTT module to improve the harvesting and looting experience.
 
@@ -17,3 +18,4 @@ https://creativecommons.org/licenses/by/4.0/legalcode.
 ## Acknowledgments
 
 * [data-toolbox](https://foundryvtt.com/packages/data-toolbox) For providing an easy method for importing items programmatically from a csv to a compendium
+* [p4535992](https://github.com/p4535992) For adding Compatibility with Better Roll Tables

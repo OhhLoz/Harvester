@@ -95,6 +95,16 @@ export function registerSettings()
         default: false
     });
 
+    game.settings.register("harvester", "enableBetterRollIntegration", {
+        name: "Enable integration with the module 'Better Rolltable'",
+        hint: "Integration with the module 'Better Rolltable', for a more randomized behavior during the harvester action and a better customization for the specific creature, formula, filter additional elements, etc.",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false
+    });
+
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
     SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
@@ -104,6 +114,7 @@ export function registerSettings()
     SETTINGS.allowAbilityChange = game.settings.get("harvester", "allowAbilityChange");
     SETTINGS.disableLoot = game.settings.get("harvester", "disableLoot");
     SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
+    SETTINGS.enableBetterRollIntegration = game.settings.get("harvester", "enableBetterRollIntegration");
 }
 
 export const SETTINGS =
@@ -116,58 +127,6 @@ export const SETTINGS =
     enforceRange: true,
     allowAbilityChange: false,
     disableLoot: false,
-    lootBeasts: false
+    lootBeasts: false,
+    enableBetterRollIntegration: false
 }
-
-export const CONSTANTS =
-{
-    harvestActionId : "ich3SV1HXRlq8K32",
-    harvestActionEffectId : "0plmpCQ8D2Ezc1Do",
-    lootActionId : "yaMtYJlcLh9mSBQI",
-    lootActionEffectId : "KiM9NV0Od4a27JmY",
-    actionCompendiumId : "harvester.actions",
-    harvestCompendiumId : "harvester.harvest",
-    lootCompendiumId : "harvester.loot"
-}
-
-export const dragonIgnoreArr =
-[
-    "Amethyst",
-    "Black",
-    "Blue",
-    "Brass",
-    "Bronze",
-    "Copper",
-    "Crystal",
-    "Deep",
-    "Emerald",
-    "Gold",
-    "Green",
-    "Lunar",
-    "Moonstone",
-    "Red",
-    "Sapphire",
-    "Silver",
-    "Solar",
-    "Topaz",
-    "White"
-]
-
-export const currencyMap = new Map(
-[
-    ["Copper", "cp"],
-    ["Silver", "sp"],
-    ["Electrum", "ep"],
-    ["Gold", "gp"],
-    ["Platinum", "pp"]
-])
-
-export const sizeHashMap = new Map(
-[
-    ["tiny", 5],
-    ["sm", 5],
-    ["med", 5],
-    ["lg", 11],
-    ["huge", 14.2],
-    ["grg", 17.7]
-])

@@ -77,6 +77,7 @@ export const CONSTANTS =
     lootCompendiumId : "harvester.loot",
     customCompendiumId : "harvester.custom",
     customLootCompendiumId : "harvester.custom-loot",
+    betterRollTableId: "better-rolltables.brt-harvest-harvester",
     dragonIgnoreArr : dragonIgnoreArr,
     currencyMap: currencyMap,
     sizeHashMap: sizeHashMap,
