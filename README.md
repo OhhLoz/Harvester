@@ -18,3 +18,4 @@ https://creativecommons.org/licenses/by/4.0/legalcode.
 ## Acknowledgments
 
 * [data-toolbox](https://foundryvtt.com/packages/data-toolbox) For providing an easy method for importing items programmatically from a csv to a compendium
+* [p4535992](https://github.com/p4535992) For adding Compatibility with Better Roll Tables

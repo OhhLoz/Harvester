@@ -1,7 +1,7 @@
 import { registerSettings, SETTINGS } from "./settings.js";
 import { CONSTANTS } from "./constants.js";
 
-var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestBetterRollCompendium, harvestAction, lootAction, socket, currencyFlavors;
+var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestBetterRollCompendium, harvestAction, lootAction, socket, currencyFlavors, hasBetterRollTables;
 
 Hooks.on("init", function()
 {
@@ -16,10 +16,10 @@ Hooks.on("ready", async function()
   lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId).getDocuments();
   customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
   customLootCompendium = await game.packs.get(CONSTANTS.customLootCompendiumId).getDocuments();
-  if(game.settings.get("harvester", "enableBetterRollIntegration") 
-    && game.modules.get("better-rolltables")?.active) {
-    harvestBetterRollCompendium = await game.packs.get(`better-rolltables.brt-harvest-harvester`).getDocuments();
-  }
+  hasBetterRollTables = await game.modules.get("better-rolltables")?.active;
+  if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables)
+    harvestBetterRollCompendium = await game.packs.get(CONSTANTS.betterRollTableId).getDocuments();
+
   harvestAction = await actionCompendium.find(a => a.id == CONSTANTS.harvestActionId);
   lootAction = await actionCompendium.find(a => a.id == CONSTANTS.lootActionId);
 
@@ -89,17 +89,15 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
   var targetActor = game.actors.get(targetToken.document.actorId)
 
   var matchedItems = [];
-  if(game.settings.get("harvester", "enableBetterRollIntegration") 
-    && game.modules.get("better-rolltables")?.active
-    && item.name === harvestAction.name) {
-    if(item.name == harvestAction.name) {
+  if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) 
+  {
+    if(item.name == harvestAction.name)
       matchedItems = retrieveTablesHarvestWithBetterRollTables(targetActor, item.name);
-    } else {
+    else
       matchedItems = searchCompendium(targetActor, item.name)
-    }
-  } else {
+  } 
+  else
     matchedItems = searchCompendium(targetActor, item.name)
-  }
 
   if(item.name == lootAction.name)
   {
@@ -116,11 +114,13 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
     var harvestMessage = targetToken.name;
     if (harvestMessage != targetActor.name)
       harvestMessage += ` (${targetActor.name})`
-    if(game.settings.get("harvester", "enableBetterRollIntegration") 
-        && game.modules.get("better-rolltables")?.active) {
+    if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables) 
+    {
       skillCheckVerbose = getProperty(matchedItems[0],`flags.better-rolltables.brt-skill-value`);
       skillCheck = skillCheckVerbose;
-    } else {
+    } 
+    else 
+    {
       if(matchedItems[0].compendium.metadata.id == CONSTANTS.harvestCompendiumId)
         skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
       else
@@ -171,9 +171,8 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   }
 
   var matchedItems = [];
-  if(game.settings.get("harvester", "enableBetterRollIntegration") 
-    && game.modules.get("better-rolltables")?.active
-    && item.name === harvestAction.name) {
+  if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) 
+  {
     matchedItems = await retrieveItemsHarvestWithBetterRollTables(
       targetedActor, 
       item.name, 
@@ -190,7 +189,9 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
           successArr.push(item);
         }
     });
-  } else {
+  } 
+  else 
+  {
     matchedItems = await searchCompendium(targetedActor, item.name)
 
     socket.executeAsGM(addEffect, targetedToken.id, "Harvest");
@@ -239,13 +240,13 @@ function validateAction(controlToken, targetedToken, actionName)
   }
 
   let actor = null;
-  if(!isEmptyObject(targetedToken.document.delta?.system)) {
+  if(!isEmptyObject(targetedToken.document.delta?.system))
     actor = targetedToken.document.delta;
-  } else if(!isEmptyObject(targetedToken.document.actor)) {
+  else if(!isEmptyObject(targetedToken.document.actor))
     actor = targetedToken.document.actor;
-  } else if(targetedToken.document.actorId) {
+  else if(targetedToken.document.actorId)
     actor = game.actors.get(targetedToken.document.actorId);
-  }
+
   if(!actor)
   {
     ui.notifications.warn(targetedToken.name + " has not data to retrieve");
@@ -408,7 +409,7 @@ function retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName)
     // const dcValue = getProperty(xxx, `system.description.chat`);
     // const skillValue = getProperty(xxx, `system.description.unidentified`);
     const sourceValue = actorName ?? ""; // getProperty(xxx, `system.source`);
-    // let compendium = game.packs.get(`better-rolltables.brt-harvest-harvester`);
+    // let compendium = game.packs.get(betterRollTableId);
     // const docs = compendium.contents;
     const docs = harvestBetterRollCompendium;
     let tablesChecked = [];
