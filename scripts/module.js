@@ -458,7 +458,9 @@ async function retrieveItemsHarvestWithBetterRollTables(targetedActor, actionNam
       options: {
         rollMode: "gmroll",
         dc: dcValue,
-        skill: skillDenom
+        skill: skillDenom,
+        distinct: true,
+        distinctKeepRolling: false
       }
     });
   }
