@@ -29,7 +29,7 @@ Hooks.on("ready", async function()
     ui.notifications.error("socketlib must be installed & enabled for harvester to function correctly.", { permanent: true });
 
   if (game.users.activeGM?.id !== game.user.id) return
-  addActionToActors();
+  await addActionToActors();
 });
 
 Hooks.once("socketlib.ready", () => {
@@ -38,16 +38,16 @@ Hooks.once("socketlib.ready", () => {
   console.log("harvester | Registered socketlib functions");
 });
 
-Hooks.on("createActor", (actor, data, options, id) =>
+Hooks.on("createActor", async (actor, data, options, id) =>
 {
   if (SETTINGS.autoAddActionGroup != "None")
   {
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
 
-    addItemToActor(actor, [harvestAction]);
+    await addItemToActor(actor, [harvestAction]);
     if(!SETTINGS.disableLoot)
-      addItemToActor(actor, [lootAction]);
+      await addItemToActor(actor, [lootAction]);
   }
 })
 
@@ -219,7 +219,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   }
 
   if(SETTINGS.autoAddItems && successArr?.length > 0)
-    addItemToActor(controlledToken.actor, successArr);
+    await addItemToActor(controlledToken.actor, successArr);
 
   if (lootMessage)
     messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
@@ -477,12 +477,12 @@ async function retrieveItemsHarvestWithBetterRollTables(targetedActor, actionNam
 
 }
 
-function addActionToActors()
+async function addActionToActors()
 {
   if (SETTINGS.autoAddActionGroup == "None")
     return;
 
-  game.actors.forEach(actor =>
+  game.actors.forEach(async (actor) =>
   {
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
@@ -506,9 +506,9 @@ function addActionToActors()
     })
 
     if (!hasHarvest)
-      addItemToActor(actor, [harvestAction]);
+      await addItemToActor(actor, [harvestAction]);
     if (!hasLoot && !SETTINGS.disableLoot)
-      addItemToActor(actor, [lootAction]);
+      await addItemToActor(actor, [lootAction]);
   })
   console.log("harvester | ready() - Added Actions to All Actors specified in Settings");
 }
@@ -556,10 +556,10 @@ function addEffect(targetTokenId, actionName)
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
-function addItemToActor(actor, itemsArray)
+async function addItemToActor(actor, itemsArray)
 {
   for(const item of itemsArray) {
-    _createItem(item, actor);
+    await _createItem(item, actor);
   }
 }
 
@@ -590,7 +590,7 @@ function isRealNumber(inNumber) {
  * @param {number} customLimit
  * @returns {Item} the create/updated Item
  */
-function _createItem(item, actor, stackSame = true, customLimit = 0) {
+async function _createItem(item, actor, stackSame = true, customLimit = 0) {
   const QUANTITY_PROPERTY_PATH ="system.quantity";
   const WEIGHT_PROPERTY_PATH = "system.weight";
   const PRICE_PROPERTY_PATH = "system.price";
@@ -633,14 +633,14 @@ function _createItem(item, actor, stackSame = true, customLimit = 0) {
       const newWeight = getProperty(originalItem, weightAttribute) + (getProperty(newItemData, weightAttribute) ?? 1);
       setProperty(updateItem, `${weightAttribute}`, newWeight);
 
-      actor.updateEmbeddedDocuments("Item", [updateItem]);
+      await actor.updateEmbeddedDocuments("Item", [updateItem]);
       console.log(`harvester | Updated ${item.name} to ${actor.name}`);
     } else {
       console.log(`harvester | Nothing is done with ${item.name} on ${actor.name}`);
     }
   } else {
     /** we create a new item if we don't own already */
-    actor.createEmbeddedDocuments("Item", [newItemData]);
+    await actor.createEmbeddedDocuments("Item", [newItemData]);
     console.log(`harvester | Added ${item.name} to ${actor.name}`);
   }
 }
