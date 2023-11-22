@@ -458,9 +458,7 @@ async function retrieveItemsHarvestWithBetterRollTables(targetedActor, actionNam
       options: {
         rollMode: "gmroll",
         dc: dcValue,
-        skill: skillDenom,
-        distinct: true,
-        distinctKeepRolling: false
+        skill: skillDenom
       }
     });
   }
@@ -560,8 +558,7 @@ function addEffect(targetTokenId, actionName)
 
 function addItemToActor(actor, item)
 {
-  actor.createEmbeddedDocuments('Item', item);
-  console.log(`harvester | Added ${item.length} items to ${actor.name}`);
+  _createItem(item, actor);
 }
 
 function isEmptyObject(obj) {
@@ -581,4 +578,67 @@ function isEmptyObject(obj) {
 
 function isRealNumber(inNumber) {
   return !isNaN(inNumber) && typeof inNumber === "number" && isFinite(inNumber);
+}
+
+/**
+ *
+ * @param {Item}  item The item to add to the actor
+ * @param {Actor} actor to which to add items to
+ * @param {boolean} stackSame if true add quantity to an existing item of same name in the current actor
+ * @param {number} customLimit
+ * @returns {Item} the create/updated Item
+ */
+function _createItem(item, actor, stackSame = true, customLimit = 0) {
+  const QUANTITY_PROPERTY_PATH ="system.quantity";
+  const WEIGHT_PROPERTY_PATH = "system.weight";
+  const PRICE_PROPERTY_PATH = "system.price";
+
+  const newItemData = item;
+  const itemPrice = getProperty(newItemData, PRICE_PROPERTY_PATH) || 0;
+  const embeddedItems = [...actor.getEmbeddedCollection("Item").values()];
+  // Name and price should be enough for a check for the same item...
+  const originalItem = embeddedItems.find(
+    (i) => i.name === newItemData.name && itemPrice === getProperty(i, PRICE_PROPERTY_PATH)
+  );
+
+  /** if the item is already owned by the actor (same name and same PRICE) */
+  if (originalItem && stackSame) {
+    /** add quantity to existing item */
+
+    const stackAttribute = QUANTITY_PROPERTY_PATH;
+    const priceAttribute = PRICE_PROPERTY_PATH;
+    const weightAttribute = WEIGHT_PROPERTY_PATH;
+
+    const newItemQty = getProperty(newItemData, stackAttribute) || 1;
+    const originalQty = getProperty(originalItem, stackAttribute) || 1;
+    const updateItem = { _id: originalItem.id };
+    const newQty = Number(originalQty) + Number(newItemQty);
+    if (customLimit > 0) {
+      // limit is bigger or equal to newQty
+      if (Number(customLimit) < Number(newQty)) {
+        //limit was reached, we stick to that limit
+        ui.notifications.warn("Custom limit is been reached for the item '"+item.name+"'");
+        return customLimit;
+      }
+    }
+    // If quantity differ updated the item
+    if (newQty != newItemQty) {
+      setProperty(updateItem, stackAttribute, newQty);
+
+      const newPrice = getProperty(originalItem, priceAttribute) + (getProperty(newItemData, priceAttribute) ?? 1);
+      setProperty(updateItem, `${priceAttribute}`, newPrice);
+
+      const newWeight = getProperty(originalItem, weightAttribute) + (getProperty(newItemData, weightAttribute) ?? 1);
+      setProperty(updateItem, `${weightAttribute}`, newWeight);
+
+      actor.updateEmbeddedDocuments("Item", [updateItem]);
+      console.log(`harvester | Updated ${item.name} to ${actor.name}`);
+    } else {
+      console.log(`harvester | Nothing is done with ${item.name} on ${actor.name}`);
+    }
+  } else {
+    /** we create a new item if we don't own already */
+    actor.createEmbeddedDocuments("Item", [newItemData]);
+    console.log(`harvester | Added ${item.name} to ${actor.name}`);
+  }
 }
