@@ -14,6 +14,10 @@ This work includes material taken from the System Reference Document 5.1 (“SRD
 the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The
 SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at
 https://creativecommons.org/licenses/by/4.0/legalcode.  
+
+## Integration with the module [Better Rolltables](https://github.com/p4535992/foundryvtt-better-rolltables/tree/master) -  from p4535992
+
+In the BRT Harvest Rolltable sheet, the "Source Reference" field is the one used by this module to connect the monster to the rolltable! So **"Source Reference" === "Name of The Monster"** , and REMEMBER YOU MUST PUT THE NEW ROLLTABLE IN THE BRT COMPENDIUM "better-rolltables.brt-harvest-harvester" or in the Rolltable directory of the world itself (for now).
   
 ## Acknowledgments
 
