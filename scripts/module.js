@@ -556,9 +556,11 @@ function addEffect(targetTokenId, actionName)
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
-function addItemToActor(actor, item)
+function addItemToActor(actor, itemsArray)
 {
-  _createItem(item, actor);
+  for(const item of itemsArray) {
+    _createItem(item, actor);
+  }
 }
 
 function isEmptyObject(obj) {
