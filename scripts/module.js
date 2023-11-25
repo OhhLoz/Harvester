@@ -598,9 +598,9 @@ async function _createItem(item, actor, stackSame = true, customLimit = 0) {
   const newItemData = item;
   const itemPrice = getProperty(newItemData, PRICE_PROPERTY_PATH) || 0;
   const embeddedItems = [...actor.getEmbeddedCollection("Item").values()];
-  // Name and price should be enough for a check for the same item...
+  // Name should be enough for a check for the same item right ?
   const originalItem = embeddedItems.find(
-    (i) => i.name === newItemData.name && itemPrice === getProperty(i, PRICE_PROPERTY_PATH)
+    (i) => i.name === newItemData.name
   );
 
   /** if the item is already owned by the actor (same name and same PRICE) */
@@ -627,10 +627,15 @@ async function _createItem(item, actor, stackSame = true, customLimit = 0) {
     if (newQty != newItemQty) {
       setProperty(updateItem, stackAttribute, newQty);
 
-      const newPrice = getProperty(originalItem, priceAttribute) + (getProperty(newItemData, priceAttribute) ?? 1);
+      const newPriceValue =
+        (getProperty(originalItem, priceAttribute)?.value ?? 0) + (getProperty(newItemData, priceAttribute)?.value ?? 0);
+      const newPrice = {
+        denomination: getProperty(item, priceAttribute)?.denomination,
+        value: newPriceValue,
+      };
       setProperty(updateItem, `${priceAttribute}`, newPrice);
 
-      const newWeight = getProperty(originalItem, weightAttribute) + (getProperty(newItemData, weightAttribute) ?? 1);
+      const newWeight = (getProperty(originalItem, weightAttribute) ?? 1) + (getProperty(newItemData, weightAttribute) ?? 1);
       setProperty(updateItem, `${weightAttribute}`, newWeight);
 
       await actor.updateEmbeddedDocuments("Item", [updateItem]);
