@@ -1,7 +1,7 @@
 import { registerSettings, SETTINGS } from "./settings.js";
 import { CONSTANTS } from "./constants.js";
 
-var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestBetterRollCompendium, harvestAction, lootAction, socket, currencyFlavors, hasBetterRollTables;
+var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestBetterRollCompendium, harvestAction, lootAction, harvesterAndLootingSocket, currencyFlavors, hasBetterRollTables;
 
 Hooks.on("init", function()
 {
@@ -33,8 +33,8 @@ Hooks.on("ready", async function()
 });
 
 Hooks.once("socketlib.ready", () => {
-	socket = globalThis.socketlib.registerModule("harvester");
-	socket.register("addEffect", addEffect);
+	harvesterAndLootingSocket = globalThis.socketlib.registerModule("harvester");
+	harvesterAndLootingSocket.register("addEffect", addEffect);
   console.log("harvester | Registered socketlib functions");
 });
 
@@ -138,7 +138,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
     item.update({system: {formula: ""}})
     item.setFlag("harvester", "targetId", "")
     chatData.content = chatData.content.replace("Harvest valuable materials from corpses.",`After examining the corpse you realise there is nothing you can harvest.`)
-    socket.executeAsGM(addEffect, targetToken.id, "Harvest");
+    harvesterAndLootingSocket.executeAsGM(addEffect, targetToken.id, "Harvest");
   }
 })
 
@@ -179,7 +179,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
       result.total, 
       getProperty(item, `flags.harvester.skillCheck`));
 
-    socket.executeAsGM(addEffect, targetedToken.id, "Harvest");
+    harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
 
     matchedItems.forEach(item =>
     {
@@ -194,7 +194,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   {
     matchedItems = await searchCompendium(targetedActor, item.name)
 
-    socket.executeAsGM(addEffect, targetedToken.id, "Harvest");
+    harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
   
     if(matchedItems[0].compendium.metadata.id == CONSTANTS.customCompendiumId)
         matchedItems = matchedItems[0].items;
@@ -288,7 +288,7 @@ function handleLoot(item)
 
   var itemArr = searchCompendium(targetedActor, lootAction.name);
 
-  socket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
+  harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
 
   if (itemArr.length == 0)
   {
