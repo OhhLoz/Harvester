@@ -117,6 +117,10 @@ export function registerSettings()
     });
 
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
+      SETTINGS.autoAddItemPiles = game.settings.get(
+    "harvester",
+    "autoAddItemPiles"
+  );
     SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
     SETTINGS.npcOnlyHarvest = game.settings.get("harvester", "npcOnlyHarvest");
@@ -131,6 +135,7 @@ export function registerSettings()
 export const SETTINGS =
 {
     autoAddItems: true,
+      autoAddItemPiles: true,
     gmOnly: false,
     requireDeadEffect: true,
     npcOnlyHarvest: true,
