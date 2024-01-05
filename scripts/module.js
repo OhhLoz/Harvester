@@ -1,7 +1,7 @@
 import { registerSettings, SETTINGS } from "./settings.js";
 import { CONSTANTS } from "./constants.js";
 
-var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestBetterRollCompendium, harvestAction, lootAction, socket, currencyFlavors, hasBetterRollTables;
+var actionCompendium, harvestCompendium, lootCompendium, customCompendium, customLootCompendium, harvestBetterRollCompendium, harvestAction, lootAction, harvesterAndLootingSocket, currencyFlavors, hasBetterRollTables;
 
 Hooks.on("init", function()
 {
@@ -29,25 +29,25 @@ Hooks.on("ready", async function()
     ui.notifications.error("socketlib must be installed & enabled for harvester to function correctly.", { permanent: true });
 
   if (game.users.activeGM?.id !== game.user.id) return
-  addActionToActors();
+  await addActionToActors();
 });
 
 Hooks.once("socketlib.ready", () => {
-	socket = globalThis.socketlib.registerModule("harvester");
-	socket.register("addEffect", addEffect);
+	harvesterAndLootingSocket = globalThis.socketlib.registerModule("harvester");
+	harvesterAndLootingSocket.register("addEffect", addEffect);
   console.log("harvester | Registered socketlib functions");
 });
 
-Hooks.on("createActor", (actor, data, options, id) =>
+Hooks.on("createActor", async (actor, data, options, id) =>
 {
   if (SETTINGS.autoAddActionGroup != "None")
   {
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
 
-    addItemToActor(actor, [harvestAction]);
+    await addItemToActor(actor, [harvestAction]);
     if(!SETTINGS.disableLoot)
-      addItemToActor(actor, [lootAction]);
+      await addItemToActor(actor, [lootAction]);
   }
 })
 
@@ -138,7 +138,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
     item.update({system: {formula: ""}})
     item.setFlag("harvester", "targetId", "")
     chatData.content = chatData.content.replace("Harvest valuable materials from corpses.",`After examining the corpse you realise there is nothing you can harvest.`)
-    socket.executeAsGM(addEffect, targetToken.id, "Harvest");
+    harvesterAndLootingSocket.executeAsGM(addEffect, targetToken.id, "Harvest");
   }
 })
 
@@ -179,7 +179,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
       result.total, 
       getProperty(item, `flags.harvester.skillCheck`));
 
-    socket.executeAsGM(addEffect, targetedToken.id, "Harvest");
+    harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
 
     matchedItems.forEach(item =>
     {
@@ -194,7 +194,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   {
     matchedItems = await searchCompendium(targetedActor, item.name)
 
-    socket.executeAsGM(addEffect, targetedToken.id, "Harvest");
+    harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
   
     if(matchedItems[0].compendium.metadata.id == CONSTANTS.customCompendiumId)
         matchedItems = matchedItems[0].items;
@@ -219,7 +219,7 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   }
 
   if(SETTINGS.autoAddItems && successArr?.length > 0)
-    addItemToActor(controlledToken.actor, successArr);
+    await addItemToActor(controlledToken.actor, successArr);
 
   if (lootMessage)
     messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
@@ -288,7 +288,7 @@ function handleLoot(item)
 
   var itemArr = searchCompendium(targetedActor, lootAction.name);
 
-  socket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
+  harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
 
   if (itemArr.length == 0)
   {
@@ -477,12 +477,12 @@ async function retrieveItemsHarvestWithBetterRollTables(targetedActor, actionNam
 
 }
 
-function addActionToActors()
+async function addActionToActors()
 {
   if (SETTINGS.autoAddActionGroup == "None")
     return;
 
-  game.actors.forEach(actor =>
+  game.actors.forEach(async (actor) =>
   {
     if(SETTINGS.autoAddActionGroup == "PCOnly" && actor.type == "npc")
       return;
@@ -506,9 +506,9 @@ function addActionToActors()
     })
 
     if (!hasHarvest)
-      addItemToActor(actor, [harvestAction]);
+      await addItemToActor(actor, [harvestAction]);
     if (!hasLoot && !SETTINGS.disableLoot)
-      addItemToActor(actor, [lootAction]);
+      await addItemToActor(actor, [lootAction]);
   })
   console.log("harvester | ready() - Added Actions to All Actors specified in Settings");
 }
@@ -556,10 +556,11 @@ function addEffect(targetTokenId, actionName)
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
-function addItemToActor(actor, item)
+async function addItemToActor(actor, itemsArray)
 {
-  actor.createEmbeddedDocuments('Item', item);
-  console.log(`harvester | Added ${item.length} items to ${actor.name}`);
+  for(const item of itemsArray) {
+    await _createItem(item, actor);
+  }
 }
 
 function isEmptyObject(obj) {
@@ -579,4 +580,72 @@ function isEmptyObject(obj) {
 
 function isRealNumber(inNumber) {
   return !isNaN(inNumber) && typeof inNumber === "number" && isFinite(inNumber);
+}
+
+/**
+ *
+ * @param {Item}  item The item to add to the actor
+ * @param {Actor} actor to which to add items to
+ * @param {boolean} stackSame if true add quantity to an existing item of same name in the current actor
+ * @param {number} customLimit
+ * @returns {Item} the create/updated Item
+ */
+async function _createItem(item, actor, stackSame = true, customLimit = 0) {
+  const QUANTITY_PROPERTY_PATH ="system.quantity";
+  const WEIGHT_PROPERTY_PATH = "system.weight";
+  const PRICE_PROPERTY_PATH = "system.price";
+
+  const newItemData = item;
+  const itemPrice = getProperty(newItemData, PRICE_PROPERTY_PATH) || 0;
+  const embeddedItems = [...actor.getEmbeddedCollection("Item").values()];
+  // Name should be enough for a check for the same item right ?
+  const originalItem = embeddedItems.find(
+    (i) => i.name === newItemData.name
+  );
+
+  /** if the item is already owned by the actor (same name and same PRICE) */
+  if (originalItem && stackSame) {
+    /** add quantity to existing item */
+
+    const stackAttribute = QUANTITY_PROPERTY_PATH;
+    const priceAttribute = PRICE_PROPERTY_PATH;
+    const weightAttribute = WEIGHT_PROPERTY_PATH;
+
+    const newItemQty = getProperty(newItemData, stackAttribute) || 1;
+    const originalQty = getProperty(originalItem, stackAttribute) || 1;
+    const updateItem = { _id: originalItem.id };
+    const newQty = Number(originalQty) + Number(newItemQty);
+    if (customLimit > 0) {
+      // limit is bigger or equal to newQty
+      if (Number(customLimit) < Number(newQty)) {
+        //limit was reached, we stick to that limit
+        ui.notifications.warn("Custom limit is been reached for the item '"+item.name+"'");
+        return customLimit;
+      }
+    }
+    // If quantity differ updated the item
+    if (newQty != newItemQty) {
+      setProperty(updateItem, stackAttribute, newQty);
+
+      const newPriceValue =
+        (getProperty(originalItem, priceAttribute)?.value ?? 0) + (getProperty(newItemData, priceAttribute)?.value ?? 0);
+      const newPrice = {
+        denomination: getProperty(item, priceAttribute)?.denomination,
+        value: newPriceValue,
+      };
+      setProperty(updateItem, `${priceAttribute}`, newPrice);
+
+      const newWeight = (getProperty(originalItem, weightAttribute) ?? 1) + (getProperty(newItemData, weightAttribute) ?? 1);
+      setProperty(updateItem, `${weightAttribute}`, newWeight);
+
+      await actor.updateEmbeddedDocuments("Item", [updateItem]);
+      console.log(`harvester | Updated ${item.name} to ${actor.name}`);
+    } else {
+      console.log(`harvester | Nothing is done with ${item.name} on ${actor.name}`);
+    }
+  } else {
+    /** we create a new item if we don't own already */
+    await actor.createEmbeddedDocuments("Item", [newItemData]);
+    console.log(`harvester | Added ${item.name} to ${actor.name}`);
+  }
 }
