@@ -219,13 +219,12 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   }
 
   if (SETTINGS.autoAddItems && successArr?.length > 0) {
-    if (await game.modules.get("item-piles")?.active) {
+    if (SETTINGS.autoAddItemPiles && game.modules.get("item-piles")?.active) {
       addToItemPile(targetedToken.document.actor, successArr);
     } else {
       addItemToActor(controlledToken.actor, successArr);
     }
   }
-	
   if (lootMessage)
     messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
 
