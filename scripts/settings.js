@@ -10,6 +10,17 @@ export function registerSettings()
         default: true
     });
 
+
+      game.settings.register("harvester", "autoAddItemPiles", {
+    name: "Automatically Assign Items to Item Piles",
+    hint: "All harvested loot and looted currency is added to Item Piles.",
+    scope: "world",
+    config: true,
+    requiresReload: true,
+    type: Boolean,
+    default: true,
+  });
+
     game.settings.register("harvester", "autoAddActionGroup", {
         name: "Automatically Assign Action",
         hint: "Gives the Actions to the selected group.",
