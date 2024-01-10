@@ -53,7 +53,7 @@ Hooks.on("createActor", async (actor, data, options, id) =>
 
 Hooks.on('dnd5e.preUseItem', function(item, config, options)
 {
-  if (item.system.source != "Harvester")
+  if (item.system.source.label != "Harvester")
     return;
 
   if (game.user.targets.size != 1)
@@ -74,7 +74,7 @@ Hooks.on('dnd5e.preUseItem', function(item, config, options)
 
 Hooks.on('dnd5e.useItem', function(item, config, options)
 {
-  if (item.system.source != "Harvester" || item.name == harvestAction.name || SETTINGS.disableLoot)
+  if (item.system.source.label != "Harvester" || item.name == harvestAction.name || SETTINGS.disableLoot)
     return;
 
   handleLoot(item);
@@ -82,20 +82,20 @@ Hooks.on('dnd5e.useItem', function(item, config, options)
 
 Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
 {
-  if (item.system.source != "Harvester")
+  if (item.system.source.label != "Harvester")
     return;
 
   var targetToken = game.user.targets.first();
   var targetActor = game.actors.get(targetToken.document.actorId)
 
   var matchedItems = [];
-  if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) 
+  if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name)
   {
     if(item.name == harvestAction.name)
       matchedItems = retrieveTablesHarvestWithBetterRollTables(targetActor, item.name);
     else
       matchedItems = searchCompendium(targetActor, item.name)
-  } 
+  }
   else
     matchedItems = searchCompendium(targetActor, item.name)
 
@@ -114,12 +114,12 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
     var harvestMessage = targetToken.name;
     if (harvestMessage != targetActor.name)
       harvestMessage += ` (${targetActor.name})`
-    if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables) 
+    if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables)
     {
       skillCheckVerbose = getProperty(matchedItems[0],`flags.better-rolltables.brt-skill-value`);
       skillCheck = skillCheckVerbose;
-    } 
-    else 
+    }
+    else
     {
       if(matchedItems[0].compendium.metadata.id == CONSTANTS.harvestCompendiumId)
         skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
@@ -128,7 +128,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
 
       skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose)
     }
-    
+
     item.setFlag("harvester", "skillCheck", skillCheck)
     item.update({system: {formula: `1d20 + @skills.${skillCheck}.total`}})
     chatData.content = chatData.content.replace(`<button data-action="formula">Other Formula</button>`, ``).replace(`<div class="card-buttons">`, `<div class="card-buttons"><button data-action="formula">${skillCheckVerbose} Skill Check</button>`).replace("Harvest valuable materials from corpses.",`Attempting to Harvest ${harvestMessage}`)
@@ -144,7 +144,7 @@ Hooks.on('dnd5e.preDisplayCard', function(item, chatData, options)
 
 Hooks.on('dnd5e.preRollFormula', async function(item, options)
 {
-  if (item.system.source != "Harvester")
+  if (item.system.source.label != "Harvester")
     return;
 
   var targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
@@ -171,12 +171,12 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
   }
 
   var matchedItems = [];
-  if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) 
+  if(SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name)
   {
     matchedItems = await retrieveItemsHarvestWithBetterRollTables(
-      targetedActor, 
-      item.name, 
-      result.total, 
+      targetedActor,
+      item.name,
+      result.total,
       getProperty(item, `flags.harvester.skillCheck`));
 
     harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
@@ -189,16 +189,16 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
           successArr.push(item);
         }
     });
-  } 
-  else 
+  }
+  else
   {
     matchedItems = await searchCompendium(targetedActor, item.name)
 
     harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
-  
+
     if(matchedItems[0].compendium.metadata.id == CONSTANTS.customCompendiumId)
         matchedItems = matchedItems[0].items;
-  
+
     matchedItems.forEach(item =>
     {
       if (item.type == "loot")
@@ -207,8 +207,8 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
         if(item.compendium.metadata.id == CONSTANTS.harvestCompendiumId)
           itemDC = parseInt(item.system.description.chat)
         else
-          itemDC = item.system.source.match(/\d+/g)[0];
-  
+          itemDC = item.system.source.label.match(/\d+/g)[0];
+
         if(itemDC <= result.total)
         {
           lootMessage += `<li>@UUID[${item.uuid}]</li>`
@@ -371,7 +371,7 @@ function searchCompendium(actor, actionName)
     if (returnArr.length != 0)
       return returnArr;
 
-    returnArr = checkCompendium(harvestCompendium, "system.source", actorName)
+    returnArr = checkCompendium(harvestCompendium, "system.source.label", actorName)
   }
   else if (actionName == lootAction.name && !SETTINGS.disableLoot)
   {
@@ -405,7 +405,7 @@ function retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName)
   }
   if(actionName == harvestAction.name)
   {
-    
+
     // const dcValue = getProperty(xxx, `system.description.chat`);
     // const skillValue = getProperty(xxx, `system.description.unidentified`);
     const sourceValue = actorName ?? ""; // getProperty(xxx, `system.source`);
@@ -447,14 +447,14 @@ async function retrieveItemsHarvestWithBetterRollTables(targetedActor, actionNam
     if(!skillDenom) {
       skillDenom = "";
     }
-  
+
     const tablesChecked = retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName)
     if(!tablesChecked || tablesChecked.length === 0) {
       return [];
     }
     const tableHarvester = tablesChecked[0];
     returnArr = await game.modules.get("better-rolltables").api.retrieveItemsDataFromRollTableResultSpecialHarvester({
-      table: tableHarvester, 
+      table: tableHarvester,
       options: {
         rollMode: "gmroll",
         dc: dcValue,
@@ -491,12 +491,12 @@ async function addActionToActors()
     var hasLoot = false;
 
     actor.items.forEach(item =>{
-      if(item.name == harvestAction.name && item.system.source == "Harvester")
+      if(item.name == harvestAction.name && item.system.source.label == "Harvester")
       {
         hasHarvest = true;
         resetToDefault(item)
       }
-      if(item.name == lootAction.name && item.system.source == "Harvester")
+      if(item.name == lootAction.name && item.system.source.label == "Harvester")
       {
         hasLoot = true;
         resetToDefault(item)
