@@ -17,7 +17,7 @@
     "verified": "11.308"
   },
   "scripts": [],
-  "esmodules": ["scripts/module.js"],
+  "esmodules": ["module.js"],
   "socket": true,
   "persistentStorage": true,
   "packs": [
@@ -28,7 +28,11 @@
       "system": "dnd5e",
       "private": false,
       "type": "Item",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "actions",
@@ -37,7 +41,11 @@
       "system": "dnd5e",
       "private": false,
       "type": "Item",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "loot",
@@ -46,7 +54,11 @@
       "system": "dnd5e",
       "private": false,
       "type": "RollTable",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "custom",
@@ -55,7 +67,11 @@
       "system": "dnd5e",
       "private": false,
       "type": "Actor",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "custom-loot",
@@ -64,7 +80,11 @@
       "system": "dnd5e",
       "private": false,
       "type": "RollTable",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
     },
     {
       "name": "license",
@@ -73,7 +93,26 @@
       "system": "dnd5e",
       "private": false,
       "type": "JournalEntry",
-      "flags": {}
+      "flags": {},
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Better Harvesting and Looting",
+      "color": "#ffb38a",
+      "sorting": "a",
+      "packs": [
+        "harvest",
+        "actions",
+        "loot",
+        "custom",
+        "custom-loot",
+        "license"
+      ]
     }
   ],
   "relationships": {
@@ -94,6 +133,6 @@
     ]
   },
   "id": "harvester",
-  "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.7.0/module.json",
-  "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.7.0/harvester.zip"
+  "manifest": "https://github.com/OhhLoz/Harvester/releases/download/1.7.0/module.json",
+  "download": "https://github.com/OhhLoz/Harvester/releases/download/1.7.0/harvester.zip"
 }
