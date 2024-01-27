@@ -218,8 +218,13 @@ Hooks.on('dnd5e.preRollFormula', async function(item, options)
     });
   }
 
-  if(SETTINGS.autoAddItems && successArr?.length > 0)
-    await addItemToActor(controlledToken.actor, successArr);
+  if(SETTINGS.autoAddItems && successArr?.length > 0) {
+    if (SETTINGS.autoAddItemPiles && game.modules.get("item-piles")?.active) {
+      await addToItemPile(targetedToken.document.actor, successArr);
+    } else {
+      await addItemToActor(controlledToken.actor, successArr);
+    }
+  }
 
   if (lootMessage)
     messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
@@ -561,6 +566,14 @@ async function addItemToActor(actor, itemsArray)
   for(const item of itemsArray) {
     await _createItem(item, actor);
   }
+}
+async function addToItemPile(targetedToken, item) {
+  game.itempiles.API.addItems(targetedToken, item, {
+    mergeSimilarItems: true,
+  });
+  console.log(
+    `harvester | Added ${item.length} items to ${targetedToken.name}`
+  );
 }
 
 function isEmptyObject(obj) {

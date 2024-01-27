@@ -10,6 +10,16 @@ export function registerSettings()
         default: true
     });
 
+  game.settings.register("harvester", "autoAddItemPiles", {
+    name: "Automatically Assign Items to Item Piles",
+    hint: "All harvested loot and looted currency is added to Item Piles.",
+    scope: "world",
+    config: true,
+    requiresReload: true,
+    type: Boolean,
+    default: true,
+  });
+
     game.settings.register("harvester", "autoAddActionGroup", {
         name: "Automatically Assign Action",
         hint: "Gives the Actions to the selected group.",
@@ -105,6 +115,12 @@ export function registerSettings()
         default: false
     });
 
+  SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
+  SETTINGS.autoAddItemPiles = game.settings.get(
+    "harvester",
+    "autoAddItemPiles"
+  );
+
     SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
     SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
@@ -120,6 +136,7 @@ export function registerSettings()
 export const SETTINGS =
 {
     autoAddItems: true,
+    autoAddItemPiles: true,
     gmOnly: false,
     requireDeadEffect: true,
     npcOnlyHarvest: true,
