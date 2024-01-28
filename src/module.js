@@ -2,6 +2,7 @@ import { registerSettings, SETTINGS } from "./scripts/settings.js";
 import { CONSTANTS } from "./scripts/constants.js";
 import { RequestorHelpers } from "./scripts/requestor-helpers.js";
 import API from "./scripts/api.js";
+import { checkItemSourceLabel, retrieveItemSourceLabelDC } from "./scripts/lib/lib.js";
 
 let actionCompendium,
   harvestCompendium,
@@ -70,7 +71,7 @@ Hooks.on("createActor", async (actor, data, options, id) => {
 });
 
 Hooks.on("dnd5e.preUseItem", function (item, config, options) {
-  if (item.system.source.label !== "Harvester") {
+  if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
   if (game.user.targets.size !== 1) {
@@ -89,7 +90,7 @@ Hooks.on("dnd5e.preUseItem", function (item, config, options) {
 });
 
 Hooks.on("dnd5e.useItem", function (item, config, options) {
-  if (item.system.source.label !== "Harvester") {
+  if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
   if (item.name === harvestAction.name) {
@@ -101,7 +102,7 @@ Hooks.on("dnd5e.useItem", function (item, config, options) {
 });
 export async function handlePreRollHarvestAction(options) {
   const { item } = options;
-  if (item.system.source.label !== "Harvester") {
+  if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
   let targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId")) ?? game.user.targets.first();
@@ -135,6 +136,7 @@ export async function handlePreRollHarvestAction(options) {
           skillDenomination: getProperty(item, `flags.harvester.skillCheck`),
           skillItem: item,
           skillCallback: "handlePostRollHarvestAction",
+          skillChooseModifier: SETTINGS.allowAbilityChange,
         }
       );
     } else {
@@ -152,6 +154,7 @@ export async function handlePreRollHarvestAction(options) {
           skillDenomination: getProperty(item, `flags.harvester.skillCheck`),
           skillItem: item,
           skillCallback: "handlePostRollHarvestAction",
+          skillChooseModifier: SETTINGS.allowAbilityChange,
         }
       );
     }
@@ -195,6 +198,7 @@ export async function handlePreRollHarvestAction(options) {
         skillDenomination: getProperty(item, `flags.harvester.skillCheck`),
         skillItem: item,
         skillCallback: "handlePostRollHarvestAction",
+        skillChooseModifier: SETTINGS.allowAbilityChange,
       }
     );
   } else {
@@ -215,6 +219,7 @@ export async function handlePreRollHarvestAction(options) {
         skillDenomination: getProperty(item, `flags.harvester.skillCheck`),
         skillItem: item,
         skillCallback: "handlePostRollHarvestAction",
+        skillChooseModifier: SETTINGS.allowAbilityChange,
       }
     );
 
@@ -223,7 +228,7 @@ export async function handlePreRollHarvestAction(options) {
 }
 /*
 Hooks.on("dnd5e.preDisplayCard", function (item, chatData, options) {
-  if (item.system.source.label !== "Harvester") {
+  if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
   let targetToken = game.user.targets.first();
@@ -292,7 +297,7 @@ Hooks.on("dnd5e.preDisplayCard", function (item, chatData, options) {
 
 export async function handlePostRollHarvestAction(options) {
   const { actor, item, roll } = options;
-  if (item.system.source.label !== "Harvester") {
+  if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
   let targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
@@ -348,7 +353,7 @@ export async function handlePostRollHarvestAction(options) {
         if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
           itemDC = parseInt(item.system.description.chat);
         } else {
-          itemDC = item.system.source.label.match(/\d+/g)[0];
+          itemDC = retrieveItemSourceLabelDC(item); //item.system.source.label.match(/\d+/g)[0];
         }
         if (itemDC <= result.total) {
           lootMessage += `<li>@UUID[${item.uuid}]</li>`;
@@ -377,7 +382,7 @@ export async function handlePostRollHarvestAction(options) {
 
 /*
 Hooks.on("dnd5e.preRollFormula", async function (item, options) {
-  if (item.system.source.label !== "Harvester") {
+  if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
   let targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
@@ -434,7 +439,7 @@ Hooks.on("dnd5e.preRollFormula", async function (item, options) {
         if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
           itemDC = parseInt(item.system.description.chat);
         } else {
-          itemDC = item.system.source.label.match(/\d+/g)[0];
+          itemDC = retrieveItemSourceLabelDC(item); //item.system.source.label.match(/\d+/g)[0];
         }
         if (itemDC <= result.total) {
           lootMessage += `<li>@UUID[${item.uuid}]</li>`;
@@ -693,11 +698,11 @@ async function addActionToActors() {
     let hasLoot = false;
 
     actor.items.forEach((item) => {
-      if (item.name === harvestAction.name && item.system.source.label === "Harvester") {
+      if (item.name === harvestAction.name && checkItemSourceLabel(item, "Harvester")) {
         hasHarvest = true;
         resetToDefault(item);
       }
-      if (item.name === lootAction.name && item.system.source.label === "Harvester") {
+      if (item.name === lootAction.name && checkItemSourceLabel(item, "Harvester")) {
         hasLoot = true;
         resetToDefault(item);
         if (SETTINGS.disableLoot) {

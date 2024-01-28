@@ -60,6 +60,7 @@ export class RequestorHelpers {
       skillDenomination: "",
       skillItem: {},
       skillCallback: function () {},
+      skillChooseModifier: false,
     },
     optionsRequestor = {
       limit: RequestorHelpers.LIMIT.ONCE,
@@ -67,7 +68,7 @@ export class RequestorHelpers {
     }
   ) {
     const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker } = chatDetails;
-    const { skillDenomination, skillItem, skillCallback } = skillDetails;
+    const { skillDenomination, skillItem, skillCallback, skillChooseModifier } = skillDetails;
     const { limit, permission } = optionsRequestor;
 
     const actorSpeaker = tokenUseForRequest?.actor ? tokenUseForRequest.actor : actorUseForRequest;
@@ -91,7 +92,18 @@ export class RequestorHelpers {
                 // actor: the actor of the selected token, if any, or defaulting to the assigned character.
                 // event: the initiating click event when the user clicked the button.
                 // this: an object with all additional variables passed to the function (identical to scope above). If tokenId or actorId are passed in scope, then token and actor will automatically be set using these ids.
-                const roll = await actor.rollSkill(skillDenomination, { event });
+
+                /**
+                 * Roll a Skill Check
+                 * Prompt the user for input regarding Advantage/Disadvantage and any Situational Bonus
+                 * @param {string} skillId      The skill id (e.g. "ins")
+                 * @param {object} options      Options which configure how the skill check is rolled
+                 * @returns {Promise<D20Roll>}  A Promise which resolves to the created Roll instance
+                 */
+                const roll = await actor.rollSkill(skillDenomination, {
+                  skillChooseModifier: skillChooseModifier,
+                });
+
                 const options = {
                   token,
                   character,
@@ -100,10 +112,10 @@ export class RequestorHelpers {
                   data: this,
                   roll: roll,
                   skillDenomination: skillDenomination,
-                  skillItem: skillItem,
+                  item: skillItem,
                 };
 
-                // skillCallback(options);
+                // Little trick for call the exact api method from th current module
                 await game.modules.get(moduleId).api[skillCallback](options);
               },
               scope: {
@@ -111,6 +123,7 @@ export class RequestorHelpers {
                 skillDenomination: skillDenomination,
                 skillCallback: skillCallback,
                 skillItem: skillItem,
+                skillChooseModifier: skillChooseModifier,
               },
               messageOptions: {
                 speaker: ChatMessage.getSpeaker({ actor: actorSpeaker }),
