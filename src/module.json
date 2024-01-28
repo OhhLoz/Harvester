@@ -4,15 +4,13 @@
   "description": "A QoL module to improve the harvesting and looting experience.",
   "version": "1.7.1",
   "url": "https://github.com/OhhLoz/Harvester",
-  "authors":
-  [
+  "authors": [
     {
       "name": "Loz",
       "url": "https://github.com/OhhLoz"
     }
   ],
-  "compatibility":
-  {
+  "compatibility": {
     "minimum": "11",
     "verified": "11.308"
   },
@@ -105,14 +103,7 @@
       "name": "Better Harvesting and Looting",
       "color": "#ffb38a",
       "sorting": "a",
-      "packs": [
-        "harvest",
-        "actions",
-        "loot",
-        "custom",
-        "custom-loot",
-        "license"
-      ]
+      "packs": ["harvest", "actions", "loot", "custom", "custom-loot", "license"]
     }
   ],
   "relationships": {
@@ -121,13 +112,17 @@
         "id": "dnd5e",
         "type": "system",
         "compatibility": {
-            "minimum": "2.4.1"
+          "minimum": "2.4.1"
         }
       }
     ],
     "requires": [
       {
         "id": "socketlib",
+        "type": "module"
+      },
+      {
+        "id": "requestor",
         "type": "module"
       }
     ]
