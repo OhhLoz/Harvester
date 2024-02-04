@@ -106,9 +106,15 @@ Hooks.on("dnd5e.useItem", function (item, config, options) {
 
 Hooks.on("dnd5e.preDisplayCard", function (item, chatData, options) {
   if (checkItemSourceLabel(item, "Harvester")) {
-    return;
+    options.createMessage = false;
   }
 });
+
+// Hooks.on("dnd5e.displayCard", function (item, card) {
+//   if (checkItemSourceLabel(item, "Harvester")) {
+//     card = undefined;
+//   }
+// });
 
 export function validateAction(controlToken, targetedToken, actionName) {
   let measuredDistance = canvas.grid.measureDistance(controlToken.center, targetedToken.center);
