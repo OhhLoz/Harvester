@@ -1,5 +1,4 @@
 import {
-  retrieveTablesHarvestWithBetterRollTables,
   searchCompendium,
   validateAction,
   actionCompendium,
@@ -38,7 +37,7 @@ export class LootingHelpers {
     let matchedItems = [];
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
       // TODO
-      //matchedItems = retrieveTablesHarvestWithBetterRollTables(targetedActor, lootAction.name || item.name);
+      //matchedItems = retrieveTablesLootWithBetterRollTables(targetedActor, lootAction.name || item.name);
       matchedItems = searchCompendium(targetedActor, lootAction.name || item.name);
     } else {
       matchedItems = searchCompendium(targetedActor, lootAction.name || item.name);
@@ -113,11 +112,11 @@ export class LootingHelpers {
     }
 
     let matchedItems = [];
-    // item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
+    
     // harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
 
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
-      matchedItems = await retrieveItemsHarvestWithBetterRollTables(
+      matchedItems = await retrieveItemsLootWithBetterRollTables(
         targetedActor,
         item.name,
         result.total,

@@ -1,5 +1,4 @@
 import {
-  retrieveTablesHarvestWithBetterRollTables,
   searchCompendium,
   validateAction,
   actionCompendium,
@@ -37,7 +36,10 @@ export class HarvestingHelpers {
 
     let matchedItems = [];
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-      matchedItems = retrieveTablesHarvestWithBetterRollTables(targetedActor, harvestAction.name || item.name);
+      matchedItems = HarvestingHelpers.retrieveTablesHarvestWithBetterRollTables(
+        targetedActor,
+        harvestAction.name || item.name
+      );
     } else {
       matchedItems = searchCompendium(targetedActor, harvestAction.name || item.name);
     }
@@ -96,7 +98,7 @@ export class HarvestingHelpers {
     }
 
     item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
-    harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
+    // harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
   }
 
   static async handlePostRollHarvestAction(options) {
@@ -121,11 +123,11 @@ export class HarvestingHelpers {
     }
 
     let matchedItems = [];
-    // item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
-    // harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
+
+    harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
 
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
-      matchedItems = await retrieveItemsHarvestWithBetterRollTables(
+      matchedItems = await HarvestingHelpers.retrieveItemsHarvestWithBetterRollTables(
         targetedActor,
         item.name,
         result.total,
@@ -177,5 +179,78 @@ export class HarvestingHelpers {
     ChatMessage.create(messageData);
 
     return false;
+  }
+
+  static retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName) {
+    let actorName = targetedActor.name;
+    if (actorName.includes("Dragon")) {
+      actorName = formatDragon(actorName);
+    }
+    if (actionName === harvestAction.name) {
+      // const dcValue = getProperty(xxx, `system.description.chat`);
+      // const skillValue = getProperty(xxx, `system.description.unidentified`);
+      const sourceValue = actorName ?? ""; // getProperty(xxx, `system.source`);
+      // let compendium = game.packs.get(betterRollTableId);
+      // const docs = compendium.contents;
+      const docs = harvestBetterRollCompendium;
+      let tablesChecked = [];
+      // Try with the compendium first
+      for (const doc of docs) {
+        if (sourceValue.trim() === getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim()) {
+          tablesChecked.push(doc);
+        }
+      }
+      // Try on the tables imported
+      if (!tablesChecked || tablesChecked.length === 0) {
+        tablesChecked = game.tables.contents.filter((doc) => {
+          return sourceValue.trim() === getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim();
+        });
+      }
+      // We juts get the first
+      if (!tablesChecked || tablesChecked.length === 0) {
+        ui.notifications.warn(`No rolltable found for metadata sourceId '${sourceValue}'`);
+        return [];
+      }
+      return tablesChecked;
+    } else {
+      return [];
+    }
+  }
+
+  static async retrieveItemsHarvestWithBetterRollTables(targetedActor, actionName, dcValue = null, skillDenom = null) {
+    let returnArr = [];
+    if (actionName === harvestAction.name) {
+      if (!dcValue) {
+        dcValue = 0;
+      }
+      if (!skillDenom) {
+        skillDenom = "";
+      }
+
+      const tablesChecked = HarvestingHelpers.retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName);
+      if (!tablesChecked || tablesChecked.length === 0) {
+        return [];
+      }
+      const tableHarvester = tablesChecked[0];
+      returnArr = await game.modules.get("better-rolltables").api.retrieveItemsDataFromRollTableResultSpecialHarvester({
+        table: tableHarvester,
+        options: {
+          rollMode: "gmroll",
+          dc: dcValue,
+          skill: skillDenom,
+        },
+      });
+    } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
+      // TODO A INTEGRATION WITH THE LOOT TYPE TABLE
+      returnArr = checkCompendium(customLootCompendium, "name", actor.name);
+
+      if (returnArr.length !== 0) {
+        return returnArr;
+      }
+
+      returnArr = checkCompendium(lootCompendium, "name", actorName);
+    }
+
+    return returnArr ?? [];
   }
 }
