@@ -23,8 +23,8 @@ import { SETTINGS } from "../settings";
 import Logger from "./Logger";
 import { checkItemSourceLabel } from "./lib";
 
-export class LootingHelpers {
-  static async handlePreRollLootAction(options) {
+export class HarvestingHelpers {
+  static async handlePreRollHarvestAction(options) {
     const { item } = options;
     if (!checkItemSourceLabel(item, "Harvester")) {
       return;
@@ -37,16 +37,16 @@ export class LootingHelpers {
 
     let matchedItems = [];
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-      // TODO
-      //matchedItems = retrieveTablesHarvestWithBetterRollTables(targetedActor, lootAction.name || item.name);
-      matchedItems = searchCompendium(targetedActor, lootAction.name || item.name);
+      matchedItems = retrieveTablesHarvestWithBetterRollTables(targetedActor, harvestAction.name || item.name);
     } else {
-      matchedItems = searchCompendium(targetedActor, lootAction.name || item.name);
+      matchedItems = searchCompendium(targetedActor, harvestAction.name || item.name);
     }
 
+    let skillDenomination = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`); // TODO make this better
+    let skillCheck = "Nature"; // TODO make this better
     if (matchedItems.length === 0) {
       RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
-        chatTitle: "Looting valuable from corpses.",
+        chatTitle: "Harvesting valuable from corpses.",
         chatDescription: `<h3>Looting</h3><ul>'${controlledToken.name}' attempted to loot resources from '${targetedToken.name}' but failed to find anything for this creature.`,
         chatButtonLabel: undefined,
         chatWhisper: undefined,
@@ -54,44 +54,52 @@ export class LootingHelpers {
         chatImg: "icons/skills/social/theft-pickpocket-bribery-brown.webp",
       });
     } else {
-      let normalLoot = matchedItems[0].description;
-      if (normalLoot === "false" && !SETTINGS.lootBeasts) {
-        ChatMessage.create(messageData);
-        return;
+      let skillCheckVerbose;
+
+      let harvestMessage = targetedToken.name;
+      if (harvestMessage !== targetedActor.name) {
+        harvestMessage += ` (${targetedActor.name})`;
+      }
+      if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
+        skillCheckVerbose = getProperty(matchedItems[0], `flags.better-rolltables.brt-skill-value`);
+        skillCheck = skillCheckVerbose;
+      } else {
+        if (matchedItems[0].compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
+          skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
+        } else {
+          skillCheckVerbose = matchedItems[0].items.find((element) => element.type === "feat").name;
+        }
+        skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose);
       }
 
-      matchedItems[0].description = ""; //remove the boolean present in the description which describes if the entry is a beast that doesn't normally have loot
+      item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
+      item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
 
-      matchedItems[0].roll({ async: false }).then((result) => {
-        let rollMap = LootingHelpers.formatLootRoll(result.results[0].text);
-        let lootMessage = "";
-
-        currencyFlavors.forEach((currency) => {
-          if (!rollMap.has(currency)) return;
-
-          let roll = new Roll(rollMap.get(currency));
-          let rollResult = roll.roll({ async: false });
-          lootMessage += `<li>${rollResult.total} ${currency}</li>`;
-          if (SETTINGS.autoAddItems) {
-            LootingHelpers.updateActorCurrency(controlActor, currency, rollResult.total);
-          }
-        });
-
-        let messageData = { content: "", whisper: {} };
-        if (SETTINGS.gmOnly) {
-          messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
+      RequestorHelpers.requestRollSkill(
+        controlledToken.actor,
+        undefined,
+        {
+          chatTitle: `Harvesting Skill Check (${skillDenomination})`,
+          chatDescription: `<h3>Harvesting</h3><ul>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
+          chatButtonLabel: `Attempting to Harvest ${harvestMessage}`,
+          chatWhisper: undefined,
+          chatSpeaker: undefined,
+          chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
+        },
+        {
+          skillDenomination: skillDenomination,
+          skillItem: item,
+          skillCallback: "handlePostRollHarvestAction",
+          skillChooseModifier: SETTINGS.allowAbilityChange,
         }
-        messageData.content = `<h3>Looting</h3>After examining the corpse you find:<ul>${lootMessage}</ul>`;
-
-        ChatMessage.create(messageData);
-      });
+      );
     }
 
     item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
-    harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
+    harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
   }
-  /*
-  static async handlePostRollLootAction(options) {
+
+  static async handlePostRollHarvestAction(options) {
     const { actor, item, roll } = options;
     if (!checkItemSourceLabel(item, "Harvester")) {
       return;
@@ -105,7 +113,7 @@ export class LootingHelpers {
     }
 
     let result = roll;
-    let lootMessage = "";
+    let harvesterMessage = "";
     let successArr = [];
     let messageData = { content: "", whisper: {} };
     if (SETTINGS.gmOnly) {
@@ -114,7 +122,7 @@ export class LootingHelpers {
 
     let matchedItems = [];
     // item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
-    // harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
+    // harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
 
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
       matchedItems = await retrieveItemsHarvestWithBetterRollTables(
@@ -126,7 +134,7 @@ export class LootingHelpers {
 
       matchedItems.forEach((item) => {
         if (item.type === "loot") {
-          lootMessage += `<li>@UUID[${item.uuid}]</li>`;
+          harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
           successArr.push(item);
         }
       });
@@ -145,7 +153,7 @@ export class LootingHelpers {
             itemDC = retrieveItemSourceLabelDC(item); //item.system.source.label.match(/\d+/g)[0];
           }
           if (itemDC <= result.total) {
-            lootMessage += `<li>@UUID[${item.uuid}]</li>`;
+            harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
             successArr.push(item.toObject());
           }
         }
@@ -159,39 +167,15 @@ export class LootingHelpers {
         await addItemsToActor(controlledToken.actor, successArr);
       }
     } else {
-      lootMessage = `After examining the corpse you realise there is nothing you can looting.`;
+      harvesterMessage = `After examining the corpse you realise there is nothing you can harvest.`;
     }
 
-    if (lootMessage) {
-      messageData.content = `<h3>Harvesting</h3><ul>${lootMessage}</ul>`;
+    if (harvesterMessage) {
+      messageData.content = `<h3>Harvesting</h3><ul>${harvesterMessage}</ul>`;
     }
 
     ChatMessage.create(messageData);
 
     return false;
-  }
-  */
-  static formatLootRoll(result) {
-    let rollTableResult = result.replace(/(\[\[\/r\s)?(\]\])?(\}$)?/g, "").split("}");
-    let returnMap = new Map();
-
-    for (let i = 0; i < rollTableResult.length; i++) {
-      let extractedRoll = rollTableResult[i].split("{");
-      returnMap.set(extractedRoll[1], extractedRoll[0]);
-    }
-    return returnMap;
-  }
-
-  static updateActorCurrency(actor, currencyLabel, toAdd) {
-    let currencyRef = CONSTANTS.currencyMap.get(currencyLabel);
-    let total = actor.system.currency[currencyRef] + toAdd;
-    actor.update({
-      system: {
-        currency: {
-          [currencyRef]: total,
-        },
-      },
-    });
-    Logger.log(`Added ${toAdd} ${currencyLabel} to: ${actor.name}`);
   }
 }

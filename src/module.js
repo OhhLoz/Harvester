@@ -4,18 +4,20 @@ import { RequestorHelpers } from "./scripts/requestor-helpers.js";
 import API from "./scripts/api.js";
 import { checkItemSourceLabel, retrieveItemSourceLabelDC } from "./scripts/lib/lib.js";
 import Logger from "./scripts/lib/Logger.js";
+import { HarvestingHelpers } from "./scripts/lib/harvesting-helpers.js";
+import { LootingHelpers } from "./scripts/lib/looting-helpers.js";
 
-let actionCompendium,
-  harvestCompendium,
-  lootCompendium,
-  customCompendium,
-  customLootCompendium,
-  harvestBetterRollCompendium,
-  harvestAction,
-  lootAction,
-  harvesterAndLootingSocket,
-  currencyFlavors,
-  hasBetterRollTables;
+export let actionCompendium;
+export let harvestCompendium;
+export let lootCompendium;
+export let customCompendium;
+export let customLootCompendium;
+export let harvestBetterRollCompendium;
+export let harvestAction;
+export let lootAction;
+export let harvesterAndLootingSocket;
+export let currencyFlavors;
+export let hasBetterRollTables;
 
 Hooks.on("init", function () {
   registerSettings();
@@ -95,298 +97,20 @@ Hooks.on("dnd5e.useItem", function (item, config, options) {
     return;
   }
   if (item.name === harvestAction.name) {
-    handlePreRollHarvestAction({ item: item });
+    HarvestingHelpers.handlePreRollHarvestAction({ item: item });
   }
   if (item.name === lootAction.name && !SETTINGS.disableLoot) {
-    handlePreRollLootAction({ item: item });
+    LootingHelpers.handlePreRollLootAction({ item: item });
   }
 });
 
-export async function handlePreRollHarvestAction(options) {
-  const { item } = options;
-  if (!checkItemSourceLabel(item, "Harvester")) {
+Hooks.on("dnd5e.preDisplayCard", function (item, chatData, options) {
+  if (checkItemSourceLabel(item, "Harvester")) {
     return;
   }
-  let targetedToken =
-    canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
-  let targetedActor = await game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
+});
 
-  let matchedItems = [];
-  if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-    matchedItems = retrieveTablesHarvestWithBetterRollTables(targetedActor, harvestAction.name || item.name);
-  } else {
-    matchedItems = searchCompendium(targetedActor, harvestAction.name || item.name);
-  }
-  /*
-  if (item.name === lootAction.name) {
-    if (matchedItems.length === 0) {
-      RequestorHelpers.requestRollSkill(
-        controlledToken.actor,
-        undefined,
-        {
-          chatTitle: "Scavenge valuables from corpses.",
-          chatDescription: `After examining the corpse you realise there is nothing you can loot.`,
-          chatButtonLabel: undefined,
-          chatWhisper: undefined,
-          chatSpeaker: undefined,
-        },
-        {
-          skillDenomination: getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
-          skillItem: item,
-          skillCallback: "handlePostRollHarvestAction",
-          skillChooseModifier: SETTINGS.allowAbilityChange,
-        }
-      );
-    } else {
-      RequestorHelpers.requestRollSkill(
-        controlledToken.actor,
-        undefined,
-        {
-          chatTitle: "Scavenge valuables from corpses.",
-          chatDescription: `Looting ${targetedToken.name}`,
-          chatButtonLabel: undefined,
-          chatWhisper: undefined,
-          chatSpeaker: undefined,
-        },
-        {
-          skillDenomination: getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
-          skillItem: item,
-          skillCallback: "handlePostRollHarvestAction",
-          skillChooseModifier: SETTINGS.allowAbilityChange,
-        }
-      );
-    }
-
-    return;
-  }
-  */
-  if (matchedItems.length !== 0) {
-    let skillCheckVerbose;
-    let skillCheck = "Nature"; // TODO
-    let harvestMessage = targetedToken.name;
-    if (harvestMessage !== targetedActor.name) {
-      harvestMessage += ` (${targetedActor.name})`;
-    }
-    if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-      skillCheckVerbose = getProperty(matchedItems[0], `flags.better-rolltables.brt-skill-value`);
-      skillCheck = skillCheckVerbose;
-    } else {
-      if (matchedItems[0].compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
-        skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
-      } else {
-        skillCheckVerbose = matchedItems[0].items.find((element) => element.type === "feat").name;
-      }
-      skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose);
-    }
-
-    item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
-    item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
-
-    RequestorHelpers.requestRollSkill(
-      controlledToken.actor,
-      undefined,
-      {
-        chatTitle: `Harvesting Skill Check (${getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)})`,
-        chatDescription: "Harvest valuable materials from corpses.",
-        chatButtonLabel: `Attempting to Harvest ${harvestMessage}`,
-        chatWhisper: undefined,
-        chatSpeaker: undefined,
-        chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
-      },
-      {
-        skillDenomination: getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
-        skillItem: item,
-        skillCallback: "handlePostRollHarvestAction",
-        skillChooseModifier: SETTINGS.allowAbilityChange,
-      }
-    );
-  } else {
-    item.update({ system: { formula: "" } });
-    item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
-
-    RequestorHelpers.requestRollSkill(
-      controlledToken.actor,
-      undefined,
-      {
-        chatTitle: `Harvesting Skill Check (${getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)})`,
-        chatDescription: `After examining the corpse you realise there is nothing you can harvest.`,
-        chatButtonLabel: undefined,
-        chatWhisper: undefined,
-        chatSpeaker: undefined,
-        chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
-      },
-      {
-        skillDenomination: getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
-        skillItem: item,
-        skillCallback: "handlePostRollHarvestAction",
-        skillChooseModifier: SETTINGS.allowAbilityChange,
-      }
-    );
-
-    harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
-  }
-}
-
-export async function handlePostRollHarvestAction(options) {
-  const { actor, item, roll } = options;
-  if (!checkItemSourceLabel(item, "Harvester")) {
-    return;
-  }
-  let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
-  let targetedActor = await game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
-
-  if (!validateAction(controlledToken, targetedToken, item.name)) {
-    return false;
-  }
-
-  let result = roll;
-  let harvesterMessage = "";
-  let successArr = [];
-  let messageData = { content: "", whisper: {} };
-  if (SETTINGS.gmOnly) {
-    messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
-  }
-
-  let matchedItems = [];
-  harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
-
-  if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
-    matchedItems = await retrieveItemsHarvestWithBetterRollTables(
-      targetedActor,
-      item.name,
-      result.total,
-      getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)
-    );
-
-    matchedItems.forEach((item) => {
-      if (item.type === "loot") {
-        harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
-        successArr.push(item);
-      }
-    });
-  } else {
-    matchedItems = await searchCompendium(targetedActor, item.name);
-
-    if (matchedItems[0].compendium.metadata.id === CONSTANTS.customCompendiumId) {
-      matchedItems = matchedItems[0].items;
-    }
-    matchedItems.forEach((item) => {
-      if (item.type === "loot") {
-        let itemDC = 0;
-        if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
-          itemDC = parseInt(item.system.description.chat);
-        } else {
-          itemDC = retrieveItemSourceLabelDC(item); //item.system.source.label.match(/\d+/g)[0];
-        }
-        if (itemDC <= result.total) {
-          harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
-          successArr.push(item.toObject());
-        }
-      }
-    });
-  }
-
-  if (SETTINGS.autoAddItems && successArr?.length > 0) {
-    if (SETTINGS.autoAddItemPiles && game.modules.get("item-piles")?.active) {
-      await addItemsToActorWithItemPiles(controlledToken.actor, successArr);
-    } else {
-      await addItemsToActor(controlledToken.actor, successArr);
-    }
-  } else {
-    harvesterMessage = `After examining the corpse you realise there is nothing you can harvest.`;
-  }
-
-  if (harvesterMessage) {
-    messageData.content = `<h3>Harvesting</h3><ul>${harvesterMessage}</ul>`;
-  }
-
-  ChatMessage.create(messageData);
-
-  return false;
-}
-
-export async function handlePostRollLootAction(options) {
-  const { actor, item, roll } = options;
-  if (!checkItemSourceLabel(item, "Harvester")) {
-    return;
-  }
-  let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
-  let targetedActor = await game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
-
-  if (!validateAction(controlledToken, targetedToken, item.name)) {
-    return false;
-  }
-
-  let result = roll;
-  let harvesterMessage = "";
-  let successArr = [];
-  let messageData = { content: "", whisper: {} };
-  if (SETTINGS.gmOnly) {
-    messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
-  }
-
-  let matchedItems = [];
-  harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
-
-  if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
-    matchedItems = await retrieveItemsHarvestWithBetterRollTables(
-      targetedActor,
-      item.name,
-      result.total,
-      getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)
-    );
-
-    matchedItems.forEach((item) => {
-      if (item.type === "loot") {
-        harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
-        successArr.push(item);
-      }
-    });
-  } else {
-    matchedItems = await searchCompendium(targetedActor, item.name);
-
-    if (matchedItems[0].compendium.metadata.id === CONSTANTS.customCompendiumId) {
-      matchedItems = matchedItems[0].items;
-    }
-    matchedItems.forEach((item) => {
-      if (item.type === "loot") {
-        let itemDC = 0;
-        if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
-          itemDC = parseInt(item.system.description.chat);
-        } else {
-          itemDC = retrieveItemSourceLabelDC(item); //item.system.source.label.match(/\d+/g)[0];
-        }
-        if (itemDC <= result.total) {
-          harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
-          successArr.push(item.toObject());
-        }
-      }
-    });
-  }
-
-  if (SETTINGS.autoAddItems && successArr?.length > 0) {
-    if (SETTINGS.autoAddItemPiles && game.modules.get("item-piles")?.active) {
-      await addItemsToActorWithItemPiles(controlledToken.actor, successArr);
-    } else {
-      await addItemsToActor(controlledToken.actor, successArr);
-    }
-  } else {
-    harvesterMessage = `After examining the corpse you realise there is nothing you can harvest.`;
-  }
-
-  if (harvesterMessage) {
-    messageData.content = `<h3>Harvesting</h3><ul>${harvesterMessage}</ul>`;
-  }
-
-  ChatMessage.create(messageData);
-
-  return false;
-}
-
-function validateAction(controlToken, targetedToken, actionName) {
+export function validateAction(controlToken, targetedToken, actionName) {
   let measuredDistance = canvas.grid.measureDistance(controlToken.center, targetedToken.center);
   let targetSize = CONSTANTS.sizeHashMap.get(targetedToken.actor.system.traits.size);
   if (measuredDistance > targetSize && SETTINGS.enforceRange) {
@@ -422,117 +146,7 @@ function validateAction(controlToken, targetedToken, actionName) {
   return true;
 }
 
-function handlePreRollLootAction(options) {
-  const { item } = options;
-  if (!checkItemSourceLabel(item, "Harvester")) {
-    return;
-  }
-  let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
-  let targetedActor = game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
-  let controlActor = game.actors.get(controlledToken.document.actorId);
-
-  let matchedItems = [];
-  if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-    // TODO
-    //matchedItems = retrieveTablesHarvestWithBetterRollTables(targetedActor, item.name);
-    matchedItems = searchCompendium(targetedActor, lootAction.name);
-  } else {
-    matchedItems = searchCompendium(targetedActor, lootAction.name);
-  }
-
-  if (matchedItems.length === 0) {
-    RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
-      chatTitle: "Looting valuable from corpses.",
-      chatDescription: `<h3>Looting</h3><ul>${controlledToken.name} attempted to loot resources from ${targetedToken.name} but failed to find anything.`,
-      chatButtonLabel: undefined,
-      chatWhisper: undefined,
-      chatSpeaker: undefined,
-      chatImg: "icons/skills/social/theft-pickpocket-bribery-brown.webp",
-    });
-  } else {
-    RequestorHelpers.requestRollSkill(
-      controlledToken.actor,
-      undefined,
-      {
-        chatTitle: "Looting valuable from corpses.",
-        chatDescription: `Looting ${targetedToken.name}`,
-        chatButtonLabel: undefined,
-        chatWhisper: undefined,
-        chatSpeaker: undefined,
-        chatImg: "icons/skills/social/theft-pickpocket-bribery-brown.webp",
-      },
-      {
-        skillDenomination: getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
-        skillItem: item,
-        skillCallback: "handlePostRollHarvestAction",
-        skillChooseModifier: SETTINGS.allowAbilityChange,
-      }
-    );
-  }
-
-  harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
-
-  if (matchedItems.length === 0) {
-    item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
-    return;
-  }
-
-  let normalLoot = matchedItems[0].description;
-  if (normalLoot === "false" && !SETTINGS.lootBeasts) {
-    ChatMessage.create(messageData);
-    return;
-  }
-
-  matchedItems[0].description = ""; //remove the boolean present in the description which describes if the entry is a beast that doesn't normally have loot
-
-  matchedItems[0].roll({ async: false }).then((result) => {
-    let rollMap = formatLootRoll(result.results[0].text);
-    let lootMessage = "";
-
-    currencyFlavors.forEach((currency) => {
-      if (!rollMap.has(currency)) return;
-
-      let roll = new Roll(rollMap.get(currency));
-      let rollResult = roll.roll({ async: false });
-      lootMessage += `<li>${rollResult.total} ${currency}</li>`;
-      if (SETTINGS.autoAddItems) {
-        updateActorCurrency(controlActor, currency, rollResult.total);
-      }
-    });
-
-    messageData.content = `<h3>Looting</h3>After examining the corpse you find:<ul>${lootMessage}</ul>`;
-
-    ChatMessage.create(messageData);
-    return;
-  });
-}
-
-function formatLootRoll(result) {
-  let rollTableResult = result.replace(/(\[\[\/r\s)?(\]\])?(\}$)?/g, "").split("}");
-  let returnMap = new Map();
-
-  for (let i = 0; i < rollTableResult.length; i++) {
-    let extractedRoll = rollTableResult[i].split("{");
-    returnMap.set(extractedRoll[1], extractedRoll[0]);
-  }
-  return returnMap;
-}
-
-function updateActorCurrency(actor, currencyLabel, toAdd) {
-  let currencyRef = CONSTANTS.currencyMap.get(currencyLabel);
-  let total = actor.system.currency[currencyRef] + toAdd;
-  actor.update({
-    system: {
-      currency: {
-        [currencyRef]: total,
-      },
-    },
-  });
-  Logger.log(`Added ${toAdd} ${currencyLabel} to: ${actor.name}`);
-}
-
-function searchCompendium(actor, actionName) {
+export function searchCompendium(actor, actionName) {
   let returnArr = [];
   let actorName = actor.name;
   if (actorName.includes("Dragon")) {
@@ -556,7 +170,7 @@ function searchCompendium(actor, actionName) {
   return returnArr;
 }
 
-function checkCompendium(compendium, checkProperty, matchProperty) {
+export function checkCompendium(compendium, checkProperty, matchProperty) {
   let returnArr = [];
   compendium.forEach((doc) => {
     if (eval(`doc.${checkProperty}`) === matchProperty) {
@@ -566,7 +180,7 @@ function checkCompendium(compendium, checkProperty, matchProperty) {
   return returnArr;
 }
 
-function retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName) {
+export function retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName) {
   let actorName = targetedActor.name;
   if (actorName.includes("Dragon")) {
     actorName = formatDragon(actorName);
@@ -701,7 +315,7 @@ function resetToDefault(item) {
   });
 }
 
-function addEffect(targetTokenId, actionName) {
+export function addEffect(targetTokenId, actionName) {
   let targetToken = canvas.tokens.get(targetTokenId);
   if (actionName === harvestAction.name) {
     targetToken.document.toggleActiveEffect(
@@ -721,12 +335,12 @@ function addEffect(targetTokenId, actionName) {
   Logger.log(`Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
-async function addItemsToActor(actor, itemsToAdd) {
+export async function addItemsToActor(actor, itemsToAdd) {
   for (const item of itemsToAdd) {
     await _createItem(item, actor);
   }
 }
-async function addItemsToActorWithItemPiles(targetedToken, itemsToAdd) {
+export async function addItemsToActorWithItemPiles(targetedToken, itemsToAdd) {
   game.itempiles.API.addItems(targetedToken, itemsToAdd, {
     mergeSimilarItems: true,
   });
