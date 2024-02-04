@@ -55,6 +55,7 @@ export class RequestorHelpers {
       chatButtonLabel: "",
       chatWhisper: undefined,
       chatSpeaker: undefined,
+      chatImg: undefined,
     },
     skillDetails = {
       skillDenomination: "",
@@ -67,13 +68,14 @@ export class RequestorHelpers {
       permission: RequestorHelpers.PERMISSION.ALL,
     }
   ) {
-    const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker } = chatDetails;
+    const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
     const { skillDenomination, skillItem, skillCallback, skillChooseModifier } = skillDetails;
     const { limit, permission } = optionsRequestor;
 
     const actorSpeaker = tokenUseForRequest?.actor ? tokenUseForRequest.actor : actorUseForRequest;
 
     const rollObj = await Requestor.request({
+      img: chatImg,
       title: chatTitle ?? "This is a request title.",
       description: chatDescription ?? "This is a request description.",
       popout: true,
@@ -137,18 +139,21 @@ export class RequestorHelpers {
 
   static async requestEmptyMessage(
     actorUseForRequest,
+    tokenUseForRequest,
     chatDetails = {
       chatTitle: "",
       chatDescription: "",
       chatButtonLabel: "",
       chatWhisper: undefined,
       chatSpeaker: undefined,
+      chatImg: undefined,
     }
   ) {
-    const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker } = chatDetails;
+    const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
     const actorSpeaker = token?.actor ? token.actor : actorUseForRequest;
 
     const rollObj = await Requestor.request({
+      img: chatImg,
       title: chatTitle ?? "This is a request title.",
       description: chatDescription ?? "This is a request description.",
       popout: true,
