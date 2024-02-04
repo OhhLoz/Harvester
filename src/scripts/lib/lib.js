@@ -19,6 +19,15 @@ export function checkItemSourceLabel(item, sourceLabel) {
   return false;
 }
 
+export function retrieveItemSourceLabel(item) {
+  let sourceLabel = undefined;
+  sourceLabel = item.system.source?.label;
+  if (!sourceLabel || item.system.source?.custom) {
+    sourceLabel = item.system.source?.custom;
+  }
+  return sourceLabel ?? "";
+}
+
 export function retrieveItemSourceLabelDC(item) {
   let itemDC = undefined;
   itemDC = item.system.source?.label.match(/\d+/g)[0];

@@ -63,9 +63,9 @@ Hooks.on("createActor", async (actor, data, options, id) => {
     if (SETTINGS.autoAddActionGroup === "PCOnly" && actor.type === "npc") {
       return;
     }
-    await addItemToActor(actor, [harvestAction]);
+    await addItemsToActor(actor, [harvestAction]);
     if (!SETTINGS.disableLoot) {
-      await addItemToActor(actor, [lootAction]);
+      await addItemsToActor(actor, [lootAction]);
     }
   }
 });
@@ -105,9 +105,9 @@ export async function handlePreRollHarvestAction(options) {
   if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
-  let targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId")) ?? game.user.targets.first();
+  let targetedToken = canvas.tokens.get(getProperty(item, `flags.harvester.targetId`)) ?? game.user.targets.first();
   let targetedActor = await game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
+  let controlledToken = canvas.tokens.get(getProperty(item, `flags.harvester.controlId`));
 
   let matchedItems = [];
   if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
@@ -300,9 +300,9 @@ export async function handlePostRollHarvestAction(options) {
   if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
-  let targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
+  let targetedToken = canvas.tokens.get(getProperty(item, `flags.harvester.targetId`));
   let targetedActor = await game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
+  let controlledToken = canvas.tokens.get(getProperty(item, `flags.harvester.controlId`));
 
   if (!validateAction(controlledToken, targetedToken, item.name)) {
     return false;
@@ -312,8 +312,9 @@ export async function handlePostRollHarvestAction(options) {
   // let result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {
   //   chooseModifier: SETTINGS.allowAbilityChange,
   // });
-  let result = (harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments());
-  customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
+  let result = roll;
+  let harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
+  let customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
 
   let lootMessage = "";
   let successArr = [];
@@ -365,10 +366,12 @@ export async function handlePostRollHarvestAction(options) {
 
   if (SETTINGS.autoAddItems && successArr?.length > 0) {
     if (SETTINGS.autoAddItemPiles && game.modules.get("item-piles")?.active) {
-      await addToItemPile(controlledToken.actor, successArr);
+      await addItemsToActorWithItemPiles(controlledToken.actor, successArr);
     } else {
-      await addItemToActor(controlledToken.actor, successArr);
+      await addItemsToActor(controlledToken.actor, successArr);
     }
+  } else {
+    lootMessage = `After examining the corpse you realise there is nothing you can harvest.`;
   }
 
   if (lootMessage) {
@@ -385,9 +388,9 @@ Hooks.on("dnd5e.preRollFormula", async function (item, options) {
   if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
-  let targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
+  let targetedToken = canvas.tokens.get(getProperty(item,`flags.harvester.targetId`));
   let targetedActor = await game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
+  let controlledToken = canvas.tokens.get(getProperty(item,`flags.harvester.controlId`));
 
   if (!validateAction(controlledToken, targetedToken, item.name)) {
     return false;
@@ -504,9 +507,9 @@ function validateAction(controlToken, targetedToken, actionName) {
 }
 
 function handleLoot(item) {
-  let targetedToken = canvas.tokens.get(item.getFlag("harvester", "targetId"));
+  let targetedToken = canvas.tokens.get(getProperty(item, `flags.harvester.targetId`));
   let targetedActor = game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(item.getFlag("harvester", "controlId"));
+  let controlledToken = canvas.tokens.get(getProperty(item, `flags.harvester.controlId`));
   let controlActor = game.actors.get(controlledToken.document.actorId);
 
   let messageData = {
@@ -712,10 +715,10 @@ async function addActionToActors() {
     });
 
     if (!hasHarvest) {
-      await addItemToActor(actor, [harvestAction]);
+      await addItemsToActor(actor, [harvestAction]);
     }
     if (!hasLoot && !SETTINGS.disableLoot) {
-      await addItemToActor(actor, [lootAction]);
+      await addItemsToActor(actor, [lootAction]);
     }
   });
   console.log("harvester | ready() - Added Actions to All Actors specified in Settings");
@@ -768,16 +771,16 @@ function addEffect(targetTokenId, actionName) {
   console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
-async function addItemToActor(actor, itemsArray) {
-  for (const item of itemsArray) {
+async function addItemsToActor(actor, itemsToAdd) {
+  for (const item of itemsToAdd) {
     await _createItem(item, actor);
   }
 }
-async function addToItemPile(targetedToken, item) {
-  game.itempiles.API.addItems(targetedToken, item, {
+async function addItemsToActorWithItemPiles(targetedToken, itemsToAdd) {
+  game.itempiles.API.addItems(targetedToken, itemsToAdd, {
     mergeSimilarItems: true,
   });
-  console.log(`harvester | Added ${item.length} items to ${targetedToken.name}`);
+  console.log(`harvester | Added ${itemsToAdd.length} items to ${targetedToken.name}`);
 }
 
 function isEmptyObject(obj) {
