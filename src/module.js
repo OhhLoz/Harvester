@@ -3,6 +3,7 @@ import { CONSTANTS } from "./scripts/constants.js";
 import { RequestorHelpers } from "./scripts/requestor-helpers.js";
 import API from "./scripts/api.js";
 import { checkItemSourceLabel, retrieveItemSourceLabelDC } from "./scripts/lib/lib.js";
+import Logger from "./scripts/lib/Logger.js";
 
 let actionCompendium,
   harvestCompendium,
@@ -18,7 +19,7 @@ let actionCompendium,
 
 Hooks.on("init", function () {
   registerSettings();
-  console.log("harvester | Init() - Registered settings & Fetched compendiums.");
+  Logger.log("Init() - Registered settings & Fetched compendiums.");
 });
 
 Hooks.once("setup", function () {
@@ -42,7 +43,7 @@ Hooks.on("ready", async function () {
   currencyFlavors = Array.from(CONSTANTS.currencyMap.keys());
 
   if (game.user?.isGM && !game.modules.get("socketlib")?.active)
-    ui.notifications.error("socketlib must be installed & enabled for harvester to function correctly.", {
+    Logger.errorPermanent("socketlib must be installed & enabled for harvester to function correctly.", {
       permanent: true,
     });
 
@@ -53,9 +54,9 @@ Hooks.on("ready", async function () {
 });
 
 Hooks.once("socketlib.ready", () => {
-  harvesterAndLootingSocket = globalThis.socketlib.registerModule("harvester");
+  harvesterAndLootingSocket = globalThis.socketlib.registerModule(CONSTANTS.MODULE_ID);
   harvesterAndLootingSocket.register("addEffect", addEffect);
-  console.log("harvester | Registered socketlib functions");
+  Logger.log("Registered socketlib functions");
 });
 
 Hooks.on("createActor", async (actor, data, options, id) => {
@@ -85,8 +86,8 @@ Hooks.on("dnd5e.preUseItem", function (item, config, options) {
   if (!validateAction(controlToken, targetedToken, item.name)) {
     return false;
   }
-  item.setFlag("harvester", "targetId", targetedToken.id);
-  item.setFlag("harvester", "controlId", controlToken.id);
+  item.setFlag(CONSTANTS.MODULE_ID, "targetId", targetedToken.id);
+  item.setFlag(CONSTANTS.MODULE_ID, "controlId", controlToken.id);
 });
 
 Hooks.on("dnd5e.useItem", function (item, config, options) {
@@ -97,17 +98,19 @@ Hooks.on("dnd5e.useItem", function (item, config, options) {
     handlePreRollHarvestAction({ item: item });
   }
   if (item.name === lootAction.name && !SETTINGS.disableLoot) {
-    handleLoot(item);
+    handlePreRollLootAction({ item: item });
   }
 });
+
 export async function handlePreRollHarvestAction(options) {
   const { item } = options;
   if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
-  let targetedToken = canvas.tokens.get(getProperty(item, `flags.harvester.targetId`)) ?? game.user.targets.first();
+  let targetedToken =
+    canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
   let targetedActor = await game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(getProperty(item, `flags.harvester.controlId`));
+  let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
 
   let matchedItems = [];
   if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
@@ -133,7 +136,7 @@ export async function handlePreRollHarvestAction(options) {
           chatSpeaker: undefined,
         },
         {
-          skillDenomination: getProperty(item, `flags.harvester.skillCheck`),
+          skillDenomination: getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
           skillItem: item,
           skillCallback: "handlePostRollHarvestAction",
           skillChooseModifier: SETTINGS.allowAbilityChange,
@@ -151,7 +154,7 @@ export async function handlePreRollHarvestAction(options) {
           chatSpeaker: undefined,
         },
         {
-          skillDenomination: getProperty(item, `flags.harvester.skillCheck`),
+          skillDenomination: getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
           skillItem: item,
           skillCallback: "handlePostRollHarvestAction",
           skillChooseModifier: SETTINGS.allowAbilityChange,
@@ -181,21 +184,21 @@ export async function handlePreRollHarvestAction(options) {
       skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose);
     }
 
-    item.setFlag("harvester", "skillCheck", skillCheck);
+    item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
     item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
 
     RequestorHelpers.requestRollSkill(
       controlledToken.actor,
       undefined,
       {
-        chatTitle: `Harvesting Skill Check (${getProperty(item, `flags.harvester.skillCheck`)})`,
+        chatTitle: `Harvesting Skill Check (${getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)})`,
         chatDescription: "Harvest valuable materials from corpses.",
         chatButtonLabel: `Attempting to Harvest ${harvestMessage}`,
         chatWhisper: undefined,
         chatSpeaker: undefined,
       },
       {
-        skillDenomination: getProperty(item, `flags.harvester.skillCheck`),
+        skillDenomination: getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
         skillItem: item,
         skillCallback: "handlePostRollHarvestAction",
         skillChooseModifier: SETTINGS.allowAbilityChange,
@@ -203,20 +206,20 @@ export async function handlePreRollHarvestAction(options) {
     );
   } else {
     item.update({ system: { formula: "" } });
-    item.setFlag("harvester", "targetId", "");
+    item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
 
     RequestorHelpers.requestRollSkill(
       controlledToken.actor,
       undefined,
       {
-        chatTitle: `Harvesting Skill Check (${getProperty(item, `flags.harvester.skillCheck`)})`,
+        chatTitle: `Harvesting Skill Check (${getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)})`,
         chatDescription: `After examining the corpse you realise there is nothing you can harvest.`,
         chatButtonLabel: undefined,
         chatWhisper: undefined,
         chatSpeaker: undefined,
       },
       {
-        skillDenomination: getProperty(item, `flags.harvester.skillCheck`),
+        skillDenomination: getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
         skillItem: item,
         skillCallback: "handlePostRollHarvestAction",
         skillChooseModifier: SETTINGS.allowAbilityChange,
@@ -274,7 +277,7 @@ Hooks.on("dnd5e.preDisplayCard", function (item, chatData, options) {
       skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose);
     }
 
-    item.setFlag("harvester", "skillCheck", skillCheck);
+    item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
     item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
     chatData.content = chatData.content
       .replace(`<button data-action="formula">Other Formula</button>`, ``)
@@ -285,7 +288,7 @@ Hooks.on("dnd5e.preDisplayCard", function (item, chatData, options) {
       .replace("Harvest valuable materials from corpses.", `Attempting to Harvest ${harvestMessage}`);
   } else {
     item.update({ system: { formula: "" } });
-    item.setFlag("harvester", "targetId", "");
+    item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
     chatData.content = chatData.content.replace(
       "Harvest valuable materials from corpses.",
       `After examining the corpse you realise there is nothing you can harvest.`
@@ -300,21 +303,21 @@ export async function handlePostRollHarvestAction(options) {
   if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
-  let targetedToken = canvas.tokens.get(getProperty(item, `flags.harvester.targetId`));
+  let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
   let targetedActor = await game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(getProperty(item, `flags.harvester.controlId`));
+  let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
 
   if (!validateAction(controlledToken, targetedToken, item.name)) {
     return false;
   }
   options.chatMessage = false;
 
-  // let result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {
+  // let result = await controlledToken.actor.rollSkill(item.getFlag(CONSTANTS.MODULE_ID, "skillCheck"), {
   //   chooseModifier: SETTINGS.allowAbilityChange,
   // });
   let result = roll;
-  let harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
-  let customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
+  // let harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
+  // let customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
 
   let lootMessage = "";
   let successArr = [];
@@ -329,7 +332,7 @@ export async function handlePostRollHarvestAction(options) {
       targetedActor,
       item.name,
       result.total,
-      getProperty(item, `flags.harvester.skillCheck`)
+      getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)
     );
 
     harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
@@ -388,16 +391,16 @@ Hooks.on("dnd5e.preRollFormula", async function (item, options) {
   if (!checkItemSourceLabel(item, "Harvester")) {
     return;
   }
-  let targetedToken = canvas.tokens.get(getProperty(item,`flags.harvester.targetId`));
+  let targetedToken = canvas.tokens.get(getProperty(item,`flags.${CONSTANTS.MODULE_ID}.targetId`));
   let targetedActor = await game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(getProperty(item,`flags.harvester.controlId`));
+  let controlledToken = canvas.tokens.get(getProperty(item,`flags.${CONSTANTS.MODULE_ID}.controlId`));
 
   if (!validateAction(controlledToken, targetedToken, item.name)) {
     return false;
   }
   options.chatMessage = false;
 
-  let result = await controlledToken.actor.rollSkill(item.getFlag("harvester", "skillCheck"), {
+  let result = await controlledToken.actor.rollSkill(item.getFlag(CONSTANTS.MODULE_ID, "skillCheck"), {
     chooseModifier: SETTINGS.allowAbilityChange,
   });
 
@@ -417,7 +420,7 @@ Hooks.on("dnd5e.preRollFormula", async function (item, options) {
       targetedActor,
       item.name,
       result.total,
-      getProperty(item, `flags.harvester.skillCheck`)
+      getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)
     );
 
     harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, "Harvest");
@@ -506,10 +509,14 @@ function validateAction(controlToken, targetedToken, actionName) {
   return true;
 }
 
-function handleLoot(item) {
-  let targetedToken = canvas.tokens.get(getProperty(item, `flags.harvester.targetId`));
+function handlePreRollLootAction(options) {
+  const { item } = options;
+  if (!checkItemSourceLabel(item, "Harvester")) {
+    return;
+  }
+  let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
   let targetedActor = game.actors.get(targetedToken.document.actorId);
-  let controlledToken = canvas.tokens.get(getProperty(item, `flags.harvester.controlId`));
+  let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
   let controlActor = game.actors.get(controlledToken.document.actorId);
 
   let messageData = {
@@ -524,7 +531,7 @@ function handleLoot(item) {
   harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
 
   if (itemArr.length === 0) {
-    item.setFlag("harvester", "targetId", "");
+    item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
     return;
   }
 
@@ -579,7 +586,7 @@ function updateActorCurrency(actor, currencyLabel, toAdd) {
       },
     },
   });
-  console.log(`harvester | Added ${toAdd} ${currencyLabel} to: ${actor.name}`);
+  Logger.log(`Added ${toAdd} ${currencyLabel} to: ${actor.name}`);
 }
 
 function searchCompendium(actor, actionName) {
@@ -721,7 +728,7 @@ async function addActionToActors() {
       await addItemsToActor(actor, [lootAction]);
     }
   });
-  console.log("harvester | ready() - Added Actions to All Actors specified in Settings");
+  Logger.log("harvester | ready() - Added Actions to All Actors specified in Settings");
 }
 
 function checkEffect(token, effectName) {
@@ -768,7 +775,7 @@ function addEffect(targetTokenId, actionName) {
       { active: true }
     );
   }
-  console.log(`harvester | Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
+  Logger.log(`Added ${actionName.toLowerCase()}ed effect to: ${targetToken.name}`);
 }
 
 async function addItemsToActor(actor, itemsToAdd) {
@@ -780,7 +787,7 @@ async function addItemsToActorWithItemPiles(targetedToken, itemsToAdd) {
   game.itempiles.API.addItems(targetedToken, itemsToAdd, {
     mergeSimilarItems: true,
   });
-  console.log(`harvester | Added ${itemsToAdd.length} items to ${targetedToken.name}`);
+  Logger.log(`Added ${itemsToAdd.length} items to ${targetedToken.name}`);
 }
 
 function isEmptyObject(obj) {
@@ -859,13 +866,13 @@ async function _createItem(item, actor, stackSame = true, customLimit = 0) {
       setProperty(updateItem, `${weightAttribute}`, newWeight);
 
       await actor.updateEmbeddedDocuments("Item", [updateItem]);
-      console.log(`harvester | Updated ${item.name} to ${actor.name}`);
+      Logger.log(`Updated ${item.name} to ${actor.name}`);
     } else {
-      console.log(`harvester | Nothing is done with ${item.name} on ${actor.name}`);
+      Logger.log(`Nothing is done with ${item.name} on ${actor.name}`);
     }
   } else {
     /** we create a new item if we don't own already */
     await actor.createEmbeddedDocuments("Item", [newItemData]);
-    console.log(`harvester | Added ${item.name} to ${actor.name}`);
+    Logger.log(`Added ${item.name} to ${actor.name}`);
   }
 }

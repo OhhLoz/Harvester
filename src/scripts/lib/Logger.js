@@ -96,6 +96,21 @@ export default class Logger {
     return new Error(error.replace("<br>", "\n"));
   }
 
+  static errorPermanent(error, notify = true, ...args) {
+    try {
+      error = `${CONSTANTS.MODULE_ID} | ${error}`;
+      if (notify) {
+        ui.notifications?.error(error, {
+          permanent: true,
+        });
+      }
+      console.error(error.replace("<br>", "\n"), ...args);
+    } catch (e) {
+      console.error(e.message);
+    }
+    return new Error(error.replace("<br>", "\n"));
+  }
+
   static timelog(message) {
     this.warn(Date.now(), message);
   }
