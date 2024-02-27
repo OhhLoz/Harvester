@@ -50,12 +50,36 @@ npm run dev
 npm run build
 ```
 
+### build:watch
+
+`build:watch` will build and watch for changes, rebuilding automatically.
+
+```bash
+npm run build:watch
+```
+
 ### prettier-format
 
 `prettier-format` launch the prettier plugin based on the configuration [here](./.prettierrc)
 
 ```bash
 npm run-script prettier-format
+```
+
+### lint
+
+`lint` launch the eslint process based on the configuration [here](./.eslintrc.json)
+
+```bash
+npm run-script lint
+```
+
+### lint:fix
+
+`lint:fix` launch the eslint process with the fix argument
+
+```bash
+npm run-script lint:fix
 ```
 
 ## [Changelog](./CHANGELOG.md)
