@@ -15,12 +15,12 @@ import {
   addEffect,
   addItemsToActorWithItemPiles,
   addItemsToActor,
-} from "../../module";
-import { CONSTANTS } from "../constants";
-import { RequestorHelpers } from "../requestor-helpers";
-import { SETTINGS } from "../settings";
-import Logger from "./Logger";
-import { checkItemSourceLabel } from "./lib";
+} from "../../module.js";
+import { CONSTANTS } from "../constants.js";
+import { RequestorHelpers } from "../requestor-helpers.js";
+import { SETTINGS } from "../settings.js";
+import Logger from "./Logger.js";
+import { checkItemSourceLabel } from "./lib.js";
 
 export class LootingHelpers {
   static async handlePreRollLootAction(options) {
@@ -112,7 +112,7 @@ export class LootingHelpers {
     }
 
     let matchedItems = [];
-    
+
     // harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
 
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
