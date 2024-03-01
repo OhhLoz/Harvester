@@ -22,7 +22,7 @@
     {
       "name": "harvest",
       "label": "Harvest",
-      "path": "packs/harvest.db",
+      "path": "packs/harvest",
       "type": "Item",
       "ownership": {
         "PLAYER": "OBSERVER",
@@ -35,7 +35,7 @@
     {
       "name": "actions",
       "label": "Actions",
-      "path": "packs/actions.db",
+      "path": "packs/actions",
       "type": "Item",
       "ownership": {
         "PLAYER": "OBSERVER",
@@ -48,7 +48,7 @@
     {
       "name": "loot",
       "label": "Loot",
-      "path": "packs/loot.db",
+      "path": "packs/loot",
       "type": "RollTable",
       "ownership": {
         "PLAYER": "OBSERVER",
@@ -61,7 +61,7 @@
     {
       "name": "custom",
       "label": "Custom",
-      "path": "storage/custom.db",
+      "path": "storage/custom",
       "type": "Actor",
       "ownership": {
         "PLAYER": "OBSERVER",
@@ -74,7 +74,7 @@
     {
       "name": "custom-loot",
       "label": "Custom Loot",
-      "path": "storage/custom-loot.db",
+      "path": "storage/custom-loot",
       "type": "RollTable",
       "ownership": {
         "PLAYER": "OBSERVER",
@@ -87,7 +87,7 @@
     {
       "name": "license",
       "label": "License",
-      "path": "packs/license.db",
+      "path": "packs/license",
       "type": "JournalEntry",
       "ownership": {
         "PLAYER": "OBSERVER",
