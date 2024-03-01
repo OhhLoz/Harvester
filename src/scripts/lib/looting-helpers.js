@@ -31,7 +31,8 @@ export class LootingHelpers {
     let targetedToken =
       canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
     let targetedActor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
-    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
+    let controlledToken =
+      canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ?? canvas.tokens.controlled[0];
     let controlActor = game.actors.get(controlledToken.actor?.id ?? controlledToken.document?.actorId);
 
     let matchedItems = [];
@@ -97,9 +98,9 @@ export class LootingHelpers {
     if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
       return;
     }
-    let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
+    let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
     let targetedActor = await game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
-    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
+    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ?? canvas.tokens.controlled[0];
 
     if (!validateAction(controlledToken, targetedToken, item.name)) {
       return false;

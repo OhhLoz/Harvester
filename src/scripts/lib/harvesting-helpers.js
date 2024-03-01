@@ -19,6 +19,7 @@ import {
 import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
+import Logger from "./Logger.js";
 import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./lib.js";
 
 export class HarvestingHelpers {
@@ -30,7 +31,8 @@ export class HarvestingHelpers {
     let targetedToken =
       canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
     let targetedActor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
-    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
+    let controlledToken =
+      canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ?? canvas.tokens.controlled[0];
     let controlActor = game.actors.get(controlledToken.actor?.id ?? controlledToken.document?.actorId);
 
     let matchedItems = [];
@@ -105,9 +107,11 @@ export class HarvestingHelpers {
     if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
       return;
     }
-    let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
+    let targetedToken =
+      canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
     let targetedActor = await game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
-    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
+    let controlledToken =
+      canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ?? canvas.tokens.controlled[0];
 
     if (!validateAction(controlledToken, targetedToken, item.name)) {
       return false;
@@ -207,7 +211,7 @@ export class HarvestingHelpers {
       }
       // We juts get the first
       if (!tablesChecked || tablesChecked.length === 0) {
-        ui.notifications.warn(`No rolltable found for metadata sourceId '${sourceValue}'`);
+        Logger.warn(`No rolltable found for metadata sourceId '${sourceValue}'`, true);
         return [];
       }
       return tablesChecked;

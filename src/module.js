@@ -78,7 +78,7 @@ Hooks.on("dnd5e.preUseItem", function (item, config, options) {
     return;
   }
   if (game.user.targets.size !== 1) {
-    ui.notifications.warn("Please target only one token.");
+    Logger.warn("Please target only one token.", true);
     return false;
   }
 
@@ -120,7 +120,7 @@ export function validateAction(controlToken, targetedToken, actionName) {
   let measuredDistance = canvas.grid.measureDistance(controlToken.center, targetedToken.center);
   let targetSize = CONSTANTS.sizeHashMap.get(targetedToken.actor.system.traits.size);
   if (measuredDistance > targetSize && SETTINGS.enforceRange) {
-    ui.notifications.warn("You must be in range to " + actionName);
+    Logger.warn("You must be in range to " + actionName, true);
     return false;
   }
 
@@ -135,23 +135,23 @@ export function validateAction(controlToken, targetedToken, actionName) {
     actor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
   }
   if (!actor) {
-    ui.notifications.warn(targetedToken.name + " has not data to retrieve");
+    Logger.warn(targetedToken.name + " has not data to retrieve", true);
     return false;
   }
   if (actor.system.attributes.hp.value !== 0) {
-    ui.notifications.warn(targetedToken.name + " is not dead");
+    Logger.warn(targetedToken.name + " is not dead", true);
     return false;
   }
   if (!checkEffect(targetedToken, "Dead") && SETTINGS.requireDeadEffect) {
-    ui.notifications.warn(targetedToken.name + " is not dead");
+    Logger.warn(targetedToken.name + " is not dead", true);
     return false;
   }
   if (targetedToken.document.hasPlayerOwner && SETTINGS.npcOnlyHarvest) {
-    ui.notifications.warn(targetedToken.name + " is not an NPC");
+    Logger.warn(targetedToken.name + " is not an NPC", true);
     return false;
   }
   if (checkEffect(targetedToken, `${actionName}ed`)) {
-    ui.notifications.warn(`${targetedToken.name} has been ${actionName.toLowerCase()}ed already`);
+    Logger.warn(`${targetedToken.name} has been ${actionName.toLowerCase()}ed already`, true);
     return false;
   }
   return true;
@@ -339,7 +339,7 @@ async function _createItem(item, actor, stackSame = true, customLimit = 0) {
       // limit is bigger or equal to newQty
       if (Number(customLimit) < Number(newQty)) {
         //limit was reached, we stick to that limit
-        ui.notifications.warn("Custom limit is been reached for the item '" + item.name + "'");
+        Logger.warn("Custom limit is been reached for the item '" + item.name + "'", true);
         return customLimit;
       }
     }
