@@ -19,7 +19,7 @@ import {
 import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
-import { checkItemSourceLabel, retrieveItemSourceLabelDC,retrieveItemSourceLabel } from "./lib.js";
+import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./lib.js";
 
 export class HarvestingHelpers {
   static async handlePreRollHarvestAction(options) {
@@ -29,9 +29,9 @@ export class HarvestingHelpers {
     }
     let targetedToken =
       canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
-    let targetedActor = game.actors.get(targetedToken.document.actorId);
+    let targetedActor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
     let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
-    let controlActor = game.actors.get(controlledToken.document.actorId);
+    let controlActor = game.actors.get(controlledToken.actor?.id ?? controlledToken.document?.actorId);
 
     let matchedItems = [];
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
@@ -106,7 +106,7 @@ export class HarvestingHelpers {
       return;
     }
     let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
-    let targetedActor = await game.actors.get(targetedToken.document.actorId);
+    let targetedActor = await game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
     let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
 
     if (!validateAction(controlledToken, targetedToken, item.name)) {

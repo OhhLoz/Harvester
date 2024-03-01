@@ -125,10 +125,15 @@ export function validateAction(controlToken, targetedToken, actionName) {
   }
 
   let actor = null;
-  if (!isEmptyObject(targetedToken.document.delta?.system)) actor = targetedToken.document.delta;
-  else if (!isEmptyObject(targetedToken.document.actor)) actor = targetedToken.document.actor;
-  else if (targetedToken.document.actorId) actor = game.actors.get(targetedToken.document.actorId);
-
+  if (!isEmptyObject(targetedToken.document.delta?.system)) {
+    actor = targetedToken.document.delta;
+  } else if (!isEmptyObject(targetedToken.document.actor)) {
+    actor = targetedToken.document.actor;
+  } else if (targetedToken.document?.actorId) {
+    actor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
+  } else if (targetedToken.actor?.id) {
+    actor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
+  }
   if (!actor) {
     ui.notifications.warn(targetedToken.name + " has not data to retrieve");
     return false;
