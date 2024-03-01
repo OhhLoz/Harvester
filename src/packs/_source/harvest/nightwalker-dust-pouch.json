@@ -1,0 +1,40 @@
+{
+  "name": "Nightwalker Dust (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "When a nightwalker is killed, it disperses into wispy black smoke, that settles into a fine black dust. The dust fades from the prime material plane very quickly and is difficult to collect. This dust is prized by anyone studying the Negative Plane. The dust also has alchemical necrotic properties.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Nightwalker",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 2500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977370,
+    "modifiedTime": 1688174977370,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "VpZMJCG2qtce2e6K",
+  "_key": "!items!VpZMJCG2qtce2e6K"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Quaggoth Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A quaggoth's dark blood is able to differential, separate and dilute poison without using a filtration organ like the kidneys. This property make their blood highly valued in many underdark communities.",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Quaggoth",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977789,
+    "modifiedTime": 1688174977789,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "FdUVp897MJl86j58",
+  "_key": "!items!FdUVp897MJl86j58"
+}

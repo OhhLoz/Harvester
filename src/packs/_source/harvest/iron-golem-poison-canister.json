@@ -1,0 +1,40 @@
+{
+  "name": "Iron Golem Poison Canister",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Iron golems are built with a canister of toxic chemicals that they use to spew a poisonous vapor. This canister can often be harvested after the creature is destroyed, if it is not punctured or disconnected improperly. The chemicals in the canister can be used by artificers, alchemists and poisoners.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Iron Golem",
+    "quantity": 1,
+    "weight": 7,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976639,
+    "modifiedTime": 1688174976639,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "7VRh9zUtK8LvLxJM",
+  "_key": "!items!7VRh9zUtK8LvLxJM"
+}

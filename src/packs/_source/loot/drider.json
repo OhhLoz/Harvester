@@ -1,0 +1,106 @@
+{
+  "name": "Drider",
+  "img": "icons/containers/bags/pack-simple-leather.webp",
+  "description": "false",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        30
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 4d6*100]]{Copper}[[/r 1d6*10]]{Electrum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "lAGVUgnH5Bvtv18h",
+      "_key": "!tables.results!oEyoyXVfdGL149uK.lAGVUgnH5Bvtv18h"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        31,
+        60
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 6d6*10]]{Silver}[[/r 2d6*10]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "9nlGpd8BfXAqvBgm",
+      "_key": "!tables.results!oEyoyXVfdGL149uK.9nlGpd8BfXAqvBgm"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        61,
+        70
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 1d6*100]]{Electrum}[[/r 2d6*10]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "oFVGVgi86rBxZM4o",
+      "_key": "!tables.results!oEyoyXVfdGL149uK.oFVGVgi86rBxZM4o"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        71,
+        95
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 4d6*10]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "JSqNPb0QZy5HFX9x",
+      "_key": "!tables.results!oEyoyXVfdGL149uK.JSqNPb0QZy5HFX9x"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        96,
+        100
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 2d6*10]]{Gold}[[/r 3d6]]{Platinum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "ZLtCe6T3Ph7vV6oh",
+      "_key": "!tables.results!oEyoyXVfdGL149uK.ZLtCe6T3Ph7vV6oh"
+    }
+  ],
+  "formula": "d100",
+  "replacement": false,
+  "displayRoll": false,
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688085766346,
+    "modifiedTime": 1688085766346,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "oEyoyXVfdGL149uK",
+  "_key": "!tables!oEyoyXVfdGL149uK"
+}

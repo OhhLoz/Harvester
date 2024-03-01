@@ -1,0 +1,40 @@
+{
+  "name": "Gem Stalker Claws (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Gem Stalker's claws resemble rock-hard gems, but are actually a semitranslucent bone. The claws are often used in jewelry and decorations.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Gem Stalker",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975728,
+    "modifiedTime": 1688174975728,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "uvWWGehjuwRxUMwD",
+  "_key": "!items!uvWWGehjuwRxUMwD"
+}

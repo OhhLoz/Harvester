@@ -1,0 +1,40 @@
+{
+  "name": "Treant Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "Somewhere inside a treant's thick trunk is a mass of tangled roots, that bleed a thick reddish sap. This roundish ball of roots act as the creature's heart, and is prized by spellcasters and artificers.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Treant",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978547,
+    "modifiedTime": 1688174978547,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "DUkUkFv3FQNr3wvF",
+  "_key": "!items!DUkUkFv3FQNr3wvF"
+}

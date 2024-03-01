@@ -1,0 +1,106 @@
+{
+  "name": "Pit Fiend",
+  "img": "icons/containers/bags/pack-simple-leather.webp",
+  "description": "true",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        15
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 2d6*1000]]{Electrum}[[/r 8d6*100]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "n74uXn4EfKzsI9PI",
+      "_key": "!tables.results!cjRt6lQu403ILjYo.n74uXn4EfKzsI9PI"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        16,
+        55
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 1d6*1000]]{Gold}[[/r 1d6*100]]{Platinum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "7kZoZZyApzzBdwS2",
+      "_key": "!tables.results!cjRt6lQu403ILjYo.7kZoZZyApzzBdwS2"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        56,
+        100
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 1d6*1000]]{Gold}[[/r 2d6*100]]{Platinum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "e2tpgpMkjPWDE04l",
+      "_key": "!tables.results!cjRt6lQu403ILjYo.e2tpgpMkjPWDE04l"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        0,
+        0
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "MB2ASfNQUYY3ubMc",
+      "_key": "!tables.results!cjRt6lQu403ILjYo.MB2ASfNQUYY3ubMc"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        0,
+        0
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "Sw6OmSkPDSmR4nmZ",
+      "_key": "!tables.results!cjRt6lQu403ILjYo.Sw6OmSkPDSmR4nmZ"
+    }
+  ],
+  "formula": "d100",
+  "replacement": false,
+  "displayRoll": false,
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688085767910,
+    "modifiedTime": 1688085767910,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "cjRt6lQu403ILjYo",
+  "_key": "!tables!cjRt6lQu403ILjYo"
+}

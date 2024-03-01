@@ -1,0 +1,40 @@
+{
+  "name": "Barbed Devil Barb (x10)",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A barbed devil is covered in hard, sharp barbs. These spikes are often crafted into nails, pitons and arrows.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Barbed Devil",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974010,
+    "modifiedTime": 1688174974010,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "VbbcyxyXDzh6Lblx",
+  "_key": "!items!VbbcyxyXDzh6Lblx"
+}

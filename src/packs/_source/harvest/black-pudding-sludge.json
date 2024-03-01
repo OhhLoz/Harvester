@@ -1,0 +1,40 @@
+{
+  "name": "Black Pudding Sludge",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A black pudding is a heaving mound of sticky black sludge. The sludge is acidic and dissolved flesh, wood, metal, and bone. Samples of this ooze are often bought by alchemists and most merchants.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Black Pudding",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974178,
+    "modifiedTime": 1688174974178,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "nhob9JLXLz9xgmba",
+  "_key": "!items!nhob9JLXLz9xgmba"
+}

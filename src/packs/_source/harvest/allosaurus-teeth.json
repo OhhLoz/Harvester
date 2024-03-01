@@ -1,0 +1,40 @@
+{
+  "name": "Allosaurus Teeth",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-jaw-white.webp",
+  "system": {
+    "description": {
+      "value": "An Allosaurs teeth are up to 3 inches long and serrated like steak knives for cutting flesh. Sometimes used for small tools and crafting, the teeth can also be used to line blades and decorate hilts.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Allosaurus",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973603,
+    "modifiedTime": 1688174973603,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Md8rHh5mONGiqnZY",
+  "_key": "!items!Md8rHh5mONGiqnZY"
+}

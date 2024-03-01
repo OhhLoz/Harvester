@@ -1,0 +1,40 @@
+{
+  "name": "Demilich Smoke (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "As a demilich has ascended beyond it's normal body, much of it's form is wispy necrotic vapor. While not the demilich's true essence, this smoke can be captured and saved for later. Artificers can use this vapor to track the demilich when it reappears. Requires enchanted vial.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Demilich",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974877,
+    "modifiedTime": 1688174974877,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "WWLAiyjRgfr2UuIV",
+  "_key": "!items!WWLAiyjRgfr2UuIV"
+}

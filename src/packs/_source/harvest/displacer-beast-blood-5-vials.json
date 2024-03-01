@@ -1,0 +1,40 @@
+{
+  "name": "Displacer Beast Blood (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A displacer beasts blood is a thick, blue liquid. Alchemists can use the blood to aid in the creations of potions, paints and dyes. Artificers and enchanters may be able to unlock the arcane abilities stored within the blood.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Displacer Beast",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974960,
+    "modifiedTime": 1688174974960,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "nat9z13D8XZ0xhIq",
+  "_key": "!items!nat9z13D8XZ0xhIq"
+}

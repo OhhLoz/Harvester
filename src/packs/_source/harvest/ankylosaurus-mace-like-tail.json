@@ -1,0 +1,40 @@
+{
+  "name": "Ankylosaurus Mace-like Tail",
+  "type": "loot",
+  "img": "icons/commodities/biological/tail-rodent-orange.webp",
+  "system": {
+    "description": {
+      "value": "The end of an ankylosaurs tail is a thick \"\"club\"\" of bone. This mace-like club can be harvested and used to create various bludgeoning weapons. Alternatively, the bone can be used for various crafts, sculptures and decorations.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Ankylosaurus",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973740,
+    "modifiedTime": 1688174973740,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "pxMX8mdFKOzcBrNd",
+  "_key": "!items!pxMX8mdFKOzcBrNd"
+}

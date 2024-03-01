@@ -1,0 +1,40 @@
+{
+  "name": "Unicorn Blood (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A unicorn has silver blood with a rainbow sheen. The blood is used in numerous healing potions, salves and ointments.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Unicorn",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978610,
+    "modifiedTime": 1688174978610,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "VcmMjX5uu980Z6nV",
+  "_key": "!items!VcmMjX5uu980Z6nV"
+}

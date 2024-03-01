@@ -1,0 +1,40 @@
+{
+  "name": "Cadaver Collector Paralytic Gas Canister",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Cadaver collectors are built with a canister of toxic chemicals that they use to spew a paralytic vapor. This canister can often be harvested after the creature is destroyed, if it is not punctured or disconnected improperly. The chemicals in the canister can be used by artificers, alchemists and poisoners.",
+      "chat": "20",
+      "unidentified": "Investigation"
+    },
+    "source": "Cadaver Collector",
+    "quantity": 1,
+    "weight": 7,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974419,
+    "modifiedTime": 1688174974419,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "JbTIl7pkggI6NxK8",
+  "_key": "!items!JbTIl7pkggI6NxK8"
+}

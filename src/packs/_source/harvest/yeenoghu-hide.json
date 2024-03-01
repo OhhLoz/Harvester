@@ -1,0 +1,40 @@
+{
+  "name": "Yeenoghu Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The hide of Yeenoghu is a tough leather covered in matted fur, and dried blood. The hide is difficult to harvest, but can be used to make a variety of leather armor.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Yeenoghu",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978907,
+    "modifiedTime": 1688174978907,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "zREWER7266EqVq3B",
+  "_key": "!items!zREWER7266EqVq3B"
+}

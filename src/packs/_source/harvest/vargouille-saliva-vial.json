@@ -1,0 +1,40 @@
+{
+  "name": "Vargouille Saliva (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A vargouille's saliva is a clear, viscous fluid that contains a toxic venom. Refining the Poison: Once the saliva is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 12 hours and 150gp worth of material to create Varg's Kiss (DC 14 Poisoner Kit or Alchemist Supplies check). Varg's Kiss (Contact): A creature can use an action to coat 1 melee weapon, or 3 pieces of ammunition with this poison. The poison lasts for 1 minute, or until the poison successfully affects a target. A creature successfully hit must make a DC 12 Constitution saving throw, taking 9 (3d6) poison damage on a failed save, or half as much damage on a successful one. This poison usually sells for 300gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Vargouille",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978661,
+    "modifiedTime": 1688174978661,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "dGesu7gcVlIqVfyy",
+  "_key": "!items!dGesu7gcVlIqVfyy"
+}

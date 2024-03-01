@@ -1,0 +1,40 @@
+{
+  "name": "Leucrotta Vocal Cords",
+  "type": "loot",
+  "img": "icons/consumables/meat/chicken-breast-raw-pink.webp",
+  "system": {
+    "description": {
+      "value": "A leucrotta has the ability to mimic any creature it has heard. This ability to copy voices and sounds stem from the creature's unique vocal chords. While most vocal cords are folds of tissue in the throat, a leucrotta's vocal cords are rows of strong, flexible filament. These cartilage-like strands can be stretched and treated, creating extremely strong wire or strings, often used for musical instruments. Spellcasters and artificers may be able to use the strands in mimicry or disguise spells/objects.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Leucrotta",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976826,
+    "modifiedTime": 1688174976826,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "6LvCIoc1WZEJicEW",
+  "_key": "!items!6LvCIoc1WZEJicEW"
+}

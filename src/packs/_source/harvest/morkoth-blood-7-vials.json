@@ -1,0 +1,40 @@
+{
+  "name": "Morkoth Blood (7 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A morkoth is an ancient creature, believed to have celestial power coursing through its veins. The blood is dark red, with a slight silvery sheen. The blood is used by alchemists, healers, dyers and spellcasters.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Morkoth",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977172,
+    "modifiedTime": 1688174977172,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "JgoDSBnxW3vIde9c",
+  "_key": "!items!JgoDSBnxW3vIde9c"
+}

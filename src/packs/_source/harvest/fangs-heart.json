@@ -1,0 +1,40 @@
+{
+  "name": "Fang's Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "A Fang of Yeenoghu is touched by Yeenoghu, a demon lord worshipped by gnolls. Their heart is a black mass of flesh, that still retains a tiny connection to its abyssal lord. Alchemists, demonologists, summoners and other spellcasters all have uses for the heart.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Gnoll Fang of Yeenoghu",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976111,
+    "modifiedTime": 1688174976111,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "LLfpWSfytHnNTiKz",
+  "_key": "!items!LLfpWSfytHnNTiKz"
+}

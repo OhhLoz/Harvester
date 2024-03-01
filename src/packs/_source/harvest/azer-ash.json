@@ -1,0 +1,40 @@
+{
+  "name": "Azer Ash",
+  "type": "loot",
+  "img": "icons/commodities/materials/bowl-powder-gold.webp",
+  "system": {
+    "description": {
+      "value": "Often found on an azer's corpse. The ash is sometimes used as a minor ingredient by alchemists and poisoners.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Azer",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973892,
+    "modifiedTime": 1688174973892,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "yX93xmDpjkndkH2M",
+  "_key": "!items!yX93xmDpjkndkH2M"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Black Abishai Scales",
+  "type": "loot",
+  "img": "icons/commodities/leather/scales-brown.webp",
+  "system": {
+    "description": {
+      "value": "The scales of an abishai are tough and immediately become brittle once the creature dies. As such, each scale must be carefully extracted one-by-one, and then treated with special oils in order to strengthen them again. The scales are highly decorative, and often used in jewelry. Smiths prize the scales for use in scale armor (the scales from 4 abishai are required to create a single set of scale mail).",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Black Abishai",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974153,
+    "modifiedTime": 1688174974153,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "0nIMR0ukDhk0ta04",
+  "_key": "!items!0nIMR0ukDhk0ta04"
+}

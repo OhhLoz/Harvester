@@ -1,0 +1,40 @@
+{
+  "name": "Vegepygmy Russet Mold Spores (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A vegepygmy chief's back contains round-like orifices that spew out spores when it is alive. The spores are miniscule reddish-brown balls that grow russet mold. The spores are dangerous, and difficult to harvest (see below), but are valued by expert botanists and alchemists. Harvesting Note: If the harvester fails the DC check by 5 or more, they must make a DC 13 Constitution saving throw. On a failed save, the creature becomes poisoned. While poisoned in this way, the creature takes 7 (2d6) poison damage at the start of each of its turns, sprouting mold as it takes damage. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Any magic that neutralizes poison or cures disease kills the infestation. A creature reduced to O hit points by the mold's poison damage dies. If the dead creature is a beast, a giant, or a humanoid, one or more newborn vegepygmies emerge from its body 24 hours later: one newborn from a Small corpse; two from a Medium corpse, four from a Large corpse; eight from a Huge corpse, or sixteen from a Gargantuan corpse.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Vegepygmy Chief",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978670,
+    "modifiedTime": 1688174978670,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "FVcbxiHjN6pbFUYp",
+  "_key": "!items!FVcbxiHjN6pbFUYp"
+}

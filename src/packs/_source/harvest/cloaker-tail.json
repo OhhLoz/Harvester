@@ -1,0 +1,40 @@
+{
+  "name": "Cloaker Tail",
+  "type": "loot",
+  "img": "icons/commodities/biological/tail-rodent-orange.webp",
+  "system": {
+    "description": {
+      "value": "Covered in razor sharp barbs, a cloaker tail can be treated and fashioned into lashes and whips by accomplished weaponsmiths.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Cloaker",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 85,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974651,
+    "modifiedTime": 1688174974651,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ve4rsu4jJXdIOeTE",
+  "_key": "!items!ve4rsu4jJXdIOeTE"
+}

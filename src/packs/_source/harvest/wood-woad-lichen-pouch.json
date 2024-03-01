@@ -1,0 +1,40 @@
+{
+  "name": "Wood Woad Lichen (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The lichen on a wood woad is a crusty green, plant-like substance that grows on its bark. The lichen has a great deal of regenerative properties which are valued by healers and medical experts. It can be difficult to harvest, as it flakes off easily and immediately loses its healing power.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Wood Woad",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978839,
+    "modifiedTime": 1688174978839,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "PRM1FBSj3i5bHqBX",
+  "_key": "!items!PRM1FBSj3i5bHqBX"
+}

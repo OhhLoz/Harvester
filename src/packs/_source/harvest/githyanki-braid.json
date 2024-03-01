@@ -1,0 +1,40 @@
+{
+  "name": "Githyanki Braid",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A githyanki knight has an intricate braid in its hair. Intricate metallic rings are weaved into the braid, each noting a significant victory in the githyank's life. The braid is a prized trophy, or it can be sold for the hair and jewelry.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Githyanki Knight",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976011,
+    "modifiedTime": 1688174976011,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "HDuUtvKJC3ryiK94",
+  "_key": "!items!HDuUtvKJC3ryiK94"
+}

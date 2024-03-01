@@ -1,0 +1,106 @@
+{
+  "name": "Alkilith",
+  "img": "icons/containers/bags/pack-simple-leather.webp",
+  "description": "false",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        20
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 4d6*100]]{Silver}[[/r 1d6*100]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "Et3bRHWF2Wi5iNo2",
+      "_key": "!tables.results!0UWeyeTyZcSyCUtd.Et3bRHWF2Wi5iNo2"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        21,
+        35
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 1d6*100]]{Electrum}[[/r 1d6*100]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "J29xPPED06CKbTv2",
+      "_key": "!tables.results!0UWeyeTyZcSyCUtd.J29xPPED06CKbTv2"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        36,
+        75
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 2d6*100]]{Gold}[[/r 1d6*10]]{Platinum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "5DzdnUNmTOpKSCBv",
+      "_key": "!tables.results!0UWeyeTyZcSyCUtd.5DzdnUNmTOpKSCBv"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        76,
+        100
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 2d6*100]]{Gold}[[/r 2d6*10]]{Platinum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "xdPfJCP4C7u9FbvW",
+      "_key": "!tables.results!0UWeyeTyZcSyCUtd.xdPfJCP4C7u9FbvW"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        0,
+        0
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "fAXlVXbdKikA87zo",
+      "_key": "!tables.results!0UWeyeTyZcSyCUtd.fAXlVXbdKikA87zo"
+    }
+  ],
+  "formula": "d100",
+  "replacement": false,
+  "displayRoll": false,
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688085765635,
+    "modifiedTime": 1688085765635,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "0UWeyeTyZcSyCUtd",
+  "_key": "!tables!0UWeyeTyZcSyCUtd"
+}

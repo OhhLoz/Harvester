@@ -1,0 +1,40 @@
+{
+  "name": "Sibriex Chains",
+  "type": "loot",
+  "img": "icons/commodities/metal/chain-steel.webp",
+  "system": {
+    "description": {
+      "value": "A sibriex often wears a harness of thick chains that is uses to tether itself, and move about the ground. These chains resonate with arcane energy. The chains are useful, especially to shipbuilders. The metal can also be reforged by skilled smiths.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Sibriex",
+    "quantity": 1,
+    "weight": 40,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978100,
+    "modifiedTime": 1688174978100,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "3SdW3ArNGSsZYbYs",
+  "_key": "!items!3SdW3ArNGSsZYbYs"
+}

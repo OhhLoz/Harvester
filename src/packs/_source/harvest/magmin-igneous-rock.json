@@ -1,0 +1,40 @@
+{
+  "name": "Magmin Igneous Rock",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "When a magmin is killed, its hot, molten form begins to cool. It crystallizes and solidifies, then slowly begins to crumble to pieces. Larger chunks of hot, glowing igneous rock can be found among the debris. These rocks often contain trace amounts of elemental power that can be harnessed by spellcasters and summoners. The rock is also rich in minerals, making it valued by alchemists. Harvesting note: 15 DC if the fire elemental disperses into a pool of lava or a large area of burning fire over 10 ft in diameter.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Magmin",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976908,
+    "modifiedTime": 1688174976908,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "cWMCu322qiALv5bT",
+  "_key": "!items!cWMCu322qiALv5bT"
+}

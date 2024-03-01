@@ -1,0 +1,40 @@
+{
+  "name": "Plesiosaurus Tooth (x10)",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+  "system": {
+    "description": {
+      "value": "The teeth of Plesiosaurus are simple, needle-like cones that are slightly curved. They are sharply pointed with fine striations running from tip to base. The shape, weight and strength makes them valued by fletchers.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Plesiosaurus",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977716,
+    "modifiedTime": 1688174977716,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "vzdfv1Gxi0tBViqe",
+  "_key": "!items!vzdfv1Gxi0tBViqe"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Gauth Eyestalk",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-tentacle-grey-orange.webp",
+  "system": {
+    "description": {
+      "value": "Gauth eyestalks are valued by magic users, enchanters and artificers. Once successfully harvested, roll 1d6 for the type of eyestalk received (1. Devour Magic, 2. Enervation, 3. Pushing, 4. Fire, 5. Paralyzing, 6. Sleep). [See VGM p125 for more details on the Gauth]",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Gauth",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975714,
+    "modifiedTime": 1688174975714,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "eASqh18Vsi6JW9hg",
+  "_key": "!items!eASqh18Vsi6JW9hg"
+}

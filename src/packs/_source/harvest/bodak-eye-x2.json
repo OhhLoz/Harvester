@@ -1,0 +1,40 @@
+{
+  "name": "Bodak Eye (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "White, milky orbs that resonate unholy magic.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Bodak",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974218,
+    "modifiedTime": 1688174974218,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "xCLlWKrnyjGk5eoT",
+  "_key": "!items!xCLlWKrnyjGk5eoT"
+}

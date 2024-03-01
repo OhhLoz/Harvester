@@ -1,0 +1,40 @@
+{
+  "name": "Eye Monger Saliva (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Eye monger saliva is a thick transparent fluid. The fluid is valued by alchemists and anyone studying the Astral Plane. Spellcaster and artificers use the saliva for its anti-magic properties.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Eye Monger",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975444,
+    "modifiedTime": 1688174975444,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "F3kXv9hEHlWPqBFS",
+  "_key": "!items!F3kXv9hEHlWPqBFS"
+}

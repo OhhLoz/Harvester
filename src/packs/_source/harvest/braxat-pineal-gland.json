@@ -1,0 +1,40 @@
+{
+  "name": "Braxat Pineal Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "The pineal gland is believed to be the heart of a creature's psionic power. A braxat's pineal gland is a pea-shaped mound of soft, maroon flesh, about the size of a walnut. If the pineal gland is dried out and treated (using an alchemist's set), it will not expire for over a month. Uses: As a reaction, a creature can crush the Braxat's pineal gland, which will release a burst of psionic energy, allowing the creature to add their Intelligence modifier to their AC until the end of their next turn.",
+      "chat": "25",
+      "unidentified": "Medicine"
+    },
+    "source": "Braxat",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974281,
+    "modifiedTime": 1688174974281,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "czOTdZY3eTZ8Umbt",
+  "_key": "!items!czOTdZY3eTZ8Umbt"
+}

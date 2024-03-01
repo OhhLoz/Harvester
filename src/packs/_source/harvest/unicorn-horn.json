@@ -1,0 +1,40 @@
+{
+  "name": "Unicorn Horn",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "A unicorn has a long white horn that protrudes from it's forehead and spirals upward. The horn is highly valued in the arcane community, and the prime material for many wands.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Unicorn",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978620,
+    "modifiedTime": 1688174978620,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "dJ6ICC7wpHs49xqx",
+  "_key": "!items!dJ6ICC7wpHs49xqx"
+}

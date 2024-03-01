@@ -1,0 +1,40 @@
+{
+  "name": "Elder Brain Dragon Neural Core",
+  "type": "loot",
+  "img": "icons/commodities/gems/pearl-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "An elder brain dragon's neural network is so prominent that they manifest as wiry tendrils that snake across the brain's gray matter, and branch outward throughout the dragon's body. These tendrils often lead to a large mass of neurons. Finding this fleshy ball of neural wires is difficult, as it is buried deep within the brain. The core is highly valued by artificers for electrical machinations, but also useful to researchers and spellcasters. Craftsmen can stretch the strands into thin, thread-like fibers that conduct electricity.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Elder Brain Dragon",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 3000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975357,
+    "modifiedTime": 1688174975357,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "7Cn9yCXM9dzpXSNJ",
+  "_key": "!items!7Cn9yCXM9dzpXSNJ"
+}

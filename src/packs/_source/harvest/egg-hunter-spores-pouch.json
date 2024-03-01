@@ -1,0 +1,40 @@
+{
+  "name": "Egg Hunter Spores (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Inside the head of an adult egg hunter is a sac of spores that the creature releases when it's in danger. Harvesting these spores can be difficult, because the sac is usually empty by the time this creature is slain. These spores are valuable by healers and medical professionals, used for their anesthetic properties and often used to make sedatives.Use: As an action you may make a ranged weapon attack to throw this pouch of spores at a point within 30 feet, shattering it on impact. Any creature within 10 feet of that point must make a DC 14 Constitution saving throw or be poisoned for one minute. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Egg Hunter Adult",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975320,
+    "modifiedTime": 1688174975320,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "1vHAbt903LZzr2UA",
+  "_key": "!items!1vHAbt903LZzr2UA"
+}

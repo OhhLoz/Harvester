@@ -1,0 +1,40 @@
+{
+  "name": "Allip Dust",
+  "type": "loot",
+  "img": "icons/commodities/materials/bowl-powder-gold.webp",
+  "system": {
+    "description": {
+      "value": "When an allip is killed, its form disperses into a fine mist, often scattering tiny motes of dust. The dust is difficult to see, but resonates with dark necrotic energy. Spellcasters, especially necromancers, can use the dust in spells and rituals. The dust is also a useful alchemical ingredient.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Allip",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973600,
+    "modifiedTime": 1688174973600,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "8E8ElCa8z2xM5JJ4",
+  "_key": "!items!8E8ElCa8z2xM5JJ4"
+}

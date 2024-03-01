@@ -1,0 +1,40 @@
+{
+  "name": "Meazel Hair",
+  "type": "loot",
+  "img": "icons/commodities/materials/hair-tuft-gold.webp",
+  "system": {
+    "description": {
+      "value": "The gray hair of a meazel turn black when placed in darkness. These hairs are believed to allow Meazels to briefly enter shadowfell, and teleport between shadows. Alchemist use these hairs as an ingredient in certain potions.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Meazel",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976986,
+    "modifiedTime": 1688174976986,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Bh1KkMw1rja74C7U",
+  "_key": "!items!Bh1KkMw1rja74C7U"
+}

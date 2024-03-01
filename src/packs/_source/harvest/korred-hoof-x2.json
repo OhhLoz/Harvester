@@ -1,0 +1,40 @@
+{
+  "name": "Korred Hoof (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+  "system": {
+    "description": {
+      "value": "The collagen in a Korred's hooves can be used to make a strong adhesive. The glue is used by all kinds of craftsmen. The hooves can also be used to make tools (bowls, small shovels) and decorations.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Korred",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976741,
+    "modifiedTime": 1688174976741,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "N9MffwEUOuf6RKhP",
+  "_key": "!items!N9MffwEUOuf6RKhP"
+}

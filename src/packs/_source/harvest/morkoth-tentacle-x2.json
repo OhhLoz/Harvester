@@ -1,0 +1,40 @@
+{
+  "name": "Morkoth Tentacle (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "The long, thick tentacles of a morkoth resemble the suction cup feelers of an octopus. An expert craftsman can stretch the tentacles and carefully comb them into long, thin fibers. These fibers are then soaked and treated with oils, making them useful filaments for creating ropes and whips.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Morkoth",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977179,
+    "modifiedTime": 1688174977179,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "SZ23KMuB55en7VwE",
+  "_key": "!items!SZ23KMuB55en7VwE"
+}

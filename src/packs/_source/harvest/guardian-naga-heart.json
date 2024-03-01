@@ -1,0 +1,40 @@
+{
+  "name": "Guardian Naga Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "The heart of a guardian naga is a center of power for the creature, and is a reservoir of arcane power when the creature dies. The heart can be used by spellcasters in arcane rituals of protection and summoning.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Guardian Naga",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 2500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976311,
+    "modifiedTime": 1688174976311,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "vihzPXugXghPiUtM",
+  "_key": "!items!vihzPXugXghPiUtM"
+}

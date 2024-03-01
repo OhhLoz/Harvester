@@ -1,0 +1,40 @@
+{
+  "name": "Xorn Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A xorn's skin is a hard-leathery hide, with rocks protruding all about the surface. The rock-like hide provides the creature with ample protection, but is also flowing with elemental energy. The rocks appear to meld into the ground and shifts color to match the surrounding rock. Armorers may be able to craft a set of heavy armor from the hide, which may take enchantments fairly easily.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Xorn",
+    "quantity": 1,
+    "weight": 120,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978872,
+    "modifiedTime": 1688174978872,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "kpiYITvfKwwahPR1",
+  "_key": "!items!kpiYITvfKwwahPR1"
+}

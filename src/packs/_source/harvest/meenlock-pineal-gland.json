@@ -1,0 +1,40 @@
+{
+  "name": "Meenlock Pineal Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "At the base of a meenlock's brain is a small blue gland that controls the creature's telepathic abilities. These abilities allow meenlocks to psychically join together and attack another creature, forcing it to painfully transform into a meenlock itself. This gland is highly valued by spellcasters and those that study psionic abilities. Alchemist want an enzyme that the gland secretes.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Meenlock",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977002,
+    "modifiedTime": 1688174977002,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "9aAaRvKD4iViZjre",
+  "_key": "!items!9aAaRvKD4iViZjre"
+}

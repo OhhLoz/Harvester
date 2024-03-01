@@ -1,0 +1,40 @@
+{
+  "name": "Cadaver Collector Armor and Weapons",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A cadaver collector is covered in corpses, and various pieces of armor and weapon. This cadaver collector has the following items: Weapons: 2 longswords, 5 rapiers, 1 spear, 3 scimitars, 1 shortsword Armor: 4 padded armor, 1 hide armor, 2 half plate armor, 1 leather armor",
+      "chat": "0",
+      "unidentified": "Investigation"
+    },
+    "source": "Cadaver Collector",
+    "quantity": 1,
+    "weight": 164,
+    "price": {
+      "value": 1781,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974423,
+    "modifiedTime": 1688174974423,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "3FBRiGi2Fjhsr5lF",
+  "_key": "!items!3FBRiGi2Fjhsr5lF"
+}

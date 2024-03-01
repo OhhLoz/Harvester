@@ -1,5 +1,3 @@
-2024/03/01-22:52:32.809 319c Delete type=3 #1
-2024/03/01-22:52:52.193 2894 Level-0 table #5: started
-2024/03/01-22:52:52.242 2894 Level-0 table #5: 1078 bytes OK
-2024/03/01-22:52:52.327 2894 Delete type=0 #3
-2024/03/01-22:52:52.519 2894 Manual compaction at level-0 from '!journal!OIxBlwhHrHHk40SH' @ 72057594037927935 : 1 .. '!journal.pages!OIxBlwhHrHHk40SH.Qmbcp2cdjbivTuwF' @ 0 : 0; will stop at (end)
+2024/03/01-22:54:56.536 264c Recovering log #7
+2024/03/01-22:54:56.739 264c Delete type=0 #7
+2024/03/01-22:54:56.739 264c Delete type=3 #6

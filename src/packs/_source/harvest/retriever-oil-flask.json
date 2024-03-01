@@ -1,0 +1,40 @@
+{
+  "name": "Retriever Oil (flask)",
+  "type": "loot",
+  "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "Much of the Retriever's interior gears and components are coated in a thin layer of slick, black oil. It may be possible to gather some of this oil and collect it in a flask. The oil is a useful lubricant that any merchant will buy.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Retriever",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977866,
+    "modifiedTime": 1688174977866,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "0wEqNmwL8EoXvXNA",
+  "_key": "!items!0wEqNmwL8EoXvXNA"
+}

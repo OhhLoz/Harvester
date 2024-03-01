@@ -1,0 +1,40 @@
+{
+  "name": "Djinni Dust Particles (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "When a djinni fades from the prime material plane, it leaves behind a cloud of dust and particles that quickly disperses. A djinni's dust particles contain a strong amount of arcane power that can be used by spellcasters to enhance their magic. Requires an enchanted vial. Use: When casting the spell conjure minor elemental or conjure elemental, this crystalline powder may be used as the spell's material component, which allows the spell can be cast at one level higher than the spell slot used to cast it. The crystalline powder then becomes inert and useless.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Djinni",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 750,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974975,
+    "modifiedTime": 1688174974975,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "IVM4SQaiOAN2DlZi",
+  "_key": "!items!IVM4SQaiOAN2DlZi"
+}

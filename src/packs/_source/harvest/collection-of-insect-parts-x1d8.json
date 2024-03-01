@@ -1,0 +1,40 @@
+{
+  "name": "Collection of Insect Parts (x1d8)",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "If the insects aren't completely destroyed, the creature's body can be can sold to alchemists and healers. The little beast's wings, legs, eyes and tiny organs may have uses in potions, salves and ointments.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Swarm of Insects",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978394,
+    "modifiedTime": 1688174978394,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "H6ZaGFYhF3Iy62se",
+  "_key": "!items!H6ZaGFYhF3Iy62se"
+}

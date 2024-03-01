@@ -1,0 +1,40 @@
+{
+  "name": "Xorn Tooth (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Since a xorn has a diet of gemstones and precious metals, it's teeth are capable of slicing through stone with ease. Expert blacksmiths can create superb tools with these teeth. Adept weaponsmiths can use the teeth to create deadly serrated weapons.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Xorn",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978867,
+    "modifiedTime": 1688174978867,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "l8gHlM0ZVlt4TBNC",
+  "_key": "!items!l8gHlM0ZVlt4TBNC"
+}

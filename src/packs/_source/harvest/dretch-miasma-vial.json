@@ -1,0 +1,40 @@
+{
+  "name": "Dretch Miasma (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The fetid stench of a dretch can be bottled and saved. If the character fails the harvesting by 5 or more, a potent form of the gas is released in a 10ft radius. Any creature in the area must make a DC 11 Constitution saving throw or immediately take 1d8 poison damage. The damage continues every round until the creature leaves in the area. The gas lasts for 1 minute or until a Strong Wind disperses it. Use: As an action you may make a ranged weapon attack to throw this vial at a point within 20 feet, shattering it on impact. Any creature within 10 feet of that point must make a DC 11 Constitution saving throw or be poisoned until the start of its next turn. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can't take reactions.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Dretch",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975147,
+    "modifiedTime": 1688174975147,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "aOHk9XBymIU3lFvi",
+  "_key": "!items!aOHk9XBymIU3lFvi"
+}

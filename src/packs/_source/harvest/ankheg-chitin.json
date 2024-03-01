@@ -1,0 +1,40 @@
+{
+  "name": "Ankheg Chitin",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "Hard and thick sheets of chitin, often used to make armor.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Ankheg",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973722,
+    "modifiedTime": 1688174973722,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "PFDXtZ6nnEbmGiFX",
+  "_key": "!items!PFDXtZ6nnEbmGiFX"
+}

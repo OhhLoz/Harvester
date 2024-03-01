@@ -1,0 +1,40 @@
+{
+  "name": "Medusa Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "A medusa's heart is a red bulbous organ, wrapped in muscles and dark veins. The cursed heart seems to radiate with a dark energy, which quickly begins to dissipate as the creatures life essence fades. However, the heart still retains some arcane power that can be harnessed by spellcasters and witches.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Medusa",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976992,
+    "modifiedTime": 1688174976992,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "sOK2VbByYiLLQsfn",
+  "_key": "!items!sOK2VbByYiLLQsfn"
+}

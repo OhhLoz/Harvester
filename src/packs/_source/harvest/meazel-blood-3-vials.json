@@ -1,0 +1,40 @@
+{
+  "name": "Meazel Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Meazel blood is a thick, dark substance. The blood is touched by the Shadowfell and can be used in various potions, often related to darkvision and shadows.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Meazel",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976983,
+    "modifiedTime": 1688174976983,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ZKt1K3aO2m8gZSxm",
+  "_key": "!items!ZKt1K3aO2m8gZSxm"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Zombie Fluid",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-green.webp",
+  "system": {
+    "description": {
+      "value": "A zombie's saliva and blood are both a thick, black fluid that smells of rotting meat. The fluid is a disease-ridden substance that necromancers often use in dark rituals and spells. Alchemists may be able to repurpose the blood for use in certain potions.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Zombie",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979089,
+    "modifiedTime": 1688174979089,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "fTzKrmNY0Ep3p5o7",
+  "_key": "!items!fTzKrmNY0Ep3p5o7"
+}

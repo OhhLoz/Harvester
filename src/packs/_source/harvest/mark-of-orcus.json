@@ -1,0 +1,40 @@
+{
+  "name": "Mark of Orcus",
+  "type": "loot",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "The symbol of Orcus, a mace and skull, is carved into every bodak's chest. A harvester can carefully remove the skin, resulting in a dark leather sheet with the scarred symbol. Powerful curses can be created using this symbol. Before the expiration, a creature can spend 6 hours and 5gp for alchemical ingredients to dry and treat the mark, allowing it to retain its magic abilities without expiring.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Bodak",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974214,
+    "modifiedTime": 1688174974214,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "aTvKuy6gd2yCzyrJ",
+  "_key": "!items!aTvKuy6gd2yCzyrJ"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Night Hag's Eyeball",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "Harvesting the hag's eyeball intact is a delicate task. The eye is useful to those that practice divination. It can also be used by alchemists.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Night Hag",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977356,
+    "modifiedTime": 1688174977356,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "0u23GBUg8JEFiar2",
+  "_key": "!items!0u23GBUg8JEFiar2"
+}

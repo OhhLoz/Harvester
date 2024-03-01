@@ -1,0 +1,40 @@
+{
+  "name": "Death Tyrant Eye",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "The Death Tyrants eye resonates with negative energy, and is prized by magic users for it's arcane properties.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Death Tyrant",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 3500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974821,
+    "modifiedTime": 1688174974821,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "QAy1V2dnoh1z0nHh",
+  "_key": "!items!QAy1V2dnoh1z0nHh"
+}

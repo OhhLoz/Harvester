@@ -1,0 +1,40 @@
+{
+  "name": "Gray Slaad Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A gray slaad's hide is a thick, rubbery skin. The hide makes a strong leather, but is valued for its magical properties.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Gray Slaad",
+    "quantity": 1,
+    "weight": 18,
+    "price": {
+      "value": 300,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976200,
+    "modifiedTime": 1688174976200,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "1b4FYPxnOSz5Oh76",
+  "_key": "!items!1b4FYPxnOSz5Oh76"
+}

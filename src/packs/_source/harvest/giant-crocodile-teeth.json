@@ -1,0 +1,40 @@
+{
+  "name": "Giant Crocodile Teeth",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-jaw-white.webp",
+  "system": {
+    "description": {
+      "value": "A successful harvest can yield over 60 teeth, the longest being about 8 inches. A giant crocodile's tooth can be used to create certain weapons. The smaller teeth can be used in jewelry and decorations.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Crocodile",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975810,
+    "modifiedTime": 1688174975810,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "abEOdEp11cOD3lhi",
+  "_key": "!items!abEOdEp11cOD3lhi"
+}

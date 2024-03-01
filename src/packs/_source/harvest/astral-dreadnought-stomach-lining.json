@@ -1,0 +1,40 @@
+{
+  "name": "Astral Dreadnought Stomach Lining",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-stomach.webp",
+  "system": {
+    "description": {
+      "value": "The stomach lining of an Astral Dreadnought is lined with nerve endings radiating with arcane magic, and is believed to allow for teleportation. Alchemists can extract arcane fluids from this item for potions and elixirs. Spellcasters may be able to craft a shroud, aiding in teleportation to other planes.",
+      "chat": "30",
+      "unidentified": "Nature"
+    },
+    "source": "Astral Dreadnought",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 10000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973832,
+    "modifiedTime": 1688174973832,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "e01IGCh4YMb6TX16",
+  "_key": "!items!e01IGCh4YMb6TX16"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Gargoyle Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "At the center of a gargoyle is a faceted black stone of obsidian, that swirls with dark magical energy. If the stone doesn't shatter upon the creatures destruction, it may be collected. Dwarves value the stone for it's beauty and magic users prize the stone for its arcane properties.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Gargoyle",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975703,
+    "modifiedTime": 1688174975703,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "IfUJZv7MMLj3iGpT",
+  "_key": "!items!IfUJZv7MMLj3iGpT"
+}

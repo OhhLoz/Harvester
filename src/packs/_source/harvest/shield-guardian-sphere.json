@@ -1,0 +1,40 @@
+{
+  "name": "Shield Guardian Sphere",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Inside of a shield guardian is a perfectly round, 5-inch sphere of iron. This object lets a spellcaster store a single spell inside the shield guardian. The sphere is valued by spellcasters hoping to harness the sphere's power or forge it into other items.",
+      "chat": "20",
+      "unidentified": "Investigation"
+    },
+    "source": "Shield Guardian",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978081,
+    "modifiedTime": 1688174978081,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Zuilkby1pwZXWUtU",
+  "_key": "!items!Zuilkby1pwZXWUtU"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Zaratan Rare Plants, Herbs and Fungi (3x sacks)",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "Zaratan's body, especially its shell, is covered in a variety of lush greenery, roots, herbs and fungi. Once the creature's large form crumbles, it may be difficult to find these items.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Zaratan",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979076,
+    "modifiedTime": 1688174979076,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "pTNikrTKQk6CRBEW",
+  "_key": "!items!pTNikrTKQk6CRBEW"
+}

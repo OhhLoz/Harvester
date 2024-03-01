@@ -1,0 +1,40 @@
+{
+  "name": "Nilbog Jaw",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-jaw-teeth-brown.webp",
+  "system": {
+    "description": {
+      "value": "Being possessed by a goblin trickster deity causes a nilbog's mouth to develop into a wide, toothy smile full of jagged, yellow teeth. As the jaw has been touched by a deity, albeit a minor one, it retains a trace amount of celestial power. The jaw of the creature is difficult to remove intact, and quite a messy affair, but is prized in the arcane community.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Nilbog",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977375,
+    "modifiedTime": 1688174977375,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "bCZG02qj6578m8Ti",
+  "_key": "!items!bCZG02qj6578m8Ti"
+}

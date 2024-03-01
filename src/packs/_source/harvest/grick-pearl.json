@@ -1,0 +1,40 @@
+{
+  "name": "Grick Pearl",
+  "type": "loot",
+  "img": "icons/commodities/gems/pearls-white.webp",
+  "system": {
+    "description": {
+      "value": "Larger, older and bigger gricks sometimes swallow the jewelry and gems of their prey. In some cases, these items get caught in a gricks digestive system. Over time, the gricks natural enzymes coat the item, which hardens. This process happens over-and-over again, layer-after-layer. In rare cases, a shiny pink pearl forms.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Alpha Grick",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973620,
+    "modifiedTime": 1688174973620,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "moMOuBeaSA9xHrkn",
+  "_key": "!items!moMOuBeaSA9xHrkn"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Ettin Fingernail",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "An ettins fingernail is a useful alchemy ingredient, used in a variety of potions. They hold little value elsewhere.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Ettin",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975433,
+    "modifiedTime": 1688174975433,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "UsSudyaHPNsceCYP",
+  "_key": "!items!UsSudyaHPNsceCYP"
+}

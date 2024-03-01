@@ -1,0 +1,40 @@
+{
+  "name": "Desicated Hand",
+  "type": "loot",
+  "img": "icons/commodities/biological/hand-clawed-blue.webp",
+  "system": {
+    "description": {
+      "value": "If successful, the hand wasn't destroyed during the battle and can be salvaged. The hand can be treated and preserved and used as an arcane focus for necromancy spells. The hand can also be dissected to obtain the crawling claw's knucklebones. The knuckles are infused with trace amounts of necrotic energy, that may be repurposed by magic users, shamans and witches.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Crawling Claw",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974741,
+    "modifiedTime": 1688174974741,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "DQibeRhGkypEdvw3",
+  "_key": "!items!DQibeRhGkypEdvw3"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Kindori Moss (x4 sacks)",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "Kindori are large creatures with mosses, molds and other parasitic organisms growing on its surface. This moss can be harvested and sold to farmers who use it to make a powerful fertilizer.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Kindori",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976713,
+    "modifiedTime": 1688174976713,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "q3VlA8meGZvKnD8G",
+  "_key": "!items!q3VlA8meGZvKnD8G"
+}

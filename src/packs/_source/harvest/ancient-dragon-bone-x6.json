@@ -1,0 +1,40 @@
+{
+  "name": "Ancient Dragon Bone (x6)",
+  "type": "loot",
+  "img": "icons/commodities/bones/bones-stack-yellow.webp",
+  "system": {
+    "description": {
+      "value": "Dragon bones are infused with arcane and elemental magic, and tend to get harder as the dragon ages. Armorers and weaponsmiths that know how to work dragon bone tend to be masters of their craft.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Ancient Dragon",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 900,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973641,
+    "modifiedTime": 1688174973641,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "WMXURxskSfT2udOR",
+  "_key": "!items!WMXURxskSfT2udOR"
+}

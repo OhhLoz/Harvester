@@ -1,0 +1,40 @@
+{
+  "name": "Kraken Ink (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The ink, which the kraken uses to expel a giant ink cloud, is a black, free flowing liquid. The ink is flowing with magical energy making it highly valued by alchemists, scholars and magic users. It is used as an ingredient in invisible ink, certain magic runes, special scroll and magical tomes. Use: A wizard can use the ink, with other ingredients, to copy a spell scroll into their spell book. Using this ink allows for the spell to be copied twice as fast, at half the cost. Note: 5% a vial is used to copy 1 spell level (so, an 8th level scroll would use 40% of an ink bottle).",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Kraken",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976757,
+    "modifiedTime": 1688174976757,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "LIkTHx4LjiCbd9Nn",
+  "_key": "!items!LIkTHx4LjiCbd9Nn"
+}

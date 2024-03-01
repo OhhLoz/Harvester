@@ -1,0 +1,40 @@
+{
+  "name": "Death Dog Saliva (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Death dog saliva is a nasty diseased substance, and care must be taken when harvesting. If the character fails the harvesting check by 5 or more, the character is affected by the saliva (see below). Alchemists and healers may find the saliva worth studying. If affected by the death dog's saliva, the target succeed on a DC 12 Constitution save against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the creature must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Death Dog",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974789,
+    "modifiedTime": 1688174974789,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Y5NT9FGRa9IsRQ7x",
+  "_key": "!items!Y5NT9FGRa9IsRQ7x"
+}

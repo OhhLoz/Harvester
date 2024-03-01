@@ -1,0 +1,40 @@
+{
+  "name": "Ghoul Claws (x2)",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "A ghoul's claws are covered in a numbing paralytic, which makes their claws useful. Harvesting the claws incorrectly can destroy the paralytic. Some alchemists, artificers and other spellcasters can use these claws in the craft.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Ghoul",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975769,
+    "modifiedTime": 1688174975769,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ZjxPhrI4DBTaFbXV",
+  "_key": "!items!ZjxPhrI4DBTaFbXV"
+}

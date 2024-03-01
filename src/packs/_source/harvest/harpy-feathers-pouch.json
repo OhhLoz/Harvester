@@ -1,0 +1,40 @@
+{
+  "name": "Harpy Feathers (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The feathers of a harpy are large, and vary in color (depending on the harpy it came from). The feathers can be used in apparel, decorations and quills.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Harpy",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 4,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976399,
+    "modifiedTime": 1688174976399,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "HG5iN2treiweRxXE",
+  "_key": "!items!HG5iN2treiweRxXE"
+}

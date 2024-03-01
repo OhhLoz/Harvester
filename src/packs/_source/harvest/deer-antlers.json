@@ -1,0 +1,40 @@
+{
+  "name": "Deer Antlers",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-antler-tan.webp",
+  "system": {
+    "description": {
+      "value": "A deer's antlers are prized hunter trophies, but they can also be used to create weapon handles and simple tools (hoes, rakes, etc.).",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Deer",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 8,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974864,
+    "modifiedTime": 1688174974864,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "1rJr11743pBnvMqH",
+  "_key": "!items!1rJr11743pBnvMqH"
+}

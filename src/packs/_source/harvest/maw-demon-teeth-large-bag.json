@@ -1,0 +1,40 @@
+{
+  "name": "Maw Demon Teeth (large bag)",
+  "type": "loot",
+  "img": "icons/containers/bags/pack-canvas-white-brown.webp",
+  "system": {
+    "description": {
+      "value": "Long, razor sharp teeth, each over a foot in length. The abyssal magic that flows through each maw demon gives the teeth power - power that many spellcasters can use.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Maw Demon",
+    "quantity": 1,
+    "weight": 7,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976977,
+    "modifiedTime": 1688174976977,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "bedHL5JrqHHqRr7B",
+  "_key": "!items!bedHL5JrqHHqRr7B"
+}

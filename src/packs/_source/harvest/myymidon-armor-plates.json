@@ -1,0 +1,40 @@
+{
+  "name": "Myymidon Armor Plates",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "The magical armor that binds the elemental Mymidon may be salvageable and retain some of its arcane power. These magically infused plates can sold to blacksmiths for the soft glowing metal. Alternatively, spellcasters, especially conjurers and elemental wizards, seek the plates for the residual binding magic.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Earth Elemental Myrmidon",
+    "quantity": 1,
+    "weight": 40,
+    "price": {
+      "value": 300,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975308,
+    "modifiedTime": 1688174975308,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "YxJSZireLXVhY9PV",
+  "_key": "!items!YxJSZireLXVhY9PV"
+}

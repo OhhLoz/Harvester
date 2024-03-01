@@ -1,0 +1,40 @@
+{
+  "name": "Alkilith Mold (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A creeping gray mold can often be found growing on the dark fungal-like skin of an Alkilith. This mold can be used for healing or harm. Alchemists can create either poisons or healing salves from the mold.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Alkilith",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973592,
+    "modifiedTime": 1688174973592,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "7CJUouicf5oQ2n8R",
+  "_key": "!items!7CJUouicf5oQ2n8R"
+}

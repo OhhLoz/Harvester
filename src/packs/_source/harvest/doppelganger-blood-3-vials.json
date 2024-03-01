@@ -1,0 +1,40 @@
+{
+  "name": "Doppelganger Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A doppleganger's blood is a dark red, almost black, fluid with a low viscosity and a rainbow sheen. When the vial is held, the blood changes color to match the blood of the creature holding it. Use: When you (or another small or medium-sized humanoid) drink a vial of this blood that has a drop of a humanoid's blood mixed into it, you polymorph into that humanoid's race (you will not turn into an identical version of that creature, but retain many of your own characteristics. For example, if you are bulky and have long red hair, your new race will be bulky and have long red hair). This effect lasts for 1d4 hours. Your statistics, other than your size remain the same in the new form. Any equipment you are carrying or wearing is not transformed. You revert to your true form at the end of the duration or if you die.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Doppelganger",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974999,
+    "modifiedTime": 1688174974999,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "LnaW834vnHli8bG7",
+  "_key": "!items!LnaW834vnHli8bG7"
+}

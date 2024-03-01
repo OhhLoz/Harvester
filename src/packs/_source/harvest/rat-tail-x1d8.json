@@ -1,0 +1,40 @@
+{
+  "name": "Rat Tail (x1d8)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tail-rodent-orange.webp",
+  "system": {
+    "description": {
+      "value": "Rat tails are useless for eating or crafting, however, many cities will pay a bounty for each rat tail turned in.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Swarm of Rats",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978415,
+    "modifiedTime": 1688174978415,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "tvZW56yuqDWTImI4",
+  "_key": "!items!tvZW56yuqDWTImI4"
+}

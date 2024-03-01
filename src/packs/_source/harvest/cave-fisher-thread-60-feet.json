@@ -1,0 +1,40 @@
+{
+  "name": "Cave Fisher Thread (60 feet)",
+  "type": "loot",
+  "img": "icons/commodities/biological/foot-black-grey.webp",
+  "system": {
+    "description": {
+      "value": "The thick, sticky webbing of a cave fisher is difficult to harvest, and often wrapped around bolts of silk fabric to keep the adhesive from sticking. Use: This filament may be unspooled like a regular piece of rope, and stretched across a 5' area. A creature that touches the filament immediately becomes adhered to it. A creature adhered to the filament is considered grappled (escape DC 13), and ability checks made to escape this grapple have disadvantage. The filament can be attacked (AC 15; 5 hit points; immunity to poison and psychic damage), but a weapon that fails to sever it becomes grappled, requiring an action and a successful Strength check (DC 13) to pull free.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Cave Fisher",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974496,
+    "modifiedTime": 1688174974496,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "fCJ6v5JkKVYDrel6",
+  "_key": "!items!fCJ6v5JkKVYDrel6"
+}

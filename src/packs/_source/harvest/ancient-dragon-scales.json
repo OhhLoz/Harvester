@@ -1,0 +1,40 @@
+{
+  "name": "Ancient Dragon Scales",
+  "type": "loot",
+  "img": "icons/commodities/leather/scales-brown.webp",
+  "system": {
+    "description": {
+      "value": "A dragon's scales are hard as steel. The scales are difficult to manipulate and fashion, but an expert armorer may be able to create an amazing piece of armor.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Ancient Dragon",
+    "quantity": 1,
+    "weight": 45,
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973650,
+    "modifiedTime": 1688174973650,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "MKmOjw9psspORIQb",
+  "_key": "!items!MKmOjw9psspORIQb"
+}

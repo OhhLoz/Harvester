@@ -1,0 +1,40 @@
+{
+  "name": "Beholder Membrane",
+  "type": "loot",
+  "img": "icons/commodities/biological/pustules-red.webp",
+  "system": {
+    "description": {
+      "value": "A large rubbery balloon that holds many of the Beholder's internal organs. Often prized by scholars and magic users.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Beholder",
+    "quantity": 1,
+    "weight": 40,
+    "price": {
+      "value": 45,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974100,
+    "modifiedTime": 1688174974100,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "PRbanubEy5RL8HPQ",
+  "_key": "!items!PRbanubEy5RL8HPQ"
+}

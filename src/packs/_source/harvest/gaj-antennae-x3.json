@@ -1,0 +1,40 @@
+{
+  "name": "Gaj Antennae (x3)",
+  "type": "loot",
+  "img": "icons/commodities/biological/antenna-blue.webp",
+  "system": {
+    "description": {
+      "value": "Three feathery antennae are located the Gaj's forehead. In order to retain its magical properties, each antennae must be removed whole. If the antennae rips or snaps, the entire antennae breaks apart and is lost. The antennae are known for their mind-probing properties, and are valued by divinators and other spellcaster. Alchemists may be able to use the antennae to make mind-reading potions.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Gaj",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975684,
+    "modifiedTime": 1688174975684,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "EHZJjhuYLEoJWQMv",
+  "_key": "!items!EHZJjhuYLEoJWQMv"
+}

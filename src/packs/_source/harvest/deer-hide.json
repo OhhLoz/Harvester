@@ -1,0 +1,40 @@
+{
+  "name": "Deer Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A deer's hide can be crafted into soft, supple buckskin, which is used to create armor and apparel.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Deer",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974859,
+    "modifiedTime": 1688174974859,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "aMGjCBGpKoCt3FBB",
+  "_key": "!items!aMGjCBGpKoCt3FBB"
+}

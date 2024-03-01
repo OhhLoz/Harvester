@@ -1,0 +1,40 @@
+{
+  "name": "Meenlock Claws (x2)",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "Meenlock's have long claw-like appendages that can paralyze their prey. The venom loses its potency when the creature dies, but the claws still have various uses. Alchemists can scrape off the dry paralytic to use in potions. The claws themselves can be used to make small tools.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Meenlock",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976998,
+    "modifiedTime": 1688174976998,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "yukKKg39nNr6R6nn",
+  "_key": "!items!yukKKg39nNr6R6nn"
+}

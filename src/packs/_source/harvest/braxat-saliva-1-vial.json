@@ -1,0 +1,40 @@
+{
+  "name": "Braxat Saliva (1 vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A braxit's saliva is a corrosive thick fluid. If stored in a glass vial, it can be used as acid.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Braxat",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974275,
+    "modifiedTime": 1688174974275,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Q09Ql2DNd2W6XISp",
+  "_key": "!items!Q09Ql2DNd2W6XISp"
+}

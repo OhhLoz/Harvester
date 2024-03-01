@@ -1,0 +1,40 @@
+{
+  "name": "Dragon Wyrmling Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A dragon wyrmling's scales are soft and flexible, but too weak to provide any protection. However, a wyrmling's hide can be treated and turned into a soft leather.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Dragon Wyrmling",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975094,
+    "modifiedTime": 1688174975094,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "XesSRbWoQ2vKUnrH",
+  "_key": "!items!XesSRbWoQ2vKUnrH"
+}

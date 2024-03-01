@@ -1,0 +1,40 @@
+{
+  "name": "Raw Dragon Meat",
+  "type": "loot",
+  "img": "icons/consumables/meat/steak-raw-red-pink.webp",
+  "system": {
+    "description": {
+      "value": "Dragon meat is a delicacy and is considered one of the finest meats you can eat. The meat spoils fast, but gourmet chefs will pay dearly for the meat. Dragon Jerky: If the meat is dried and smoked, a young dragon can yield about 2d6 days worth of dragon jerky. Dragon jerky is extremely filling, and a days worth weighs only a quarter of a regular ration (0.5 lbs.). It costs 2gp per ration.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Young Dragon",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 60,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978942,
+    "modifiedTime": 1688174978942,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "w55L8Q9SmQ99qSzk",
+  "_key": "!items!w55L8Q9SmQ99qSzk"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Ancient Dragon Horn",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "Harvested from: Black, Blue, Red, Bronze, Copper, and Gold Dragons Depending on the type of dragon, a horn or a prominent protrusion may adorn their head. These horns often retain a piece of the dragon's power, and make wonderful conduits for arcane magic. The horns make great trophies and can be crafted into various instruments and items, which tend to absorb magic enchantments fairly easily. Magic users create staves using the horns, as they make a perfect arcane focus.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Ancient Dragon",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 1600,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973645,
+    "modifiedTime": 1688174973645,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "CHbE8Y1WMr0KInl3",
+  "_key": "!items!CHbE8Y1WMr0KInl3"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Rhinoceros Horn",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "A rhinoceros has a long, bone-like protrusion made of keratin on its snout. The horn is often used as a trophy, ornament or in traditional medicines. The horn can also be treated and carved into short weapons.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Rhinoceros",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977874,
+    "modifiedTime": 1688174977874,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "9fGx3oYF2k4OAOij",
+  "_key": "!items!9fGx3oYF2k4OAOij"
+}

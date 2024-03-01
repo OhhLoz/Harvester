@@ -1,0 +1,40 @@
+{
+  "name": "Nalfeshnee Wing (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "Dark abyssal magic allows the diminutive wings of a nalfeshnee to support its large weight. The wings also give the nalfeshnee the ability to teleport, which can be used by a skilled harvester. Use: You may spend an action focusing on a wing in your hand. If you do so, you magically teleport, along with any equipment you are wearing or carrying, up to 60 feet to an unoccupied space you can see. Once this item has been used once, it loses all magical properties and becomes useless.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Nalfeshnee",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 350,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977268,
+    "modifiedTime": 1688174977268,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "vl6E6qFybdZheN2H",
+  "_key": "!items!vl6E6qFybdZheN2H"
+}

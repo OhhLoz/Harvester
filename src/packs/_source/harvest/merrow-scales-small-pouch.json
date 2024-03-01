@@ -1,0 +1,40 @@
+{
+  "name": "Merrow Scales (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Merrow scales are a dull blue color. The small, hard scales are useful when creating jewelry and decorations. Some dyers and alchemists use the scales to create deep blue dyes and paints.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Merrow",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977058,
+    "modifiedTime": 1688174977058,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "0woW8rJK1kpSB1V0",
+  "_key": "!items!0woW8rJK1kpSB1V0"
+}

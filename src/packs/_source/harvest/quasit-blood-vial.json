@@ -1,0 +1,40 @@
+{
+  "name": "Quasit Blood (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Quasit blood is a yellow fluid with low viscosity. Magic users often use the blood to enhance their familiars for a short time. Use: The next time you cast the find familiar spell, you may use a vial of quasit blood instead of using the usual material component of the spell. If you do, your summoned familiar gains the quasit's magic resistance (advantage on saving throws against spells and other magical effects). Your familiar also shares this trait with you so long as you are within 10 feet of it. Both of these effects last for 1 hour, or until your familiar is killed, dismissed or pulled into your dimensional pocket.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Quasit",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977797,
+    "modifiedTime": 1688174977797,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "pAV45rCmnaKDx12T",
+  "_key": "!items!pAV45rCmnaKDx12T"
+}

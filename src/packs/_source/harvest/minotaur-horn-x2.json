@@ -1,0 +1,40 @@
+{
+  "name": "Minotaur Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "The hard, pointed horns of a minotaur have many uses. Craftsmen can use the item to create drinking horns, musical instruments, decorations, small weapons and even horned helms.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Minotaur",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977134,
+    "modifiedTime": 1688174977134,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "dLh1z0Im2BjFL5Qp",
+  "_key": "!items!dLh1z0Im2BjFL5Qp"
+}

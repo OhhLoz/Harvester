@@ -1,0 +1,40 @@
+{
+  "name": "Auroch Horns (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "An auroch's horns can be used to create weapon handles, simple tools (hoes, rakes, etc.), decorations, and to craft jewelry.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Auroch",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973845,
+    "modifiedTime": 1688174973845,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "5ZG4UiQdsPI4v39D",
+  "_key": "!items!5ZG4UiQdsPI4v39D"
+}

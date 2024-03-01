@@ -1,0 +1,40 @@
+{
+  "name": "Yuan-ti Anathema Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "An anathema's heart beats with a dark arcane energy, and is the source of its ophidiophobia aura. The heart is a red bulbous mass of flesh and veins, surging with invisible arcane energy. Sorcerers, transmutation specialist, and artificers have an interest in this creature's organ.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Yuan-ti Anathema",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 750,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979010,
+    "modifiedTime": 1688174979010,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "UPrRVGNZusUHd64S",
+  "_key": "!items!UPrRVGNZusUHd64S"
+}

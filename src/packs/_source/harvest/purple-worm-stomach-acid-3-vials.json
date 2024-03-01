@@ -1,0 +1,40 @@
+{
+  "name": "Purple Worm Stomach Acid (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The stomach of a purple worm contains a highly acidic mix of chemicals that eats slowly eats through rock and stone. This stomach acid is useful to many craftsmen. The acid can be hard to harvest. Failing the harvesting DC check by 5 or more results the stomach bursting, spraying acid in a 10-foot radius. Any creature in range immediately takes 2d6 acid damage.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Purple Worm",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977780,
+    "modifiedTime": 1688174977780,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "3oiNbZBapyv8XYtX",
+  "_key": "!items!3oiNbZBapyv8XYtX"
+}

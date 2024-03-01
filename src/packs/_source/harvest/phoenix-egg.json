@@ -1,0 +1,40 @@
+{
+  "name": "Phoenix Egg",
+  "type": "loot",
+  "img": "icons/consumables/eggs/egg-speckled-tan.webp",
+  "system": {
+    "description": {
+      "value": "When a phoenix dies, it explodes, leaving behind an egg-shaped cinder, which weighs 5 pounds. The cinder deals 21 (6d6) fire damage to any creature that touches it, though no more than once per round. The cinder is immune to all damage, and after 1d6 days, it hatches a new phoenix. The eggs is prized by powerful wizards and other spellcasters.",
+      "chat": "1",
+      "unidentified": "Arcana"
+    },
+    "source": "Phoenix",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977659,
+    "modifiedTime": 1688174977659,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "iFYDE6z4dww3APRH",
+  "_key": "!items!iFYDE6z4dww3APRH"
+}

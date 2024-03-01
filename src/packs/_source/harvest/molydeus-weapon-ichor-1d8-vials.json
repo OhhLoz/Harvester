@@ -1,0 +1,40 @@
+{
+  "name": "Molydeus' Weapon Ichor (1d8 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "When a molydeus is killed, it's rune-covered weapon dissolves into a foul ichor. This thick, yellow-orange substance is valued by alchemists, but its also prized for its arcane properties. The substance is believed to magically enhance weapons.Use: A creature can spend an action to coat 1 melee weapon, or 3 pieces of ammunition with 1 vial of this demonic ichor. The ichor lasts for 1 minute, or until it successfully affects a target. A creature hit with this ichor must succeed on a DC 17 Constitution saving throw or take an additional 3d8 force damage.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Molydeus",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977164,
+    "modifiedTime": 1688174977164,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "DbcVs84MoYS9fhrr",
+  "_key": "!items!DbcVs84MoYS9fhrr"
+}

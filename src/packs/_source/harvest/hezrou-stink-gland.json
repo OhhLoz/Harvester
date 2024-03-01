@@ -1,0 +1,40 @@
+{
+  "name": "Hezrou Stink Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "Every hezrou gives off a fetid stench as a result of a stink gland near the back of its neck. The gland can be harvested and the malicious odor can be weaponized. If the harvesting fails by 5 or more, the gland bursts and everyone within 10ft is exposed to a potent form of the hezrou's stench. They must make a DC 14 Constitution saving throw or be poisoned for the next hour. Use: As an action you may throw this item at a point within 20 feet, causing it to explode on impact. Any creature within 10 feet of that point must succeed on a DC 14 Constitution saving throw or be poisoned until the start of its next turn.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Hezrou",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 65,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976441,
+    "modifiedTime": 1688174976441,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "B01u85fjvWigmoqa",
+  "_key": "!items!B01u85fjvWigmoqa"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Aboleth Eye",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "The large orb is valued by scholars and magic users, especially from the school of divination.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Aboleth",
+    "quantity": 1,
+    "weight": 45,
+    "price": {
+      "value": 375,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973503,
+    "modifiedTime": 1688174973503,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "IB4jwRAGQjl0gMMg",
+  "_key": "!items!IB4jwRAGQjl0gMMg"
+}

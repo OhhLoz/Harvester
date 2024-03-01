@@ -1,0 +1,40 @@
+{
+  "name": "Nabassu Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A nabassu's hide is a dull shade of black, with small tufts of dark fur on its shoulders and back. Nabassus have the ability to change their coloration to better blend in with their surroundings, changing to black, brown, and pale gray at will. The hide can be fashioned into a black leather, that rogues and assassins cherish.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Nabassu",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 1500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977247,
+    "modifiedTime": 1688174977247,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "XPz4PgVGIxGuUSLx",
+  "_key": "!items!XPz4PgVGIxGuUSLx"
+}

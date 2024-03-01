@@ -1,0 +1,40 @@
+{
+  "name": "Giff Ears (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/ear-grey-brown.webp",
+  "system": {
+    "description": {
+      "value": "Two round, leathery ears protrude from the top-rear of a giffs head. The ears have little value to most people, but some towns offer a bounty for these ears (especially settlements that have been raided or attacked by Giff soldiers).",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Giff Warlord",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975974,
+    "modifiedTime": 1688174975974,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "gfte8rK7gvfZJqdq",
+  "_key": "!items!gfte8rK7gvfZJqdq"
+}

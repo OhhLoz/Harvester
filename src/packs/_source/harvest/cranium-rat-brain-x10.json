@@ -1,0 +1,40 @@
+{
+  "name": "Cranium Rat Brain (x10)",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+  "system": {
+    "description": {
+      "value": "Small rodent brains, that pulse with a dim glow of psionic energy. Artificers and magic users are often interested in these little orbs.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Swarm of Cranium Rats",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978380,
+    "modifiedTime": 1688174978380,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "8N98e39UmGErxOAJ",
+  "_key": "!items!8N98e39UmGErxOAJ"
+}

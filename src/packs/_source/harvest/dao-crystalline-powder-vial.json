@@ -1,0 +1,40 @@
+{
+  "name": "Dao Crystalline Powder (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "When a dao fades from the prime material plane, it leaves behind a cloud of dust and dirt that quickly disperses. Among these particles is a small amount of crystalline powder. This powder is valued by spellcasters. Requires an enchanted vial. Use: When casting the spell conjure minor elemental or conjure elemental, this crystalline powder may be used as the spell's material component, which allows the spell can be cast at one level higher than the spell slot used to cast it. The crystalline powder then becomes inert and useless.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Dao",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 750,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974770,
+    "modifiedTime": 1688174974770,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "4s4pdjx41pz11tz0",
+  "_key": "!items!4s4pdjx41pz11tz0"
+}

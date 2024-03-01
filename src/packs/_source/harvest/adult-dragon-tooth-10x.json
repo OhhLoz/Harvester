@@ -1,0 +1,40 @@
+{
+  "name": "Adult Dragon Tooth (10x)",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+  "system": {
+    "description": {
+      "value": "An adult dragon's tooth can reach over 2 feet in length. They are long, conical and have a serrated edge. A dragon's tooth has a degree of elemental protection, after years of constant exposure to the dragon's breath. The tooth can be used to make weapons, crafts and are prized trophies.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Adult Dragon",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973531,
+    "modifiedTime": 1688174973531,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "T2hRKj2lEUUXXnbY",
+  "_key": "!items!T2hRKj2lEUUXXnbY"
+}

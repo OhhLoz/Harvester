@@ -1,0 +1,40 @@
+{
+  "name": "Fire Giant Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "A fire giant's heart is an ever-burning engine, that continues to beat long after death. Harvesting the heart intact is difficult, but possible. Artificers and many spellcasters prize the heart. Collectors find the beating heart fascinating.",
+      "chat": "25",
+      "unidentified": "Medicine"
+    },
+    "source": "Fire Giant Dreadnought",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975548,
+    "modifiedTime": 1688174975548,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "gVtLdZtxR87G1rEN",
+  "_key": "!items!gVtLdZtxR87G1rEN"
+}

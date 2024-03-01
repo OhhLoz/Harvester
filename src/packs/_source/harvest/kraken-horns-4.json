@@ -1,0 +1,40 @@
+{
+  "name": "Kraken Horns (4)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "A kraken's head is covered in many hard, bone-like protrusions. These large bones are difficult to harvest, considering their size. Cutting into the bone is difficult, and can fracture the item, making it useless. Expert craftsmen can carve the horns down into many shapes and sizes, making them ideal for weapons and shields.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Kraken",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976761,
+    "modifiedTime": 1688174976761,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "6vQ65cNVerHlSL3R",
+  "_key": "!items!6vQ65cNVerHlSL3R"
+}

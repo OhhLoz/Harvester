@@ -1,0 +1,40 @@
+{
+  "name": "Minotaur Pineal Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "Minotaur are believed to visualize every route it might take to reach its prey. This ability to coordinate their senses, and possible tie into a psionic \"\"third eye\"\", is a result of the creature's pineal gland. The gland is a small pea-shaped ball of flesh located in the center of the brain. The gland is useful to many researchers (especially those studying demonology or Baphomet). Alchemist, artificers and spellcasters may also be interested in the gland.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Minotaur",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977130,
+    "modifiedTime": 1688174977130,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "GFRynjTlhPI8B0t6",
+  "_key": "!items!GFRynjTlhPI8B0t6"
+}

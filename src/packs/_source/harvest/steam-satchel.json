@@ -1,0 +1,40 @@
+{
+  "name": "Steam Satchel",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A dragon turtle's steam satchel is a bundle of three different glands, each of which secrete a variety of chemicals that react to create a boiling spray of steam. Healers and alchemists may be able to use the satchel's heating abilities. Artificers are always looking for items that can fuel their devices. Use: As an action, a creature may squeeze the steam satchel to release a 30-foot cone of scalding steam. Each creature in that area must make a DC 14 Constitution saving throw, taking 18 (6d6) fire damage on a failed save, or half as much damage on a successful one. Once used, the satchel is empty and cannot be used again.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Dragon Turtle",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975084,
+    "modifiedTime": 1688174975084,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "crUw3Z6MYmul8u3O",
+  "_key": "!items!crUw3Z6MYmul8u3O"
+}

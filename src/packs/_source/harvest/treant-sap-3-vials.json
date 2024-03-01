@@ -1,0 +1,40 @@
+{
+  "name": "Treant Sap (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A treant's sap is an extremely thick, highly viscous, reddish brown fluid filled with nutrients and minerals. The sap is edible, but farmers often use the sap to create rich fertilizer.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Treant",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978540,
+    "modifiedTime": 1688174978540,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "tbNdW5LLCqed6pTy",
+  "_key": "!items!tbNdW5LLCqed6pTy"
+}

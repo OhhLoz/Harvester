@@ -1,0 +1,40 @@
+{
+  "name": "Bugbear Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "Bugbear hide is often filthy and riddled with mange. However, once dried and tanned, the leather is tough and sound.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Bugbear",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 8,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974344,
+    "modifiedTime": 1688174974344,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "lNR8bDcfZk6w9mKw",
+  "_key": "!items!lNR8bDcfZk6w9mKw"
+}

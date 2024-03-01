@@ -1,0 +1,106 @@
+{
+  "name": "Fire Elemental Myrmidon",
+  "img": "icons/containers/bags/pack-simple-leather.webp",
+  "description": "false",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        30
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 4d6*100]]{Copper}[[/r 1d6*10]]{Electrum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "ePawhEI0qsIred68",
+      "_key": "!tables.results!UcaRnSIff2kMNc9k.ePawhEI0qsIred68"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        31,
+        60
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 6d6*10]]{Silver}[[/r 2d6*10]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "8Kf7xHjh23YB7Iu6",
+      "_key": "!tables.results!UcaRnSIff2kMNc9k.8Kf7xHjh23YB7Iu6"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        61,
+        70
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 1d6*100]]{Electrum}[[/r 2d6*10]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "144SjPAb1VYTkD35",
+      "_key": "!tables.results!UcaRnSIff2kMNc9k.144SjPAb1VYTkD35"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        71,
+        95
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 4d6*10]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "io6padx8os7C7JKt",
+      "_key": "!tables.results!UcaRnSIff2kMNc9k.io6padx8os7C7JKt"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        96,
+        100
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 2d6*10]]{Gold}[[/r 3d6]]{Platinum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "G23qZGwdiqb7kxEh",
+      "_key": "!tables.results!UcaRnSIff2kMNc9k.G23qZGwdiqb7kxEh"
+    }
+  ],
+  "formula": "d100",
+  "replacement": false,
+  "displayRoll": false,
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688085766600,
+    "modifiedTime": 1688085766600,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "UcaRnSIff2kMNc9k",
+  "_key": "!tables!UcaRnSIff2kMNc9k"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Bulezau Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "The hard, pointed horns of a Bulezau have many uses. Craftsmen can use the item to create drinking horns, musical instruments, decorations, small weapons and even horned helms.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Bulezau",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974387,
+    "modifiedTime": 1688174974387,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "xWsOqqD6fY9JJChu",
+  "_key": "!items!xWsOqqD6fY9JJChu"
+}

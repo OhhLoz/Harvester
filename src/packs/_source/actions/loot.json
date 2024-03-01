@@ -1,0 +1,90 @@
+{
+  "name": "Loot",
+  "type": "feat",
+  "system": {
+    "description": {
+      "value": "<p>Scavenge valuables from corpses.</p>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": "Harvester",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": "",
+      "units": ""
+    },
+    "cover": null,
+    "crewed": false,
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": ""
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "ability": "",
+    "actionType": "util",
+    "attackBonus": "",
+    "chatFlavor": "",
+    "critical": {
+      "threshold": null,
+      "damage": ""
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "",
+    "save": {
+      "ability": "",
+      "dc": null,
+      "scaling": "spell"
+    },
+    "type": {
+      "value": "background",
+      "subtype": ""
+    },
+    "requirements": "",
+    "recharge": {
+      "value": null,
+      "charged": false
+    }
+  },
+  "img": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.2.2",
+    "coreVersion": "10.303",
+    "createdTime": 1687476096241,
+    "modifiedTime": 1689275185846,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "ownership": {
+    "default": 0
+  },
+  "folder": null,
+  "sort": 0,
+  "_id": "yaMtYJlcLh9mSBQI",
+  "_key": "!items!yaMtYJlcLh9mSBQI"
+}

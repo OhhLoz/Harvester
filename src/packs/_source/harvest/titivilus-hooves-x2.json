@@ -1,0 +1,40 @@
+{
+  "name": "Titivilus' Hooves (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+  "system": {
+    "description": {
+      "value": "Titivilus' two legs end in hard gray hooves. These hooves contain a collagen that is used to make a strong adhesive. The glue is used by all kinds of craftsmen. The hooves can also be made into tools, bowls and other items.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Titivilus",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 300,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978505,
+    "modifiedTime": 1688174978505,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "6L5FsSsosIxG70NG",
+  "_key": "!items!6L5FsSsosIxG70NG"
+}

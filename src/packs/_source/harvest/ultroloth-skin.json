@@ -1,0 +1,40 @@
+{
+  "name": "Ultroloth Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "The skin of an ultroloth is gray, smooth and hairless. The skin has little use as leather, but has many alchemical properties that an alchemist may be able to use. Harvesting doesn't require skinning the entire creature, but involved skinning a few of the larger areas.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Ultraloth",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978590,
+    "modifiedTime": 1688174978590,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "mnfFGklPzUh1fAjt",
+  "_key": "!items!mnfFGklPzUh1fAjt"
+}

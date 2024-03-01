@@ -1,0 +1,40 @@
+{
+  "name": "Demogorgan Eye (x4)",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "Demogorgon has a magical gaze that can cause creatures to become stunned, confused or hypnotized. The creature has two heads, each with two large eyes the size of a cantaloupe. These spongy, yellow orbs are have deep, black pupils that swirl with arcane power. Enchanters and artificers seek the orbs, hoping to harness this power. Alchemists can create potions from the fluids in the eyes. Use: Using an action, a creature can throw a demogorgon's eyeball up to 30 feet and it explodes on impact, releasing a wave of arcane power. All creatures within 10 feet of the explosion must make a DC 15 Wisdom saving throw or be stunned until the end of its next turn. The eye is destroyed in this explosion.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Demogorgon",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 1500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974897,
+    "modifiedTime": 1688174974897,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "MH6EzSB6vUeEZA0G",
+  "_key": "!items!MH6EzSB6vUeEZA0G"
+}

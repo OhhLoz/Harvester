@@ -1,0 +1,40 @@
+{
+  "name": "Solar Wing (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "Solar wings can be harvested for their feathers. Artificers and enchanters may be able to use a full set of wings to create magic items.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Solar",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 700,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978137,
+    "modifiedTime": 1688174978137,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ThWwMu4VnRgfmhx6",
+  "_key": "!items!ThWwMu4VnRgfmhx6"
+}

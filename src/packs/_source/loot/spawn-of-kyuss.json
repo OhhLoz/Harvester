@@ -1,0 +1,106 @@
+{
+  "name": "Spawn of Kyuss",
+  "img": "icons/containers/bags/pack-simple-leather.webp",
+  "description": "true",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        30
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 4d6*100]]{Copper}[[/r 1d6*10]]{Electrum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "qLu4RaOwoCbMuDNM",
+      "_key": "!tables.results!0ovBlLmbabyuqP2l.qLu4RaOwoCbMuDNM"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        31,
+        60
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 6d6*10]]{Silver}[[/r 2d6*10]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "kC2keYDXsVoK2ayH",
+      "_key": "!tables.results!0ovBlLmbabyuqP2l.kC2keYDXsVoK2ayH"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        61,
+        70
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 1d6*100]]{Electrum}[[/r 2d6*10]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "SaGMaAtTVVBX7KuT",
+      "_key": "!tables.results!0ovBlLmbabyuqP2l.SaGMaAtTVVBX7KuT"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        71,
+        95
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 4d6*10]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "yZ2DwA5xwKTKVG7n",
+      "_key": "!tables.results!0ovBlLmbabyuqP2l.yZ2DwA5xwKTKVG7n"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        96,
+        100
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 2d6*10]]{Gold}[[/r 3d6]]{Platinum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "InY9iz3sgpDg2Tjw",
+      "_key": "!tables.results!0ovBlLmbabyuqP2l.InY9iz3sgpDg2Tjw"
+    }
+  ],
+  "formula": "d100",
+  "replacement": false,
+  "displayRoll": false,
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688085768275,
+    "modifiedTime": 1688085768275,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "0ovBlLmbabyuqP2l",
+  "_key": "!tables!0ovBlLmbabyuqP2l"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Stone Cursed Obsidian Skull",
+  "type": "loot",
+  "img": "icons/commodities/bones/skull-deformed-white.webp",
+  "system": {
+    "description": {
+      "value": "When a stone cursed is created, a fist-sized obsidian skull forms within the torso. A faint echo of the original victim's memory resonates within the skull. A skilled magic-wielder can attempt to extract these memories from it to gain insight into the victim's past or find lore that otherwise would be lost. Use: At the end of a short rest, a character can make a DC 20 Intelligence (Arcana) check to attempt to extract a memory from the skull that is a response to a verbal question posed to the skull by the characters. Once the check is made, whether it succeeds or fails, the skill can't be used in this way again.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Stone Cursed",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978299,
+    "modifiedTime": 1688174978299,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "lROhGUGyZnFxmhMB",
+  "_key": "!items!lROhGUGyZnFxmhMB"
+}

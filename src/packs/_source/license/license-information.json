@@ -1,0 +1,48 @@
+{
+  "name": "License Information",
+  "pages": [
+    {
+      "sort": 100000,
+      "name": "Disclaimer",
+      "type": "text",
+      "_id": "Qmbcp2cdjbivTuwF",
+      "title": {
+        "show": true,
+        "level": 1
+      },
+      "image": {},
+      "text": {
+        "format": 1,
+        "content": "<blockquote><p>This work includes material taken from the System Reference Document 5.1 (\"SRD 5.1\") by Wizards of the Coast LLC and available at <a href=\"https://dnd.wizards.com/resources/systems-reference-document\">https://dnd.wizards.com/resources/systems-reference-document</a>. The SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at <a href=\"https://creativecommons.org/licenses/by/4.0/legalcode\">https://creativecommons.org/licenses/by/4.0/legalcode</a>.</p></blockquote>",
+        "markdown": ""
+      },
+      "video": {
+        "controls": true,
+        "volume": 0.5
+      },
+      "src": null,
+      "system": {},
+      "ownership": {
+        "default": -1
+      },
+      "flags": {},
+      "_key": "!journal.pages!OIxBlwhHrHHk40SH.Qmbcp2cdjbivTuwF"
+    }
+  ],
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688746751995,
+    "modifiedTime": 1688747025344,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "OIxBlwhHrHHk40SH",
+  "_key": "!journal!OIxBlwhHrHHk40SH"
+}

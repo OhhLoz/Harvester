@@ -1,0 +1,40 @@
+{
+  "name": "Camel Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A camel's hide has outer guard hairs and soft inner down. The guard hairs can be felted for use as waterproof coats for the herdsmen, while the softer hair is used for premium goods. Camel hides are often treated and fashioned into tents, yurts, clothing, bedding and accessories.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Camel",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974439,
+    "modifiedTime": 1688174974439,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "kq20CkvRQQHOjgea",
+  "_key": "!items!kq20CkvRQQHOjgea"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Sphinx Claws (large pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The claws of a sphinx resemble the claws of a lion, but are larger and infused with arcane energy. Spellcasters can tap into the claws arcane power, using that power in rituals or spells.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Androsphinx",
+    "quantity": 1,
+    "weight": 7,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973687,
+    "modifiedTime": 1688174973687,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "R1wLnVsAPG2oTmA4",
+  "_key": "!items!R1wLnVsAPG2oTmA4"
+}

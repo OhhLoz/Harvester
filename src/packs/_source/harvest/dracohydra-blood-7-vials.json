@@ -1,0 +1,40 @@
+{
+  "name": "Dracohydra Blood (7 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Dracohydras are known for their regenerative abilities, making their blood prized by healers and alchemists.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Dracohydra",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975010,
+    "modifiedTime": 1688174975010,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "cabdLt8606u2AGu9",
+  "_key": "!items!cabdLt8606u2AGu9"
+}

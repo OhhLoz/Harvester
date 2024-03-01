@@ -1,0 +1,40 @@
+{
+  "name": "Berbalang Blood (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Berbalangs have dark-red, almost black, blood. The blood can be used by alchemists, but is highly valued by divination wizards.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Berbalang",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974118,
+    "modifiedTime": 1688174974118,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "0cmrlEl0MCRPjJOb",
+  "_key": "!items!0cmrlEl0MCRPjJOb"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Velociraptor Pheromones (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The velociraptor uses its pheromones to communicate with the rest of their pack. Other beasts have a strong reaction to these pheromones. Druids, healers and alchemists may find the pheromones useful. Use: While you have this vial of pheromones open, you have advantage on any Wisdom (Animal Handling) checks made to convince an animal that is friendly to you, and within 5 feet, to attack another creature. Beasts that are not friendly to you, and within 30 feet, will move attack you on their turn. The vials effect stops working after 3 uses.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Velociraptor",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978672,
+    "modifiedTime": 1688174978672,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "rlhOBDdyrN3SKh6p",
+  "_key": "!items!rlhOBDdyrN3SKh6p"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Wastrilith Gills",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The wastrilith's gills help the creature breath in watery environments. The gills are a powerful filter and is prize by anyone that makes potions, and is often used in potions of water breathing.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Wastrilith",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 350,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978771,
+    "modifiedTime": 1688174978771,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "BCXtrJbkjTXZF6tZ",
+  "_key": "!items!BCXtrJbkjTXZF6tZ"
+}

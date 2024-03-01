@@ -1,0 +1,40 @@
+{
+  "name": "Mark of Maglubiyet",
+  "type": "loot",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "When a hobgoblin becomes a warlord, they undergo a ritual to receive the blessing of Maglubiyet, the chief goblinoid deity. During this ceremony, they receive a brand with Maglubiyet's symbol (a bloody axe). This symbol can be harvested by carefully flaying the skin around the tattoo, which often rips the skin and ruins the mark. The mark is valued by collectors and goblinoid hunters. The mark also has a touch of arcane power, useful to artificers and spellcasters.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Hobgoblin Warlord",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976495,
+    "modifiedTime": 1688174976495,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "d8pRUcOqVRTENbFU",
+  "_key": "!items!d8pRUcOqVRTENbFU"
+}

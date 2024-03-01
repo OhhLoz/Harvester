@@ -1,0 +1,40 @@
+{
+  "name": "Titivilus' Tongue",
+  "type": "loot",
+  "img": "icons/commodities/biological/tongue-red.webp",
+  "system": {
+    "description": {
+      "value": "Titivilus has a red, spongy tongue. It is rumored, falsely, that the tongue was made of silver because of Titivilus' persuasive ways. Despite his small stature, the archdevil was able to maneuver himself into a strong position in Hell. The tongue can be used to craft a powerful neck collar, allowing its wearing to charm and twist words.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Titivilus",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978515,
+    "modifiedTime": 1688174978515,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "o8CFEuO1q3L82lJM",
+  "_key": "!items!o8CFEuO1q3L82lJM"
+}

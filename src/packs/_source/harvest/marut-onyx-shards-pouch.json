@@ -1,0 +1,40 @@
+{
+  "name": "Marut Onyx Shards (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A marut is a large construct made of metal, onyx and gold. Most of the onyx shatters when the marut reaches 0 hit points, but some shards may be found.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Marut",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976954,
+    "modifiedTime": 1688174976954,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "F1zkHdY9gQXQyTYc",
+  "_key": "!items!F1zkHdY9gQXQyTYc"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Kuo-toa's Teeth (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A kuo-toa's teeth are sharp, slightly curved, and often serrated at the edges. Fishermen often use the teeth to create fish hooks. Some teeth are large enough to carve and paint to make decorative lures. The teeth can also be used to make crude jewelry and decorations.",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Kuo-toa Whip",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 5,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976802,
+    "modifiedTime": 1688174976802,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "H4HPBW79iyyDicOa",
+  "_key": "!items!H4HPBW79iyyDicOa"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Pteranodon Beak",
+  "type": "loot",
+  "img": "icons/commodities/bones/beak-hooked-red.webp",
+  "system": {
+    "description": {
+      "value": "The Pteranodon's beak is long, slender, and ends in a sharp point. The toothless beak can be used to craft various tools and weapons. The beak may even be used as the tip of a lance.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Pteranodon",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977770,
+    "modifiedTime": 1688174977770,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Bk2EMHLc8YVExRXH",
+  "_key": "!items!Bk2EMHLc8YVExRXH"
+}

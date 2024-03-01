@@ -1,0 +1,40 @@
+{
+  "name": "Vampire Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Vampire blood is a thick, pure black liquid. The blood is swimming with cursed necrotic energy. The blood is valued by necromancers, and some alchemists claim it can be used to cure vampirism.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Vampire",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978631,
+    "modifiedTime": 1688174978631,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "BvyhXns7RHLgdChP",
+  "_key": "!items!BvyhXns7RHLgdChP"
+}

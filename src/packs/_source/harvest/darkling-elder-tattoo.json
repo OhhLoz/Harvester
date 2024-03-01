@@ -1,0 +1,40 @@
+{
+  "name": "Darkling Elder Tattoo",
+  "type": "loot",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "During their transformation, darkling elders are marked with enchanted tattoos that enhance their abilities. Although darklings explode upon death, the trace metals, rare pigments, and magical reagents of these tattoos sometimes remain. These components are often very useful.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Darkling Elder",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974780,
+    "modifiedTime": 1688174974780,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Kzq2FfFTOh9nd4z6",
+  "_key": "!items!Kzq2FfFTOh9nd4z6"
+}
