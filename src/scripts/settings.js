@@ -1,5 +1,7 @@
+import { CONSTANTS } from "./constants";
+
 export function registerSettings() {
-  game.settings.register("harvester", "autoAddItems", {
+  game.settings.register(CONSTANTS.MODULE_ID, "autoAddItems", {
     name: "Automatically Assign Items",
     hint: "All harvested loot and looted currency is added to characters automatically.",
     scope: "world",
@@ -9,7 +11,7 @@ export function registerSettings() {
     default: true,
   });
 
-  game.settings.register("harvester", "autoAddItemPiles", {
+  game.settings.register(CONSTANTS.MODULE_ID, "autoAddItemPiles", {
     name: "Automatically Assign Items to Item Piles",
     hint: "All harvested loot and looted currency is added to Item Piles.",
     scope: "world",
@@ -19,7 +21,7 @@ export function registerSettings() {
     default: true,
   });
 
-  game.settings.register("harvester", "autoAddActionGroup", {
+  game.settings.register(CONSTANTS.MODULE_ID, "autoAddActionGroup", {
     name: "Automatically Assign Action",
     hint: "Gives the Actions to the selected group.",
     scope: "world",
@@ -34,7 +36,7 @@ export function registerSettings() {
     default: "PCOnly",
   });
 
-  game.settings.register("harvester", "npcOnlyHarvest", {
+  game.settings.register(CONSTANTS.MODULE_ID, "npcOnlyHarvest", {
     name: "NPC Only Harvesting",
     hint: "Only non player characters can be looted/harvested.",
     scope: "world",
@@ -44,7 +46,7 @@ export function registerSettings() {
     default: true,
   });
 
-  game.settings.register("harvester", "requireDeadEffect", {
+  game.settings.register(CONSTANTS.MODULE_ID, "requireDeadEffect", {
     name: "Dead Effect Required",
     hint: "Requires the 'Dead' status effect to Harvest/Loot. (Otherwise only needs 0 HP)",
     scope: "world",
@@ -54,7 +56,7 @@ export function registerSettings() {
     default: true,
   });
 
-  game.settings.register("harvester", "gmOnly", {
+  game.settings.register(CONSTANTS.MODULE_ID, "gmOnly", {
     name: "Other players cannot see results",
     hint: "Hides the Results from all other users except the GM",
     scope: "world",
@@ -64,7 +66,7 @@ export function registerSettings() {
     default: false,
   });
 
-  game.settings.register("harvester", "enforceRange", {
+  game.settings.register(CONSTANTS.MODULE_ID, "enforceRange", {
     name: "Enforce Action Range",
     hint: "Force users to be in range to be able to use Harvest/Loot.",
     scope: "world",
@@ -74,7 +76,7 @@ export function registerSettings() {
     default: true,
   });
 
-  game.settings.register("harvester", "allowAbilityChange", {
+  game.settings.register(CONSTANTS.MODULE_ID, "allowAbilityChange", {
     name: "Allow ability score change on roll",
     hint: "Used if DM's trust their players and/or wish to use a different ability score instead of the default without making a custom compendium entry",
     scope: "world",
@@ -84,7 +86,7 @@ export function registerSettings() {
     default: false,
   });
 
-  game.settings.register("harvester", "disableLoot", {
+  game.settings.register(CONSTANTS.MODULE_ID, "disableLoot", {
     name: "Disable Looting mechanic",
     hint: "Disables the Loot mechanic, making it unavailable until enabled.",
     scope: "world",
@@ -94,7 +96,7 @@ export function registerSettings() {
     default: false,
   });
 
-  game.settings.register("harvester", "lootBeasts", {
+  game.settings.register(CONSTANTS.MODULE_ID, "lootBeasts", {
     name: "Loot All Creatures",
     hint: "Allow looting of all possible creatures including beasts",
     scope: "world",
@@ -104,7 +106,7 @@ export function registerSettings() {
     default: false,
   });
 
-  game.settings.register("harvester", "enableBetterRollIntegration", {
+  game.settings.register(CONSTANTS.MODULE_ID, "enableBetterRollIntegration", {
     name: "Enable integration with the module 'Better Rolltable'",
     hint: "Integration with the module 'Better Rolltable', for a more randomized behavior during the harvester action and a better customization for the specific creature, formula, filter additional elements, etc.",
     scope: "world",
@@ -114,19 +116,29 @@ export function registerSettings() {
     default: false,
   });
 
-  SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
-  SETTINGS.autoAddItemPiles = game.settings.get("harvester", "autoAddItemPiles");
+  game.settings.register(CONSTANTS.MODULE_ID, "debug", {
+    name: "Enable debugging",
+    hint: "Prints debug messages to the console",
+    scope: "client",
+    config: true,
+    default: false,
+    type: Boolean,
+  });
 
-  SETTINGS.autoAddItems = game.settings.get("harvester", "autoAddItems");
-  SETTINGS.gmOnly = game.settings.get("harvester", "gmOnly");
-  SETTINGS.requireDeadEffect = game.settings.get("harvester", "requireDeadEffect");
-  SETTINGS.npcOnlyHarvest = game.settings.get("harvester", "npcOnlyHarvest");
-  SETTINGS.autoAddActionGroup = game.settings.get("harvester", "autoAddActionGroup");
-  SETTINGS.enforceRange = game.settings.get("harvester", "enforceRange");
-  SETTINGS.allowAbilityChange = game.settings.get("harvester", "allowAbilityChange");
-  SETTINGS.disableLoot = game.settings.get("harvester", "disableLoot");
-  SETTINGS.lootBeasts = game.settings.get("harvester", "lootBeasts");
-  SETTINGS.enableBetterRollIntegration = game.settings.get("harvester", "enableBetterRollIntegration");
+  SETTINGS.autoAddItems = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItems");
+  SETTINGS.autoAddItemPiles = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItemPiles");
+
+  SETTINGS.autoAddItems = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItems");
+  SETTINGS.gmOnly = game.settings.get(CONSTANTS.MODULE_ID, "gmOnly");
+  SETTINGS.requireDeadEffect = game.settings.get(CONSTANTS.MODULE_ID, "requireDeadEffect");
+  SETTINGS.npcOnlyHarvest = game.settings.get(CONSTANTS.MODULE_ID, "npcOnlyHarvest");
+  SETTINGS.autoAddActionGroup = game.settings.get(CONSTANTS.MODULE_ID, "autoAddActionGroup");
+  SETTINGS.enforceRange = game.settings.get(CONSTANTS.MODULE_ID, "enforceRange");
+  SETTINGS.allowAbilityChange = game.settings.get(CONSTANTS.MODULE_ID, "allowAbilityChange");
+  SETTINGS.disableLoot = game.settings.get(CONSTANTS.MODULE_ID, "disableLoot");
+  SETTINGS.lootBeasts = game.settings.get(CONSTANTS.MODULE_ID, "lootBeasts");
+  SETTINGS.enableBetterRollIntegration = game.settings.get(CONSTANTS.MODULE_ID, "enableBetterRollIntegration");
+  SETTINGS.debug = game.settings.get(CONSTANTS.MODULE_ID, "debug");
 }
 
 export const SETTINGS = {

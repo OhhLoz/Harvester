@@ -74,7 +74,7 @@ Hooks.on("createActor", async (actor, data, options, id) => {
 });
 
 Hooks.on("dnd5e.preUseItem", function (item, config, options) {
-  if (!checkItemSourceLabel(item, "Harvester")) {
+  if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
     return;
   }
   if (game.user.targets.size !== 1) {
@@ -93,7 +93,7 @@ Hooks.on("dnd5e.preUseItem", function (item, config, options) {
 });
 
 Hooks.on("dnd5e.useItem", function (item, config, options) {
-  if (!checkItemSourceLabel(item, "Harvester")) {
+  if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
     return;
   }
   if (item.name === harvestAction.name) {
@@ -105,13 +105,13 @@ Hooks.on("dnd5e.useItem", function (item, config, options) {
 });
 
 Hooks.on("dnd5e.preDisplayCard", function (item, chatData, options) {
-  if (checkItemSourceLabel(item, "Harvester")) {
+  if (checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
     options.createMessage = false;
   }
 });
 
 // Hooks.on("dnd5e.displayCard", function (item, card) {
-//   if (checkItemSourceLabel(item, "Harvester")) {
+//   if (checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
 //     card = undefined;
 //   }
 // });
@@ -198,11 +198,11 @@ async function addActionToActors() {
     let hasLoot = false;
 
     actor.items.forEach((item) => {
-      if (item.name === harvestAction.name && checkItemSourceLabel(item, "Harvester")) {
+      if (item.name === harvestAction.name && checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
         hasHarvest = true;
         resetToDefault(item);
       }
-      if (item.name === lootAction.name && checkItemSourceLabel(item, "Harvester")) {
+      if (item.name === lootAction.name && checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
         hasLoot = true;
         resetToDefault(item);
         if (SETTINGS.disableLoot) {

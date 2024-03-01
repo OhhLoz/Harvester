@@ -60,6 +60,7 @@ const skillMap = new Map([
 
 export const CONSTANTS = {
   MODULE_ID: "harvester",
+  SOURCE_REFERENCE_MODULE: "Harvester",
   harvestActionId: "ich3SV1HXRlq8K32",
   harvestActionEffectId: "0plmpCQ8D2Ezc1Do",
   harvestActionEffectName: "Harvested",

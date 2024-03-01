@@ -3,11 +3,10 @@ import { CONSTANTS } from "../constants.js";
 // ================================
 // Logger utility
 // ================================
-
 export default class Logger {
   static get DEBUG() {
     return (
-      //game.settings.get(CONSTANTS.MODULE_ID, "debug") ||
+      game.settings.get(CONSTANTS.MODULE_ID, "debug") ||
       game.modules.get("_dev-mode")?.api?.getPackageDebugValue(CONSTANTS.MODULE_ID, "boolean")
     );
   }
@@ -17,7 +16,7 @@ export default class Logger {
   static debug(msg, ...args) {
     try {
       if (
-        //game.settings.get(CONSTANTS.MODULE_ID, "debug") ||
+        game.settings.get(CONSTANTS.MODULE_ID, "debug") ||
         game.modules.get("_dev-mode")?.api?.getPackageDebugValue(CONSTANTS.MODULE_ID, "boolean")
       ) {
         console.log(`DEBUG | ${CONSTANTS.MODULE_ID} | ${msg}`, ...args);

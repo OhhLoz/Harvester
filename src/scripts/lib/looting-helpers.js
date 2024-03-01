@@ -25,7 +25,7 @@ import { checkItemSourceLabel } from "./lib.js";
 export class LootingHelpers {
   static async handlePreRollLootAction(options) {
     const { item } = options;
-    if (!checkItemSourceLabel(item, "Harvester")) {
+    if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
       return;
     }
     let targetedToken =
@@ -92,7 +92,7 @@ export class LootingHelpers {
   /*
   static async handlePostRollLootAction(options) {
     const { actor, item, roll } = options;
-    if (!checkItemSourceLabel(item, "Harvester")) {
+    if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
       return;
     }
     let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
@@ -141,7 +141,7 @@ export class LootingHelpers {
           if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
             itemDC = parseInt(item.system.description.chat);
           } else {
-            itemDC = retrieveItemSourceLabelDC(item); //item.system.source.label.match(/\d+/g)[0];
+            itemDC = retrieveItemSourceLabelDC(item);
           }
           if (itemDC <= result.total) {
             lootMessage += `<li>@UUID[${item.uuid}]</li>`;
