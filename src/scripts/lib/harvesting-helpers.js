@@ -19,7 +19,7 @@ import {
 import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
-import { checkItemSourceLabel, retrieveItemSourceLabelDC } from "./lib.js";
+import { checkItemSourceLabel, retrieveItemSourceLabelDC,retrieveItemSourceLabel } from "./lib.js";
 
 export class HarvestingHelpers {
   static async handlePreRollHarvestAction(options) {

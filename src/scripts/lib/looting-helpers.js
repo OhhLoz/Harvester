@@ -20,7 +20,7 @@ import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
 import Logger from "./Logger.js";
-import { checkItemSourceLabel } from "./lib.js";
+import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./lib.js";
 
 export class LootingHelpers {
   static async handlePreRollLootAction(options) {

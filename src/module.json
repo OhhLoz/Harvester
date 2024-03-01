@@ -23,79 +23,79 @@
       "name": "harvest",
       "label": "Harvest",
       "path": "packs/harvest.db",
-      "system": "dnd5e",
-      "private": false,
       "type": "Item",
-      "flags": {},
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "module": "harvester",
+      "system": "dnd5e",
+      "flags": {}
     },
     {
       "name": "actions",
       "label": "Actions",
       "path": "packs/actions.db",
-      "system": "dnd5e",
-      "private": false,
       "type": "Item",
-      "flags": {},
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "module": "harvester",
+      "system": "dnd5e",
+      "flags": {}
     },
     {
       "name": "loot",
       "label": "Loot",
       "path": "packs/loot.db",
-      "system": "dnd5e",
-      "private": false,
       "type": "RollTable",
-      "flags": {},
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "module": "harvester",
+      "system": "dnd5e",
+      "flags": {}
     },
     {
       "name": "custom",
       "label": "Custom",
       "path": "storage/custom.db",
-      "system": "dnd5e",
-      "private": false,
       "type": "Actor",
-      "flags": {},
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "module": "harvester",
+      "system": "dnd5e",
+      "flags": {}
     },
     {
       "name": "custom-loot",
       "label": "Custom Loot",
       "path": "storage/custom-loot.db",
-      "system": "dnd5e",
-      "private": false,
       "type": "RollTable",
-      "flags": {},
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "module": "harvester",
+      "system": "dnd5e",
+      "flags": {}
     },
     {
       "name": "license",
       "label": "License",
       "path": "packs/license.db",
-      "system": "dnd5e",
-      "private": false,
       "type": "JournalEntry",
-      "flags": {},
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      }
+      },
+      "module": "harvester",
+      "system": "dnd5e",
+      "flags": {}
     }
   ],
   "packFolders": [

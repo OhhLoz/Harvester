@@ -2,7 +2,7 @@ import { registerSettings, SETTINGS } from "./scripts/settings.js";
 import { CONSTANTS } from "./scripts/constants.js";
 import { RequestorHelpers } from "./scripts/requestor-helpers.js";
 import API from "./scripts/api.js";
-import { checkItemSourceLabel, retrieveItemSourceLabelDC } from "./scripts/lib/lib.js";
+import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./scripts/lib/lib.js";
 import Logger from "./scripts/lib/Logger.js";
 import { HarvestingHelpers } from "./scripts/lib/harvesting-helpers.js";
 import { LootingHelpers } from "./scripts/lib/looting-helpers.js";
@@ -255,13 +255,13 @@ export function addEffect(targetTokenId, actionName) {
       {
         id: CONSTANTS.harvestActionEffectId,
         icon: CONSTANTS.harvestActionEffectIcon,
-        label: CONSTANTS.harvestActionEffectName,
+        name: CONSTANTS.harvestActionEffectName,
       },
       { active: true }
     );
   } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
     targetToken.document.toggleActiveEffect(
-      { id: CONSTANTS.lootActionEffectId, icon: CONSTANTS.lootActionEffectIcon, label: CONSTANTS.lootActionEffectName },
+      { id: CONSTANTS.lootActionEffectId, icon: CONSTANTS.lootActionEffectIcon, name: CONSTANTS.lootActionEffectName },
       { active: true }
     );
   }
