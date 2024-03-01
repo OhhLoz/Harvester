@@ -68,7 +68,11 @@ export class HarvestingHelpers {
         skillCheck = skillCheckVerbose;
       } else {
         if (matchedItems[0].compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
-          skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
+          if (matchedItems[0]?.system?.unidentified?.description) {
+            skillCheckVerbose = matchedItems[0]?.system.unidentified.description;
+          } else {
+            skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
+          }
         } else {
           skillCheckVerbose = matchedItems[0].items.find((element) => element.type === "feat").name;
         }
