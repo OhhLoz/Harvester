@@ -1,0 +1,40 @@
+{
+  "name": "Half-Ogre Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The mixed blood of a half-ogre resembles human blood, but has many useful alchemical properties.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Half-Ogre (Ogrillon)",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976379,
+    "modifiedTime": 1688174976379,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "JIvVRnXtGhoe6T00",
+  "_key": "!items!JIvVRnXtGhoe6T00"
+}

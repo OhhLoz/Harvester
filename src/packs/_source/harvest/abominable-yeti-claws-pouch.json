@@ -1,0 +1,40 @@
+{
+  "name": "Abominable Yeti Claws (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A yeti's dark blue claws are frigid to the touch, and fused with an arcane energy. The claws can be harvested and used by artificers that may be able to capture this energy and repurpose it toward enchantments. Some upscale taverns carve the claws into small cubes, and use them to keep drinks cold.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Abominable Yeti",
+    "quantity": 1,
+    "weight": 14,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973526,
+    "modifiedTime": 1688174973526,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "VXEmuhTARwxzVanc",
+  "_key": "!items!VXEmuhTARwxzVanc"
+}

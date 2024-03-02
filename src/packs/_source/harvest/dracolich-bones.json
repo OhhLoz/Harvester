@@ -1,0 +1,40 @@
+{
+  "name": "Dracolich Bones",
+  "type": "loot",
+  "img": "icons/commodities/bones/bones-stack-yellow.webp",
+  "system": {
+    "description": {
+      "value": "The bones of a dracolich are infused with dark necrotic energy. The bones are exceptionally strong and can be used to make a variety of tools and weapons. The bones can also be ground into dust and used as an ingredient in alchemists potions. Artificers may be able to use the dust to aid in finding the location of the dracolich's spirit gem.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Dracolich",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975023,
+    "modifiedTime": 1688174975023,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "V2519CZVTNTeJijm",
+  "_key": "!items!V2519CZVTNTeJijm"
+}

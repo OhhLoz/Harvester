@@ -1,0 +1,40 @@
+{
+  "name": "Shoosuva Fur (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Shoosuva fur is mangy and disease ridden. The fur has a strong odor that makes animals more aggressive and violent. Use: If a beast with an Intelligence score of 4 or less comes within 10 feet of the fur, and can smell it, it must succeed a DC 10 Wisdom saving throw or become berserk. While berserk, the beast spends each of its turns moving toward the closest creature and attacking it, if possible. The beast remains berserk for 1 minute or until it becomes unconscious. A creature that the beast is normally friendly with can spend an action to make a DC 15 Wisdom (Animal Handling) check. On a success, the effect ends. A beast that has had the effect end, or who succeeds its initial saving throw, is immune to the effect of this item for 24 hours.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Shoosuva",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 35,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978083,
+    "modifiedTime": 1688174978083,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Mjfq7igW9ujnnhMl",
+  "_key": "!items!Mjfq7igW9ujnnhMl"
+}

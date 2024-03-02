@@ -1,0 +1,40 @@
+{
+  "name": "Flumph Membrane",
+  "type": "loot",
+  "img": "icons/commodities/biological/pustules-red.webp",
+  "system": {
+    "description": {
+      "value": "A flumph's skin is a thin, semi-translucent membrane that gives it immunity to any effect that would sense its emotions or read its thoughts, as well as all divination spells. Spellcasters value the membrane for its protective properties. Use: A creature can place the membrane on its head and use an action to focus, immediately absorbing the membrane's psionic power. For the next hour the creature is immune to any effect that would sense its emotions or read its thoughts, as well as all divination spells.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Flumph",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 8,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975607,
+    "modifiedTime": 1688174975607,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "nmxretNo7BC8HMnH",
+  "_key": "!items!nmxretNo7BC8HMnH"
+}

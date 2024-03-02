@@ -1,0 +1,40 @@
+{
+  "name": "Flail Snail Barbed Flail",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Each of the flail snail's tentacles end in a barbed ball of hard bone. Most of these bones are fractured and cracked, from years of use. However, it may be possible to find one intact. The bone is valued by weaponsmiths.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Flail Snail",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975566,
+    "modifiedTime": 1688174975566,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "K3OGJK8pgjocruwI",
+  "_key": "!items!K3OGJK8pgjocruwI"
+}

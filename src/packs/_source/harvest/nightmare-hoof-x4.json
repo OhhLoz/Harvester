@@ -1,0 +1,40 @@
+{
+  "name": "Nightmare Hoof (x4)",
+  "type": "loot",
+  "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+  "system": {
+    "description": {
+      "value": "The hard hooves of a nightmare are solid, obsidian-like blocks. An expert stonemason or sculptor can carve the hooves into small statuettes, figurines, jewelry and tiny tools. These small creations swirl with arcane energy and accept certain enchantments from adept spellcasters.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Nightmare",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977364,
+    "modifiedTime": 1688174977364,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "FW9wUmFY1T1xdgGU",
+  "_key": "!items!FW9wUmFY1T1xdgGU"
+}

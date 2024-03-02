@@ -1,0 +1,40 @@
+{
+  "name": "Animated Sigil Material",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Magical dust, ash and powder, the salvaged remains of a magical rune, often used to animate certain constructs.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Rug of Smothering",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977957,
+    "modifiedTime": 1688174977957,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Wp0DqRQCSmyp5LAM",
+  "_key": "!items!Wp0DqRQCSmyp5LAM"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Space Guppy Scales (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "These small, scales have a golden sheen. The scales can be used as an ingredient in potions of flying. They can also be ground into a fine powder to make golden inks, paints and dyes.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Space Guppy",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978160,
+    "modifiedTime": 1688174978160,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ogvfq5tPuu9A6Ag2",
+  "_key": "!items!ogvfq5tPuu9A6Ag2"
+}

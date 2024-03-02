@@ -1,0 +1,40 @@
+{
+  "name": "Bugbear Tusk (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+  "system": {
+    "description": {
+      "value": "Two small tusks that protrude from a bugbear's mouth. They can be used to create small crafts, jewelry and decorations.",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Bugbear",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974338,
+    "modifiedTime": 1688174974338,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "rjbE5UqCsvUUk59e",
+  "_key": "!items!rjbE5UqCsvUUk59e"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Owlbear Liver",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-liver-red.webp",
+  "system": {
+    "description": {
+      "value": "The owlbear's liver is a thick, rubbery, reddish-brown organ that filters the blood and produces a yellowish bile. The organ is primarily used by alchemists and healers.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Owlbear",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977615,
+    "modifiedTime": 1688174977615,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "PsaqKDMg0Drwt2wN",
+  "_key": "!items!PsaqKDMg0Drwt2wN"
+}

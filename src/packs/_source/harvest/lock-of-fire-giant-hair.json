@@ -1,0 +1,40 @@
+{
+  "name": "Lock of Fire Giant Hair",
+  "type": "loot",
+  "img": "icons/commodities/materials/hair-tuft-gold.webp",
+  "system": {
+    "description": {
+      "value": "Long strands of hair, as strong as steel and fireproof. The hair is often black with a reddish sheen, or dark red, with a dark sheen. Highly valued among tailors, weavers and textile makers.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Fire Giant Dreadnought",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975537,
+    "modifiedTime": 1688174975537,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "chlS1D7jZURUOPVy",
+  "_key": "!items!chlS1D7jZURUOPVy"
+}

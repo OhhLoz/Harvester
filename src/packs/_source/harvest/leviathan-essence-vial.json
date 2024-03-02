@@ -1,0 +1,40 @@
+{
+  "name": "Leviathan Essence (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A leviathan is an immense creature that is found in large body of water, and is difficult to distinguish from the water it resides. At times, the slain creature will leave behind trace amounts of its elemental energy. It is possible to collect this energy within an enchanted bottle. Requires an enchanted vial. The essence may be used to craft a powerful elemental ring.Harvesting note: 30 DC if the leviathan disperses over 20 feet below the surface of a large body of water (spreading its essence into a wider area, making it more difficult to find).",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Leviathan",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976829,
+    "modifiedTime": 1688174976829,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "wOaZEs7ZKznx1wnv",
+  "_key": "!items!wOaZEs7ZKznx1wnv"
+}

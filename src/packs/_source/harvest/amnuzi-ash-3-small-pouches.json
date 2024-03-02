@@ -1,0 +1,40 @@
+{
+  "name": "Amnuzi Ash (3 small pouches)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Once an Amnizu is defeated, it combusts and often leaves behind a pile of ash. The dark gray ash smells of sulfur. Spellcasters can use the ash to summon lesser demons. Artificers and alchemists may be able to craft explosive substances with the ash.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Amnizu",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973623,
+    "modifiedTime": 1688174973623,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Zod4EbQGpQZJngDp",
+  "_key": "!items!Zod4EbQGpQZJngDp"
+}

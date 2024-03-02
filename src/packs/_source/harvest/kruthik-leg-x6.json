@@ -1,0 +1,40 @@
+{
+  "name": "Kruthik Leg (x6)",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A kruthik's leg is composed of bone, chitin, and steely scales; all ending in long scythes. The scythes are extremely sharp and can dig through stone. The creature's scythes can be used to make sharp weapons.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Adult Kruthik",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973559,
+    "modifiedTime": 1688174973559,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "dakpjIFNFdGIaXgt",
+  "_key": "!items!dakpjIFNFdGIaXgt"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Remorhaz Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "A remorhaz's heart is a hot ball of hard, course flesh, and looks like a burning coal. The heart continues to burn long after the remorhaz is killed. Arctic communities prize the heart for the continual life-giving heat the heart gives off. Artificers value the heart for its ongoing energy they can harness.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Remorhaz",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977861,
+    "modifiedTime": 1688174977861,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "gIDiSzgoG9mtSx57",
+  "_key": "!items!gIDiSzgoG9mtSx57"
+}

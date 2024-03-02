@@ -1,0 +1,40 @@
+{
+  "name": "Xvart Hair (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "An xvart has a receding hairline of dark, greasy hair. As xvarts are all spawned by the greedy demigod Raxivort, every strand has a touch of his dark energy. Spellcasters, artificers and some alchemists can make use of the hair.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Xvart",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978874,
+    "modifiedTime": 1688174978874,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "yUV7cCq3gJ0Fea1K",
+  "_key": "!items!yUV7cCq3gJ0Fea1K"
+}

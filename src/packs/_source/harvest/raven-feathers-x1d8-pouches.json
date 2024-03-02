@@ -1,0 +1,40 @@
+{
+  "name": "Raven Feathers (x1d8, pouches)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Black raven feathers are decorative plumage, that help the bird soar through the sky. The feathers are used in decorations, dusters, apparel and creating arrows and bolts.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Swarm of Ravens",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 7,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978419,
+    "modifiedTime": 1688174978419,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "fTSk61s4ME9Cumys",
+  "_key": "!items!fTSk61s4ME9Cumys"
+}

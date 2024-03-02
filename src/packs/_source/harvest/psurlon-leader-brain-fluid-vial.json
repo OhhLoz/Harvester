@@ -1,0 +1,40 @@
+{
+  "name": "Psurlon Leader Brain Fluid (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The brains of a Psurlon Leader is charged with psychic energy. If careful, the brain fluid can be extracted. This fluid is believed to enhance psionics. Most use the fluid in healing poultices that calm and soothe victims. Note: The fluid must be harvested quickly. The harvester must choose one of the creatures two heads. There is a 50% that they choose the wrong head, and the fluid is lost.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Psurlon Leader",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977760,
+    "modifiedTime": 1688174977760,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "RcvMbMqjE879cyJn",
+  "_key": "!items!RcvMbMqjE879cyJn"
+}

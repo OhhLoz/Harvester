@@ -1,0 +1,40 @@
+{
+  "name": "Blight Needles (small bundle)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Hardened wooden needles. Often used by fletchers for wooden darts and arrow heads.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Needle Blight",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 5,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977281,
+    "modifiedTime": 1688174977281,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ydgg5Xyg2JKfCrYI",
+  "_key": "!items!ydgg5Xyg2JKfCrYI"
+}

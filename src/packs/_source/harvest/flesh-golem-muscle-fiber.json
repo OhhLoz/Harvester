@@ -1,0 +1,40 @@
+{
+  "name": "Flesh Golem Muscle Fiber",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Being magically animated, some of the flesh golem's muscle fibers may still contain trace amounts of magic. These fibers still twitch slightly, even after the golem is destroyed. Artificers and magic users, especially necromancers, may find these muscle fibers worth studying.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Flesh Golem",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975582,
+    "modifiedTime": 1688174975582,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ycqWOT92vQgIvXno",
+  "_key": "!items!ycqWOT92vQgIvXno"
+}

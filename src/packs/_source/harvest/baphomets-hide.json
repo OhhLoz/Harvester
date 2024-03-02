@@ -1,0 +1,40 @@
+{
+  "name": "Baphomet's Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "Baphomet's hide is similar to bovine hides, such as cows and bulls, but much stronger, thicker and more durable. The hide can be used to make harnesses, bags, shoes and rugs.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Baphomet",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 750,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973998,
+    "modifiedTime": 1688174973998,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Q16T7WvwlUlNKAqr",
+  "_key": "!items!Q16T7WvwlUlNKAqr"
+}

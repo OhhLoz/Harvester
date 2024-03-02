@@ -1,0 +1,40 @@
+{
+  "name": "Duergar Mind Master Mask",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Duergar Mind Master's wear fearsome masks. Each mask is unique. The mask can be carved from dark stone, pieced together using various bones, or made from the sewn skin of dead creatures. The mask flows with the psionic energy of the deceased mind master. Spellcasters can wear the mask, and benefit from this energy. Use: A creature wearing this mask can use a bonus action to target 1 creature within 30 feet. The target must make a DC 12 Intelligence saving throw, or the target must use its reaction, if available, to make one weapon attack against another creature the mask-wearer can see, within 5 feet of that creature. Creatures that can't be charmed are immune to this effect. Once the mask is used, the psionic energy is drained and can't be used again in this way.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Duergar Mind Master",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975271,
+    "modifiedTime": 1688174975271,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "wC6GfCb0bTmAeozv",
+  "_key": "!items!wC6GfCb0bTmAeozv"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Barghest Fang (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/teeth-pointed-white.webp",
+  "system": {
+    "description": {
+      "value": "Barghest fangs are often used to create weapons that fight incorporeal undead.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Barghest",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974028,
+    "modifiedTime": 1688174974028,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "S1DWytIqRCBtDyNX",
+  "_key": "!items!S1DWytIqRCBtDyNX"
+}

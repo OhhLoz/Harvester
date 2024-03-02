@@ -1,0 +1,40 @@
+{
+  "name": "Maurezhi Saliva (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A maurezhi's saliva is a dangerous substance that can drain a victim's sense of self, eventually causing an unholy hunger for flesh that overpowers their personality and transforms them into a ghoul. Necromancers will pay a great deal for this saliva. Alchemist and healers may be able to transform the saliva into a healing unguent that heals decaying flesh.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Maurezhi",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976970,
+    "modifiedTime": 1688174976970,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "S5HNaxNrLEwcKDKs",
+  "_key": "!items!S5HNaxNrLEwcKDKs"
+}

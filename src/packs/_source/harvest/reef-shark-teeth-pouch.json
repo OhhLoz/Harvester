@@ -1,0 +1,40 @@
+{
+  "name": "Reef Shark Teeth (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A shark's teeth are extremely sharp, triangular pieces of dentin covered in a hard coating of enamel. The teeth are used in jewelry and decoration, but can also be used to make serrated blades and saws.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Reef Shark",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977846,
+    "modifiedTime": 1688174977846,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "plhNuITTWmx4XwYu",
+  "_key": "!items!plhNuITTWmx4XwYu"
+}

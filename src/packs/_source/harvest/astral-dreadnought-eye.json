@@ -1,0 +1,40 @@
+{
+  "name": "Astral Dreadnought Eye",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "The single eye of an Astral Dreadnought is a dark orb, with depths that swirl with bright constellations. The eye is believed to hold the secrets tied to multidimensional travel and teleportaion, and is often sought by mighty spellcasters. Alchemists can extract liquids from the eye for potions and elixirs.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Astral Dreadnought",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973828,
+    "modifiedTime": 1688174973828,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "4Jm8H7dxC3Sh0bae",
+  "_key": "!items!4Jm8H7dxC3Sh0bae"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Gulthias Sap (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A dark red, thick and sticky sap can sometimes be found on a blight's body.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Vine Blight",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 6,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978692,
+    "modifiedTime": 1688174978692,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Ul1ggeCugGcBXnVd",
+  "_key": "!items!Ul1ggeCugGcBXnVd"
+}

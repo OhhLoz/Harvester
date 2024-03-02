@@ -1,0 +1,40 @@
+{
+  "name": "Triceratops Skull",
+  "type": "loot",
+  "img": "icons/commodities/bones/skull-deformed-white.webp",
+  "system": {
+    "description": {
+      "value": "The large, armored skull of the Triceratops has three long piercing horns. The skull is a prized trophy, but can be fashioned into a shield by a skilled armorer.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Triceratops",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978553,
+    "modifiedTime": 1688174978553,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "MGPMd3psi8qObIy5",
+  "_key": "!items!MGPMd3psi8qObIy5"
+}

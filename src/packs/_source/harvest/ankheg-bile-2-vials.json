@@ -1,0 +1,40 @@
+{
+  "name": "Ankheg Bile (2 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Alchemists use ankheg bile to create various acidic concoctions. Use: As an action, you can splash the contents of the vial onto a creature within 5 feet of you or throw it up to 20 feet, shattering it on impact. In either case, make a ranged attack against a target creature, treating the vial as an Improvised Weapon. On a successful hit, the target takes 1d6 acid damage.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Ankheg",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973730,
+    "modifiedTime": 1688174973730,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "CguDTadF9uDMnObh",
+  "_key": "!items!CguDTadF9uDMnObh"
+}

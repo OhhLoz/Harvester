@@ -1,0 +1,40 @@
+{
+  "name": "Barghest Blood (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Barghest's blood is known for its transformative properties. Use: Spending an action to drink a vial immediately polymorphs you into a goblin for 1 hour. Game statistics remain the same in the new form, except your size changes to Small. You revert to your normal form at the end of the hour, or if you die.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Barghest",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974024,
+    "modifiedTime": 1688174974024,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Burdju9Q3GeuFyMz",
+  "_key": "!items!Burdju9Q3GeuFyMz"
+}

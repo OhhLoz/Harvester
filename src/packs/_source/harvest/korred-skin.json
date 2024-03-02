@@ -1,0 +1,40 @@
+{
+  "name": "Korred Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A korred has rough gray skin that seems to shift slightly in the light, especially when near stone. The skin still retains some of the korred's camouflage ability even after death, but must be harvested carefully. While the skin itself is too thin to be used to make leather, it has many arcane and alchemical properties.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Korred",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976747,
+    "modifiedTime": 1688174976747,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "RyJhKDDK2RxELXpH",
+  "_key": "!items!RyJhKDDK2RxELXpH"
+}

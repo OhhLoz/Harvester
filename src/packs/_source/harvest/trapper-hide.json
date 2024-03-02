@@ -1,0 +1,40 @@
+{
+  "name": "Trapper Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A trapper has a thick hide covered in a thin mucus. The hide's color and texture is constantly shifting, but always close to the object it is resting on. The hide is difficult to harvest, as the skin seems to shift and move under a blade. It is valued by leatherworks and artificers.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Trapper",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978538,
+    "modifiedTime": 1688174978538,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "cXPEd0hKi0nB0vQw",
+  "_key": "!items!cXPEd0hKi0nB0vQw"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Zariel Feather",
+  "type": "loot",
+  "img": "icons/commodities/materials/feather-white.webp",
+  "system": {
+    "description": {
+      "value": "Zariel's blacked angel wings are scorched and battered, and most of the feathers are fused together into a dark leathery mass. However, it may be possible to recover a charred feather. Archdevil parts fetch a high price, and often contain powerful magic.Use: When this feather is held in one's hand, it acts as a Ring of Feather Falling.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Zariel",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979084,
+    "modifiedTime": 1688174979084,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Y7Atyl2qpE9rJ9M0",
+  "_key": "!items!Y7Atyl2qpE9rJ9M0"
+}

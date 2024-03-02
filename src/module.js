@@ -2,7 +2,7 @@ import { registerSettings, SETTINGS } from "./scripts/settings.js";
 import { CONSTANTS } from "./scripts/constants.js";
 import { RequestorHelpers } from "./scripts/requestor-helpers.js";
 import API from "./scripts/api.js";
-import { checkItemSourceLabel, retrieveItemSourceLabelDC } from "./scripts/lib/lib.js";
+import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./scripts/lib/lib.js";
 import Logger from "./scripts/lib/Logger.js";
 import { HarvestingHelpers } from "./scripts/lib/harvesting-helpers.js";
 import { LootingHelpers } from "./scripts/lib/looting-helpers.js";
@@ -74,11 +74,11 @@ Hooks.on("createActor", async (actor, data, options, id) => {
 });
 
 Hooks.on("dnd5e.preUseItem", function (item, config, options) {
-  if (!checkItemSourceLabel(item, "Harvester")) {
+  if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
     return;
   }
   if (game.user.targets.size !== 1) {
-    ui.notifications.warn("Please target only one token.");
+    Logger.warn("Please target only one token.", true);
     return false;
   }
 
@@ -93,7 +93,7 @@ Hooks.on("dnd5e.preUseItem", function (item, config, options) {
 });
 
 Hooks.on("dnd5e.useItem", function (item, config, options) {
-  if (!checkItemSourceLabel(item, "Harvester")) {
+  if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
     return;
   }
   if (item.name === harvestAction.name) {
@@ -105,13 +105,13 @@ Hooks.on("dnd5e.useItem", function (item, config, options) {
 });
 
 Hooks.on("dnd5e.preDisplayCard", function (item, chatData, options) {
-  if (checkItemSourceLabel(item, "Harvester")) {
+  if (checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
     options.createMessage = false;
   }
 });
 
 // Hooks.on("dnd5e.displayCard", function (item, card) {
-//   if (checkItemSourceLabel(item, "Harvester")) {
+//   if (checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
 //     card = undefined;
 //   }
 // });
@@ -120,33 +120,38 @@ export function validateAction(controlToken, targetedToken, actionName) {
   let measuredDistance = canvas.grid.measureDistance(controlToken.center, targetedToken.center);
   let targetSize = CONSTANTS.sizeHashMap.get(targetedToken.actor.system.traits.size);
   if (measuredDistance > targetSize && SETTINGS.enforceRange) {
-    ui.notifications.warn("You must be in range to " + actionName);
+    Logger.warn("You must be in range to " + actionName, true);
     return false;
   }
 
   let actor = null;
-  if (!isEmptyObject(targetedToken.document.delta?.system)) actor = targetedToken.document.delta;
-  else if (!isEmptyObject(targetedToken.document.actor)) actor = targetedToken.document.actor;
-  else if (targetedToken.document.actorId) actor = game.actors.get(targetedToken.document.actorId);
-
+  if (!isEmptyObject(targetedToken.document.delta?.system)) {
+    actor = targetedToken.document.delta;
+  } else if (!isEmptyObject(targetedToken.document.actor)) {
+    actor = targetedToken.document.actor;
+  } else if (targetedToken.document?.actorId) {
+    actor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
+  } else if (targetedToken.actor?.id) {
+    actor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
+  }
   if (!actor) {
-    ui.notifications.warn(targetedToken.name + " has not data to retrieve");
+    Logger.warn(targetedToken.name + " has not data to retrieve", true);
     return false;
   }
   if (actor.system.attributes.hp.value !== 0) {
-    ui.notifications.warn(targetedToken.name + " is not dead");
+    Logger.warn(targetedToken.name + " is not dead", true);
     return false;
   }
   if (!checkEffect(targetedToken, "Dead") && SETTINGS.requireDeadEffect) {
-    ui.notifications.warn(targetedToken.name + " is not dead");
+    Logger.warn(targetedToken.name + " is not dead", true);
     return false;
   }
   if (targetedToken.document.hasPlayerOwner && SETTINGS.npcOnlyHarvest) {
-    ui.notifications.warn(targetedToken.name + " is not an NPC");
+    Logger.warn(targetedToken.name + " is not an NPC", true);
     return false;
   }
   if (checkEffect(targetedToken, `${actionName}ed`)) {
-    ui.notifications.warn(`${targetedToken.name} has been ${actionName.toLowerCase()}ed already`);
+    Logger.warn(`${targetedToken.name} has been ${actionName.toLowerCase()}ed already`, true);
     return false;
   }
   return true;
@@ -198,11 +203,11 @@ async function addActionToActors() {
     let hasLoot = false;
 
     actor.items.forEach((item) => {
-      if (item.name === harvestAction.name && checkItemSourceLabel(item, "Harvester")) {
+      if (item.name === harvestAction.name && checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
         hasHarvest = true;
         resetToDefault(item);
       }
-      if (item.name === lootAction.name && checkItemSourceLabel(item, "Harvester")) {
+      if (item.name === lootAction.name && checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
         hasLoot = true;
         resetToDefault(item);
         if (SETTINGS.disableLoot) {
@@ -255,13 +260,13 @@ export function addEffect(targetTokenId, actionName) {
       {
         id: CONSTANTS.harvestActionEffectId,
         icon: CONSTANTS.harvestActionEffectIcon,
-        label: CONSTANTS.harvestActionEffectName,
+        name: CONSTANTS.harvestActionEffectName,
       },
       { active: true }
     );
   } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
     targetToken.document.toggleActiveEffect(
-      { id: CONSTANTS.lootActionEffectId, icon: CONSTANTS.lootActionEffectIcon, label: CONSTANTS.lootActionEffectName },
+      { id: CONSTANTS.lootActionEffectId, icon: CONSTANTS.lootActionEffectIcon, name: CONSTANTS.lootActionEffectName },
       { active: true }
     );
   }
@@ -334,7 +339,7 @@ async function _createItem(item, actor, stackSame = true, customLimit = 0) {
       // limit is bigger or equal to newQty
       if (Number(customLimit) < Number(newQty)) {
         //limit was reached, we stick to that limit
-        ui.notifications.warn("Custom limit is been reached for the item '" + item.name + "'");
+        Logger.warn("Custom limit is been reached for the item '" + item.name + "'", true);
         return customLimit;
       }
     }

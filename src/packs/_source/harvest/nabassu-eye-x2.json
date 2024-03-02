@@ -1,0 +1,40 @@
+{
+  "name": "Nabassu Eye (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "A nabassu has two steel gray eyes that glow yellow whenever a soul is near. The orbs resonate with arcane power, trace amounts of energy left from the souls the creature has eaten. The eyes can be used by alchemist and spellcasters.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Nabassu",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977249,
+    "modifiedTime": 1688174977249,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "rKF5X5b9fb92bvKt",
+  "_key": "!items!rKF5X5b9fb92bvKt"
+}

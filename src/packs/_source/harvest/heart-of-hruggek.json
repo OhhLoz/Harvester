@@ -1,0 +1,40 @@
+{
+  "name": "Heart of Hruggek",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "A bugbear chief's heart is often blessed by their god, Hrugged. It is believed that consuming a powerful bugbear chief's heart allows you to gain their power. Use: You may spend an action to consume this heart, granting you advantage on saving throws against being charmed, frightened, paralyzed, poisoned, stunned, or sleep for the next hour. Once this effect wears off, you must succeed on a Constitution saving throw (DC 12) or gain one level of exhaustion as the adrenaline filled organ passes through your system.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Bugbear Chief",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974352,
+    "modifiedTime": 1688174974352,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "NcXY61PmhPinBWjT",
+  "_key": "!items!NcXY61PmhPinBWjT"
+}

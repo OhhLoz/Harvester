@@ -1,0 +1,40 @@
+{
+  "name": "Elder Brain Dragon Brine (flask)",
+  "type": "loot",
+  "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+  "system": {
+    "description": {
+      "value": "An elder brain dragon can exhale a briny stream of fluid, which containing hundreds of mindflayer tadpoles. The brine can be used to create new mindflayers and is extremely dangerous, and forbidden in most kingdoms. The liquid is purchased by anyone studying mindflayers. It is also sought after by cults and evil leaders, especially those that seek to cause panic and chaos.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Elder Brain Dragon",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 1500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975353,
+    "modifiedTime": 1688174975353,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "YMsHjvmxKns1IbA6",
+  "_key": "!items!YMsHjvmxKns1IbA6"
+}

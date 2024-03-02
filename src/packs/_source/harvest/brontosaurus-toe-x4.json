@@ -1,0 +1,40 @@
+{
+  "name": "Brontosaurus Toe (x4)",
+  "type": "loot",
+  "img": "icons/commodities/biological/foot-black-grey.webp",
+  "system": {
+    "description": {
+      "value": "The toe of a brontosaurus are about a foot of hard bone. This bone can be used to create crafts, decorations and can be carved into weapons. Some weaponsmiths can fashion bludgeoning weapons from the bulky piece of bone.",
+      "chat": "12",
+      "unidentified": "Nature"
+    },
+    "source": "Brontosaurus",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974301,
+    "modifiedTime": 1688174974301,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "lAiUR84s5uHdPV2H",
+  "_key": "!items!lAiUR84s5uHdPV2H"
+}

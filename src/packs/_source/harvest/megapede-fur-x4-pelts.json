@@ -1,0 +1,40 @@
+{
+  "name": "Megapede Fur (x4 pelts)",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The fur covered carapace of a megapede is often dirty and swarming with bugs. If large enough patches can be harvested, they may be cleaned, treated and fashioned into cloaks and other clothing.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Megapede",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977011,
+    "modifiedTime": 1688174977011,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "FIaPdJU43AwTfgWH",
+  "_key": "!items!FIaPdJU43AwTfgWH"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Lizardfolk Tail",
+  "type": "loot",
+  "img": "icons/commodities/biological/tail-rodent-orange.webp",
+  "system": {
+    "description": {
+      "value": "The lizardfolk tail is long and thick with a thin spinal cord running down the middle. Swamp communities and primitive tribes often use the tail for its meat. Alchemists and healers can use the tail for salves and potions, due to the creature's regenerative capabilities. However, most communities will pay for the tails as a bounty on the creatures.",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Lizardfolk King",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 8,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976857,
+    "modifiedTime": 1688174976857,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "bqjAA36uoqheZClw",
+  "_key": "!items!bqjAA36uoqheZClw"
+}

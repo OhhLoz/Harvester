@@ -1,0 +1,40 @@
+{
+  "name": "Half-Dragon Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A half-dragon's blood is dark red, but has a slight metallic sheen. The blood has many magical properties and is valued in the magic community. Alchemists may be able to create concoctions that duplicate a half-dragon's abilities. Use: As an action, a creature can may drink the vial of half-dragon blood. For the next 10 minutes, that creature gains the same type of damage resistance of the half-dragon it was taken from.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Half Dragon",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976373,
+    "modifiedTime": 1688174976373,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "1hqoU6QlmkkzTHqs",
+  "_key": "!items!1hqoU6QlmkkzTHqs"
+}

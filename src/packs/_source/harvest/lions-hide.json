@@ -1,0 +1,40 @@
+{
+  "name": "Lion's Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The lion's hide is covered in yellow-gold hair. It is often used to make rugs and apparel.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Lion",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976835,
+    "modifiedTime": 1688174976835,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "NqBsGF7XIdNqca7i",
+  "_key": "!items!NqBsGF7XIdNqca7i"
+}

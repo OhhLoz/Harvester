@@ -1,0 +1,40 @@
+{
+  "name": "Medusa Head (sack)",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "A medusa's gaze turns creatures to stone. It is possible to harvest the head without snuffing out the eye's power. The head is a weapon itself, and can be used to turn a creature to stone. The medusa's curse keeps the head from decaying. It must be safely stored in a sack or chest, or it will lose its power. Use: A creature can use an action to remove the head from its container and aim the head's gaze at a target within 30 feet. If the target can see the head, it is forced to make a DC 14 Constitution saving throw. If the saving throw fails by 5 or more, the creature is instantly petrified. Otherwise, the target that fails the save begins to turn to stone and is restrained. The restrained creature must repeat the saving throw at the end of its next turn, becoming petrified on a failure or ending the effect on a success. The petrification lasts until the creature is freed by the greater restoration spell or other magic. The head has a single charge, which is depleted once another creature meets the head's gaze.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Medusa",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976996,
+    "modifiedTime": 1688174976996,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "RsX4kojV8CSDFYgM",
+  "_key": "!items!RsX4kojV8CSDFYgM"
+}

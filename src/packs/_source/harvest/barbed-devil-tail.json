@@ -1,0 +1,40 @@
+{
+  "name": "Barbed Devil Tail",
+  "type": "loot",
+  "img": "icons/commodities/biological/tail-rodent-orange.webp",
+  "system": {
+    "description": {
+      "value": "The tail of the barbed devil has a powerful lashing effect, made even deadlier as it is covered in spikes. An expert leatherworker can treat and repurpose the skin of the tail into a whip, and the barbed spikes reinforced for additional damage.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Barbed Devil",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974021,
+    "modifiedTime": 1688174974021,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "bPhOV3jgE4DgrwTz",
+  "_key": "!items!bPhOV3jgE4DgrwTz"
+}

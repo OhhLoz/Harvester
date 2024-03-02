@@ -1,0 +1,40 @@
+{
+  "name": "Night Hag's Nails (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The nails of a hag are long, filthy, and sharp. After years of wielding magic, the nails become a conduit for the hags power. They must be carefully extracted during a complex ritual in order to retain their usefulness. Alchemists, magic users and other hags find value in this item.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Night Hag",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977353,
+    "modifiedTime": 1688174977353,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "UtHs1FvuQWAwJ02v",
+  "_key": "!items!UtHs1FvuQWAwJ02v"
+}

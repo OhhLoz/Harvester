@@ -1,0 +1,40 @@
+{
+  "name": "Fiend's Poison (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Erinyes often coat their weapons in a vile poison, which they carry in a small glass vial. Fiend's Poison: A creature can coat up to 3 pieces of ammunition or 1 melee weapon. Applying the poison takes an action. The poison lasts for 1 minute, or until a creature is exposed to the poison. Any creature successfully hit must succeed a DC 14 Constitution saving throw or suffer 3d8 poison damage and be poisoned for 1 hour. This poison usually sells for 250gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Erinyes",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975402,
+    "modifiedTime": 1688174975402,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Y5wxL6qzNUHriZZi",
+  "_key": "!items!Y5wxL6qzNUHriZZi"
+}

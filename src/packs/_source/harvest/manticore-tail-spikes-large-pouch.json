@@ -1,0 +1,40 @@
+{
+  "name": "Manticore Tail Spikes (large pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A manticore has a cluster of deadly spikes at the end of its tail. There are about two dozen barbs in total and they usually regrow within a day. The barbs are dark, bone-like needles, some reaching a foot in length. They can be used to make daggers and other implements.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Manticore",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976933,
+    "modifiedTime": 1688174976933,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "sMgoYuPZxHrj4EmT",
+  "_key": "!items!sMgoYuPZxHrj4EmT"
+}

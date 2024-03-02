@@ -1,0 +1,40 @@
+{
+  "name": "Gnoll Teeth (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Gnoll teeth can be used to create jewelry and decorations. However, the teeth are often used to show proof of a gnoll's death, in order to collect a bounty.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Gnoll",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976098,
+    "modifiedTime": 1688174976098,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ywmWdWCUZQeqh2iP",
+  "_key": "!items!ywmWdWCUZQeqh2iP"
+}

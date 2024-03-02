@@ -1,0 +1,40 @@
+{
+  "name": "Mindwitness Tentacle (x4)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "A mindwitness has four long, fleshy tentacles. An expert craftsman can stretch the tentacles and carefully comb them into long, thin fibers. These fibers are then soaked and treated with oils, making them useful filaments for creating ropes and whips.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Mindwitness",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977096,
+    "modifiedTime": 1688174977096,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "v4QoRbIEomwE0jIr",
+  "_key": "!items!v4QoRbIEomwE0jIr"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Steeder Glue (x3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The legs of a steeder excrete a viscous, glue-like substance, which allows the creature to creep along walls and ceilings. This goo can be harvested and used as an adhesive.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Male Steeder",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976918,
+    "modifiedTime": 1688174976918,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "dmJX9AUSnmG8TeFL",
+  "_key": "!items!dmJX9AUSnmG8TeFL"
+}

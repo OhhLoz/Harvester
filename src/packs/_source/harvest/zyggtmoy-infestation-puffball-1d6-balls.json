@@ -1,0 +1,40 @@
+{
+  "name": "Zyggtmoy Infestation Puffball (1d6 balls)",
+  "type": "loot",
+  "img": "icons/commodities/materials/plant-sprout-teal.webp",
+  "system": {
+    "description": {
+      "value": "Among the many lichen and molds that cover Zuggtmoy are several spores. Some of these spore are extremely dangerous, causing disease and poison. Zuggtmoy's Infestation Puffballs are small, puffy red balls that contain a collection of spores. These spores are prized by horticulturists and mycologists. Use: Using an action, you can throw one of these puffballs at a creature you can see within 30 feet. If the target is hit, the small ball explodes into a cloud of spores, and the target must make a DC 17 saving throw. On a successful save, the creature can't be infected by these spores for 24 hours. On a failed save, the creature is infected with a disease called the spores of Zuggtmoy that lasts until the creature is cured of the disease or dies. While infected in this way, the creature can't be reinfected, and it must repeat the saving throw at the end of every 24 hours, ending the infection on a success. On a failure, the infected creature's body is slowly taken over by fungal growth, and after three such failed saves, the creature dies.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Zuggtmoy",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979092,
+    "modifiedTime": 1688174979092,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "R7sG0pPCYYsC6rFj",
+  "_key": "!items!R7sG0pPCYYsC6rFj"
+}

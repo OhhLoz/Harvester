@@ -1,0 +1,40 @@
+{
+  "name": "Mark of Ilneval",
+  "type": "loot",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "An orc blade of Ilneval is often marked with Ilneval's symbol (an upright, blood-spattered sword). The tattoo is commonly found on its calf or thigh muscle. Harvesting the item requires flaying the skin under the mark, in one piece. The mark retains a connection to the deity, and is valued by many spellcasters. Healers and potion makers may find the mark useful for the alchemical properties of the tattooed skin.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Orc Blade of Ilneval",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977507,
+    "modifiedTime": 1688174977507,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "WO84kG7RTDselQVH",
+  "_key": "!items!WO84kG7RTDselQVH"
+}

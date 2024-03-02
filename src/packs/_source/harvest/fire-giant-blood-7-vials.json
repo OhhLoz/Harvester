@@ -1,0 +1,40 @@
+{
+  "name": "Fire Giant Blood (7 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A fire giant's blood is an extremely dark, highly viscous liquid that flows like lava. The blood must be harvested quickly as it hardens and turns black when exposed to the air. The blood has many alchemical and medicinal uses.",
+      "chat": "20",
+      "unidentified": "Medicine"
+    },
+    "source": "Fire Giant",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 70,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975527,
+    "modifiedTime": 1688174975527,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "OmfGDHONj62wb16D",
+  "_key": "!items!OmfGDHONj62wb16D"
+}

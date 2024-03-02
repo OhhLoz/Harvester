@@ -1,0 +1,40 @@
+{
+  "name": "Giff Teeth (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-jaw-white.webp",
+  "system": {
+    "description": {
+      "value": "Giff have two large teeth on their lower jaw that engravers find valuable. The teeth can be used to create small crafts, jewelry and decorations.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Giff Shock Trooper",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975970,
+    "modifiedTime": 1688174975970,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "footHi6Pf6Ar7Eb5",
+  "_key": "!items!footHi6Pf6Ar7Eb5"
+}

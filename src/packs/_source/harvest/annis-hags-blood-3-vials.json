@@ -1,0 +1,40 @@
+{
+  "name": "Annis Hag's Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A hag's blood is a black, viscous fluid that smells like decaying matter. The blood has arcane properties that can be harnessed by certain spellcasters and alchemists.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Annis Hag",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973757,
+    "modifiedTime": 1688174973757,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "a4Q9MDjsrg3cP5Mz",
+  "_key": "!items!a4Q9MDjsrg3cP5Mz"
+}

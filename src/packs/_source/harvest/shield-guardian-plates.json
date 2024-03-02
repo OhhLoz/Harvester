@@ -1,0 +1,40 @@
+{
+  "name": "Shield Guardian Plates",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "The metal plates of a shield guardian are infused with protective arcane magic. The plates can be repurposed and reforged into armor and shields.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Shield Guardian",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978078,
+    "modifiedTime": 1688174978078,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Ku6Atmg0HcJF87kj",
+  "_key": "!items!Ku6Atmg0HcJF87kj"
+}

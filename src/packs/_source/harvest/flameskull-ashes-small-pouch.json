@@ -1,0 +1,40 @@
+{
+  "name": "Flameskull Ashes (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "As a flameskull's green flame fades, it often leaves behind a small amount of grayish-green ash. The ash has many arcane properties that can be used to enhance spell effects. Use: A character may use the flameskull's ashes, in addition to the spells other material components, to upcast a spell by a single level.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Flameskull",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975572,
+    "modifiedTime": 1688174975572,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "hF7Or4pfKSfPkX47",
+  "_key": "!items!hF7Or4pfKSfPkX47"
+}

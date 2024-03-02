@@ -1,0 +1,40 @@
+{
+  "name": "Orcus' Wings",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "The leathery, bat-like wings of orcus can be sold to collectors or to leatherworkers for their leather. Artificers and enchanters may be able to find other uses for the wings.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Orcus",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 1500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977580,
+    "modifiedTime": 1688174977580,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "X7yuu2WpZ7rwmxgL",
+  "_key": "!items!X7yuu2WpZ7rwmxgL"
+}

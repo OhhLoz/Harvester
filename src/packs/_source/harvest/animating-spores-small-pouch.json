@@ -1,0 +1,40 @@
+{
+  "name": "Animating Spores (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "This item can only be harvested if the myconid sovereign hasn't used all of its Animating Spores abilities (3/day). These miniscule gray spores are sprayed like a soft hazy mist. These spores have the ability to raise a corpse as a spore servant (MM p230). Unfortunately, a spore servant can only be controlled by a myconid, so the spore have little to your average adventurer. However, necromancers have a strong appreciation for these spores.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Myconid Sovereign",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977233,
+    "modifiedTime": 1688174977233,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "eNOGGU4ulzC5UloZ",
+  "_key": "!items!eNOGGU4ulzC5UloZ"
+}

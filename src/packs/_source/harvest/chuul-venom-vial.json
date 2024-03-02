@@ -1,0 +1,40 @@
+{
+  "name": "Chuul Venom (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The chuul's tentacles contain a paralyzing toxin. Alchemists can use the toxin to create various poisons and potions. Proficiency with the poisoner kit may be used for harvesting this venom. On a successful check, the character harvests enough venom for a single vial. On a failed check, the character is unable to extract any venom. If the character fails the check by 5 or more, the character is subjected to the creature's poison. Refining the Poison: Once the venom is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend an 12 hours and 100gp worth of material to create Chuul Poison (DC 13 Poisoner Kit or Alchemist Supplies check). Chuul Poison (Contact): A creature can spend an action and use 1 vial of this poison to coat one slashing or piercing weapon or up to three pieces of ammunition. Once applied, the poison retains potency for 1 minute before drying, or until a creature is hit with the poison. Any Medium or smaller creature successfully hit must make a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is paralyzed. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This poison usually sells for 200gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Chuul",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974608,
+    "modifiedTime": 1688174974608,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "XYgrCH9fHOMYVBvc",
+  "_key": "!items!XYgrCH9fHOMYVBvc"
+}

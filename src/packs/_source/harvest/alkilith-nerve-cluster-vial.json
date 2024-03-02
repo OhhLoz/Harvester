@@ -1,0 +1,40 @@
+{
+  "name": "Alkilith Nerve Cluster (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Inside the amorphous form of an Alkilith is a bundle of nerves that resonates with arcane power (and some say, reach into other planes). These nerves are valued by conjurers and any spellcaster interested in portals and travel. Requires a container of some kind, such as a flask, bottle or jug.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Alkilith",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973595,
+    "modifiedTime": 1688174973595,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "2g5BHCbnZWmA4onG",
+  "_key": "!items!2g5BHCbnZWmA4onG"
+}

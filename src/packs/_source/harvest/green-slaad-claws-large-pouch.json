@@ -1,0 +1,40 @@
+{
+  "name": "Green Slaad Claws (large pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A green slaad has long, dark black claws. Due to the slaad's magical abilities, the claws are swirling with arcane power, making them valuable in the arcane community.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Green Slaad",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976239,
+    "modifiedTime": 1688174976239,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "MyT4NPKGK6FXIp5p",
+  "_key": "!items!MyT4NPKGK6FXIp5p"
+}

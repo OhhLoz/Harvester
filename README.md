@@ -36,7 +36,7 @@ npm install
 
 ### dev
 
-`dev` will let you develop you own code with hot reloading on the browser
+`dev` will let you develop your own code with hot reloading on the browser
 
 ```bash
 npm run dev
@@ -97,4 +97,5 @@ This package is under an [GPL-3.0 license](LICENSE) and the [Foundry Virtual Tab
 Thanks to anyone who helps me with this code! I appreciate the user community's feedback on this project!
 
 * [data-toolbox](https://foundryvtt.com/packages/data-toolbox) For providing an easy method for importing items programmatically from a csv to a compendium
-* [p4535992](https://github.com/p4535992) For adding Compatibility with Better Roll Tables
+* [p4535992](https://github.com/p4535992) For adding Compatibility with Better Roll Tables, Requestor & Ongoing Support
+* [ctbritt](https://github.com/ctbritt) For adding Item Piles integration

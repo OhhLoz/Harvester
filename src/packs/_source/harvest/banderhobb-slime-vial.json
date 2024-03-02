@@ -1,0 +1,40 @@
+{
+  "name": "Banderhobb Slime (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A moderate amount of slime can be extracted from a Banderhobb's corpse. Use: Using an action, the vial can be poured onto a Medium sized reptile (frog, lizard, snake, toad) or smaller. That creature immediately grows into the giant version of itself (see Monster Manual) for 1 hour. It returns to its normal size at the end of the hour, or if it drops to 0 hit points. While under the effect of this item, the creature becomes violent and attempts to attack the nearest creature it can see whenever possible.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Banderhobb",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973985,
+    "modifiedTime": 1688174973985,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "yL6KK7UWNzBxgd5x",
+  "_key": "!items!yL6KK7UWNzBxgd5x"
+}

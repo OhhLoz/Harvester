@@ -1,0 +1,40 @@
+{
+  "name": "Cosmic Horror Poison Sack",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "A cosmic horror has the ability to expel a poisonous foul gas. This gas builds up and is stored in a sac somewhere in the creature's torso. If the sac is removed too quickly, or incorrectly, it may burst. On a successful harvesting check, the character harvests the gas sac. On a failed check, the character is unable to extract the gas sac. If the character fails the check by 5 or more, the character must make a DC 21 Constitution save or take 14 (4d6) poison damage. Use: As an action you may throw the sac up to 20 feet, where it explodes. Each creature in a 10-foot radius must succeed on a DC 15 Constitution saving throw. On a failed save, the creature takes 14 (4d6) poison damage.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Cosmic Horror",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974714,
+    "modifiedTime": 1688174974714,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "j0szAJZK9tFLhAxY",
+  "_key": "!items!j0szAJZK9tFLhAxY"
+}

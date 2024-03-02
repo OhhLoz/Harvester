@@ -1,0 +1,40 @@
+{
+  "name": "Horned Devil's Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "The devil's long horns extend back from its forehead and curl down behind its head, similar to that of an over-sized goat. The horns are prized as trophies, but can also be used to create instrumental horns and ornate drinking goblets.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Horned Devil",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976513,
+    "modifiedTime": 1688174976513,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Rixe6ibAdpkx7zSO",
+  "_key": "!items!Rixe6ibAdpkx7zSO"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Gauth Stomach",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-stomach.webp",
+  "system": {
+    "description": {
+      "value": "A gauth's stomach contains a mixture of magical enzymes and chemicals that have the ability to nullify magic. The stomach is highly valued by magic users and certain alchemists. Use: Using an action, you can rupture the stomach and spill the contents onto a magical item. The item will lose all it's magical properties for 24 hours, as well as 1d4 charges (if it is a charged item). The stomach contents do not affect artefacts or legendary items.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Gauth",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975711,
+    "modifiedTime": 1688174975711,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "7zfjdTKopL59j8EP",
+  "_key": "!items!7zfjdTKopL59j8EP"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Peryton Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "A peryton's heart is a red mass of flesh covered in veins. The heart throbs with magical energy, which slowly begins to fade once the creature is killed. Whether that energy is the result of a long suffered curse, or a because the creature is a magical creation, is unknown. Spellcasters, especially artificers, may be able to use and adapt this energy.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Peryton",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 35,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977646,
+    "modifiedTime": 1688174977646,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "e1q7EdlcTHnKap25",
+  "_key": "!items!e1q7EdlcTHnKap25"
+}

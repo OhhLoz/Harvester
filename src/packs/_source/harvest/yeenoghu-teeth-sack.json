@@ -1,0 +1,40 @@
+{
+  "name": "Yeenoghu Teeth (sack)",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "Harvesting this item results in 1d10+4 teeth. The sharp teeth of Yeenoghu are as strong as steel. The teeth are dull-yellow bone, with redish stains. The strong bone can be used in decorations and jewelry.Use: While holding one of Yeenoghu's teeth, you can use an action to cast Conjure Animals, with the following restrictions: you can only conjure 2 giant hyenas. The tooth is consumed when the spell is cast.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Yeenoghu",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978904,
+    "modifiedTime": 1688174978904,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "FdOBi35P32zmq4XP",
+  "_key": "!items!FdOBi35P32zmq4XP"
+}

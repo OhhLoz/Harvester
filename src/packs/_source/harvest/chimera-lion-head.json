@@ -1,0 +1,40 @@
+{
+  "name": "Chimera Lion Head",
+  "type": "loot",
+  "img": "icons/commodities/bones/skull-tusked-grey.webp",
+  "system": {
+    "description": {
+      "value": "One of the chimera's three heads. Larger than a regular lion's. The head is a prized trophy for hunters. The teeth can be used in jewelry and decorations. The mane can be used to make wigs and apparel (everything from simple pouches to fur-lined cloaks).",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Chimera",
+    "quantity": 1,
+    "weight": 25,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974546,
+    "modifiedTime": 1688174974546,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "56JJPiRc74WIxqdO",
+  "_key": "!items!56JJPiRc74WIxqdO"
+}

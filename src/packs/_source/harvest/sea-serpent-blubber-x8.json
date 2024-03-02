@@ -1,0 +1,40 @@
+{
+  "name": "Sea Serpent Blubber (x8)",
+  "type": "loot",
+  "img": "icons/commodities/materials/slime-white.webp",
+  "system": {
+    "description": {
+      "value": "Similar to whales, sea serpent blubber has value. The blubber requires cutting out long strips of fat from the creature's belly. Failure occurs when the strips are cut too thin, or the fat is spoiled by hitting a major artery or organ. Sea serpent blubber is primarily used to make oil and soap by boiling the fat for several hours. Alchemists and healers often use the fat in various concoctions as well.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Ancient Sea Serpent",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973676,
+    "modifiedTime": 1688174973676,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "gikR3Ua0E3AT3WF7",
+  "_key": "!items!gikR3Ua0E3AT3WF7"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Hell Hound Hair (3 handfuls)",
+  "type": "loot",
+  "img": "icons/commodities/materials/hair-tuft-gold.webp",
+  "system": {
+    "description": {
+      "value": "When a hell hound combusts, some of its shaggy dark hair may remain. Alchemists and magic users can use the hair for it's arcane properties and ties to other planes. Use: As an action, a creature may burn a handful of hell hound hair. For the next minute, whenever that creature rolls a 1 or 2 on a fire damage dice roll, the creature may reroll that die and must use the new number.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Hell Hound",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976416,
+    "modifiedTime": 1688174976416,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "KPtnOav2zH3K6ibt",
+  "_key": "!items!KPtnOav2zH3K6ibt"
+}

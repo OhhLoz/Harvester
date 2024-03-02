@@ -1,0 +1,40 @@
+{
+  "name": "Deathlock Wight Nails (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The hard yellowed nails of a deathlock wight channel the creature's life draining ability. The nails can used by necromancers in dark rituals, or repurposed by alchemists to create rejuvenation potions.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Deathlock Wight",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974843,
+    "modifiedTime": 1688174974843,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "pyneuoGyMlZKx5ad",
+  "_key": "!items!pyneuoGyMlZKx5ad"
+}

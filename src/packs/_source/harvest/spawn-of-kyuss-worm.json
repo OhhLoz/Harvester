@@ -1,0 +1,40 @@
+{
+  "name": "Spawn of Kyuss Worm",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The skin of a spawn of kyuss is covered in a mass of wriggling green worms. When a spawn falls, the worms slowly begin to wither, and weakly crawl away from the body to seek a new host. Gathering one of these worms can be dangerous (see below) and requires an enchanted vial. The worms are valued by spellcasters, especially necromancers, and anyone with an interest in Kyuss. In addition, medical researchers and healers may be interested in the worms for their ability to spread disease and reproduce rapidly. Harvesting Note: If the harvester fails the DC check by 5 or more, one of the worms jump at the creature. Unless the target succeeds on a DC 11 Dexterity saving throw, the worm latches onto the target's skin. The worm is a Tiny undead with AC 6, l hit point, a 2 (-4) in every ability score, and a speed of 1 foot. While on the target's skin, the worm can be killed by normal means or scraped off using an action. Otherwise, the worm burrows under the target's skin at the end of the target's next turn, dealing 1 piercing damage to it. At the end of each of its turns thereafter, the target takes 7 (2d6) necrotic damage per worm infesting it (maximum of 10d6). A worm-infested target dies if it drops to 0 hit points, then rises 10 minutes later as a spawn of Kyuss. If a worm-infested creature is targeted by an effect that cures disease or removes a curse, all the worms infesting it wither away.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Spawn of Kyuss",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978172,
+    "modifiedTime": 1688174978172,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "cAWv48vjmPobEjZS",
+  "_key": "!items!cAWv48vjmPobEjZS"
+}

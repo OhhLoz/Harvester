@@ -19,19 +19,21 @@ import {
 import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
-import { checkItemSourceLabel } from "./lib.js";
+import Logger from "./Logger.js";
+import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./lib.js";
 
 export class HarvestingHelpers {
   static async handlePreRollHarvestAction(options) {
     const { item } = options;
-    if (!checkItemSourceLabel(item, "Harvester")) {
+    if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
       return;
     }
     let targetedToken =
       canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
-    let targetedActor = game.actors.get(targetedToken.document.actorId);
-    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
-    let controlActor = game.actors.get(controlledToken.document.actorId);
+    let targetedActor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
+    let controlledToken =
+      canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ?? canvas.tokens.controlled[0];
+    let controlActor = game.actors.get(controlledToken.actor?.id ?? controlledToken.document?.actorId);
 
     let matchedItems = [];
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
@@ -66,7 +68,11 @@ export class HarvestingHelpers {
         skillCheck = skillCheckVerbose;
       } else {
         if (matchedItems[0].compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
-          skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
+          if (matchedItems[0]?.system?.unidentified?.description) {
+            skillCheckVerbose = matchedItems[0]?.system.unidentified.description;
+          } else {
+            skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
+          }
         } else {
           skillCheckVerbose = matchedItems[0].items.find((element) => element.type === "feat").name;
         }
@@ -102,12 +108,14 @@ export class HarvestingHelpers {
 
   static async handlePostRollHarvestAction(options) {
     const { actor, item, roll } = options;
-    if (!checkItemSourceLabel(item, "Harvester")) {
+    if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
       return;
     }
-    let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
-    let targetedActor = await game.actors.get(targetedToken.document.actorId);
-    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
+    let targetedToken =
+      canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
+    let targetedActor = await game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
+    let controlledToken =
+      canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ?? canvas.tokens.controlled[0];
 
     if (!validateAction(controlledToken, targetedToken, item.name)) {
       return false;
@@ -151,7 +159,7 @@ export class HarvestingHelpers {
           if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
             itemDC = parseInt(item.system.description.chat);
           } else {
-            itemDC = retrieveItemSourceLabelDC(item); //item.system.source.label.match(/\d+/g)[0];
+            itemDC = retrieveItemSourceLabelDC(item);
           }
           if (itemDC <= result.total) {
             harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
@@ -207,7 +215,7 @@ export class HarvestingHelpers {
       }
       // We juts get the first
       if (!tablesChecked || tablesChecked.length === 0) {
-        ui.notifications.warn(`No rolltable found for metadata sourceId '${sourceValue}'`);
+        Logger.warn(`No rolltable found for metadata sourceId '${sourceValue}'`, true);
         return [];
       }
       return tablesChecked;

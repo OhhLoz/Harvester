@@ -1,0 +1,40 @@
+{
+  "name": "Gray Render Liver",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-liver-red.webp",
+  "system": {
+    "description": {
+      "value": "A gray render's liver is a dark red, rubbery organ, about 2 feet long, that has many alchemical properties. It helps with bile production, synthesizing proteins, and has many other functions. In addition, the liver also has use in various arcane rituals, or can be used as a food item.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Gray Render",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 600,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976192,
+    "modifiedTime": 1688174976192,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ZyeCuXTeR7nEtdlD",
+  "_key": "!items!ZyeCuXTeR7nEtdlD"
+}

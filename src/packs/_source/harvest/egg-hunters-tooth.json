@@ -1,0 +1,40 @@
+{
+  "name": "Egg Hunter's Tooth",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+  "system": {
+    "description": {
+      "value": "An egg hunter has a small, hard, needle-like tooth that it uses to crack into an egg and suck out its contents. An adult egg hunter's tooth can range from 6 to 10 inches long. It can be fashioned into large needles. These needles can be used by weavers and tailors, but are also used by medical professionals, alchemists and artificers.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Egg Hunter Adult",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975317,
+    "modifiedTime": 1688174975317,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "hqeRhUnE6sgtzOu2",
+  "_key": "!items!hqeRhUnE6sgtzOu2"
+}

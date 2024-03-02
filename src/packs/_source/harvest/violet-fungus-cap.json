@@ -1,0 +1,40 @@
+{
+  "name": "Violet Fungus Cap",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The purple cap of a violet fungus is prized by both alchemists and poisoners.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Violet Fungus",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978725,
+    "modifiedTime": 1688174978725,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "NBOzHJ2KeTDb679l",
+  "_key": "!items!NBOzHJ2KeTDb679l"
+}

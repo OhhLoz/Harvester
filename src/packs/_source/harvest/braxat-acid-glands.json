@@ -1,0 +1,40 @@
+{
+  "name": "Braxat Acid Glands",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "The braxat's acid breath is caused by two glands secreting a mix of chemicals together as the creature exhales. The two glands are wrapped together in a thin membrane, which can be harvested if careful. Alchemists prize the membrane for the unique mix of chemicals it contains.",
+      "chat": "20",
+      "unidentified": "Medicine"
+    },
+    "source": "Braxat",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974288,
+    "modifiedTime": 1688174974288,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "wNyxJhQRz4H4L7Ps",
+  "_key": "!items!wNyxJhQRz4H4L7Ps"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Vampire Spawn Fang (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/teeth-pointed-white.webp",
+  "system": {
+    "description": {
+      "value": "A vampire spawn has a prominent pair of long fangs protruding down from its upper jaw. The sharp teeth are infused with dark necrotic energy, which can be harnessed by an adept spellcaster.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Vampire Spawn",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978650,
+    "modifiedTime": 1688174978650,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "KGw4l1GoTMCXtU16",
+  "_key": "!items!KGw4l1GoTMCXtU16"
+}

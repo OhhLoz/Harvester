@@ -1,0 +1,40 @@
+{
+  "name": "Gem Stalker Crystal Shards (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A gem stalker's skin is studded with bright, pulsing crystals (the crystals resemble the gems of the gem dragon that created the creature). When the creature is slain, most of the crystal begin to fade, but some may be recovered if harvested quickly. 1d8+4 crystals can be harvested from the creature, each radiating with psychic energy.Use: A creature can use an action to make a ranged attack to throw one of the crystals at a target within 10 feet, that it can see. On a successful hit, the target takes 7 (1d10 + 2) force damage, and one of the following effects occurs, determined by the kind of dragon that created the gem stalker:Amethyst. The target teleports to a random unoccupied space within 30 feet.Crystal. The creature that threw the crystal gains a number of temporary hit points equal to the damage dealt.Emerald. The target must roll a d4 and subtract the number from the next attack roll it makes.Sapphire. The target must succeed on a DC 13 Strength saving throw or be pushed horizontally up to 10 feet away from the creature and be knocked prone.Topaz. The target must succeed on a DC 13 Constitution saving throw or be poisoned until the end of its next turn.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Gem Stalker",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975731,
+    "modifiedTime": 1688174975731,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "SnHzBuYHSXrJYMxQ",
+  "_key": "!items!SnHzBuYHSXrJYMxQ"
+}

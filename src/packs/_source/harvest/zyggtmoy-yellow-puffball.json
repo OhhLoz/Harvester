@@ -1,0 +1,40 @@
+{
+  "name": "Zyggtmoy Yellow Puffball",
+  "type": "loot",
+  "img": "icons/commodities/materials/plant-sprout-teal.webp",
+  "system": {
+    "description": {
+      "value": "When Zuggtmoy is slain, there is a chance that it drops a soft, furry yellow ball, the size of a baseball. When placed on a surface for more than an hour, mold begins to form and spread out from the seed (this includes the interior of a backpack or other storage contain). The spore's purpose is unknown, and an identify spell will not reveal its true nature. The puffball is capable of giving rise to another Zuggtmoy. Only a powerful wizard or master horticulture/mycologist will know what the puffball is. The puffball has 100 hitpoints, and has a damage threshold of 30 (An object with a damage threshold has immunity to all damage unless it takes an amount of damage from a single attack or effect equal to or greater than its damage threshold). In d20 + 30 days, the puffball explodes, releasing a cloud of dust, that quickly disperses in the air. The dust contains millions of spores, one of which will give rise to another Zuggtmoy somewhere in the world.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Zuggtmoy",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979098,
+    "modifiedTime": 1688174979098,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "KMojdrjBcbeaQntc",
+  "_key": "!items!KMojdrjBcbeaQntc"
+}

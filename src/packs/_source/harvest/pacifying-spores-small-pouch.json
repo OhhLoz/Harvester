@@ -1,0 +1,40 @@
+{
+  "name": "Pacifying Spores (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "This item can only be harvested if the myconid hasn't used all of its Pacifying Spores abilities (3/day). These light pink spores have a sweet smell and a calming effect. Alchemists find these spores useful in creating concoctions. Some medicinal experts and healers can create painkiller and sedatives using the spores. Use: A creature can use an action to make a ranged attack to throw the pouch of pacifying spores at a target within 10 feet that it can see. The target must succeed on a DC 11 Constitution saving throw or be stunned for 1 minute. This effect ends if the target is attacked. At the end of each of its turns, the target can repeat the saving throw, ending the effect on a success.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Myconid Adult",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 9,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977226,
+    "modifiedTime": 1688174977226,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "mr3u9EEpUjwxOIIy",
+  "_key": "!items!mr3u9EEpUjwxOIIy"
+}

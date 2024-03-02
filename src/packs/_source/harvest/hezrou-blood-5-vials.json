@@ -1,0 +1,40 @@
+{
+  "name": "Hezrou Blood (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Hezrou blood is thick, black, and smells of rancid meat. Alchemists often use the blood to craft potions.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Hezrou",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976439,
+    "modifiedTime": 1688174976439,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "qr2IkyBMBzUR23XO",
+  "_key": "!items!qr2IkyBMBzUR23XO"
+}

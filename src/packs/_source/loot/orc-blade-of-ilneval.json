@@ -1,0 +1,106 @@
+{
+  "name": "Orc Blade of Ilneval",
+  "img": "icons/containers/bags/pack-simple-leather.webp",
+  "description": "true",
+  "results": [
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        1,
+        30
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 5d6]]{Copper}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "dhNoLHY0s6InOEyl",
+      "_key": "!tables.results!1u8FFwNEG1zzllrO.dhNoLHY0s6InOEyl"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        31,
+        60
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 4d6]]{Silver}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "U7QVcM3MymcRHdrD",
+      "_key": "!tables.results!1u8FFwNEG1zzllrO.U7QVcM3MymcRHdrD"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        61,
+        70
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 3d6]]{Electrum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "ATrIKnq96KoROkds",
+      "_key": "!tables.results!1u8FFwNEG1zzllrO.ATrIKnq96KoROkds"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        71,
+        95
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 3d6]]{Gold}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "Lh7LS0oS6kFQ1glW",
+      "_key": "!tables.results!1u8FFwNEG1zzllrO.Lh7LS0oS6kFQ1glW"
+    },
+    {
+      "type": 0,
+      "weight": 1,
+      "range": [
+        96,
+        100
+      ],
+      "drawn": false,
+      "documentCollection": "",
+      "text": "[[/r 1d6]]{Platinum}",
+      "img": "icons/commodities/currency/coins-assorted-mix-copper.webp",
+      "documentId": null,
+      "flags": {},
+      "_id": "d4liTCl1ZB3qEkWG",
+      "_key": "!tables.results!1u8FFwNEG1zzllrO.d4liTCl1ZB3qEkWG"
+    }
+  ],
+  "formula": "d100",
+  "replacement": false,
+  "displayRoll": false,
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688085767825,
+    "modifiedTime": 1688085767825,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "1u8FFwNEG1zzllrO",
+  "_key": "!tables!1u8FFwNEG1zzllrO"
+}

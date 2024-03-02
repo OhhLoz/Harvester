@@ -1,0 +1,40 @@
+{
+  "name": "Stench Kow Horns (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "Stench Kow horns can be used to create drinking horns, decorations, jewelry, weapon handles and simple tools (hoes, rakes, etc.).",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Stench Kow",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 15,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978290,
+    "modifiedTime": 1688174978290,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "UzCnHcHqzzJhAsKu",
+  "_key": "!items!UzCnHcHqzzJhAsKu"
+}

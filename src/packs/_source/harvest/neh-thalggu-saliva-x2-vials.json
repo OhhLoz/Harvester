@@ -1,0 +1,40 @@
+{
+  "name": "Neh-thalggu Saliva (x2 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Unlike the saliva of other creatures, the saliva of a Neh-thalggu preserves anything that it eats, most notably the brains that it consumes. Alchemist and healers can use the saliva to help potions and ingredients last longer.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Neh-thalggu",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977295,
+    "modifiedTime": 1688174977295,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "r3AVbiCya2R0nBhg",
+  "_key": "!items!r3AVbiCya2R0nBhg"
+}

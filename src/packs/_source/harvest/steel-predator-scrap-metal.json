@@ -1,0 +1,40 @@
+{
+  "name": "Steel Predator Scrap Metal",
+  "type": "loot",
+  "img": "icons/commodities/metal/barstock-broken-steel.webp",
+  "system": {
+    "description": {
+      "value": "The iron used to create a steel predator is forged with arcane power, and can be reforged by a master smith.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Steel Predator",
+    "quantity": 1,
+    "weight": 40,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978269,
+    "modifiedTime": 1688174978269,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "RjOTOG6WYmGcYIN9",
+  "_key": "!items!RjOTOG6WYmGcYIN9"
+}

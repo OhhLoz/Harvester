@@ -1,0 +1,40 @@
+{
+  "name": "Minotaur Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A minotaur's hide is similar to bovine hides, such as cows and bulls. It is known for its durability and resistance to moisture absorption. The hide can be used to make harnesses, bags, shoes and rugs.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Minotaur",
+    "quantity": 1,
+    "weight": 7,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977105,
+    "modifiedTime": 1688174977105,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "JRj8VrEtqeNtYFCG",
+  "_key": "!items!JRj8VrEtqeNtYFCG"
+}

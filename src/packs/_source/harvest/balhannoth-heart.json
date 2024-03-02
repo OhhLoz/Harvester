@@ -1,0 +1,40 @@
+{
+  "name": "Balhannoth Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "A balhannoth's heart beats with soft harmonic rhythm that hypnotically lures creatures to its lair. The tissue of the heart can be stretched into thin fibrous strings, which are valued by instrument makers and craftsmen.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Balhannoth",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973976,
+    "modifiedTime": 1688174973976,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ZvviV2UKXjl2SNg5",
+  "_key": "!items!ZvviV2UKXjl2SNg5"
+}

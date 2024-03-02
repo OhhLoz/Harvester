@@ -1,0 +1,40 @@
+{
+  "name": "Marut Scrap Metal (1d8)",
+  "type": "loot",
+  "img": "icons/commodities/metal/barstock-broken-steel.webp",
+  "system": {
+    "description": {
+      "value": "When a marut is destroyed, what remains is usually a husk of fused metal, onyx and mechanical components. However, it is often possible to find a few pieces of salvageable, magically infused scrap metal. The metal can be used to craft pieces of armor. When harvested, the creature yields 1d8 pieces of useable scrap metal. To craft a set of medium armor, a smith requires 4 pieces of marut scrap metal. A set of heavy armor requires 6 pieces.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Marut",
+    "quantity": 1,
+    "weight": 40,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976956,
+    "modifiedTime": 1688174976956,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "TO6QqCSrLjKbkvls",
+  "_key": "!items!TO6QqCSrLjKbkvls"
+}

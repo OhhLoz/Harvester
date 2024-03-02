@@ -1,0 +1,40 @@
+{
+  "name": "Gaj's Pineal Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "It may be possible to harvest the pineal gland from a Gaj's brain. The pineal gland is a small, pine-cone shaped lump of flesh. It is believed to be the center of psychic abilities, allowing the creature to paralyze others. Alchemists and spellcasters can use the gland to create paralytic potions and effects.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Gaj",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975689,
+    "modifiedTime": 1688174975689,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "3x07Zsd18cmgJhls",
+  "_key": "!items!3x07Zsd18cmgJhls"
+}

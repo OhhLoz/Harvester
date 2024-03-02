@@ -1,0 +1,40 @@
+{
+  "name": "Otyugh Pineal Gland (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The pineal gland is a small, pea-shaped spongy ball of flesh, located in the center of the creature's brain. This gland is believed to give the otyugh limited telepathic abilities, sending images and simple messages to other creatures. The gland is useful in the research community, but is also valued with alchemists and spellcasters.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Otyugh",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977603,
+    "modifiedTime": 1688174977603,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ze2A6PYvAbFzzzNn",
+  "_key": "!items!ze2A6PYvAbFzzzNn"
+}

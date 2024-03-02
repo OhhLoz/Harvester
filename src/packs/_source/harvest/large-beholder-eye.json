@@ -1,0 +1,40 @@
+{
+  "name": "Large Beholder Eye",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "The main beholder's eye is prized for its nullifying properties. Skilled magic users will pay a hefty sum for their acquisition.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Beholder",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 3500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974108,
+    "modifiedTime": 1688174974108,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "WlDHskzK6v32q46G",
+  "_key": "!items!WlDHskzK6v32q46G"
+}

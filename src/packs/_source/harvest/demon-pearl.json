@@ -1,0 +1,40 @@
+{
+  "name": "Demon Pearl",
+  "type": "loot",
+  "img": "icons/commodities/gems/pearls-white.webp",
+  "system": {
+    "description": {
+      "value": "Certain items eaten by a Yochlol never get fully digested. They sit in the Yochlol's stomach where they gather layer-after-layer of enzymes and ooze. The layers harden and smooth over time, resulting in a rough yellowish pearl with a red sheen.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Yochlol",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 300,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978934,
+    "modifiedTime": 1688174978934,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "yIFwEWPmPdkOaYfT",
+  "_key": "!items!yIFwEWPmPdkOaYfT"
+}

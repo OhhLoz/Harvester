@@ -1,0 +1,40 @@
+{
+  "name": "Chasme Proboscis",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The curved, horn-like nose that a chasme uses to suck blood from it's victims. This horn is often used in torture and bloodletting.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Chasme",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974524,
+    "modifiedTime": 1688174974524,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "O0M13k0fSofY89he",
+  "_key": "!items!O0M13k0fSofY89he"
+}

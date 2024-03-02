@@ -1,0 +1,40 @@
+{
+  "name": "Clay Golem Clay",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "When a clay golem crumbles to pieces, much of the clay is nothing but moist earth. However, it may be possible to find a few that retain some trace amounts of arcane energy. Clay can be used to make all kinds of things, such as statues and pottery. However, this magically infused clay can be used by master craftsmen to make weapons and tools.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Clay Golem",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974636,
+    "modifiedTime": 1688174974636,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "EyXHaUqDrjT2aTtZ",
+  "_key": "!items!EyXHaUqDrjT2aTtZ"
+}

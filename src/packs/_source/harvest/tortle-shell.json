@@ -1,0 +1,40 @@
+{
+  "name": "Tortle Shell",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-turtle-grey.webp",
+  "system": {
+    "description": {
+      "value": "A tortle has a rock-like shell, covering most of the creature's body. This shell can be used to craft pieces of armor and protective equipment.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Tortle",
+    "quantity": 1,
+    "weight": 50,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978528,
+    "modifiedTime": 1688174978528,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "BKsFxbdB4Kt0P6mY",
+  "_key": "!items!BKsFxbdB4Kt0P6mY"
+}

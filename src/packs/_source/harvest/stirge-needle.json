@@ -1,0 +1,40 @@
+{
+  "name": "Stirge Needle",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-spiked-brown.webp",
+  "system": {
+    "description": {
+      "value": "A stirge has a long, needle-like proboscis that it uses to suck its victim's blood. These needles are often repurposed and used by healers.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Stirge",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 8,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978292,
+    "modifiedTime": 1688174978292,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "fti4Ho9ADre3BWsd",
+  "_key": "!items!fti4Ho9ADre3BWsd"
+}

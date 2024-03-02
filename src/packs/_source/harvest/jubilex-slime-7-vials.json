@@ -1,0 +1,40 @@
+{
+  "name": "Jubilex Slime (7 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The greenish-black slime of Jubilex is a vial concoction of nauseating thick fluid. The slime has various alchemical properties, but can also be used to create a deadly poison. Proficiency with the poisoner kit can be used for harvesting this venom. On a successful check, the character harvests enough poison for a single dose. On a failed check, the character is unable to extract any poison. If the character fails the check by 5 or more, the character is subjected to the creature's poison. Refining the Poison: Once the poison is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 1 day and 250gp worth of material to create Jubilex Poison (DC 15 Poisoner Kit or Alchemist Supplies check). Jubilex Poison (Injury): A creature can use an action to coat 1 melee weapon, or 3 pieces of ammunition with this poison. The poison lasts for 1 minute, or until the poison successfully affects a target. A creature successfully hit must make a DC 12 Constitution saving throw, taking 12 (4d6) acid damage on a failed save, or half as much damage on a successful one. This poison can sell for 500gp.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Jubilex",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 350,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976681,
+    "modifiedTime": 1688174976681,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "bPODaEvkRfOnbZWg",
+  "_key": "!items!bPODaEvkRfOnbZWg"
+}

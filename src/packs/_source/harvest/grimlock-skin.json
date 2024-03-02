@@ -1,0 +1,40 @@
+{
+  "name": "Grimlock Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A grimlock's skin is dry and grey, almost hairless. It is not very useful to make leather, but it has many properties that may be of interest to researchers and those that study prolonged exposure to the Underdark.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Grimlock",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976275,
+    "modifiedTime": 1688174976275,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "cGhMQjJcvPDTuNBL",
+  "_key": "!items!cGhMQjJcvPDTuNBL"
+}

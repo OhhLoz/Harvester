@@ -1,0 +1,40 @@
+{
+  "name": "Faerie Dragon Blood (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The faerie dragon's blood is the same color as its skin, but with a rainbow sheen. Its blood has many alchemical properties, and is useful with the arcane community. Use: Attempting to transcribe a spell into your spellbook using faerie dragon blood, instead of regular ink, will half the time it takes to make that transcription.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Faerie Dragon",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975476,
+    "modifiedTime": 1688174975476,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "gWMPmRFRL699Ao6n",
+  "_key": "!items!gWMPmRFRL699Ao6n"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Griffon Feather (x10)",
+  "type": "loot",
+  "img": "icons/commodities/materials/feather-white.webp",
+  "system": {
+    "description": {
+      "value": "A griffon has large eagle-like feathers, often brown and white in color. The feathers can be used in crafts and decorations. Certain feathers are the perfect size for fletching arrows and bolts.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Griffon",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976259,
+    "modifiedTime": 1688174976259,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "LJywxt7XVZczfzGh",
+  "_key": "!items!LJywxt7XVZczfzGh"
+}

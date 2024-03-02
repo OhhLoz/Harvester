@@ -1,0 +1,40 @@
+{
+  "name": "Aarakocra Feathers (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Large ostentatious feathers of the Aarakocra, used in various items of clothing and accessories. Fletchers also use the feathers for making arrows.",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Aarakocra",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 8,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973387,
+    "modifiedTime": 1688174973387,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "O2foZcsOypyQ1AuV",
+  "_key": "!items!O2foZcsOypyQ1AuV"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Catoblepas Fur (large pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Thick and mangy red fur, often wet and matted. Being a natural barrier for the beast against the ravages of the swamp, the fur has strong filtration properties.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Catoblepas",
+    "quantity": 1,
+    "weight": 7,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974474,
+    "modifiedTime": 1688174974474,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "cvl5k6Re1YYuRqVW",
+  "_key": "!items!cvl5k6Re1YYuRqVW"
+}

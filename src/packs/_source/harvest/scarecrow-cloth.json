@@ -1,0 +1,40 @@
+{
+  "name": "Scarecrow Cloth",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The cloth \"\"skin\"\" of a scarecrow is typically made of a tan burlap fabric, crudely stitched together. The cloth is meant to magically contain the dark spirit that is bound inside the construct. The cloth can be pulled apart and the thread can be used for various purposes. Some artificers are able to create terrifying hoods and masks.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Scarecrow",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978005,
+    "modifiedTime": 1688174978005,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "40I1UMx40VuVc2cK",
+  "_key": "!items!40I1UMx40VuVc2cK"
+}

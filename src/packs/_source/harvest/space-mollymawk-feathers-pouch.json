@@ -1,0 +1,40 @@
+{
+  "name": "Space Mollymawk Feathers (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Space mollymawk feathers are light decorative plumage, that help the bird fly. The feathers are used in decorations, dusters, apparel and creating arrows and bolts.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Space Mollymawk",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978163,
+    "modifiedTime": 1688174978163,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "ovPHEzHB3CSSVDF7",
+  "_key": "!items!ovPHEzHB3CSSVDF7"
+}

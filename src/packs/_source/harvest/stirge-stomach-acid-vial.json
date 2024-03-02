@@ -1,0 +1,40 @@
+{
+  "name": "Stirge Stomach Acid (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A stirge's stomach acid is so exceptionally corrosive, that it can safely digest blood infected with diseases and bacteria that would be lethal to other creature. To harvest the item successfully, the stomach must be cut open carefully, without the acid flowing out. The stomach acid is useful to alchemist.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Stirge",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978296,
+    "modifiedTime": 1688174978296,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "qglGNOhQH68bc2ek",
+  "_key": "!items!qglGNOhQH68bc2ek"
+}

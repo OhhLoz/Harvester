@@ -1,0 +1,40 @@
+{
+  "name": "Dragonflesh Abomination Flesh",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The upper epidermis of a dragonflesh abomination is meaty red and covered in moist, irregular green scales. Strips of this flesh can be recovered and used by alchemists and healers. While the flesh and blood of these creatures is tainted, it can often be purified and used for healing purposes.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Dragonflesh Abomination",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975113,
+    "modifiedTime": 1688174975113,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "kicBI6xhWctF0KVZ",
+  "_key": "!items!kicBI6xhWctF0KVZ"
+}

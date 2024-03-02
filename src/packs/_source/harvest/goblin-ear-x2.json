@@ -1,0 +1,40 @@
+{
+  "name": "Goblin Ear (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/ear-grey-brown.webp",
+  "system": {
+    "description": {
+      "value": "Goblin ears have little use. However, most communities will take the ears as proof of killing the creature, and pay a small bounty.",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Goblin Boss",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976145,
+    "modifiedTime": 1688174976145,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "xZT9205hYD2FsNFu",
+  "_key": "!items!xZT9205hYD2FsNFu"
+}

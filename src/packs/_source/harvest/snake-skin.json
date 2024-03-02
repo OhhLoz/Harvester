@@ -1,0 +1,40 @@
+{
+  "name": "Snake Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A snake's skin can be used in the creation of boots, belts and other apparel. A regular size snake only has enough harvestable skin to create a single belt. Some tailors may refuse to purchase a single skin, as more skins are needed for most apparel.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Snake",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978131,
+    "modifiedTime": 1688174978131,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "WrNlHcj15Vsl7VXi",
+  "_key": "!items!WrNlHcj15Vsl7VXi"
+}

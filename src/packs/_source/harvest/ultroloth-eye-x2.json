@@ -1,0 +1,40 @@
+{
+  "name": "Ultroloth Eye (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "An ultroloth has two large ovoid eyes, often yellow in color, with no iris or pupils. An ultroloth can make the eyes become sparkling pools of light that can transfix other creatures and leave them reeling and helpless. Artificers value the eyes for their arcane power.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Ultraloth",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978593,
+    "modifiedTime": 1688174978593,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Fmrzhqxhp354X6AS",
+  "_key": "!items!Fmrzhqxhp354X6AS"
+}

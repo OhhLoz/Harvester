@@ -1,0 +1,40 @@
+{
+  "name": "Neh-thalggu Brain Sacks (x 1d12)",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "A Neh-thalggu has 1d12 clear bulbous sacs protruding from it's back, each containing a humanoid's brain. These brain sacs, coated in a Neh-thalggu's saliva, are useful in creating bags of preservation and similar magic items.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Neh-thalggu",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977297,
+    "modifiedTime": 1688174977297,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "TDlC2HoQFaiYtHxt",
+  "_key": "!items!TDlC2HoQFaiYtHxt"
+}

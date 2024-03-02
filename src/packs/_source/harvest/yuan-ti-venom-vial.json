@@ -1,0 +1,40 @@
+{
+  "name": "Yuan-ti Venom (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The venom of yuan-ti are all the same, but some are able to inject more of their poison than others, causing more damage. When the poison is extracted, it quickly loses its potency, but can be refined to last longer. Refining the Poison: Once the venom is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 1 day and 100gp worth of material to create Yuan-ti Poison (DC 14 Poisoner Kit or Alchemist Supplies check). Yuan-ti Poison (Injury): A creature can use an action to coat 1 melee weapon, or 3 pieces of ammunition with this poison. The poison lasts for 1 minute, or until the poison successfully affects a target. A creature successfully hit must make a DC 12 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. This poison usually sells for 200gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Yuan-ti Pit Master",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979066,
+    "modifiedTime": 1688174979066,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "vGS86gJVyropQ4DN",
+  "_key": "!items!vGS86gJVyropQ4DN"
+}

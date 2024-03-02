@@ -1,0 +1,40 @@
+{
+  "name": "Ancient Dragon Breath Pouch",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The dragon's breath weapon is caused by two glands secreting a mix of chemicals together as the dragon exhales. The two glands are wrapped together in a thin membrane or pouch, which can be harvested if careful. Alchemists prize the membrane for the unique mix of chemicals it contains. Magic users prize it for the magic it holds. Artificers prize it for what they can make from it. Use: The ancient dragons membrane may be thrown up to 20 feet and the pouch explodes upon impact. Any creature within 15 feet of impact must roll a DC 15 Dexterity saving throw or suffer 24 (6d8) damage (damage type depends on the dragon the membrane was harvested from).",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Ancient Dragon",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973655,
+    "modifiedTime": 1688174973655,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "wE7LSX2QRuwZnb7I",
+  "_key": "!items!wE7LSX2QRuwZnb7I"
+}

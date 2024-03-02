@@ -20,19 +20,20 @@ import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
 import Logger from "./Logger.js";
-import { checkItemSourceLabel } from "./lib.js";
+import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./lib.js";
 
 export class LootingHelpers {
   static async handlePreRollLootAction(options) {
     const { item } = options;
-    if (!checkItemSourceLabel(item, "Harvester")) {
+    if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
       return;
     }
     let targetedToken =
       canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
-    let targetedActor = game.actors.get(targetedToken.document.actorId);
-    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
-    let controlActor = game.actors.get(controlledToken.document.actorId);
+    let targetedActor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
+    let controlledToken =
+      canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ?? canvas.tokens.controlled[0];
+    let controlActor = game.actors.get(controlledToken.actor?.id ?? controlledToken.document?.actorId);
 
     let matchedItems = [];
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
@@ -89,15 +90,17 @@ export class LootingHelpers {
     item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
     harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
   }
-  /*
+
   static async handlePostRollLootAction(options) {
+    // NOTHING FOR NOW ???
+    /*
     const { actor, item, roll } = options;
-    if (!checkItemSourceLabel(item, "Harvester")) {
+    if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
       return;
     }
-    let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`));
-    let targetedActor = await game.actors.get(targetedToken.document.actorId);
-    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`));
+    let targetedToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
+    let targetedActor = await game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
+    let controlledToken = canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ?? canvas.tokens.controlled[0];
 
     if (!validateAction(controlledToken, targetedToken, item.name)) {
       return false;
@@ -141,7 +144,7 @@ export class LootingHelpers {
           if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
             itemDC = parseInt(item.system.description.chat);
           } else {
-            itemDC = retrieveItemSourceLabelDC(item); //item.system.source.label.match(/\d+/g)[0];
+            itemDC = retrieveItemSourceLabelDC(item);
           }
           if (itemDC <= result.total) {
             lootMessage += `<li>@UUID[${item.uuid}]</li>`;
@@ -168,8 +171,10 @@ export class LootingHelpers {
     ChatMessage.create(messageData);
 
     return false;
+    */
+    return false;
   }
-  */
+
   static formatLootRoll(result) {
     let rollTableResult = result.replace(/(\[\[\/r\s)?(\]\])?(\}$)?/g, "").split("}");
     let returnMap = new Map();

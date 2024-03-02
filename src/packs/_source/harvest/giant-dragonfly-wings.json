@@ -1,0 +1,40 @@
+{
+  "name": "Giant Dragonfly Wings",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "Giant dragonflies have two pairs of elongated membranous wings with many small veins that criss-cross in the wings. The membranous wings can be treated, making a lightweight, transparent fabric (but must be done within a few days, or the membrane hardens and becomes useless). Alternatively, various ingredients can be pulled from the wings and used in potions and elixirs.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Dragonfly",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975816,
+    "modifiedTime": 1688174975816,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "oO40BWyp1PGKK95R",
+  "_key": "!items!oO40BWyp1PGKK95R"
+}

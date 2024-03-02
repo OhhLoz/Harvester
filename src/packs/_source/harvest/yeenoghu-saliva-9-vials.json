@@ -1,0 +1,40 @@
+{
+  "name": "Yeenoghu Saliva (9 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The sticky, yellow saliva of Yeenoghu is believed to cause disease, making creatures go rabid and mad. The saliva also causes corrosive damage, and can eat through steel.Use: A creature can use an action to pour 1 vial of this corrosive saliva onto 3 pieces of magical ammunition or 1 magical melee weapon (the weapon must be magical to withstand the acid). The saliva lasts for 1 minute, or until a creature is exposed to the acid. Any creature successfully hit suffers an additional 2d10 acid damage.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Yeenoghu",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978897,
+    "modifiedTime": 1688174978897,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "nsUiSzjvBkaqh1zB",
+  "_key": "!items!nsUiSzjvBkaqh1zB"
+}

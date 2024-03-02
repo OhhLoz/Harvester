@@ -1,0 +1,40 @@
+{
+  "name": "Nabassu Blood (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Nabassu blood is a viscous black fluid, that appears to absorb light. The blood is believed to cause magical darkness, and is valued by alchemists and spellcasters.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Nabassu",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977244,
+    "modifiedTime": 1688174977244,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "FhvoJeCav0tqewB2",
+  "_key": "!items!FhvoJeCav0tqewB2"
+}

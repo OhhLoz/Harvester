@@ -1,0 +1,40 @@
+{
+  "name": "Wood Woad Seed",
+  "type": "loot",
+  "img": "icons/consumables/nuts/pistachios-nute-shell-green-white.webp",
+  "system": {
+    "description": {
+      "value": "A wood woad's seed resembles an acorn, but slightly smaller. The seed does not grow another wood woad (as is commonly believed), but is swimming with magical potential. The seeds are sought after by druids, healers and elven societies. Use: If this seed is planted within a forested area, and cultivated for the next year, it will become a fully grown tree. It will resemble the other trees in the area, but much larger. This magical tree acts as a protector of the surrounding forest. If a creature attempts to harm any tree within 1 mile of this magical protector, they must succeed on a DC 15 Wisdom saving throw or find themselves unable to willingly harm any vegetation for the next 24 hours. During this time, vegetation that grows within a mile of the magical tree becomes noticeably stronger and grows at twice its normal rate.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Wood Woad",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978845,
+    "modifiedTime": 1688174978845,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Bz7WyhfEYtZ6Bomy",
+  "_key": "!items!Bz7WyhfEYtZ6Bomy"
+}

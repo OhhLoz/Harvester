@@ -1,0 +1,40 @@
+{
+  "name": "Brown Scavver Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A brown scavver's skin is covered in small, rough, hard scales. Leatherworkers dry and treat the leather, then grind down the scales to make the leather smoother and easier to handle, giving it a pebbled appearance.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Brown Scavver",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974326,
+    "modifiedTime": 1688174974326,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "nvfDGLer4V3u5AqP",
+  "_key": "!items!nvfDGLer4V3u5AqP"
+}

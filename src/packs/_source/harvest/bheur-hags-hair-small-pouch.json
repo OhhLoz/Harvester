@@ -1,0 +1,40 @@
+{
+  "name": "Bheur Hag's Hair (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A bheur hag has a tangled mane of vine-like white hair. Due to the hag's abilities, the hair retains trace amounts of magic. Alchemists may find the hair useful in certain potions.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Bheur Hag",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974127,
+    "modifiedTime": 1688174974127,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "QJAW77sgFZDo8vNL",
+  "_key": "!items!QJAW77sgFZDo8vNL"
+}

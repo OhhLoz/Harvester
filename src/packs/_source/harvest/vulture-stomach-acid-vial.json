@@ -1,0 +1,40 @@
+{
+  "name": "Vulture Stomach Acid (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A vulture's stomach acid is so exceptionally corrosive, that it can safely digest putrid carcasses infected with diseases and bacteria that would be lethal to other scavengers. To harvest the item successfully, the stomach must be cut open without flooding it with blood. The stomach acid is useful to alchemist.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Vulture",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978747,
+    "modifiedTime": 1688174978747,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "O5RvWKDvpoNAw8rz",
+  "_key": "!items!O5RvWKDvpoNAw8rz"
+}

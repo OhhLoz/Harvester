@@ -1,0 +1,40 @@
+{
+  "name": "Wood Woad Bark",
+  "type": "loot",
+  "img": "icons/commodities/wood/bark-beige.webp",
+  "system": {
+    "description": {
+      "value": "A wood woad's bark resembles the bark of an oak tree, but writhes with an ancient arcane energy. The bark is as strong as iron, and can be crafted into armor.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Wood Woad",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978843,
+    "modifiedTime": 1688174978843,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "XhGdSQAeTxuafFKj",
+  "_key": "!items!XhGdSQAeTxuafFKj"
+}

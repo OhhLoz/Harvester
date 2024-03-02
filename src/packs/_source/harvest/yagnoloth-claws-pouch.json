@@ -1,0 +1,40 @@
+{
+  "name": "Yagnoloth Claws (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The claws of a yagnoloth are highly conductible and capable of delivering an electrified touch. The claws can be used by artificers as an electrical conductor, but can also be shaved-down into a powder to create a concoction that can deliver an electrical explosion.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Yagnoloth",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978886,
+    "modifiedTime": 1688174978886,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "IL2ZCMS4m3Nt3Icu",
+  "_key": "!items!IL2ZCMS4m3Nt3Icu"
+}

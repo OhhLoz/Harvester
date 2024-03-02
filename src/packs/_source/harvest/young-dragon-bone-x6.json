@@ -1,0 +1,40 @@
+{
+  "name": "Young Dragon Bone (x6)",
+  "type": "loot",
+  "img": "icons/commodities/bones/bones-stack-yellow.webp",
+  "system": {
+    "description": {
+      "value": "Dragon bones are infused with arcane and elemental magic, and tend to get harder as the dragon ages. Armorers and weaponsmiths that know how to work dragon bone tend to be masters of their craft.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Young Dragon",
+    "quantity": 1,
+    "weight": 14,
+    "price": {
+      "value": 350,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978948,
+    "modifiedTime": 1688174978948,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "muX3buNRYt8OUYgu",
+  "_key": "!items!muX3buNRYt8OUYgu"
+}

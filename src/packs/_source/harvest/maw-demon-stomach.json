@@ -1,0 +1,40 @@
+{
+  "name": "Maw Demon Stomach",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-stomach.webp",
+  "system": {
+    "description": {
+      "value": "While alive, the stomach of a maw demon acts as a portal to the Abyss. Spellcasters may be able to use the residual magic left in the stomach as a conduit for summoning lesser demons. Use: If you cast the summon lesser demons spell, you may expend this item instead of its usual material component. If you do, the CR limits of the summoned demons specified in the spell are doubled.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Maw Demon",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976980,
+    "modifiedTime": 1688174976980,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "fWrdu4Nlr7uTbWAA",
+  "_key": "!items!fWrdu4Nlr7uTbWAA"
+}

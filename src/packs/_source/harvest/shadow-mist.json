@@ -1,0 +1,40 @@
+{
+  "name": "Shadow Mist",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "When the creature is killed, its shadowy form breaks apart into a cloud of dark mist that quickly disperses. An adept harvester can perform a simple ritual that forces the mist to reform and gather inside a vial. The mist is primarily used in summoning and teleportation spells to the Shadowfell. Requires an enchanted vial.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Shadow",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978047,
+    "modifiedTime": 1688174978047,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "DCBTyBeRAZZdOebc",
+  "_key": "!items!DCBTyBeRAZZdOebc"
+}

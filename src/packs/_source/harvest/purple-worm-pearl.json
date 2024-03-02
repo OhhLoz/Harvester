@@ -1,0 +1,40 @@
+{
+  "name": "Purple Worm Pearl",
+  "type": "loot",
+  "img": "icons/commodities/gems/pearls-white.webp",
+  "system": {
+    "description": {
+      "value": "Small bits of stone often get caught in the creature's digestive tract, and are covered in a thick mucus that quickly hardens. Over time, the object is coated again and again, forming a glistening white pearl with a purple sheen.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Purple Worm",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977787,
+    "modifiedTime": 1688174977787,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "LFzCPuEcNSXPUzdC",
+  "_key": "!items!LFzCPuEcNSXPUzdC"
+}

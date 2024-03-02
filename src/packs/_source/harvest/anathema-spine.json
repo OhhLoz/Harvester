@@ -1,0 +1,40 @@
+{
+  "name": "Anathema Spine",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-spine-white.webp",
+  "system": {
+    "description": {
+      "value": "The long spine of an anathema is made of hundreds of vertebrae. Each vertebrae contains trace amounts of arcane power, making the entire spine a valuable commodity among spellcasters.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Yuan-ti Anathema",
+    "quantity": 1,
+    "weight": 45,
+    "price": {
+      "value": 2500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979013,
+    "modifiedTime": 1688174979013,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "LBqzCtLj5yjMpnNZ",
+  "_key": "!items!LBqzCtLj5yjMpnNZ"
+}

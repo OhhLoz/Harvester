@@ -1,0 +1,40 @@
+{
+  "name": "Rust Monster Chitin",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "A rust monster's exoskeleton is covered in the creature's corrosive fluids, which makes harvesting the item very difficult. If the shell is cleaned, and broken into smaller pieces, the hard chitinous plates can be used by armorers and alchemists.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Rust Monster",
+    "quantity": 1,
+    "weight": 16,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977965,
+    "modifiedTime": 1688174977965,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "zpujwDMrNJsyj90R",
+  "_key": "!items!zpujwDMrNJsyj90R"
+}

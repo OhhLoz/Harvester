@@ -1,0 +1,40 @@
+{
+  "name": "Baboon Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The baboon hide, while small, can be fashioned into small leather items.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Baboon",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973941,
+    "modifiedTime": 1688174973941,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Xph5YuMBeOXniYSh",
+  "_key": "!items!Xph5YuMBeOXniYSh"
+}

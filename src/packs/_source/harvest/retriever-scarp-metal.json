@@ -1,0 +1,40 @@
+{
+  "name": "Retriever Scarp Metal",
+  "type": "loot",
+  "img": "icons/commodities/metal/barstock-broken-steel.webp",
+  "system": {
+    "description": {
+      "value": "When destroyed, the metallic body of a retriever collapses and falls to pieces. Among it's remains various pieces of salvageable metal. This metal can be used by artificers, tinkerers, inventors, smiths and jewelers.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Retriever",
+    "quantity": 1,
+    "weight": 40,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977864,
+    "modifiedTime": 1688174977864,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "6mlSYuW5L8EUHG1w",
+  "_key": "!items!6mlSYuW5L8EUHG1w"
+}

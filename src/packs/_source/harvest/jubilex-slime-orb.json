@@ -1,0 +1,40 @@
+{
+  "name": "Jubilex Slime Orb",
+  "type": "loot",
+  "img": "icons/commodities/materials/slime-thick-blue.webp",
+  "system": {
+    "description": {
+      "value": "Somewhere inside Jubilex's gelatinous form is a misshapen orb of harder slime, about 6 inches wide. This ball of slime is difficult to find amidst the puddle of ooze that remains of the creature's body. This orb retains its shape because it contains a collection of nerves, and one could argue is the creature's brain. The orb can be used to create a powerful gem.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Jubilex",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976683,
+    "modifiedTime": 1688174976683,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "B1xgakJRn40ULSGE",
+  "_key": "!items!B1xgakJRn40ULSGE"
+}

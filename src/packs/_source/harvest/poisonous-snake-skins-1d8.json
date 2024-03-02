@@ -1,0 +1,40 @@
+{
+  "name": "Poisonous Snake Skins (1d8)",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A snake's skin can be used in the creation of boots, belts and other apparel. A single regular size snake only has enough harvestable skin to create a single belt.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Swarm of Poisonous Snakes",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978398,
+    "modifiedTime": 1688174978398,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "TFgNUDMK1GnYuV7i",
+  "_key": "!items!TFgNUDMK1GnYuV7i"
+}

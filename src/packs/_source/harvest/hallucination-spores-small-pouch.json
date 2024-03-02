@@ -1,0 +1,40 @@
+{
+  "name": "Hallucination Spores (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Myconid sovereigns have the ability to emit a spray of soft purple spores, that appear as a translucent purple mist. These spores can cause hallucinations among non-myconids. This item is sought after by shady alchemists and illicit drug dealers. Use: A creature can use an action to make a ranged attack and throw the pouch of hallucination spores at a target within 10 feet that it can see. The target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute. The poisoned target is incapacitated while it hallucinates. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Myconid Sovereign",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977228,
+    "modifiedTime": 1688174977228,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "hv4uh5dKOB1IezkQ",
+  "_key": "!items!hv4uh5dKOB1IezkQ"
+}

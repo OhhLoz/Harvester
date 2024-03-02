@@ -1,0 +1,40 @@
+{
+  "name": "Swarm Mentality",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Once destroyed, the latent psionic energy of a cranium rat swarm swirls around their corpses. If quickly harvested, this energy can be saved for future use. Using an enchanted vial allows the energy to be absorbed. Requires an enchanted vial. Use: This item has 1d4+2 doses. Using an action, a creature can inhale a small amount of the energy from the vial. For the next hour, this creature can use their reaction to nullify the effects of any divination spell, or any spell that would attempt to either read the creatures thoughts or sense their emotions. Once their reaction is used for this purpose, the ability is lost until another dose is inhaled.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Swarm of Cranium Rats",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 60,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978385,
+    "modifiedTime": 1688174978385,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Y6e4cOO7tkI3toO0",
+  "_key": "!items!Y6e4cOO7tkI3toO0"
+}

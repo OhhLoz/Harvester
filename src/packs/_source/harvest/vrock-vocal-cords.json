@@ -1,0 +1,40 @@
+{
+  "name": "Vrock Vocal Cords",
+  "type": "loot",
+  "img": "icons/consumables/meat/chicken-breast-raw-pink.webp",
+  "system": {
+    "description": {
+      "value": "Vrocks have the ability to emit a powerful screech that is capable of stunning their enemies. Skilled artificers and magic users may be able to use the vocal cords in their crafting.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Vrock",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978739,
+    "modifiedTime": 1688174978739,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "3HjuUreEnOX2Ng2H",
+  "_key": "!items!3HjuUreEnOX2Ng2H"
+}

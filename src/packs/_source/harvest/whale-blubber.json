@@ -1,0 +1,40 @@
+{
+  "name": "Whale Blubber",
+  "type": "loot",
+  "img": "icons/commodities/materials/slime-white.webp",
+  "system": {
+    "description": {
+      "value": "Harvesting whale blubber requires cutting out long strips of fat from the creature's belly. Failure occurs when the strips are cut too thin, or the fat is spoiled by hitting a major artery or organ. Whale blubber is primarily used to make oil and soap by boiling the fat for several hours.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Killer Whale",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976707,
+    "modifiedTime": 1688174976707,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "zUh3dI8wTsPkc8k2",
+  "_key": "!items!zUh3dI8wTsPkc8k2"
+}

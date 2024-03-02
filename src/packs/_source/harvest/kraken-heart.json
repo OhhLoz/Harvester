@@ -1,0 +1,40 @@
+{
+  "name": "Kraken Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "A kraken has three hearts, which is partly a consequence of having blue blood. Its two peripheral hearts pump blood through its gills, and its central heart circulates the oxygenated blood to the rest of the body. The ancient power that runs through a kraken's heart makes it a powerful artifact that can be harnessed by an experienced spellcaster. Use: A spellcaster may spend 1 year performing a daily ritual to transform a kraken's heart into a large, pulsing red crystal. When 3 of these crystals are placed within 5 miles of each other, the area is enclosed within an invisible magical field. Creatures are unaware of the field, and can pass through without limitation. The centroid of the triangle (the point at which the three medians meet) is a source of great power where a spellcaster can control the weather within the region. This place of power is often a wall-in protected area.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Kraken",
+    "quantity": 1,
+    "weight": 80,
+    "price": {
+      "value": 10000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976769,
+    "modifiedTime": 1688174976769,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "aUw4FCmQA62vLnul",
+  "_key": "!items!aUw4FCmQA62vLnul"
+}

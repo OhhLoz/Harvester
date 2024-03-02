@@ -1,0 +1,40 @@
+{
+  "name": "Pseudodragon Venom (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A pseudodragon has a tail with a barbed stinger, similar to a scorpion's tail. A skilled harvester may be able to extract some venom from the stinger, which is useful to alchemists and poisoners. Proficiency with the poisoner kit may be used for harvesting this venom. On a successful check, the character harvests the pseudodragon's venom that must be refined before producing 1 dose of Pseudodragon Poison (see below). On a failed check, the character is unable to extract the venom. If the character fails the check by 5 or more, the character is subjected to the creature's sting (see Pseudodragon Poison below). Refining the Poison: Once the venom is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 12 hours and 80gp worth of material to create Pseudodragon Poison (DC 10 Poisoner Kit or Alchemist Supplies check). Pseudodragon Poison (Injury): A creature hit with this poison must make a DC 11 Constitution saving throw or become poisoned for 1 hour. If the saving throw fails by 5 or more, the target falls unconscious for the same duration, or until it takes damage or another creature uses an action to shake it awake. This poison usually sells for 160gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Pseudodragon",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977743,
+    "modifiedTime": 1688174977743,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "GWbzm9Ug2C9WAz6k",
+  "_key": "!items!GWbzm9Ug2C9WAz6k"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Dire Troll Skin Strips (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A dire troll's skin is often green and covered in warts, pustules and mold. Despite its appearance, the skin has amazing healing properties, and is rumored to allow creatures to graft flesh and body parts. Samples of the vile flesh can be harvested and sold to healers.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Dire Troll",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974946,
+    "modifiedTime": 1688174974946,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "yVpwydmkmGx7VyeI",
+  "_key": "!items!yVpwydmkmGx7VyeI"
+}

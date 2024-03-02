@@ -1,0 +1,40 @@
+{
+  "name": "Tyrannosaurus Rex Teeth (x4)",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-jaw-white.webp",
+  "system": {
+    "description": {
+      "value": "The tyrannosaurus rex has serrated conical teeth. The largest can be as long as a foot. The teeth can be used to make small crafts and tools. Weaponsmiths can use the teeth to make sharp serrated dagger.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Tyrannosaurus Rex",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978574,
+    "modifiedTime": 1688174978574,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "WjjCiHxs52Rh0i7h",
+  "_key": "!items!WjjCiHxs52Rh0i7h"
+}

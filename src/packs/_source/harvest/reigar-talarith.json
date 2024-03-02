@@ -1,0 +1,40 @@
+{
+  "name": "Reigar Talarith",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A talarith (which can be a bracelet, brooch, diadem or necklace) can only be attuned to the reigar that created it, and loses all of its magic when its reigar is killed. In a few hours, it will slowly crumble to dust. However, with a careful ritual, the talarith may be removed from the talarith in tact. With its magic faded, this piece of jewelry is still unique and highly valued.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Reigar",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977853,
+    "modifiedTime": 1688174977853,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "Yf4Hpr6yg35G4lxz",
+  "_key": "!items!Yf4Hpr6yg35G4lxz"
+}

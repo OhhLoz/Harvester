@@ -1,0 +1,40 @@
+{
+  "name": "Succubus/Incubus Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A succubus/incubus has red blood swimming with dopamine and phenylethylamine, intoxicating chemicals often associated with love. The blood is often used by alchemists to create potions that stimulate the emotions.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Incubus",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976610,
+    "modifiedTime": 1688174976610,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "sM2MOFhyO92pHIaO",
+  "_key": "!items!sM2MOFhyO92pHIaO"
+}

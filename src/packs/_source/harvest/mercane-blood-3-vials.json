@@ -1,0 +1,40 @@
+{
+  "name": "Mercane Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Mercanes have white, translucent blood, swirling with glowing motes. The blood has many unique properties valued by alchemists. However, since killing a mercane is frowned upon by most merchants, many wont buy or sell the item. Reputable merchants know that mercane's specialize in trading magic items and artifacts, and they have a telepathic link to other mercanes, immediately warning of dangerous individuals.",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Mercane",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977024,
+    "modifiedTime": 1688174977024,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "8j9R8qJJCfNW4v4O",
+  "_key": "!items!8j9R8qJJCfNW4v4O"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Flesh Golem Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "The heart of a flesh golem is difficult to harvest, as the body begins to decay very quickly upon death. During the golem's creation, the creature is infused with an elemental spirit, traces of which remain embedded in the heart. The heart is useful to artificers and other spellcasters.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Flesh Golem",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975579,
+    "modifiedTime": 1688174975579,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "tUMzYFATxd3GUn20",
+  "_key": "!items!tUMzYFATxd3GUn20"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Clay Golem Core",
+  "type": "loot",
+  "img": "icons/commodities/gems/pearl-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "In the middle of a clay golem's chest is a lump of soft clay. When the creature is destroyed, its body crumbles to the floor, and this clay core can get lost among the clay remains. The core contains traces of magic from the Elemental Plane of Earth. Artificers and those that study the elemental planes have an interest in this item.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Clay Golem",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974630,
+    "modifiedTime": 1688174974630,
+    "lastModifiedBy": "packsebuilder0000"
+  },
+  "_id": "0FOmoYqVUFODlX2o",
+  "_key": "!items!0FOmoYqVUFODlX2o"
+}
