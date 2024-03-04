@@ -29,6 +29,7 @@ export class HarvestingHelpers {
       Logger.debug(`HarvestingHelpers | NO '${CONSTANTS.SOURCE_REFERENCE_MODULE}' found it on item`, item);
       return;
     }
+
     let targetedToken =
       canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
     let targetedActor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
@@ -69,7 +70,7 @@ export class HarvestingHelpers {
       );
       RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
         chatTitle: "Harvesting valuable from corpses.",
-        chatDescription: `<h3>Harvesting</h3><ul>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
+        chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
         chatButtonLabel: undefined,
         chatWhisper: undefined,
         chatSpeaker: undefined,
@@ -77,7 +78,6 @@ export class HarvestingHelpers {
       });
     } else {
       Logger.debug(`HarvestingHelpers | MatchedItems is not empty`);
-      let skillCheckVerbose;
 
       let harvestMessage = targetedToken.name;
       if (harvestMessage !== targetedActor.name) {
@@ -85,10 +85,11 @@ export class HarvestingHelpers {
       }
       if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
         Logger.debug(`HarvestingHelpers | BRT is enable`);
-        skillCheckVerbose = getProperty(matchedItems[0], `flags.better-rolltables.brt-skill-value`);
+        let skillCheckVerbose = getProperty(matchedItems[0], `flags.better-rolltables.brt-skill-value`);
         skillCheck = skillCheckVerbose;
       } else {
         Logger.debug(`HarvestingHelpers | STANDARD is enable`);
+        let skillCheckVerbose;
         if (matchedItems[0].compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
           if (matchedItems[0]?.system?.unidentified?.description) {
             skillCheckVerbose = matchedItems[0]?.system.unidentified.description;
@@ -140,6 +141,7 @@ export class HarvestingHelpers {
     Logger.debug(`HarvestingHelpers | START handlePostRollHarvestAction`);
     const { actor, item, roll } = options;
     if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
+      Logger.debug(`HarvestingHelpers | NO '${CONSTANTS.SOURCE_REFERENCE_MODULE}' found it on item`, item);
       return;
     }
     let targetedToken =
@@ -166,10 +168,6 @@ export class HarvestingHelpers {
     let result = roll;
     let harvesterMessage = "";
     let successArr = [];
-    let messageData = { content: "", whisper: {} };
-    if (SETTINGS.gmOnly) {
-      messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
-    }
 
     let matchedItems = [];
 
@@ -228,11 +226,15 @@ export class HarvestingHelpers {
       Logger.debug(`HarvestingHelpers | FINAL autoAddItems is ${SETTINGS.autoAddItems ? "enable" : "disable"}`);
       Logger.debug(`HarvestingHelpers | FINAL successArr is empty`);
       Logger.debug(
-        `HarvestingHelpers | FINAL After examining the corpse you realise there is nothing you can harvest.`
+        `HarvestingHelpers | FINAL After examining the corpse ${controlledToken.name} realise there is nothing to harvest from ${targetedToken.name}.`
       );
-      harvesterMessage = `After examining the corpse you realise there is nothing you can harvest.`;
+      harvesterMessage = `After examining the corpse ${controlledToken.name} realise there is nothing to harvest from ${targetedToken.name}.`;
     }
 
+    let messageData = { content: "", whisper: {} };
+    if (SETTINGS.gmOnly) {
+      messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
+    }
     if (harvesterMessage) {
       messageData.content = `<h3>Harvesting</h3><ul>${harvesterMessage}</ul>`;
     }
