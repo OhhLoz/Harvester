@@ -1,4 +1,5 @@
 import { CONSTANTS } from "./constants.js";
+import Logger from "./lib/Logger.js";
 
 export class RequestorHelpers {
   static LIMIT = {
@@ -71,14 +72,41 @@ export class RequestorHelpers {
 
     const actorSpeaker = tokenUseForRequest?.actor ? tokenUseForRequest.actor : actorUseForRequest;
 
+    const requestorImg = chatImg;
+    const requestorTitle = chatTitle ?? "This is a request title.";
+    const requestorDescription = chatDescription ?? "This is a request description.";
+    const requestorSpeaker = chatSpeaker ?? ChatMessage.getSpeaker({ actor: actorSpeaker });
+    const requestorWhisper = chatWhisper ?? ChatMessage.getWhisperRecipients(actorSpeaker.name);
+
+    Logger.debug(`START requestRollSkill`, {
+      chatTitle: chatTitle,
+      chatDescription: chatDescription,
+      chatButtonLabel: chatButtonLabel,
+      chatWhisper: chatWhisper,
+      chatSpeaker: chatSpeaker,
+      chatImg: chatImg,
+      skillDenomination: skillDenomination,
+      skillItem: skillItem,
+      skillCallback: skillCallback,
+      skillChooseModifier: skillChooseModifier,
+      limit: limit,
+      permission: permission,
+      actorSpeaker: actorSpeaker,
+      requestorImg: requestorImg,
+      requestorTitle: requestorTitle,
+      requestorDescription: requestorDescription,
+      requestorSpeaker: requestorSpeaker,
+      requestorWhisper: requestorWhisper,
+    });
+
     const rollObj = await Requestor.request({
-      img: chatImg,
-      title: chatTitle ?? "This is a request title.",
-      description: chatDescription ?? "This is a request description.",
+      img: requestorImg,
+      title: requestorTitle,
+      description: requestorDescription,
       popout: true,
       autoclose: true,
-      speaker: chatSpeaker ?? ChatMessage.getSpeaker({ actor: actorSpeaker }),
-      whisper: chatWhisper ?? ChatMessage.getWhisperRecipients(actorSpeaker.name),
+      speaker: requestorSpeaker,
+      whisper: requestorWhisper,
       buttonData: chatButtonLabel
         ? [
             {
@@ -149,14 +177,41 @@ export class RequestorHelpers {
     const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
     const actorSpeaker = token?.actor ? token.actor : actorUseForRequest;
 
+    const requestorImg = chatImg;
+    const requestorTitle = chatTitle ?? "This is a request title.";
+    const requestorDescription = chatDescription ?? "This is a request description.";
+    const requestorSpeaker = chatSpeaker ?? ChatMessage.getSpeaker({ actor: actorSpeaker });
+    const requestorWhisper = chatWhisper ?? ChatMessage.getWhisperRecipients(actorSpeaker.name);
+
+    Logger.debug(`START requestEmptyMessage`, {
+      chatTitle: chatTitle,
+      chatDescription: chatDescription,
+      chatButtonLabel: chatButtonLabel,
+      chatWhisper: chatWhisper,
+      chatSpeaker: chatSpeaker,
+      chatImg: chatImg,
+      skillDenomination: skillDenomination,
+      skillItem: skillItem,
+      skillCallback: skillCallback,
+      skillChooseModifier: skillChooseModifier,
+      limit: limit,
+      permission: permission,
+      actorSpeaker: actorSpeaker,
+      requestorImg: requestorImg,
+      requestorTitle: requestorTitle,
+      requestorDescription: requestorDescription,
+      requestorSpeaker: requestorSpeaker,
+      requestorWhisper: requestorWhisper,
+    });
+
     const rollObj = await Requestor.request({
-      img: chatImg,
-      title: chatTitle ?? "This is a request title.",
-      description: chatDescription ?? "This is a request description.",
+      img: requestorImg,
+      title: requestorTitle,
+      description: requestorDescription,
       popout: true,
       autoclose: true,
-      speaker: chatSpeaker ?? ChatMessage.getSpeaker({ actor: actorSpeaker }),
-      whisper: chatWhisper ?? ChatMessage.getWhisperRecipients(actorSpeaker.name),
+      speaker: requestorSpeaker,
+      whisper: requestorWhisper,
     });
     return rollObj;
   }

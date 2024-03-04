@@ -1,6 +1,5 @@
 import { registerSettings, SETTINGS } from "./scripts/settings.js";
 import { CONSTANTS } from "./scripts/constants.js";
-import { RequestorHelpers } from "./scripts/requestor-helpers.js";
 import API from "./scripts/api.js";
 import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./scripts/lib/lib.js";
 import Logger from "./scripts/lib/Logger.js";
@@ -44,11 +43,11 @@ Hooks.on("ready", async function () {
 
   currencyFlavors = Array.from(CONSTANTS.currencyMap.keys());
 
-  if (game.user?.isGM && !game.modules.get("socketlib")?.active)
+  if (game.user?.isGM && !game.modules.get("socketlib")?.active) {
     Logger.errorPermanent("socketlib must be installed & enabled for harvester to function correctly.", {
       permanent: true,
     });
-
+  }
   if (game.users.activeGM?.id !== game.user.id) {
     return;
   }
@@ -64,12 +63,18 @@ Hooks.once("socketlib.ready", () => {
 Hooks.on("createActor", async (actor, data, options, id) => {
   if (SETTINGS.autoAddActionGroup !== "None") {
     if (SETTINGS.autoAddActionGroup === "PCOnly" && actor.type === "npc") {
+      Logger.debug(`CREATE ACTOR Settings 'autoAddActionGroup=PCOnly' and 'actor.type=npc' do nothing`);
       return;
     }
+
+    Logger.debug(`CREATE ACTOR autoAddItems enable harvest action`);
     await addItemsToActor(actor, [harvestAction]);
     if (!SETTINGS.disableLoot) {
+      Logger.debug(`CREATE ACTOR autoAddItems disable loot`);
       await addItemsToActor(actor, [lootAction]);
     }
+  } else {
+    Logger.debug(`CREATE ACTOR Settings 'autoAddActionGroup=None' do nothing`);
   }
 });
 
@@ -274,11 +279,21 @@ export function addEffect(targetTokenId, actionName) {
 }
 
 export async function addItemsToActor(actor, itemsToAdd) {
+  if (SETTINGS.autoAddItemPiles && game.modules.get("item-piles")?.active) {
+    Logger.debug(`Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+    await _addItemsToActorWithItemPiles(actor, itemsToAdd);
+  } else {
+    Logger.debug(`Add items with STANDARD to ${actor.name}`, itemsToAdd);
+    await _addItemsToActorStandard(actor, itemsToAdd);
+  }
+}
+
+async function _addItemsToActorStandard(actor, itemsToAdd) {
   for (const item of itemsToAdd) {
     await _createItem(item, actor);
   }
 }
-export async function addItemsToActorWithItemPiles(targetedToken, itemsToAdd) {
+async function _addItemsToActorWithItemPiles(targetedToken, itemsToAdd) {
   game.itempiles.API.addItems(targetedToken, itemsToAdd, {
     mergeSimilarItems: true,
   });
