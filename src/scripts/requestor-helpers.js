@@ -127,8 +127,8 @@ export class RequestorHelpers {
                  * @param {object} options      Options which configure how the skill check is rolled
                  * @returns {Promise<D20Roll>}  A Promise which resolves to the created Roll instance
                  */
-                const roll = await actor.rollSkill(skillDenomination, {
-                  skillChooseModifier: skillChooseModifier,
+                const rollRef = await actor.rollSkill(skillDenominationRef, {
+                  skillChooseModifier: skillChooseModifierRef,
                 });
 
                 const options = {
@@ -137,20 +137,20 @@ export class RequestorHelpers {
                   actor,
                   event,
                   data: this,
-                  roll: roll,
-                  skillDenomination: skillDenomination,
-                  item: skillItem,
+                  roll: rollRef,
+                  skillDenomination: skillDenominationRef,
+                  item: skillItemRef,
                 };
 
                 // Little trick for call the exact api method from th current module
-                await game.modules.get(moduleId).api[skillCallback](options);
+                await game.modules.get(moduleIdRef).api[skillCallbackRef](options);
               },
               scope: {
-                moduleId: CONSTANTS.MODULE_ID,
-                skillDenomination: skillDenomination,
-                skillCallback: skillCallback,
-                skillItem: skillItem,
-                skillChooseModifier: skillChooseModifier,
+                moduleIdRef: CONSTANTS.MODULE_ID,
+                skillDenominationRef: skillDenomination,
+                skillCallbackRef: skillCallback,
+                skillItemRef: skillItem,
+                skillChooseModifierRef: skillChooseModifier,
               },
               messageOptions: {
                 speaker: ChatMessage.getSpeaker({ actor: actorSpeaker }),

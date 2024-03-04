@@ -88,6 +88,8 @@ export class LootingHelpers {
       } else {
         let normalLoot = matchedItems[0].description;
         if (normalLoot === "false" && !SETTINGS.lootBeasts) {
+          Logger.warn(`Normal loot is been disabled for this roll table ${matchedItems[0].name}`, true);
+          Logger.warn(`normalLoot=${normalLoot} and SETTINGS.lootBeasts=${SETTINGS.lootBeasts}`);
           let messageData = { content: "", whisper: {} };
           if (SETTINGS.gmOnly) {
             messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);

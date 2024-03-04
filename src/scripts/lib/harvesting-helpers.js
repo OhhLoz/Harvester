@@ -271,12 +271,18 @@ export class HarvestingHelpers {
       }
       // We juts get the first
       if (!tablesChecked || tablesChecked.length === 0) {
-        Logger.warn(`HarvestingHelpers | BRT No rolltable found for metadata sourceId '${sourceValue}'`, true);
+        Logger.warn(
+          `retrieveTablesHarvestWithBetterRollTables | BRT No rolltable found for metadata sourceId '${sourceValue}'`,
+          true
+        );
         return [];
       }
       return tablesChecked;
     } else {
-      Logger.warn(`HarvestingHelpers | BRT No rolltable found for action '${harvestAction.name}'`, true);
+      Logger.warn(
+        `retrieveTablesHarvestWithBetterRollTables | BRT No rolltable found for action '${harvestAction.name}'`,
+        true
+      );
       return [];
     }
   }
@@ -293,6 +299,10 @@ export class HarvestingHelpers {
 
       const tablesChecked = HarvestingHelpers.retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName);
       if (!tablesChecked || tablesChecked.length === 0) {
+        Logger.warn(
+          `retrieveItemsHarvestWithBetterRollTables | BRT No rolltable found for action '${actionName}'`,
+          true
+        );
         return [];
       }
       const tableHarvester = tablesChecked[0];
@@ -309,6 +319,10 @@ export class HarvestingHelpers {
       returnArr = checkCompendium(customLootCompendium, "name", actor.name);
 
       if (returnArr.length !== 0) {
+        Logger.warn(
+          `retrieveItemsHarvestWithBetterRollTables | BRT No rolltable found for action '${actionName}'`,
+          true
+        );
         return returnArr;
       }
 

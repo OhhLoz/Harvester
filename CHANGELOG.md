@@ -1,3 +1,7 @@
+### 1.7.4-5
+
+- Add logs and some minor bug fix
+
 ### 1.7.3
 
 - Many bug fixing and double checks
