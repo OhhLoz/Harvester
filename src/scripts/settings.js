@@ -116,6 +116,15 @@ export function registerSettings() {
     default: false,
   });
 
+  game.settings.register(CONSTANTS.MODULE_ID, "requestorPopout", {
+    name: "Requestor Popout",
+    hint: "W to create a popout of this message automatically for all users that can see it (true or false).",
+    scope: "client",
+    config: true,
+    default: false,
+    type: Boolean,
+  });
+
   game.settings.register(CONSTANTS.MODULE_ID, "debug", {
     name: "Enable debugging",
     hint: "Prints debug messages to the console",

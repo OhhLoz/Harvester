@@ -64,11 +64,12 @@ export class RequestorHelpers {
     optionsRequestor = {
       limit: RequestorHelpers.LIMIT.ONCE,
       permission: RequestorHelpers.PERMISSION.ALL,
+      popout: false,
     }
   ) {
     const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
     const { skillDenomination, skillItem, skillCallback, skillChooseModifier } = skillDetails;
-    const { limit, permission } = optionsRequestor;
+    const { limit, permission, popout } = optionsRequestor;
 
     const actorSpeaker = tokenUseForRequest?.actor ? tokenUseForRequest.actor : actorUseForRequest;
 
@@ -77,7 +78,7 @@ export class RequestorHelpers {
     const requestorDescription = chatDescription ?? "This is a request description.";
     const requestorSpeaker = chatSpeaker ?? ChatMessage.getSpeaker({ actor: actorSpeaker });
     const requestorWhisper = chatWhisper ?? ChatMessage.getWhisperRecipients(actorSpeaker.name);
-
+    const requestorPopout = popout;
     Logger.debug(`START requestRollSkill`, {
       chatTitle: chatTitle,
       chatDescription: chatDescription,
@@ -85,25 +86,30 @@ export class RequestorHelpers {
       chatWhisper: chatWhisper,
       chatSpeaker: chatSpeaker,
       chatImg: chatImg,
+
       skillDenomination: skillDenomination,
       skillItem: skillItem,
       skillCallback: skillCallback,
       skillChooseModifier: skillChooseModifier,
+
       limit: limit,
       permission: permission,
+      popout: popout,
+
       actorSpeaker: actorSpeaker,
       requestorImg: requestorImg,
       requestorTitle: requestorTitle,
       requestorDescription: requestorDescription,
       requestorSpeaker: requestorSpeaker,
       requestorWhisper: requestorWhisper,
+      requestorPopout: requestorPopout,
     });
 
     const rollObj = await Requestor.request({
       img: requestorImg,
       title: requestorTitle,
       description: requestorDescription,
-      popout: true,
+      popout: requestorPopout,
       autoclose: true,
       speaker: requestorSpeaker,
       whisper: requestorWhisper,
@@ -172,9 +178,16 @@ export class RequestorHelpers {
       chatWhisper: undefined,
       chatSpeaker: undefined,
       chatImg: undefined,
+    },
+    optionsRequestor = {
+      limit: RequestorHelpers.LIMIT.ONCE,
+      permission: RequestorHelpers.PERMISSION.ALL,
+      popout: false,
     }
   ) {
     const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
+    const { limit, permission, popout } = optionsRequestor;
+
     const actorSpeaker = token?.actor ? token.actor : actorUseForRequest;
 
     const requestorImg = chatImg;
@@ -182,6 +195,7 @@ export class RequestorHelpers {
     const requestorDescription = chatDescription ?? "This is a request description.";
     const requestorSpeaker = chatSpeaker ?? ChatMessage.getSpeaker({ actor: actorSpeaker });
     const requestorWhisper = chatWhisper ?? ChatMessage.getWhisperRecipients(actorSpeaker.name);
+    const requestorPopout = popout;
 
     Logger.debug(`START requestEmptyMessage`, {
       chatTitle: chatTitle,
@@ -190,25 +204,25 @@ export class RequestorHelpers {
       chatWhisper: chatWhisper,
       chatSpeaker: chatSpeaker,
       chatImg: chatImg,
-      skillDenomination: skillDenomination,
-      skillItem: skillItem,
-      skillCallback: skillCallback,
-      skillChooseModifier: skillChooseModifier,
+
       limit: limit,
       permission: permission,
+      popout: popout,
+
       actorSpeaker: actorSpeaker,
       requestorImg: requestorImg,
       requestorTitle: requestorTitle,
       requestorDescription: requestorDescription,
       requestorSpeaker: requestorSpeaker,
       requestorWhisper: requestorWhisper,
+      requestorPopout: requestorPopout,
     });
 
     const rollObj = await Requestor.request({
       img: requestorImg,
       title: requestorTitle,
       description: requestorDescription,
-      popout: true,
+      popout: requestorPopout,
       autoclose: true,
       speaker: requestorSpeaker,
       whisper: requestorWhisper,

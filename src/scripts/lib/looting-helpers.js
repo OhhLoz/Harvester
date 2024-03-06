@@ -224,11 +224,13 @@ export class LootingHelpers {
       await addItemsToActor(controlledToken.actor, successArr);
     } else {
       Logger.debug(`LootingHelpers | FINAL autoAddItems is ${SETTINGS.autoAddItems ? "enable" : "disable"}`);
-      Logger.debug(`LootingHelpers | FINAL successArr is empty`);
+      Logger.debug(`LootingHelpers | FINAL successArr is empty ? ${successArr?.length > 0 ? "false" : "true"}`);
       Logger.debug(
         `LootingHelpers | FINAL After examining the corpse ${controlledToken.name} realise there is nothing to loot from ${targetedToken.name}.`
       );
-      lootMessage = `After examining the corpse ${controlledToken.name} realise there is nothing to loot from ${targetedToken.name}.`;
+      if(successArr?.length <= 0) {
+        lootMessage = `After examining the corpse ${controlledToken.name} realise there is nothing to loot from ${targetedToken.name}.`;
+      }
     }
 
     let messageData = { content: "", whisper: {} };

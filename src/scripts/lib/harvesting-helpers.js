@@ -129,6 +129,9 @@ export class HarvestingHelpers {
           skillItem: item,
           skillCallback: "handlePostRollHarvestAction",
           skillChooseModifier: SETTINGS.allowAbilityChange,
+        },
+        {
+          popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
         }
       );
     }
@@ -224,11 +227,13 @@ export class HarvestingHelpers {
       await addItemsToActor(controlledToken.actor, successArr);
     } else {
       Logger.debug(`HarvestingHelpers | FINAL autoAddItems is ${SETTINGS.autoAddItems ? "enable" : "disable"}`);
-      Logger.debug(`HarvestingHelpers | FINAL successArr is empty`);
+      Logger.debug(`HarvestingHelpers | FINAL successArr is empty ? ${successArr?.length > 0 ? "false" : "true"}`);
       Logger.debug(
         `HarvestingHelpers | FINAL After examining the corpse ${controlledToken.name} realise there is nothing to harvest from ${targetedToken.name}.`
       );
-      harvesterMessage = `After examining the corpse ${controlledToken.name} realise there is nothing to harvest from ${targetedToken.name}.`;
+      if (successArr?.length <= 0) {
+        harvesterMessage = `After examining the corpse ${controlledToken.name} realise there is nothing to harvest from ${targetedToken.name}.`;
+      }
     }
 
     let messageData = { content: "", whisper: {} };
