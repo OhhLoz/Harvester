@@ -1,4 +1,4 @@
-### 1.7.6
+### 1.7.6-7
 
 - Fix wrong "formatDragon" import from https://github.com/OhhLoz/Harvester/issues/37#issuecomment-1981881466
 
