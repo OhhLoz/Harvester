@@ -36,3 +36,13 @@ export function retrieveItemSourceLabelDC(item) {
   }
   return itemDC ?? 0;
 }
+
+export function formatDragon(actorName) {
+  let actorSplit = actorName.split(" ");
+  CONSTANTS.dragonIgnoreArr.forEach((element) => {
+    actorSplit = actorSplit.filter((e) => e !== element);
+  });
+
+  actorSplit = actorSplit.join(" ");
+  return actorSplit;
+}

@@ -1,7 +1,12 @@
 import { registerSettings, SETTINGS } from "./scripts/settings.js";
 import { CONSTANTS } from "./scripts/constants.js";
 import API from "./scripts/api.js";
-import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./scripts/lib/lib.js";
+import {
+  checkItemSourceLabel,
+  retrieveItemSourceLabelDC,
+  retrieveItemSourceLabel,
+  formatDragon,
+} from "./scripts/lib/lib.js";
 import Logger from "./scripts/lib/Logger.js";
 import { HarvestingHelpers } from "./scripts/lib/harvesting-helpers.js";
 import { LootingHelpers } from "./scripts/lib/looting-helpers.js";
@@ -237,16 +242,6 @@ function checkEffect(token, effectName) {
     if (element.name === effectName) returnBool = true;
   });
   return returnBool;
-}
-
-function formatDragon(actorName) {
-  let actorSplit = actorName.split(" ");
-  CONSTANTS.dragonIgnoreArr.forEach((element) => {
-    actorSplit = actorSplit.filter((e) => e !== element);
-  });
-
-  actorSplit = actorSplit.join(" ");
-  return actorSplit;
 }
 
 function resetToDefault(item) {
