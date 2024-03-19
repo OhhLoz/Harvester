@@ -42,6 +42,8 @@ export class LootingHelpers {
       return;
     }
 
+    let actorName = targetedActor ? targetedActor.name : targetedToken.name;
+
     if (!controlledToken) {
       Logger.warn(`LootingHelpers | NO controlled token is been found`, true);
       return;
@@ -51,12 +53,12 @@ export class LootingHelpers {
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
       Logger.debug(`LootingHelpers | Searching MatchedItems with BRT`);
       // TODO
-      //matchedItems = retrieveTablesLootWithBetterRollTables(targetedActor, lootAction.name || item.name);
-      matchedItems = searchCompendium(targetedActor, lootAction.name || item.name);
+      //matchedItems = retrieveTablesLootWithBetterRollTables(actorName, lootAction.name || item.name);
+      matchedItems = searchCompendium(actorName, lootAction.name || item.name);
       Logger.debug(`LootingHelpers | Found MatchedItems with BRT (${matchedItems?.length})`, matchedItems);
     } else {
       Logger.debug(`LootingHelpers | Searching MatchedItems with STANDARD`);
-      matchedItems = searchCompendium(targetedActor, lootAction.name || item.name);
+      matchedItems = searchCompendium(actorName, lootAction.name || item.name);
       Logger.debug(`LootingHelpers | Found MatchedItems with STANDARD (${matchedItems?.length})`, matchedItems);
     }
 
@@ -77,8 +79,8 @@ export class LootingHelpers {
       Logger.debug(`LootingHelpers | MatchedItems is not empty`);
 
       let lootMessage = targetedToken.name;
-      if (lootMessage !== targetedActor.name) {
-        lootMessage += ` (${targetedActor.name})`;
+      if (lootMessage !== actorName) {
+        lootMessage += ` (${actorName})`;
       }
       // TODO Loot integration with BRT
       if (false) {
@@ -155,6 +157,8 @@ export class LootingHelpers {
       return;
     }
 
+    let actorName = targetedActor ? targetedActor.name : targetedToken.name;
+
     if (!controlledToken) {
       Logger.warn(`LootingHelpers | NO controlled token is been found`, true);
       return;
@@ -176,7 +180,7 @@ export class LootingHelpers {
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
       Logger.debug(`LootingHelpers | BRT is enable, and has a rollTable`);
       matchedItems = await retrieveItemsLootWithBetterRollTables(
-        targetedActor,
+        actorName,
         item.name,
         result.total,
         getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)
@@ -184,23 +188,23 @@ export class LootingHelpers {
 
       matchedItems.forEach((item) => {
         Logger.debug(`HarvestingHelpers | BRT check matchedItem`, item);
-        if (item.type === "loot") {
+        // if (item.type === "loot") {
           lootMessage += `<li>@UUID[${item.uuid}]</li>`;
           Logger.debug(`LootingHelpers | BRT the item ${item.name} is been added as success`);
           successArr.push(item);
-        } else {
-          Logger.warn(`LootingHelpers | BRT the type item is not 'loot'`);
-        }
+        // } else {
+        //   Logger.warn(`LootingHelpers | BRT the type item is not 'loot'`);
+        // }
         Logger.debug(`LootingHelpers | BRT successArr`, successArr);
       });
     } else {
-      matchedItems = await searchCompendium(targetedActor, item.name);
+      matchedItems = await searchCompendium(actorName, item.name);
       if (matchedItems[0].compendium.metadata.id === CONSTANTS.customCompendiumId) {
         matchedItems = matchedItems[0].items;
       }
       matchedItems.forEach((item) => {
         Logger.debug(`LootingHelpers | STANDARD check matchedItem`, item);
-        if (item.type === "loot") {
+        // if (item.type === "loot") {
           let itemDC = 0;
           if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
             itemDC = parseInt(item.system.description.chat);
@@ -212,9 +216,9 @@ export class LootingHelpers {
             Logger.debug(`LootingHelpers | STANDARD the item ${item.name} is been added as success`);
             successArr.push(item.toObject());
           }
-        } else {
-          Logger.warn(`LootingHelpers | STANDARD the type item is not 'loot'`);
-        }
+        // } else {
+        //  Logger.warn(`LootingHelpers | STANDARD the type item is not 'loot'`);
+        // }
         Logger.debug(`LootingHelpers | STANDARD successArr`, successArr);
       });
     }
