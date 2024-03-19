@@ -128,11 +128,6 @@ Hooks.on("dnd5e.preDisplayCard", function (item, chatData, options) {
 
 export function validateAction(controlToken, targetedToken, actionName) {
   let measuredDistance = canvas.grid.measureDistance(controlToken.center, targetedToken.center);
-  let targetSize = CONSTANTS.sizeHashMap.get(targetedToken.actor.system.traits.size);
-  if (measuredDistance > targetSize && SETTINGS.enforceRange) {
-    Logger.warn("You must be in range to " + actionName, true);
-    return false;
-  }
 
   let actor = null;
   if (!isEmptyObject(targetedToken.document.delta?.system)) {
@@ -148,6 +143,13 @@ export function validateAction(controlToken, targetedToken, actionName) {
     Logger.warn(targetedToken.name + " has not data to retrieve", true);
     return false;
   }
+
+  let targetSize = CONSTANTS.sizeHashMap.get(actor.system.traits?.size || 1);
+  if (measuredDistance > targetSize && SETTINGS.enforceRange) {
+    Logger.warn("You must be in range to " + actionName, true);
+    return false;
+  }
+
   if (actor.system.attributes.hp.value !== 0) {
     Logger.warn(targetedToken.name + " is not dead", true);
     return false;
@@ -167,20 +169,19 @@ export function validateAction(controlToken, targetedToken, actionName) {
   return true;
 }
 
-export function searchCompendium(actor, actionName) {
+export function searchCompendium(actorName, actionName) {
   let returnArr = [];
-  let actorName = actor.name;
   if (actorName.includes("Dragon")) {
     actorName = formatDragon(actorName);
   }
   if (actionName === harvestAction.name) {
-    returnArr = checkCompendium(customCompendium, "name", actor.name);
+    returnArr = checkCompendium(customCompendium, "name", actorName);
 
     if (returnArr.length !== 0) return returnArr;
 
     returnArr = checkCompendium(harvestCompendium, "system.source.label", actorName);
   } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
-    returnArr = checkCompendium(customLootCompendium, "name", actor.name);
+    returnArr = checkCompendium(customLootCompendium, "name", actorName);
 
     if (returnArr.length !== 0) {
       return returnArr;

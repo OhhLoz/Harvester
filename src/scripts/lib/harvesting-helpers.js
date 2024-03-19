@@ -42,6 +42,8 @@ export class HarvestingHelpers {
       return;
     }
 
+    let actorName = targetedActor ? targetedActor.name : targetedToken.name;
+
     if (!controlledToken) {
       Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
       return;
@@ -51,13 +53,13 @@ export class HarvestingHelpers {
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
       Logger.debug(`HarvestingHelpers | Searching MatchedItems with BRT`);
       matchedItems = HarvestingHelpers.retrieveTablesHarvestWithBetterRollTables(
-        targetedActor,
+        actorName,
         harvestAction.name || item.name
       );
       Logger.debug(`HarvestingHelpers | Found MatchedItems with BRT (${matchedItems?.length})`, matchedItems);
     } else {
       Logger.debug(`HarvestingHelpers | Searching MatchedItems with STANDARD`);
-      matchedItems = searchCompendium(targetedActor, harvestAction.name || item.name);
+      matchedItems = searchCompendium(actorName, harvestAction.name || item.name);
       Logger.debug(`HarvestingHelpers | Found MatchedItems with STANDARD (${matchedItems?.length})`, matchedItems);
     }
 
@@ -80,8 +82,8 @@ export class HarvestingHelpers {
       Logger.debug(`HarvestingHelpers | MatchedItems is not empty`);
 
       let harvestMessage = targetedToken.name;
-      if (harvestMessage !== targetedActor.name) {
-        harvestMessage += ` (${targetedActor.name})`;
+      if (harvestMessage !== actorName) {
+        harvestMessage += ` (${actorName})`;
       }
       if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
         Logger.debug(`HarvestingHelpers | BRT is enable`);
@@ -158,6 +160,8 @@ export class HarvestingHelpers {
       return;
     }
 
+    let actorName = targetedActor ? targetedActor.name : targetedToken.name;
+
     if (!controlledToken) {
       Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
       return;
@@ -179,7 +183,7 @@ export class HarvestingHelpers {
     if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
       Logger.debug(`HarvestingHelpers | BRT is enable, and has a rollTable`);
       matchedItems = await HarvestingHelpers.retrieveItemsHarvestWithBetterRollTables(
-        targetedActor,
+        actorName,
         item.name,
         result.total,
         getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`)
@@ -187,37 +191,37 @@ export class HarvestingHelpers {
 
       matchedItems.forEach((item) => {
         Logger.debug(`HarvestingHelpers | BRT check matchedItem`, item);
-        if (item.type === "loot") {
-          harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
-          Logger.debug(`HarvestingHelpers | BRT the item ${item.name} is been added as success`);
-          successArr.push(item);
-        } else {
-          Logger.warn(`HarvestingHelpers | BRT the type item is not 'loot'`);
-        }
+        // if (item.type === "loot") {
+        harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
+        Logger.debug(`HarvestingHelpers | BRT the item ${item.name} is been added as success`);
+        successArr.push(item);
+        // } else {
+        //   Logger.warn(`HarvestingHelpers | BRT the type item is not 'loot'`);
+        // }
         Logger.debug(`HarvestingHelpers | BRT successArr`, successArr);
       });
     } else {
-      matchedItems = await searchCompendium(targetedActor, item.name);
+      matchedItems = await searchCompendium(actorName, item.name);
       if (matchedItems[0].compendium.metadata.id === CONSTANTS.customCompendiumId) {
         matchedItems = matchedItems[0].items;
       }
       matchedItems.forEach((item) => {
         Logger.debug(`HarvestingHelpers | STANDARD check matchedItem`, item);
-        if (item.type === "loot") {
-          let itemDC = 0;
-          if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
-            itemDC = parseInt(item.system.description.chat);
-          } else {
-            itemDC = retrieveItemSourceLabelDC(item);
-          }
-          if (itemDC <= result.total) {
-            harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
-            Logger.debug(`HarvestingHelpers | STANDARD the item ${item.name} is been added as success`);
-            successArr.push(item.toObject());
-          }
+        // if (item.type === "loot") {
+        let itemDC = 0;
+        if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
+          itemDC = parseInt(item.system.description.chat);
         } else {
-          Logger.warn(`HarvestingHelpers | STANDARD the type item is not 'loot'`);
+          itemDC = retrieveItemSourceLabelDC(item);
         }
+        if (itemDC <= result.total) {
+          harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
+          Logger.debug(`HarvestingHelpers | STANDARD the item ${item.name} is been added as success`);
+          successArr.push(item.toObject());
+        }
+        // } else {
+        //   Logger.warn(`HarvestingHelpers | STANDARD the type item is not 'loot'`);
+        // }
         Logger.debug(`HarvestingHelpers | STANDARD successArr`, successArr);
       });
     }
@@ -249,8 +253,7 @@ export class HarvestingHelpers {
     return false;
   }
 
-  static retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName) {
-    let actorName = targetedActor.name;
+  static retrieveTablesHarvestWithBetterRollTables(actorName, actionName) {
     if (actorName.includes("Dragon")) {
       actorName = formatDragon(actorName);
     }
@@ -292,7 +295,7 @@ export class HarvestingHelpers {
     }
   }
 
-  static async retrieveItemsHarvestWithBetterRollTables(targetedActor, actionName, dcValue = null, skillDenom = null) {
+  static async retrieveItemsHarvestWithBetterRollTables(actorName, actionName, dcValue = null, skillDenom = null) {
     let returnArr = [];
     if (actionName === harvestAction.name) {
       if (!dcValue) {
@@ -302,7 +305,7 @@ export class HarvestingHelpers {
         skillDenom = "";
       }
 
-      const tablesChecked = HarvestingHelpers.retrieveTablesHarvestWithBetterRollTables(targetedActor, actionName);
+      const tablesChecked = HarvestingHelpers.retrieveTablesHarvestWithBetterRollTables(actorName, actionName);
       if (!tablesChecked || tablesChecked.length === 0) {
         Logger.warn(
           `retrieveItemsHarvestWithBetterRollTables | BRT No rolltable found for action '${actionName}'`,

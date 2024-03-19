@@ -1,3 +1,8 @@
+### 1.7.9
+
+- Some check on the actorName for better readibility
+- Remove check for "Loot" type as asked on https://github.com/OhhLoz/Harvester/issues/35
+
 ### 1.7.8
 
 - Add module settings for remove popout from the requestor module asked from https://github.com/OhhLoz/Harvester/issues/37
