@@ -1,13 +1,133 @@
-import { RollTableToActorHelpers } from "../apps/rolltable-to-actor/rolltable-to-actor-helpers";
-import { BetterRollTable } from "../core/brt-table";
 import Logger from "./Logger";
 import { RetrieveHelpers } from "./retrieve-helpers";
 
 export default class ItemPilesHelpers {
+  static PILE_DEFAULTS = {
+    // Core settings
+    enabled: false,
+    type: "pile",
+    distance: 1,
+    macro: "",
+    deleteWhenEmpty: "default",
+    canStackItems: "yes",
+    canInspectItems: true,
+    displayItemTypes: false,
+    description: "",
+
+    // Overrides
+    overrideItemFilters: false,
+    overrideCurrencies: false,
+    overrideSecondaryCurrencies: false,
+    requiredItemProperties: [],
+
+    // Token settings
+    displayOne: false,
+    showItemName: false,
+    overrideSingleItemScale: false,
+    singleItemScale: 1.0,
+
+    // Sharing settings
+    shareItemsEnabled: false,
+    shareCurrenciesEnabled: true,
+    takeAllEnabled: false,
+    splitAllEnabled: true,
+    activePlayers: false,
+
+    // Container settings
+    closed: false,
+    locked: false,
+    closedImage: "",
+    closedImages: [],
+    emptyImage: "",
+    emptyImages: [],
+    openedImage: "",
+    openedImages: [],
+    lockedImage: "",
+    lockedImages: [],
+    closeSound: "",
+    closeSounds: [],
+    openSound: "",
+    openSounds: [],
+    lockedSound: "",
+    lockedSounds: [],
+    unlockedSound: "",
+    unlockedSounds: [],
+
+    // Merchant settings
+    merchantImage: "",
+    infiniteQuantity: false,
+    infiniteCurrencies: true,
+    purchaseOnly: false,
+    hideNewItems: false,
+    hideItemsWithZeroCost: false,
+    keepZeroQuantity: false,
+    onlyAcceptBasePrice: true,
+    displayQuantity: "yes",
+    buyPriceModifier: 1,
+    sellPriceModifier: 0.5,
+    itemTypePriceModifiers: [],
+    actorPriceModifiers: [],
+    tablesForPopulate: [],
+    merchantColumns: [],
+    hideTokenWhenClosed: false,
+    openTimes: {
+      enabled: false,
+      status: "open",
+      /*
+			auto = rely on simple calendar
+			open = always open
+			closed = always closed
+			 */
+      open: {
+        hour: 9,
+        minute: 0,
+      },
+      close: {
+        hour: 18,
+        minute: 0,
+      },
+    },
+    closedDays: [],
+    closedHolidays: [],
+    refreshItemsOnOpen: false,
+    refreshItemsDays: [],
+    refreshItemsHolidays: [],
+    logMerchantActivity: false,
+
+    // Vault settings
+    cols: 10,
+    rows: 5,
+    restrictVaultAccess: false,
+    vaultExpansion: false,
+    baseExpansionCols: 0,
+    baseExpansionRows: 0,
+    vaultAccess: [],
+    logVaultActions: false,
+    vaultLogType: "user_actor",
+  };
+
   static FLAGS = {
+    VERSION: `flags.item-piles.version`,
+    PILE: `flags.item-piles.data`,
     ITEM: `flags.item-piles.item`,
+    NO_VERSION: `flags.item-piles.-=version`,
+    NO_PILE: `flags.item-piles.-=data`,
+    NO_ITEM: `flags.item-piles.-=item`,
+    LOG: `flags.item-piles.log`,
+    SHARING: `flags.item-piles.sharing`,
+    PUBLIC_TRADE_ID: `flags.item-piles.publicTradeId`,
+    TRADE_USERS: `flags.item-piles.tradeUsers`,
+    TEMPORARY_ITEM: `flags.item-piles.temporary_item`,
     CUSTOM_CATEGORY: `flags.item-piles.item.customCategory`,
   };
+
+  static PILE_TYPES = {
+    PILE: "pile",
+    CONTAINER: "container",
+    MERCHANT: "merchant",
+    VAULT: "vault",
+  };
+
   // ===================
   // CURRENCIES HELPERS
   // ===================
@@ -388,7 +508,7 @@ export default class ItemPilesHelpers {
     if (targetActor) {
         const itemsToAdd = items.map((item) => {
             const actualItem = item.item.toObject();
-            return ItemPilesHelpers.setItemQuantity(actualItem, item.quantity);
+            return Utilities.setItemQuantity(actualItem, item.quantity);
         });
         items = await this._addItems(targetActor, itemsToAdd, userId, { removeExistingActorItems });
     }
@@ -419,18 +539,22 @@ export default class ItemPilesHelpers {
    * @param {Object} options
    * @returns {Promise<ItemData[]>} Item Data
    */
-  static async rollTable({
-    tableReference,
-    formula = "1",
-    resetTable = true,
-    normalize = false,
-    displayChat = false,
-    rollData = {},
-    customCategory = false,
-  } = {}) {
-    const rolledItems = [];
+  static async rollTable(tableReference, options) {
+    const table = await RetrieveHelpers.getRollTableAsync(tableReference);
 
-    const table = await RetrieveHelpers.getActorAsync(tableReference);
+    const formula = table.formula;
+    const resetTable = !!options.resetTable; // true;
+    const normalize = !!options.normalize; // false;
+    const displayChat = options.displayChat;
+    const rollData = options.roll;
+    const customCategory = !!options.customCategory; // false
+    const recursive = !!options.recursive; // true
+
+    if (!options.formula) {
+      options.formula = table.formula;
+    }
+
+    //const table = await fromUuid(tableUuid);
 
     if (!table.uuid.startsWith("Compendium")) {
       if (resetTable) {
@@ -448,81 +572,95 @@ export default class ItemPilesHelpers {
       }
     }
 
-    const roll = new Roll(formula.toString(), rollData).evaluate({ async: false });
-    if (roll.total <= 0) {
-      return [];
-    }
-
-    let results;
-    if (game.modules.get("better-rolltables")?.active) {
-      results = (await game.betterTables.roll(table)).itemsData.map((result) => {
-        return {
-          documentCollection: result.documentCollection,
-          documentId: result.documentId,
-          text: result.text || result.name,
-          img: result.img,
-          quantity: 1,
-        };
-      });
-    } else {
-      results = (await table.drawMany(roll.total, { displayChat, recursive: true })).results;
-    }
-
-    for (const rollData of results) {
-      let rolledQuantity = rollData?.quantity ?? 1;
-
-      let item;
-      if (rollData.documentCollection === "Item") {
-        item = game.items.get(rollData.documentId);
-      } else {
-        const compendium = game.packs.get(rollData.documentCollection);
-        if (compendium) {
-          item = await compendium.getDocument(rollData.documentId);
+    // START MOD 4535992
+    /*
+        const roll = new Roll(formula.toString(), rollData).evaluate({ async: false });
+        if (roll.total <= 0) {
+        return [];
         }
-      }
-
-      if (item instanceof RollTable) {
-        rolledItems.push(
-          ...(await ItemPilesHelpers.rollTable({ tableReference: item.uuid, resetTable, normalize, displayChat }))
-        );
-      } else if (item instanceof Item) {
-        const quantity = Math.max(ItemPilesHelpers.getItemQuantity(item) * rolledQuantity, 1);
-        rolledItems.push({
-          ...rollData,
-          item,
-          quantity,
-        });
-      }
-    }
-
-    const items = [];
-
-    rolledItems.forEach((newItem) => {
-      const existingItem = items.find((item) => item.documentId === newItem.documentId);
-      if (existingItem) {
-        existingItem.quantity += Math.max(newItem.quantity, 1);
-      } else {
-        setProperty(newItem, ItemPilesHelpers.FLAGS.ITEM, getProperty(newItem.item, ItemPilesHelpers.FLAGS.ITEM));
-        if (
-          game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE &&
-          !getProperty(newItem, game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE)
-        ) {
-          setProperty(
-            newItem,
-            game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE,
-            ItemPilesHelpers.getItemQuantity(newItem.item)
-          );
+        let results = [];
+        if (game.modules.get("better-rolltables")?.active) {
+            results = (await game.modules.get("better-rolltables").api.roll(table)).itemsData.map(result => ({
+                documentCollection: result.documentCollection,
+                documentId: result.documentId,
+                text: result.text || result.name,
+                img: result.img,
+                quantity: 1
+            }));
+        } else {
+            results = (await table.drawMany(roll.total, { displayChat, recursive: true })).results;
         }
-        if (customCategory) {
-          setProperty(newItem, ItemPilesHelpers.FLAGS.CUSTOM_CATEGORY, customCategory);
-        }
-        items.push({
-          ...newItem,
-        });
-      }
-    });
+        */
+    options.displayChat = false;
+    const results = await game.modules.get("better-rolltables").api.betterTableRoll(table, options);
+    // END MOD 4535992
 
-    return items;
+    // const rolledItems = [];
+    // for (const rollData of results) {
+    //   let rolledQuantity = rollData?.quantity ?? 1;
+    //   let item;
+    //   if (rollData.documentCollection === "Item") {
+    //     item = game.items.get(rollData.documentId);
+    //   } else {
+    //     const compendium = game.packs.get(rollData.documentCollection);
+    //     if (compendium) {
+    //       item = await compendium.getDocument(rollData.documentId);
+    //     }
+    //   }
+    //   if (item instanceof RollTable) {
+    //     Logger.error(
+    //       `'item instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`
+    //     );
+    //     rolledItems.push(
+    //       ...(await ItemPilesHelpers.rollTable({ tableUuid: item.uuid, resetTable, normalize, displayChat }))
+    //     );
+    //   } else if (item instanceof Item) {
+    //     const quantity = Math.max(ItemPilesHelpers.getItemQuantity(item) * rolledQuantity, 1);
+    //     rolledItems.push({
+    //       ...rollData,
+    //       item,
+    //       quantity,
+    //     });
+    //   }
+    // }
+
+    // const items = [];
+    // rolledItems.forEach((newItem) => {
+    //   // MOD 4535992
+    //   const existingItem = ItemPilesHelpers.findSimilarItem(items, newItem);
+    //   //  const existingItem = items.find((item) => item.documentId === newItem.documentId);
+    //   if (existingItem) {
+    //     existingItem.quantity += Math.max(newItem.quantity, 1);
+    //   } else {
+    //     setProperty(newItem, ItemPilesHelpers.FLAGS.ITEM, getProperty(newItem.item, ItemPilesHelpers.FLAGS.ITEM));
+    //     if (
+    //       game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE &&
+    //       !getProperty(newItem, game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE)
+    //     ) {
+    //       setProperty(
+    //         newItem,
+    //         game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE,
+    //         ItemPilesHelpers.getItemQuantity(newItem.item)
+    //       );
+    //     }
+    //     if (customCategory) {
+    //       setProperty(newItem, ItemPilesHelpers.FLAGS.CUSTOM_CATEGORY, customCategory);
+    //     }
+    //     items.push({
+    //       ...newItem,
+    //     });
+    //   }
+    // });
+
+    // const itemsRetrieved = items.map((item) => {
+    //   const itemData = item.item instanceof Item ? item.item.toObject() : item.item;
+    //   const actualItem = itemData; // item.item.toObject();
+    //   return ItemPilesHelpers.setItemQuantity(actualItem, item.quantity);
+    // });
+
+    // return itemsRetrieved;
+    const itemsRetrieved = await ItemPilesHelpers._convertResultsToStackedItems(results, options);
+    return itemsRetrieved;
   }
 
   static async _convertResultsToStackedItems(results, options = {}) {
@@ -538,38 +676,38 @@ export default class ItemPilesHelpers {
     for (const rollData of results) {
       // START MOD 4535992
       /*
-        let rolledQuantity = rollData?.quantity ?? 1;
-        let item;
-        if (rollData.documentCollection === "Item") {
-          item = game.items.get(rollData.documentId);
-        } else {
-          const compendium = game.packs.get(rollData.documentCollection);
-          if (compendium) {
-            item = await compendium.getDocument(rollData.documentId);
-          }
-        }
-        if (item instanceof RollTable) {
-          Logger.error(
-            `'item instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`
-          );
-          rolledItems.push(
-            ...(await ItemPilesHelpers.rollTable({ tableUuid: item.uuid, resetTable, normalize, displayChat }))
-          );
-        } else if (item instanceof Item) {
-          const quantity = Math.max(ItemPilesHelpers.getItemQuantity(item) * rolledQuantity, 1);
-          rolledItems.push({
-            ...rollData,
-            item,
-            quantity,
-          });
-        }
-        */
+            let rolledQuantity = rollData?.quantity ?? 1;
+            let item;
+            if (rollData.documentCollection === "Item") {
+            item = game.items.get(rollData.documentId);
+            } else {
+            const compendium = game.packs.get(rollData.documentCollection);
+            if (compendium) {
+                item = await compendium.getDocument(rollData.documentId);
+            }
+            }
+            if (item instanceof RollTable) {
+            Logger.error(
+                `'item instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`
+            );
+            rolledItems.push(
+                ...(await ItemPilesHelpers.rollTable({ tableUuid: item.uuid, resetTable, normalize, displayChat }))
+            );
+            } else if (item instanceof Item) {
+            const quantity = Math.max(ItemPilesHelpers.getItemQuantity(item) * rolledQuantity, 1);
+            rolledItems.push({
+                ...rollData,
+                item,
+                quantity,
+            });
+            }
+            */
       // TODO find a better way for do this, BRT already manage the one quantity behaviour
       // let rolledQuantity = rollData?.quantity ?? 1;
       let rolledQuantity = 1;
-      const itemTmp = await RollTableToActorHelpers.resultToItemData(rollData);
+      const itemTmp = await game.modules.get("better-rolltables").api.resultToItemData(rollData);
       if (!itemTmp) {
-        Logger.error(`The result '${rollData.name + "|" + rollData.documentId}' is not a valid link anymore`, true);
+        Logger.debug(`The result '${rollData.name + "|" + rollData.documentId}' is not a valid link anymore`, true);
         continue;
       }
       if (itemTmp instanceof RollTable) {
@@ -731,15 +869,25 @@ export default class ItemPilesHelpers {
   static stackTableResults(rolledResult) {
     const resultsStacked = [];
     rolledResult.forEach((newResult) => {
+      let isResultHidden = getProperty(newResult, `flags.better-rolltables.brt-hidden-table`) || false;
       // MOD 4535992
       //const existingItem = resultsStacked.find((item) => ItemPilesHelpers.findSimilarItem(item, newResult));
-      const existingItem = resultsStacked.find((r) => r.documentId === newResult.documentId);
+      const existingItem = resultsStacked.find((r) => {
+        // Merge by hidden property
+        let isResultHidden2 = getProperty(r, `flags.better-rolltables.brt-hidden-table`) || false;
+        // MOD 4535992
+        if (r.documentId && newResult.documentId) {
+          return r.documentId === newResult.documentId && isResultHidden === isResultHidden2;
+        } else {
+          return r._id === newResult._id && isResultHidden === isResultHidden2;
+        }
+      });
+      if (!ItemPilesHelpers._isRealNumber(newResult.quantity)) {
+        newResult.quantity = 1;
+      }
       if (existingItem) {
         existingItem.quantity += Math.max(newResult.quantity, 1);
       } else {
-        if (!ItemPilesHelpers._isRealNumber(newResult.quantity)) {
-          newResult.quantity = 1;
-        }
         resultsStacked.push({
           ...newResult,
         });
@@ -869,6 +1017,124 @@ export default class ItemPilesHelpers {
       });
       return newTargets;
     }
+  }
+
+  /**
+   * Whether an item pile is locked. If it is not enabled or not a container, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @param {Object/boolean} [data=false] data existing flags data to use
+   * @return {boolean}
+   */
+  static isItemPileLocked(target, data = false) {
+    return game.itempiles.API.isItemPileLocked(target, data);
+  }
+
+  /**
+   * Whether an item pile is closed. If it is not enabled or not a container, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @param {Object/boolean} [data=false] data existing flags data to use
+   * @return {boolean}
+   */
+  static isItemPileClosed(target, data = false) {
+    return game.itempiles.API.isItemPileClosed(target, data);
+  }
+
+  /**
+   * Whether an item pile is a valid item pile. If it is not enabled, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @param {Object/boolean} [data=false] data existing flags data to use
+   * @return {boolean}
+   */
+  static isValidItemPile(target, data = false) {
+    return game.itempiles.API.isValidItemPile(target, data);
+  }
+
+  /**
+   * Whether an item pile is a regular item pile. If it is not enabled, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @param {Object/boolean} [data=false] data existing flags data to use
+   * @return {boolean}
+   */
+  static isRegularItemPile(target, data = false) {
+    return game.itempiles.API.isRegularItemPile(target, data);
+  }
+
+  /**
+   * Whether an item pile is a container. If it is not enabled, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @param {Object/boolean} [data=false] data existing flags data to use
+   * @return {boolean}
+   */
+  static isItemPileContainer(target, data = false) {
+    return game.itempiles.API.isItemPileContainer(target, data);
+  }
+
+  /**
+   * Whether an item pile is a lootable. If it is not enabled, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @param {Object/boolean} [data=false] data existing flags data to use
+   * @return {boolean}
+   */
+  static isItemPileLootable(target, data = false) {
+    return game.itempiles.API.isItemPileLootable(target, data);
+  }
+
+  /**
+   * Whether an item pile is a vault. If it is not enabled, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @param {Object/boolean} [data=false] data existing flags data to use
+   * @return {boolean}
+   */
+  static isItemPileVault(target, data = false) {
+    return game.itempiles.API.isItemPileVault(target, data);
+  }
+
+  /**
+   * Whether an item pile is a merchant. If it is not enabled, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @param {Object/boolean} [data=false] data existing flags data to use
+   * @return {boolean}
+   */
+  static isItemPileMerchant(target, data = false) {
+    return game.itempiles.API.isItemPileMerchant(target, data);
+  }
+
+  /**
+   * Whether an item pile is a merchant. If it is not enabled, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @param {Object/boolean} [data=false] data existing flags data to use
+   * @return {boolean}
+   */
+  static isItemPileAuctioneer(target, data = false) {
+    return game.itempiles.API.isItemPileAuctioneer(target, data);
+  }
+
+  /**
+   * Whether an item pile is empty pile. If it is not enabled, it is always false.
+   *
+   * @param {Token/TokenDocument} target
+   * @return {boolean}
+   */
+  static isItemPileEmpty(target) {
+    return game.itempiles.API.isItemPileEmpty(target);
+  }
+  /**
+   * Whether an item pile is stackable. If it is not enabled, it is always false.
+   *
+   * @param {Item} target
+   * @return {boolean}
+   */
+  static isItemStackable(target) {
+    return game.itempiles.API.canItemStack(target);
   }
 
   // ======================================

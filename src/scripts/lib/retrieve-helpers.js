@@ -8,13 +8,15 @@ export class RetrieveHelpers {
    * @param {string} [options.documentId]
    * @param {("User"|"Folder"|"Actor"|"Item"|"Scene"|"Combat"|"JournalEntry"|"Macro"|"Playlist"|"RollTable"|"Cards"|"ChatMessage"|"Setting"|"FogExploration")} [options.collection]
    * @param {string} [options.documentPack]
+   * @param {boolean} [options.ignoreError=false]
    */
-  static retrieveUuid({ documentName, documentId, documentCollectionType, documentPack }) {
+  static retrieveUuid({ documentName, documentId, documentCollectionType, documentPack, ignoreError = false }) {
     let uuid = null;
     if (documentCollectionType || pack === "world") {
       const collection = game.collections.get(documentCollectionType);
       if (!collection) {
         // DO NOTHING
+        Logger.warn(`Cannot retrieve collection for ${collection}`);
       } else {
         // Get the original document, if the name still matches - take no action
         const original = documentId ? collection.get(documentId) : null;
@@ -37,26 +39,30 @@ export class RetrieveHelpers {
       }
     }
     if (documentPack) {
-      const pack = documentPack;
-
-      // Get the original entry, if the name still matches - take no action
-      const original = documentId ? pack.index.get(documentId) : null;
-      if (original) {
-        if (documentName) {
-          if (original.name !== documentName) {
-            // DO NOTHING
+      const pack = RetrieveHelpers.getCompendiumCollectionSync(documentPack, ignoreError);
+      if (!pack) {
+        // DO NOTHING
+        Logger.warn(`Cannot retrieve pack for ${documentPack}`);
+      } else {
+        // Get the original entry, if the name still matches - take no action
+        const original = documentId ? pack.index.get(documentId) : null;
+        if (original) {
+          if (documentName) {
+            if (original.name !== documentName) {
+              // DO NOTHING
+            } else {
+              return original.uuid;
+            }
           } else {
             return original.uuid;
           }
-        } else {
-          return original.uuid;
         }
-      }
 
-      // Otherwise, find the document by ID or name (ID preferred)
-      const doc = pack.index.find((i) => i._id === documentId || i.name === documentName) || null;
-      if (doc) {
-        return doc.uuid;
+        // Otherwise, find the document by ID or name (ID preferred)
+        const doc = pack.index.find((i) => i._id === documentId || i.name === documentName) || null;
+        if (doc) {
+          return doc.uuid;
+        }
       }
     }
     return uuid;
@@ -70,7 +76,12 @@ export class RetrieveHelpers {
   }
 
   static stringIsUuid(inId) {
-    return typeof inId === "string" && (inId.match(/\./g) || []).length && !inId.endsWith(".");
+    const valid = typeof inId === "string" && (inId.match(/\./g) || []).length && !inId.endsWith(".");
+    if (valid) {
+      return !!fromUuidSync(inId);
+    } else {
+      return false;
+    }
   }
 
   static getUuid(target) {
@@ -100,14 +111,14 @@ export class RetrieveHelpers {
     if (targetTmp instanceof CompendiumCollection) {
       return targetTmp;
     }
-    // if (RetrieveHelpers.stringIsUuid(targetTmp)) {
-    //   targetTmp = fromUuid(targetTmp);
-    // } else {
-    if (game.packs.get(targetTmp)) {
-      targetTmp = game.packs.get(targetTmp);
-    }
-    if (!ignoreName && game.packs.getName(targetTmp)) {
-      targetTmp = game.packs.getName(targetTmp);
+    if (RetrieveHelpers.stringIsUuid(targetTmp)) {
+      targetTmp = fromUuidSync(targetTmp);
+    } else {
+      if (game.packs.get(targetTmp)) {
+        targetTmp = game.packs.get(targetTmp);
+      } else if (!ignoreName && game.packs.getName(targetTmp)) {
+        targetTmp = game.packs.getName(targetTmp);
+      }
     }
     // }
     if (!targetTmp) {
@@ -119,14 +130,14 @@ export class RetrieveHelpers {
       }
     }
     // Type checking
-    // if (!(targetTmp instanceof CompendiumCollection)) {
-    //   if (ignoreError) {
-    //     Logger.warn(`Invalid CompendiumCollection`, false, targetTmp);
-    //     return;
-    //   } else {
-    //     throw Logger.error(`Invalid CompendiumCollection`, true, targetTmp);
-    //   }
-    // }
+    if (!(targetTmp instanceof CompendiumCollection)) {
+      if (ignoreError) {
+        Logger.warn(`Invalid CompendiumCollection`, false, targetTmp);
+        return;
+      } else {
+        throw Logger.error(`Invalid CompendiumCollection`, true, targetTmp);
+      }
+    }
     return targetTmp;
   }
 
@@ -154,8 +165,7 @@ export class RetrieveHelpers {
     } else {
       if (game.packs.get(targetTmp)) {
         targetTmp = game.packs.get(targetTmp);
-      }
-      if (!ignoreName && game.packs.getName(targetTmp)) {
+      } else if (!ignoreName && game.packs.getName(targetTmp)) {
         targetTmp = game.packs.getName(targetTmp);
       }
     }
@@ -203,8 +213,7 @@ export class RetrieveHelpers {
     } else {
       if (game.users.get(targetTmp)) {
         targetTmp = game.users.get(targetTmp);
-      }
-      if (!ignoreName && game.users.getName(targetTmp)) {
+      } else if (!ignoreName && game.users.getName(targetTmp)) {
         targetTmp = game.users.getName(targetTmp);
       }
     }
@@ -252,8 +261,7 @@ export class RetrieveHelpers {
     } else {
       if (game.actors.get(targetTmp)) {
         targetTmp = game.actors.get(targetTmp);
-      }
-      if (!ignoreName && game.actors.getName(targetTmp)) {
+      } else if (!ignoreName && game.actors.getName(targetTmp)) {
         targetTmp = game.actors.getName(targetTmp);
       }
     }
@@ -301,8 +309,7 @@ export class RetrieveHelpers {
     } else {
       if (game.actors.get(targetTmp)) {
         targetTmp = game.actors.get(targetTmp);
-      }
-      if (!ignoreName && game.actors.getName(targetTmp)) {
+      } else if (!ignoreName && game.actors.getName(targetTmp)) {
         targetTmp = game.actors.getName(targetTmp);
       }
     }
@@ -350,8 +357,7 @@ export class RetrieveHelpers {
     } else {
       if (game.journal.get(targetTmp)) {
         targetTmp = game.journal.get(targetTmp);
-      }
-      if (!ignoreName && game.journal.getName(targetTmp)) {
+      } else if (!ignoreName && game.journal.getName(targetTmp)) {
         targetTmp = game.journal.getName(targetTmp);
       }
     }
@@ -399,8 +405,7 @@ export class RetrieveHelpers {
     } else {
       if (game.journal.get(targetTmp)) {
         targetTmp = game.journal.get(targetTmp);
-      }
-      if (!ignoreName && game.journal.getName(targetTmp)) {
+      } else if (!ignoreName && game.journal.getName(targetTmp)) {
         targetTmp = game.journal.getName(targetTmp);
       }
     }
@@ -448,8 +453,7 @@ export class RetrieveHelpers {
     } else {
       if (game.macros.get(targetTmp)) {
         targetTmp = game.macros.get(targetTmp);
-      }
-      if (!ignoreName && game.macros.getName(targetTmp)) {
+      } else if (!ignoreName && game.macros.getName(targetTmp)) {
         targetTmp = game.macros.getName(targetTmp);
       }
     }
@@ -497,8 +501,7 @@ export class RetrieveHelpers {
     } else {
       if (game.macros.get(targetTmp)) {
         targetTmp = game.macros.get(targetTmp);
-      }
-      if (!ignoreName && game.macros.getName(targetTmp)) {
+      } else if (!ignoreName && game.macros.getName(targetTmp)) {
         targetTmp = game.macros.getName(targetTmp);
       }
     }
@@ -546,8 +549,7 @@ export class RetrieveHelpers {
     } else {
       if (game.scenes.get(targetTmp)) {
         targetTmp = game.scenes.get(targetTmp);
-      }
-      if (!ignoreName && game.scenes.getName(targetTmp)) {
+      } else if (!ignoreName && game.scenes.getName(targetTmp)) {
         targetTmp = game.scenes.getName(targetTmp);
       }
     }
@@ -595,8 +597,7 @@ export class RetrieveHelpers {
     } else {
       if (game.scenes.get(targetTmp)) {
         targetTmp = game.scenes.get(targetTmp);
-      }
-      if (!ignoreName && game.scenes.getName(targetTmp)) {
+      } else if (!ignoreName && game.scenes.getName(targetTmp)) {
         targetTmp = game.scenes.getName(targetTmp);
       }
     }
@@ -644,8 +645,7 @@ export class RetrieveHelpers {
     } else {
       if (game.items.get(targetTmp)) {
         targetTmp = game.items.get(targetTmp);
-      }
-      if (!ignoreName && game.items.getName(targetTmp)) {
+      } else if (!ignoreName && game.items.getName(targetTmp)) {
         targetTmp = game.items.getName(targetTmp);
       }
     }
@@ -693,8 +693,7 @@ export class RetrieveHelpers {
     } else {
       if (game.items.get(targetTmp)) {
         targetTmp = game.items.get(targetTmp);
-      }
-      if (!ignoreName && game.items.getName(targetTmp)) {
+      } else if (!ignoreName && game.items.getName(targetTmp)) {
         targetTmp = game.items.getName(targetTmp);
       }
     }
@@ -891,6 +890,104 @@ export class RetrieveHelpers {
     //     throw Logger.error(`Invalid Token`, true, targetTmp);
     //   }
     // }
+    return targetTmp;
+  }
+
+  static getRollTableSync(target, ignoreError = false, ignoreName = true) {
+    let targetTmp = target;
+    if (!targetTmp) {
+      throw Logger.error(`RollTable is undefined`, true, targetTmp);
+    }
+    if (targetTmp instanceof RollTable) {
+      return targetTmp;
+    }
+    // This is just a patch for compatibility with others modules
+    if (targetTmp.document) {
+      targetTmp = targetTmp.document;
+    }
+    if (targetTmp.uuid) {
+      targetTmp = targetTmp.uuid;
+    }
+
+    if (targetTmp instanceof RollTable) {
+      return targetTmp;
+    }
+    if (RetrieveHelpers.stringIsUuid(targetTmp)) {
+      targetTmp = fromUuidSync(targetTmp);
+    } else {
+      if (game.tables.get(targetTmp)) {
+        targetTmp = game.tables.get(targetTmp);
+      } else if (!ignoreName && game.tables.getName(targetTmp)) {
+        targetTmp = game.tables.getName(targetTmp);
+      }
+    }
+
+    if (!targetTmp) {
+      if (ignoreError) {
+        Logger.warn(`RollTable is not found`, false, targetTmp);
+        return;
+      } else {
+        throw Logger.error(`RollTable is not found`, true, targetTmp);
+      }
+    }
+    // Type checking
+    // if (!(targetTmp instanceof RollTable)) {
+    //   if (ignoreError) {
+    //     Logger.warn(`Invalid RollTable`, false, targetTmp);
+    //     return;
+    //   } else {
+    //     throw Logger.error(`Invalid RollTable`, true, targetTmp);
+    //   }
+    // }
+    return targetTmp;
+  }
+
+  static async getRollTableAsync(target, ignoreError = false, ignoreName = true) {
+    let targetTmp = target;
+    if (!targetTmp) {
+      throw Logger.error(`RollTable is undefined`, true, targetTmp);
+    }
+    if (targetTmp instanceof RollTable) {
+      return targetTmp;
+    }
+    // This is just a patch for compatibility with others modules
+    if (targetTmp.document) {
+      targetTmp = targetTmp.document;
+    }
+    if (targetTmp.uuid) {
+      targetTmp = targetTmp.uuid;
+    }
+
+    if (targetTmp instanceof RollTable) {
+      return targetTmp;
+    }
+    if (RetrieveHelpers.stringIsUuid(targetTmp)) {
+      targetTmp = await fromUuid(targetTmp);
+    } else {
+      if (game.tables.get(targetTmp)) {
+        targetTmp = game.tables.get(targetTmp);
+      } else if (!ignoreName && game.tables.getName(targetTmp)) {
+        targetTmp = game.tables.getName(targetTmp);
+      }
+    }
+
+    if (!targetTmp) {
+      if (ignoreError) {
+        Logger.warn(`RollTable is not found`, false, targetTmp);
+        return;
+      } else {
+        throw Logger.error(`RollTable is not found`, true, targetTmp);
+      }
+    }
+    // Type checking
+    if (!(targetTmp instanceof RollTable)) {
+      if (ignoreError) {
+        Logger.warn(`Invalid RollTable`, false, targetTmp);
+        return;
+      } else {
+        throw Logger.error(`Invalid RollTable`, true, targetTmp);
+      }
+    }
     return targetTmp;
   }
 }
