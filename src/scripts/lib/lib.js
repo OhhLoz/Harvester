@@ -1,52 +1,52 @@
 import { CONSTANTS } from "../constants";
 
 export function getByValue(map, searchValue) {
-  let keyMap = "";
-  for (let [key, value] of map.entries()) {
-    if (value === searchValue) {
-      keyMap = key;
-      break;
+    let keyMap = "";
+    for (let [key, value] of map.entries()) {
+        if (value === searchValue) {
+            keyMap = key;
+            break;
+        }
     }
-  }
-  return keyMap ?? "";
+    return keyMap ?? "";
 }
 
 export function checkItemSourceLabel(item, sourceLabel) {
-  if (item.system.source?.label === sourceLabel) {
-    return true;
-  }
-  if (item.system.source?.custom === sourceLabel) {
-    return true;
-  }
-  return false;
+    if (item.system.source?.label === sourceLabel) {
+        return true;
+    }
+    if (item.system.source?.custom === sourceLabel) {
+        return true;
+    }
+    return false;
 }
 
 export function retrieveItemSourceLabel(item) {
-  let sourceLabel = undefined;
-  sourceLabel = item.system.source?.label;
-  if (!sourceLabel || item.system.source?.custom) {
-    sourceLabel = item.system.source?.custom;
-  }
-  return sourceLabel ?? "";
+    let sourceLabel = undefined;
+    sourceLabel = item.system.source?.label;
+    if (!sourceLabel || item.system.source?.custom) {
+        sourceLabel = item.system.source?.custom;
+    }
+    return sourceLabel ?? "";
 }
 
 export function retrieveItemSourceLabelDC(item) {
-  let itemDC = undefined;
-  itemDC = item.system.source?.label.match(/\d+/g)[0];
-  if (!itemDC || item.system.source?.custom) {
-    itemDC = item.system.source?.custom?.match(/\d+/g)[0];
-  }
-  return itemDC ?? 0;
+    let itemDC = undefined;
+    itemDC = item.system.source?.label.match(/\d+/g)[0];
+    if (!itemDC || item.system.source?.custom) {
+        itemDC = item.system.source?.custom?.match(/\d+/g)[0];
+    }
+    return itemDC ?? 0;
 }
 
 export function formatDragon(actorName) {
-  let actorSplit = actorName.split(" ");
-  CONSTANTS.dragonIgnoreArr.forEach((element) => {
-    actorSplit = actorSplit.filter((e) => e !== element);
-  });
+    let actorSplit = actorName.split(" ");
+    CONSTANTS.dragonIgnoreArr.forEach((element) => {
+        actorSplit = actorSplit.filter((e) => e !== element);
+    });
 
-  actorSplit = actorSplit.join(" ");
-  return actorSplit;
+    actorSplit = actorSplit.join(" ");
+    return actorSplit;
 }
 
 // ===========================
@@ -64,64 +64,64 @@ export function formatDragon(actorName) {
  * @returns
  */
 export function testWithRegex(nameToCheck, pattern = "") {
-  function validateRegex(pattern) {
-    let parts = pattern.split("/");
-    let regex = pattern;
-    let options = "";
-    if (parts.length > 1) {
-      regex = parts[1];
-      options = parts[2];
+    function validateRegex(pattern) {
+        let parts = pattern.split("/");
+        let regex = pattern;
+        let options = "";
+        if (parts.length > 1) {
+            regex = parts[1];
+            options = parts[2];
+        }
+        try {
+            return new RegExp(regex, options);
+            //just remove this return and return true instead
+        } catch (e) {
+            return false;
+        }
     }
-    try {
-      return new RegExp(regex, options);
-      //just remove this return and return true instead
-    } catch (e) {
-      return false;
+    let patternTmp = pattern ? pattern : `/${nameToCheck}/i`;
+    let a = validateRegex(patternTmp);
+    if (a) {
+        let t1 = a.test(s);
+        return t1;
+    } else {
+        return false;
     }
-  }
-  let patternTmp = pattern ? pattern : `/${nameToCheck}/i`;
-  let a = validateRegex(patternTmp);
-  if (a) {
-    let t1 = a.test(s);
-    return t1;
-  } else {
-    return false;
-  }
 }
 
 export function isEmptyObject(obj) {
-  // because Object.keys(new Date()).length === 0;
-  // we have to do some additional check
-  if (obj === null || obj === undefined) {
-    return true;
-  }
-  if (isRealNumber(obj)) {
+    // because Object.keys(new Date()).length === 0;
+    // we have to do some additional check
+    if (obj === null || obj === undefined) {
+        return true;
+    }
+    if (isRealNumber(obj)) {
+        return false;
+    }
+    if (obj instanceof Object && Object.keys(obj).length === 0) {
+        return true;
+    }
+    if (obj instanceof Array && obj.length === 0) {
+        return true;
+    }
+    if (obj && Object.keys(obj).length === 0) {
+        return true;
+    }
     return false;
-  }
-  if (obj instanceof Object && Object.keys(obj).length === 0) {
-    return true;
-  }
-  if (obj instanceof Array && obj.length === 0) {
-    return true;
-  }
-  if (obj && Object.keys(obj).length === 0) {
-    return true;
-  }
-  return false;
 }
 
 export function isRealNumber(inNumber) {
-  return !isNaN(inNumber) && typeof inNumber === "number" && isFinite(inNumber);
+    return !isNaN(inNumber) && typeof inNumber === "number" && isFinite(inNumber);
 }
 
 export function isRealBoolean(inBoolean) {
-  return String(inBoolean) === "true" || String(inBoolean) === "false";
+    return String(inBoolean) === "true" || String(inBoolean) === "false";
 }
 
 export function isRealBooleanOrElseNull(inBoolean) {
-  return isRealBoolean(inBoolean) ? inBoolean : null;
+    return isRealBoolean(inBoolean) ? inBoolean : null;
 }
 
 export function getSubstring(string, char1, char2) {
-  return string.slice(string.indexOf(char1) + 1, string.lastIndexOf(char2));
+    return string.slice(string.indexOf(char1) + 1, string.lastIndexOf(char2));
 }
