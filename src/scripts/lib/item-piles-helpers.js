@@ -943,6 +943,32 @@ export default class ItemPilesHelpers {
             closed: true,
         },
     ) {
+        options = foundry.utils.mergeObject(
+            {
+                applyDefaultLight: false,
+                untouchedImage: "",
+                isSinglePile: false,
+                deleteTokens: false,
+                addCurrency: false,
+                warpgatePermanent: false,
+            },
+            options,
+        );
+
+        tokenSettings = foundry.utils.mergeObject({ rotation: 0 }, tokenSettings);
+
+        pileSettings = foundry.utils.mergeObject(
+            {
+                openedImage: "",
+                emptyImage: "",
+                type: game.itempiles.pile_types.CONTAINER,
+                deleteWhenEmpty: false,
+                activePlayers: true,
+                closed: true,
+            },
+            pileSettings,
+        );
+
         const tokens = Array.isArray(tokensTarget) ? tokensTarget : [tokensTarget];
         const token = tokens[0];
         const { applyDefaultLight, untouchedImage, addCurrency, isSinglePile, deleteTokens, warpgatePermanent } =
@@ -963,7 +989,7 @@ export default class ItemPilesHelpers {
                     intensity: 10,
                 },
             };
-            mergeObject(tokenSettings, { light: light });
+            foundry.utils.mergeObject(tokenSettings, { light: light });
         }
 
         if (game.modules.get("warpgate")?.active && isSinglePile) {
@@ -1098,6 +1124,30 @@ export default class ItemPilesHelpers {
             Logger.warn(`The targeted token is already a item piles`, true, tokenTarget);
             return [];
         }
+
+        options = foundry.utils.mergeObject(
+            {
+                applyDefaultLight: false,
+                untouchedImage: "",
+                addCurrency: false,
+            },
+            options,
+        );
+
+        tokenSettings = foundry.utils.mergeObject({ rotation: 0 }, tokenSettings);
+
+        pileSettings = foundry.utils.mergeObject(
+            {
+                openedImage: "",
+                emptyImage: "",
+                type: game.itempiles.pile_types.CONTAINER,
+                deleteWhenEmpty: false,
+                activePlayers: true,
+                closed: true,
+            },
+            pileSettings,
+        );
+
         const tokens = [tokenTarget];
         const { applyDefaultLight, untouchedImage, addCurrency } = options;
 
@@ -1116,7 +1166,7 @@ export default class ItemPilesHelpers {
                     intensity: 10,
                 },
             };
-            mergeObject(tokenSettings, { light: light });
+            foundry.utils.mergeObject(tokenSettings, { light: light });
         }
 
         const newTargets = await game.itempiles.API.turnTokensIntoItemPiles(tokens, {

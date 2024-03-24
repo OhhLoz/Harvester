@@ -11,14 +11,29 @@ export function registerSettings() {
         default: true,
     });
 
-    game.settings.register(CONSTANTS.MODULE_ID, "autoAddItemPiles", {
-        name: "Automatically Assign Items to Item Piles",
-        hint: "All harvested loot and looted currency is added to Item Piles.",
+    // game.settings.register(CONSTANTS.MODULE_ID, "autoAddItemPiles", {
+    //     name: "Automatically Assign Items to Item Piles",
+    //     hint: "All harvested loot and looted currency is added to Item Piles.",
+    //     scope: "world",
+    //     config: true,
+    //     requiresReload: true,
+    //     type: Boolean,
+    //     default: true,
+    // });
+
+    game.settings.register(CONSTANTS.MODULE_ID, "addItemsHarvestMode", {
+        name: "Add items harvest mode",
+        hint: "Harvest action considers three modes: 'Shared it or Keep it', 'Shared it', 'Keep it'",
         scope: "world",
         config: true,
         requiresReload: true,
-        type: Boolean,
-        default: true,
+        type: String,
+        choices: {
+            SharedItOrKeepIt: "Shared it or Keep it",
+            SharedIt: "Shared it",
+            KeepIt: "Keep it",
+        },
+        default: "SharedItOrKeepIt",
     });
 
     game.settings.register(CONSTANTS.MODULE_ID, "autoAddActionGroup", {
@@ -86,35 +101,15 @@ export function registerSettings() {
         default: false,
     });
 
-    // game.settings.register(CONSTANTS.MODULE_ID, "disableLoot", {
-    //     name: "Disable Looting mechanic",
-    //     hint: "Disables the Loot mechanic, making it unavailable until enabled.",
-    //     scope: "world",
-    //     config: true,
-    //     requiresReload: true,
-    //     type: Boolean,
-    //     default: false,
-    // });
-
-    // game.settings.register(CONSTANTS.MODULE_ID, "lootBeasts", {
-    //     name: "Loot All Creatures",
-    //     hint: "Allow looting of all possible creatures including beasts",
-    //     scope: "world",
-    //     config: true,
-    //     requiresReload: true,
-    //     type: Boolean,
-    //     default: false,
-    // });
-
-    // game.settings.register(CONSTANTS.MODULE_ID, "enableBetterRollIntegration", {
-    //     name: "Enable integration with the module 'Better Rolltable'",
-    //     hint: "Integration with the module 'Better Rolltable', for a more randomized behavior during the harvester action and a better customization for the specific creature, formula, filter additional elements, etc.",
-    //     scope: "world",
-    //     config: true,
-    //     requiresReload: true,
-    //     type: Boolean,
-    //     default: false,
-    // });
+    game.settings.register(CONSTANTS.MODULE_ID, "disableLoot", {
+        name: "Disable Looting mechanic",
+        hint: "Disables the Loot mechanic, making it unavailable until enabled.",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false,
+    });
 
     game.settings.register(CONSTANTS.MODULE_ID, "requestorPopout", {
         name: "Requestor Popout",
@@ -135,15 +130,15 @@ export function registerSettings() {
     });
 
     SETTINGS.autoAddItems = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItems");
-    SETTINGS.autoAddItemPiles = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItemPiles");
-
+    // SETTINGS.autoAddItemPiles = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItemPiles");
+    SETTINGS.addItemsHarvestMode = game.settings.get(CONSTANTS.MODULE_ID, "addItemsHarvestMode");
     SETTINGS.gmOnly = game.settings.get(CONSTANTS.MODULE_ID, "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get(CONSTANTS.MODULE_ID, "requireDeadEffect");
     SETTINGS.npcOnlyHarvest = game.settings.get(CONSTANTS.MODULE_ID, "npcOnlyHarvest");
     SETTINGS.autoAddActionGroup = game.settings.get(CONSTANTS.MODULE_ID, "autoAddActionGroup");
     SETTINGS.enforceRange = game.settings.get(CONSTANTS.MODULE_ID, "enforceRange");
     SETTINGS.allowAbilityChange = game.settings.get(CONSTANTS.MODULE_ID, "allowAbilityChange");
-    // SETTINGS.disableLoot = game.settings.get(CONSTANTS.MODULE_ID, "disableLoot");
+    SETTINGS.disableLoot = game.settings.get(CONSTANTS.MODULE_ID, "disableLoot");
     // SETTINGS.lootBeasts = game.settings.get(CONSTANTS.MODULE_ID, "lootBeasts");
     // SETTINGS.enableBetterRollIntegration = game.settings.get(CONSTANTS.MODULE_ID, "enableBetterRollIntegration");
     SETTINGS.debug = game.settings.get(CONSTANTS.MODULE_ID, "debug");
@@ -151,14 +146,15 @@ export function registerSettings() {
 
 export const SETTINGS = {
     autoAddItems: true,
-    autoAddItemPiles: true,
+    // autoAddItemPiles: true,
+    addItemsHarvestMode: "SharedItOrKeepIt",
     gmOnly: false,
     requireDeadEffect: true,
     npcOnlyHarvest: true,
     autoAddActionGroup: "PCOnly",
     enforceRange: true,
     allowAbilityChange: false,
-    // disableLoot: false,
+    disableLoot: false,
     // lootBeasts: false,
     // enableBetterRollIntegration: false,
 };

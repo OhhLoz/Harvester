@@ -73,10 +73,8 @@ Hooks.on("createActor", async (actor, data, options, id) => {
 
         Logger.debug(`CREATE ACTOR autoAddItems enable harvest action`);
         await addItemsToActor(actor, [harvestAction]);
-        // if (!SETTINGS.disableLoot) {
         Logger.debug(`CREATE ACTOR autoAddItems disable loot`);
         await addItemsToActor(actor, [lootAction]);
-        // }
     } else {
         Logger.debug(`CREATE ACTOR Settings 'autoAddActionGroup=None' do nothing`);
     }
@@ -109,7 +107,6 @@ Hooks.on("dnd5e.useItem", function (item, config, options) {
         HarvestingHelpers.handlePreRollHarvestAction({ item: item });
     }
     if (item.name === lootAction.name) {
-        //  && !SETTINGS.disableLoot
         LootingHelpers.handlePreRollLootAction({ item: item });
     }
 });
@@ -182,7 +179,6 @@ export function searchCompendium(actorName, actionName) {
         }
         returnArr = checkCompendium(harvestCompendium, "system.source.label", actorName);
     } else if (actionName === lootAction.name) {
-        //  && !SETTINGS.disableLoot
         returnArr = checkCompendium(customLootCompendium, "name", actorName);
 
         if (returnArr.length !== 0) {
@@ -223,9 +219,6 @@ async function addActionToActors() {
             if (item.name === lootAction.name && checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
                 hasLoot = true;
                 resetToDefault(item);
-                // if (SETTINGS.disableLoot) {
-                // actor.deleteEmbeddedDocuments("Item", [item.id]);
-                // }
             }
         });
 
@@ -233,7 +226,6 @@ async function addActionToActors() {
             await addItemsToActor(actor, [harvestAction]);
         }
         if (!hasLoot) {
-            //  && !SETTINGS.disableLoot
             await addItemsToActor(actor, [lootAction]);
         }
     });
@@ -276,7 +268,6 @@ export function addEffect(targetTokenId, actionName) {
             { active: true },
         );
     } else if (actionName === lootAction.name) {
-        //  && !SETTINGS.disableLoot
         targetToken.document.toggleActiveEffect(
             {
                 id: CONSTANTS.lootActionEffectId,

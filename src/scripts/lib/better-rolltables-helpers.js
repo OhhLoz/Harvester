@@ -103,20 +103,6 @@ export default class BetterRollTablesHelpers {
     static async retrieveResultsDataLootWithBetterRollTables(actorName, actionName) {
         let returnArr = [];
         if (actionName === lootAction.name) {
-            //  && !SETTINGS.disableLoot
-            /*
-            returnArr = checkCompendium(customLootCompendium, "name", actor.name);
-
-            if (returnArr.length !== 0) {
-                Logger.warn(
-                    `retrieveItemsHarvestWithBetterRollTables | BRT No rolltable found for action '${actionName}'`,
-                    true,
-                );
-                return returnArr;
-            }
-
-            returnArr = checkCompendium(lootCompendium, "name", actorName);
-            */
             const tablesChecked = BetterRollTablesHelpers.retrieveTablesLootWithBetterRollTables(actorName, actionName);
             if (!tablesChecked || tablesChecked.length === 0) {
                 Logger.warn(
@@ -125,14 +111,29 @@ export default class BetterRollTablesHelpers {
                 );
                 return [];
             }
-            const tableLooting = tablesChecked[0];
+            returnArr = retrieveResultsDataLootWithBetterRollTablesV2(tablesChecked[0], actorName, actionName);
+        } else {
+            Logger.warn(
+                `retrieveResultsDataLootWithBetterRollTables | BRT No rolltable found for action '${lootAction.name}'`,
+                true,
+            );
+            return [];
+        }
+
+        return returnArr ?? [];
+    }
+
+    static async retrieveResultsDataLootWithBetterRollTablesV2(tableEntity, actorName, actionName) {
+        let returnArr = [];
+        if (actionName === lootAction.name) {
+            const tableLooting = tableEntity;
             returnArr = await game.modules.get("better-rolltables").api.betterTableRoll(tableLooting, {
                 rollMode: "gmroll",
                 displayChat: false,
             });
         } else {
             Logger.warn(
-                `retrieveResultsDataLootWithBetterRollTables | BRT No rolltable found for action '${lootAction.name}'`,
+                `retrieveResultsDataLootWithBetterRollTablesV2 | BRT No rolltable found for action '${lootAction.name}'`,
                 true,
             );
             return [];

@@ -434,6 +434,7 @@ export class RequestorHelpers {
                             .get(moduleIdRef)
                             .api._Logger.warn(
                                 `KEEP IT | Add items with ITEMPILES to ${options.actor.name}`,
+                                false,
                                 options.itemsToAdd,
                             );
                         await game.modules.get(moduleIdRef).api._ItemPilesHelpers.addItems(actor, options.itemsToAdd, {
@@ -474,8 +475,14 @@ export class RequestorHelpers {
                             .get(moduleIdRef)
                             .api._Logger.warn(
                                 `SHARE IT | Add items with ITEMPILES to ${options.actor.name}`,
+                                false,
                                 options.itemsToAdd,
                             );
+                        await game.modules
+                            .get(moduleIdRef)
+                            .api._ItemPilesHelpers.addItems(options.targetedToken, options.itemsToAdd, {
+                                mergeSimilarItems: true,
+                            });
                         await game.modules
                             .get(moduleIdRef)
                             .api._ItemPilesHelpers.convertTokenToItemPilesContainer(options.targetedToken);
