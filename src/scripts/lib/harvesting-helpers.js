@@ -26,6 +26,7 @@ import {
     retrieveItemSourceLabel,
     formatDragon,
     isRealBoolean,
+    parseAsArray,
 } from "./lib.js";
 
 export class HarvestingHelpers {
@@ -103,37 +104,73 @@ export class HarvestingHelpers {
                 );
                 return;
             }
-            let skillDenomination = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`); // TODO make this better
-            let skillCheck = skillCheckVerbose ? skillCheckVerbose : "nat"; // TODO make this better maybe with requestor
+            // let skillDenomination = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`); // TODO make this better
+            // let skillCheck = skillCheckVerbose ? skillCheckVerbose : "nat"; // TODO make this better maybe with requestor
+            // item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
+            // item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
 
-            item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
-            item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
+            let skillCheckVerboseArr = parseAsArray(skillCheckVerbose);
+            const skillCheckVerboseList = [];
+            for (const skill of skillCheckVerboseArr) {
+                // let itemClone = new Item(item?.toObject());
+                // // itemClone.ownership.default = CONST.DOCUMENT_PERMISSION_LEVELS.LIMITED;
+                // itemClone.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skill);
+                // itemClone.update({ system: { formula: `1d20 + @skills.${skill}.total` } });
+                skillCheckVerboseList.push({
+                    skillDenomination: skill,
+                    skillItem: item,
+                    skillCallback: "handlePostRollHarvestAction",
+                    skillChooseModifier: SETTINGS.allowAbilityChange,
+                    skillButtonLabel: `Attempting to Harvest ${actorName} with ${skill}`,
+                });
+            }
 
             Logger.debug(
                 `HarvestingHelpers | Harvesting '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
             );
 
-            await RequestorHelpers.requestRollSkill(
-                controlledToken.actor,
-                undefined,
-                {
-                    chatTitle: `Harvesting Skill Check (${skillDenomination})`,
-                    chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
-                    chatButtonLabel: `Attempting to Harvest ${harvestMessage}`,
-                    chatWhisper: undefined,
-                    chatSpeaker: undefined,
-                    chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
-                },
-                {
-                    skillDenomination: skillDenomination,
-                    skillItem: item,
-                    skillCallback: "handlePostRollHarvestAction",
-                    skillChooseModifier: SETTINGS.allowAbilityChange,
-                },
-                {
-                    popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
-                },
-            );
+            if (skillCheckVerboseArr.length === 1) {
+                const skillCheckVerboseTmp = skillCheckVerboseList[0];
+                await RequestorHelpers.requestRollSkill(
+                    controlledToken.actor,
+                    undefined,
+                    {
+                        chatTitle: `Harvesting Skill Check (${skillCheckVerboseArr.join(",")})`,
+                        chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
+                        chatButtonLabel: `Attempting to Harvest ${actorName} with ${skillDenomination}`,
+                        chatWhisper: undefined,
+                        chatSpeaker: undefined,
+                        chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
+                    },
+                    {
+                        skillDenomination: skillCheckVerboseTmp.skillDenomination,
+                        skillItem: skillCheckVerboseTmp.skillItem,
+                        skillCallback: skillCheckVerboseTmp.skillCallback,
+                        skillChooseModifier: skillCheckVerboseTmp.skillChooseModifier,
+                        skillButtonLabel: skillCheckVerboseTmp.skillButtonLabel,
+                    },
+                    {
+                        popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
+                    },
+                );
+            } else {
+                await RequestorHelpers.requestRollSkillMultiple(
+                    controlledToken.actor,
+                    undefined,
+                    {
+                        chatTitle: `Harvesting Skill Check (${skillCheckVerboseArr.join(",")})`,
+                        chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
+                        chatButtonLabel: `Attempting to Harvest ${actorName}`,
+                        chatWhisper: undefined,
+                        chatSpeaker: undefined,
+                        chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
+                    },
+                    skillCheckVerboseList,
+                    {
+                        popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
+                    },
+                );
+            }
         }
 
         item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");

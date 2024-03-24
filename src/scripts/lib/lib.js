@@ -111,3 +111,26 @@ export function isRealBooleanOrElseNull(inBoolean) {
 export function getSubstring(string, char1, char2) {
     return string.slice(string.indexOf(char1) + 1, string.lastIndexOf(char2));
 }
+
+/**
+ * Parses the given object as an array.
+ * If the object is a string, it splits it by commas and returns an array.
+ * If the object is already an array, it returns the same array.
+ * If the object is neither a string nor an array, it wraps it in an array and returns it.
+ * @param {string|Array|any} obj - The object to be parsed as an array.
+ * @returns {Array} - The parsed array.
+ */
+export function parseAsArray(obj) {
+    if (!obj) {
+        return [];
+    }
+    let arr = [];
+    if (typeof obj === "string" || obj instanceof String) {
+        arr = obj.split(",");
+    } else if (obj.constructor === Array) {
+        arr = obj;
+    } else {
+        arr = [obj];
+    }
+    return arr;
+}
