@@ -56,6 +56,15 @@ export function registerSettings() {
         default: true,
     });
 
+    game.settings.register(CONSTANTS.MODULE_ID, "requestorPopout", {
+        name: "Requestor Popout",
+        hint: "W to create a popout of this message automatically for all users that can see it (true or false).",
+        scope: "client",
+        config: true,
+        default: false,
+        type: Boolean,
+    });
+
     game.settings.register(CONSTANTS.MODULE_ID, "harvestRemoveExistingActorItems", {
         name: "Harvesting: Automatically remove Items with Item Piles from the targeted token",
         hint: "This will enable to true the Item Piles setting 'removeExistingActorItems', for security reason is limited only to token target, so if you destroy a token on scene the original actor is no touched",
@@ -99,15 +108,6 @@ export function registerSettings() {
         requiresReload: true,
         type: Boolean,
         default: false,
-    });
-
-    game.settings.register(CONSTANTS.MODULE_ID, "requestorPopout", {
-        name: "Requestor Popout",
-        hint: "W to create a popout of this message automatically for all users that can see it (true or false).",
-        scope: "client",
-        config: true,
-        default: false,
-        type: Boolean,
     });
 
     game.settings.register(CONSTANTS.MODULE_ID, "disableLoot", {

@@ -1,11 +1,12 @@
 
 ### 1.8.0 [BREAKING CHANGES]
 
-- Rewrite a bunch o code...
-- Add module "Item Piles " as mandatory (a little more effort and this module can be mutlisystem XD)
-- Add "Better Rolltables" as mandatory , the dnd5e 3.X.X force my hand here...
-- Add a new "Share It" and "Keep it" options for the harvester action
-- Add BRT support for the loot action too
+- Rewrite a bunch of code... hopefully for the last time
+- Add module "Item Piles " as mandatory, the module already has a lot of features and functionality that doesn't make sense to rewrite, plus now you can manage custom evaluations (note for the future with a little more effort we cna make this module mutlisystem XD)
+- Add "Better Rolltables" as mandatory , the dnd5e 3.X.X force my hand here..., but the module already has a lot of features and functionality that doesn't make sense to rewrite
+- Add a new "Share It" and "Keep it" options for the harvester action this should be the solution for https://github.com/OhhLoz/Harvester/issues/37, now each player can decide whether to keep the harvesting result lost (Keep it !) , or make it available to others with Item Piles (Share it !)
+- Add BRT support for the loot action too (code more readable i hope...)
+- Solved https://github.com/OhhLoz/Harvester/issues/31 this feature was included in BRT recently "Use Dynamic DC" (For anyone interested, this feature was included in BRT recently "Use Dynamic DC")
 
 
 ### 1.7.9

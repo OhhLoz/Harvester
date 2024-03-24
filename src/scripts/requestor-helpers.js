@@ -480,7 +480,8 @@ export class RequestorHelpers {
                                 false,
                                 options.itemsToAdd,
                             );
-                        // await warpgate.mutate(options.targetedToken); // TODO NOT WORK...
+                        // await warpgate.mutate(options.targetedToken.document, updates, {}, {}); // TODO NOT WORK...
+                        await targetedToken.document.update({ actorLink: false });
                         await game.modules
                             .get(moduleIdRef)
                             .api._ItemPilesHelpers.addItems(options.targetedToken, options.itemsToAdd, {
