@@ -1,29 +1,38 @@
-import { checkCompendium, harvestAction, harvestBetterRollCompendium } from "../../module";
-import { formatDragon } from "./lib";
+import {
+    checkCompendium,
+    customLootCompendium,
+    harvestAction,
+    harvestBetterRollCompendium,
+    lootAction,
+    lootCompendium,
+} from "../../module";
+import Logger from "./Logger";
+import { formatDragon, testWithRegex } from "./lib";
 
 export default class BetterRollTablesHelpers {
     static retrieveTablesHarvestWithBetterRollTables(actorName, actionName) {
-        if (actorName.includes("Dragon")) {
-            actorName = formatDragon(actorName);
-        }
         if (actionName === harvestAction.name) {
-            // const dcValue = getProperty(xxx, `system.description.chat`);
-            // const skillValue = getProperty(xxx, `system.description.unidentified`);
-            const sourceValue = actorName ?? ""; // getProperty(xxx, `system.source`);
-            // let compendium = game.packs.get(betterRollTableId);
-            // const docs = compendium.contents;
-            const docs = harvestBetterRollCompendium;
+            let sourceValue = actorName.trim() ?? "";
+            if (sourceValue.includes("Dragon")) {
+                sourceValue = formatDragon(sourceValue)?.trim();
+            }
             let tablesChecked = [];
             // Try with the compendium first
-            for (const doc of docs) {
-                if (sourceValue.trim() === getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim()) {
+            for (const doc of harvestBetterRollCompendium) {
+                if (testWithRegex(sourceValue, getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim())) {
+                    Logger.debug(
+                        `retrieveTablesHarvestWithBetterRollTables | Find document with check regex ${sourceValue}=${getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim()}`,
+                    );
                     tablesChecked.push(doc);
                 }
             }
             // Try on the tables imported
             if (!tablesChecked || tablesChecked.length === 0) {
                 tablesChecked = game.tables.contents.filter((doc) => {
-                    return sourceValue.trim() === getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim();
+                    return testWithRegex(
+                        sourceValue,
+                        getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim(),
+                    );
                 });
             }
             // We juts get the first
@@ -44,7 +53,12 @@ export default class BetterRollTablesHelpers {
         }
     }
 
-    static async retrieveItemsHarvestWithBetterRollTables(actorName, actionName, dcValue = null, skillDenom = null) {
+    static async retrieveItemsDataHarvestWithBetterRollTables(
+        actorName,
+        actionName,
+        dcValue = null,
+        skillDenom = null,
+    ) {
         let returnArr = [];
         if (actionName === harvestAction.name) {
             if (!dcValue) {
@@ -60,24 +74,37 @@ export default class BetterRollTablesHelpers {
             );
             if (!tablesChecked || tablesChecked.length === 0) {
                 Logger.warn(
-                    `retrieveItemsHarvestWithBetterRollTables | BRT No rolltable found for action '${actionName}'`,
+                    `retrieveItemsDataHarvestWithBetterRollTables | BRT No rolltable found for action '${actionName}'`,
                     true,
                 );
                 return [];
             }
             const tableHarvester = tablesChecked[0];
-            returnArr = await game.modules
-                .get("better-rolltables")
-                .api.retrieveItemsDataFromRollTableResultSpecialHarvester({
-                    table: tableHarvester,
-                    options: {
-                        rollMode: "gmroll",
-                        dc: dcValue,
-                        skill: skillDenom,
-                    },
-                });
-        } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
-            // TODO A INTEGRATION WITH THE LOOT TYPE TABLE
+            returnArr = await game.modules.get("better-rolltables").api.retrieveItemsDataFromRollTableResult({
+                table: tableHarvester,
+                options: {
+                    rollMode: "gmroll",
+                    dc: dcValue,
+                    skill: skillDenom,
+                    displayChat: false,
+                },
+            });
+        } else {
+            Logger.warn(
+                `retrieveItemsDataHarvestWithBetterRollTables | BRT No rolltable found for action '${harvestAction.name}'`,
+                true,
+            );
+            return [];
+        }
+
+        return returnArr ?? [];
+    }
+
+    static async retrieveResultsDataLootWithBetterRollTables(actorName, actionName) {
+        let returnArr = [];
+        if (actionName === lootAction.name) {
+            //  && !SETTINGS.disableLoot
+            /*
             returnArr = checkCompendium(customLootCompendium, "name", actor.name);
 
             if (returnArr.length !== 0) {
@@ -89,8 +116,79 @@ export default class BetterRollTablesHelpers {
             }
 
             returnArr = checkCompendium(lootCompendium, "name", actorName);
+            */
+            const tablesChecked = BetterRollTablesHelpers.retrieveTablesLootWithBetterRollTables(actorName, actionName);
+            if (!tablesChecked || tablesChecked.length === 0) {
+                Logger.warn(
+                    `retrieveResultsDataLootWithBetterRollTables | BRT No rolltable found for action '${actionName}'`,
+                    true,
+                );
+                return [];
+            }
+            const tableLooting = tablesChecked[0];
+            returnArr = await game.modules.get("better-rolltables").api.betterTableRoll(tableLooting, {
+                rollMode: "gmroll",
+                displayChat: false,
+            });
+        } else {
+            Logger.warn(
+                `retrieveResultsDataLootWithBetterRollTables | BRT No rolltable found for action '${lootAction.name}'`,
+                true,
+            );
+            return [];
         }
 
         return returnArr ?? [];
+    }
+
+    static retrieveTablesLootWithBetterRollTables(actorName, actionName) {
+        if (actionName === lootAction.name) {
+            let sourceValue = actorName.trim() ?? "";
+            if (sourceValue.includes("Dragon")) {
+                sourceValue = formatDragon(sourceValue)?.trim();
+            }
+            let tablesChecked = [];
+            // Try with the compendium first
+            for (const doc of lootCompendium) {
+                if (
+                    testWithRegex(sourceValue, getProperty(doc, `name`)?.trim()) ||
+                    testWithRegex(sourceValue, getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim())
+                ) {
+                    tablesChecked.push(doc);
+                }
+            }
+            for (const doc of customLootCompendium) {
+                if (
+                    testWithRegex(sourceValue, getProperty(doc, `name`)?.trim()) ||
+                    testWithRegex(sourceValue, getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim())
+                ) {
+                    tablesChecked.push(doc);
+                }
+            }
+            // Try on the tables imported
+            if (!tablesChecked || tablesChecked.length === 0) {
+                tablesChecked = game.tables.contents.filter((doc) => {
+                    return (
+                        testWithRegex(sourceValue, getProperty(doc, `name`)?.trim()) ||
+                        testWithRegex(sourceValue, getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim())
+                    );
+                });
+            }
+            // We juts get the first
+            if (!tablesChecked || tablesChecked.length === 0) {
+                Logger.warn(
+                    `retrieveTablesLootWithBetterRollTables | BRT No rolltable found for metadata sourceId '${sourceValue}'`,
+                    true,
+                );
+                return [];
+            }
+            return tablesChecked;
+        } else {
+            Logger.warn(
+                `retrieveTablesLootWithBetterRollTables | BRT No rolltable found for action '${lootAction.name}'`,
+                true,
+            );
+            return [];
+        }
     }
 }

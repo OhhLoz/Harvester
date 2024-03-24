@@ -1,3 +1,13 @@
+
+### 1.8.0 [BREAKING CHANGES]
+
+- Rewrite a bunch o code...
+- Add module "Item Piles " as mandatory (a little more effort and this module can be mutlisystem XD)
+- Add "Better Rolltables" as mandatory , the dnd5e 3.X.X force my hand here...
+- Add a new "Share It" and "Keep it" options for the harvester action
+- Add BRT support for the loot action too
+
+
 ### 1.7.9
 
 - Some check on the actorName for better readibility

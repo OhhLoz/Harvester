@@ -124,6 +124,14 @@
             {
                 "id": "requestor",
                 "type": "module"
+            },
+            {
+                "id": "better-rolltables",
+                "type": "module"
+            },
+            {
+                "id": "item-piles",
+                "type": "module"
             }
         ]
     },

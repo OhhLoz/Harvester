@@ -9,9 +9,9 @@ export class RequestorHelpers {
      *  Default: FREE
      */
     static LIMIT = {
-        FREE: 0,
-        ONCE: 1,
-        OPTION: 2,
+        FREE: 0, // for buttons that can be clicked as much as a user would want
+        ONCE: 1, // for a button that can be clicked only once
+        OPTION: 2, // for buttons that can be clicked only once, and also disables all other buttons on the card set to
     };
     /**
      * Who can view the button.
@@ -41,7 +41,7 @@ export class RequestorHelpers {
         sound: "ressources/assets/audio/Special/Toast.mp3",
         buttonData: [{
             label: "A Skill Check",
-            limit: Requestor.LIMIT.ONCE,
+            limit: Requestor.LIMIT.OPTION,
             permission: Requestor.PERMISSION.ALL ,
             command: async function(){
             await Requestor.diceRoll({formula: "2d4+2", flavor: "Healing Potion"});
@@ -72,11 +72,42 @@ export class RequestorHelpers {
             skillChooseModifier: false,
         },
         optionsRequestor = {
-            limit: RequestorHelpers.LIMIT.ONCE,
+            limit: RequestorHelpers.LIMIT.OPTION,
             permission: RequestorHelpers.PERMISSION.ALL,
             popout: false,
         },
     ) {
+        chatDetails = foundry.utils.mergeObject(
+            {
+                chatTitle: "",
+                chatDescription: "",
+                chatButtonLabel: "",
+                chatWhisper: undefined,
+                chatSpeaker: undefined,
+                chatImg: undefined,
+            },
+            chatDetails,
+        );
+
+        skillDetails = foundry.utils.mergeObject(
+            {
+                skillDenomination: "",
+                skillItem: {},
+                skillCallback: function () {},
+                skillChooseModifier: false,
+            },
+            skillDetails,
+        );
+
+        optionsRequestor = foundry.utils.mergeObject(
+            {
+                limit: RequestorHelpers.LIMIT.OPTION,
+                permission: RequestorHelpers.PERMISSION.ALL,
+                popout: false,
+            },
+            optionsRequestor,
+        );
+
         const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
         const { skillDenomination, skillItem, skillCallback, skillChooseModifier } = skillDetails;
         const { limit, permission, popout } = optionsRequestor;
@@ -205,11 +236,32 @@ export class RequestorHelpers {
             chatImg: undefined,
         },
         optionsRequestor = {
-            limit: RequestorHelpers.LIMIT.ONCE,
+            limit: RequestorHelpers.LIMIT.OPTION,
             permission: RequestorHelpers.PERMISSION.ALL,
             popout: false,
         },
     ) {
+        chatDetails = foundry.utils.mergeObject(
+            {
+                chatTitle: "",
+                chatDescription: "",
+                chatButtonLabel: "",
+                chatWhisper: undefined,
+                chatSpeaker: undefined,
+                chatImg: undefined,
+            },
+            chatDetails,
+        );
+
+        optionsRequestor = foundry.utils.mergeObject(
+            {
+                limit: RequestorHelpers.LIMIT.OPTION,
+                permission: RequestorHelpers.PERMISSION.ALL,
+                popout: false,
+            },
+            optionsRequestor,
+        );
+
         const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
         const { limit, permission, popout } = optionsRequestor;
 
@@ -284,11 +336,32 @@ export class RequestorHelpers {
         //     chatImg: undefined,
         // },
         optionsRequestor = {
-            limit: RequestorHelpers.LIMIT.ONCE,
+            limit: RequestorHelpers.LIMIT.OPTION,
             permission: RequestorHelpers.PERMISSION.ALL,
             popout: false,
         },
     ) {
+        // chatDetails = foundry.utils.mergeObject(
+        //     {
+        //         chatTitle: "",
+        //         chatDescription: "",
+        //         chatButtonLabel: "",
+        //         chatWhisper: undefined,
+        //         chatSpeaker: undefined,
+        //         chatImg: undefined,
+        //     },
+        //     chatDetails,
+        // );
+
+        optionsRequestor = foundry.utils.mergeObject(
+            {
+                limit: RequestorHelpers.LIMIT.OPTION,
+                permission: RequestorHelpers.PERMISSION.ALL,
+                popout: false,
+            },
+            optionsRequestor,
+        );
+
         // const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
         const { limit, permission, popout } = optionsRequestor;
 

@@ -6,6 +6,7 @@ import {
     retrieveItemSourceLabelDC,
     retrieveItemSourceLabel,
     formatDragon,
+    isEmptyObject,
 } from "./scripts/lib/lib.js";
 import Logger from "./scripts/lib/Logger.js";
 import { HarvestingHelpers } from "./scripts/lib/harvesting-helpers.js";
@@ -39,9 +40,7 @@ Hooks.on("ready", async function () {
     customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
     customLootCompendium = await game.packs.get(CONSTANTS.customLootCompendiumId).getDocuments();
     hasBetterRollTables = await game.modules.get("better-rolltables")?.active;
-    if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-        harvestBetterRollCompendium = await game.packs.get(CONSTANTS.betterRollTableId).getDocuments();
-    }
+    harvestBetterRollCompendium = await game.packs.get(CONSTANTS.betterRollTableId).getDocuments();
 
     harvestAction = await actionCompendium.find((a) => a.id === CONSTANTS.harvestActionId);
     lootAction = await actionCompendium.find((a) => a.id === CONSTANTS.lootActionId);
@@ -60,7 +59,7 @@ Hooks.on("ready", async function () {
 });
 
 Hooks.once("socketlib.ready", () => {
-    harvesterAndLootingSocket = globalThis.socketlib.registerModule(CONSTANTS.MODULE_ID);
+    harvesterAndLootingSocket = socketlib.registerModule(CONSTANTS.MODULE_ID);
     harvesterAndLootingSocket.register("addEffect", addEffect);
     Logger.log("Registered socketlib functions");
 });
@@ -74,10 +73,10 @@ Hooks.on("createActor", async (actor, data, options, id) => {
 
         Logger.debug(`CREATE ACTOR autoAddItems enable harvest action`);
         await addItemsToActor(actor, [harvestAction]);
-        if (!SETTINGS.disableLoot) {
-            Logger.debug(`CREATE ACTOR autoAddItems disable loot`);
-            await addItemsToActor(actor, [lootAction]);
-        }
+        // if (!SETTINGS.disableLoot) {
+        Logger.debug(`CREATE ACTOR autoAddItems disable loot`);
+        await addItemsToActor(actor, [lootAction]);
+        // }
     } else {
         Logger.debug(`CREATE ACTOR Settings 'autoAddActionGroup=None' do nothing`);
     }
@@ -109,7 +108,8 @@ Hooks.on("dnd5e.useItem", function (item, config, options) {
     if (item.name === harvestAction.name) {
         HarvestingHelpers.handlePreRollHarvestAction({ item: item });
     }
-    if (item.name === lootAction.name && !SETTINGS.disableLoot) {
+    if (item.name === lootAction.name) {
+        //  && !SETTINGS.disableLoot
         LootingHelpers.handlePreRollLootAction({ item: item });
     }
 });
@@ -177,10 +177,12 @@ export function searchCompendium(actorName, actionName) {
     if (actionName === harvestAction.name) {
         returnArr = checkCompendium(customCompendium, "name", actorName);
 
-        if (returnArr.length !== 0) return returnArr;
-
+        if (returnArr.length !== 0) {
+            return returnArr;
+        }
         returnArr = checkCompendium(harvestCompendium, "system.source.label", actorName);
-    } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
+    } else if (actionName === lootAction.name) {
+        //  && !SETTINGS.disableLoot
         returnArr = checkCompendium(customLootCompendium, "name", actorName);
 
         if (returnArr.length !== 0) {
@@ -221,16 +223,17 @@ async function addActionToActors() {
             if (item.name === lootAction.name && checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
                 hasLoot = true;
                 resetToDefault(item);
-                if (SETTINGS.disableLoot) {
-                    actor.deleteEmbeddedDocuments("Item", [item.id]);
-                }
+                // if (SETTINGS.disableLoot) {
+                // actor.deleteEmbeddedDocuments("Item", [item.id]);
+                // }
             }
         });
 
         if (!hasHarvest) {
             await addItemsToActor(actor, [harvestAction]);
         }
-        if (!hasLoot && !SETTINGS.disableLoot) {
+        if (!hasLoot) {
+            //  && !SETTINGS.disableLoot
             await addItemsToActor(actor, [lootAction]);
         }
     });
@@ -240,14 +243,21 @@ async function addActionToActors() {
 function checkEffect(token, effectName) {
     let returnBool = false;
     token.document.delta?.effects?.forEach((element) => {
-        if (element.name === effectName) returnBool = true;
+        if (element.name === effectName) {
+            returnBool = true;
+        }
     });
     return returnBool;
 }
 
 function resetToDefault(item) {
-    let actionDescription = `Harvest valuable materials from corpses.`;
-    if (item.name === lootAction.name) actionDescription = `Scavenge valuables from corpses.`;
+    let actionDescription = "";
+    if (item.name === harvestAction.name) {
+        actionDescription = `Harvesting valuable materials from corpses.`;
+    }
+    if (item.name === lootAction.name) {
+        actionDescription = `Looting valuables from corpses.`;
+    }
     item.update({
         flags: { harvester: { targetId: "", controlId: "" } },
         system: { formula: "", description: { value: actionDescription } },
@@ -265,7 +275,8 @@ export function addEffect(targetTokenId, actionName) {
             },
             { active: true },
         );
-    } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
+    } else if (actionName === lootAction.name) {
+        //  && !SETTINGS.disableLoot
         targetToken.document.toggleActiveEffect(
             {
                 id: CONSTANTS.lootActionEffectId,
@@ -279,20 +290,15 @@ export function addEffect(targetTokenId, actionName) {
 }
 
 export async function addItemsToActor(actor, itemsToAdd) {
-    if (SETTINGS.autoAddItemPiles && game.modules.get("item-piles")?.active) {
-        Logger.debug(`Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
-        await _addItemsToActorWithItemPiles(actor, itemsToAdd);
-    } else {
-        Logger.debug(`Add items with STANDARD to ${actor.name}`, itemsToAdd);
-        await _addItemsToActorStandard(actor, itemsToAdd);
-    }
+    // if (SETTINGS.autoAddItemPiles && game.modules.get("item-piles")?.active) {
+    Logger.debug(`Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+    await _addItemsToActorWithItemPiles(actor, itemsToAdd);
+    // } else {
+    //     Logger.debug(`Add items with STANDARD to ${actor.name}`, itemsToAdd);
+    //     await _addItemsToActorStandard(actor, itemsToAdd);
+    // }
 }
 
-async function _addItemsToActorStandard(actor, itemsToAdd) {
-    for (const item of itemsToAdd) {
-        await _createItem(item, actor);
-    }
-}
 async function _addItemsToActorWithItemPiles(targetedToken, itemsToAdd) {
     game.itempiles.API.addItems(targetedToken, itemsToAdd, {
         mergeSimilarItems: true,
@@ -300,89 +306,77 @@ async function _addItemsToActorWithItemPiles(targetedToken, itemsToAdd) {
     Logger.log(`Added ${itemsToAdd.length} items to ${targetedToken.name}`);
 }
 
-function isEmptyObject(obj) {
-    // because Object.keys(new Date()).length === 0;
-    // we have to do some additional check
-    if (obj === null || obj === undefined) {
-        return true;
-    }
-    if (isRealNumber(obj)) {
-        return false;
-    }
-    const result =
-        obj && // null and undefined check
-        Object.keys(obj).length === 0; // || Object.getPrototypeOf(obj) === Object.prototype);
-    return result;
-}
+// async function _addItemsToActorStandard(actor, itemsToAdd) {
+//     for (const item of itemsToAdd) {
+//         await _createItem(item, actor);
+//     }
+// }
 
-function isRealNumber(inNumber) {
-    return !isNaN(inNumber) && typeof inNumber === "number" && isFinite(inNumber);
-}
+// /**
+//  *
+//  * @param {Item}  item The item to add to the actor
+//  * @param {Actor} actor to which to add items to
+//  * @param {boolean} stackSame if true add quantity to an existing item of same name in the current actor
+//  * @param {number} customLimit
+//  * @returns {Item} the create/updated Item
+//  */
+// async function _createItem(item, actor, stackSame = true, customLimit = 0) {
+//     const QUANTITY_PROPERTY_PATH = "system.quantity";
+//     const WEIGHT_PROPERTY_PATH = "system.weight";
+//     const PRICE_PROPERTY_PATH = "system.price";
 
-/**
- *
- * @param {Item}  item The item to add to the actor
- * @param {Actor} actor to which to add items to
- * @param {boolean} stackSame if true add quantity to an existing item of same name in the current actor
- * @param {number} customLimit
- * @returns {Item} the create/updated Item
- */
-async function _createItem(item, actor, stackSame = true, customLimit = 0) {
-    const QUANTITY_PROPERTY_PATH = "system.quantity";
-    const WEIGHT_PROPERTY_PATH = "system.weight";
-    const PRICE_PROPERTY_PATH = "system.price";
+//     const newItemData = item;
+//     const itemPrice = foundry.utils.getProperty(newItemData, PRICE_PROPERTY_PATH) || 0;
+//     const embeddedItems = [...actor.getEmbeddedCollection("Item").values()];
+//     // Name should be enough for a check for the same item right ?
+//     const originalItem = embeddedItems.find((i) => i.name === newItemData.name);
 
-    const newItemData = item;
-    const itemPrice = getProperty(newItemData, PRICE_PROPERTY_PATH) || 0;
-    const embeddedItems = [...actor.getEmbeddedCollection("Item").values()];
-    // Name should be enough for a check for the same item right ?
-    const originalItem = embeddedItems.find((i) => i.name === newItemData.name);
+//     /** if the item is already owned by the actor (same name and same PRICE) */
+//     if (originalItem && stackSame) {
+//         /** add quantity to existing item */
 
-    /** if the item is already owned by the actor (same name and same PRICE) */
-    if (originalItem && stackSame) {
-        /** add quantity to existing item */
+//         const stackAttribute = QUANTITY_PROPERTY_PATH;
+//         const priceAttribute = PRICE_PROPERTY_PATH;
+//         const weightAttribute = WEIGHT_PROPERTY_PATH;
 
-        const stackAttribute = QUANTITY_PROPERTY_PATH;
-        const priceAttribute = PRICE_PROPERTY_PATH;
-        const weightAttribute = WEIGHT_PROPERTY_PATH;
+//         const newItemQty = foundry.utils.getProperty(newItemData, stackAttribute) || 1;
+//         const originalQty = foundry.utils.getProperty(originalItem, stackAttribute) || 1;
+//         const updateItem = { _id: originalItem.id };
+//         const newQty = Number(originalQty) + Number(newItemQty);
+//         if (customLimit > 0) {
+//             // limit is bigger or equal to newQty
+//             if (Number(customLimit) < Number(newQty)) {
+//                 // limit was reached, we stick to that limit
+//                 Logger.warn("Custom limit is been reached for the item '" + item.name + "'", true);
+//                 return customLimit;
+//             }
+//         }
+//         // If quantity differ updated the item
+//         if (newQty !== newItemQty) {
+//             foundry.utils.setProperty(updateItem, stackAttribute, newQty);
 
-        const newItemQty = getProperty(newItemData, stackAttribute) || 1;
-        const originalQty = getProperty(originalItem, stackAttribute) || 1;
-        const updateItem = { _id: originalItem.id };
-        const newQty = Number(originalQty) + Number(newItemQty);
-        if (customLimit > 0) {
-            // limit is bigger or equal to newQty
-            if (Number(customLimit) < Number(newQty)) {
-                //limit was reached, we stick to that limit
-                Logger.warn("Custom limit is been reached for the item '" + item.name + "'", true);
-                return customLimit;
-            }
-        }
-        // If quantity differ updated the item
-        if (newQty !== newItemQty) {
-            setProperty(updateItem, stackAttribute, newQty);
+//             const newPriceValue =
+//                 (foundry.utils.getProperty(originalItem, priceAttribute)?.value ?? 0) +
+//                 (foundry.utils.getProperty(newItemData, priceAttribute)?.value ?? 0);
+//             const newPrice = {
+//                 denomination: foundry.utils.getProperty(item, priceAttribute)?.denomination,
+//                 value: newPriceValue,
+//             };
+//             foundry.utils.setProperty(updateItem, `${priceAttribute}`, newPrice);
 
-            const newPriceValue =
-                (getProperty(originalItem, priceAttribute)?.value ?? 0) +
-                (getProperty(newItemData, priceAttribute)?.value ?? 0);
-            const newPrice = {
-                denomination: getProperty(item, priceAttribute)?.denomination,
-                value: newPriceValue,
-            };
-            setProperty(updateItem, `${priceAttribute}`, newPrice);
+//             const newWeight =
+//                 (foundry.utils.getProperty(originalItem, weightAttribute) ?? 1) +
+//                 (foundry.utils.getProperty(newItemData, weightAttribute) ?? 1);
+//             foundry.utils.setProperty(updateItem, `${weightAttribute}`, newWeight);
 
-            const newWeight =
-                (getProperty(originalItem, weightAttribute) ?? 1) + (getProperty(newItemData, weightAttribute) ?? 1);
-            setProperty(updateItem, `${weightAttribute}`, newWeight);
-
-            await actor.updateEmbeddedDocuments("Item", [updateItem]);
-            Logger.log(`Updated ${item.name} to ${actor.name}`);
-        } else {
-            Logger.log(`Nothing is done with ${item.name} on ${actor.name}`);
-        }
-    } else {
-        /** we create a new item if we don't own already */
-        await actor.createEmbeddedDocuments("Item", [newItemData]);
-        Logger.log(`Added ${item.name} to ${actor.name}`);
-    }
-}
+//             await actor.updateEmbeddedDocuments("Item", [updateItem]);
+//             Logger.log(`Updated ${item.name} to ${actor.name}`);
+//         } else {
+//             Logger.log(`Nothing is done with ${item.name} on ${actor.name}`);
+//         }
+//     } else {
+//         /** we create a new item if we don't own already */
+//         await actor.createEmbeddedDocuments("Item", [newItemData]);
+//         Logger.log(`Added ${item.name} to ${actor.name}`);
+//     }
+// }

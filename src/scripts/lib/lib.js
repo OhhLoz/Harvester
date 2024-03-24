@@ -1,4 +1,5 @@
 import { CONSTANTS } from "../constants";
+import Logger from "./Logger";
 
 export function getByValue(map, searchValue) {
     let keyMap = "";
@@ -63,28 +64,13 @@ export function formatDragon(actorName) {
  * @param {*} pattern
  * @returns
  */
-export function testWithRegex(nameToCheck, pattern = "") {
-    function validateRegex(pattern) {
-        let parts = pattern.split("/");
-        let regex = pattern;
-        let options = "";
-        if (parts.length > 1) {
-            regex = parts[1];
-            options = parts[2];
-        }
-        try {
-            return new RegExp(regex, options);
-            //just remove this return and return true instead
-        } catch (e) {
-            return false;
-        }
-    }
-    let patternTmp = pattern ? pattern : `/${nameToCheck}/i`;
-    let a = validateRegex(patternTmp);
-    if (a) {
-        let t1 = a.test(s);
+export function testWithRegex(stringToCheck, pattern = "") {
+    let patternTmp = pattern ? pattern : `/^${stringToCheck}$/i`; // .match(/^([a-z0-9]{5,})$/);
+    try {
+        let t1 = stringToCheck.match(patternTmp);
         return t1;
-    } else {
+    } catch (e) {
+        Logger.error("Regex error", false, e);
         return false;
     }
 }

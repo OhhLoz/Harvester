@@ -58,31 +58,34 @@ export class HarvestingHelpers {
             return;
         }
 
-        let matchedItems = [];
-        if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-            Logger.debug(`HarvestingHelpers | Searching MatchedItems with BRT`);
-            matchedItems = BetterRollTablesHelpers.retrieveTablesHarvestWithBetterRollTables(
-                actorName,
-                harvestAction.name || item.name,
-            );
-            Logger.debug(`HarvestingHelpers | Found MatchedItems with BRT (${matchedItems?.length})`, matchedItems);
-        } else {
-            Logger.debug(`HarvestingHelpers | Searching MatchedItems with STANDARD`);
-            matchedItems = searchCompendium(actorName, harvestAction.name || item.name);
-            Logger.debug(
-                `HarvestingHelpers | Found MatchedItems with STANDARD (${matchedItems?.length})`,
-                matchedItems,
-            );
-        }
+        let rollTablesMatched = [];
+        // if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
+        Logger.debug(`HarvestingHelpers | Searching RollTablesMatched with BRT`);
+        rollTablesMatched = BetterRollTablesHelpers.retrieveTablesHarvestWithBetterRollTables(
+            actorName,
+            harvestAction.name || item.name,
+        );
+        Logger.debug(
+            `HarvestingHelpers | Found RollTablesMatched with BRT (${rollTablesMatched?.length})`,
+            rollTablesMatched,
+        );
+        // } else {
+        //     Logger.debug(`HarvestingHelpers | Searching RollTablesMatched with STANDARD`);
+        //     matchedItems = searchCompendium(actorName, harvestAction.name || item.name);
+        //     Logger.debug(
+        //         `HarvestingHelpers | Found RollTablesMatched with STANDARD (${matchedItems?.length})`,
+        //         matchedItems,
+        //     );
+        // }
 
         let skillDenomination = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`); // TODO make this better
         let skillCheck = "Nature"; // TODO make this better
-        if (matchedItems.length === 0) {
-            Logger.debug(`HarvestingHelpers | MatchedItems is empty`);
+        if (rollTablesMatched.length === 0) {
+            Logger.debug(`HarvestingHelpers | RollTablesMatched is empty`);
             Logger.debug(
                 `HarvestingHelpers | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
             );
-            RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
+            await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
                 chatTitle: "Harvesting valuable from corpses.",
                 chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
                 chatButtonLabel: undefined,
@@ -91,34 +94,34 @@ export class HarvestingHelpers {
                 chatImg: "icons/skills/social/theft-pickpocket-bribery-brown.webp",
             });
         } else {
-            Logger.debug(`HarvestingHelpers | MatchedItems is not empty`);
+            Logger.debug(`HarvestingHelpers | RollTablesMatched is not empty`);
 
             let harvestMessage = targetedToken.name;
             if (harvestMessage !== actorName) {
                 harvestMessage += ` (${actorName})`;
             }
-            if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-                Logger.debug(`HarvestingHelpers | BRT is enable`);
-                let skillCheckVerbose = getProperty(matchedItems[0], `flags.better-rolltables.brt-skill-value`);
-                skillCheck = skillCheckVerbose;
-            } else {
-                Logger.debug(`HarvestingHelpers | STANDARD is enable`);
-                let skillCheckVerbose;
-                if (matchedItems[0].compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
-                    if (matchedItems[0]?.system?.unidentified?.description) {
-                        skillCheckVerbose = matchedItems[0]?.system.unidentified.description;
-                    } else {
-                        skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
-                    }
-                } else {
-                    Logger.debug(
-                        `HarvestingHelpers | STANDARD no matchedItems[0].compendium.metadata.id === CONSTANTS.harvestCompendiumId`,
-                        CONSTANTS.harvestCompendiumId,
-                    );
-                    skillCheckVerbose = matchedItems[0].items.find((element) => element.type === "feat").name;
-                }
-                skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose);
-            }
+            // if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
+            Logger.debug(`HarvestingHelpers | BRT is enable`);
+            let skillCheckVerbose = getProperty(rollTablesMatched[0], `flags.better-rolltables.brt-skill-value`);
+            skillCheck = skillCheckVerbose;
+            // } else {
+            //     Logger.debug(`HarvestingHelpers | STANDARD is enable`);
+            //     let skillCheckVerbose;
+            //     if (matchedItems[0].compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
+            //         if (matchedItems[0]?.system?.unidentified?.description) {
+            //             skillCheckVerbose = matchedItems[0]?.system.unidentified.description;
+            //         } else {
+            //             skillCheckVerbose = matchedItems[0]?.system.description.unidentified;
+            //         }
+            //     } else {
+            //         Logger.debug(
+            //             `HarvestingHelpers | STANDARD no matchedItems[0].compendium.metadata.id === CONSTANTS.harvestCompendiumId`,
+            //             CONSTANTS.harvestCompendiumId,
+            //         );
+            //         skillCheckVerbose = matchedItems[0].items.find((element) => element.type === "feat").name;
+            //     }
+            //     skillCheck = CONSTANTS.skillMap.get(skillCheckVerbose);
+            // }
 
             item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
             item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
@@ -127,7 +130,7 @@ export class HarvestingHelpers {
                 `HarvestingHelpers | Harvesting '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
             );
 
-            RequestorHelpers.requestRollSkill(
+            await RequestorHelpers.requestRollSkill(
                 controlledToken.actor,
                 undefined,
                 {
@@ -193,51 +196,51 @@ export class HarvestingHelpers {
 
         harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
 
-        if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
-            Logger.debug(`HarvestingHelpers | BRT is enable, and has a rollTable`);
-            matchedItems = await BetterRollTablesHelpers.retrieveItemsHarvestWithBetterRollTables(
-                actorName,
-                item.name,
-                result.total,
-                getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
-            );
+        // if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
+        Logger.debug(`HarvestingHelpers | BRT is enable, and has a rollTable`);
+        matchedItems = await BetterRollTablesHelpers.retrieveItemsDataHarvestWithBetterRollTables(
+            actorName,
+            item.name,
+            result.total,
+            getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
+        );
 
-            matchedItems.forEach((item) => {
-                Logger.debug(`HarvestingHelpers | BRT check matchedItem`, item);
-                // if (item.type === "loot") {
-                harvesterMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
-                Logger.debug(`HarvestingHelpers | BRT the item ${item.name} is been added as success`);
-                successArr.push(item);
-                // } else {
-                //   Logger.warn(`HarvestingHelpers | BRT the type item is not 'loot'`);
-                // }
-                Logger.debug(`HarvestingHelpers | BRT successArr`, successArr);
-            });
-        } else {
-            matchedItems = await searchCompendium(actorName, item.name);
-            if (matchedItems[0].compendium.metadata.id === CONSTANTS.customCompendiumId) {
-                matchedItems = matchedItems[0].items;
-            }
-            matchedItems.forEach((item) => {
-                Logger.debug(`HarvestingHelpers | STANDARD check matchedItem`, item);
-                // if (item.type === "loot") {
-                let itemDC = 0;
-                if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
-                    itemDC = parseInt(item.system.description.chat);
-                } else {
-                    itemDC = retrieveItemSourceLabelDC(item);
-                }
-                if (itemDC <= result.total) {
-                    harvesterMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
-                    Logger.debug(`HarvestingHelpers | STANDARD the item ${item.name} is been added as success`);
-                    successArr.push(item.toObject());
-                }
-                // } else {
-                //   Logger.warn(`HarvestingHelpers | STANDARD the type item is not 'loot'`);
-                // }
-                Logger.debug(`HarvestingHelpers | STANDARD successArr`, successArr);
-            });
-        }
+        matchedItems.forEach((item) => {
+            Logger.debug(`HarvestingHelpers | BRT check matchedItem`, item);
+            // if (item.type === "loot") {
+            harvesterMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
+            Logger.debug(`HarvestingHelpers | BRT the item ${item.name} is been added as success`);
+            successArr.push(item);
+            // } else {
+            //   Logger.warn(`HarvestingHelpers | BRT the type item is not 'loot'`);
+            // }
+            Logger.debug(`HarvestingHelpers | BRT successArr`, successArr);
+        });
+        // } else {
+        //     matchedItems = await searchCompendium(actorName, item.name);
+        //     if (matchedItems[0].compendium.metadata.id === CONSTANTS.customCompendiumId) {
+        //         matchedItems = matchedItems[0].items;
+        //     }
+        //     matchedItems.forEach((item) => {
+        //         Logger.debug(`HarvestingHelpers | STANDARD check matchedItem`, item);
+        //         // if (item.type === "loot") {
+        //         let itemDC = 0;
+        //         if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
+        //             itemDC = parseInt(item.system.description.chat);
+        //         } else {
+        //             itemDC = retrieveItemSourceLabelDC(item);
+        //         }
+        //         if (itemDC <= result.total) {
+        //             harvesterMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
+        //             Logger.debug(`HarvestingHelpers | STANDARD the item ${item.name} is been added as success`);
+        //             successArr.push(item.toObject());
+        //         }
+        //         // } else {
+        //         //   Logger.warn(`HarvestingHelpers | STANDARD the type item is not 'loot'`);
+        //         // }
+        //         Logger.debug(`HarvestingHelpers | STANDARD successArr`, successArr);
+        //     });
+        // }
 
         if (SETTINGS.autoAddItems && successArr?.length > 0) {
             Logger.debug(`HarvestingHelpers | FINAL autoAddItems enable and successArr is not empty`);
@@ -269,23 +272,29 @@ export class HarvestingHelpers {
     }
 
     static async addItemsToActorHarvesterOption(actor, targetedToken, itemsToAdd) {
-        const shareIt = await RequestorHelpers.requestHarvestMessage(actor, undefined, itemsToAdd, targetedToken, {
-            popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
-        });
-        /*
-        if(!isRealBoolean(shareIt)) {
-            Logger.error(`Something went wrong with the harvester code`, true);
-            return;
-        }
-        if (shareIt) {
-            Logger.debug(`SHARE IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
-            await ItemPilesHelpers.convertTokenToItemPilesContainer(targetedToken);
-        } else {
-            Logger.debug(`KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+        if (SETTINGS.autoAddItemPiles) {
             await ItemPilesHelpers.addItems(targetedToken, itemsToAdd, {
                 mergeSimilarItems: true,
             });
+        } else {
+            await RequestorHelpers.requestHarvestMessage(actor, undefined, itemsToAdd, targetedToken, {
+                popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
+            });
+            /*
+            if(!isRealBoolean(shareIt)) {
+                Logger.error(`Something went wrong with the harvester code`, true);
+                return;
+            }
+            if (shareIt) {
+                Logger.debug(`SHARE IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+                await ItemPilesHelpers.convertTokenToItemPilesContainer(targetedToken);
+            } else {
+                Logger.debug(`KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+                await ItemPilesHelpers.addItems(targetedToken, itemsToAdd, {
+                    mergeSimilarItems: true,
+                });
+            }
+            */
         }
-        */
     }
 }

@@ -19,6 +19,8 @@ import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
 import Logger from "./Logger.js";
+import BetterRollTablesHelpers from "./better-rolltables-helpers.js";
+import ItemPilesHelpers from "./item-piles-helpers.js";
 import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./lib.js";
 
 export class LootingHelpers {
@@ -50,25 +52,33 @@ export class LootingHelpers {
             return;
         }
 
+        let rollTablesMatched = [];
+        // if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
+        Logger.debug(`LootingHelpers | Searching RollTablesMatched with BRT`);
+        rollTablesMatched = BetterRollTablesHelpers.retrieveTablesLootWithBetterRollTables(
+            actorName,
+            lootAction.name || item.name,
+        );
+        Logger.debug(
+            `LootingHelpers | Found RollTablesMatched with BRT (${rollTablesMatched?.length})`,
+            rollTablesMatched,
+        );
+        // } else {
+        //     Logger.debug(`LootingHelpers | Searching RollTablesMatched with STANDARD`);
+        //     matchedItems = searchCompendium(actorName, lootAction.name || item.name);
+        //     Logger.debug(`LootingHelpers | Found RollTablesMatched with STANDARD (${matchedItems?.length})`, matchedItems);
+        // }
+
         let matchedItems = [];
-        if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-            Logger.debug(`LootingHelpers | Searching MatchedItems with BRT`);
-            // TODO
-            //matchedItems = retrieveTablesLootWithBetterRollTables(actorName, lootAction.name || item.name);
-            matchedItems = searchCompendium(actorName, lootAction.name || item.name);
-            Logger.debug(`LootingHelpers | Found MatchedItems with BRT (${matchedItems?.length})`, matchedItems);
-        } else {
-            Logger.debug(`LootingHelpers | Searching MatchedItems with STANDARD`);
-            matchedItems = searchCompendium(actorName, lootAction.name || item.name);
-            Logger.debug(`LootingHelpers | Found MatchedItems with STANDARD (${matchedItems?.length})`, matchedItems);
-        }
+        Logger.debug(`LootingHelpersHelpers | BRT is enable, and has a rollTable`);
+        matchedItems = await BetterRollTablesHelpers.retrieveResultsDataLootWithBetterRollTables(actorName, item.name);
 
         if (matchedItems.length === 0) {
             Logger.debug(`LootingHelpers | MatchedItems is empty`);
             Logger.debug(
                 `LootingHelpers | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
             );
-            RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
+            await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
                 chatTitle: "Looting valuable from corpses.",
                 chatDescription: `<h3>Looting</h3>'${controlledToken.name}' attempted to loot resources from '${targetedToken.name}' but failed to find anything for this creature.`,
                 chatButtonLabel: undefined,
@@ -77,21 +87,36 @@ export class LootingHelpers {
                 chatImg: "icons/skills/social/theft-pickpocket-bribery-brown.webp",
             });
         } else {
-            Logger.debug(`LootingHelpers | MatchedItems is not empty`);
+            Logger.debug(`LootingHelpers | RollTablesMatched is not empty`);
 
             let lootMessage = targetedToken.name;
             if (lootMessage !== actorName) {
                 lootMessage += ` (${actorName})`;
             }
-            // TODO Loot integration with BRT
-            if (false) {
-                // if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
-                Logger.debug(`HarvestingHelpers | BRT is enable`);
-                // TODO
+            let lootMessageList = "";
+            for (const result of matchedItems) {
+                const currencyLabel = ItemPilesHelpers.generateCurrenciesStringFromString(result.text);
+                if (SETTINGS.autoAddItems) {
+                    await ItemPilesHelpers.addCurrencies(controlledToken, currencyLabel);
+                }
+                lootMessageList += `<li>${currencyLabel}</li>`;
+            }
+
+            let messageDataList = { content: "", whisper: {} };
+            if (SETTINGS.gmOnly) {
+                messageDataList.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
+            }
+            messageDataList.content = `<h3>Looting</h3>After examining the corpse ${controlledToken.name} loot from ${targetedToken.name}:<ul>${lootMessageList}</ul>`;
+
+            ChatMessage.create(messageDataList);
+
+            /*
+            if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
+                Logger.debug(`LootingHelpersHelpers | BRT is enable`);
             } else {
-                let normalLoot = matchedItems[0].description;
+                let normalLoot = rollTablesMatched[0].description;
                 if (normalLoot === "false" && !SETTINGS.lootBeasts) {
-                    Logger.warn(`Normal loot is been disabled for this roll table ${matchedItems[0].name}`, true);
+                    Logger.warn(`Normal loot is been disabled for this roll table ${rollTablesMatched[0].name}`, true);
                     Logger.warn(`normalLoot=${normalLoot} and SETTINGS.lootBeasts=${SETTINGS.lootBeasts}`);
                     let messageData = { content: "", whisper: {} };
                     if (SETTINGS.gmOnly) {
@@ -101,16 +126,15 @@ export class LootingHelpers {
                     ChatMessage.create(messageData);
                     return;
                 }
-
-                matchedItems[0].description = ""; //remove the boolean present in the description which describes if the entry is a beast that doesn't normally have loot
-
+                rollTablesMatched[0].description = ""; //remove the boolean present in the description which describes if the entry is a beast that doesn't normally have loot
                 matchedItems[0].roll({ async: false }).then((result) => {
                     let rollMap = LootingHelpers.formatLootRoll(result.results[0].text);
                     let lootMessageList = "";
 
                     currencyFlavors.forEach((currency) => {
-                        if (!rollMap.has(currency)) return;
-
+                        if (!rollMap.has(currency)) {
+                            return;
+                        }
                         let roll = new Roll(rollMap.get(currency));
                         let rollResult = roll.roll({ async: false });
                         lootMessageList += `<li>${rollResult.total} ${currency}</li>`;
@@ -118,23 +142,24 @@ export class LootingHelpers {
                             LootingHelpers.updateActorCurrency(controlActor, currency, rollResult.total);
                         }
                     });
-
-                    let messageDataList = { content: "", whisper: {} };
-                    if (SETTINGS.gmOnly) {
-                        messageDataList.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
-                    }
-                    messageDataList.content = `<h3>Looting</h3>After examining the corpse ${controlledToken.name} loot from ${targetedToken.name}:<ul>${lootMessageList}</ul>`;
-
-                    ChatMessage.create(messageDataList);
                 });
+
+                let messageDataList = { content: "", whisper: {} };
+                if (SETTINGS.gmOnly) {
+                    messageDataList.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
+                }
+                messageDataList.content = `<h3>Looting</h3>After examining the corpse ${controlledToken.name} loot from ${targetedToken.name}:<ul>${lootMessageList}</ul>`;
+
+                ChatMessage.create(messageDataList);
             }
+            */
         }
 
         item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
         harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
 
         Logger.debug(
-            `LootingHelpers | Harvesting '${controlledToken.name}' attempted to looting resources from '${targetedToken.name}'.`,
+            `LootingHelpers | LootingHelpers '${controlledToken.name}' attempted to looting resources from '${targetedToken.name}'.`,
         );
     }
 
@@ -188,7 +213,7 @@ export class LootingHelpers {
       );
 
       matchedItems.forEach((item) => {
-        Logger.debug(`HarvestingHelpers | BRT check matchedItem`, item);
+        Logger.debug(`LootingHelpersHelpers | BRT check matchedItem`, item);
         // if (item.type === "loot") {
           lootMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
           Logger.debug(`LootingHelpers | BRT the item ${item.name} is been added as success`);
@@ -243,7 +268,7 @@ export class LootingHelpers {
       messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
     }
     if (lootMessage) {
-      messageData.content = `<h3>Harvesting</h3>${lootMessage}</ul>`;
+      messageData.content = `<h3>LootingHelpers</h3>${lootMessage}</ul>`;
     }
 
     ChatMessage.create(messageData);

@@ -86,35 +86,35 @@ export function registerSettings() {
         default: false,
     });
 
-    game.settings.register(CONSTANTS.MODULE_ID, "disableLoot", {
-        name: "Disable Looting mechanic",
-        hint: "Disables the Loot mechanic, making it unavailable until enabled.",
-        scope: "world",
-        config: true,
-        requiresReload: true,
-        type: Boolean,
-        default: false,
-    });
+    // game.settings.register(CONSTANTS.MODULE_ID, "disableLoot", {
+    //     name: "Disable Looting mechanic",
+    //     hint: "Disables the Loot mechanic, making it unavailable until enabled.",
+    //     scope: "world",
+    //     config: true,
+    //     requiresReload: true,
+    //     type: Boolean,
+    //     default: false,
+    // });
 
-    game.settings.register(CONSTANTS.MODULE_ID, "lootBeasts", {
-        name: "Loot All Creatures",
-        hint: "Allow looting of all possible creatures including beasts",
-        scope: "world",
-        config: true,
-        requiresReload: true,
-        type: Boolean,
-        default: false,
-    });
+    // game.settings.register(CONSTANTS.MODULE_ID, "lootBeasts", {
+    //     name: "Loot All Creatures",
+    //     hint: "Allow looting of all possible creatures including beasts",
+    //     scope: "world",
+    //     config: true,
+    //     requiresReload: true,
+    //     type: Boolean,
+    //     default: false,
+    // });
 
-    game.settings.register(CONSTANTS.MODULE_ID, "enableBetterRollIntegration", {
-        name: "Enable integration with the module 'Better Rolltable'",
-        hint: "Integration with the module 'Better Rolltable', for a more randomized behavior during the harvester action and a better customization for the specific creature, formula, filter additional elements, etc.",
-        scope: "world",
-        config: true,
-        requiresReload: true,
-        type: Boolean,
-        default: false,
-    });
+    // game.settings.register(CONSTANTS.MODULE_ID, "enableBetterRollIntegration", {
+    //     name: "Enable integration with the module 'Better Rolltable'",
+    //     hint: "Integration with the module 'Better Rolltable', for a more randomized behavior during the harvester action and a better customization for the specific creature, formula, filter additional elements, etc.",
+    //     scope: "world",
+    //     config: true,
+    //     requiresReload: true,
+    //     type: Boolean,
+    //     default: false,
+    // });
 
     game.settings.register(CONSTANTS.MODULE_ID, "requestorPopout", {
         name: "Requestor Popout",
@@ -143,9 +143,9 @@ export function registerSettings() {
     SETTINGS.autoAddActionGroup = game.settings.get(CONSTANTS.MODULE_ID, "autoAddActionGroup");
     SETTINGS.enforceRange = game.settings.get(CONSTANTS.MODULE_ID, "enforceRange");
     SETTINGS.allowAbilityChange = game.settings.get(CONSTANTS.MODULE_ID, "allowAbilityChange");
-    SETTINGS.disableLoot = game.settings.get(CONSTANTS.MODULE_ID, "disableLoot");
-    SETTINGS.lootBeasts = game.settings.get(CONSTANTS.MODULE_ID, "lootBeasts");
-    SETTINGS.enableBetterRollIntegration = game.settings.get(CONSTANTS.MODULE_ID, "enableBetterRollIntegration");
+    // SETTINGS.disableLoot = game.settings.get(CONSTANTS.MODULE_ID, "disableLoot");
+    // SETTINGS.lootBeasts = game.settings.get(CONSTANTS.MODULE_ID, "lootBeasts");
+    // SETTINGS.enableBetterRollIntegration = game.settings.get(CONSTANTS.MODULE_ID, "enableBetterRollIntegration");
     SETTINGS.debug = game.settings.get(CONSTANTS.MODULE_ID, "debug");
 }
 
@@ -158,7 +158,7 @@ export const SETTINGS = {
     autoAddActionGroup: "PCOnly",
     enforceRange: true,
     allowAbilityChange: false,
-    disableLoot: false,
-    lootBeasts: false,
-    enableBetterRollIntegration: false,
+    // disableLoot: false,
+    // lootBeasts: false,
+    // enableBetterRollIntegration: false,
 };
