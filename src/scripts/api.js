@@ -1,8 +1,14 @@
 import Logger from "./lib/Logger.js";
 import { HarvestingHelpers } from "./lib/harvesting-helpers.js";
+import ItemPilesHelpers from "./lib/item-piles-helpers.js";
 import { LootingHelpers } from "./lib/looting-helpers.js";
+import { RetrieveHelpers } from "./lib/retrieve-helpers.js";
 
 const API = {
+    _Logger: Logger,
+    _ItemPilesHelpers: ItemPilesHelpers,
+    _RetrieveHelpers: RetrieveHelpers,
+
     async handlePreRollHarvestAction(inAttributes) {
         //   if (!Array.isArray(inAttributes)) {
         //     throw Logger.error("handlePreRollHarvestAction | inAttributes must be of type array");

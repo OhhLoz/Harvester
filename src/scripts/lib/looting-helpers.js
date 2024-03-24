@@ -190,7 +190,7 @@ export class LootingHelpers {
       matchedItems.forEach((item) => {
         Logger.debug(`HarvestingHelpers | BRT check matchedItem`, item);
         // if (item.type === "loot") {
-          lootMessage += `<li>@UUID[${item.uuid}]</li>`;
+          lootMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
           Logger.debug(`LootingHelpers | BRT the item ${item.name} is been added as success`);
           successArr.push(item);
         // } else {
@@ -213,7 +213,7 @@ export class LootingHelpers {
             itemDC = retrieveItemSourceLabelDC(item);
           }
           if (itemDC <= result.total) {
-            lootMessage += `<li>@UUID[${item.uuid}]</li>`;
+            lootMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
             Logger.debug(`LootingHelpers | STANDARD the item ${item.name} is been added as success`);
             successArr.push(item.toObject());
           }

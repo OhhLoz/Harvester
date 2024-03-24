@@ -19,7 +19,15 @@ import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
 import Logger from "./Logger.js";
-import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel, formatDragon } from "./lib.js";
+import BetterRollTablesHelpers from "./better-rolltables-helpers.js";
+import ItemPilesHelpers from "./item-piles-helpers.js";
+import {
+    checkItemSourceLabel,
+    retrieveItemSourceLabelDC,
+    retrieveItemSourceLabel,
+    formatDragon,
+    isRealBoolean,
+} from "./lib.js";
 
 export class HarvestingHelpers {
     static async handlePreRollHarvestAction(options) {
@@ -53,7 +61,7 @@ export class HarvestingHelpers {
         let matchedItems = [];
         if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables) {
             Logger.debug(`HarvestingHelpers | Searching MatchedItems with BRT`);
-            matchedItems = HarvestingHelpers.retrieveTablesHarvestWithBetterRollTables(
+            matchedItems = BetterRollTablesHelpers.retrieveTablesHarvestWithBetterRollTables(
                 actorName,
                 harvestAction.name || item.name,
             );
@@ -187,7 +195,7 @@ export class HarvestingHelpers {
 
         if (SETTINGS.enableBetterRollIntegration && hasBetterRollTables && item.name === harvestAction.name) {
             Logger.debug(`HarvestingHelpers | BRT is enable, and has a rollTable`);
-            matchedItems = await HarvestingHelpers.retrieveItemsHarvestWithBetterRollTables(
+            matchedItems = await BetterRollTablesHelpers.retrieveItemsHarvestWithBetterRollTables(
                 actorName,
                 item.name,
                 result.total,
@@ -197,7 +205,7 @@ export class HarvestingHelpers {
             matchedItems.forEach((item) => {
                 Logger.debug(`HarvestingHelpers | BRT check matchedItem`, item);
                 // if (item.type === "loot") {
-                harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
+                harvesterMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
                 Logger.debug(`HarvestingHelpers | BRT the item ${item.name} is been added as success`);
                 successArr.push(item);
                 // } else {
@@ -220,7 +228,7 @@ export class HarvestingHelpers {
                     itemDC = retrieveItemSourceLabelDC(item);
                 }
                 if (itemDC <= result.total) {
-                    harvesterMessage += `<li>@UUID[${item.uuid}]</li>`;
+                    harvesterMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
                     Logger.debug(`HarvestingHelpers | STANDARD the item ${item.name} is been added as success`);
                     successArr.push(item.toObject());
                 }
@@ -233,7 +241,7 @@ export class HarvestingHelpers {
 
         if (SETTINGS.autoAddItems && successArr?.length > 0) {
             Logger.debug(`HarvestingHelpers | FINAL autoAddItems enable and successArr is not empty`);
-            await addItemsToActor(controlledToken.actor, successArr);
+            await HarvestingHelpers.addItemsToActorHarvesterOption(controlledToken.actor, targetedToken, successArr);
         } else {
             Logger.debug(`HarvestingHelpers | FINAL autoAddItems is ${SETTINGS.autoAddItems ? "enable" : "disable"}`);
             Logger.debug(
@@ -260,92 +268,24 @@ export class HarvestingHelpers {
         return false;
     }
 
-    static retrieveTablesHarvestWithBetterRollTables(actorName, actionName) {
-        if (actorName.includes("Dragon")) {
-            actorName = formatDragon(actorName);
+    static async addItemsToActorHarvesterOption(actor, targetedToken, itemsToAdd) {
+        const shareIt = await RequestorHelpers.requestHarvestMessage(actor, undefined, itemsToAdd, targetedToken, {
+            popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
+        });
+        /*
+        if(!isRealBoolean(shareIt)) {
+            Logger.error(`Something went wrong with the harvester code`, true);
+            return;
         }
-        if (actionName === harvestAction.name) {
-            // const dcValue = getProperty(xxx, `system.description.chat`);
-            // const skillValue = getProperty(xxx, `system.description.unidentified`);
-            const sourceValue = actorName ?? ""; // getProperty(xxx, `system.source`);
-            // let compendium = game.packs.get(betterRollTableId);
-            // const docs = compendium.contents;
-            const docs = harvestBetterRollCompendium;
-            let tablesChecked = [];
-            // Try with the compendium first
-            for (const doc of docs) {
-                if (sourceValue.trim() === getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim()) {
-                    tablesChecked.push(doc);
-                }
-            }
-            // Try on the tables imported
-            if (!tablesChecked || tablesChecked.length === 0) {
-                tablesChecked = game.tables.contents.filter((doc) => {
-                    return sourceValue.trim() === getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim();
-                });
-            }
-            // We juts get the first
-            if (!tablesChecked || tablesChecked.length === 0) {
-                Logger.warn(
-                    `retrieveTablesHarvestWithBetterRollTables | BRT No rolltable found for metadata sourceId '${sourceValue}'`,
-                    true,
-                );
-                return [];
-            }
-            return tablesChecked;
+        if (shareIt) {
+            Logger.debug(`SHARE IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+            await ItemPilesHelpers.convertTokenToItemPilesContainer(targetedToken);
         } else {
-            Logger.warn(
-                `retrieveTablesHarvestWithBetterRollTables | BRT No rolltable found for action '${harvestAction.name}'`,
-                true,
-            );
-            return [];
+            Logger.debug(`KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+            await ItemPilesHelpers.addItems(targetedToken, itemsToAdd, {
+                mergeSimilarItems: true,
+            });
         }
-    }
-
-    static async retrieveItemsHarvestWithBetterRollTables(actorName, actionName, dcValue = null, skillDenom = null) {
-        let returnArr = [];
-        if (actionName === harvestAction.name) {
-            if (!dcValue) {
-                dcValue = 0;
-            }
-            if (!skillDenom) {
-                skillDenom = "";
-            }
-
-            const tablesChecked = HarvestingHelpers.retrieveTablesHarvestWithBetterRollTables(actorName, actionName);
-            if (!tablesChecked || tablesChecked.length === 0) {
-                Logger.warn(
-                    `retrieveItemsHarvestWithBetterRollTables | BRT No rolltable found for action '${actionName}'`,
-                    true,
-                );
-                return [];
-            }
-            const tableHarvester = tablesChecked[0];
-            returnArr = await game.modules
-                .get("better-rolltables")
-                .api.retrieveItemsDataFromRollTableResultSpecialHarvester({
-                    table: tableHarvester,
-                    options: {
-                        rollMode: "gmroll",
-                        dc: dcValue,
-                        skill: skillDenom,
-                    },
-                });
-        } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
-            // TODO A INTEGRATION WITH THE LOOT TYPE TABLE
-            returnArr = checkCompendium(customLootCompendium, "name", actor.name);
-
-            if (returnArr.length !== 0) {
-                Logger.warn(
-                    `retrieveItemsHarvestWithBetterRollTables | BRT No rolltable found for action '${actionName}'`,
-                    true,
-                );
-                return returnArr;
-            }
-
-            returnArr = checkCompendium(lootCompendium, "name", actorName);
-        }
-
-        return returnArr ?? [];
+        */
     }
 }

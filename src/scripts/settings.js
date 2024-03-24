@@ -137,7 +137,6 @@ export function registerSettings() {
     SETTINGS.autoAddItems = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItems");
     SETTINGS.autoAddItemPiles = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItemPiles");
 
-    SETTINGS.autoAddItems = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItems");
     SETTINGS.gmOnly = game.settings.get(CONSTANTS.MODULE_ID, "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get(CONSTANTS.MODULE_ID, "requireDeadEffect");
     SETTINGS.npcOnlyHarvest = game.settings.get(CONSTANTS.MODULE_ID, "npcOnlyHarvest");

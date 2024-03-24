@@ -538,249 +538,249 @@ export default class ItemPilesHelpers {
         return await ItemPilesHelpers.rollTable(table, options);
     }
 
-    /**
-     * @href https://github.com/fantasycalendar/FoundryVTT-ItemPiles/blob/master/src/helpers/pile-utilities.js#L1885
-     * @param {RollTable|string} tableReference
-     * @param {Object} options
-     * @returns {Promise<ItemData[]>} Item Data
-     */
-    static async rollTable(tableReference, options) {
-        const table = await RetrieveHelpers.getRollTableAsync(tableReference);
+    // /**
+    //  * @href https://github.com/fantasycalendar/FoundryVTT-ItemPiles/blob/master/src/helpers/pile-utilities.js#L1885
+    //  * @param {RollTable|string} tableReference
+    //  * @param {Object} options
+    //  * @returns {Promise<ItemData[]>} Item Data
+    //  */
+    // static async rollTable(tableReference, options) {
+    //     const table = await RetrieveHelpers.getRollTableAsync(tableReference);
 
-        const formula = table.formula;
-        const resetTable = !!options.resetTable; // true;
-        const normalize = !!options.normalize; // false;
-        const displayChat = options.displayChat;
-        const rollData = options.roll;
-        const customCategory = !!options.customCategory; // false
-        const recursive = !!options.recursive; // true
+    //     const formula = table.formula;
+    //     const resetTable = !!options.resetTable; // true;
+    //     const normalize = !!options.normalize; // false;
+    //     const displayChat = options.displayChat;
+    //     const rollData = options.roll;
+    //     const customCategory = !!options.customCategory; // false
+    //     const recursive = !!options.recursive; // true
 
-        if (!options.formula) {
-            options.formula = table.formula;
-        }
+    //     if (!options.formula) {
+    //         options.formula = table.formula;
+    //     }
 
-        //const table = await fromUuid(tableUuid);
+    //     //const table = await fromUuid(tableUuid);
 
-        if (!table.uuid.startsWith("Compendium")) {
-            if (resetTable) {
-                await table.reset();
-            }
+    //     if (!table.uuid.startsWith("Compendium")) {
+    //         if (resetTable) {
+    //             await table.reset();
+    //         }
 
-            if (normalize) {
-                await table.update({
-                    results: table.results.map((result) => ({
-                        _id: result.id,
-                        weight: result.range[1] - (result.range[0] - 1),
-                    })),
-                });
-                await table.normalize();
-            }
-        }
+    //         if (normalize) {
+    //             await table.update({
+    //                 results: table.results.map((result) => ({
+    //                     _id: result.id,
+    //                     weight: result.range[1] - (result.range[0] - 1),
+    //                 })),
+    //             });
+    //             await table.normalize();
+    //         }
+    //     }
 
-        // START MOD 4535992
-        /*
-        const roll = new Roll(formula.toString(), rollData).evaluate({ async: false });
-        if (roll.total <= 0) {
-        return [];
-        }
-        let results = [];
-        if (game.modules.get("better-rolltables")?.active) {
-            results = (await game.modules.get("better-rolltables").api.roll(table)).itemsData.map(result => ({
-                documentCollection: result.documentCollection,
-                documentId: result.documentId,
-                text: result.text || result.name,
-                img: result.img,
-                quantity: 1
-            }));
-        } else {
-            results = (await table.drawMany(roll.total, { displayChat, recursive: true })).results;
-        }
-        */
-        options.displayChat = false;
-        const results = await game.modules.get("better-rolltables").api.betterTableRoll(table, options);
-        // END MOD 4535992
+    //     // START MOD 4535992
+    //     /*
+    //     const roll = new Roll(formula.toString(), rollData).evaluate({ async: false });
+    //     if (roll.total <= 0) {
+    //     return [];
+    //     }
+    //     let results = [];
+    //     if (game.modules.get("better-rolltables")?.active) {
+    //         results = (await game.modules.get("better-rolltables").api.roll(table)).itemsData.map(result => ({
+    //             documentCollection: result.documentCollection,
+    //             documentId: result.documentId,
+    //             text: result.text || result.name,
+    //             img: result.img,
+    //             quantity: 1
+    //         }));
+    //     } else {
+    //         results = (await table.drawMany(roll.total, { displayChat, recursive: true })).results;
+    //     }
+    //     */
+    //     options.displayChat = false;
+    //     const results = await game.modules.get("better-rolltables").api.betterTableRoll(table, options);
+    //     // END MOD 4535992
 
-        // const rolledItems = [];
-        // for (const rollData of results) {
-        //   let rolledQuantity = rollData?.quantity ?? 1;
-        //   let item;
-        //   if (rollData.documentCollection === "Item") {
-        //     item = game.items.get(rollData.documentId);
-        //   } else {
-        //     const compendium = game.packs.get(rollData.documentCollection);
-        //     if (compendium) {
-        //       item = await compendium.getDocument(rollData.documentId);
-        //     }
-        //   }
-        //   if (item instanceof RollTable) {
-        //     Logger.error(
-        //       `'item instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`
-        //     );
-        //     rolledItems.push(
-        //       ...(await ItemPilesHelpers.rollTable({ tableUuid: item.uuid, resetTable, normalize, displayChat }))
-        //     );
-        //   } else if (item instanceof Item) {
-        //     const quantity = Math.max(ItemPilesHelpers.getItemQuantity(item) * rolledQuantity, 1);
-        //     rolledItems.push({
-        //       ...rollData,
-        //       item,
-        //       quantity,
-        //     });
-        //   }
-        // }
+    //     // const rolledItems = [];
+    //     // for (const rollData of results) {
+    //     //   let rolledQuantity = rollData?.quantity ?? 1;
+    //     //   let item;
+    //     //   if (rollData.documentCollection === "Item") {
+    //     //     item = game.items.get(rollData.documentId);
+    //     //   } else {
+    //     //     const compendium = game.packs.get(rollData.documentCollection);
+    //     //     if (compendium) {
+    //     //       item = await compendium.getDocument(rollData.documentId);
+    //     //     }
+    //     //   }
+    //     //   if (item instanceof RollTable) {
+    //     //     Logger.error(
+    //     //       `'item instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`
+    //     //     );
+    //     //     rolledItems.push(
+    //     //       ...(await ItemPilesHelpers.rollTable({ tableUuid: item.uuid, resetTable, normalize, displayChat }))
+    //     //     );
+    //     //   } else if (item instanceof Item) {
+    //     //     const quantity = Math.max(ItemPilesHelpers.getItemQuantity(item) * rolledQuantity, 1);
+    //     //     rolledItems.push({
+    //     //       ...rollData,
+    //     //       item,
+    //     //       quantity,
+    //     //     });
+    //     //   }
+    //     // }
 
-        // const items = [];
-        // rolledItems.forEach((newItem) => {
-        //   // MOD 4535992
-        //   const existingItem = ItemPilesHelpers.findSimilarItem(items, newItem);
-        //   //  const existingItem = items.find((item) => item.documentId === newItem.documentId);
-        //   if (existingItem) {
-        //     existingItem.quantity += Math.max(newItem.quantity, 1);
-        //   } else {
-        //     setProperty(newItem, ItemPilesHelpers.FLAGS.ITEM, getProperty(newItem.item, ItemPilesHelpers.FLAGS.ITEM));
-        //     if (
-        //       game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE &&
-        //       !getProperty(newItem, game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE)
-        //     ) {
-        //       setProperty(
-        //         newItem,
-        //         game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE,
-        //         ItemPilesHelpers.getItemQuantity(newItem.item)
-        //       );
-        //     }
-        //     if (customCategory) {
-        //       setProperty(newItem, ItemPilesHelpers.FLAGS.CUSTOM_CATEGORY, customCategory);
-        //     }
-        //     items.push({
-        //       ...newItem,
-        //     });
-        //   }
-        // });
+    //     // const items = [];
+    //     // rolledItems.forEach((newItem) => {
+    //     //   // MOD 4535992
+    //     //   const existingItem = ItemPilesHelpers.findSimilarItem(items, newItem);
+    //     //   //  const existingItem = items.find((item) => item.documentId === newItem.documentId);
+    //     //   if (existingItem) {
+    //     //     existingItem.quantity += Math.max(newItem.quantity, 1);
+    //     //   } else {
+    //     //     setProperty(newItem, ItemPilesHelpers.FLAGS.ITEM, getProperty(newItem.item, ItemPilesHelpers.FLAGS.ITEM));
+    //     //     if (
+    //     //       game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE &&
+    //     //       !getProperty(newItem, game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE)
+    //     //     ) {
+    //     //       setProperty(
+    //     //         newItem,
+    //     //         game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE,
+    //     //         ItemPilesHelpers.getItemQuantity(newItem.item)
+    //     //       );
+    //     //     }
+    //     //     if (customCategory) {
+    //     //       setProperty(newItem, ItemPilesHelpers.FLAGS.CUSTOM_CATEGORY, customCategory);
+    //     //     }
+    //     //     items.push({
+    //     //       ...newItem,
+    //     //     });
+    //     //   }
+    //     // });
 
-        // const itemsRetrieved = items.map((item) => {
-        //   const itemData = item.item instanceof Item ? item.item.toObject() : item.item;
-        //   const actualItem = itemData; // item.item.toObject();
-        //   return ItemPilesHelpers.setItemQuantity(actualItem, item.quantity);
-        // });
+    //     // const itemsRetrieved = items.map((item) => {
+    //     //   const itemData = item.item instanceof Item ? item.item.toObject() : item.item;
+    //     //   const actualItem = itemData; // item.item.toObject();
+    //     //   return ItemPilesHelpers.setItemQuantity(actualItem, item.quantity);
+    //     // });
 
-        // return itemsRetrieved;
-        const itemsRetrieved = await ItemPilesHelpers._convertResultsToStackedItems(results, options);
-        return itemsRetrieved;
-    }
+    //     // return itemsRetrieved;
+    //     const itemsRetrieved = await ItemPilesHelpers._convertResultsToStackedItems(results, options);
+    //     return itemsRetrieved;
+    // }
 
-    static async _convertResultsToStackedItems(results, options = {}) {
-        // const formula = options.formula;
-        const resetTable = !!options.resetTable; // true;
-        const normalize = !!options.normalize; // false;
-        const displayChat = options.displayChat;
-        const rollData = options.roll;
-        const customCategory = !!options.customCategory; // false
-        const recursive = !!options.recursive; // true
+    // static async _convertResultsToStackedItems(results, options = {}) {
+    //     // const formula = options.formula;
+    //     const resetTable = !!options.resetTable; // true;
+    //     const normalize = !!options.normalize; // false;
+    //     const displayChat = options.displayChat;
+    //     const rollData = options.roll;
+    //     const customCategory = !!options.customCategory; // false
+    //     const recursive = !!options.recursive; // true
 
-        const rolledItems = [];
-        for (const rollData of results) {
-            // START MOD 4535992
-            /*
-            let rolledQuantity = rollData?.quantity ?? 1;
-            let item;
-            if (rollData.documentCollection === "Item") {
-            item = game.items.get(rollData.documentId);
-            } else {
-            const compendium = game.packs.get(rollData.documentCollection);
-            if (compendium) {
-                item = await compendium.getDocument(rollData.documentId);
-            }
-            }
-            if (item instanceof RollTable) {
-            Logger.error(
-                `'item instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`
-            );
-            rolledItems.push(
-                ...(await ItemPilesHelpers.rollTable({ tableUuid: item.uuid, resetTable, normalize, displayChat }))
-            );
-            } else if (item instanceof Item) {
-            const quantity = Math.max(ItemPilesHelpers.getItemQuantity(item) * rolledQuantity, 1);
-            rolledItems.push({
-                ...rollData,
-                item,
-                quantity,
-            });
-            }
-            */
-            // TODO find a better way for do this, BRT already manage the one quantity behaviour
-            // let rolledQuantity = rollData?.quantity ?? 1;
-            let rolledQuantity = 1;
-            const itemTmp = await game.modules.get("better-rolltables").api.resultToItemData(rollData);
-            if (!itemTmp) {
-                Logger.debug(
-                    `The result '${rollData.name + "|" + rollData.documentId}' is not a valid link anymore`,
-                    true,
-                );
-                continue;
-            }
-            if (itemTmp instanceof RollTable) {
-                Logger.error(
-                    `'itemTmp instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`,
-                );
-                rolledItems.push(
-                    ...(await ItemPilesHelpers.rollTable({
-                        tableUuid: itemTmp.uuid,
-                        resetTable: resetTable,
-                        normalize: normalize,
-                        displayChat: displayChat,
-                    })),
-                );
-            } else {
-                const quantity = Math.max(ItemPilesHelpers.getItemQuantity(itemTmp) * rolledQuantity, 1);
-                rolledItems.push({
-                    ...rollData,
-                    item: itemTmp,
-                    quantity: quantity,
-                });
-            }
-            // END MOD 4535992
-        }
+    //     const rolledItems = [];
+    //     for (const rollData of results) {
+    //         // START MOD 4535992
+    //         /*
+    //         let rolledQuantity = rollData?.quantity ?? 1;
+    //         let item;
+    //         if (rollData.documentCollection === "Item") {
+    //         item = game.items.get(rollData.documentId);
+    //         } else {
+    //         const compendium = game.packs.get(rollData.documentCollection);
+    //         if (compendium) {
+    //             item = await compendium.getDocument(rollData.documentId);
+    //         }
+    //         }
+    //         if (item instanceof RollTable) {
+    //         Logger.error(
+    //             `'item instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`
+    //         );
+    //         rolledItems.push(
+    //             ...(await ItemPilesHelpers.rollTable({ tableUuid: item.uuid, resetTable, normalize, displayChat }))
+    //         );
+    //         } else if (item instanceof Item) {
+    //         const quantity = Math.max(ItemPilesHelpers.getItemQuantity(item) * rolledQuantity, 1);
+    //         rolledItems.push({
+    //             ...rollData,
+    //             item,
+    //             quantity,
+    //         });
+    //         }
+    //         */
+    //         // TODO find a better way for do this, BRT already manage the one quantity behaviour
+    //         // let rolledQuantity = rollData?.quantity ?? 1;
+    //         let rolledQuantity = 1;
+    //         const itemTmp = await game.modules.get("better-rolltables").api.resultToItemData(rollData);
+    //         if (!itemTmp) {
+    //             Logger.debug(
+    //                 `The result '${rollData.name + "|" + rollData.documentId}' is not a valid link anymore`,
+    //                 true,
+    //             );
+    //             continue;
+    //         }
+    //         if (itemTmp instanceof RollTable) {
+    //             Logger.error(
+    //                 `'itemTmp instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`,
+    //             );
+    //             rolledItems.push(
+    //                 ...(await ItemPilesHelpers.rollTable({
+    //                     tableUuid: itemTmp.uuid,
+    //                     resetTable: resetTable,
+    //                     normalize: normalize,
+    //                     displayChat: displayChat,
+    //                 })),
+    //             );
+    //         } else {
+    //             const quantity = Math.max(ItemPilesHelpers.getItemQuantity(itemTmp) * rolledQuantity, 1);
+    //             rolledItems.push({
+    //                 ...rollData,
+    //                 item: itemTmp,
+    //                 quantity: quantity,
+    //             });
+    //         }
+    //         // END MOD 4535992
+    //     }
 
-        const items = [];
-        rolledItems.forEach((newItem) => {
-            // MOD 4535992
-            const existingItem = ItemPilesHelpers.findSimilarItem(items, newItem);
-            //  const existingItem = items.find((item) => item.documentId === newItem.documentId);
-            if (existingItem) {
-                existingItem.quantity += Math.max(newItem.quantity, 1);
-            } else {
-                setProperty(
-                    newItem,
-                    ItemPilesHelpers.FLAGS.ITEM,
-                    getProperty(newItem.item, ItemPilesHelpers.FLAGS.ITEM),
-                );
-                if (
-                    game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE &&
-                    !getProperty(newItem, game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE)
-                ) {
-                    setProperty(
-                        newItem,
-                        game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE,
-                        ItemPilesHelpers.getItemQuantity(newItem.item),
-                    );
-                }
-                if (customCategory) {
-                    setProperty(newItem, ItemPilesHelpers.FLAGS.CUSTOM_CATEGORY, customCategory);
-                }
-                items.push({
-                    ...newItem,
-                });
-            }
-        });
+    //     const items = [];
+    //     rolledItems.forEach((newItem) => {
+    //         // MOD 4535992
+    //         const existingItem = ItemPilesHelpers.findSimilarItem(items, newItem);
+    //         //  const existingItem = items.find((item) => item.documentId === newItem.documentId);
+    //         if (existingItem) {
+    //             existingItem.quantity += Math.max(newItem.quantity, 1);
+    //         } else {
+    //             setProperty(
+    //                 newItem,
+    //                 ItemPilesHelpers.FLAGS.ITEM,
+    //                 getProperty(newItem.item, ItemPilesHelpers.FLAGS.ITEM),
+    //             );
+    //             if (
+    //                 game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE &&
+    //                 !getProperty(newItem, game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE)
+    //             ) {
+    //                 setProperty(
+    //                     newItem,
+    //                     game.itempiles.API.QUANTITY_FOR_PRICE_ATTRIBUTE,
+    //                     ItemPilesHelpers.getItemQuantity(newItem.item),
+    //                 );
+    //             }
+    //             if (customCategory) {
+    //                 setProperty(newItem, ItemPilesHelpers.FLAGS.CUSTOM_CATEGORY, customCategory);
+    //             }
+    //             items.push({
+    //                 ...newItem,
+    //             });
+    //         }
+    //     });
 
-        const itemsRetrieved = items.map((item) => {
-            const itemData = item.item instanceof Item ? item.item.toObject() : item.item;
-            const actualItem = itemData; // item.item.toObject();
-            return ItemPilesHelpers.setItemQuantity(actualItem, item.quantity);
-        });
+    //     const itemsRetrieved = items.map((item) => {
+    //         const itemData = item.item instanceof Item ? item.item.toObject() : item.item;
+    //         const actualItem = itemData; // item.item.toObject();
+    //         return ItemPilesHelpers.setItemQuantity(actualItem, item.quantity);
+    //     });
 
-        return itemsRetrieved;
-    }
+    //     return itemsRetrieved;
+    // }
 
     /**
      * Returns a given item's quantity
@@ -926,11 +926,12 @@ export default class ItemPilesHelpers {
     static async convertTokensToItemPiles(
         tokensTarget,
         options = {
-            applyDefaultLight: true,
+            applyDefaultLight: false,
             untouchedImage: "",
             isSinglePile: false,
             deleteTokens: false,
             addCurrency: false,
+            warpgatePermanent: false,
         },
         tokenSettings = { rotation: 0 },
         pileSettings = {
@@ -944,7 +945,8 @@ export default class ItemPilesHelpers {
     ) {
         const tokens = Array.isArray(tokensTarget) ? tokensTarget : [tokensTarget];
         const token = tokens[0];
-        const { applyDefaultLight, untouchedImage, isSinglePile, deleteTokens } = options;
+        const { applyDefaultLight, untouchedImage, addCurrency, isSinglePile, deleteTokens, warpgatePermanent } =
+            options;
 
         if (applyDefaultLight) {
             let light = {
@@ -999,6 +1001,38 @@ export default class ItemPilesHelpers {
                 }, {});
 
                 foundry.utils.mergeObject(acc.embedded.Item, items);
+
+                if (addCurrency) {
+                    // TODO BETTER MAYBE WITH BRT ??
+                    /*
+                    // Adjust as needed -- this very loosely approximates individual treasure by CR
+                    const exponent = 0.15 * (getProperty(tok.actor, "system.details.cr") ?? 0);
+                    let gold = Math.round(0.6 * 10 * (10 ** exponent));
+        
+                    // ensure it can devide evenly across all looting players (convienence)
+                    gold = gold + (numPlayers) - (gold % Math.max(numPlayers, 1)) ?? 0;
+        
+                    // split a random percentage to silver (no more than half)
+                    const silverPct = Math.random()/2;
+                    const convertedGold = Math.floor(gold * silverPct);
+                    let silver = convertedGold * 10;
+                    gold -= convertedGold
+        
+                    // split a random percentage to copper (no more than half silver)
+                    const cprPct = Math.random()/2;
+                    const convertedSilver = Math.floor(silver * cprPct);
+                    let copper = convertedSilver * 10;
+                    silver -= convertedSilver
+        
+                    // Add onto any currency the actor may already have
+                    gold += acc.actor.system.currency.gp + getProperty(tok.actor, 'system.currency.gp') ?? 0 
+                    silver += acc.actor.system.currency.sp + getProperty(tok.actor, 'system.currency.sp') ?? 0
+                    copper += acc.actor.system.currency.cp + getProperty(tok.actor, 'system.currency.cp') ?? 0
+        
+                    acc.actor.system.currency = {gp: gold, sp: silver, cp: copper};
+                    */
+                }
+
                 return acc;
             }, updates);
 
@@ -1011,7 +1045,7 @@ export default class ItemPilesHelpers {
                 token.document,
                 singlePile,
                 {},
-                { permanent: true, comparisonKeys: { ActiveEffect: "label", Item: "id" } },
+                { permanent: warpgatePermanent, comparisonKeys: { ActiveEffect: "label", Item: "id" } },
             );
 
             const newTargets = await game.itempiles.API.turnTokensIntoItemPiles([token], {
@@ -1029,6 +1063,67 @@ export default class ItemPilesHelpers {
             });
             return newTargets;
         }
+    }
+
+    /**
+     * Converts the provided token to a item piles lootable sheet check out the documentation from the itempiles page
+     * @href https://fantasycomputer.works/FoundryVTT-ItemPiles/#/api?id=turntokensintoitempiles
+     * @href https://github.com/trioderegion/fvtt-macros/blob/master/honeybadger-macros/tokens/single-loot-pile.js#L77
+     * @param {Token|TokenDocument} tokenTarget
+     * @param {object} options	object	Options to pass to the function
+     * @param {boolean} options.applyDefaultImage little utility for lazy people apply a default image
+     * @param {boolean} options.applyDefaultLight little utility for lazy people apply a default light
+     * @param {object} tokenSettings Overriding settings that will update the tokens settings
+     * @param {object} pileSettings Overriding settings to be put on the item piles’ settings - see pile flag defaults
+     * @returns {Promise<Array>} The uuids of the targets after they were turned into item piles
+     */
+    static async convertTokenToItemPilesContainer(
+        tokenTarget,
+        options = {
+            applyDefaultLight: false,
+            untouchedImage: "",
+            addCurrency: false,
+        },
+        tokenSettings = { rotation: 0 },
+        pileSettings = {
+            openedImage: "",
+            emptyImage: "",
+            type: game.itempiles.pile_types.CONTAINER,
+            deleteWhenEmpty: false,
+            activePlayers: true,
+            closed: true,
+        },
+    ) {
+        if (ItemPilesHelpers.isValidItemPile(tokenTarget)) {
+            Logger.warn(`The targeted token is already a item piles`, true, tokenTarget);
+            return [];
+        }
+        const tokens = [tokenTarget];
+        const { applyDefaultLight, untouchedImage, addCurrency } = options;
+
+        if (applyDefaultLight) {
+            let light = {
+                dim: 0.2,
+                bright: 0.2,
+                luminosity: 0,
+                alpha: 1,
+                color: "#ad8800",
+                coloration: 6,
+                animation: {
+                    // type:"sunburst",
+                    type: "radialrainbow",
+                    speed: 3,
+                    intensity: 10,
+                },
+            };
+            mergeObject(tokenSettings, { light: light });
+        }
+
+        const newTargets = await game.itempiles.API.turnTokensIntoItemPiles(tokens, {
+            pileSettings: pileSettings,
+            tokenSettings: tokenSettings,
+        });
+        return newTargets;
     }
 
     /**
