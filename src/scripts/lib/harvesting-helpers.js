@@ -1,5 +1,4 @@
 import {
-    searchCompendium,
     validateAction,
     actionCompendium,
     harvestCompendium,
@@ -51,7 +50,11 @@ export class HarvestingHelpers {
             return;
         }
 
-        let actorName = targetedToken.name; // targetedActor ? targetedActor.name : targetedToken.name;
+        let actorName = SETTINGS.forceToUseAlwaysActorName
+            ? targetedActor
+                ? targetedActor.name
+                : targetedToken.name
+            : targetedToken.name;
 
         if (!controlledToken) {
             Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
@@ -69,8 +72,6 @@ export class HarvestingHelpers {
             rollTablesMatched,
         );
 
-        let skillDenomination = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`); // TODO make this better
-        let skillCheck = "Nature"; // TODO make this better maybe with requestor
         if (rollTablesMatched.length === 0) {
             Logger.debug(`HarvestingHelpers | RollTablesMatched is empty`);
             Logger.debug(
@@ -94,7 +95,16 @@ export class HarvestingHelpers {
 
             Logger.debug(`HarvestingHelpers | BRT is enable`);
             let skillCheckVerbose = getProperty(rollTablesMatched[0], `flags.better-rolltables.brt-skill-value`);
-            skillCheck = skillCheckVerbose;
+            if (!skillCheckVerbose) {
+                Logger.warn(
+                    `ATTENTION: No 'flags.better-rolltables.brt-skill-value' is been setted on table '${rollTablesMatched[0]}'`,
+                    true,
+                    rollTablesMatched[0],
+                );
+                return;
+            }
+            let skillDenomination = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`); // TODO make this better
+            let skillCheck = skillCheckVerbose ? skillCheckVerbose : "nat"; // TODO make this better maybe with requestor
 
             item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
             item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
@@ -149,7 +159,11 @@ export class HarvestingHelpers {
             return;
         }
 
-        let actorName = targetedToken.name; // targetedActor ? targetedActor.name : targetedToken.name;
+        let actorName = SETTINGS.forceToUseAlwaysActorName
+            ? targetedActor
+                ? targetedActor.name
+                : targetedToken.name
+            : targetedToken.name;
 
         if (!controlledToken) {
             Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
@@ -162,6 +176,10 @@ export class HarvestingHelpers {
         }
 
         let result = roll;
+        if (!result) {
+            Logger.warn(`Something go wrong the result cannot be undefined`, true);
+            return;
+        }
         let harvesterMessage = "";
         let matchedItems = [];
 

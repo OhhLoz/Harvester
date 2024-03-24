@@ -1,5 +1,4 @@
 import {
-    checkCompendium,
     customLootCompendium,
     harvestAction,
     harvestBetterRollCompendium,

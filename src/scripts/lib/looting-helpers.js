@@ -1,5 +1,4 @@
 import {
-    searchCompendium,
     validateAction,
     actionCompendium,
     harvestCompendium,
@@ -49,7 +48,11 @@ export class LootingHelpers {
             return;
         }
 
-        let actorName = targetedToken.name; // targetedActor ? targetedActor.name : targetedToken.name;
+        let actorName = SETTINGS.forceToUseAlwaysActorName
+            ? targetedActor
+                ? targetedActor.name
+                : targetedToken.name
+            : targetedToken.name;
 
         if (!controlledToken) {
             Logger.warn(`LootingHelpers | NO controlled token is been found`, true);

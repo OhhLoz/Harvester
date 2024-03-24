@@ -7,7 +7,8 @@
 - Add a new "Share It" and "Keep it" options for the harvester action this should be the solution for https://github.com/OhhLoz/Harvester/issues/37, now each player can decide whether to keep the harvesting result lost (Keep it !) , or make it available to others with Item Piles (Share it !)
 - Add BRT support for the loot action too (code more readable i hope...)
 - Solved https://github.com/OhhLoz/Harvester/issues/31 this feature was included in BRT recently "Use Dynamic DC" (For anyone interested, this feature was included in BRT recently "Use Dynamic DC")
-
+- Also solved https://github.com/OhhLoz/Harvester/issues/23, this feature was included in BRT recently "Inline currency data roll on table text result" (his feature was included in BRT recently),you must set a Loot Table for apply a currency
+- Add a regex check on the source reference check for solve the request https://github.com/OhhLoz/Harvester/issues/27
 
 ### 1.7.9
 

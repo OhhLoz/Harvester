@@ -182,39 +182,39 @@ export function validateAction(controlToken, targetedToken, actionName) {
     return true;
 }
 
-export function searchCompendium(actorName, actionName) {
-    let returnArr = [];
-    if (actorName.includes("Dragon")) {
-        actorName = formatDragon(actorName);
-    }
-    if (actionName === harvestAction.name) {
-        returnArr = checkCompendium(customCompendium, "name", actorName);
+// export function searchCompendium(actorName, actionName) {
+//     let returnArr = [];
+//     if (actorName.includes("Dragon")) {
+//         actorName = formatDragon(actorName);
+//     }
+//     if (actionName === harvestAction.name) {
+//         returnArr = checkCompendium(customCompendium, "name", actorName);
 
-        if (returnArr.length !== 0) {
-            return returnArr;
-        }
-        returnArr = checkCompendium(harvestCompendium, "system.source.label", actorName);
-    } else if (actionName === lootAction.name) {
-        returnArr = checkCompendium(customLootCompendium, "name", actorName);
+//         if (returnArr.length !== 0) {
+//             return returnArr;
+//         }
+//         returnArr = checkCompendium(harvestCompendium, "system.source.label", actorName);
+//     } else if (actionName === lootAction.name) {
+//         returnArr = checkCompendium(customLootCompendium, "name", actorName);
 
-        if (returnArr.length !== 0) {
-            return returnArr;
-        }
-        returnArr = checkCompendium(lootCompendium, "name", actorName);
-    }
+//         if (returnArr.length !== 0) {
+//             return returnArr;
+//         }
+//         returnArr = checkCompendium(lootCompendium, "name", actorName);
+//     }
 
-    return returnArr;
-}
+//     return returnArr;
+// }
 
-export function checkCompendium(compendium, checkProperty, matchProperty) {
-    let returnArr = [];
-    compendium.forEach((doc) => {
-        if (eval(`doc.${checkProperty}`) === matchProperty) {
-            returnArr.push(doc);
-        }
-    });
-    return returnArr;
-}
+// export function checkCompendium(compendium, checkProperty, matchProperty) {
+//     let returnArr = [];
+//     compendium.forEach((doc) => {
+//         if (eval(`doc.${checkProperty}`) === matchProperty) {
+//             returnArr.push(doc);
+//         }
+//     });
+//     return returnArr;
+// }
 
 async function addActionToActors() {
     if (SETTINGS.autoAddActionGroup === "None") {

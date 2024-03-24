@@ -26,6 +26,16 @@ export function registerSettings() {
         default: "PCOnly",
     });
 
+    game.settings.register(CONSTANTS.MODULE_ID, "forceToUseAlwaysActorName", {
+        name: "Force to use always the actor name",
+        hint: "If you want to use token with different name, maybe this setting is useful for you",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false,
+    });
+
     game.settings.register(CONSTANTS.MODULE_ID, "requireDeadEffect", {
         name: "Dead Effect Required",
         hint: "Requires the 'Dead' status effect to Harvest/Loot. (Otherwise only needs 0 HP)",
@@ -135,6 +145,7 @@ export function registerSettings() {
         CONSTANTS.MODULE_ID,
         "harvestRemoveExistingActorItems",
     );
+    SETTINGS.forceToUseAlwaysActorName = game.settings.get(CONSTANTS.MODULE_ID, "forceToUseAlwaysActorName");
     SETTINGS.gmOnly = game.settings.get(CONSTANTS.MODULE_ID, "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get(CONSTANTS.MODULE_ID, "requireDeadEffect");
     SETTINGS.npcOnlyHarvest = game.settings.get(CONSTANTS.MODULE_ID, "npcOnlyHarvest");
@@ -149,6 +160,7 @@ export const SETTINGS = {
     autoAddItems: true,
     harvestAddItemsMode: "ShareItOrKeepIt",
     harvestRemoveExistingActorItems: false,
+    forceToUseAlwaysActorName: false,
     gmOnly: false,
     requireDeadEffect: true,
     npcOnlyHarvest: true,
