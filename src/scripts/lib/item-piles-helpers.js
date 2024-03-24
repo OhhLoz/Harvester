@@ -361,18 +361,35 @@ export default class ItemPilesHelpers {
     static async addItems(
         actorOrToken,
         itemsToAdd,
-        {
-            removeExistingActorItems = false,
-            skipVaultLogging = false,
-            interactionId = false,
-            mergeSimilarItems = true,
-        } = {},
+        options = {
+            removeExistingActorItems: false,
+            skipVaultLogging: false,
+            interactionId: false,
+            mergeSimilarItems: true,
+        },
     ) {
+        const newOptions = foundry.utils.mergeObject(
+            {
+                removeExistingActorItems: false,
+                skipVaultLogging: false,
+                interactionId: false,
+                mergeSimilarItems: true,
+            },
+            options,
+        );
+
+        if (newOptions.removeExistingActorItems && actorOrToken instanceof Actor) {
+            Logger.error(
+                `Sorry i don't trust you i will not let you destroy some actor, you can use the 'removeExistingActorItems' options only with tokens`,
+            );
+            return [];
+        }
+
         const itemsData = await game.itempiles.API.addItems(actorOrToken, itemsToAdd, {
-            mergeSimilarItems: mergeSimilarItems, // NOT SUPPORTED ANYMORE FROM ITEM PILES TO REMOVE IN THE FUTURE
-            removeExistingActorItems: removeExistingActorItems,
-            skipVaultLogging: skipVaultLogging,
-            interactionId: interactionId,
+            mergeSimilarItems: newOptions.mergeSimilarItems, // NOT SUPPORTED ANYMORE FROM ITEM PILES TO REMOVE IN THE FUTURE
+            removeExistingActorItems: newOptions.removeExistingActorItems,
+            skipVaultLogging: newOptions.skipVaultLogging,
+            interactionId: newOptions.interactionId,
         });
         Logger.debug(`addItems | Added ${itemsToAdd.length} items to ${actorOrToken.name}`, itemsData);
         return itemsData;
@@ -1121,8 +1138,8 @@ export default class ItemPilesHelpers {
         },
     ) {
         if (ItemPilesHelpers.isValidItemPile(tokenTarget)) {
-            Logger.warn(`The targeted token is already a item piles`, true, tokenTarget);
-            return [];
+            Logger.warn(`The targeted token is already a item piles`, false, tokenTarget);
+            return [tokenTarget];
         }
 
         options = foundry.utils.mergeObject(
@@ -1168,6 +1185,13 @@ export default class ItemPilesHelpers {
             };
             foundry.utils.mergeObject(tokenSettings, { light: light });
         }
+
+        // await warpgate.mutate(
+        //     tokenTarget,
+        //     {},
+        //     {},
+        //     { permanent: warpgatePermanent },
+        // ); // TODO NOT WORK...
 
         const newTargets = await game.itempiles.API.turnTokensIntoItemPiles(tokens, {
             pileSettings: pileSettings,

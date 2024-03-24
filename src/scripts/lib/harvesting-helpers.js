@@ -51,7 +51,7 @@ export class HarvestingHelpers {
             return;
         }
 
-        let actorName = targetedActor ? targetedActor.name : targetedToken.name;
+        let actorName = targetedToken.name; // targetedActor ? targetedActor.name : targetedToken.name;
 
         if (!controlledToken) {
             Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
@@ -82,7 +82,7 @@ export class HarvestingHelpers {
                 chatButtonLabel: undefined,
                 chatWhisper: undefined,
                 chatSpeaker: undefined,
-                chatImg: "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+                chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
             });
         } else {
             Logger.debug(`HarvestingHelpers | RollTablesMatched is not empty`);
@@ -149,7 +149,7 @@ export class HarvestingHelpers {
             return;
         }
 
-        let actorName = targetedActor ? targetedActor.name : targetedToken.name;
+        let actorName = targetedToken.name; // targetedActor ? targetedActor.name : targetedToken.name;
 
         if (!controlledToken) {
             Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
@@ -223,15 +223,17 @@ export class HarvestingHelpers {
     }
 
     static async addItemsToActorHarvesterOption(actor, targetedToken, itemsToAdd, harvesterMessage) {
-        if (SETTINGS.addItemsHarvestMode === "SharedItOrKeepIt") {
+        if (SETTINGS.harvestAddItemsMode === "ShareItOrKeepIt") {
             Logger.debug(`SHARE IT OR KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
             await RequestorHelpers.requestHarvestMessage(actor, undefined, itemsToAdd, targetedToken, {
                 popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
             });
-        } else if (SETTINGS.addItemsHarvestMode === "SharedIt") {
+        } else if (SETTINGS.harvestAddItemsMode === "ShareIt") {
             Logger.debug(`SHARE IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+            // await warpgate.mutate(targetedToken.document); // TODO NOT WORK...
             await ItemPilesHelpers.addItems(targetedToken, itemsToAdd, {
                 mergeSimilarItems: true,
+                removeExistingActorItems: SETTINGS.harvestAddItemsMode,
             });
             await ItemPilesHelpers.convertTokenToItemPilesContainer(targetedToken);
             let messageData = { content: "", whisper: {} };
@@ -239,11 +241,11 @@ export class HarvestingHelpers {
                 messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
             }
             if (harvesterMessage) {
-                messageData.content = `<h3>Harvesting</h3><ul>${harvesterMessage}</ul>`;
+                messageData.content = `${harvesterMessage}`;
             }
             Logger.debug(`HarvestingHelpers | FINAL create the message`);
             ChatMessage.create(messageData);
-        } else if (SETTINGS.addItemsHarvestMode === "KeepIt") {
+        } else if (SETTINGS.harvestAddItemsMode === "KeepIt") {
             Logger.debug(`KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
             await ItemPilesHelpers.addItems(actor, itemsToAdd, {
                 mergeSimilarItems: true,
@@ -253,7 +255,7 @@ export class HarvestingHelpers {
                 messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
             }
             if (harvesterMessage) {
-                messageData.content = `<h3>Harvesting</h3><ul>${harvesterMessage}</ul>`;
+                messageData.content = `${harvesterMessage}`;
             }
             Logger.debug(`HarvestingHelpers | FINAL create the message`);
             ChatMessage.create(messageData);

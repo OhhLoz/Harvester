@@ -11,31 +11,6 @@ export function registerSettings() {
         default: true,
     });
 
-    // game.settings.register(CONSTANTS.MODULE_ID, "autoAddItemPiles", {
-    //     name: "Automatically Assign Items to Item Piles",
-    //     hint: "All harvested loot and looted currency is added to Item Piles.",
-    //     scope: "world",
-    //     config: true,
-    //     requiresReload: true,
-    //     type: Boolean,
-    //     default: true,
-    // });
-
-    game.settings.register(CONSTANTS.MODULE_ID, "addItemsHarvestMode", {
-        name: "Add items harvest mode",
-        hint: "Harvest action considers three modes: 'Shared it or Keep it', 'Shared it', 'Keep it'",
-        scope: "world",
-        config: true,
-        requiresReload: true,
-        type: String,
-        choices: {
-            SharedItOrKeepIt: "Shared it or Keep it",
-            SharedIt: "Shared it",
-            KeepIt: "Keep it",
-        },
-        default: "SharedItOrKeepIt",
-    });
-
     game.settings.register(CONSTANTS.MODULE_ID, "autoAddActionGroup", {
         name: "Automatically Assign Action",
         hint: "Gives the Actions to the selected group.",
@@ -49,16 +24,6 @@ export function registerSettings() {
             None: "None",
         },
         default: "PCOnly",
-    });
-
-    game.settings.register(CONSTANTS.MODULE_ID, "npcOnlyHarvest", {
-        name: "NPC Only Harvesting",
-        hint: "Only non player characters can be looted/harvested.",
-        scope: "world",
-        config: true,
-        requiresReload: true,
-        type: Boolean,
-        default: true,
     });
 
     game.settings.register(CONSTANTS.MODULE_ID, "requireDeadEffect", {
@@ -91,9 +56,9 @@ export function registerSettings() {
         default: true,
     });
 
-    game.settings.register(CONSTANTS.MODULE_ID, "allowAbilityChange", {
-        name: "Allow ability score change on roll",
-        hint: "Used if DM's trust their players and/or wish to use a different ability score instead of the default without making a custom compendium entry",
+    game.settings.register(CONSTANTS.MODULE_ID, "harvestRemoveExistingActorItems", {
+        name: "Harvesting: Automatically remove Items with Item Piles from the targeted token",
+        hint: "This will enable to true the Item Piles setting 'removeExistingActorItems', for security reason is limited only to token target, so if you destroy a token on scene the original actor is no touched",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -101,9 +66,34 @@ export function registerSettings() {
         default: false,
     });
 
-    game.settings.register(CONSTANTS.MODULE_ID, "disableLoot", {
-        name: "Disable Looting mechanic",
-        hint: "Disables the Loot mechanic, making it unavailable until enabled.",
+    game.settings.register(CONSTANTS.MODULE_ID, "harvestAddItemsMode", {
+        name: "Harvesting: Add items harvest mode",
+        hint: "Harvest action considers three modes: 'Shared it or Keep it', 'Shared it', 'Keep it'",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: String,
+        choices: {
+            ShareItOrKeepIt: "Shared it or Keep it",
+            ShareIt: "Shared it",
+            KeepIt: "Keep it",
+        },
+        default: "ShareItOrKeepIt",
+    });
+
+    game.settings.register(CONSTANTS.MODULE_ID, "npcOnlyHarvest", {
+        name: "Harvesting: NPC Only Harvesting",
+        hint: "Only non player characters can be looted/harvested.",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: true,
+    });
+
+    game.settings.register(CONSTANTS.MODULE_ID, "allowAbilityChange", {
+        name: "Harvesting: Allow ability score change on roll",
+        hint: "Used if DM's trust their players and/or wish to use a different ability score instead of the default without making a custom compendium entry",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -120,6 +110,16 @@ export function registerSettings() {
         type: Boolean,
     });
 
+    game.settings.register(CONSTANTS.MODULE_ID, "disableLoot", {
+        name: "Looting: Disable Looting mechanic",
+        hint: "Disables the Loot mechanic, making it unavailable until enabled.",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false,
+    });
+
     game.settings.register(CONSTANTS.MODULE_ID, "debug", {
         name: "Enable debugging",
         hint: "Prints debug messages to the console",
@@ -130,8 +130,11 @@ export function registerSettings() {
     });
 
     SETTINGS.autoAddItems = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItems");
-    // SETTINGS.autoAddItemPiles = game.settings.get(CONSTANTS.MODULE_ID, "autoAddItemPiles");
-    SETTINGS.addItemsHarvestMode = game.settings.get(CONSTANTS.MODULE_ID, "addItemsHarvestMode");
+    SETTINGS.harvestAddItemsMode = game.settings.get(CONSTANTS.MODULE_ID, "harvestAddItemsMode");
+    SETTINGS.harvestRemoveExistingActorItems = game.settings.get(
+        CONSTANTS.MODULE_ID,
+        "harvestRemoveExistingActorItems",
+    );
     SETTINGS.gmOnly = game.settings.get(CONSTANTS.MODULE_ID, "gmOnly");
     SETTINGS.requireDeadEffect = game.settings.get(CONSTANTS.MODULE_ID, "requireDeadEffect");
     SETTINGS.npcOnlyHarvest = game.settings.get(CONSTANTS.MODULE_ID, "npcOnlyHarvest");
@@ -139,15 +142,13 @@ export function registerSettings() {
     SETTINGS.enforceRange = game.settings.get(CONSTANTS.MODULE_ID, "enforceRange");
     SETTINGS.allowAbilityChange = game.settings.get(CONSTANTS.MODULE_ID, "allowAbilityChange");
     SETTINGS.disableLoot = game.settings.get(CONSTANTS.MODULE_ID, "disableLoot");
-    // SETTINGS.lootBeasts = game.settings.get(CONSTANTS.MODULE_ID, "lootBeasts");
-    // SETTINGS.enableBetterRollIntegration = game.settings.get(CONSTANTS.MODULE_ID, "enableBetterRollIntegration");
     SETTINGS.debug = game.settings.get(CONSTANTS.MODULE_ID, "debug");
 }
 
 export const SETTINGS = {
     autoAddItems: true,
-    // autoAddItemPiles: true,
-    addItemsHarvestMode: "SharedItOrKeepIt",
+    harvestAddItemsMode: "ShareItOrKeepIt",
+    harvestRemoveExistingActorItems: false,
     gmOnly: false,
     requireDeadEffect: true,
     npcOnlyHarvest: true,
@@ -155,6 +156,4 @@ export const SETTINGS = {
     enforceRange: true,
     allowAbilityChange: false,
     disableLoot: false,
-    // lootBeasts: false,
-    // enableBetterRollIntegration: false,
 };

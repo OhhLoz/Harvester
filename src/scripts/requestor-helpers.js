@@ -2,6 +2,7 @@ import { CONSTANTS } from "./constants.js";
 import Logger from "./lib/Logger.js";
 import ItemPilesHelpers from "./lib/item-piles-helpers.js";
 import { RetrieveHelpers } from "./lib/retrieve-helpers.js";
+import { SETTINGS } from "./settings.js";
 
 export class RequestorHelpers {
     /**
@@ -466,6 +467,7 @@ export class RequestorHelpers {
                             targetedToken: game.modules
                                 .get(moduleIdRef)
                                 .api._RetrieveHelpers.getTokenSync(targetedTokenRef),
+                            removeExistingActorItems: removeExistingActorItemsRef,
                         };
                         // const rollData = actor.getRollData();
                         // const speaker = ChatMessage.getSpeaker({ actor });
@@ -478,10 +480,12 @@ export class RequestorHelpers {
                                 false,
                                 options.itemsToAdd,
                             );
+                        // await warpgate.mutate(options.targetedToken); // TODO NOT WORK...
                         await game.modules
                             .get(moduleIdRef)
                             .api._ItemPilesHelpers.addItems(options.targetedToken, options.itemsToAdd, {
                                 mergeSimilarItems: true,
+                                removeExistingActorItems: options.removeExistingActorItems,
                             });
                         await game.modules
                             .get(moduleIdRef)
@@ -492,6 +496,7 @@ export class RequestorHelpers {
                         moduleIdRef: CONSTANTS.MODULE_ID,
                         itemsToAddRef: itemsToAdd,
                         targetedTokenRef: targetedToken.id,
+                        removeExistingActorItemsRef: SETTINGS.harvestAddItemsMode,
                     },
                     messageOptions: {
                         speaker: ChatMessage.getSpeaker({ actor: actorSpeaker }),

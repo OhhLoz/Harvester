@@ -47,11 +47,27 @@ Hooks.on("ready", async function () {
 
     currencyFlavors = Array.from(CONSTANTS.currencyMap.keys());
 
-    if (game.user?.isGM && !game.modules.get("socketlib")?.active) {
-        Logger.errorPermanent("socketlib must be installed & enabled for harvester to function correctly.", {
-            permanent: true,
-        });
+    if (!game.modules.get("socketlib")?.active && game.user?.isGM) {
+        let word = "install and activate";
+        if (game.modules.get("socketlib")) word = "activate";
+        throw Logger.error(`Requires the 'socketlib' module. Please ${word} it.`);
     }
+    if (!game.modules.get("item-piles")?.active && game.user?.isGM) {
+        let word = "install and activate";
+        if (game.modules.get("item-piles")) word = "activate";
+        throw Logger.error(`Requires the 'item-piles' module. Please ${word} it.`);
+    }
+    if (!game.modules.get("better-rolltables")?.active && game.user?.isGM) {
+        let word = "install and activate";
+        if (game.modules.get("better-rolltables")) word = "activate";
+        throw Logger.error(`Requires the 'better-rolltables' module. Please ${word} it.`);
+    }
+    if (!game.modules.get("requestor")?.active && game.user?.isGM) {
+        let word = "install and activate";
+        if (game.modules.get("requestor")) word = "activate";
+        throw Logger.error(`Requires the 'requestor' module. Please ${word} it.`);
+    }
+
     if (game.users.activeGM?.id !== game.user.id) {
         return;
     }

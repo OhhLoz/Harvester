@@ -49,7 +49,7 @@ export class LootingHelpers {
             return;
         }
 
-        let actorName = targetedActor ? targetedActor.name : targetedToken.name;
+        let actorName = targetedToken.name; // targetedActor ? targetedActor.name : targetedToken.name;
 
         if (!controlledToken) {
             Logger.warn(`LootingHelpers | NO controlled token is been found`, true);
