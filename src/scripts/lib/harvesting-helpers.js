@@ -286,7 +286,7 @@ export class HarvestingHelpers {
         } else if (SETTINGS.harvestAddItemsMode === "ShareIt") {
             Logger.debug(`SHARE IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
             // await warpgate.mutate(targetedToken.document, updates, {}, {}); // TODO NOT WORK...
-            await targetedToken.document.update({ actorLink: false });
+            await ItemPilesHelpers.unlinkToken(targetedToken);
             await ItemPilesHelpers.addItems(targetedToken, itemsToAdd, {
                 mergeSimilarItems: true,
                 removeExistingActorItems: SETTINGS.harvestAddItemsMode,

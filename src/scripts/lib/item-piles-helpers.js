@@ -1051,27 +1051,27 @@ export default class ItemPilesHelpers {
                     // Adjust as needed -- this very loosely approximates individual treasure by CR
                     const exponent = 0.15 * (getProperty(tok.actor, "system.details.cr") ?? 0);
                     let gold = Math.round(0.6 * 10 * (10 ** exponent));
-        
+
                     // ensure it can devide evenly across all looting players (convienence)
                     gold = gold + (numPlayers) - (gold % Math.max(numPlayers, 1)) ?? 0;
-        
+
                     // split a random percentage to silver (no more than half)
                     const silverPct = Math.random()/2;
                     const convertedGold = Math.floor(gold * silverPct);
                     let silver = convertedGold * 10;
                     gold -= convertedGold
-        
+
                     // split a random percentage to copper (no more than half silver)
                     const cprPct = Math.random()/2;
                     const convertedSilver = Math.floor(silver * cprPct);
                     let copper = convertedSilver * 10;
                     silver -= convertedSilver
-        
+
                     // Add onto any currency the actor may already have
-                    gold += acc.actor.system.currency.gp + getProperty(tok.actor, 'system.currency.gp') ?? 0 
+                    gold += acc.actor.system.currency.gp + getProperty(tok.actor, 'system.currency.gp') ?? 0
                     silver += acc.actor.system.currency.sp + getProperty(tok.actor, 'system.currency.sp') ?? 0
                     copper += acc.actor.system.currency.cp + getProperty(tok.actor, 'system.currency.cp') ?? 0
-        
+
                     acc.actor.system.currency = {gp: gold, sp: silver, cp: copper};
                     */
                 }
@@ -1316,6 +1316,50 @@ export default class ItemPilesHelpers {
      */
     static isItemStackable(target) {
         return game.itempiles.API.canItemStack(target);
+    }
+
+    /**
+     * Unlink the token
+     * @param {Token/TokenDocument/string} token
+     */
+    static async unlinkToken(token) {
+        const tokenTarget = RetrieveHelpers.getTokenSync(token);
+        if(tokenTarget instanceof Token) {
+            await tokenTarget.document.update({ actorLink: false });
+        }
+        else if(tokenTarget instanceof TokenDocument) {
+            await tokenTarget.update({ actorLink: false });
+        }else {
+            Logger.log(`Cannot unlink this token ?`, tokenTarget);
+        }
+    }
+
+    /**
+     * Unlink actor
+     * @param {Token/TokenDocument/string} token
+     */
+    static async unlinkActor(actor) {
+        const actorTarget = await RetrieveHelpers.getActorAsync(actor);
+        const isNowLinked = actorTarget.prototypeToken.actorLink;
+        if(isNowLinked) {
+            actorTarget.update({'token.actorLink': false});
+        }else {
+            Logger.log(`Cannot unlink this actor ?`, actorTarget);
+        }
+    }
+
+    /**
+     * Link actor
+     * @param {Token/TokenDocument/string} token
+     */
+    static async linkActor(actor) {
+        const actorTarget = await RetrieveHelpers.getActorAsync(actor);
+        const isNowLinked = actorTarget.prototypeToken.actorLink;
+        if(!isNowLinked) {
+            actorTarget.update({'token.actorLink': true});
+        }else {
+            Logger.log(`Cannot link this actor ?`, actorTarget);
+        }
     }
 
     // ======================================
