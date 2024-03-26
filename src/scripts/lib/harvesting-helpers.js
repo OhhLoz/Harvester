@@ -8,7 +8,6 @@ import {
     harvestBetterRollCompendium,
     harvestAction,
     lootAction,
-    harvesterAndLootingSocket,
     currencyFlavors,
     hasBetterRollTables,
     addEffect,
@@ -17,6 +16,7 @@ import {
 import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
+import { harvesterAndLootingSocket } from "../socket.js";
 import Logger from "./Logger.js";
 import BetterRollTablesHelpers from "./better-rolltables-helpers.js";
 import ItemPilesHelpers from "./item-piles-helpers.js";
@@ -28,6 +28,7 @@ import {
     isRealBoolean,
     parseAsArray,
 } from "./lib.js";
+import { RetrieveHelpers } from "./retrieve-helpers.js";
 
 export class HarvestingHelpers {
     static async handlePreRollHarvestAction(options) {
@@ -78,7 +79,7 @@ export class HarvestingHelpers {
             Logger.debug(
                 `HarvestingHelpers | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
             );
-            await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
+            await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, game.user.id, {
                 chatTitle: "Harvesting valuable from corpses.",
                 chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
                 chatButtonLabel: undefined,
@@ -134,6 +135,7 @@ export class HarvestingHelpers {
                 await RequestorHelpers.requestRollSkill(
                     controlledToken.actor,
                     undefined,
+                    game.user.id,
                     {
                         chatTitle: `Harvesting Skill Check (${skillCheckVerboseArr.join(",")})`,
                         chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
@@ -157,6 +159,7 @@ export class HarvestingHelpers {
                 await RequestorHelpers.requestRollSkillMultiple(
                     controlledToken.actor,
                     undefined,
+                    game.user.id,
                     {
                         chatTitle: `Harvesting Skill Check (${skillCheckVerboseArr.join(",")})`,
                         chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
@@ -233,7 +236,7 @@ export class HarvestingHelpers {
             Logger.debug(
                 `HarvestingHelpers | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
             );
-            await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
+            await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, game.user.id, {
                 chatTitle: "Harvesting valuable from corpses.",
                 chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
                 chatButtonLabel: undefined,
@@ -253,11 +256,20 @@ export class HarvestingHelpers {
 
             if (SETTINGS.autoAddItems) {
                 Logger.debug(`HarvestingHelpers | FINAL autoAddItems enable and matchedItems is not empty`);
-                await HarvestingHelpers.addItemsToActorHarvesterOption(
-                    controlledToken.actor,
-                    targetedToken,
+                // await HarvestingHelpers.addItemsToActorHarvesterOption(
+                //     controlledToken.actor.id,
+                //     targetedToken.id,
+                //     matchedItems,
+                //     harvesterMessage,
+                //     game.user.id
+                // );
+                await harvesterAndLootingSocket.executeAsGM(
+                    HarvestingHelpers.addItemsToActorHarvesterOption,
+                    controlledToken.actor.id,
+                    targetedToken.id,
                     matchedItems,
                     harvesterMessage,
+                    game.user.id,
                 );
             } else {
                 let messageData = { content: "", whisper: {} };
@@ -275,10 +287,12 @@ export class HarvestingHelpers {
         return false;
     }
 
-    static async addItemsToActorHarvesterOption(actor, targetedToken, itemsToAdd, harvesterMessage) {
+    static async addItemsToActorHarvesterOption(actorId, targetedTokenId, itemsToAdd, harvesterMessage, userId) {
+        const actor = await RetrieveHelpers.getActorAsync(actorId);
+        const targetedToken = RetrieveHelpers.getTokenSync(targetedTokenId);
         if (SETTINGS.harvestAddItemsMode === "ShareItOrKeepIt") {
             Logger.debug(`SHARE IT OR KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
-            await RequestorHelpers.requestHarvestMessage(actor, undefined, itemsToAdd, targetedToken, {
+            await RequestorHelpers.requestHarvestMessage(actor, undefined, userId, itemsToAdd, targetedToken, {
                 popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
             });
         } else if (SETTINGS.harvestAddItemsMode === "ShareIt") {

@@ -8,7 +8,6 @@ import {
     harvestBetterRollCompendium,
     harvestAction,
     lootAction,
-    harvesterAndLootingSocket,
     currencyFlavors,
     hasBetterRollTables,
     addEffect,
@@ -17,6 +16,7 @@ import {
 import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
+import { harvesterAndLootingSocket } from "../socket.js";
 import Logger from "./Logger.js";
 import BetterRollTablesHelpers from "./better-rolltables-helpers.js";
 import ItemPilesHelpers from "./item-piles-helpers.js";
@@ -98,7 +98,7 @@ export class LootingHelpers {
             Logger.debug(
                 `LootingHelpers | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
             );
-            await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, {
+            await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, game.user.id, {
                 chatTitle: "Looting valuable from corpses.",
                 chatDescription: `<h3>Looting</h3>'${controlledToken.name}' attempted to loot resources from '${targetedToken.name}' but failed to find anything for this creature.`,
                 chatButtonLabel: undefined,

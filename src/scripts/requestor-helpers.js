@@ -58,6 +58,7 @@ export class RequestorHelpers {
     static async requestRollSkillMultiple(
         actorUseForRequest,
         tokenUseForRequest,
+        userId,
         chatDetails = {
             chatTitle: "",
             chatDescription: "",
@@ -106,7 +107,7 @@ export class RequestorHelpers {
         } else {
             messageWhisper = game.users
                 .filter((u) => {
-                    return u.isGM || u.id === game.user.id;
+                    return u.isGM || u.id === game.user.id || u.id === userId;
                 })
                 .map((u) => u._id);
         }
@@ -217,6 +218,7 @@ export class RequestorHelpers {
     static async requestRollSkill(
         actorUseForRequest,
         tokenUseForRequest,
+        userId,
         chatDetails = {
             chatTitle: "",
             chatDescription: "",
@@ -280,7 +282,7 @@ export class RequestorHelpers {
         } else {
             messageWhisper = game.users
                 .filter((u) => {
-                    return u.isGM || u.id === game.user.id;
+                    return u.isGM || u.id === game.user.id || u.id === userId;
                 })
                 .map((u) => u._id);
         }
@@ -387,6 +389,7 @@ export class RequestorHelpers {
     static async requestEmptyMessage(
         actorUseForRequest,
         tokenUseForRequest,
+        userId,
         chatDetails = {
             chatTitle: "",
             chatDescription: "",
@@ -433,7 +436,7 @@ export class RequestorHelpers {
         } else {
             messageWhisper = game.users
                 .filter((u) => {
-                    return u.isGM || u.id === game.user.id;
+                    return u.isGM || u.id === game.user.id || u.id === userId;
                 })
                 .map((u) => u._id);
         }
@@ -485,6 +488,7 @@ export class RequestorHelpers {
     static async requestHarvestMessage(
         actorUseForRequest,
         tokenUseForRequest,
+        userId,
         itemsToAdd,
         targetedToken,
         // chatDetails = {
@@ -533,7 +537,7 @@ export class RequestorHelpers {
         } else {
             messageWhisper = game.users
                 .filter((u) => {
-                    return u.isGM || u.id === game.user.id;
+                    return u.isGM || u.id === game.user.id || u.id === userId;
                 })
                 .map((u) => u._id);
         }

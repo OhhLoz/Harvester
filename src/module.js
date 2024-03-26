@@ -13,6 +13,7 @@ import { HarvestingHelpers } from "./scripts/lib/harvesting-helpers.js";
 import { LootingHelpers } from "./scripts/lib/looting-helpers.js";
 import { RetrieveHelpers } from "./scripts/lib/retrieve-helpers.js";
 import ItemPilesHelpers from "./scripts/lib/item-piles-helpers.js";
+import { registerSocket } from "./scripts/socket.js";
 
 export let actionCompendium;
 export let harvestCompendium;
@@ -22,7 +23,6 @@ export let customLootCompendium;
 export let harvestBetterRollCompendium;
 export let harvestAction;
 export let lootAction;
-export let harvesterAndLootingSocket;
 export let currencyFlavors;
 export let hasBetterRollTables;
 
@@ -77,8 +77,7 @@ Hooks.on("ready", async function () {
 });
 
 Hooks.once("socketlib.ready", () => {
-    harvesterAndLootingSocket = socketlib.registerModule(CONSTANTS.MODULE_ID);
-    harvesterAndLootingSocket.register("addEffect", addEffect);
+    registerSocket();
     Logger.log("Registered socketlib functions");
 });
 
