@@ -640,7 +640,7 @@ export class RequestorHelpers {
                                 options.itemsToAdd,
                             );
                         // await warpgate.mutate(options.targetedToken.document, updates, {}, {}); // TODO NOT WORK...
-                        await ItemPilesHelpers.unlinkToken(targetedToken);
+                        await game.modules.get(moduleIdRef).api._ItemPilesHelpers.unlinkToken(targetedToken);
                         await game.modules
                             .get(moduleIdRef)
                             .api._ItemPilesHelpers.addItems(options.targetedToken, options.itemsToAdd, {
@@ -656,7 +656,7 @@ export class RequestorHelpers {
                         moduleIdRef: CONSTANTS.MODULE_ID,
                         itemsToAddRef: itemsToAdd,
                         targetedTokenRef: targetedToken.id,
-                        removeExistingActorItemsRef: SETTINGS.harvestAddItemsMode,
+                        removeExistingActorItemsRef: SETTINGS.harvestRemoveExistingActorItems,
                     },
                     messageOptions: {
                         speaker: ChatMessage.getSpeaker({ actor: actorSpeaker }),

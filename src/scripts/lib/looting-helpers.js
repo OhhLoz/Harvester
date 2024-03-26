@@ -135,8 +135,8 @@ export class LootingHelpers {
             );
         }
 
-        item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
-        harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
+        await item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
+        await harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, lootAction.name);
         return false;
     }
 

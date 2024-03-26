@@ -11,6 +11,8 @@ import {
 import Logger from "./scripts/lib/Logger.js";
 import { HarvestingHelpers } from "./scripts/lib/harvesting-helpers.js";
 import { LootingHelpers } from "./scripts/lib/looting-helpers.js";
+import { RetrieveHelpers } from "./scripts/lib/retrieve-helpers.js";
+import ItemPilesHelpers from "./scripts/lib/item-piles-helpers.js";
 
 export let actionCompendium;
 export let harvestCompendium;
@@ -272,8 +274,9 @@ function resetToDefault(item) {
     });
 }
 
-export function addEffect(targetTokenId, actionName) {
-    let targetToken = canvas.tokens.get(targetTokenId);
+export async function addEffect(targetTokenId, actionName) {
+    let targetToken = RetrieveHelpers.getTokenSync(targetTokenId); // canvas.tokens.get(targetTokenId);
+    await ItemPilesHelpers.unlinkToken(targetToken);
     if (actionName === harvestAction.name) {
         targetToken.document.toggleActiveEffect(
             {

@@ -121,7 +121,7 @@ export class HarvestingHelpers {
                     skillItem: item,
                     skillCallback: "handlePostRollHarvestAction",
                     skillChooseModifier: SETTINGS.allowAbilityChange,
-                    skillButtonLabel: `Attempting to Harvest ${actorName} with ${skill}`,
+                    skillButtonLabel: `Harvesting '${actorName}' with '${skill}'`,
                 });
             }
 
@@ -137,7 +137,7 @@ export class HarvestingHelpers {
                     {
                         chatTitle: `Harvesting Skill Check (${skillCheckVerboseArr.join(",")})`,
                         chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
-                        chatButtonLabel: `Attempting to Harvest ${actorName} with ${skillDenomination}`,
+                        chatButtonLabel: `Harvesting '${actorName}' with '${skillCheckVerboseTmp.skillDenomination}'`,
                         chatWhisper: undefined,
                         chatSpeaker: undefined,
                         chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
@@ -160,7 +160,7 @@ export class HarvestingHelpers {
                     {
                         chatTitle: `Harvesting Skill Check (${skillCheckVerboseArr.join(",")})`,
                         chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}'.`,
-                        chatButtonLabel: `Attempting to Harvest ${actorName}`,
+                        chatButtonLabel: `Harvesting '${actorName}' with multiple skills`,
                         chatWhisper: undefined,
                         chatSpeaker: undefined,
                         chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
@@ -172,9 +172,7 @@ export class HarvestingHelpers {
                 );
             }
         }
-
         item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
-        // harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
     }
 
     static async handlePostRollHarvestAction(options) {
@@ -220,7 +218,7 @@ export class HarvestingHelpers {
         let harvesterMessage = "";
         let matchedItems = [];
 
-        harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
+        await harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
 
         Logger.debug(`HarvestingHelpers | BRT is enable, and has a rollTable`);
         matchedItems = await BetterRollTablesHelpers.retrieveItemsDataHarvestWithBetterRollTables(
@@ -289,9 +287,9 @@ export class HarvestingHelpers {
             await ItemPilesHelpers.unlinkToken(targetedToken);
             await ItemPilesHelpers.addItems(targetedToken, itemsToAdd, {
                 mergeSimilarItems: true,
-                removeExistingActorItems: SETTINGS.harvestAddItemsMode,
+                removeExistingActorItems: SETTINGS.harvestRemoveExistingActorItems,
             });
-            // await ItemPilesHelpers.convertTokenToItemPilesContainer(targetedToken);
+            await ItemPilesHelpers.convertTokenToItemPilesContainer(targetedToken);
             let messageData = { content: "", whisper: {} };
             if (SETTINGS.gmOnly) {
                 messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);

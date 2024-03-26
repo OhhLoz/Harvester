@@ -1137,10 +1137,10 @@ export default class ItemPilesHelpers {
             closed: true,
         },
     ) {
-        if (ItemPilesHelpers.isValidItemPile(tokenTarget)) {
-            Logger.warn(`The targeted token is already a item piles`, false, tokenTarget);
-            return [tokenTarget];
-        }
+        // if (ItemPilesHelpers.isValidItemPile(tokenTarget)) {
+        //     Logger.warn(`The targeted token is already a item piles`, false, tokenTarget);
+        //     return [tokenTarget];
+        // }
 
         options = foundry.utils.mergeObject(
             {
@@ -1324,12 +1324,11 @@ export default class ItemPilesHelpers {
      */
     static async unlinkToken(token) {
         const tokenTarget = RetrieveHelpers.getTokenSync(token);
-        if(tokenTarget instanceof Token) {
+        if (tokenTarget instanceof Token) {
             await tokenTarget.document.update({ actorLink: false });
-        }
-        else if(tokenTarget instanceof TokenDocument) {
+        } else if (tokenTarget instanceof TokenDocument) {
             await tokenTarget.update({ actorLink: false });
-        }else {
+        } else {
             Logger.log(`Cannot unlink this token ?`, tokenTarget);
         }
     }
@@ -1341,9 +1340,9 @@ export default class ItemPilesHelpers {
     static async unlinkActor(actor) {
         const actorTarget = await RetrieveHelpers.getActorAsync(actor);
         const isNowLinked = actorTarget.prototypeToken.actorLink;
-        if(isNowLinked) {
-            actorTarget.update({'token.actorLink': false});
-        }else {
+        if (isNowLinked) {
+            actorTarget.update({ "token.actorLink": false });
+        } else {
             Logger.log(`Cannot unlink this actor ?`, actorTarget);
         }
     }
@@ -1355,9 +1354,9 @@ export default class ItemPilesHelpers {
     static async linkActor(actor) {
         const actorTarget = await RetrieveHelpers.getActorAsync(actor);
         const isNowLinked = actorTarget.prototypeToken.actorLink;
-        if(!isNowLinked) {
-            actorTarget.update({'token.actorLink': true});
-        }else {
+        if (!isNowLinked) {
+            actorTarget.update({ "token.actorLink": true });
+        } else {
             Logger.log(`Cannot link this actor ?`, actorTarget);
         }
     }
