@@ -21,10 +21,73 @@ To install this module manually:
 4.  Click 'Install' and wait for installation to complete
 5.  Don't forget to enable the module in game using the "Manage Module" button
 
+### libWrapper
 
-## Integration with the module [Better Rolltables](https://github.com/p4535992/foundryvtt-better-rolltables/tree/master) -  from p4535992
+This module uses the [libWrapper](https://github.com/ruipin/fvtt-lib-wrapper) library for wrapping utility methods. It is a hard dependency and it is recommended for the best experience and compatibility with other modules.
 
-In the BRT Harvest Rolltable sheet, the "Source Reference" field is the one used by this module to connect the monster to the rolltable! So **"Source Reference" === "Name of The Monster"** , and REMEMBER YOU MUST PUT THE NEW ROLLTABLE IN THE BRT COMPENDIUM "better-rolltables.brt-harvest-harvester" or in the Rolltable directory of the world itself (for now).
+### socketlib
+
+This module uses the [socketlib](https://github.com/manuelVo/foundryvtt-socketlib) library for wrapping utility methods. It is a hard dependency and it is recommended for the best experience and compatibility with other modules.
+
+### Better Rolltables
+
+This module uses the [Better Rolltables](https://github.com/p4535992/foundryvtt-better-rolltables) library for wrapping utility methods. It is a hard dependency and it is recommended for the best experience and compatibility with other modules.
+
+### Item Piles
+
+This module uses the [Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles) library for wrapping utility methods. It is a hard dependency and it is recommended for the best experience and compatibility with other modules.
+
+## NOTE i need really help with a good documentation of this module, please someone help me...
+
+## Harvester Feature
+
+**IMPORTANT NOTE**: To make the module work with the requestor module you have to set the module setting of the latter with key `Module Permissions` with the value ` Request: Anyone. Accept: Only if GM or self` 
+
+![](/wiki/images/requestor_settings.png)
+
+This action allows the Harvesting action to be linked to a BRT rolltable retrieve the result items and display it with the "Item Piles" module for retrieval.
+
+![](/wiki/images/harvester_requestor.png)
+
+Given the various needs there are three modes offeature behavior 
+- **"Keep It or Share It !"** : The player decides whether to keep the loot for himself or share it with others
+- **"Share It"** : It is shared with others by default
+- **"Keep It"** : It is kept for itself by default.
+
+![](/wiki/images/harvester_shareit_or_keepit.png)
+
+## Looting Feature
+
+This action allows the Looting action to be linked to a BRT rolltable retrieve the result currencies and display it with the "Item Piles" module for retrieval.
+
+
+## Integration with the module [Better Rolltables](https://github.com/p4535992/foundryvtt-better-rolltables) Feature
+
+In the BRT Harvest Rolltable sheet, the "Source Reference" field is the one used by this module to connect the monster to the rolltable! So **"Source Reference" === "Name of The Monster" OR a regex**.
+
+```
+Example 1
+Name of the monster: Wolf
+Source Reference on the BRT rolltable as simple strig: Wolf
+Result: get any monster 'Wolf' with a BRT Rolltbale with source reference 'Wolf'
+```
+
+```
+Example 2
+Name of the monster: Wolf
+Source Reference on the BRT rolltable as regex: /^Wolf/ 
+Result: get any monster 'Wolf' with a BRT Rolltbale with source reference stating with the string 'Wolf'
+```
+
+BRT now support multi skill integration just set a array of skills on the source reference filed on the BRT rolltable
+
+![](/wiki/images/multi_skill_2.png)
+
+and launch the harvester action !
+
+![](/wiki/images/multi_skill_1.png)
+
+REMEMBER YOU MUST PUT THE NEW ROLLTABLE IN THE BRT COMPENDIUM "better-rolltables.brt-harvest-harvester" or in the Rolltable directory of the world itself (for now).
   
 # Build
 
@@ -36,7 +99,7 @@ npm install
 
 ### dev
 
-`dev` will let you develop your own code with hot reloading on the browser
+`dev` will let you develop you own code with hot reloading on the browser
 
 ```bash
 npm run dev
@@ -60,7 +123,7 @@ npm run build:watch
 
 ### prettier-format
 
-`prettier-format` launch the prettier plugin based on the configuration [here](./.prettierrc)
+`prettier-format` launch the prettier plugin based on the configuration [here](./.prettierrc.json)
 
 ```bash
 npm run-script prettier-format
