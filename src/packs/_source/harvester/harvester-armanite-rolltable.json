@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Armanite RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Armanite'.",
+  "results": [
+    {
+      "text": "Armanite Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Armanite",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OyelGZGkDUYBeqMD",
+          "brt-result-custom-name": "Armanite Blood vial",
+          "brt-result-original-name": "Armanite Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "OyelGZGkDUYBeqMD",
+      "_id": "pjpqriJ7yxsuyJ2F",
+      "_key": "!tables.results!4GbgZVdddnd5rDHb.pjpqriJ7yxsuyJ2F"
+    },
+    {
+      "text": "Armanite Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Armanite",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cANSBbKBtshUYaEp",
+          "brt-result-custom-name": "Armanite Horn",
+          "brt-result-original-name": "Armanite Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "cANSBbKBtshUYaEp",
+      "_id": "4mBgBNybvxnoVwZz",
+      "_key": "!tables.results!4GbgZVdddnd5rDHb.4mBgBNybvxnoVwZz"
+    },
+    {
+      "text": "Armanite Hoof (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Armanite",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cgpyxP4D1bmaugMx",
+          "brt-result-custom-name": "Armanite Hoof",
+          "brt-result-original-name": "Armanite Hoof (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "cgpyxP4D1bmaugMx",
+      "_id": "RMIaEJt5t55XfCSl",
+      "_key": "!tables.results!4GbgZVdddnd5rDHb.RMIaEJt5t55XfCSl"
+    },
+    {
+      "text": "Armanite Serrated Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Armanite",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oTBHUgOfPIfU0QBy",
+          "brt-result-custom-name": "Armanite Serrated Tail",
+          "brt-result-original-name": "Armanite Serrated Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "oTBHUgOfPIfU0QBy",
+      "_id": "BJwyfdCK3pbBF00y",
+      "_key": "!tables.results!4GbgZVdddnd5rDHb.BJwyfdCK3pbBF00y"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Armanite",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568173,
+    "modifiedTime": 1696756755903,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "4GbgZVdddnd5rDHb",
+  "sort": 0,
+  "_key": "!tables!4GbgZVdddnd5rDHb"
+}

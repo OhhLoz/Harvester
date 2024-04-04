@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Duergar Xarrorn RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Duergar Xarrorn'.",
+  "results": [
+    {
+      "text": "Duergar Xarrorn Oil",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Xarrorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.I53WytDMJhLLsX7V",
+          "brt-result-custom-name": "Duergar Xarrorn Oil",
+          "brt-result-original-name": "Duergar Xarrorn Oil",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "I53WytDMJhLLsX7V",
+      "_id": "ppnI2l1hubwvl7kw",
+      "_key": "!tables.results!JXU5Itrq1Dy5Zvx5.ppnI2l1hubwvl7kw"
+    },
+    {
+      "text": "Duergar Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Xarrorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IwXnsUDkJ8svhNpa",
+          "brt-result-custom-name": "Duergar Pineal Gland",
+          "brt-result-original-name": "Duergar Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "IwXnsUDkJ8svhNpa",
+      "_id": "X780MqQk54AMHKgO",
+      "_key": "!tables.results!JXU5Itrq1Dy5Zvx5.X780MqQk54AMHKgO"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Duergar Xarrorn",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566042,
+    "modifiedTime": 1696756756173,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JXU5Itrq1Dy5Zvx5",
+  "sort": 0,
+  "_key": "!tables!JXU5Itrq1Dy5Zvx5"
+}

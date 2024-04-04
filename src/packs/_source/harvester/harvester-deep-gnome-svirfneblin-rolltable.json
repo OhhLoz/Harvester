@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Deep Gnome (Svirfneblin) RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Deep Gnome (Svirfneblin)'.",
+  "results": [
+    {
+      "text": "Deep Gnome Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Deep Gnome (Svirfneblin)",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7kbP8ASXtX0AiSX8",
+          "brt-result-custom-name": "Deep Gnome Skin",
+          "brt-result-original-name": "Deep Gnome Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "7kbP8ASXtX0AiSX8",
+      "_id": "9k21BpM0peOn2FGy",
+      "_key": "!tables.results!WDnA9HbnuCx0fzBG.9k21BpM0peOn2FGy"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Deep Gnome (Svirfneblin)",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562494,
+    "modifiedTime": 1696756756088,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "WDnA9HbnuCx0fzBG",
+  "sort": 0,
+  "_key": "!tables!WDnA9HbnuCx0fzBG"
+}

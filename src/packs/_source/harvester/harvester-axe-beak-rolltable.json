@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Axe Beak RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Axe Beak'.",
+  "results": [
+    {
+      "text": "Axe Beak Beak",
+      "type": 2,
+      "img": "icons/commodities/bones/beak-hooked-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Axe Beak",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3ZvyLNGxmzoNkkyX",
+          "brt-result-custom-name": "Axe Beak Beak",
+          "brt-result-original-name": "Axe Beak Beak",
+          "brt-result-original-icon": "icons/commodities/bones/beak-hooked-red.webp"
+        }
+      },
+      "documentId": "3ZvyLNGxmzoNkkyX",
+      "_id": "I4HGh767xa1RPT9w",
+      "_key": "!tables.results!Y9lj1Wk0Ojq80VUL.I4HGh767xa1RPT9w"
+    },
+    {
+      "text": "Axe Beak Feathers (warm climates)",
+      "type": 2,
+      "img": "icons/commodities/materials/feather-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Axe Beak",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Gkmibgo8fYfgjpRV",
+          "brt-result-custom-name": "Axe Beak Feathers (warm climates)",
+          "brt-result-original-name": "Axe Beak Feathers (warm climates)",
+          "brt-result-original-icon": "icons/commodities/materials/feather-white.webp"
+        }
+      },
+      "documentId": "Gkmibgo8fYfgjpRV",
+      "_id": "90gcP5xAHshCWOQf",
+      "_key": "!tables.results!Y9lj1Wk0Ojq80VUL.90gcP5xAHshCWOQf"
+    },
+    {
+      "text": "Axe Beak Pelt (cold climates)",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Axe Beak",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vKnOyQq9ereeQHLZ",
+          "brt-result-custom-name": "Axe Beak Pelt (cold climates)",
+          "brt-result-original-name": "Axe Beak Pelt (cold climates)",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "vKnOyQq9ereeQHLZ",
+      "_id": "K8PNGt3EG95396iU",
+      "_key": "!tables.results!Y9lj1Wk0Ojq80VUL.K8PNGt3EG95396iU"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Axe Beak",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561291,
+    "modifiedTime": 1696756755915,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Y9lj1Wk0Ojq80VUL",
+  "sort": 0,
+  "_key": "!tables!Y9lj1Wk0Ojq80VUL"
+}

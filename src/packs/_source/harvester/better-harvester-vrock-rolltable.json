@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Vrock RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Vrock'.",
+  "results": [
+    {
+      "text": "Vrock Vocal Cords",
+      "type": 2,
+      "img": "icons/consumables/meat/chicken-breast-raw-pink.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Vrock",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3HjuUreEnOX2Ng2H",
+          "brt-result-custom-name": "Vrock Vocal Cords",
+          "brt-result-original-name": "Vrock Vocal Cords",
+          "brt-result-original-icon": "icons/consumables/meat/chicken-breast-raw-pink.webp"
+        }
+      },
+      "documentId": "3HjuUreEnOX2Ng2H",
+      "_id": "As3bEFOG9AF6yDkQ",
+      "_key": "!tables.results!44NxI6TL7VvZa2mw.As3bEFOG9AF6yDkQ"
+    },
+    {
+      "text": "Vrock Talon (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-bird-pink.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Vrock",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Cdzm9pKB2rGhI2YU",
+          "brt-result-custom-name": "Vrock Talon",
+          "brt-result-original-name": "Vrock Talon (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-bird-pink.webp"
+        }
+      },
+      "documentId": "Cdzm9pKB2rGhI2YU",
+      "_id": "GKNcbHXUPUWLVufG",
+      "_key": "!tables.results!44NxI6TL7VvZa2mw.GKNcbHXUPUWLVufG"
+    },
+    {
+      "text": "Vrock Feathers (small bundle)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Vrock",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JWmvjXSJ47dMPk7n",
+          "brt-result-custom-name": "Vrock Feathers (small bundle)",
+          "brt-result-original-name": "Vrock Feathers (small bundle)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "JWmvjXSJ47dMPk7n",
+      "_id": "MPimtmxoiaxvoOzB",
+      "_key": "!tables.results!44NxI6TL7VvZa2mw.MPimtmxoiaxvoOzB"
+    },
+    {
+      "text": "Vrock Spores (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Vrock",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.L7teictrD7stGKE7",
+          "brt-result-custom-name": "Vrock Spores (vial)",
+          "brt-result-original-name": "Vrock Spores (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "L7teictrD7stGKE7",
+      "_id": "yWkhvYNt3axC9B50",
+      "_key": "!tables.results!44NxI6TL7VvZa2mw.yWkhvYNt3axC9B50"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Vrock",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561150,
+    "modifiedTime": 1696756761137,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "44NxI6TL7VvZa2mw",
+  "sort": 0,
+  "_key": "!tables!44NxI6TL7VvZa2mw"
+}

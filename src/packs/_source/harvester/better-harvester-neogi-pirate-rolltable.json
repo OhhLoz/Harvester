@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Neogi Pirate RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Neogi Pirate'.",
+  "results": [
+    {
+      "text": "Neogi Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neogi Pirate",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IgKgG10pxDZK0a7c",
+          "brt-result-custom-name": "Neogi Venom (vial)",
+          "brt-result-original-name": "Neogi Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "IgKgG10pxDZK0a7c",
+      "_id": "J6GR9ITElelZV6TX",
+      "_key": "!tables.results!n8yDsT6heMo7PXxa.J6GR9ITElelZV6TX"
+    },
+    {
+      "text": "Neogi Eyes (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neogi Pirate",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xMMH2ZCC4aNxNuwy",
+          "brt-result-custom-name": "Neogi Eyes",
+          "brt-result-original-name": "Neogi Eyes (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "xMMH2ZCC4aNxNuwy",
+      "_id": "WAE8swRROm7TLXNN",
+      "_key": "!tables.results!n8yDsT6heMo7PXxa.WAE8swRROm7TLXNN"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Neogi Pirate",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566244,
+    "modifiedTime": 1696756758288,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "n8yDsT6heMo7PXxa",
+  "sort": 0,
+  "_key": "!tables!n8yDsT6heMo7PXxa"
+}

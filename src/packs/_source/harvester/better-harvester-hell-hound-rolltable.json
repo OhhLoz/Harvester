@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Hell Hound RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hell Hound'.",
+  "results": [
+    {
+      "text": "Hell Hound Sulfur (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hell Hound",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6RRSjLxGHLEDGqEU",
+          "brt-result-custom-name": "Hell Hound Sulfur (vial)",
+          "brt-result-original-name": "Hell Hound Sulfur (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "6RRSjLxGHLEDGqEU",
+      "_id": "5vnngH8NAolQUvlE",
+      "_key": "!tables.results!O83XJwOPkskPGjwx.5vnngH8NAolQUvlE"
+    },
+    {
+      "text": "Hell Hound Hair (3 handfuls)",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hell Hound",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.KPtnOav2zH3K6ibt",
+          "brt-result-custom-name": "Hell Hound Hair handfuls",
+          "brt-result-original-name": "Hell Hound Hair (3 handfuls)",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "KPtnOav2zH3K6ibt",
+      "_id": "4TRyyCRKgr0v2Hnb",
+      "_key": "!tables.results!O83XJwOPkskPGjwx.4TRyyCRKgr0v2Hnb"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Hell Hound",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562063,
+    "modifiedTime": 1696756756754,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "O83XJwOPkskPGjwx",
+  "sort": 0,
+  "_key": "!tables!O83XJwOPkskPGjwx"
+}

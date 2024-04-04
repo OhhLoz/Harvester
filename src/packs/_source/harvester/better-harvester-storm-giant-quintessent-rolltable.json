@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Storm Giant Quintessent RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Storm Giant Quintessent'.",
+  "results": [
+    {
+      "text": "Lock of Storm Giant Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Storm Giant Quintessent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3wamLbPbfeZReW10",
+          "brt-result-custom-name": "Lock of Storm Giant Hair",
+          "brt-result-original-name": "Lock of Storm Giant Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "3wamLbPbfeZReW10",
+      "_id": "mqHqwTAyLhtnc2Sz",
+      "_key": "!tables.results!32NC6qFIdBVrRtlW.mqHqwTAyLhtnc2Sz"
+    },
+    {
+      "text": "Storm Giant Toenails",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Storm Giant Quintessent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GsoGclIELDArOtQC",
+          "brt-result-custom-name": "Storm Giant Toenails",
+          "brt-result-original-name": "Storm Giant Toenails",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "GsoGclIELDArOtQC",
+      "_id": "kp6Eq611pGWqYwIa",
+      "_key": "!tables.results!32NC6qFIdBVrRtlW.kp6Eq611pGWqYwIa"
+    },
+    {
+      "text": "Storm Giant Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Storm Giant Quintessent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LiSL02X4DPdoLwQz",
+          "brt-result-custom-name": "Storm Giant Blood vial",
+          "brt-result-original-name": "Storm Giant Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "LiSL02X4DPdoLwQz",
+      "_id": "F3OuoVdUBrhv5S0E",
+      "_key": "!tables.results!32NC6qFIdBVrRtlW.F3OuoVdUBrhv5S0E"
+    },
+    {
+      "text": "Storm Giant Sternum",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Storm Giant Quintessent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jM0hlE4g5cE5ZW0v",
+          "brt-result-custom-name": "Storm Giant Sternum",
+          "brt-result-original-name": "Storm Giant Sternum",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "jM0hlE4g5cE5ZW0v",
+      "_id": "LpDYdwS2iMhgzNtn",
+      "_key": "!tables.results!32NC6qFIdBVrRtlW.LpDYdwS2iMhgzNtn"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Storm Giant Quintessent",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561369,
+    "modifiedTime": 1696756760022,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "32NC6qFIdBVrRtlW",
+  "sort": 0,
+  "_key": "!tables!32NC6qFIdBVrRtlW"
+}

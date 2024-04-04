@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Stone Defender RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Stone Defender'.",
+  "results": [
+    {
+      "text": "Clockwork Gears and Scrap Metal",
+      "type": 2,
+      "img": "icons/commodities/metal/barstock-broken-steel.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Stone Defender",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FClu6KJBOTXxdrtP",
+          "brt-result-custom-name": "Clockwork Gears and Scrap Metal",
+          "brt-result-original-name": "Clockwork Gears and Scrap Metal",
+          "brt-result-original-icon": "icons/commodities/metal/barstock-broken-steel.webp"
+        }
+      },
+      "documentId": "FClu6KJBOTXxdrtP",
+      "_id": "4oFU4wJhE60TVfzb",
+      "_key": "!tables.results!3AmCWZEfoeKVLbFH.4oFU4wJhE60TVfzb"
+    },
+    {
+      "text": "Clockwork Oil (flask)",
+      "type": 2,
+      "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Stone Defender",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fxAZqLx1CzObBsCj",
+          "brt-result-custom-name": "Clockwork Oil (flask)",
+          "brt-result-original-name": "Clockwork Oil (flask)",
+          "brt-result-original-icon": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp"
+        }
+      },
+      "documentId": "fxAZqLx1CzObBsCj",
+      "_id": "FnMhHkqwBcGnrFvk",
+      "_key": "!tables.results!3AmCWZEfoeKVLbFH.FnMhHkqwBcGnrFvk"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Stone Defender",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565261,
+    "modifiedTime": 1696756760014,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3AmCWZEfoeKVLbFH",
+  "sort": 0,
+  "_key": "!tables!3AmCWZEfoeKVLbFH"
+}

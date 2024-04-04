@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Djinni RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Djinni'.",
+  "results": [
+    {
+      "text": "Djinni Dust Particles (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Djinni",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IVM4SQaiOAN2DlZi",
+          "brt-result-custom-name": "Djinni Dust Particles (vial)",
+          "brt-result-original-name": "Djinni Dust Particles (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "IVM4SQaiOAN2DlZi",
+      "_id": "zuvjeGmxhoC3ch3g",
+      "_key": "!tables.results!8LciszGbl1v2q7AZ.zuvjeGmxhoC3ch3g"
+    },
+    {
+      "text": "Air Elemental Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Djinni",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iXErSwYPkgFvqadj",
+          "brt-result-custom-name": "Air Elemental Essence (vial)",
+          "brt-result-original-name": "Air Elemental Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "iXErSwYPkgFvqadj",
+      "_id": "MqP97wJYHjPrzQ1w",
+      "_key": "!tables.results!8LciszGbl1v2q7AZ.MqP97wJYHjPrzQ1w"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Djinni",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566165,
+    "modifiedTime": 1696756756111,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8LciszGbl1v2q7AZ",
+  "sort": 0,
+  "_key": "!tables!8LciszGbl1v2q7AZ"
+}

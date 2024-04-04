@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Aartuk Elder RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Aartuk Elder'.",
+  "results": [
+    {
+      "text": "Aartuk Tongue",
+      "type": 2,
+      "img": "icons/commodities/biological/tongue-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Elder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AWKhYgLIwFsd9ZV1",
+          "brt-result-custom-name": "Aartuk Tongue",
+          "brt-result-original-name": "Aartuk Tongue",
+          "brt-result-original-icon": "icons/commodities/biological/tongue-red.webp"
+        }
+      },
+      "documentId": "AWKhYgLIwFsd9ZV1",
+      "_id": "0pYGZBmFftSh9lkp",
+      "_key": "!tables.results!PtliSZ8QeD5MnwnC.0pYGZBmFftSh9lkp"
+    },
+    {
+      "text": "Aartuk Bark",
+      "type": 2,
+      "img": "icons/commodities/wood/bark-beige.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Elder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UOOs23n1xdZvORK9",
+          "brt-result-custom-name": "Aartuk Bark",
+          "brt-result-original-name": "Aartuk Bark",
+          "brt-result-original-icon": "icons/commodities/wood/bark-beige.webp"
+        }
+      },
+      "documentId": "UOOs23n1xdZvORK9",
+      "_id": "mySNQC96jVFCXo7C",
+      "_key": "!tables.results!PtliSZ8QeD5MnwnC.mySNQC96jVFCXo7C"
+    },
+    {
+      "text": "Aartuk Pearl",
+      "type": 2,
+      "img": "icons/commodities/gems/pearls-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Elder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.sktsmaWMR4IoEZ0u",
+          "brt-result-custom-name": "Aartuk Pearl",
+          "brt-result-original-name": "Aartuk Pearl",
+          "brt-result-original-icon": "icons/commodities/gems/pearls-white.webp"
+        }
+      },
+      "documentId": "sktsmaWMR4IoEZ0u",
+      "_id": "cpFesnD0RuV8C002",
+      "_key": "!tables.results!PtliSZ8QeD5MnwnC.cpFesnD0RuV8C002"
+    },
+    {
+      "text": "Aartuk Sap vial",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Elder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wv4wj7X28qWKkWHV",
+          "brt-result-custom-name": "Aartuk Sap vial",
+          "brt-result-original-name": "Aartuk Sap vial",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "wv4wj7X28qWKkWHV",
+      "_id": "uayZHJ9OzFoXua8Y",
+      "_key": "!tables.results!PtliSZ8QeD5MnwnC.uayZHJ9OzFoXua8Y"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Aartuk Elder",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563519,
+    "modifiedTime": 1696756755818,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "PtliSZ8QeD5MnwnC",
+  "sort": 0,
+  "_key": "!tables!PtliSZ8QeD5MnwnC"
+}

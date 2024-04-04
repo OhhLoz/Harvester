@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Shadar-kai Gloom Weaver RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Shadar-kai Gloom Weaver'.",
+  "results": [
+    {
+      "text": "Shadar-kai Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Shadar-kai Gloom Weaver",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.N2HIP8FOAQpYZXcK",
+          "brt-result-custom-name": "Shadar-kai Blood vial",
+          "brt-result-original-name": "Shadar-kai Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "N2HIP8FOAQpYZXcK",
+      "_id": "g4RWYlmipRq0Z8fO",
+      "_key": "!tables.results!5LFXaoIoIb6pyT8r.g4RWYlmipRq0Z8fO"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Shadar-kai Gloom Weaver",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567712,
+    "modifiedTime": 1696756759171,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "5LFXaoIoIb6pyT8r",
+  "sort": 0,
+  "_key": "!tables!5LFXaoIoIb6pyT8r"
+}

@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Bone Devil RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bone Devil'.",
+  "results": [
+    {
+      "text": "Bone Devil Bones (large bag)",
+      "type": 2,
+      "img": "icons/containers/bags/pack-canvas-white-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bone Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6gO7uZG9p45NU3cP",
+          "brt-result-custom-name": "Bone Devil Bones (large bag)",
+          "brt-result-original-name": "Bone Devil Bones (large bag)",
+          "brt-result-original-icon": "icons/containers/bags/pack-canvas-white-brown.webp"
+        }
+      },
+      "documentId": "6gO7uZG9p45NU3cP",
+      "_id": "Y6e6e3og5OjlZawl",
+      "_key": "!tables.results!aIlXu9utUruXBn0d.Y6e6e3og5OjlZawl"
+    },
+    {
+      "text": "Bone Devil Wings (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bone Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EgtBeGilG0Xb44QV",
+          "brt-result-custom-name": "Bone Devil Wings",
+          "brt-result-original-name": "Bone Devil Wings (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "EgtBeGilG0Xb44QV",
+      "_id": "Xu7p2sPuQ9quNvvz",
+      "_key": "!tables.results!aIlXu9utUruXBn0d.Xu7p2sPuQ9quNvvz"
+    },
+    {
+      "text": "Bone Devil Stinger",
+      "type": 2,
+      "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bone Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Th2QzNG1jmxpSK65",
+          "brt-result-custom-name": "Bone Devil Stinger",
+          "brt-result-original-name": "Bone Devil Stinger",
+          "brt-result-original-icon": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp"
+        }
+      },
+      "documentId": "Th2QzNG1jmxpSK65",
+      "_id": "Ultm3c9G1wKlprJh",
+      "_key": "!tables.results!aIlXu9utUruXBn0d.Ultm3c9G1wKlprJh"
+    },
+    {
+      "text": "Bone Devil Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bone Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gmvapDA1XKbCTnf8",
+          "brt-result-custom-name": "Bone Devil Skin",
+          "brt-result-original-name": "Bone Devil Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "gmvapDA1XKbCTnf8",
+      "_id": "vYIH4LtWwvFRFMxL",
+      "_key": "!tables.results!aIlXu9utUruXBn0d.vYIH4LtWwvFRFMxL"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Bone Devil",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562106,
+    "modifiedTime": 1696756755974,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "aIlXu9utUruXBn0d",
+  "sort": 0,
+  "_key": "!tables!aIlXu9utUruXBn0d"
+}

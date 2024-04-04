@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Yuan-ti Mind Whisperer RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Yuan-ti Mind Whisperer'.",
+  "results": [
+    {
+      "text": "Yuan-ti Mind Whisperer's Hood",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Mind Whisperer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1cy1nM7lARGf7m5m",
+          "brt-result-custom-name": "Yuan-ti Mind Whisperer's Hood",
+          "brt-result-original-name": "Yuan-ti Mind Whisperer's Hood",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "1cy1nM7lARGf7m5m",
+      "_id": "A7hhN3jMzxCSL4l5",
+      "_key": "!tables.results!lNNcQUcDld4zTQpr.A7hhN3jMzxCSL4l5"
+    },
+    {
+      "text": "Yuan-ti Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Mind Whisperer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HPSLlPMOhsquqnUw",
+          "brt-result-custom-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "HPSLlPMOhsquqnUw",
+      "_id": "FGAbUm44O52Hr3fQ",
+      "_key": "!tables.results!lNNcQUcDld4zTQpr.FGAbUm44O52Hr3fQ"
+    },
+    {
+      "text": "Yuan-ti Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Mind Whisperer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gXaLk5ahU9M2Yfas",
+          "brt-result-custom-name": "Yuan-ti Blood vial",
+          "brt-result-original-name": "Yuan-ti Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "gXaLk5ahU9M2Yfas",
+      "_id": "uA2WbziqdRr5G4qb",
+      "_key": "!tables.results!lNNcQUcDld4zTQpr.uA2WbziqdRr5G4qb"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Yuan-ti Mind Whisperer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560623,
+    "modifiedTime": 1696756762285,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lNNcQUcDld4zTQpr",
+  "sort": 0,
+  "_key": "!tables!lNNcQUcDld4zTQpr"
+}

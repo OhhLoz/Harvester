@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Darkling Elder RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Darkling Elder'.",
+  "results": [
+    {
+      "text": "Darkling Ash (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Darkling Elder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DMCjzbSpCHvAI2me",
+          "brt-result-custom-name": "Darkling Ash (small pouch)",
+          "brt-result-original-name": "Darkling Ash (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "DMCjzbSpCHvAI2me",
+      "_id": "RZArcX69zXKju6Vb",
+      "_key": "!tables.results!uLGTXZqY3TgQuW0q.RZArcX69zXKju6Vb"
+    },
+    {
+      "text": "Darkling Elder Tattoo",
+      "type": 2,
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Darkling Elder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Kzq2FfFTOh9nd4z6",
+          "brt-result-custom-name": "Darkling Elder Tattoo",
+          "brt-result-original-name": "Darkling Elder Tattoo",
+          "brt-result-original-icon": "icons/magic/symbols/rune-sigil-black-pink.webp"
+        }
+      },
+      "documentId": "Kzq2FfFTOh9nd4z6",
+      "_id": "KIXo2qS9uI3G0jsG",
+      "_key": "!tables.results!uLGTXZqY3TgQuW0q.KIXo2qS9uI3G0jsG"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Darkling Elder",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564754,
+    "modifiedTime": 1696756756070,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "uLGTXZqY3TgQuW0q",
+  "sort": 0,
+  "_key": "!tables!uLGTXZqY3TgQuW0q"
+}

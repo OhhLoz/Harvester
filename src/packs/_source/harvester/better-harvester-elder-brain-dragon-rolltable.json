@@ -1,0 +1,210 @@
+{
+  "name": "Better Harvester | Elder Brain Dragon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Elder Brain Dragon'.",
+  "results": [
+    {
+      "text": "Elder Brain Dragon Neural Core",
+      "type": 2,
+      "img": "icons/commodities/gems/pearl-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7Cn9yCXM9dzpXSNJ",
+          "brt-result-custom-name": "Elder Brain Dragon Neural Core",
+          "brt-result-original-name": "Elder Brain Dragon Neural Core",
+          "brt-result-original-icon": "icons/commodities/gems/pearl-brown-red.webp"
+        }
+      },
+      "documentId": "7Cn9yCXM9dzpXSNJ",
+      "_id": "RTkummVgmcaFKnPD",
+      "_key": "!tables.results!BF39a9Ik3cZd2we6.RTkummVgmcaFKnPD"
+    },
+    {
+      "text": "Elder Brain Dragon White Matter",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Gxh1m50hBba4m0Ga",
+          "brt-result-custom-name": "Elder Brain Dragon White Matter",
+          "brt-result-original-name": "Elder Brain Dragon White Matter",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "Gxh1m50hBba4m0Ga",
+      "_id": "iZSBvOtUxOcQhLjX",
+      "_key": "!tables.results!BF39a9Ik3cZd2we6.iZSBvOtUxOcQhLjX"
+    },
+    {
+      "text": "Elder Brain Dragon Blood (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Q69QokOXzlgZGLc2",
+          "brt-result-custom-name": "Elder Brain Dragon Blood vial",
+          "brt-result-original-name": "Elder Brain Dragon Blood (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Q69QokOXzlgZGLc2",
+      "_id": "m8MqGgJ9bvvxnZTu",
+      "_key": "!tables.results!BF39a9Ik3cZd2we6.m8MqGgJ9bvvxnZTu"
+    },
+    {
+      "text": "Elder Brain Dragon Tentacles (large sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SJdp5oqpcEV4MAUY",
+          "brt-result-custom-name": "Elder Brain Dragon Tentacles (large sack)",
+          "brt-result-original-name": "Elder Brain Dragon Tentacles (large sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "SJdp5oqpcEV4MAUY",
+      "_id": "ArUU1n9uWo44qLrS",
+      "_key": "!tables.results!BF39a9Ik3cZd2we6.ArUU1n9uWo44qLrS"
+    },
+    {
+      "text": "Elder Brain Dragon Brine (flask)",
+      "type": 2,
+      "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.YMsHjvmxKns1IbA6",
+          "brt-result-custom-name": "Elder Brain Dragon Brine (flask)",
+          "brt-result-original-name": "Elder Brain Dragon Brine (flask)",
+          "brt-result-original-icon": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp"
+        }
+      },
+      "documentId": "YMsHjvmxKns1IbA6",
+      "_id": "xxhuo0F0gGjMRKYx",
+      "_key": "!tables.results!BF39a9Ik3cZd2we6.xxhuo0F0gGjMRKYx"
+    },
+    {
+      "text": "Elder Brain Dragon Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.erhpSVMAYtmZpjP0",
+          "brt-result-custom-name": "Elder Brain Dragon Pineal Gland",
+          "brt-result-original-name": "Elder Brain Dragon Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "erhpSVMAYtmZpjP0",
+      "_id": "IsaR9weiDggi2EdC",
+      "_key": "!tables.results!BF39a9Ik3cZd2we6.IsaR9weiDggi2EdC"
+    }
+  ],
+  "formula": "1d6",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Elder Brain Dragon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 6
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562304,
+    "modifiedTime": 1696756756188,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "BF39a9Ik3cZd2we6",
+  "sort": 0,
+  "_key": "!tables!BF39a9Ik3cZd2we6"
+}

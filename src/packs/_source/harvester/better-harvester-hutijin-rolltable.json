@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Hutijin RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hutijin'.",
+  "results": [
+    {
+      "text": "Hutijin's Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hutijin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bJGxhJzSYWTGP997",
+          "brt-result-custom-name": "Hutijin's Blood vial",
+          "brt-result-original-name": "Hutijin's Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "bJGxhJzSYWTGP997",
+      "_id": "MZmsIkikMLusqKVE",
+      "_key": "!tables.results!oys95v8ZZmyCHMEI.MZmsIkikMLusqKVE"
+    },
+    {
+      "text": "Pit Fiend Venom (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hutijin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cZeUuXqSKwcgMM81",
+          "brt-result-custom-name": "Pit Fiend Venom vial",
+          "brt-result-original-name": "Pit Fiend Venom (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "cZeUuXqSKwcgMM81",
+      "_id": "LiK1pn6BFwUAM4Qa",
+      "_key": "!tables.results!oys95v8ZZmyCHMEI.LiK1pn6BFwUAM4Qa"
+    },
+    {
+      "text": "Hutijin's Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hutijin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yIVCcXAHAbLPL2DX",
+          "brt-result-custom-name": "Hutijin's Claws (pouch)",
+          "brt-result-original-name": "Hutijin's Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "yIVCcXAHAbLPL2DX",
+      "_id": "Tk2UlY4GSFqjm3Vr",
+      "_key": "!tables.results!oys95v8ZZmyCHMEI.Tk2UlY4GSFqjm3Vr"
+    },
+    {
+      "text": "Hutijin's Larynx",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hutijin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zUNdXeP4a5Y7kOL1",
+          "brt-result-custom-name": "Hutijin's Larynx",
+          "brt-result-original-name": "Hutijin's Larynx",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "zUNdXeP4a5Y7kOL1",
+      "_id": "23j3Sj3L32oTlcZ6",
+      "_key": "!tables.results!oys95v8ZZmyCHMEI.23j3Sj3L32oTlcZ6"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Hutijin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756575713,
+    "modifiedTime": 1696756757121,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "oys95v8ZZmyCHMEI",
+  "sort": 0,
+  "_key": "!tables!oys95v8ZZmyCHMEI"
+}

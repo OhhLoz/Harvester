@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Scorpion RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Scorpion'.",
+  "results": [
+    {
+      "text": "Scorpion Venom (1 vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Scorpion",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.y2Dp3ZdWWKGVAnEk",
+          "brt-result-custom-name": "Scorpion Venom vial",
+          "brt-result-original-name": "Scorpion Venom (1 vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "y2Dp3ZdWWKGVAnEk",
+      "_id": "uM6FQVjb8eUVK8Tw",
+      "_key": "!tables.results!i3ZdanF07vF2sVRY.uM6FQVjb8eUVK8Tw"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Scorpion",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756589633,
+    "modifiedTime": 1696756759165,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "i3ZdanF07vF2sVRY",
+  "sort": 0,
+  "_key": "!tables!i3ZdanF07vF2sVRY"
+}

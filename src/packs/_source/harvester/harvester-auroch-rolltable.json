@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Auroch RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Auroch'.",
+  "results": [
+    {
+      "text": "Auroch Horns (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Auroch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5ZG4UiQdsPI4v39D",
+          "brt-result-custom-name": "Auroch Horns",
+          "brt-result-original-name": "Auroch Horns (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "5ZG4UiQdsPI4v39D",
+      "_id": "51XzYQzQvyJNsONd",
+      "_key": "!tables.results!5irXB0kaxQWJEazp.51XzYQzQvyJNsONd"
+    },
+    {
+      "text": "Auroch Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Auroch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qayzwi2dY7tIr9r9",
+          "brt-result-custom-name": "Auroch Hide",
+          "brt-result-original-name": "Auroch Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "qayzwi2dY7tIr9r9",
+      "_id": "QNYYPm7XmwTy7QnT",
+      "_key": "!tables.results!5irXB0kaxQWJEazp.QNYYPm7XmwTy7QnT"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Auroch",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561775,
+    "modifiedTime": 1696756755910,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "5irXB0kaxQWJEazp",
+  "sort": 0,
+  "_key": "!tables!5irXB0kaxQWJEazp"
+}

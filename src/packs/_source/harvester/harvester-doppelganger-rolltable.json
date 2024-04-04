@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Doppelganger RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Doppelganger'.",
+  "results": [
+    {
+      "text": "Doppelganger Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Doppelganger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9Jmkd4LFc03VcSq5",
+          "brt-result-custom-name": "Doppelganger Brain",
+          "brt-result-original-name": "Doppelganger Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "9Jmkd4LFc03VcSq5",
+      "_id": "m6opows4rfSqAO7l",
+      "_key": "!tables.results!OD8WLXulpMq6gOPn.m6opows4rfSqAO7l"
+    },
+    {
+      "text": "Doppelganger Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Doppelganger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LnaW834vnHli8bG7",
+          "brt-result-custom-name": "Doppelganger Blood vial",
+          "brt-result-original-name": "Doppelganger Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "LnaW834vnHli8bG7",
+      "_id": "1aF3kz7caaFpyqTN",
+      "_key": "!tables.results!OD8WLXulpMq6gOPn.1aF3kz7caaFpyqTN"
+    },
+    {
+      "text": "Doppelganger Face",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Doppelganger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QXzdtYe6Vx4xxMDF",
+          "brt-result-custom-name": "Doppelganger Face",
+          "brt-result-original-name": "Doppelganger Face",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "QXzdtYe6Vx4xxMDF",
+      "_id": "09Z4QIHRnw8a0h8z",
+      "_key": "!tables.results!OD8WLXulpMq6gOPn.09Z4QIHRnw8a0h8z"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Doppelganger",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563034,
+    "modifiedTime": 1696756756117,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "OD8WLXulpMq6gOPn",
+  "sort": 0,
+  "_key": "!tables!OD8WLXulpMq6gOPn"
+}

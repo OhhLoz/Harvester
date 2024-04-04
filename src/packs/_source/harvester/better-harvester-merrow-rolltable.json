@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Merrow RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Merrow'.",
+  "results": [
+    {
+      "text": "Merrow Scales (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Merrow",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0woW8rJK1kpSB1V0",
+          "brt-result-custom-name": "Merrow Scales (small pouch)",
+          "brt-result-original-name": "Merrow Scales (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "0woW8rJK1kpSB1V0",
+      "_id": "vh1Kwkc9lCwTEAgs",
+      "_key": "!tables.results!nC5kAixrf0ajelGa.vh1Kwkc9lCwTEAgs"
+    },
+    {
+      "text": "Merrow Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Merrow",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IrQ72TofBr3wx35q",
+          "brt-result-custom-name": "Merrow Heart",
+          "brt-result-original-name": "Merrow Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "IrQ72TofBr3wx35q",
+      "_id": "GDYQ8A9gHnrlRc6k",
+      "_key": "!tables.results!nC5kAixrf0ajelGa.GDYQ8A9gHnrlRc6k"
+    },
+    {
+      "text": "Merrow Claw (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Merrow",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PsVw7wewb1l4Umax",
+          "brt-result-custom-name": "Merrow Claw",
+          "brt-result-original-name": "Merrow Claw (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "PsVw7wewb1l4Umax",
+      "_id": "FAeaYoa2GcJ0UMXI",
+      "_key": "!tables.results!nC5kAixrf0ajelGa.FAeaYoa2GcJ0UMXI"
+    },
+    {
+      "text": "Merrow Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Merrow",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.amtMpY9ZigmN59WI",
+          "brt-result-custom-name": "Merrow Blood vial",
+          "brt-result-original-name": "Merrow Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "amtMpY9ZigmN59WI",
+      "_id": "ScnownLnAiqrKRXl",
+      "_key": "!tables.results!nC5kAixrf0ajelGa.ScnownLnAiqrKRXl"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Merrow",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560502,
+    "modifiedTime": 1696756757672,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nC5kAixrf0ajelGa",
+  "sort": 0,
+  "_key": "!tables!nC5kAixrf0ajelGa"
+}

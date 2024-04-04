@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Catoblepas RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Catoblepas'.",
+  "results": [
+    {
+      "text": "Catoblepas Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Catoblepas",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2ae246MXPhzxtgPC",
+          "brt-result-custom-name": "Catoblepas Eye",
+          "brt-result-original-name": "Catoblepas Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "2ae246MXPhzxtgPC",
+      "_id": "7IyFX6xmKlI31ch3",
+      "_key": "!tables.results!xKtapjriynWiHBtu.7IyFX6xmKlI31ch3"
+    },
+    {
+      "text": "Catoblepas Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Catoblepas",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.K0824BpEMhdRzn9Q",
+          "brt-result-custom-name": "Catoblepas Tail",
+          "brt-result-original-name": "Catoblepas Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "K0824BpEMhdRzn9Q",
+      "_id": "mjHGiWjZ5UqRcUO3",
+      "_key": "!tables.results!xKtapjriynWiHBtu.mjHGiWjZ5UqRcUO3"
+    },
+    {
+      "text": "Catoblepas Milk (1 gallon)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Catoblepas",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Zjqmnh4vQE0689Ph",
+          "brt-result-custom-name": "Catoblepas Milk gallon",
+          "brt-result-original-name": "Catoblepas Milk (1 gallon)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "Zjqmnh4vQE0689Ph",
+      "_id": "wJo2vmxSndQyd5YT",
+      "_key": "!tables.results!xKtapjriynWiHBtu.wJo2vmxSndQyd5YT"
+    },
+    {
+      "text": "Catoblepas Fur (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Catoblepas",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cvl5k6Re1YYuRqVW",
+          "brt-result-custom-name": "Catoblepas Fur (large pouch)",
+          "brt-result-original-name": "Catoblepas Fur (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "cvl5k6Re1YYuRqVW",
+      "_id": "tevRagzUwq9wzkTK",
+      "_key": "!tables.results!xKtapjriynWiHBtu.tevRagzUwq9wzkTK"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Catoblepas",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560941,
+    "modifiedTime": 1696756756016,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xKtapjriynWiHBtu",
+  "sort": 0,
+  "_key": "!tables!xKtapjriynWiHBtu"
+}

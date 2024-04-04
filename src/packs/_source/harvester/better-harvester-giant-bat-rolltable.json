@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Giant Bat RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Bat'.",
+  "results": [
+    {
+      "text": "Giant Bat Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Bat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RVZsZSYI1cBbb27M",
+          "brt-result-custom-name": "Giant Bat Hide",
+          "brt-result-original-name": "Giant Bat Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "RVZsZSYI1cBbb27M",
+      "_id": "UDEwXWTKqbfAd5TM",
+      "_key": "!tables.results!B4WB7mRwqW2BFn8y.UDEwXWTKqbfAd5TM"
+    },
+    {
+      "text": "Giant Bat Wings",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Bat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.eBAoGx3dvsfU4Kdm",
+          "brt-result-custom-name": "Giant Bat Wings",
+          "brt-result-original-name": "Giant Bat Wings",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "eBAoGx3dvsfU4Kdm",
+      "_id": "gY0elUFjnbsBejGW",
+      "_key": "!tables.results!B4WB7mRwqW2BFn8y.gY0elUFjnbsBejGW"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Bat",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569045,
+    "modifiedTime": 1696756756327,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "B4WB7mRwqW2BFn8y",
+  "sort": 0,
+  "_key": "!tables!B4WB7mRwqW2BFn8y"
+}

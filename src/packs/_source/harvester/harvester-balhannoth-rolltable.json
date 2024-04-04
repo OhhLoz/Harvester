@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Balhannoth RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Balhannoth'.",
+  "results": [
+    {
+      "text": "Balhannoth Teeth (large bag)",
+      "type": 2,
+      "img": "icons/containers/bags/pack-canvas-white-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Balhannoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6rfw0OmSsWvsheVE",
+          "brt-result-custom-name": "Balhannoth Teeth (large bag)",
+          "brt-result-original-name": "Balhannoth Teeth (large bag)",
+          "brt-result-original-icon": "icons/containers/bags/pack-canvas-white-brown.webp"
+        }
+      },
+      "documentId": "6rfw0OmSsWvsheVE",
+      "_id": "a1nbxhnmUx3C3ANH",
+      "_key": "!tables.results!xcHCvna3QABImLTj.a1nbxhnmUx3C3ANH"
+    },
+    {
+      "text": "Balhannoth Tentacles (x6)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Balhannoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BpGQiMSOu2mtRRVA",
+          "brt-result-custom-name": "Balhannoth Tentacles",
+          "brt-result-original-name": "Balhannoth Tentacles (x6)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "BpGQiMSOu2mtRRVA",
+      "_id": "khQMkLoNA9qihCPk",
+      "_key": "!tables.results!xcHCvna3QABImLTj.khQMkLoNA9qihCPk"
+    },
+    {
+      "text": "Balhannoth Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Balhannoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZvviV2UKXjl2SNg5",
+          "brt-result-custom-name": "Balhannoth Heart",
+          "brt-result-original-name": "Balhannoth Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "ZvviV2UKXjl2SNg5",
+      "_id": "U9Yjme2H8UzRu4W1",
+      "_key": "!tables.results!xcHCvna3QABImLTj.U9Yjme2H8UzRu4W1"
+    },
+    {
+      "text": "Balhannoth Mucus (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Balhannoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cTxfSviBN6afGMBQ",
+          "brt-result-custom-name": "Balhannoth Mucus vial",
+          "brt-result-original-name": "Balhannoth Mucus (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "cTxfSviBN6afGMBQ",
+      "_id": "mURejFTZ9erJb9ma",
+      "_key": "!tables.results!xcHCvna3QABImLTj.mURejFTZ9erJb9ma"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Balhannoth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562153,
+    "modifiedTime": 1696756755931,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xcHCvna3QABImLTj",
+  "sort": 0,
+  "_key": "!tables!xcHCvna3QABImLTj"
+}

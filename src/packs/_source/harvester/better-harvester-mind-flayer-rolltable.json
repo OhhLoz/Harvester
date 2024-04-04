@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Mind Flayer RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Mind Flayer'.",
+  "results": [
+    {
+      "text": "Mind Flayer Tentacle (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mind Flayer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7ug1dNoYvME5ezxz",
+          "brt-result-custom-name": "Mind Flayer Tentacle",
+          "brt-result-original-name": "Mind Flayer Tentacle (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "7ug1dNoYvME5ezxz",
+      "_id": "FuwflRtSHBb7BukK",
+      "_key": "!tables.results!GrIvMDj3KYIXmw0t.FuwflRtSHBb7BukK"
+    },
+    {
+      "text": "Mind Flayer Membrane",
+      "type": 2,
+      "img": "icons/commodities/biological/pustules-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mind Flayer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TFqH7nZijbi8pnCa",
+          "brt-result-custom-name": "Mind Flayer Membrane",
+          "brt-result-original-name": "Mind Flayer Membrane",
+          "brt-result-original-icon": "icons/commodities/biological/pustules-red.webp"
+        }
+      },
+      "documentId": "TFqH7nZijbi8pnCa",
+      "_id": "mCnlfRsWs4e2szDd",
+      "_key": "!tables.results!GrIvMDj3KYIXmw0t.mCnlfRsWs4e2szDd"
+    },
+    {
+      "text": "Mind Flayer Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mind Flayer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.W9AqX3XT721Ii2YQ",
+          "brt-result-custom-name": "Mind Flayer Brain",
+          "brt-result-original-name": "Mind Flayer Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "W9AqX3XT721Ii2YQ",
+      "_id": "Wz997z9ggtiJv9ky",
+      "_key": "!tables.results!GrIvMDj3KYIXmw0t.Wz997z9ggtiJv9ky"
+    },
+    {
+      "text": "Mind Flayer Mucus",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mind Flayer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.mZ01gdXICi4nFtUS",
+          "brt-result-custom-name": "Mind Flayer Mucus",
+          "brt-result-original-name": "Mind Flayer Mucus",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "mZ01gdXICi4nFtUS",
+      "_id": "ohGN3CblbPXLHh1D",
+      "_key": "!tables.results!GrIvMDj3KYIXmw0t.ohGN3CblbPXLHh1D"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Mind Flayer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562523,
+    "modifiedTime": 1696756757680,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "GrIvMDj3KYIXmw0t",
+  "sort": 0,
+  "_key": "!tables!GrIvMDj3KYIXmw0t"
+}

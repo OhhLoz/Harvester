@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Sea Hags RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Sea Hags'.",
+  "results": [
+    {
+      "text": "Sea Hag's Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sea Hags",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9H77W9bXtwnhNfRA",
+          "brt-result-custom-name": "Sea Hag's Blood vial",
+          "brt-result-original-name": "Sea Hag's Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "9H77W9bXtwnhNfRA",
+      "_id": "MYbKrIdCaXnc0WkO",
+      "_key": "!tables.results!82yISZPq11FSrw0p.MYbKrIdCaXnc0WkO"
+    },
+    {
+      "text": "Sea Hag's Hair (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sea Hags",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BvaehNJPpVhDTtS3",
+          "brt-result-custom-name": "Sea Hag's Hair (small pouch)",
+          "brt-result-original-name": "Sea Hag's Hair (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "BvaehNJPpVhDTtS3",
+      "_id": "CnWK8spkXPPKOgef",
+      "_key": "!tables.results!82yISZPq11FSrw0p.CnWK8spkXPPKOgef"
+    },
+    {
+      "text": "Sea Hag's Eyeball",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sea Hags",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LSIdfV5mfVQ1z8L9",
+          "brt-result-custom-name": "Sea Hag's Eyeball",
+          "brt-result-original-name": "Sea Hag's Eyeball",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "LSIdfV5mfVQ1z8L9",
+      "_id": "jZL4czhwRYuOwqAn",
+      "_key": "!tables.results!82yISZPq11FSrw0p.jZL4czhwRYuOwqAn"
+    },
+    {
+      "text": "Sea Hag's Nails (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sea Hags",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.j8W8k3UAc8cMFs5R",
+          "brt-result-custom-name": "Sea Hag's Nails (pouch)",
+          "brt-result-original-name": "Sea Hag's Nails (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "j8W8k3UAc8cMFs5R",
+      "_id": "TsxmdngKI6LqzcQf",
+      "_key": "!tables.results!82yISZPq11FSrw0p.TsxmdngKI6LqzcQf"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Sea Hags",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563019,
+    "modifiedTime": 1696756759166,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "82yISZPq11FSrw0p",
+  "sort": 0,
+  "_key": "!tables!82yISZPq11FSrw0p"
+}

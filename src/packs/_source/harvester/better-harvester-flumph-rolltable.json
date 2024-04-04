@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Flumph RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Flumph'.",
+  "results": [
+    {
+      "text": "Flumph Stench (Vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flumph",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FzEmCHcVoEKUNtcs",
+          "brt-result-custom-name": "Flumph Stench (Vial)",
+          "brt-result-original-name": "Flumph Stench (Vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "FzEmCHcVoEKUNtcs",
+      "_id": "ZnnZ6oO5mJWPSuYl",
+      "_key": "!tables.results!7ld4Zw2e69CYwKm6.ZnnZ6oO5mJWPSuYl"
+    },
+    {
+      "text": "Flumph Membrane",
+      "type": 2,
+      "img": "icons/commodities/biological/pustules-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flumph",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nmxretNo7BC8HMnH",
+          "brt-result-custom-name": "Flumph Membrane",
+          "brt-result-original-name": "Flumph Membrane",
+          "brt-result-original-icon": "icons/commodities/biological/pustules-red.webp"
+        }
+      },
+      "documentId": "nmxretNo7BC8HMnH",
+      "_id": "C4J0LOpuVgc0PPTn",
+      "_key": "!tables.results!7ld4Zw2e69CYwKm6.C4J0LOpuVgc0PPTn"
+    },
+    {
+      "text": "Flumph Brain Stem",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flumph",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rRaaKyuqgHEO44N7",
+          "brt-result-custom-name": "Flumph Brain Stem",
+          "brt-result-original-name": "Flumph Brain Stem",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "rRaaKyuqgHEO44N7",
+      "_id": "QSf04fxmCYcBj08q",
+      "_key": "!tables.results!7ld4Zw2e69CYwKm6.QSf04fxmCYcBj08q"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Flumph",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565461,
+    "modifiedTime": 1696756756291,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "7ld4Zw2e69CYwKm6",
+  "sort": 0,
+  "_key": "!tables!7ld4Zw2e69CYwKm6"
+}

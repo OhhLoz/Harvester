@@ -1,0 +1,297 @@
+{
+  "name": "Better Harvester | Ancient Dragon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ancient Dragon'.",
+  "results": [
+    {
+      "text": "Ancient Dragon Horn",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CHbE8Y1WMr0KInl3",
+          "brt-result-custom-name": "Ancient Dragon Horn",
+          "brt-result-original-name": "Ancient Dragon Horn",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "CHbE8Y1WMr0KInl3",
+      "_id": "uPELnZxjBRs7whmf",
+      "_key": "!tables.results!lZNWQy4hgJsOrBae.uPELnZxjBRs7whmf"
+    },
+    {
+      "text": "Ancient Dragon Scales",
+      "type": 2,
+      "img": "icons/commodities/leather/scales-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MKmOjw9psspORIQb",
+          "brt-result-custom-name": "Ancient Dragon Scales",
+          "brt-result-original-name": "Ancient Dragon Scales",
+          "brt-result-original-icon": "icons/commodities/leather/scales-brown.webp"
+        }
+      },
+      "documentId": "MKmOjw9psspORIQb",
+      "_id": "oNbG1R8iqkTBNp2I",
+      "_key": "!tables.results!lZNWQy4hgJsOrBae.oNbG1R8iqkTBNp2I"
+    },
+    {
+      "text": "Ancient Dragon Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "30",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MiUfYsRKU9qyCtBb",
+          "brt-result-custom-name": "Ancient Dragon Heart",
+          "brt-result-original-name": "Ancient Dragon Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "MiUfYsRKU9qyCtBb",
+      "_id": "RgSxx3dqqNcmWVsu",
+      "_key": "!tables.results!lZNWQy4hgJsOrBae.RgSxx3dqqNcmWVsu"
+    },
+    {
+      "text": "Ancient Dragon Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Naj2LcnJt118Na1X",
+          "brt-result-custom-name": "Ancient Dragon Wing",
+          "brt-result-original-name": "Ancient Dragon Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "Naj2LcnJt118Na1X",
+      "_id": "R0BudZ2b5GVaXgNP",
+      "_key": "!tables.results!lZNWQy4hgJsOrBae.R0BudZ2b5GVaXgNP"
+    },
+    {
+      "text": "Raw Dragon Meat",
+      "type": 2,
+      "img": "icons/consumables/meat/steak-raw-red-pink.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NtaOFCvkAZB8smqj",
+          "brt-result-custom-name": "Raw Dragon Meat",
+          "brt-result-original-name": "Raw Dragon Meat",
+          "brt-result-original-icon": "icons/consumables/meat/steak-raw-red-pink.webp"
+        }
+      },
+      "documentId": "NtaOFCvkAZB8smqj",
+      "_id": "9tPTzH1v4QUi0uUj",
+      "_key": "!tables.results!lZNWQy4hgJsOrBae.9tPTzH1v4QUi0uUj"
+    },
+    {
+      "text": "Ancient Dragon Bone (x6)",
+      "type": 2,
+      "img": "icons/commodities/bones/bones-stack-yellow.webp",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WMXURxskSfT2udOR",
+          "brt-result-custom-name": "Ancient Dragon Bone",
+          "brt-result-original-name": "Ancient Dragon Bone (x6)",
+          "brt-result-original-icon": "icons/commodities/bones/bones-stack-yellow.webp"
+        }
+      },
+      "documentId": "WMXURxskSfT2udOR",
+      "_id": "jNvkIXuUiKJS1MiW",
+      "_key": "!tables.results!lZNWQy4hgJsOrBae.jNvkIXuUiKJS1MiW"
+    },
+    {
+      "text": "Ancient Dragon Tooth (15x)",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "15"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jYcDRkagF6MMnhBW",
+          "brt-result-custom-name": "Ancient Dragon Tooth",
+          "brt-result-original-name": "Ancient Dragon Tooth (15x)",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "jYcDRkagF6MMnhBW",
+      "_id": "TBRXDZ7n55FIdxkW",
+      "_key": "!tables.results!lZNWQy4hgJsOrBae.TBRXDZ7n55FIdxkW"
+    },
+    {
+      "text": "Ancient Dragon Blood (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qBFtWiMLDIwhS4Xm",
+          "brt-result-custom-name": "Ancient Dragon Blood vial",
+          "brt-result-original-name": "Ancient Dragon Blood (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "qBFtWiMLDIwhS4Xm",
+      "_id": "gW7X5eJ6lp0vrQ1q",
+      "_key": "!tables.results!lZNWQy4hgJsOrBae.gW7X5eJ6lp0vrQ1q"
+    },
+    {
+      "text": "Ancient Dragon Breath Pouch",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        9,
+        9
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wE7LSX2QRuwZnb7I",
+          "brt-result-custom-name": "Ancient Dragon Breath Pouch",
+          "brt-result-original-name": "Ancient Dragon Breath Pouch",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "wE7LSX2QRuwZnb7I",
+      "_id": "L64IBSd6gIUQhjLh",
+      "_key": "!tables.results!lZNWQy4hgJsOrBae.L64IBSd6gIUQhjLh"
+    }
+  ],
+  "formula": "1d9",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Ancient Dragon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 9
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564219,
+    "modifiedTime": 1696756755870,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lZNWQy4hgJsOrBae",
+  "sort": 0,
+  "_key": "!tables!lZNWQy4hgJsOrBae"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Ankylosaurus RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ankylosaurus'.",
+  "results": [
+    {
+      "text": "Ankylosaurus Skull",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-deformed-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ankylosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.eqKoNqrcbSr0YKzE",
+          "brt-result-custom-name": "Ankylosaurus Skull",
+          "brt-result-original-name": "Ankylosaurus Skull",
+          "brt-result-original-icon": "icons/commodities/bones/skull-deformed-white.webp"
+        }
+      },
+      "documentId": "eqKoNqrcbSr0YKzE",
+      "_id": "oqLcKDokP9KHjETT",
+      "_key": "!tables.results!A01hN7J2aL9klKGh.oqLcKDokP9KHjETT"
+    },
+    {
+      "text": "Ankylosaurus Plates",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ankylosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.mrWkfWbrQwbdDjjL",
+          "brt-result-custom-name": "Ankylosaurus Plates",
+          "brt-result-original-name": "Ankylosaurus Plates",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "mrWkfWbrQwbdDjjL",
+      "_id": "dPM78Wt05hECYJEq",
+      "_key": "!tables.results!A01hN7J2aL9klKGh.dPM78Wt05hECYJEq"
+    },
+    {
+      "text": "Ankylosaurus Mace-like Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ankylosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.pxMX8mdFKOzcBrNd",
+          "brt-result-custom-name": "Ankylosaurus Mace-like Tail",
+          "brt-result-original-name": "Ankylosaurus Mace-like Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "pxMX8mdFKOzcBrNd",
+      "_id": "I9agLH5NB9rIz9zx",
+      "_key": "!tables.results!A01hN7J2aL9klKGh.I9agLH5NB9rIz9zx"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Ankylosaurus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756578374,
+    "modifiedTime": 1696756755893,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "A01hN7J2aL9klKGh",
+  "sort": 0,
+  "_key": "!tables!A01hN7J2aL9klKGh"
+}

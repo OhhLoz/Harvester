@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Mezzoloth RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Mezzoloth'.",
+  "results": [
+    {
+      "text": "Mezzoloth Chitin",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mezzoloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AMJMXBtL7ZJWODCD",
+          "brt-result-custom-name": "Mezzoloth Chitin",
+          "brt-result-original-name": "Mezzoloth Chitin",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "AMJMXBtL7ZJWODCD",
+      "_id": "2JCbM5Q2Xs7VZYx7",
+      "_key": "!tables.results!eb5MFBpQMPWJ3v37.2JCbM5Q2Xs7VZYx7"
+    },
+    {
+      "text": "Yugoloth Ichor (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mezzoloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TKkwtzwxUtBmdWIP",
+          "brt-result-custom-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "TKkwtzwxUtBmdWIP",
+      "_id": "xWVZD0PtTWGG1238",
+      "_key": "!tables.results!eb5MFBpQMPWJ3v37.xWVZD0PtTWGG1238"
+    },
+    {
+      "text": "Yugoloth Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mezzoloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gxnktFcLcEvK8d4j",
+          "brt-result-custom-name": "Yugoloth Heart",
+          "brt-result-original-name": "Yugoloth Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "gxnktFcLcEvK8d4j",
+      "_id": "NfcWb2NKxAVX5MGY",
+      "_key": "!tables.results!eb5MFBpQMPWJ3v37.NfcWb2NKxAVX5MGY"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Mezzoloth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563423,
+    "modifiedTime": 1696756757676,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "eb5MFBpQMPWJ3v37",
+  "sort": 0,
+  "_key": "!tables!eb5MFBpQMPWJ3v37"
+}

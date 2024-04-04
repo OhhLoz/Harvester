@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Quaggoth RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Quaggoth'.",
+  "results": [
+    {
+      "text": "Quaggoth Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Quaggoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1NIlqJw3PLc68rEO",
+          "brt-result-custom-name": "Quaggoth Hide",
+          "brt-result-original-name": "Quaggoth Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "1NIlqJw3PLc68rEO",
+      "_id": "ZBncUPWEzoNTKEwd",
+      "_key": "!tables.results!QnqgwYlGvQeNMe9W.ZBncUPWEzoNTKEwd"
+    },
+    {
+      "text": "Quaggoth Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Quaggoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FdUVp897MJl86j58",
+          "brt-result-custom-name": "Quaggoth Blood vial",
+          "brt-result-original-name": "Quaggoth Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "FdUVp897MJl86j58",
+      "_id": "8oCFfnEtLITNdPS4",
+      "_key": "!tables.results!QnqgwYlGvQeNMe9W.8oCFfnEtLITNdPS4"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Quaggoth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560579,
+    "modifiedTime": 1696756759107,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "QnqgwYlGvQeNMe9W",
+  "sort": 0,
+  "_key": "!tables!QnqgwYlGvQeNMe9W"
+}

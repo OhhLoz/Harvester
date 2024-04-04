@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Gauth RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gauth'.",
+  "results": [
+    {
+      "text": "Gauth Stomach",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-stomach.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gauth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7zfjdTKopL59j8EP",
+          "brt-result-custom-name": "Gauth Stomach",
+          "brt-result-original-name": "Gauth Stomach",
+          "brt-result-original-icon": "icons/commodities/biological/organ-stomach.webp"
+        }
+      },
+      "documentId": "7zfjdTKopL59j8EP",
+      "_id": "kNDywzQTnvUTCgnp",
+      "_key": "!tables.results!GPEV6RdnYHduvh3v.kNDywzQTnvUTCgnp"
+    },
+    {
+      "text": "Gauth Eyestalk",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-tentacle-grey-orange.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gauth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.eASqh18Vsi6JW9hg",
+          "brt-result-custom-name": "Gauth Eyestalk",
+          "brt-result-original-name": "Gauth Eyestalk",
+          "brt-result-original-icon": "icons/commodities/biological/eye-tentacle-grey-orange.webp"
+        }
+      },
+      "documentId": "eASqh18Vsi6JW9hg",
+      "_id": "hbCxm7d73P2vlfG9",
+      "_key": "!tables.results!GPEV6RdnYHduvh3v.hbCxm7d73P2vlfG9"
+    },
+    {
+      "text": "Large Gauth Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gauth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iNuiKdtxE5Nzozn3",
+          "brt-result-custom-name": "Large Gauth Eye",
+          "brt-result-original-name": "Large Gauth Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "iNuiKdtxE5Nzozn3",
+      "_id": "7wlB78WntxUdiU6X",
+      "_key": "!tables.results!GPEV6RdnYHduvh3v.7wlB78WntxUdiU6X"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Gauth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562584,
+    "modifiedTime": 1696756756312,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "GPEV6RdnYHduvh3v",
+  "sort": 0,
+  "_key": "!tables!GPEV6RdnYHduvh3v"
+}

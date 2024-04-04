@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Yuan-ti Nightmare Speaker RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Yuan-ti Nightmare Speaker'.",
+  "results": [
+    {
+      "text": "Yuan-ti Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Nightmare Speaker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hYpSPIU79fToStpT",
+          "brt-result-custom-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "hYpSPIU79fToStpT",
+      "_id": "hSIkRvRDd11GKXKH",
+      "_key": "!tables.results!WaiUUnlVF7GJvlAd.hSIkRvRDd11GKXKH"
+    },
+    {
+      "text": "Yuan-ti Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Nightmare Speaker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ptfLEHr3ucyr5HKk",
+          "brt-result-custom-name": "Yuan-ti Blood vial",
+          "brt-result-original-name": "Yuan-ti Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "ptfLEHr3ucyr5HKk",
+      "_id": "Mb70Xug902empzC7",
+      "_key": "!tables.results!WaiUUnlVF7GJvlAd.Mb70Xug902empzC7"
+    },
+    {
+      "text": "Yuan-ti Nightmare Speaker Fang (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/teeth-pointed-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Nightmare Speaker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qBOrPTiX8lkikh7B",
+          "brt-result-custom-name": "Yuan-ti Nightmare Speaker Fang",
+          "brt-result-original-name": "Yuan-ti Nightmare Speaker Fang (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/teeth-pointed-white.webp"
+        }
+      },
+      "documentId": "qBOrPTiX8lkikh7B",
+      "_id": "5aynEnb8GWjqT7mB",
+      "_key": "!tables.results!WaiUUnlVF7GJvlAd.5aynEnb8GWjqT7mB"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Yuan-ti Nightmare Speaker",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756580086,
+    "modifiedTime": 1696756762287,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "WaiUUnlVF7GJvlAd",
+  "sort": 0,
+  "_key": "!tables!WaiUUnlVF7GJvlAd"
+}

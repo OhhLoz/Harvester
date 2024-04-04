@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Beholder RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Beholder'.",
+  "results": [
+    {
+      "text": "Beholder Membrane",
+      "type": 2,
+      "img": "icons/commodities/biological/pustules-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Beholder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PRbanubEy5RL8HPQ",
+          "brt-result-custom-name": "Beholder Membrane",
+          "brt-result-original-name": "Beholder Membrane",
+          "brt-result-original-icon": "icons/commodities/biological/pustules-red.webp"
+        }
+      },
+      "documentId": "PRbanubEy5RL8HPQ",
+      "_id": "WXYTeIAaZhEnVQGu",
+      "_key": "!tables.results!i6O9xrNdM1OWtynC.WXYTeIAaZhEnVQGu"
+    },
+    {
+      "text": "Large Beholder Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Beholder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WlDHskzK6v32q46G",
+          "brt-result-custom-name": "Large Beholder Eye",
+          "brt-result-original-name": "Large Beholder Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "WlDHskzK6v32q46G",
+      "_id": "e7FdCVzIpqKq3ODV",
+      "_key": "!tables.results!i6O9xrNdM1OWtynC.e7FdCVzIpqKq3ODV"
+    },
+    {
+      "text": "Beholder Eye Stalk",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Beholder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.u5sPrsBBfyutzNPk",
+          "brt-result-custom-name": "Beholder Eye Stalk",
+          "brt-result-original-name": "Beholder Eye Stalk",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "u5sPrsBBfyutzNPk",
+      "_id": "25DoRT7pIHkXZHsT",
+      "_key": "!tables.results!i6O9xrNdM1OWtynC.25DoRT7pIHkXZHsT"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Beholder",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568335,
+    "modifiedTime": 1696756755952,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "i6O9xrNdM1OWtynC",
+  "sort": 0,
+  "_key": "!tables!i6O9xrNdM1OWtynC"
+}

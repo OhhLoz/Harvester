@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Giant Strider RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Strider'.",
+  "results": [
+    {
+      "text": "Giant Strider Fire Glands",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Strider",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0Px4xeN4cRvVC8Qo",
+          "brt-result-custom-name": "Giant Strider Fire Glands",
+          "brt-result-original-name": "Giant Strider Fire Glands",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "0Px4xeN4cRvVC8Qo",
+      "_id": "Wyn9XJzJgBwtWGoA",
+      "_key": "!tables.results!rfJtpo11G5esNqKW.Wyn9XJzJgBwtWGoA"
+    },
+    {
+      "text": "Giant Strider Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Strider",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.T1RTwka9KD0pZCmi",
+          "brt-result-custom-name": "Giant Strider Hide",
+          "brt-result-original-name": "Giant Strider Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "T1RTwka9KD0pZCmi",
+      "_id": "GWgVFIcSIyc8bDyY",
+      "_key": "!tables.results!rfJtpo11G5esNqKW.GWgVFIcSIyc8bDyY"
+    },
+    {
+      "text": "Giant Strider Beak",
+      "type": 2,
+      "img": "icons/commodities/bones/beak-hooked-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Strider",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oZqdHVdVSTjf3riq",
+          "brt-result-custom-name": "Giant Strider Beak",
+          "brt-result-original-name": "Giant Strider Beak",
+          "brt-result-original-icon": "icons/commodities/bones/beak-hooked-red.webp"
+        }
+      },
+      "documentId": "oZqdHVdVSTjf3riq",
+      "_id": "igwlcfEuJqypd4aA",
+      "_key": "!tables.results!rfJtpo11G5esNqKW.igwlcfEuJqypd4aA"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Strider",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560379,
+    "modifiedTime": 1696756756361,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rfJtpo11G5esNqKW",
+  "sort": 0,
+  "_key": "!tables!rfJtpo11G5esNqKW"
+}

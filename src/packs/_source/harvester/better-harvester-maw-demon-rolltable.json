@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Maw Demon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Maw Demon'.",
+  "results": [
+    {
+      "text": "Maw Demon Teeth (large bag)",
+      "type": 2,
+      "img": "icons/containers/bags/pack-canvas-white-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Maw Demon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bedHL5JrqHHqRr7B",
+          "brt-result-custom-name": "Maw Demon Teeth (large bag)",
+          "brt-result-original-name": "Maw Demon Teeth (large bag)",
+          "brt-result-original-icon": "icons/containers/bags/pack-canvas-white-brown.webp"
+        }
+      },
+      "documentId": "bedHL5JrqHHqRr7B",
+      "_id": "HUvueB1ZO96dpAU4",
+      "_key": "!tables.results!m5FYe7TBTyUke2ew.HUvueB1ZO96dpAU4"
+    },
+    {
+      "text": "Maw Demon Stomach",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-stomach.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Maw Demon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fWrdu4Nlr7uTbWAA",
+          "brt-result-custom-name": "Maw Demon Stomach",
+          "brt-result-original-name": "Maw Demon Stomach",
+          "brt-result-original-icon": "icons/commodities/biological/organ-stomach.webp"
+        }
+      },
+      "documentId": "fWrdu4Nlr7uTbWAA",
+      "_id": "2tpQ6KK1SiOiB9CR",
+      "_key": "!tables.results!m5FYe7TBTyUke2ew.2tpQ6KK1SiOiB9CR"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Maw Demon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756575841,
+    "modifiedTime": 1696756757660,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "m5FYe7TBTyUke2ew",
+  "sort": 0,
+  "_key": "!tables!m5FYe7TBTyUke2ew"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Swarm of Cranium Rats RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Swarm of Cranium Rats'.",
+  "results": [
+    {
+      "text": "Cranium Rat Brain (x10)",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Swarm of Cranium Rats",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8N98e39UmGErxOAJ",
+          "brt-result-custom-name": "Cranium Rat Brain",
+          "brt-result-original-name": "Cranium Rat Brain (x10)",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "8N98e39UmGErxOAJ",
+      "_id": "qq2b1aYbU7lX6CSP",
+      "_key": "!tables.results!x8OhEHOAWpgEUdei.qq2b1aYbU7lX6CSP"
+    },
+    {
+      "text": "Swarm Mentality",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Swarm of Cranium Rats",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Y6e4cOO7tkI3toO0",
+          "brt-result-custom-name": "Swarm Mentality",
+          "brt-result-original-name": "Swarm Mentality",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "Y6e4cOO7tkI3toO0",
+      "_id": "slAsLBWVyFddCWvf",
+      "_key": "!tables.results!x8OhEHOAWpgEUdei.slAsLBWVyFddCWvf"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Swarm of Cranium Rats",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562687,
+    "modifiedTime": 1696756760030,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "x8OhEHOAWpgEUdei",
+  "sort": 0,
+  "_key": "!tables!x8OhEHOAWpgEUdei"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Hollow Dragon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hollow Dragon'.",
+  "results": [
+    {
+      "text": "Hollow Dragon Ash",
+      "type": 2,
+      "img": "icons/commodities/materials/bowl-powder-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hollow Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SalFF7BvKKg2wGBn",
+          "brt-result-custom-name": "Hollow Dragon Ash",
+          "brt-result-original-name": "Hollow Dragon Ash",
+          "brt-result-original-icon": "icons/commodities/materials/bowl-powder-gold.webp"
+        }
+      },
+      "documentId": "SalFF7BvKKg2wGBn",
+      "_id": "P8hpdmQ4bpbGLGUB",
+      "_key": "!tables.results!5tUr4GA8J5IgSanq.P8hpdmQ4bpbGLGUB"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Hollow Dragon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569240,
+    "modifiedTime": 1696756757110,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "5tUr4GA8J5IgSanq",
+  "sort": 0,
+  "_key": "!tables!5tUr4GA8J5IgSanq"
+}

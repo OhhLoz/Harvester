@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Derro RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Derro'.",
+  "results": [
+    {
+      "text": "Derro Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Derro",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JeLRZxIoxRoAjoZZ",
+          "brt-result-custom-name": "Derro Eye",
+          "brt-result-original-name": "Derro Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "JeLRZxIoxRoAjoZZ",
+      "_id": "4ogqNKH5ZifiY2lS",
+      "_key": "!tables.results!MxMV4ylI94iL57sd.4ogqNKH5ZifiY2lS"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Derro",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566493,
+    "modifiedTime": 1696756756097,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "MxMV4ylI94iL57sd",
+  "sort": 0,
+  "_key": "!tables!MxMV4ylI94iL57sd"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Air Elemental RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Air Elemental'.",
+  "results": [
+    {
+      "text": "Elemental Air Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Air Elemental",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.pK5MuVy0LE3XX6J7",
+          "brt-result-custom-name": "Elemental Air Essence (vial)",
+          "brt-result-original-name": "Elemental Air Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "pK5MuVy0LE3XX6J7",
+      "_id": "MS4SS6KS2nYHlp2x",
+      "_key": "!tables.results!BUq7Z8neFXivVQiW.MS4SS6KS2nYHlp2x"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Air Elemental",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756584415,
+    "modifiedTime": 1696756755854,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "BUq7Z8neFXivVQiW",
+  "sort": 0,
+  "_key": "!tables!BUq7Z8neFXivVQiW"
+}

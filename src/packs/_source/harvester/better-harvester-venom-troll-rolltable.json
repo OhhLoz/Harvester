@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Venom Troll RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Venom Troll'.",
+  "results": [
+    {
+      "text": "Troll Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Venom Troll",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BblE1mmu8nZjlv4n",
+          "brt-result-custom-name": "Troll Heart",
+          "brt-result-original-name": "Troll Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "BblE1mmu8nZjlv4n",
+      "_id": "tJ8bdSNRrthfziMf",
+      "_key": "!tables.results!Gu3kfX41juU9NdGS.tJ8bdSNRrthfziMf"
+    },
+    {
+      "text": "Venom Troll Skin Strips (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Venom Troll",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FNm917ew2A0t1hFJ",
+          "brt-result-custom-name": "Venom Troll Skin Strips (pouch)",
+          "brt-result-original-name": "Venom Troll Skin Strips (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "FNm917ew2A0t1hFJ",
+      "_id": "LRsByJK89xbFQmxp",
+      "_key": "!tables.results!Gu3kfX41juU9NdGS.LRsByJK89xbFQmxp"
+    },
+    {
+      "text": "Venom Troll Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Venom Troll",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Oi4Z3SWJnKioQwII",
+          "brt-result-custom-name": "Venom Troll Blood vial",
+          "brt-result-original-name": "Venom Troll Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Oi4Z3SWJnKioQwII",
+      "_id": "rRhiLhuQoTilE0Wr",
+      "_key": "!tables.results!Gu3kfX41juU9NdGS.rRhiLhuQoTilE0Wr"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Venom Troll",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563961,
+    "modifiedTime": 1696756761131,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Gu3kfX41juU9NdGS",
+  "sort": 0,
+  "_key": "!tables!Gu3kfX41juU9NdGS"
+}

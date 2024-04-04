@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Minotaur Skeleton RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Minotaur Skeleton'.",
+  "results": [
+    {
+      "text": "Minotaur Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Minotaur Skeleton",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GTV2QgfkQt9J0l1c",
+          "brt-result-custom-name": "Minotaur Horn",
+          "brt-result-original-name": "Minotaur Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "GTV2QgfkQt9J0l1c",
+      "_id": "sgxDeFDOdnGuaQjN",
+      "_key": "!tables.results!Z7keNvYFF0HGNy9A.sgxDeFDOdnGuaQjN"
+    },
+    {
+      "text": "Bone Dust (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Minotaur Skeleton",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.v1zZmT9bp38CTUYG",
+          "brt-result-custom-name": "Bone Dust (pouch)",
+          "brt-result-original-name": "Bone Dust (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "v1zZmT9bp38CTUYG",
+      "_id": "iH09IQC01UoEspcJ",
+      "_key": "!tables.results!Z7keNvYFF0HGNy9A.iH09IQC01UoEspcJ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Minotaur Skeleton",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565642,
+    "modifiedTime": 1696756757686,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Z7keNvYFF0HGNy9A",
+  "sort": 0,
+  "_key": "!tables!Z7keNvYFF0HGNy9A"
+}

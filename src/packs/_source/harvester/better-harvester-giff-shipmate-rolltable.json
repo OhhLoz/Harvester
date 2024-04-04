@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Giff Shipmate RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giff Shipmate'.",
+  "results": [
+    {
+      "text": "Giff Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Giff Shipmate",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.J7HzrUfZ3CidgPH1",
+          "brt-result-custom-name": "Giff Hide",
+          "brt-result-original-name": "Giff Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "J7HzrUfZ3CidgPH1",
+      "_id": "fgD9U3J2V7jIH5N2",
+      "_key": "!tables.results!AR5sXRnVBEZMdgjL.fgD9U3J2V7jIH5N2"
+    },
+    {
+      "text": "Giff Ears (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Giff Shipmate",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Wk7bmuVy11fcByEt",
+          "brt-result-custom-name": "Giff Ears",
+          "brt-result-original-name": "Giff Ears (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "Wk7bmuVy11fcByEt",
+      "_id": "zfpaYPXhBbhxhD0n",
+      "_key": "!tables.results!AR5sXRnVBEZMdgjL.zfpaYPXhBbhxhD0n"
+    },
+    {
+      "text": "Giff Teeth (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-jaw-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Giff Shipmate",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZWAVjHfH8Cvhv9PB",
+          "brt-result-custom-name": "Giff Teeth",
+          "brt-result-original-name": "Giff Teeth (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/bone-jaw-white.webp"
+        }
+      },
+      "documentId": "ZWAVjHfH8Cvhv9PB",
+      "_id": "HWJZtrhvXwfKvOyL",
+      "_key": "!tables.results!AR5sXRnVBEZMdgjL.HWJZtrhvXwfKvOyL"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Giff Shipmate",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566389,
+    "modifiedTime": 1696756756663,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AR5sXRnVBEZMdgjL",
+  "sort": 0,
+  "_key": "!tables!AR5sXRnVBEZMdgjL"
+}

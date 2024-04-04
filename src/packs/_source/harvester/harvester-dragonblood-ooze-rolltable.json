@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Dragonblood Ooze RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dragonblood Ooze'.",
+  "results": [
+    {
+      "text": "Dragonblood Ooze Slime (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Dragonblood Ooze",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.mTrI64VQFieW8CzF",
+          "brt-result-custom-name": "Dragonblood Ooze Slime vial",
+          "brt-result-original-name": "Dragonblood Ooze Slime (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "mTrI64VQFieW8CzF",
+      "_id": "FB6VnP9hGAfPGfU0",
+      "_key": "!tables.results!1HGxs5rjuXnIEHlh.FB6VnP9hGAfPGfU0"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Dragonblood Ooze",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756582563,
+    "modifiedTime": 1696756756139,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1HGxs5rjuXnIEHlh",
+  "sort": 0,
+  "_key": "!tables!1HGxs5rjuXnIEHlh"
+}

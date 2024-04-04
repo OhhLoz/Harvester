@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Minotaur RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Minotaur'.",
+  "results": [
+    {
+      "text": "Minotaur Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Minotaur",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GFRynjTlhPI8B0t6",
+          "brt-result-custom-name": "Minotaur Pineal Gland",
+          "brt-result-original-name": "Minotaur Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "GFRynjTlhPI8B0t6",
+      "_id": "pQITLgkmiFy1mmal",
+      "_key": "!tables.results!2Uy1LyRiPGn096nG.pQITLgkmiFy1mmal"
+    },
+    {
+      "text": "Minotaur Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Minotaur",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JRj8VrEtqeNtYFCG",
+          "brt-result-custom-name": "Minotaur Hide",
+          "brt-result-original-name": "Minotaur Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "JRj8VrEtqeNtYFCG",
+      "_id": "FWtCikM3Dvt9ZHXk",
+      "_key": "!tables.results!2Uy1LyRiPGn096nG.FWtCikM3Dvt9ZHXk"
+    },
+    {
+      "text": "Minotaur Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Minotaur",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dLh1z0Im2BjFL5Qp",
+          "brt-result-custom-name": "Minotaur Horn",
+          "brt-result-original-name": "Minotaur Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "dLh1z0Im2BjFL5Qp",
+      "_id": "RKiq8uKjhddKeSp2",
+      "_key": "!tables.results!2Uy1LyRiPGn096nG.RKiq8uKjhddKeSp2"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Minotaur",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565522,
+    "modifiedTime": 1696756757685,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "2Uy1LyRiPGn096nG",
+  "sort": 0,
+  "_key": "!tables!2Uy1LyRiPGn096nG"
+}

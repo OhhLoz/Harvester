@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Darkmantle RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Darkmantle'.",
+  "results": [
+    {
+      "text": "Darkmantle Tentacle (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Darkmantle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TyFKYR0RBpTA7jIK",
+          "brt-result-custom-name": "Darkmantle Tentacle (pouch)",
+          "brt-result-original-name": "Darkmantle Tentacle (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "TyFKYR0RBpTA7jIK",
+      "_id": "xej01QBDwVZnLOQr",
+      "_key": "!tables.results!RcPQORHoCywWLeEx.xej01QBDwVZnLOQr"
+    },
+    {
+      "text": "Darkmantle Otolith",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Darkmantle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WD2Vnpwnomzm4nGk",
+          "brt-result-custom-name": "Darkmantle Otolith",
+          "brt-result-original-name": "Darkmantle Otolith",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "WD2Vnpwnomzm4nGk",
+      "_id": "3w9oiLNlJOvTmQOC",
+      "_key": "!tables.results!RcPQORHoCywWLeEx.3w9oiLNlJOvTmQOC"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Darkmantle",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569814,
+    "modifiedTime": 1696756756073,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "RcPQORHoCywWLeEx",
+  "sort": 0,
+  "_key": "!tables!RcPQORHoCywWLeEx"
+}

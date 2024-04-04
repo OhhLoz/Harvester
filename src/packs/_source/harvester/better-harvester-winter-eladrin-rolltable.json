@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Winter Eladrin RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Winter Eladrin'.",
+  "results": [
+    {
+      "text": "Winter Eladrin Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Winter Eladrin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2pJnSvl1GHbYqmvl",
+          "brt-result-custom-name": "Winter Eladrin Hair",
+          "brt-result-original-name": "Winter Eladrin Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "2pJnSvl1GHbYqmvl",
+      "_id": "4WKLDdbGb1YOgqaR",
+      "_key": "!tables.results!m5WjUGiBMKtubhJQ.4WKLDdbGb1YOgqaR"
+    },
+    {
+      "text": "Eladrin Ear (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Winter Eladrin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Y2Dw7Dica9d6uAMr",
+          "brt-result-custom-name": "Eladrin Ear",
+          "brt-result-original-name": "Eladrin Ear (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "Y2Dw7Dica9d6uAMr",
+      "_id": "gr30BL7g7AjqstTM",
+      "_key": "!tables.results!m5WjUGiBMKtubhJQ.gr30BL7g7AjqstTM"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Winter Eladrin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561042,
+    "modifiedTime": 1696756762249,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "m5WjUGiBMKtubhJQ",
+  "sort": 0,
+  "_key": "!tables!m5WjUGiBMKtubhJQ"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Kuo-toa Archpriest RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Kuo-toa Archpriest'.",
+  "results": [
+    {
+      "text": "Kuo-toa's Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Kuo-toa Archpriest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.B32m6GnNKUtDUVAH",
+          "brt-result-custom-name": "Kuo-toa's Teeth (pouch)",
+          "brt-result-original-name": "Kuo-toa's Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "B32m6GnNKUtDUVAH",
+      "_id": "hMmUKQLUlFNGsXnx",
+      "_key": "!tables.results!yu3ELqnuSUc2SueY.hMmUKQLUlFNGsXnx"
+    },
+    {
+      "text": "Kuo-Toa Eyes (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Kuo-toa Archpriest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MjwJre3IivkPrIzw",
+          "brt-result-custom-name": "Kuo-Toa Eyes",
+          "brt-result-original-name": "Kuo-Toa Eyes (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "MjwJre3IivkPrIzw",
+      "_id": "KuQJOYTOoQwec6kB",
+      "_key": "!tables.results!yu3ELqnuSUc2SueY.KuQJOYTOoQwec6kB"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Kuo-toa Archpriest",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563736,
+    "modifiedTime": 1696756757167,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "yu3ELqnuSUc2SueY",
+  "sort": 0,
+  "_key": "!tables!yu3ELqnuSUc2SueY"
+}

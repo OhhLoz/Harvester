@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Giant Crab RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Crab'.",
+  "results": [
+    {
+      "text": "Giant Crab Shell",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-turtle-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Crab",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8g52BwbfN8j5uRqx",
+          "brt-result-custom-name": "Giant Crab Shell",
+          "brt-result-original-name": "Giant Crab Shell",
+          "brt-result-original-icon": "icons/commodities/biological/shell-turtle-grey.webp"
+        }
+      },
+      "documentId": "8g52BwbfN8j5uRqx",
+      "_id": "X7GzsGQB5xkOs8ya",
+      "_key": "!tables.results!VlZHsoePfUF1oyqc.X7GzsGQB5xkOs8ya"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Crab",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562794,
+    "modifiedTime": 1696756756334,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "VlZHsoePfUF1oyqc",
+  "sort": 0,
+  "_key": "!tables!VlZHsoePfUF1oyqc"
+}

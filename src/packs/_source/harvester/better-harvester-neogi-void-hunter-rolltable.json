@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Neogi Void Hunter RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Neogi Void Hunter'.",
+  "results": [
+    {
+      "text": "Neogi Void Hunter Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neogi Void Hunter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rHVpZXApT7Q8a8n4",
+          "brt-result-custom-name": "Neogi Void Hunter Brain",
+          "brt-result-original-name": "Neogi Void Hunter Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "rHVpZXApT7Q8a8n4",
+      "_id": "7DRaRJWQSKAYxPih",
+      "_key": "!tables.results!uPy3nc2oxT2W0PTZ.7DRaRJWQSKAYxPih"
+    },
+    {
+      "text": "Neogi Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neogi Void Hunter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vtw4sDDSXfBbWbDe",
+          "brt-result-custom-name": "Neogi Venom (vial)",
+          "brt-result-original-name": "Neogi Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "vtw4sDDSXfBbWbDe",
+      "_id": "BNqCgKQ16bw3Fe4H",
+      "_key": "!tables.results!uPy3nc2oxT2W0PTZ.BNqCgKQ16bw3Fe4H"
+    },
+    {
+      "text": "Neogi Void Hunter Eyes (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neogi Void Hunter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zj6Zhl6900Nl2Ghh",
+          "brt-result-custom-name": "Neogi Void Hunter Eyes",
+          "brt-result-original-name": "Neogi Void Hunter Eyes (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "zj6Zhl6900Nl2Ghh",
+      "_id": "8AYuTIYAUqYQZeUZ",
+      "_key": "!tables.results!uPy3nc2oxT2W0PTZ.8AYuTIYAUqYQZeUZ"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Neogi Void Hunter",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756585680,
+    "modifiedTime": 1696756758291,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "uPy3nc2oxT2W0PTZ",
+  "sort": 0,
+  "_key": "!tables!uPy3nc2oxT2W0PTZ"
+}

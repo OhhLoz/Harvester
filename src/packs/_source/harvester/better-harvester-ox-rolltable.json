@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Ox RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ox'.",
+  "results": [
+    {
+      "text": "Ox Horns (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ox",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5gLsZFUKpLB6vU6u",
+          "brt-result-custom-name": "Ox Horns",
+          "brt-result-original-name": "Ox Horns (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "5gLsZFUKpLB6vU6u",
+      "_id": "Xx01Ct3hPVVuO8K8",
+      "_key": "!tables.results!ZxbG1T7gJqjJM9TW.Xx01Ct3hPVVuO8K8"
+    },
+    {
+      "text": "Ox Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ox",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ztMXNRhD8SRrZEYE",
+          "brt-result-custom-name": "Ox Hide",
+          "brt-result-original-name": "Ox Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "ztMXNRhD8SRrZEYE",
+      "_id": "iYsKZf40z5u6D3Jg",
+      "_key": "!tables.results!ZxbG1T7gJqjJM9TW.iYsKZf40z5u6D3Jg"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Ox",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561789,
+    "modifiedTime": 1696756758349,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ZxbG1T7gJqjJM9TW",
+  "sort": 0,
+  "_key": "!tables!ZxbG1T7gJqjJM9TW"
+}

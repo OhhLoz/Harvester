@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Cloaker RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Cloaker'.",
+  "results": [
+    {
+      "text": "Cloaker Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cloaker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CtA1hUsz4VSvurkx",
+          "brt-result-custom-name": "Cloaker Teeth (small pouch)",
+          "brt-result-original-name": "Cloaker Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "CtA1hUsz4VSvurkx",
+      "_id": "NluBq4T5juJGkndI",
+      "_key": "!tables.results!rSTIvOPWi8W8xGQA.NluBq4T5juJGkndI"
+    },
+    {
+      "text": "Cloaker Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cloaker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RLGuiedKmqpNPv4q",
+          "brt-result-custom-name": "Cloaker Hide",
+          "brt-result-original-name": "Cloaker Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "RLGuiedKmqpNPv4q",
+      "_id": "GZ6eBTRhY2JnCcnT",
+      "_key": "!tables.results!rSTIvOPWi8W8xGQA.GZ6eBTRhY2JnCcnT"
+    },
+    {
+      "text": "Cloaker Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cloaker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ve4rsu4jJXdIOeTE",
+          "brt-result-custom-name": "Cloaker Tail",
+          "brt-result-original-name": "Cloaker Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "ve4rsu4jJXdIOeTE",
+      "_id": "iS2j0oM5gqiV48OI",
+      "_key": "!tables.results!rSTIvOPWi8W8xGQA.iS2j0oM5gqiV48OI"
+    },
+    {
+      "text": "Cloaker Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cloaker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zzga68AfEZTzaibv",
+          "brt-result-custom-name": "Cloaker Blood (vial)",
+          "brt-result-original-name": "Cloaker Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "zzga68AfEZTzaibv",
+      "_id": "2rYaPfjTwifaJtLr",
+      "_key": "!tables.results!rSTIvOPWi8W8xGQA.2rYaPfjTwifaJtLr"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Cloaker",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564612,
+    "modifiedTime": 1696756756047,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rSTIvOPWi8W8xGQA",
+  "sort": 0,
+  "_key": "!tables!rSTIvOPWi8W8xGQA"
+}

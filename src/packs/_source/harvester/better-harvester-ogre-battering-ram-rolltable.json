@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Ogre Battering Ram RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ogre Battering Ram'.",
+  "results": [
+    {
+      "text": "Ogre Fat (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Battering Ram",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HTox5U4qLEnTjVuy",
+          "brt-result-custom-name": "Ogre Fat (large pouch)",
+          "brt-result-original-name": "Ogre Fat (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "HTox5U4qLEnTjVuy",
+      "_id": "RVpSbwmku65TVGhh",
+      "_key": "!tables.results!9XSQJ5TL4AjGPsgj.RVpSbwmku65TVGhh"
+    },
+    {
+      "text": "Ogre Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Battering Ram",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vd59a7wwkJQEzzsA",
+          "brt-result-custom-name": "Ogre Skin",
+          "brt-result-original-name": "Ogre Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "vd59a7wwkJQEzzsA",
+      "_id": "h775msd7oKGkICT5",
+      "_key": "!tables.results!9XSQJ5TL4AjGPsgj.h775msd7oKGkICT5"
+    },
+    {
+      "text": "Ogre Stomach",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-stomach.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Battering Ram",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yfz8ByoTQtZngUFM",
+          "brt-result-custom-name": "Ogre Stomach",
+          "brt-result-original-name": "Ogre Stomach",
+          "brt-result-original-icon": "icons/commodities/biological/organ-stomach.webp"
+        }
+      },
+      "documentId": "yfz8ByoTQtZngUFM",
+      "_id": "FMBUPbe4U3jhmprQ",
+      "_key": "!tables.results!9XSQJ5TL4AjGPsgj.FMBUPbe4U3jhmprQ"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Ogre Battering Ram",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565957,
+    "modifiedTime": 1696756758312,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9XSQJ5TL4AjGPsgj",
+  "sort": 0,
+  "_key": "!tables!9XSQJ5TL4AjGPsgj"
+}

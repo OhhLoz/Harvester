@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Death Tyrant RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Death Tyrant'.",
+  "results": [
+    {
+      "text": "Death Tyrant Teeth",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-jaw-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Death Tyrant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3UicvT8AJcQH1EMj",
+          "brt-result-custom-name": "Death Tyrant Teeth",
+          "brt-result-original-name": "Death Tyrant Teeth",
+          "brt-result-original-icon": "icons/commodities/bones/bone-jaw-white.webp"
+        }
+      },
+      "documentId": "3UicvT8AJcQH1EMj",
+      "_id": "StEXStOyshCT2BFG",
+      "_key": "!tables.results!HYX0TeY22EzVoOdo.StEXStOyshCT2BFG"
+    },
+    {
+      "text": "Death Tyrant Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Death Tyrant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QAy1V2dnoh1z0nHh",
+          "brt-result-custom-name": "Death Tyrant Eye",
+          "brt-result-original-name": "Death Tyrant Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "QAy1V2dnoh1z0nHh",
+      "_id": "rlNctxIlDrIqtcaK",
+      "_key": "!tables.results!HYX0TeY22EzVoOdo.rlNctxIlDrIqtcaK"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Death Tyrant",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561241,
+    "modifiedTime": 1696756756080,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "HYX0TeY22EzVoOdo",
+  "sort": 0,
+  "_key": "!tables!HYX0TeY22EzVoOdo"
+}

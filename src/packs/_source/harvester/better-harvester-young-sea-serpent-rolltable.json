@@ -1,0 +1,181 @@
+{
+  "name": "Better Harvester | Young Sea Serpent RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Young Sea Serpent'.",
+  "results": [
+    {
+      "text": "Young Sea Serpent Teeth (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7FCxGgYvAqMbDLXe",
+          "brt-result-custom-name": "Young Sea Serpent Teeth (sack)",
+          "brt-result-original-name": "Young Sea Serpent Teeth (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "7FCxGgYvAqMbDLXe",
+      "_id": "yiWPTPJzMYlYYm52",
+      "_key": "!tables.results!Jb9EmY0e82rvdFns.yiWPTPJzMYlYYm52"
+    },
+    {
+      "text": "Sea Serpent Blubber (x4)",
+      "type": 2,
+      "img": "icons/commodities/materials/slime-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Rm4KHcMAEBbfF43p",
+          "brt-result-custom-name": "Sea Serpent Blubber",
+          "brt-result-original-name": "Sea Serpent Blubber (x4)",
+          "brt-result-original-icon": "icons/commodities/materials/slime-white.webp"
+        }
+      },
+      "documentId": "Rm4KHcMAEBbfF43p",
+      "_id": "1yEh1B79ckk3oSzh",
+      "_key": "!tables.results!Jb9EmY0e82rvdFns.1yEh1B79ckk3oSzh"
+    },
+    {
+      "text": "Sea Serpent Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gOHwi2FGVCTTU5Os",
+          "brt-result-custom-name": "Sea Serpent Blood vial",
+          "brt-result-original-name": "Sea Serpent Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "gOHwi2FGVCTTU5Os",
+      "_id": "KjAJCUBQUYf1MjyZ",
+      "_key": "!tables.results!Jb9EmY0e82rvdFns.KjAJCUBQUYf1MjyZ"
+    },
+    {
+      "text": "Young Sea Serpent Scales (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jGWkEfE6fZfqC2hN",
+          "brt-result-custom-name": "Young Sea Serpent Scales (sack)",
+          "brt-result-original-name": "Young Sea Serpent Scales (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "jGWkEfE6fZfqC2hN",
+      "_id": "VT1mYg90WCWuJc2t",
+      "_key": "!tables.results!Jb9EmY0e82rvdFns.VT1mYg90WCWuJc2t"
+    },
+    {
+      "text": "Sea Serpent Fins (x6)",
+      "type": 2,
+      "img": "icons/commodities/biological/fin-red-green.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tG2oVUy3ULpkaoxK",
+          "brt-result-custom-name": "Sea Serpent Fin",
+          "brt-result-original-name": "Sea Serpent Fins (x6)",
+          "brt-result-original-icon": "icons/commodities/biological/fin-red-green.webp"
+        }
+      },
+      "documentId": "tG2oVUy3ULpkaoxK",
+      "_id": "7XmTZT5OKZ2qecTn",
+      "_key": "!tables.results!Jb9EmY0e82rvdFns.7XmTZT5OKZ2qecTn"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Young Sea Serpent",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562319,
+    "modifiedTime": 1696756762277,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Jb9EmY0e82rvdFns",
+  "sort": 0,
+  "_key": "!tables!Jb9EmY0e82rvdFns"
+}

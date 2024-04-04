@@ -1,0 +1,181 @@
+{
+  "name": "Better Harvester | Abominable Yeti RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Abominable Yeti'.",
+  "results": [
+    {
+      "text": "Abominable Yeti Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Abominable Yeti",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6wifN2frpSiavWtB",
+          "brt-result-custom-name": "Abominable Yeti Hide",
+          "brt-result-original-name": "Abominable Yeti Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "6wifN2frpSiavWtB",
+      "_id": "Eglk2C3ewvqd4EQg",
+      "_key": "!tables.results!HjfiwR4AQo7dnCEI.Eglk2C3ewvqd4EQg"
+    },
+    {
+      "text": "Abominable Yeti Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Abominable Yeti",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Ib9me0OGg2ZA0bsU",
+          "brt-result-custom-name": "Abominable Yeti Eye",
+          "brt-result-original-name": "Abominable Yeti Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "Ib9me0OGg2ZA0bsU",
+      "_id": "hwXE7NH4EfGAgrlq",
+      "_key": "!tables.results!HjfiwR4AQo7dnCEI.hwXE7NH4EfGAgrlq"
+    },
+    {
+      "text": "Abominable Yeti Lung (x2)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Abominable Yeti",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MYQMpHIYC0ZwMsJ7",
+          "brt-result-custom-name": "Abominable Yeti Lung",
+          "brt-result-original-name": "Abominable Yeti Lung (x2)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "MYQMpHIYC0ZwMsJ7",
+      "_id": "BjsiaEu3HGol7Hlp",
+      "_key": "!tables.results!HjfiwR4AQo7dnCEI.BjsiaEu3HGol7Hlp"
+    },
+    {
+      "text": "Abominable Yeti Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Abominable Yeti",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VXEmuhTARwxzVanc",
+          "brt-result-custom-name": "Abominable Yeti Claws (pouch)",
+          "brt-result-original-name": "Abominable Yeti Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "VXEmuhTARwxzVanc",
+      "_id": "vn2JJMPU79pHW1jl",
+      "_key": "!tables.results!HjfiwR4AQo7dnCEI.vn2JJMPU79pHW1jl"
+    },
+    {
+      "text": "Abominable Yeti Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "12",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Abominable Yeti",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.udJ0hpUkHnbZMu5q",
+          "brt-result-custom-name": "Abominable Yeti Horn",
+          "brt-result-original-name": "Abominable Yeti Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "udJ0hpUkHnbZMu5q",
+      "_id": "Jja66ERR0L7sn7gT",
+      "_key": "!tables.results!HjfiwR4AQo7dnCEI.Jja66ERR0L7sn7gT"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Abominable Yeti",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562200,
+    "modifiedTime": 1696756755837,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "HjfiwR4AQo7dnCEI",
+  "sort": 0,
+  "_key": "!tables!HjfiwR4AQo7dnCEI"
+}

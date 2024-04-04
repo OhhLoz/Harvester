@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Mummy Lord RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Mummy Lord'.",
+  "results": [
+    {
+      "text": "Mummy Dust (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mummy Lord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QMa6EPjN20BN373f",
+          "brt-result-custom-name": "Mummy Dust (small pouch)",
+          "brt-result-original-name": "Mummy Dust (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "QMa6EPjN20BN373f",
+      "_id": "tf2UWO5TQqD5iIy2",
+      "_key": "!tables.results!HmS7I9dS4WdTN9Mg.tf2UWO5TQqD5iIy2"
+    },
+    {
+      "text": "Mummy Bandages (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mummy Lord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.V6K9ut58x9y2EPcI",
+          "brt-result-custom-name": "Mummy Bandages (pouch)",
+          "brt-result-original-name": "Mummy Bandages (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "V6K9ut58x9y2EPcI",
+      "_id": "4eL1KctULhDCksMk",
+      "_key": "!tables.results!HmS7I9dS4WdTN9Mg.4eL1KctULhDCksMk"
+    },
+    {
+      "text": "Mummy Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mummy Lord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kJIgTPXRCVnolzGP",
+          "brt-result-custom-name": "Mummy Heart",
+          "brt-result-original-name": "Mummy Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "kJIgTPXRCVnolzGP",
+      "_id": "tS7NcPJnEThfKzM4",
+      "_key": "!tables.results!HmS7I9dS4WdTN9Mg.tS7NcPJnEThfKzM4"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Mummy Lord",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568774,
+    "modifiedTime": 1696756757696,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "HmS7I9dS4WdTN9Mg",
+  "sort": 0,
+  "_key": "!tables!HmS7I9dS4WdTN9Mg"
+}

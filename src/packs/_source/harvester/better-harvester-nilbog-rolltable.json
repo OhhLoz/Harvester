@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Nilbog RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Nilbog'.",
+  "results": [
+    {
+      "text": "Goblin Ear (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Nilbog",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.J0B9yuonWpPbJ3P4",
+          "brt-result-custom-name": "Goblin Ear",
+          "brt-result-original-name": "Goblin Ear (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "J0B9yuonWpPbJ3P4",
+      "_id": "Mch75K7T0wtWBq2K",
+      "_key": "!tables.results!oif3vtQLFqxSJd3y.Mch75K7T0wtWBq2K"
+    },
+    {
+      "text": "Nilbog Jaw",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-jaw-teeth-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Nilbog",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bCZG02qj6578m8Ti",
+          "brt-result-custom-name": "Nilbog Jaw",
+          "brt-result-original-name": "Nilbog Jaw",
+          "brt-result-original-icon": "icons/commodities/bones/bone-jaw-teeth-brown.webp"
+        }
+      },
+      "documentId": "bCZG02qj6578m8Ti",
+      "_id": "Sa9mn5TvEd2kEeHT",
+      "_key": "!tables.results!oif3vtQLFqxSJd3y.Sa9mn5TvEd2kEeHT"
+    },
+    {
+      "text": "Nilbog Essence",
+      "type": 2,
+      "img": "icons/commodities/materials/glass-orb-teal.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Nilbog",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cPXrqslh3NAxhsh9",
+          "brt-result-custom-name": "Nilbog Essence",
+          "brt-result-original-name": "Nilbog Essence",
+          "brt-result-original-icon": "icons/commodities/materials/glass-orb-teal.webp"
+        }
+      },
+      "documentId": "cPXrqslh3NAxhsh9",
+      "_id": "zpYM6vlZsXAPd23r",
+      "_key": "!tables.results!oif3vtQLFqxSJd3y.zpYM6vlZsXAPd23r"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Nilbog",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566347,
+    "modifiedTime": 1696756758302,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "oif3vtQLFqxSJd3y",
+  "sort": 0,
+  "_key": "!tables!oif3vtQLFqxSJd3y"
+}

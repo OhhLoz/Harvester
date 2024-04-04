@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Ssurran Defiler RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ssurran Defiler'.",
+  "results": [
+    {
+      "text": "Ssurran Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ssurran Defiler",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5FUAGl1gO7OaLrul",
+          "brt-result-custom-name": "Ssurran Skin",
+          "brt-result-original-name": "Ssurran Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "5FUAGl1gO7OaLrul",
+      "_id": "2qcXUvT9NJ5uvbFr",
+      "_key": "!tables.results!0hqifXVe318CNAsK.2qcXUvT9NJ5uvbFr"
+    },
+    {
+      "text": "Ssurran Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ssurran Defiler",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dtJbQan5NZSsdH5U",
+          "brt-result-custom-name": "Ssurran Tail",
+          "brt-result-original-name": "Ssurran Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "dtJbQan5NZSsdH5U",
+      "_id": "g4V9likDP9vdZLXK",
+      "_key": "!tables.results!0hqifXVe318CNAsK.g4V9likDP9vdZLXK"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Ssurran Defiler",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561678,
+    "modifiedTime": 1696756759983,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "0hqifXVe318CNAsK",
+  "sort": 0,
+  "_key": "!tables!0hqifXVe318CNAsK"
+}

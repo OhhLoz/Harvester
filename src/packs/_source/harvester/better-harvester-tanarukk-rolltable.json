@@ -1,0 +1,181 @@
+{
+  "name": "Better Harvester | Tanarukk RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Tanarukk'.",
+  "results": [
+    {
+      "text": "Tanarukk Horn",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Tanarukk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FWzXfeg5iTcOZMox",
+          "brt-result-custom-name": "Tanarukk Horn",
+          "brt-result-original-name": "Tanarukk Horn",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "FWzXfeg5iTcOZMox",
+      "_id": "pVTCHeg7nvtdPxN0",
+      "_key": "!tables.results!etZW3nerxCyhBKkc.pVTCHeg7nvtdPxN0"
+    },
+    {
+      "text": "Tanarukk Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Tanarukk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GtdGWgNo5igkY8Uc",
+          "brt-result-custom-name": "Tanarukk Blood (vial)",
+          "brt-result-original-name": "Tanarukk Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "GtdGWgNo5igkY8Uc",
+      "_id": "p0KsyT1UGDZ9YJGe",
+      "_key": "!tables.results!etZW3nerxCyhBKkc.p0KsyT1UGDZ9YJGe"
+    },
+    {
+      "text": "Tanarukk Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Tanarukk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JVTDZ6S62G6p90A1",
+          "brt-result-custom-name": "Tanarukk Blood (vial)",
+          "brt-result-original-name": "Tanarukk Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "JVTDZ6S62G6p90A1",
+      "_id": "iZr7js82Rd3MyS5m",
+      "_key": "!tables.results!etZW3nerxCyhBKkc.iZr7js82Rd3MyS5m"
+    },
+    {
+      "text": "Tanarukk Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Tanarukk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JjImdq3VrFZfK6hl",
+          "brt-result-custom-name": "Tanarukk Horn",
+          "brt-result-original-name": "Tanarukk Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "JjImdq3VrFZfK6hl",
+      "_id": "acccHl3PpMjvql7C",
+      "_key": "!tables.results!etZW3nerxCyhBKkc.acccHl3PpMjvql7C"
+    },
+    {
+      "text": "Orc Tusks",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Tanarukk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bM3r3TMaIktnvX9T",
+          "brt-result-custom-name": "Orc Tusks",
+          "brt-result-original-name": "Orc Tusks",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "bM3r3TMaIktnvX9T",
+      "_id": "mOeQCBE6hVgxrttR",
+      "_key": "!tables.results!etZW3nerxCyhBKkc.mOeQCBE6hVgxrttR"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Tanarukk",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565342,
+    "modifiedTime": 1696756761082,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "etZW3nerxCyhBKkc",
+  "sort": 0,
+  "_key": "!tables!etZW3nerxCyhBKkc"
+}

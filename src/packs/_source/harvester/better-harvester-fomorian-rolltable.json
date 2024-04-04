@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Fomorian RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Fomorian'.",
+  "results": [
+    {
+      "text": "Fomorian Puss",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Fomorian",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8lhjZr1ThzU6inDw",
+          "brt-result-custom-name": "Fomorian Puss",
+          "brt-result-original-name": "Fomorian Puss",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "8lhjZr1ThzU6inDw",
+      "_id": "h5YI5eLzCPzIXMMN",
+      "_key": "!tables.results!NOZnjIVvQEwdwQ95.h5YI5eLzCPzIXMMN"
+    },
+    {
+      "text": "Fomorian \"\"Evil Eye\"\"",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Fomorian",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.eITYgE4qOVXVU4QU",
+          "brt-result-custom-name": "Fomorian \"\"Evil Eye\"\"",
+          "brt-result-original-name": "Fomorian \"\"Evil Eye\"\"",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "eITYgE4qOVXVU4QU",
+      "_id": "tuYXBOikwUD9ZFIB",
+      "_key": "!tables.results!NOZnjIVvQEwdwQ95.tuYXBOikwUD9ZFIB"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Fomorian",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562860,
+    "modifiedTime": 1696756756295,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NOZnjIVvQEwdwQ95",
+  "sort": 0,
+  "_key": "!tables!NOZnjIVvQEwdwQ95"
+}

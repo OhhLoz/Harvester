@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Pseudodragon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Pseudodragon'.",
+  "results": [
+    {
+      "text": "Pseudodragon Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Pseudodragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GWbzm9Ug2C9WAz6k",
+          "brt-result-custom-name": "Pseudodragon Venom (vial)",
+          "brt-result-original-name": "Pseudodragon Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "GWbzm9Ug2C9WAz6k",
+      "_id": "w64BuF5YwBhRSSt7",
+      "_key": "!tables.results!EmwRe1OaT0hBTtSP.w64BuF5YwBhRSSt7"
+    },
+    {
+      "text": "Pseudodragon Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Pseudodragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zsQw6GxXQXLmG0ko",
+          "brt-result-custom-name": "Pseudodragon Blood (vial)",
+          "brt-result-original-name": "Pseudodragon Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "zsQw6GxXQXLmG0ko",
+      "_id": "lD6OjfJcwLBGXxS8",
+      "_key": "!tables.results!EmwRe1OaT0hBTtSP.lD6OjfJcwLBGXxS8"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Pseudodragon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565663,
+    "modifiedTime": 1696756759099,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "EmwRe1OaT0hBTtSP",
+  "sort": 0,
+  "_key": "!tables!EmwRe1OaT0hBTtSP"
+}

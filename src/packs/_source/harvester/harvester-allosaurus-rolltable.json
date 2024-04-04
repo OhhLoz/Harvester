@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Allosaurus RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Allosaurus'.",
+  "results": [
+    {
+      "text": "Allosaurus Claws",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "8",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Allosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CsuRWl0FkZJBybk0",
+          "brt-result-custom-name": "Allosaurus Claws",
+          "brt-result-original-name": "Allosaurus Claws",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "CsuRWl0FkZJBybk0",
+      "_id": "C2cnQk0zwkJO3w5u",
+      "_key": "!tables.results!XSboZhmUXLIF2t76.C2cnQk0zwkJO3w5u"
+    },
+    {
+      "text": "Allosaurus Teeth",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-jaw-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Allosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Md8rHh5mONGiqnZY",
+          "brt-result-custom-name": "Allosaurus Teeth",
+          "brt-result-original-name": "Allosaurus Teeth",
+          "brt-result-original-icon": "icons/commodities/bones/bone-jaw-white.webp"
+        }
+      },
+      "documentId": "Md8rHh5mONGiqnZY",
+      "_id": "MqEwqK90LvsA0mQH",
+      "_key": "!tables.results!XSboZhmUXLIF2t76.MqEwqK90LvsA0mQH"
+    },
+    {
+      "text": "Allosaurus Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Allosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rF15RZGLfishg4CA",
+          "brt-result-custom-name": "Allosaurus Skin",
+          "brt-result-original-name": "Allosaurus Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "rF15RZGLfishg4CA",
+      "_id": "ugPQ3O5rt41x2ljD",
+      "_key": "!tables.results!XSboZhmUXLIF2t76.ugPQ3O5rt41x2ljD"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Allosaurus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564577,
+    "modifiedTime": 1696756755865,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "XSboZhmUXLIF2t76",
+  "sort": 0,
+  "_key": "!tables!XSboZhmUXLIF2t76"
+}

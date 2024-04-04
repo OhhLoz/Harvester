@@ -1,0 +1,210 @@
+{
+  "name": "Better Harvester | Chimera RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Chimera'.",
+  "results": [
+    {
+      "text": "Chimera Hoof (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Chimera",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2PBEGVyWAFDJEsjX",
+          "brt-result-custom-name": "Chimera Hoof",
+          "brt-result-original-name": "Chimera Hoof (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "2PBEGVyWAFDJEsjX",
+      "_id": "T6gsSaTTdHlxhIiG",
+      "_key": "!tables.results!8efBFQzOuaOQLFGn.T6gsSaTTdHlxhIiG"
+    },
+    {
+      "text": "Chimera Lion Head",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Chimera",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.56JJPiRc74WIxqdO",
+          "brt-result-custom-name": "Chimera Lion Head",
+          "brt-result-original-name": "Chimera Lion Head",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "56JJPiRc74WIxqdO",
+      "_id": "8biG6KnI0ZaSEqPD",
+      "_key": "!tables.results!8efBFQzOuaOQLFGn.8biG6KnI0ZaSEqPD"
+    },
+    {
+      "text": "Chimera Lion Claws (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Chimera",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AEbu1KRIObI8vCna",
+          "brt-result-custom-name": "Chimera Lion Claw",
+          "brt-result-original-name": "Chimera Lion Claws (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "AEbu1KRIObI8vCna",
+      "_id": "K0KM8RAZm9MwufJE",
+      "_key": "!tables.results!8efBFQzOuaOQLFGn.K0KM8RAZm9MwufJE"
+    },
+    {
+      "text": "Chimera Dragon Head",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Chimera",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RjJc4EYkSYAiCQhX",
+          "brt-result-custom-name": "Chimera Dragon Head",
+          "brt-result-original-name": "Chimera Dragon Head",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "RjJc4EYkSYAiCQhX",
+      "_id": "qglib4F7hcs0YCYb",
+      "_key": "!tables.results!8efBFQzOuaOQLFGn.qglib4F7hcs0YCYb"
+    },
+    {
+      "text": "Chimera Dragon Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Chimera",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nCq8rD5n1TUubSvP",
+          "brt-result-custom-name": "Chimera Dragon Wing",
+          "brt-result-original-name": "Chimera Dragon Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "nCq8rD5n1TUubSvP",
+      "_id": "UtIkgh9qFOCPrXsF",
+      "_key": "!tables.results!8efBFQzOuaOQLFGn.UtIkgh9qFOCPrXsF"
+    },
+    {
+      "text": "Chimera Goat Head",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Chimera",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.uogfLC0WNmVulzeP",
+          "brt-result-custom-name": "Chimera Goat Head",
+          "brt-result-original-name": "Chimera Goat Head",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "uogfLC0WNmVulzeP",
+      "_id": "sXjIIom1VRyKpkhh",
+      "_key": "!tables.results!8efBFQzOuaOQLFGn.sXjIIom1VRyKpkhh"
+    }
+  ],
+  "formula": "1d6",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Chimera",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 6
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560884,
+    "modifiedTime": 1696756756030,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8efBFQzOuaOQLFGn",
+  "sort": 0,
+  "_key": "!tables!8efBFQzOuaOQLFGn"
+}

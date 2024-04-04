@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Esthetic RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Esthetic'.",
+  "results": [
+    {
+      "text": "Esthetic Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Esthetic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TgZYZgxNUr4Zbiv4",
+          "brt-result-custom-name": "Esthetic Hide",
+          "brt-result-original-name": "Esthetic Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "TgZYZgxNUr4Zbiv4",
+      "_id": "xzppdDsPCctADVzI",
+      "_key": "!tables.results!FW2JY8xeJbs7wHof.xzppdDsPCctADVzI"
+    },
+    {
+      "text": "Esthetic Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Esthetic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oAYTPPdU7SHZuOuv",
+          "brt-result-custom-name": "Esthetic Brain",
+          "brt-result-original-name": "Esthetic Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "oAYTPPdU7SHZuOuv",
+      "_id": "TPJ4AiDmXZiYkWjd",
+      "_key": "!tables.results!FW2JY8xeJbs7wHof.TPJ4AiDmXZiYkWjd"
+    },
+    {
+      "text": "Esthetic Blood (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Esthetic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.sWyE023zL0x7MccX",
+          "brt-result-custom-name": "Esthetic Blood vial",
+          "brt-result-original-name": "Esthetic Blood (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "sWyE023zL0x7MccX",
+      "_id": "uWK81qK1C2kebuvA",
+      "_key": "!tables.results!FW2JY8xeJbs7wHof.uWK81qK1C2kebuvA"
+    },
+    {
+      "text": "Esthetic Tentacles (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Esthetic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.t5VN21UFBFBQ08XS",
+          "brt-result-custom-name": "Esthetic Tentacles",
+          "brt-result-original-name": "Esthetic Tentacles (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "t5VN21UFBFBQ08XS",
+      "_id": "QjPwSdMzYzRKV4ck",
+      "_key": "!tables.results!FW2JY8xeJbs7wHof.QjPwSdMzYzRKV4ck"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Esthetic",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569730,
+    "modifiedTime": 1696756756212,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FW2JY8xeJbs7wHof",
+  "sort": 0,
+  "_key": "!tables!FW2JY8xeJbs7wHof"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Wererat RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Wererat'.",
+  "results": [
+    {
+      "text": "Lycanthrope Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Wererat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SvUe1MWT1OA27SDA",
+          "brt-result-custom-name": "Lycanthrope Blood vial",
+          "brt-result-original-name": "Lycanthrope Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "SvUe1MWT1OA27SDA",
+      "_id": "bhrBMOK7gmeyKWKF",
+      "_key": "!tables.results!gAfrWvDwfmnPk6td.bhrBMOK7gmeyKWKF"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Wererat",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569290,
+    "modifiedTime": 1696756761153,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gAfrWvDwfmnPk6td",
+  "sort": 0,
+  "_key": "!tables!gAfrWvDwfmnPk6td"
+}

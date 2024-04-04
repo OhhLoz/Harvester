@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Githyanki Buccaneer RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Githyanki Buccaneer'.",
+  "results": [
+    {
+      "text": "Githyanki Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githyanki Buccaneer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BJVMj3u06WxxI98h",
+          "brt-result-custom-name": "Githyanki Brain",
+          "brt-result-original-name": "Githyanki Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "BJVMj3u06WxxI98h",
+      "_id": "8OwZMB4vC0U62Keg",
+      "_key": "!tables.results!NGHbLgC53jwAPf8f.8OwZMB4vC0U62Keg"
+    },
+    {
+      "text": "Githyanki Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githyanki Buccaneer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rOsd4UNkGhfRYFM8",
+          "brt-result-custom-name": "Githyanki Heart",
+          "brt-result-original-name": "Githyanki Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "rOsd4UNkGhfRYFM8",
+      "_id": "LJSCc16CDiUK477r",
+      "_key": "!tables.results!NGHbLgC53jwAPf8f.LJSCc16CDiUK477r"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Githyanki Buccaneer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563858,
+    "modifiedTime": 1696756756669,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NGHbLgC53jwAPf8f",
+  "sort": 0,
+  "_key": "!tables!NGHbLgC53jwAPf8f"
+}

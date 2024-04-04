@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Flail Snail RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Flail Snail'.",
+  "results": [
+    {
+      "text": "Flail Snail Shell",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-turtle-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flail Snail",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JYh91JVkparDQMav",
+          "brt-result-custom-name": "Flail Snail Shell",
+          "brt-result-original-name": "Flail Snail Shell",
+          "brt-result-original-icon": "icons/commodities/biological/shell-turtle-grey.webp"
+        }
+      },
+      "documentId": "JYh91JVkparDQMav",
+      "_id": "gWeSfWrAFQnzqimh",
+      "_key": "!tables.results!zweuUT6wJPTj0idu.gWeSfWrAFQnzqimh"
+    },
+    {
+      "text": "Flail Snail Slime (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flail Snail",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JlWlPd7hN4txxrhV",
+          "brt-result-custom-name": "Flail Snail Slime vial",
+          "brt-result-original-name": "Flail Snail Slime (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "JlWlPd7hN4txxrhV",
+      "_id": "qKtxfLm5QGEKGG03",
+      "_key": "!tables.results!zweuUT6wJPTj0idu.qKtxfLm5QGEKGG03"
+    },
+    {
+      "text": "Flail Snail Barbed Flail",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flail Snail",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.K3OGJK8pgjocruwI",
+          "brt-result-custom-name": "Flail Snail Barbed Flail",
+          "brt-result-original-name": "Flail Snail Barbed Flail",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "K3OGJK8pgjocruwI",
+      "_id": "99ot61gQvZe9KlxB",
+      "_key": "!tables.results!zweuUT6wJPTj0idu.99ot61gQvZe9KlxB"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Flail Snail",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566452,
+    "modifiedTime": 1696756756285,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "zweuUT6wJPTj0idu",
+  "sort": 0,
+  "_key": "!tables!zweuUT6wJPTj0idu"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Giant Scorpion RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Scorpion'.",
+  "results": [
+    {
+      "text": "Giant Scorpion Chitin",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Scorpion",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ISpz1DmyvuBJIhsU",
+          "brt-result-custom-name": "Giant Scorpion Chitin",
+          "brt-result-original-name": "Giant Scorpion Chitin",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "ISpz1DmyvuBJIhsU",
+      "_id": "tQ7ONsAIlfLtYnBR",
+      "_key": "!tables.results!Twck4opQ8SCM4mvE.tQ7ONsAIlfLtYnBR"
+    },
+    {
+      "text": "Scorpion Venom (3 vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Scorpion",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zJkSEOEnTx1dn2Bl",
+          "brt-result-custom-name": "Scorpion Venom vial",
+          "brt-result-original-name": "Scorpion Venom (3 vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "zJkSEOEnTx1dn2Bl",
+      "_id": "WmgFQ687zbBD5a5B",
+      "_key": "!tables.results!Twck4opQ8SCM4mvE.WmgFQ687zbBD5a5B"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Scorpion",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566121,
+    "modifiedTime": 1696756756353,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Twck4opQ8SCM4mvE",
+  "sort": 0,
+  "_key": "!tables!Twck4opQ8SCM4mvE"
+}

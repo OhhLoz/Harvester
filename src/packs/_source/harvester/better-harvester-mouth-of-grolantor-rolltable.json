@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Mouth of Grolantor RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Mouth of Grolantor'.",
+  "results": [
+    {
+      "text": "Hill Giant Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Mouth of Grolantor",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6LRfN2BbYqx6SbBo",
+          "brt-result-custom-name": "Hill Giant Blood vial",
+          "brt-result-original-name": "Hill Giant Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "6LRfN2BbYqx6SbBo",
+      "_id": "3fOmPmF5YF7kupge",
+      "_key": "!tables.results!8zcr8nsh9dA2gldT.3fOmPmF5YF7kupge"
+    },
+    {
+      "text": "Hill Giant Toenails",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Mouth of Grolantor",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Mm113BZJbwcfVJ0K",
+          "brt-result-custom-name": "Hill Giant Toenails",
+          "brt-result-original-name": "Hill Giant Toenails",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "Mm113BZJbwcfVJ0K",
+      "_id": "1ehzwhVMqCqBrFt5",
+      "_key": "!tables.results!8zcr8nsh9dA2gldT.1ehzwhVMqCqBrFt5"
+    },
+    {
+      "text": "Lock of Hill Giant Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Mouth of Grolantor",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.a9Vnq2wHQeAQJwSh",
+          "brt-result-custom-name": "Lock of Hill Giant Hair",
+          "brt-result-original-name": "Lock of Hill Giant Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "a9Vnq2wHQeAQJwSh",
+      "_id": "YAa5woPB99dqwaOe",
+      "_key": "!tables.results!8zcr8nsh9dA2gldT.YAa5woPB99dqwaOe"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Mouth of Grolantor",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562006,
+    "modifiedTime": 1696756757692,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8zcr8nsh9dA2gldT",
+  "sort": 0,
+  "_key": "!tables!8zcr8nsh9dA2gldT"
+}

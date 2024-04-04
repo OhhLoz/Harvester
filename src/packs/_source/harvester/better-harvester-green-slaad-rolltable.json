@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Green Slaad RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Green Slaad'.",
+  "results": [
+    {
+      "text": "Slaad Slime (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Green Slaad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GNQ2CkL8n05yaYjL",
+          "brt-result-custom-name": "Slaad Slime (vial)",
+          "brt-result-original-name": "Slaad Slime (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "GNQ2CkL8n05yaYjL",
+      "_id": "aIEL9ztpH9Y6Nc7c",
+      "_key": "!tables.results!guAFDWNvPjTWVBz8.aIEL9ztpH9Y6Nc7c"
+    },
+    {
+      "text": "Green Slaad Claws (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Green Slaad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MyT4NPKGK6FXIp5p",
+          "brt-result-custom-name": "Green Slaad Claws (large pouch)",
+          "brt-result-original-name": "Green Slaad Claws (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "MyT4NPKGK6FXIp5p",
+      "_id": "ITwom9oj1VaPZZYJ",
+      "_key": "!tables.results!guAFDWNvPjTWVBz8.ITwom9oj1VaPZZYJ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Green Slaad",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565603,
+    "modifiedTime": 1696756756724,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "guAFDWNvPjTWVBz8",
+  "sort": 0,
+  "_key": "!tables!guAFDWNvPjTWVBz8"
+}

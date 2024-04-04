@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Void Scavver RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Void Scavver'.",
+  "results": [
+    {
+      "text": "Void Scavver Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Void Scavver",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.e99Zb1zFTgnd6lGi",
+          "brt-result-custom-name": "Void Scavver Teeth (pouch)",
+          "brt-result-original-name": "Void Scavver Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "e99Zb1zFTgnd6lGi",
+      "_id": "WxgCCp9KiiLB0fAD",
+      "_key": "!tables.results!4coIU3xjmo9JlgDt.WxgCCp9KiiLB0fAD"
+    },
+    {
+      "text": "Void Scavver Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Void Scavver",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.p8TaxqgGisbdVRE0",
+          "brt-result-custom-name": "Void Scavver Skin",
+          "brt-result-original-name": "Void Scavver Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "p8TaxqgGisbdVRE0",
+      "_id": "6JJpc41RAkiMmvC5",
+      "_key": "!tables.results!4coIU3xjmo9JlgDt.6JJpc41RAkiMmvC5"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Void Scavver",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756577963,
+    "modifiedTime": 1696756761135,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "4coIU3xjmo9JlgDt",
+  "sort": 0,
+  "_key": "!tables!4coIU3xjmo9JlgDt"
+}

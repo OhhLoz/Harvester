@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Deathlock RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Deathlock'.",
+  "results": [
+    {
+      "text": "Deathlock Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Deathlock",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OPqmUolZDbdJbKBA",
+          "brt-result-custom-name": "Deathlock Blood vial",
+          "brt-result-original-name": "Deathlock Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "OPqmUolZDbdJbKBA",
+      "_id": "juKjsCpgrwH4Zlwl",
+      "_key": "!tables.results!zTTiIurRL1ODdKD7.juKjsCpgrwH4Zlwl"
+    },
+    {
+      "text": "Deathlock Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Deathlock",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Xd4OPtyukgt5Hx0C",
+          "brt-result-custom-name": "Deathlock Claws (pouch)",
+          "brt-result-original-name": "Deathlock Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "Xd4OPtyukgt5Hx0C",
+      "_id": "Q7o9wcQQ6548xbYU",
+      "_key": "!tables.results!zTTiIurRL1ODdKD7.Q7o9wcQQ6548xbYU"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Deathlock",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567984,
+    "modifiedTime": 1696756756085,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "zTTiIurRL1ODdKD7",
+  "sort": 0,
+  "_key": "!tables!zTTiIurRL1ODdKD7"
+}

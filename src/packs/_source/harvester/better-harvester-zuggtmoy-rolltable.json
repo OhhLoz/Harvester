@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Zuggtmoy RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Zuggtmoy'.",
+  "results": [
+    {
+      "text": "Zyggtmoy Fungus (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Zuggtmoy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1i3iNNfwpM2XtPIv",
+          "brt-result-custom-name": "Zyggtmoy Fungus (sack)",
+          "brt-result-original-name": "Zyggtmoy Fungus (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "1i3iNNfwpM2XtPIv",
+      "_id": "MB7BR9jP6fpRSskB",
+      "_key": "!tables.results!AnOH2f53bBAaNcSG.MB7BR9jP6fpRSskB"
+    },
+    {
+      "text": "Zyggtmoy Mind Control Puffball (1d6 balls)",
+      "type": 2,
+      "img": "icons/commodities/materials/plant-sprout-teal.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1d6"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Zuggtmoy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4UozxwWny6rsZJS9",
+          "brt-result-custom-name": "Zyggtmoy Mind Control Puffball d balls",
+          "brt-result-original-name": "Zyggtmoy Mind Control Puffball (1d6 balls)",
+          "brt-result-original-icon": "icons/commodities/materials/plant-sprout-teal.webp"
+        }
+      },
+      "documentId": "4UozxwWny6rsZJS9",
+      "_id": "Ial3QqjLZItA6NA2",
+      "_key": "!tables.results!AnOH2f53bBAaNcSG.Ial3QqjLZItA6NA2"
+    },
+    {
+      "text": "Zyggtmoy Yellow Puffball",
+      "type": 2,
+      "img": "icons/commodities/materials/plant-sprout-teal.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Zuggtmoy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.KMojdrjBcbeaQntc",
+          "brt-result-custom-name": "Zyggtmoy Yellow Puffball",
+          "brt-result-original-name": "Zyggtmoy Yellow Puffball",
+          "brt-result-original-icon": "icons/commodities/materials/plant-sprout-teal.webp"
+        }
+      },
+      "documentId": "KMojdrjBcbeaQntc",
+      "_id": "Z1JawDPZc63qMVJb",
+      "_key": "!tables.results!AnOH2f53bBAaNcSG.Z1JawDPZc63qMVJb"
+    },
+    {
+      "text": "Zyggtmoy Infestation Puffball (1d6 balls)",
+      "type": 2,
+      "img": "icons/commodities/materials/plant-sprout-teal.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1d6"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Zuggtmoy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.R7sG0pPCYYsC6rFj",
+          "brt-result-custom-name": "Zyggtmoy Infestation Puffball d balls",
+          "brt-result-original-name": "Zyggtmoy Infestation Puffball (1d6 balls)",
+          "brt-result-original-icon": "icons/commodities/materials/plant-sprout-teal.webp"
+        }
+      },
+      "documentId": "R7sG0pPCYYsC6rFj",
+      "_id": "bFKt6jl0agJcYAKY",
+      "_key": "!tables.results!AnOH2f53bBAaNcSG.bFKt6jl0agJcYAKY"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Zuggtmoy",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560668,
+    "modifiedTime": 1696756762297,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AnOH2f53bBAaNcSG",
+  "sort": 0,
+  "_key": "!tables!AnOH2f53bBAaNcSG"
+}

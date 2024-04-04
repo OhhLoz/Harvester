@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Wight RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Wight'.",
+  "results": [
+    {
+      "text": "Wight Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Wight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.27js0s4faA5xE54a",
+          "brt-result-custom-name": "Wight Blood vial",
+          "brt-result-original-name": "Wight Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "27js0s4faA5xE54a",
+      "_id": "5oCCMwV8slEZNbux",
+      "_key": "!tables.results!OfXKl19wZKyRhWyg.5oCCMwV8slEZNbux"
+    },
+    {
+      "text": "Wight Nails (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Wight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.uJJQYd3ubz3a5QRg",
+          "brt-result-custom-name": "Wight Nails (pouch)",
+          "brt-result-original-name": "Wight Nails (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "uJJQYd3ubz3a5QRg",
+      "_id": "Xai6dFg9JGfMQuok",
+      "_key": "!tables.results!OfXKl19wZKyRhWyg.Xai6dFg9JGfMQuok"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Wight",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560835,
+    "modifiedTime": 1696756761157,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "OfXKl19wZKyRhWyg",
+  "sort": 0,
+  "_key": "!tables!OfXKl19wZKyRhWyg"
+}

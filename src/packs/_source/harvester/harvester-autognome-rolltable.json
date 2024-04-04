@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Autognome RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Autognome'.",
+  "results": [
+    {
+      "text": "Autognome Scrap Metal",
+      "type": 2,
+      "img": "icons/commodities/metal/barstock-broken-steel.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Autognome",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wVOOv6q6AMjm3nqV",
+          "brt-result-custom-name": "Autognome Scrap Metal",
+          "brt-result-original-name": "Autognome Scrap Metal",
+          "brt-result-original-icon": "icons/commodities/metal/barstock-broken-steel.webp"
+        }
+      },
+      "documentId": "wVOOv6q6AMjm3nqV",
+      "_id": "bXtKfGf9Ekp6aLgk",
+      "_key": "!tables.results!gx1tcjh4adWzLCau.bXtKfGf9Ekp6aLgk"
+    },
+    {
+      "text": "Autognome Shock Coil",
+      "type": 2,
+      "img": "icons/commodities/tech/coil-steel.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Autognome",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yeNZaJQ0MGlUhVPX",
+          "brt-result-custom-name": "Autognome Shock Coil",
+          "brt-result-original-name": "Autognome Shock Coil",
+          "brt-result-original-icon": "icons/commodities/tech/coil-steel.webp"
+        }
+      },
+      "documentId": "yeNZaJQ0MGlUhVPX",
+      "_id": "TgC1RJ7VY2pfJxlR",
+      "_key": "!tables.results!gx1tcjh4adWzLCau.TgC1RJ7VY2pfJxlR"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Autognome",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756588458,
+    "modifiedTime": 1696756755912,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gx1tcjh4adWzLCau",
+  "sort": 0,
+  "_key": "!tables!gx1tcjh4adWzLCau"
+}

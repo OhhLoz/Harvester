@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Gem Stalker RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gem Stalker'.",
+  "results": [
+    {
+      "text": "Gem Stalker Heart Gem",
+      "type": 2,
+      "img": "icons/commodities/gems/gem-faceted-round-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gem Stalker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AA52OGKvZewD3pl5",
+          "brt-result-custom-name": "Gem Stalker Heart Gem",
+          "brt-result-original-name": "Gem Stalker Heart Gem",
+          "brt-result-original-icon": "icons/commodities/gems/gem-faceted-round-white.webp"
+        }
+      },
+      "documentId": "AA52OGKvZewD3pl5",
+      "_id": "rGAHxE8ocnKCauub",
+      "_key": "!tables.results!iPv8kc7IRPdAcfag.rGAHxE8ocnKCauub"
+    },
+    {
+      "text": "Gem Stalker Crystal Shards (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gem Stalker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SnHzBuYHSXrJYMxQ",
+          "brt-result-custom-name": "Gem Stalker Crystal Shards (pouch)",
+          "brt-result-original-name": "Gem Stalker Crystal Shards (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "SnHzBuYHSXrJYMxQ",
+      "_id": "6vsmEdfXkO1S8FHy",
+      "_key": "!tables.results!iPv8kc7IRPdAcfag.6vsmEdfXkO1S8FHy"
+    },
+    {
+      "text": "Gem Stalker Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gem Stalker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.uvWWGehjuwRxUMwD",
+          "brt-result-custom-name": "Gem Stalker Claws (pouch)",
+          "brt-result-original-name": "Gem Stalker Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "uvWWGehjuwRxUMwD",
+      "_id": "PifiGrTWzuSI44Ka",
+      "_key": "!tables.results!iPv8kc7IRPdAcfag.PifiGrTWzuSI44Ka"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Gem Stalker",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563287,
+    "modifiedTime": 1696756756316,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "iPv8kc7IRPdAcfag",
+  "sort": 0,
+  "_key": "!tables!iPv8kc7IRPdAcfag"
+}

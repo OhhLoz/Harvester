@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Goblin RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Goblin'.",
+  "results": [
+    {
+      "text": "Goblin Ear (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Goblin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.aeiU8VKbxEeS7kWl",
+          "brt-result-custom-name": "Goblin Ear",
+          "brt-result-original-name": "Goblin Ear (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "aeiU8VKbxEeS7kWl",
+      "_id": "kMMCfroueFKZvKSg",
+      "_key": "!tables.results!Yy0MDThbK534MorQ.kMMCfroueFKZvKSg"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Goblin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756575313,
+    "modifiedTime": 1696756756701,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Yy0MDThbK534MorQ",
+  "sort": 0,
+  "_key": "!tables!Yy0MDThbK534MorQ"
+}

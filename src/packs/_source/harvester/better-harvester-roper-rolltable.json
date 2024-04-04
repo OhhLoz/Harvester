@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Roper RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Roper'.",
+  "results": [
+    {
+      "text": "Roper Stomach Acid (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Roper",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3Db9AGuK50OIaxoa",
+          "brt-result-custom-name": "Roper Stomach Acid (vial)",
+          "brt-result-original-name": "Roper Stomach Acid (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "3Db9AGuK50OIaxoa",
+      "_id": "m73fYAcdAt9WD9Y0",
+      "_key": "!tables.results!JrVBnRYB2keQ4S74.m73fYAcdAt9WD9Y0"
+    },
+    {
+      "text": "Roper Shell",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-turtle-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Roper",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ReBQ2MER9ATCxge7",
+          "brt-result-custom-name": "Roper Shell",
+          "brt-result-original-name": "Roper Shell",
+          "brt-result-original-icon": "icons/commodities/biological/shell-turtle-grey.webp"
+        }
+      },
+      "documentId": "ReBQ2MER9ATCxge7",
+      "_id": "cq6Td9fAGyGnajvl",
+      "_key": "!tables.results!JrVBnRYB2keQ4S74.cq6Td9fAGyGnajvl"
+    },
+    {
+      "text": "Roper Tendril (x6)",
+      "type": 2,
+      "img": "icons/creatures/tentacles/tentacles-thing-green.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Roper",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.YRpCv8sRvX5e9kX1",
+          "brt-result-custom-name": "Roper Tendril",
+          "brt-result-original-name": "Roper Tendril (x6)",
+          "brt-result-original-icon": "icons/creatures/tentacles/tentacles-thing-green.webp"
+        }
+      },
+      "documentId": "YRpCv8sRvX5e9kX1",
+      "_id": "6Lwv7b7vMBYX7PvL",
+      "_key": "!tables.results!JrVBnRYB2keQ4S74.6Lwv7b7vMBYX7PvL"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Roper",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561123,
+    "modifiedTime": 1696756759136,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JrVBnRYB2keQ4S74",
+  "sort": 0,
+  "_key": "!tables!JrVBnRYB2keQ4S74"
+}

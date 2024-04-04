@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Hunter Shark RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hunter Shark'.",
+  "results": [
+    {
+      "text": "Hunter Shark Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hunter Shark",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZYsHrXD4HAnV04pZ",
+          "brt-result-custom-name": "Hunter Shark Skin",
+          "brt-result-original-name": "Hunter Shark Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "ZYsHrXD4HAnV04pZ",
+      "_id": "m6VJ4caPYxfGL7Df",
+      "_key": "!tables.results!A8hahQhyIC0j3ooh.m6VJ4caPYxfGL7Df"
+    },
+    {
+      "text": "Hunter Shark Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hunter Shark",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.i08hjpNu4V2N5zmM",
+          "brt-result-custom-name": "Hunter Shark Teeth (pouch)",
+          "brt-result-original-name": "Hunter Shark Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "i08hjpNu4V2N5zmM",
+      "_id": "S71OvcPBE31rGzBx",
+      "_key": "!tables.results!A8hahQhyIC0j3ooh.S71OvcPBE31rGzBx"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Hunter Shark",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756574228,
+    "modifiedTime": 1696756757120,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "A8hahQhyIC0j3ooh",
+  "sort": 0,
+  "_key": "!tables!A8hahQhyIC0j3ooh"
+}

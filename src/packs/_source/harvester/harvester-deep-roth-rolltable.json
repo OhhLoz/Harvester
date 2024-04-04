@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Deep Rothé RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Deep Rothé'.",
+  "results": [
+    {
+      "text": "Deep Rothé Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Deep Rothé",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NtEtPIJyzSfNcWfr",
+          "brt-result-custom-name": "Deep Rothé Hide",
+          "brt-result-original-name": "Deep Rothé Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "NtEtPIJyzSfNcWfr",
+      "_id": "4nxb5JfQJfrj6uDS",
+      "_key": "!tables.results!1GRVAOl40uTFpKhV.4nxb5JfQJfrj6uDS"
+    },
+    {
+      "text": "Deep Rothé Horns (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Deep Rothé",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yy7ZaIBVQcLHc9fD",
+          "brt-result-custom-name": "Deep Rothé Horns",
+          "brt-result-original-name": "Deep Rothé Horns (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "yy7ZaIBVQcLHc9fD",
+      "_id": "Ri24er40hhQpkeVK",
+      "_key": "!tables.results!1GRVAOl40uTFpKhV.Ri24er40hhQpkeVK"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Deep Rothé",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567938,
+    "modifiedTime": 1696756756089,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1GRVAOl40uTFpKhV",
+  "sort": 0,
+  "_key": "!tables!1GRVAOl40uTFpKhV"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Sea Spawn RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Sea Spawn'.",
+  "results": [
+    {
+      "text": "Sea Spawn Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Sea Spawn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BnlGML3ggAEU4uGb",
+          "brt-result-custom-name": "Sea Spawn Blood vial",
+          "brt-result-original-name": "Sea Spawn Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "BnlGML3ggAEU4uGb",
+      "_id": "QdX7V4M4GLuuRtxJ",
+      "_key": "!tables.results!POSY2Id3b9lQDXYc.QdX7V4M4GLuuRtxJ"
+    },
+    {
+      "text": "Sea Spawn Appendage",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Sea Spawn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EoKK3KJt7WYmlnbA",
+          "brt-result-custom-name": "Sea Spawn Appendage",
+          "brt-result-original-name": "Sea Spawn Appendage",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "EoKK3KJt7WYmlnbA",
+      "_id": "tFNczLkg0hdXvkTQ",
+      "_key": "!tables.results!POSY2Id3b9lQDXYc.tFNczLkg0hdXvkTQ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Sea Spawn",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564030,
+    "modifiedTime": 1696756759170,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "POSY2Id3b9lQDXYc",
+  "sort": 0,
+  "_key": "!tables!POSY2Id3b9lQDXYc"
+}

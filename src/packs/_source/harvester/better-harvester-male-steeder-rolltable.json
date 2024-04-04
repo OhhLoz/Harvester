@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Male Steeder RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Male Steeder'.",
+  "results": [
+    {
+      "text": "Steeder Chitin Plates (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Male Steeder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PebSpjvEeydaljXS",
+          "brt-result-custom-name": "Steeder Chitin Plate",
+          "brt-result-original-name": "Steeder Chitin Plates (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "PebSpjvEeydaljXS",
+      "_id": "z3Lr0c3H8nQOvpbT",
+      "_key": "!tables.results!r0mtGjQ4PtgHVBdL.z3Lr0c3H8nQOvpbT"
+    },
+    {
+      "text": "Steeder Glue (x3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Male Steeder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dmJX9AUSnmG8TeFL",
+          "brt-result-custom-name": "Steeder Glue vial",
+          "brt-result-original-name": "Steeder Glue (x3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "dmJX9AUSnmG8TeFL",
+      "_id": "M9WCZQ9e6i66Ji3l",
+      "_key": "!tables.results!r0mtGjQ4PtgHVBdL.M9WCZQ9e6i66Ji3l"
+    },
+    {
+      "text": "Steeder Fur (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Male Steeder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lJVhZMt97vH6dln0",
+          "brt-result-custom-name": "Steeder Fur (pouch)",
+          "brt-result-original-name": "Steeder Fur (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "lJVhZMt97vH6dln0",
+      "_id": "98VPQMaJwRGUJwaF",
+      "_key": "!tables.results!r0mtGjQ4PtgHVBdL.98VPQMaJwRGUJwaF"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Male Steeder",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568407,
+    "modifiedTime": 1696756757635,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "r0mtGjQ4PtgHVBdL",
+  "sort": 0,
+  "_key": "!tables!r0mtGjQ4PtgHVBdL"
+}

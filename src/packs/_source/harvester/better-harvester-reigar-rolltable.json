@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Reigar RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Reigar'.",
+  "results": [
+    {
+      "text": "Reigar Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Reigar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3dJLpTWxCnUbC3VC",
+          "brt-result-custom-name": "Reigar Blood vial",
+          "brt-result-original-name": "Reigar Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "3dJLpTWxCnUbC3VC",
+      "_id": "KUi4y8SIvC5BiUaw",
+      "_key": "!tables.results!Sh92dU7DpHo3e3tq.KUi4y8SIvC5BiUaw"
+    },
+    {
+      "text": "Reigar Talarith",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Reigar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Yf4Hpr6yg35G4lxz",
+          "brt-result-custom-name": "Reigar Talarith",
+          "brt-result-original-name": "Reigar Talarith",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "Yf4Hpr6yg35G4lxz",
+      "_id": "sah9BrKzmj12NoEQ",
+      "_key": "!tables.results!Sh92dU7DpHo3e3tq.sah9BrKzmj12NoEQ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Reigar",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561342,
+    "modifiedTime": 1696756759123,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Sh92dU7DpHo3e3tq",
+  "sort": 0,
+  "_key": "!tables!Sh92dU7DpHo3e3tq"
+}

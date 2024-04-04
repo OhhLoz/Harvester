@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Hoard Mimic RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hoard Mimic'.",
+  "results": [
+    {
+      "text": "Mimic Adhesive (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hoard Mimic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cuYYUbOXKWIqTSnk",
+          "brt-result-custom-name": "Mimic Adhesive vial",
+          "brt-result-original-name": "Mimic Adhesive (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "cuYYUbOXKWIqTSnk",
+      "_id": "oONOhk6e4KVsYaRS",
+      "_key": "!tables.results!yAOw3GRCkifWfKPd.oONOhk6e4KVsYaRS"
+    },
+    {
+      "text": "Mimic Skin Strips (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hoard Mimic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.mo7hGS8eH5tBF8zM",
+          "brt-result-custom-name": "Mimic Skin Strips (sack)",
+          "brt-result-original-name": "Mimic Skin Strips (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "mo7hGS8eH5tBF8zM",
+      "_id": "ao3r9kre7FCQQSLZ",
+      "_key": "!tables.results!yAOw3GRCkifWfKPd.ao3r9kre7FCQQSLZ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Hoard Mimic",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756576966,
+    "modifiedTime": 1696756757100,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "yAOw3GRCkifWfKPd",
+  "sort": 0,
+  "_key": "!tables!yAOw3GRCkifWfKPd"
+}

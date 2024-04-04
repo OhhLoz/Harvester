@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Star Spawn Larva Mage RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Star Spawn Larva Mage'.",
+  "results": [
+    {
+      "text": "Star Spawn Worms (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Star Spawn Larva Mage",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GMtP9P9fsZ4iL5VL",
+          "brt-result-custom-name": "Star Spawn Worms (pouch)",
+          "brt-result-original-name": "Star Spawn Worms (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "GMtP9P9fsZ4iL5VL",
+      "_id": "rneLBDl5F8kj0g9n",
+      "_key": "!tables.results!hvawZ7AvJ9o9M61P.rneLBDl5F8kj0g9n"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Star Spawn Larva Mage",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565585,
+    "modifiedTime": 1696756759989,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "hvawZ7AvJ9o9M61P",
+  "sort": 0,
+  "_key": "!tables!hvawZ7AvJ9o9M61P"
+}

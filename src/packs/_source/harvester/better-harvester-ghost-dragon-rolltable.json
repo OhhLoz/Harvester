@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Ghost Dragon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ghost Dragon'.",
+  "results": [
+    {
+      "text": "Ghost Dragon Spirit Shard",
+      "type": 2,
+      "img": "icons/commodities/gems/gem-shattered-blue.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ghost Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7ef3ZLaSyANlZ6hb",
+          "brt-result-custom-name": "Ghost Dragon Spirit Shard",
+          "brt-result-original-name": "Ghost Dragon Spirit Shard",
+          "brt-result-original-icon": "icons/commodities/gems/gem-shattered-blue.webp"
+        }
+      },
+      "documentId": "7ef3ZLaSyANlZ6hb",
+      "_id": "Nebre7B0talZIZkn",
+      "_key": "!tables.results!rHh6sMZjZc8RymTz.Nebre7B0talZIZkn"
+    },
+    {
+      "text": "Ghost Ectoplasm (9 flasks)",
+      "type": 2,
+      "img": "icons/commodities/materials/liquid-blue.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ghost Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.h5fBYDHAS0O56iJc",
+          "brt-result-custom-name": "Ghost Ectoplasm flasks",
+          "brt-result-original-name": "Ghost Ectoplasm (9 flasks)",
+          "brt-result-original-icon": "icons/commodities/materials/liquid-blue.webp"
+        }
+      },
+      "documentId": "h5fBYDHAS0O56iJc",
+      "_id": "pJeZMPbyA5hNhKmM",
+      "_key": "!tables.results!rHh6sMZjZc8RymTz.pJeZMPbyA5hNhKmM"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Ghost Dragon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562467,
+    "modifiedTime": 1696756756321,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rHh6sMZjZc8RymTz",
+  "sort": 0,
+  "_key": "!tables!rHh6sMZjZc8RymTz"
+}

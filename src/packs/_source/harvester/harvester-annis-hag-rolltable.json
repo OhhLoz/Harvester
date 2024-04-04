@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Annis Hag RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Annis Hag'.",
+  "results": [
+    {
+      "text": "Annis Hag's Eyeball",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Annis Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7Ux1JKDvDYvIL9Mx",
+          "brt-result-custom-name": "Annis Hag's Eyeball",
+          "brt-result-original-name": "Annis Hag's Eyeball",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "7Ux1JKDvDYvIL9Mx",
+      "_id": "Zn8P0ULLPRHMLlhz",
+      "_key": "!tables.results!Er6PkLD7w9Ln3rBz.Zn8P0ULLPRHMLlhz"
+    },
+    {
+      "text": "Annis Hag's Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Annis Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.a4Q9MDjsrg3cP5Mz",
+          "brt-result-custom-name": "Annis Hag's Blood vial",
+          "brt-result-original-name": "Annis Hag's Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "a4Q9MDjsrg3cP5Mz",
+      "_id": "pHnTugcd8KXQL2dt",
+      "_key": "!tables.results!Er6PkLD7w9Ln3rBz.pHnTugcd8KXQL2dt"
+    },
+    {
+      "text": "Annis Hag's Nails (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Annis Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nOCiS60MW7Ax60AZ",
+          "brt-result-custom-name": "Annis Hag's Nails (pouch)",
+          "brt-result-original-name": "Annis Hag's Nails (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "nOCiS60MW7Ax60AZ",
+      "_id": "UqFlJm4OU9KztD0c",
+      "_key": "!tables.results!Er6PkLD7w9Ln3rBz.UqFlJm4OU9KztD0c"
+    },
+    {
+      "text": "Annis Hag's Hair (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Annis Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nuQ1EsHXGVhDNRHF",
+          "brt-result-custom-name": "Annis Hag's Hair (small pouch)",
+          "brt-result-original-name": "Annis Hag's Hair (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "nuQ1EsHXGVhDNRHF",
+      "_id": "rLO5OBfCIpMR0EQp",
+      "_key": "!tables.results!Er6PkLD7w9Ln3rBz.rLO5OBfCIpMR0EQp"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Annis Hag",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562395,
+    "modifiedTime": 1696756755896,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Er6PkLD7w9Ln3rBz",
+  "sort": 0,
+  "_key": "!tables!Er6PkLD7w9Ln3rBz"
+}

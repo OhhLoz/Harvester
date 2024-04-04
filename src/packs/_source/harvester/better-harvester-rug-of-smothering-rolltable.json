@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Rug of Smothering RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Rug of Smothering'.",
+  "results": [
+    {
+      "text": "Magic Fabric",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Rug of Smothering",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QIdXt9vnZeiBjX4B",
+          "brt-result-custom-name": "Magic Fabric",
+          "brt-result-original-name": "Magic Fabric",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "QIdXt9vnZeiBjX4B",
+      "_id": "MyqKHYEfYXM4lW38",
+      "_key": "!tables.results!mQffllPBa2XHygUc.MyqKHYEfYXM4lW38"
+    },
+    {
+      "text": "Animated Sigil Material",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Rug of Smothering",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Wp0DqRQCSmyp5LAM",
+          "brt-result-custom-name": "Animated Sigil Material",
+          "brt-result-original-name": "Animated Sigil Material",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "Wp0DqRQCSmyp5LAM",
+      "_id": "J6re5WZB9w0r0icl",
+      "_key": "!tables.results!mQffllPBa2XHygUc.J6re5WZB9w0r0icl"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Rug of Smothering",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568695,
+    "modifiedTime": 1696756759139,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "mQffllPBa2XHygUc",
+  "sort": 0,
+  "_key": "!tables!mQffllPBa2XHygUc"
+}

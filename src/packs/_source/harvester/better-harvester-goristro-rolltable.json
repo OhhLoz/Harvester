@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Goristro RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Goristro'.",
+  "results": [
+    {
+      "text": "Goristro Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Goristro",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4nlFxouGqfJQWtou",
+          "brt-result-custom-name": "Goristro Horn",
+          "brt-result-original-name": "Goristro Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "4nlFxouGqfJQWtou",
+      "_id": "pokospVZDwtw7MNY",
+      "_key": "!tables.results!VGtbNMs9xfDDlRe0.pokospVZDwtw7MNY"
+    },
+    {
+      "text": "Goristro Hoof (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Goristro",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.D7nfEuOT94zB9kpe",
+          "brt-result-custom-name": "Goristro Hoof",
+          "brt-result-original-name": "Goristro Hoof (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "D7nfEuOT94zB9kpe",
+      "_id": "d8DCYxCt4bpa1OQM",
+      "_key": "!tables.results!VGtbNMs9xfDDlRe0.d8DCYxCt4bpa1OQM"
+    },
+    {
+      "text": "Goristro Fur (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Goristro",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.De5ZZA4nLJjJj1qu",
+          "brt-result-custom-name": "Goristro Fur (large pouch)",
+          "brt-result-original-name": "Goristro Fur (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "De5ZZA4nLJjJj1qu",
+      "_id": "FzqJsLnePCUasix8",
+      "_key": "!tables.results!VGtbNMs9xfDDlRe0.FzqJsLnePCUasix8"
+    },
+    {
+      "text": "Goristro Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Goristro",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tMIKnxFS7P0Cg1sG",
+          "brt-result-custom-name": "Goristro Blood vial",
+          "brt-result-original-name": "Goristro Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "tMIKnxFS7P0Cg1sG",
+      "_id": "2J8XeAW7gTe5h4bJ",
+      "_key": "!tables.results!VGtbNMs9xfDDlRe0.2J8XeAW7gTe5h4bJ"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Goristro",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561522,
+    "modifiedTime": 1696756756705,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "VGtbNMs9xfDDlRe0",
+  "sort": 0,
+  "_key": "!tables!VGtbNMs9xfDDlRe0"
+}

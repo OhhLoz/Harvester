@@ -1,0 +1,268 @@
+{
+  "name": "Better Harvester | Kraken RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Kraken'.",
+  "results": [
+    {
+      "text": "Kraken Horns (4)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kraken",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6vQ65cNVerHlSL3R",
+          "brt-result-custom-name": "Kraken Horns",
+          "brt-result-original-name": "Kraken Horns (4)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "6vQ65cNVerHlSL3R",
+      "_id": "8HNB2FIPlCjgXuJE",
+      "_key": "!tables.results!oHmYayTfIq12aOFJ.8HNB2FIPlCjgXuJE"
+    },
+    {
+      "text": "Kraken Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kraken",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CJAj8H68sAe4HbUI",
+          "brt-result-custom-name": "Kraken Blood vial",
+          "brt-result-original-name": "Kraken Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "CJAj8H68sAe4HbUI",
+      "_id": "E9QyrQ57Vh8bRDB2",
+      "_key": "!tables.results!oHmYayTfIq12aOFJ.E9QyrQ57Vh8bRDB2"
+    },
+    {
+      "text": "Kraken Eye x2",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kraken",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.I0issEb7H3g8FIAC",
+          "brt-result-custom-name": "Kraken Eye Kraken Eye",
+          "brt-result-original-name": "Kraken Eye x2",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "I0issEb7H3g8FIAC",
+      "_id": "rUPd3xSD3Gl1HvJZ",
+      "_key": "!tables.results!oHmYayTfIq12aOFJ.rUPd3xSD3Gl1HvJZ"
+    },
+    {
+      "text": "Kraken Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kraken",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.KiB9Z7mIxkV7ZDFB",
+          "brt-result-custom-name": "Kraken Hide",
+          "brt-result-original-name": "Kraken Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "KiB9Z7mIxkV7ZDFB",
+      "_id": "gR4FG1e0etpbPKZg",
+      "_key": "!tables.results!oHmYayTfIq12aOFJ.gR4FG1e0etpbPKZg"
+    },
+    {
+      "text": "Kraken Ink (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kraken",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LIkTHx4LjiCbd9Nn",
+          "brt-result-custom-name": "Kraken Ink vial",
+          "brt-result-original-name": "Kraken Ink (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "LIkTHx4LjiCbd9Nn",
+      "_id": "al8zuMptlK2CUXFT",
+      "_key": "!tables.results!oHmYayTfIq12aOFJ.al8zuMptlK2CUXFT"
+    },
+    {
+      "text": "Kraken Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kraken",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.aUw4FCmQA62vLnul",
+          "brt-result-custom-name": "Kraken Heart",
+          "brt-result-original-name": "Kraken Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "aUw4FCmQA62vLnul",
+      "_id": "yk4FgsabHFBzbj2C",
+      "_key": "!tables.results!oHmYayTfIq12aOFJ.yk4FgsabHFBzbj2C"
+    },
+    {
+      "text": "Kraken Tooth (x10)",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kraken",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.b0DiYNC8ds6qV98P",
+          "brt-result-custom-name": "Kraken Tooth",
+          "brt-result-original-name": "Kraken Tooth (x10)",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "b0DiYNC8ds6qV98P",
+      "_id": "BoKdbOi5ViZNkguf",
+      "_key": "!tables.results!oHmYayTfIq12aOFJ.BoKdbOi5ViZNkguf"
+    },
+    {
+      "text": "Kraken Pearl",
+      "type": 2,
+      "img": "icons/commodities/gems/pearls-white.webp",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "30",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kraken",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lWBcC5rcJK0q54vG",
+          "brt-result-custom-name": "Kraken Pearl",
+          "brt-result-original-name": "Kraken Pearl",
+          "brt-result-original-icon": "icons/commodities/gems/pearls-white.webp"
+        }
+      },
+      "documentId": "lWBcC5rcJK0q54vG",
+      "_id": "QQqKoNuRadUO6Rnd",
+      "_key": "!tables.results!oHmYayTfIq12aOFJ.QQqKoNuRadUO6Rnd"
+    }
+  ],
+  "formula": "1d8",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Kraken",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 8
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562168,
+    "modifiedTime": 1696756757164,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "oHmYayTfIq12aOFJ",
+  "sort": 0,
+  "_key": "!tables!oHmYayTfIq12aOFJ"
+}

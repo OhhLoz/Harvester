@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Night Scavver RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Night Scavver'.",
+  "results": [
+    {
+      "text": "Night Scavver Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Night Scavver",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.D9MHaMj5AEYKE7FD",
+          "brt-result-custom-name": "Night Scavver Teeth (pouch)",
+          "brt-result-original-name": "Night Scavver Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "D9MHaMj5AEYKE7FD",
+      "_id": "9GCWtfVzuwehiRvn",
+      "_key": "!tables.results!CKg1YBJRO98NKygX.9GCWtfVzuwehiRvn"
+    },
+    {
+      "text": "Night Scavver Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Night Scavver",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZgI8SoWcr5hSmtmz",
+          "brt-result-custom-name": "Night Scavver Skin",
+          "brt-result-original-name": "Night Scavver Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "ZgI8SoWcr5hSmtmz",
+      "_id": "dMAQ7YV0ipjkWFRF",
+      "_key": "!tables.results!CKg1YBJRO98NKygX.dMAQ7YV0ipjkWFRF"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Night Scavver",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564663,
+    "modifiedTime": 1696756758296,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "CKg1YBJRO98NKygX",
+  "sort": 0,
+  "_key": "!tables!CKg1YBJRO98NKygX"
+}

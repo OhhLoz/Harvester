@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Banderhobb RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Banderhobb'.",
+  "results": [
+    {
+      "text": "Shadow Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Banderhobb",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IkXSrQejsJ1x775q",
+          "brt-result-custom-name": "Shadow Essence (vial)",
+          "brt-result-original-name": "Shadow Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "IkXSrQejsJ1x775q",
+      "_id": "xqOJS2Or5IRJfDL2",
+      "_key": "!tables.results!P4ulumdUQL9oivmf.xqOJS2Or5IRJfDL2"
+    },
+    {
+      "text": "Banderhobb Slime (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Banderhobb",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yL6KK7UWNzBxgd5x",
+          "brt-result-custom-name": "Banderhobb Slime (vial)",
+          "brt-result-original-name": "Banderhobb Slime (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "yL6KK7UWNzBxgd5x",
+      "_id": "x5hxBOGqYx7cdQcE",
+      "_key": "!tables.results!P4ulumdUQL9oivmf.x5hxBOGqYx7cdQcE"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Banderhobb",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566263,
+    "modifiedTime": 1696756755934,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "P4ulumdUQL9oivmf",
+  "sort": 0,
+  "_key": "!tables!P4ulumdUQL9oivmf"
+}

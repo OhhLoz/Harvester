@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Aartuk Warrior RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Aartuk Warrior'.",
+  "results": [
+    {
+      "text": "Aartuk Sap (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Warrior",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fTwt2HfngSKjSJ5s",
+          "brt-result-custom-name": "Aartuk Sap vial",
+          "brt-result-original-name": "Aartuk Sap (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "fTwt2HfngSKjSJ5s",
+      "_id": "gFB9uw7tnNVfzXme",
+      "_key": "!tables.results!44lbQWy5iI0jng8X.gFB9uw7tnNVfzXme"
+    },
+    {
+      "text": "Aartuk Bark",
+      "type": 2,
+      "img": "icons/commodities/wood/bark-beige.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Warrior",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fazPMg3Fnus0zq07",
+          "brt-result-custom-name": "Aartuk Bark",
+          "brt-result-original-name": "Aartuk Bark",
+          "brt-result-original-icon": "icons/commodities/wood/bark-beige.webp"
+        }
+      },
+      "documentId": "fazPMg3Fnus0zq07",
+      "_id": "zKeuVcsEhBS1u9Op",
+      "_key": "!tables.results!44lbQWy5iI0jng8X.zKeuVcsEhBS1u9Op"
+    },
+    {
+      "text": "Aartuk Tongue",
+      "type": 2,
+      "img": "icons/commodities/biological/tongue-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Warrior",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vFYOL0CklneFZCf6",
+          "brt-result-custom-name": "Aartuk Tongue",
+          "brt-result-original-name": "Aartuk Tongue",
+          "brt-result-original-icon": "icons/commodities/biological/tongue-red.webp"
+        }
+      },
+      "documentId": "vFYOL0CklneFZCf6",
+      "_id": "9wgSAtlrbifDNnfH",
+      "_key": "!tables.results!44lbQWy5iI0jng8X.9wgSAtlrbifDNnfH"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Aartuk Warrior",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756578892,
+    "modifiedTime": 1696756755822,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "44lbQWy5iI0jng8X",
+  "sort": 0,
+  "_key": "!tables!44lbQWy5iI0jng8X"
+}

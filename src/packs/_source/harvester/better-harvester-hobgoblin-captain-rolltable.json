@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Hobgoblin Captain RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hobgoblin Captain'.",
+  "results": [
+    {
+      "text": "Hobgoblin War Braid",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hobgoblin Captain",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2SbjfSeimDzoGLmm",
+          "brt-result-custom-name": "Hobgoblin War Braid",
+          "brt-result-original-name": "Hobgoblin War Braid",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "2SbjfSeimDzoGLmm",
+      "_id": "wgiUAKIY0OO1PLkA",
+      "_key": "!tables.results!IJ0dTFZktxnWn5pr.wgiUAKIY0OO1PLkA"
+    },
+    {
+      "text": "Hobgoblin Ear",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hobgoblin Captain",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qwy4Ke59mQMEyqHL",
+          "brt-result-custom-name": "Hobgoblin Ear",
+          "brt-result-original-name": "Hobgoblin Ear",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "qwy4Ke59mQMEyqHL",
+      "_id": "Xr04eiTieStgSZZ5",
+      "_key": "!tables.results!IJ0dTFZktxnWn5pr.Xr04eiTieStgSZZ5"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Hobgoblin Captain",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560907,
+    "modifiedTime": 1696756757103,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "IJ0dTFZktxnWn5pr",
+  "sort": 0,
+  "_key": "!tables!IJ0dTFZktxnWn5pr"
+}

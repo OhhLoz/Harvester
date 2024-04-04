@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Grick RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Grick'.",
+  "results": [
+    {
+      "text": "Grick Tentacle (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Grick",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UC161e5alTwKN3Sy",
+          "brt-result-custom-name": "Grick Tentacle",
+          "brt-result-original-name": "Grick Tentacle (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "UC161e5alTwKN3Sy",
+      "_id": "zugg61ccn1Jd0Kpj",
+      "_key": "!tables.results!aEAlBfZbiI0DR6Bs.zugg61ccn1Jd0Kpj"
+    },
+    {
+      "text": "Grick Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Grick",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZHNPrWdLRrzoppUV",
+          "brt-result-custom-name": "Grick Skin",
+          "brt-result-original-name": "Grick Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "ZHNPrWdLRrzoppUV",
+      "_id": "ItV0yBbqaxkkFvcm",
+      "_key": "!tables.results!aEAlBfZbiI0DR6Bs.ItV0yBbqaxkkFvcm"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Grick",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569885,
+    "modifiedTime": 1696756756727,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "aEAlBfZbiI0DR6Bs",
+  "sort": 0,
+  "_key": "!tables!aEAlBfZbiI0DR6Bs"
+}

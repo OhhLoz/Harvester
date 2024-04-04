@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Liondrake RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Liondrake'.",
+  "results": [
+    {
+      "text": "Lion's Mane [male only]",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-white-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Liondrake",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dLaIsEP5pyGpn4uc",
+          "brt-result-custom-name": "Lion's Mane [male only]",
+          "brt-result-original-name": "Lion's Mane [male only]",
+          "brt-result-original-icon": "icons/commodities/leather/fur-white-tan.webp"
+        }
+      },
+      "documentId": "dLaIsEP5pyGpn4uc",
+      "_id": "Ae4ytpIHKVOhiZYZ",
+      "_key": "!tables.results!rvUcKcVS9od9fpn0.Ae4ytpIHKVOhiZYZ"
+    },
+    {
+      "text": "Liondrake's Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Liondrake",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vnrvmDHm0cetxHm6",
+          "brt-result-custom-name": "Liondrake's Hide",
+          "brt-result-original-name": "Liondrake's Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "vnrvmDHm0cetxHm6",
+      "_id": "pIAAY3fgBpAXXloa",
+      "_key": "!tables.results!rvUcKcVS9od9fpn0.pIAAY3fgBpAXXloa"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Liondrake",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756577381,
+    "modifiedTime": 1696756757618,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rvUcKcVS9od9fpn0",
+  "sort": 0,
+  "_key": "!tables!rvUcKcVS9od9fpn0"
+}

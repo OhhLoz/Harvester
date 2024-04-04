@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Dretch RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dretch'.",
+  "results": [
+    {
+      "text": "Dretch Miasma (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Dretch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.aOHk9XBymIU3lFvi",
+          "brt-result-custom-name": "Dretch Miasma (vial)",
+          "brt-result-original-name": "Dretch Miasma (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "aOHk9XBymIU3lFvi",
+      "_id": "dqaj6RNgwhErUXTb",
+      "_key": "!tables.results!NgukhUZtOmME7yyN.dqaj6RNgwhErUXTb"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Dretch",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756575117,
+    "modifiedTime": 1696756756150,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NgukhUZtOmME7yyN",
+  "sort": 0,
+  "_key": "!tables!NgukhUZtOmME7yyN"
+}

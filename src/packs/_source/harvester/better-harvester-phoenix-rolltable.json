@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Phoenix RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Phoenix'.",
+  "results": [
+    {
+      "text": "Phoenix Ash (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Phoenix",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CkF439lHmQCWcPPC",
+          "brt-result-custom-name": "Phoenix Ash (pouch)",
+          "brt-result-original-name": "Phoenix Ash (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "CkF439lHmQCWcPPC",
+      "_id": "vNvBEsMdUq2JJ5ej",
+      "_key": "!tables.results!LrCU7pFynDWzRz8q.vNvBEsMdUq2JJ5ej"
+    },
+    {
+      "text": "Phoenix Egg",
+      "type": 2,
+      "img": "icons/consumables/eggs/egg-speckled-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "1",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Phoenix",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iFYDE6z4dww3APRH",
+          "brt-result-custom-name": "Phoenix Egg",
+          "brt-result-original-name": "Phoenix Egg",
+          "brt-result-original-icon": "icons/consumables/eggs/egg-speckled-tan.webp"
+        }
+      },
+      "documentId": "iFYDE6z4dww3APRH",
+      "_id": "V8rGKfOeadCLi5B6",
+      "_key": "!tables.results!LrCU7pFynDWzRz8q.V8rGKfOeadCLi5B6"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Phoenix",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564524,
+    "modifiedTime": 1696756758356,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "LrCU7pFynDWzRz8q",
+  "sort": 0,
+  "_key": "!tables!LrCU7pFynDWzRz8q"
+}

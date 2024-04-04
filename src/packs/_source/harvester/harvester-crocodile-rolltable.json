@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Crocodile RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Crocodile'.",
+  "results": [
+    {
+      "text": "Crocodile Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Crocodile",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0FR71C6QBJhoEtWY",
+          "brt-result-custom-name": "Crocodile Skin",
+          "brt-result-original-name": "Crocodile Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "0FR71C6QBJhoEtWY",
+      "_id": "mdf3x4S4olevs1SW",
+      "_key": "!tables.results!KF1qj94LJwdgP9AJ.mdf3x4S4olevs1SW"
+    },
+    {
+      "text": "Crocodile Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Crocodile",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.POb7U2dOwNvWYFIq",
+          "brt-result-custom-name": "Crocodile Teeth (pouch)",
+          "brt-result-original-name": "Crocodile Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "POb7U2dOwNvWYFIq",
+      "_id": "7n506gTc1F8M54jw",
+      "_key": "!tables.results!KF1qj94LJwdgP9AJ.7n506gTc1F8M54jw"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Crocodile",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560259,
+    "modifiedTime": 1696756756065,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "KF1qj94LJwdgP9AJ",
+  "sort": 0,
+  "_key": "!tables!KF1qj94LJwdgP9AJ"
+}

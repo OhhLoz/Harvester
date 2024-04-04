@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Young Red Shadow Dragon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Young Red Shadow Dragon'.",
+  "results": [
+    {
+      "text": "Necrotic Fire (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Red Shadow Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EbSSuVBprIaJ4DK0",
+          "brt-result-custom-name": "Necrotic Fire vial",
+          "brt-result-original-name": "Necrotic Fire (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "EbSSuVBprIaJ4DK0",
+      "_id": "UuB6tVEL7sUfdye1",
+      "_key": "!tables.results!FXkusfoJdQAeZpi4.UuB6tVEL7sUfdye1"
+    },
+    {
+      "text": "Shadow Dragon Scales (large bag)",
+      "type": 2,
+      "img": "icons/containers/bags/pack-canvas-white-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Red Shadow Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Vdxusv0fyVIkuW2d",
+          "brt-result-custom-name": "Shadow Dragon Scales (large bag)",
+          "brt-result-original-name": "Shadow Dragon Scales (large bag)",
+          "brt-result-original-icon": "icons/containers/bags/pack-canvas-white-brown.webp"
+        }
+      },
+      "documentId": "Vdxusv0fyVIkuW2d",
+      "_id": "JABhqmt3URFW5QH1",
+      "_key": "!tables.results!FXkusfoJdQAeZpi4.JABhqmt3URFW5QH1"
+    },
+    {
+      "text": "Shadow Dragon Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Red Shadow Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.pNbo2iJ3C0BdAsSi",
+          "brt-result-custom-name": "Shadow Dragon Wing",
+          "brt-result-original-name": "Shadow Dragon Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "pNbo2iJ3C0BdAsSi",
+      "_id": "3O8C9Z8MPz2NnVFQ",
+      "_key": "!tables.results!FXkusfoJdQAeZpi4.3O8C9Z8MPz2NnVFQ"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Young Red Shadow Dragon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565114,
+    "modifiedTime": 1696756762274,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FXkusfoJdQAeZpi4",
+  "sort": 0,
+  "_key": "!tables!FXkusfoJdQAeZpi4"
+}

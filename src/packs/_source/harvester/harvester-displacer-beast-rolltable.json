@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Displacer Beast RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Displacer Beast'.",
+  "results": [
+    {
+      "text": "Displacer Beast Tentacle (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Displacer Beast",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.T8oyzP5rfnDa0Ro7",
+          "brt-result-custom-name": "Displacer Beast Tentacle",
+          "brt-result-original-name": "Displacer Beast Tentacle (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "T8oyzP5rfnDa0Ro7",
+      "_id": "GcGsWywymsNJyyC6",
+      "_key": "!tables.results!2IdwAyPEaT5zjSZm.GcGsWywymsNJyyC6"
+    },
+    {
+      "text": "Displacer Beast Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Displacer Beast",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.h474WBlZZmrfHTrv",
+          "brt-result-custom-name": "Displacer Beast Hide",
+          "brt-result-original-name": "Displacer Beast Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "h474WBlZZmrfHTrv",
+      "_id": "qXMAjtg70zkjwQJI",
+      "_key": "!tables.results!2IdwAyPEaT5zjSZm.qXMAjtg70zkjwQJI"
+    },
+    {
+      "text": "Displacer Beast Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Displacer Beast",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nat9z13D8XZ0xhIq",
+          "brt-result-custom-name": "Displacer Beast Blood vial",
+          "brt-result-original-name": "Displacer Beast Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "nat9z13D8XZ0xhIq",
+      "_id": "0WDTCv1xNc85fIPC",
+      "_key": "!tables.results!2IdwAyPEaT5zjSZm.0WDTCv1xNc85fIPC"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Displacer Beast",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569387,
+    "modifiedTime": 1696756756109,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "2IdwAyPEaT5zjSZm",
+  "sort": 0,
+  "_key": "!tables!2IdwAyPEaT5zjSZm"
+}

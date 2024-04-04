@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Howler RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Howler'.",
+  "results": [
+    {
+      "text": "Howler Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Howler",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0jpkUU33iZXJI9iB",
+          "brt-result-custom-name": "Howler Blood vial",
+          "brt-result-original-name": "Howler Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "0jpkUU33iZXJI9iB",
+      "_id": "oS6GXVGZH8WHB4k2",
+      "_key": "!tables.results!ELp8CB8LdKLBcDns.oS6GXVGZH8WHB4k2"
+    },
+    {
+      "text": "Howler Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Howler",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5xfSZgGgE0bZxkK3",
+          "brt-result-custom-name": "Howler Teeth (pouch)",
+          "brt-result-original-name": "Howler Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "5xfSZgGgE0bZxkK3",
+      "_id": "ksAJgUHJpFo80WWd",
+      "_key": "!tables.results!ELp8CB8LdKLBcDns.ksAJgUHJpFo80WWd"
+    },
+    {
+      "text": "Howler Vocal Cords",
+      "type": 2,
+      "img": "icons/consumables/meat/chicken-breast-raw-pink.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Howler",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QbY4zkwWmtmFLlvP",
+          "brt-result-custom-name": "Howler Vocal Cords",
+          "brt-result-original-name": "Howler Vocal Cords",
+          "brt-result-original-icon": "icons/consumables/meat/chicken-breast-raw-pink.webp"
+        }
+      },
+      "documentId": "QbY4zkwWmtmFLlvP",
+      "_id": "RawI2WvSAet9BwGJ",
+      "_key": "!tables.results!ELp8CB8LdKLBcDns.RawI2WvSAet9BwGJ"
+    },
+    {
+      "text": "Howler Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Howler",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rYnTwmmeXMMHHrZE",
+          "brt-result-custom-name": "Howler Claws (pouch)",
+          "brt-result-original-name": "Howler Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "rYnTwmmeXMMHHrZE",
+      "_id": "x2rg0cvuyjAJrhV5",
+      "_key": "!tables.results!ELp8CB8LdKLBcDns.x2rg0cvuyjAJrhV5"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Howler",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560423,
+    "modifiedTime": 1696756757117,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ELp8CB8LdKLBcDns",
+  "sort": 0,
+  "_key": "!tables!ELp8CB8LdKLBcDns"
+}

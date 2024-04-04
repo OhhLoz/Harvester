@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Bugbear RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bugbear'.",
+  "results": [
+    {
+      "text": "Bugbear Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Bugbear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lNR8bDcfZk6w9mKw",
+          "brt-result-custom-name": "Bugbear Hide",
+          "brt-result-original-name": "Bugbear Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "lNR8bDcfZk6w9mKw",
+      "_id": "hjLQt4Ms2z0IQPVc",
+      "_key": "!tables.results!3SWz00vKB6EE2zGR.hjLQt4Ms2z0IQPVc"
+    },
+    {
+      "text": "Bugbear Tusk (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Bugbear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rjbE5UqCsvUUk59e",
+          "brt-result-custom-name": "Bugbear Tusk",
+          "brt-result-original-name": "Bugbear Tusk (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "rjbE5UqCsvUUk59e",
+      "_id": "N6N1LhJaH3M2ir37",
+      "_key": "!tables.results!3SWz00vKB6EE2zGR.N6N1LhJaH3M2ir37"
+    },
+    {
+      "text": "Bugbear Ears (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Bugbear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.uuwjiBGBg3e5lrBv",
+          "brt-result-custom-name": "Bugbear Ears",
+          "brt-result-original-name": "Bugbear Ears (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "uuwjiBGBg3e5lrBv",
+      "_id": "J6dc0o22TMKMU048",
+      "_key": "!tables.results!3SWz00vKB6EE2zGR.J6dc0o22TMKMU048"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Bugbear",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756581732,
+    "modifiedTime": 1696756755994,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3SWz00vKB6EE2zGR",
+  "sort": 0,
+  "_key": "!tables!3SWz00vKB6EE2zGR"
+}

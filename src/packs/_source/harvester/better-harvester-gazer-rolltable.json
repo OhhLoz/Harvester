@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Gazer RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gazer'.",
+  "results": [
+    {
+      "text": "Large Gazer Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gazer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5RUX3IkkIvloJZEl",
+          "brt-result-custom-name": "Large Gazer Eye",
+          "brt-result-original-name": "Large Gazer Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "5RUX3IkkIvloJZEl",
+      "_id": "d1NrRVmDgRjSTx7J",
+      "_key": "!tables.results!Ewv6S56uih4XWIG4.d1NrRVmDgRjSTx7J"
+    },
+    {
+      "text": "Gazer Eyestalk",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-tentacle-grey-orange.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gazer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zJWOsQY99rzu4TKj",
+          "brt-result-custom-name": "Gazer Eyestalk",
+          "brt-result-original-name": "Gazer Eyestalk",
+          "brt-result-original-icon": "icons/commodities/biological/eye-tentacle-grey-orange.webp"
+        }
+      },
+      "documentId": "zJWOsQY99rzu4TKj",
+      "_id": "XLhkdSWoQ3MTZxBy",
+      "_key": "!tables.results!Ewv6S56uih4XWIG4.XLhkdSWoQ3MTZxBy"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Gazer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561750,
+    "modifiedTime": 1696756756313,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Ewv6S56uih4XWIG4",
+  "sort": 0,
+  "_key": "!tables!Ewv6S56uih4XWIG4"
+}

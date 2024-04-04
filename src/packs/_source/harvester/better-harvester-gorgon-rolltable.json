@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Gorgon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gorgon'.",
+  "results": [
+    {
+      "text": "Gorgon Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gorgon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.KHA3rq2OgqX2c4eg",
+          "brt-result-custom-name": "Gorgon Horn",
+          "brt-result-original-name": "Gorgon Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "KHA3rq2OgqX2c4eg",
+      "_id": "j9YXWIMyhcQRIJvF",
+      "_key": "!tables.results!LRsSFZEIehAmy5gb.j9YXWIMyhcQRIJvF"
+    },
+    {
+      "text": "Gorgon Oil (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gorgon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZrDwNiGhM35LcgoV",
+          "brt-result-custom-name": "Gorgon Oil vial",
+          "brt-result-original-name": "Gorgon Oil (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "ZrDwNiGhM35LcgoV",
+      "_id": "sLZh6XjMvwTuEofB",
+      "_key": "!tables.results!LRsSFZEIehAmy5gb.sLZh6XjMvwTuEofB"
+    },
+    {
+      "text": "Gorgon Gas Sac",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gorgon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xR9copVuKH6Mcex6",
+          "brt-result-custom-name": "Gorgon Gas Sac",
+          "brt-result-original-name": "Gorgon Gas Sac",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "xR9copVuKH6Mcex6",
+      "_id": "B2rKOC7cmYArwXY8",
+      "_key": "!tables.results!LRsSFZEIehAmy5gb.B2rKOC7cmYArwXY8"
+    },
+    {
+      "text": "Gorgon Plate",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gorgon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zQMCjLvUcT7ib2zN",
+          "brt-result-custom-name": "Gorgon Plate",
+          "brt-result-original-name": "Gorgon Plate",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "zQMCjLvUcT7ib2zN",
+      "_id": "1w38VWkbfmHnfjNF",
+      "_key": "!tables.results!LRsSFZEIehAmy5gb.1w38VWkbfmHnfjNF"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Gorgon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566727,
+    "modifiedTime": 1696756756703,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "LRsSFZEIehAmy5gb",
+  "sort": 0,
+  "_key": "!tables!LRsSFZEIehAmy5gb"
+}

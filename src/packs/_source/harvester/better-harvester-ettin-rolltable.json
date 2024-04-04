@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Ettin RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ettin'.",
+  "results": [
+    {
+      "text": "Ettin Head (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ettin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HnZZY1CxA7bLLKgW",
+          "brt-result-custom-name": "Ettin Head",
+          "brt-result-original-name": "Ettin Head (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "HnZZY1CxA7bLLKgW",
+      "_id": "VfjZnaM91Hkv3boh",
+      "_key": "!tables.results!UsgFawOqGJStHo1K.VfjZnaM91Hkv3boh"
+    },
+    {
+      "text": "Ettin Fingernail",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ettin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UsSudyaHPNsceCYP",
+          "brt-result-custom-name": "Ettin Fingernail",
+          "brt-result-original-name": "Ettin Fingernail",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "UsSudyaHPNsceCYP",
+      "_id": "Uu1CevUfbfkiO9hn",
+      "_key": "!tables.results!UsgFawOqGJStHo1K.Uu1CevUfbfkiO9hn"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Ettin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566000,
+    "modifiedTime": 1696756756215,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "UsgFawOqGJStHo1K",
+  "sort": 0,
+  "_key": "!tables!UsgFawOqGJStHo1K"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Alpha Grick RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Alpha Grick'.",
+  "results": [
+    {
+      "text": "Grick Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Alpha Grick",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dgETMj8DQcU3OQV5",
+          "brt-result-custom-name": "Grick Skin",
+          "brt-result-original-name": "Grick Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "dgETMj8DQcU3OQV5",
+      "_id": "cqsGtt2nj3evWgNC",
+      "_key": "!tables.results!lCrIMzhG0YzvZvYB.cqsGtt2nj3evWgNC"
+    },
+    {
+      "text": "Grick Tentacle (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Alpha Grick",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kjQtsQ8hHK3ov0f2",
+          "brt-result-custom-name": "Grick Tentacle",
+          "brt-result-original-name": "Grick Tentacle (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "kjQtsQ8hHK3ov0f2",
+      "_id": "BFeYKKuGomyWQhra",
+      "_key": "!tables.results!lCrIMzhG0YzvZvYB.BFeYKKuGomyWQhra"
+    },
+    {
+      "text": "Grick Pearl",
+      "type": 2,
+      "img": "icons/commodities/gems/pearls-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Alpha Grick",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.moMOuBeaSA9xHrkn",
+          "brt-result-custom-name": "Grick Pearl",
+          "brt-result-original-name": "Grick Pearl",
+          "brt-result-original-icon": "icons/commodities/gems/pearls-white.webp"
+        }
+      },
+      "documentId": "moMOuBeaSA9xHrkn",
+      "_id": "8AF4uWdCaJQLgyBW",
+      "_key": "!tables.results!lCrIMzhG0YzvZvYB.8AF4uWdCaJQLgyBW"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Alpha Grick",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756577668,
+    "modifiedTime": 1696756755867,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lCrIMzhG0YzvZvYB",
+  "sort": 0,
+  "_key": "!tables!lCrIMzhG0YzvZvYB"
+}

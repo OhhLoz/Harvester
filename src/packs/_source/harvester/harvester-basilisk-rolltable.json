@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Basilisk RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Basilisk'.",
+  "results": [
+    {
+      "text": "Basilisk Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Basilisk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1INgJTcjymT2sCEd",
+          "brt-result-custom-name": "Basilisk Eye",
+          "brt-result-original-name": "Basilisk Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "1INgJTcjymT2sCEd",
+      "_id": "lH5owpcFYPcu4BIY",
+      "_key": "!tables.results!8Lwui3iDP1swy5Bg.lH5owpcFYPcu4BIY"
+    },
+    {
+      "text": "Basilisk Bile (2 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Basilisk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LM10OGlggj5qZv9J",
+          "brt-result-custom-name": "Basilisk Bile vial",
+          "brt-result-original-name": "Basilisk Bile (2 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "LM10OGlggj5qZv9J",
+      "_id": "YSM9yyyexdSK633u",
+      "_key": "!tables.results!8Lwui3iDP1swy5Bg.YSM9yyyexdSK633u"
+    },
+    {
+      "text": "Basilisk Tooth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Basilisk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kYk0lhLAlMF3pIKP",
+          "brt-result-custom-name": "Basilisk Tooth (small pouch)",
+          "brt-result-original-name": "Basilisk Tooth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "kYk0lhLAlMF3pIKP",
+      "_id": "KFDEvkxU6CjTXLhz",
+      "_key": "!tables.results!8Lwui3iDP1swy5Bg.KFDEvkxU6CjTXLhz"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Basilisk",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560547,
+    "modifiedTime": 1696756755944,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8Lwui3iDP1swy5Bg",
+  "sort": 0,
+  "_key": "!tables!8Lwui3iDP1swy5Bg"
+}

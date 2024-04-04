@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Otyugh RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Otyugh'.",
+  "results": [
+    {
+      "text": "Otyugh Saliva (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Otyugh",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GiQialYXMwYWXTwm",
+          "brt-result-custom-name": "Otyugh Saliva (vial)",
+          "brt-result-original-name": "Otyugh Saliva (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "GiQialYXMwYWXTwm",
+      "_id": "JSY8tAHyhPM1oxB7",
+      "_key": "!tables.results!ZNZozUV6JfWfntv5.JSY8tAHyhPM1oxB7"
+    },
+    {
+      "text": "Otyugh Stomach Acid (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Otyugh",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ctl1uzNZROSdaXTc",
+          "brt-result-custom-name": "Otyugh Stomach Acid (vial)",
+          "brt-result-original-name": "Otyugh Stomach Acid (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "ctl1uzNZROSdaXTc",
+      "_id": "H6nfaP7stkasC8St",
+      "_key": "!tables.results!ZNZozUV6JfWfntv5.H6nfaP7stkasC8St"
+    },
+    {
+      "text": "Otyugh Pineal Gland (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Otyugh",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ze2A6PYvAbFzzzNn",
+          "brt-result-custom-name": "Otyugh Pineal Gland (vial)",
+          "brt-result-original-name": "Otyugh Pineal Gland (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "ze2A6PYvAbFzzzNn",
+      "_id": "dgt7W34qqgdkVK0g",
+      "_key": "!tables.results!ZNZozUV6JfWfntv5.dgt7W34qqgdkVK0g"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Otyugh",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565721,
+    "modifiedTime": 1696756758343,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ZNZozUV6JfWfntv5",
+  "sort": 0,
+  "_key": "!tables!ZNZozUV6JfWfntv5"
+}

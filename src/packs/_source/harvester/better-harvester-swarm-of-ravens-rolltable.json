@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Swarm of Ravens RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Swarm of Ravens'.",
+  "results": [
+    {
+      "text": "Raven Feathers (x1d8, pouches)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1d8"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Swarm of Ravens",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fTSk61s4ME9Cumys",
+          "brt-result-custom-name": "Raven Feathersd, pouches",
+          "brt-result-original-name": "Raven Feathers (x1d8, pouches)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "fTSk61s4ME9Cumys",
+      "_id": "lZCrrVji5PJKAcUB",
+      "_key": "!tables.results!dn8tQferh09in7IX.lZCrrVji5PJKAcUB"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Swarm of Ravens",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756578758,
+    "modifiedTime": 1696756761076,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dn8tQferh09in7IX",
+  "sort": 0,
+  "_key": "!tables!dn8tQferh09in7IX"
+}

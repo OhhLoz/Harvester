@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Hadozee Explorer RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hadozee Explorer'.",
+  "results": [
+    {
+      "text": "Hadozee Skin Membranes (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/pustules-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hadozee Explorer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VNojIw2C8e7ZHXda",
+          "brt-result-custom-name": "Hadozee Skin Membranes",
+          "brt-result-original-name": "Hadozee Skin Membranes (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/pustules-red.webp"
+        }
+      },
+      "documentId": "VNojIw2C8e7ZHXda",
+      "_id": "BW3NeqDYbKyEoZSU",
+      "_key": "!tables.results!eEZusWPFcyK3cCn4.BW3NeqDYbKyEoZSU"
+    },
+    {
+      "text": "Hadozee Toe Knuckles (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hadozee Explorer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lRgoLFI5LYm69Hu4",
+          "brt-result-custom-name": "Hadozee Toe Knuckles",
+          "brt-result-original-name": "Hadozee Toe Knuckles (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "lRgoLFI5LYm69Hu4",
+      "_id": "w6QXcRIfzVddNC3Y",
+      "_key": "!tables.results!eEZusWPFcyK3cCn4.w6QXcRIfzVddNC3Y"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Hadozee Explorer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756570775,
+    "modifiedTime": 1696756756741,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "eEZusWPFcyK3cCn4",
+  "sort": 0,
+  "_key": "!tables!eEZusWPFcyK3cCn4"
+}

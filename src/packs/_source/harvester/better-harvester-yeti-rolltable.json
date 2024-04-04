@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Yeti RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Yeti'.",
+  "results": [
+    {
+      "text": "Yeti Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yeti",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2BfOiAB8pwtnbqxq",
+          "brt-result-custom-name": "Yeti Claws (pouch)",
+          "brt-result-original-name": "Yeti Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "2BfOiAB8pwtnbqxq",
+      "_id": "yzgItSqy6ZS1WzYy",
+      "_key": "!tables.results!aXBt0rI6U59NyDEh.yzgItSqy6ZS1WzYy"
+    },
+    {
+      "text": "Yeti Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yeti",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PJacVq4dbcxsr9XN",
+          "brt-result-custom-name": "Yeti Hide",
+          "brt-result-original-name": "Yeti Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "PJacVq4dbcxsr9XN",
+      "_id": "RnX9D5w2z7xfNmvz",
+      "_key": "!tables.results!aXBt0rI6U59NyDEh.RnX9D5w2z7xfNmvz"
+    },
+    {
+      "text": "Yeti Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yeti",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.es7nyBZ8TZKbhX9S",
+          "brt-result-custom-name": "Yeti Eye",
+          "brt-result-original-name": "Yeti Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "es7nyBZ8TZKbhX9S",
+      "_id": "LXaO6sdnVVNQwy0N",
+      "_key": "!tables.results!aXBt0rI6U59NyDEh.LXaO6sdnVVNQwy0N"
+    },
+    {
+      "text": "Yeti Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "12",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yeti",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kDv23DfpT8WiZPaz",
+          "brt-result-custom-name": "Yeti Horn",
+          "brt-result-original-name": "Yeti Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "kDv23DfpT8WiZPaz",
+      "_id": "qrFT2r3O3xXAzx6k",
+      "_key": "!tables.results!aXBt0rI6U59NyDEh.qrFT2r3O3xXAzx6k"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Yeti",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560845,
+    "modifiedTime": 1696756762269,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "aXBt0rI6U59NyDEh",
+  "sort": 0,
+  "_key": "!tables!aXBt0rI6U59NyDEh"
+}

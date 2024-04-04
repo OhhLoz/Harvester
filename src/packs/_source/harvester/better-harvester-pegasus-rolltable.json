@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Pegasus RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Pegasus'.",
+  "results": [
+    {
+      "text": "Pegasus Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Pegasus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9TGD31m3lErZVBqn",
+          "brt-result-custom-name": "Pegasus Blood vial",
+          "brt-result-original-name": "Pegasus Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "9TGD31m3lErZVBqn",
+      "_id": "6U6isAjLLQDLCYf5",
+      "_key": "!tables.results!aIOg0f7RRejkHF49.6U6isAjLLQDLCYf5"
+    },
+    {
+      "text": "Pegasus Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Pegasus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HQs2IRgirpISiDcZ",
+          "brt-result-custom-name": "Pegasus Hide",
+          "brt-result-original-name": "Pegasus Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "HQs2IRgirpISiDcZ",
+      "_id": "Pd87yWMXfsX7Sms5",
+      "_key": "!tables.results!aIOg0f7RRejkHF49.Pd87yWMXfsX7Sms5"
+    },
+    {
+      "text": "Pegasus Hoof (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Pegasus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QJquZtOwS18t7nTB",
+          "brt-result-custom-name": "Pegasus Hoof",
+          "brt-result-original-name": "Pegasus Hoof (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "QJquZtOwS18t7nTB",
+      "_id": "rKBmyTAA4P3dWAdj",
+      "_key": "!tables.results!aIOg0f7RRejkHF49.rKBmyTAA4P3dWAdj"
+    },
+    {
+      "text": "Pegasus Wings (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Pegasus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oBtFdWm6MguHHBkL",
+          "brt-result-custom-name": "Pegasus Wings",
+          "brt-result-original-name": "Pegasus Wings (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "oBtFdWm6MguHHBkL",
+      "_id": "IHHk7wVA3EOqW9vz",
+      "_key": "!tables.results!aIOg0f7RRejkHF49.IHHk7wVA3EOqW9vz"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Pegasus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563088,
+    "modifiedTime": 1696756758352,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "aIOg0f7RRejkHF49",
+  "sort": 0,
+  "_key": "!tables!aIOg0f7RRejkHF49"
+}

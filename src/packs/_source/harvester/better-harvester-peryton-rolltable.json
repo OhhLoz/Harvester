@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Peryton RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Peryton'.",
+  "results": [
+    {
+      "text": "Peryton Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Peryton",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.14Qs1WjCbFAtMbob",
+          "brt-result-custom-name": "Peryton Blood vial",
+          "brt-result-original-name": "Peryton Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "14Qs1WjCbFAtMbob",
+      "_id": "qyX8AIvrQ2XUN804",
+      "_key": "!tables.results!GIcwvSJVo0c3UqIp.qyX8AIvrQ2XUN804"
+    },
+    {
+      "text": "Peryton Feathers (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Peryton",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2bvOS1AuRBYrLW6p",
+          "brt-result-custom-name": "Peryton Feathers (large pouch)",
+          "brt-result-original-name": "Peryton Feathers (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "2bvOS1AuRBYrLW6p",
+      "_id": "WCkuGEPVErTobjqy",
+      "_key": "!tables.results!GIcwvSJVo0c3UqIp.WCkuGEPVErTobjqy"
+    },
+    {
+      "text": "Peryton Antlers",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-antler-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Peryton",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9Ds8kQJSsW5xh0Rg",
+          "brt-result-custom-name": "Peryton Antlers",
+          "brt-result-original-name": "Peryton Antlers",
+          "brt-result-original-icon": "icons/commodities/bones/horn-antler-tan.webp"
+        }
+      },
+      "documentId": "9Ds8kQJSsW5xh0Rg",
+      "_id": "0JQLO5VsIKeeBkhp",
+      "_key": "!tables.results!GIcwvSJVo0c3UqIp.0JQLO5VsIKeeBkhp"
+    },
+    {
+      "text": "Peryton Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Peryton",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.e1q7EdlcTHnKap25",
+          "brt-result-custom-name": "Peryton Heart",
+          "brt-result-original-name": "Peryton Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "e1q7EdlcTHnKap25",
+      "_id": "agrAcTOKi4uZrbU7",
+      "_key": "!tables.results!GIcwvSJVo0c3UqIp.agrAcTOKi4uZrbU7"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Peryton",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560524,
+    "modifiedTime": 1696756758353,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "GIcwvSJVo0c3UqIp",
+  "sort": 0,
+  "_key": "!tables!GIcwvSJVo0c3UqIp"
+}

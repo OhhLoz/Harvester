@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Giant Boar RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Boar'.",
+  "results": [
+    {
+      "text": "Giant Boar Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Boar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.a6CAXEy7v9KDrrTi",
+          "brt-result-custom-name": "Giant Boar Hide",
+          "brt-result-original-name": "Giant Boar Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "a6CAXEy7v9KDrrTi",
+      "_id": "54PdlxRRP51VNBqu",
+      "_key": "!tables.results!WtjkuET7jtvwjp6H.54PdlxRRP51VNBqu"
+    },
+    {
+      "text": "Giant Boar Tusks (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Boar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jPb8iY0Psxlha1RG",
+          "brt-result-custom-name": "Giant Boar Tusks",
+          "brt-result-original-name": "Giant Boar Tusks (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "jPb8iY0Psxlha1RG",
+      "_id": "srjIkusuXrwVN7pV",
+      "_key": "!tables.results!WtjkuET7jtvwjp6H.srjIkusuXrwVN7pV"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Boar",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756574813,
+    "modifiedTime": 1696756756329,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "WtjkuET7jtvwjp6H",
+  "sort": 0,
+  "_key": "!tables!WtjkuET7jtvwjp6H"
+}

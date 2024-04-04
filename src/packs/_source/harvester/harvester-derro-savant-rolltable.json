@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Derro Savant RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Derro Savant'.",
+  "results": [
+    {
+      "text": "Derro Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Derro Savant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8VZfti4aNkNbQJgc",
+          "brt-result-custom-name": "Derro Eye",
+          "brt-result-original-name": "Derro Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "8VZfti4aNkNbQJgc",
+      "_id": "dIW8rYcvlRN687NN",
+      "_key": "!tables.results!lfw6bENaBFsCzo8D.dIW8rYcvlRN687NN"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Derro Savant",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562717,
+    "modifiedTime": 1696756756100,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lfw6bENaBFsCzo8D",
+  "sort": 0,
+  "_key": "!tables!lfw6bENaBFsCzo8D"
+}

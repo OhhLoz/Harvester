@@ -1,0 +1,268 @@
+{
+  "name": "Better Harvester | Young Dragon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Young Dragon'.",
+  "results": [
+    {
+      "text": "Young Dragon Breath Pouch",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BZYE1ctmKc1TRQdW",
+          "brt-result-custom-name": "Young Dragon Breath Pouch",
+          "brt-result-original-name": "Young Dragon Breath Pouch",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "BZYE1ctmKc1TRQdW",
+      "_id": "j3xZY79VxCZd1YTy",
+      "_key": "!tables.results!OW3K3ju0Z94Wzkck.j3xZY79VxCZd1YTy"
+    },
+    {
+      "text": "Young Dragon Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CJxtfhwp26C5ucKm",
+          "brt-result-custom-name": "Young Dragon Wing",
+          "brt-result-original-name": "Young Dragon Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "CJxtfhwp26C5ucKm",
+      "_id": "pkGCYvJdyvQGkRHr",
+      "_key": "!tables.results!OW3K3ju0Z94Wzkck.pkGCYvJdyvQGkRHr"
+    },
+    {
+      "text": "Young Dragon Tooth (10x)",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PDgMbEQAbYV38WKu",
+          "brt-result-custom-name": "Young Dragon Tooth",
+          "brt-result-original-name": "Young Dragon Tooth (10x)",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "PDgMbEQAbYV38WKu",
+      "_id": "eBXlkr2t7pGgHJak",
+      "_key": "!tables.results!OW3K3ju0Z94Wzkck.eBXlkr2t7pGgHJak"
+    },
+    {
+      "text": "Young Dragon Scales",
+      "type": 2,
+      "img": "icons/commodities/leather/scales-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VNlcTjur6spnXoV2",
+          "brt-result-custom-name": "Young Dragon Scales",
+          "brt-result-original-name": "Young Dragon Scales",
+          "brt-result-original-icon": "icons/commodities/leather/scales-brown.webp"
+        }
+      },
+      "documentId": "VNlcTjur6spnXoV2",
+      "_id": "rmZlwfts2hzlcPcn",
+      "_key": "!tables.results!OW3K3ju0Z94Wzkck.rmZlwfts2hzlcPcn"
+    },
+    {
+      "text": "Young Dragon Bone (x6)",
+      "type": 2,
+      "img": "icons/commodities/bones/bones-stack-yellow.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.muX3buNRYt8OUYgu",
+          "brt-result-custom-name": "Young Dragon Bone",
+          "brt-result-original-name": "Young Dragon Bone (x6)",
+          "brt-result-original-icon": "icons/commodities/bones/bones-stack-yellow.webp"
+        }
+      },
+      "documentId": "muX3buNRYt8OUYgu",
+      "_id": "JO8mSpyaUnStzh7r",
+      "_key": "!tables.results!OW3K3ju0Z94Wzkck.JO8mSpyaUnStzh7r"
+    },
+    {
+      "text": "Young Dragon Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nr7kTeftFo6QcCel",
+          "brt-result-custom-name": "Young Dragon Blood vial",
+          "brt-result-original-name": "Young Dragon Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "nr7kTeftFo6QcCel",
+      "_id": "L2q00d3x4p2BHrfO",
+      "_key": "!tables.results!OW3K3ju0Z94Wzkck.L2q00d3x4p2BHrfO"
+    },
+    {
+      "text": "Young Dragon Horn",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.quJwxb6UldzzT0QG",
+          "brt-result-custom-name": "Young Dragon Horn",
+          "brt-result-original-name": "Young Dragon Horn",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "quJwxb6UldzzT0QG",
+      "_id": "hbYBOLnKawvJDESf",
+      "_key": "!tables.results!OW3K3ju0Z94Wzkck.hbYBOLnKawvJDESf"
+    },
+    {
+      "text": "Raw Dragon Meat",
+      "type": 2,
+      "img": "icons/consumables/meat/steak-raw-red-pink.webp",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.w55L8Q9SmQ99qSzk",
+          "brt-result-custom-name": "Raw Dragon Meat",
+          "brt-result-original-name": "Raw Dragon Meat",
+          "brt-result-original-icon": "icons/consumables/meat/steak-raw-red-pink.webp"
+        }
+      },
+      "documentId": "w55L8Q9SmQ99qSzk",
+      "_id": "KLPuu9iFTDhMG4Xg",
+      "_key": "!tables.results!OW3K3ju0Z94Wzkck.KLPuu9iFTDhMG4Xg"
+    }
+  ],
+  "formula": "1d8",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Young Dragon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 8
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563943,
+    "modifiedTime": 1696756762271,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "OW3K3ju0Z94Wzkck",
+  "sort": 0,
+  "_key": "!tables!OW3K3ju0Z94Wzkck"
+}

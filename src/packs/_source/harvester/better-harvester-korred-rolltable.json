@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Korred RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Korred'.",
+  "results": [
+    {
+      "text": "Korred Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Korred",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.89Yke0uZJDD4Gz2s",
+          "brt-result-custom-name": "Korred Hair",
+          "brt-result-original-name": "Korred Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "89Yke0uZJDD4Gz2s",
+      "_id": "y3faI8VJ54rsXKVB",
+      "_key": "!tables.results!86Sbwigc82vPMCU3.y3faI8VJ54rsXKVB"
+    },
+    {
+      "text": "Korred Hoof (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Korred",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.N9MffwEUOuf6RKhP",
+          "brt-result-custom-name": "Korred Hoof",
+          "brt-result-original-name": "Korred Hoof (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "N9MffwEUOuf6RKhP",
+      "_id": "XkAYKrkjzclNdQu3",
+      "_key": "!tables.results!86Sbwigc82vPMCU3.XkAYKrkjzclNdQu3"
+    },
+    {
+      "text": "Korred Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Korred",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RyJhKDDK2RxELXpH",
+          "brt-result-custom-name": "Korred Skin",
+          "brt-result-original-name": "Korred Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "RyJhKDDK2RxELXpH",
+      "_id": "eNWoXUzyDOXpBHqW",
+      "_key": "!tables.results!86Sbwigc82vPMCU3.eNWoXUzyDOXpBHqW"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Korred",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562610,
+    "modifiedTime": 1696756757161,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "86Sbwigc82vPMCU3",
+  "sort": 0,
+  "_key": "!tables!86Sbwigc82vPMCU3"
+}

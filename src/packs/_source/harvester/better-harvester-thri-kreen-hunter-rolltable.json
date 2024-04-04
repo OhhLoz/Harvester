@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Thri-kreen Hunter RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Thri-kreen Hunter'.",
+  "results": [
+    {
+      "text": "Thri-kreen Carapace",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Thri-kreen Hunter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MWNErDXPvmC9Cptd",
+          "brt-result-custom-name": "Thri-kreen Carapace",
+          "brt-result-original-name": "Thri-kreen Carapace",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "MWNErDXPvmC9Cptd",
+      "_id": "A8HpPvewgSlcJSRk",
+      "_key": "!tables.results!EaEhC4MWe1e5Bju6.A8HpPvewgSlcJSRk"
+    },
+    {
+      "text": "Thri-kreen Venom (1 vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Thri-kreen Hunter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RTYjCErmZTlO9Yft",
+          "brt-result-custom-name": "Thri-kreen Venom vial",
+          "brt-result-original-name": "Thri-kreen Venom (1 vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "RTYjCErmZTlO9Yft",
+      "_id": "GG88kL1c3gUGNFCc",
+      "_key": "!tables.results!EaEhC4MWe1e5Bju6.GG88kL1c3gUGNFCc"
+    },
+    {
+      "text": "Thri-kreen Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Thri-kreen Hunter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RwskvDZZoPpFbtid",
+          "brt-result-custom-name": "Thri-kreen Pineal Gland",
+          "brt-result-original-name": "Thri-kreen Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "RwskvDZZoPpFbtid",
+      "_id": "kkJqXeMG7gzYdY8a",
+      "_key": "!tables.results!EaEhC4MWe1e5Bju6.kkJqXeMG7gzYdY8a"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Thri-kreen Hunter",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567535,
+    "modifiedTime": 1696756761087,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "EaEhC4MWe1e5Bju6",
+  "sort": 0,
+  "_key": "!tables!EaEhC4MWe1e5Bju6"
+}

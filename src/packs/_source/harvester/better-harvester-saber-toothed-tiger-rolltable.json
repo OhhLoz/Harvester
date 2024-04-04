@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Saber-Toothed Tiger RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Saber-Toothed Tiger'.",
+  "results": [
+    {
+      "text": "Sabre-Toothed Tiger Tooth (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Saber-Toothed Tiger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Q25TQa7IgwsDEP3S",
+          "brt-result-custom-name": "Sabre-Toothed Tiger Tooth",
+          "brt-result-original-name": "Sabre-Toothed Tiger Tooth (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "Q25TQa7IgwsDEP3S",
+      "_id": "80w99DZhnaJrGp4Z",
+      "_key": "!tables.results!9jFPan6i5w5q5BYL.80w99DZhnaJrGp4Z"
+    },
+    {
+      "text": "Sabre-Toothed Tiger Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Saber-Toothed Tiger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Qi0oDFF7PjNnXVwX",
+          "brt-result-custom-name": "Sabre-Toothed Tiger Skin",
+          "brt-result-original-name": "Sabre-Toothed Tiger Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "Qi0oDFF7PjNnXVwX",
+      "_id": "EfIRy2fLzoA18a5z",
+      "_key": "!tables.results!9jFPan6i5w5q5BYL.EfIRy2fLzoA18a5z"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Saber-Toothed Tiger",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568588,
+    "modifiedTime": 1696756759143,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9jFPan6i5w5q5BYL",
+  "sort": 0,
+  "_key": "!tables!9jFPan6i5w5q5BYL"
+}

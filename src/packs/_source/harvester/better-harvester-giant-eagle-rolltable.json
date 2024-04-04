@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Giant Eagle RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Eagle'.",
+  "results": [
+    {
+      "text": "Giant Eagle Talons (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Eagle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZbZQEzUcnzHge6kb",
+          "brt-result-custom-name": "Giant Eagle Talons (pouch)",
+          "brt-result-original-name": "Giant Eagle Talons (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ZbZQEzUcnzHge6kb",
+      "_id": "RRtzJPKIu7Xgb0sx",
+      "_key": "!tables.results!47kxutdfX1WcG9NP.RRtzJPKIu7Xgb0sx"
+    },
+    {
+      "text": "Giant Eagle Feathers (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Eagle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zUtjKU9zvQCcQxNU",
+          "brt-result-custom-name": "Giant Eagle Feathers (large pouch)",
+          "brt-result-original-name": "Giant Eagle Feathers (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "zUtjKU9zvQCcQxNU",
+      "_id": "Rfy2rJxTIYUlIdSG",
+      "_key": "!tables.results!47kxutdfX1WcG9NP.Rfy2rJxTIYUlIdSG"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Eagle",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756574411,
+    "modifiedTime": 1696756756338,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "47kxutdfX1WcG9NP",
+  "sort": 0,
+  "_key": "!tables!47kxutdfX1WcG9NP"
+}

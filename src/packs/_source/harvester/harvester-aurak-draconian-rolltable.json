@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Aurak Draconian RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Aurak Draconian'.",
+  "results": [
+    {
+      "text": "Draconian Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aurak Draconian",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9VIf9GGhpjJzyoVO",
+          "brt-result-custom-name": "Draconian Blood vial",
+          "brt-result-original-name": "Draconian Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "9VIf9GGhpjJzyoVO",
+      "_id": "tKUByyvC6xv3uCLT",
+      "_key": "!tables.results!psJNS8kTyuAOrJ64.tKUByyvC6xv3uCLT"
+    },
+    {
+      "text": "Draconian Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aurak Draconian",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Fb1uadjqpZTNoK8m",
+          "brt-result-custom-name": "Draconian Tail",
+          "brt-result-original-name": "Draconian Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "Fb1uadjqpZTNoK8m",
+      "_id": "zRl8CA1smimfLwhS",
+      "_key": "!tables.results!psJNS8kTyuAOrJ64.zRl8CA1smimfLwhS"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Aurak Draconian",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563120,
+    "modifiedTime": 1696756755909,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "psJNS8kTyuAOrJ64",
+  "sort": 0,
+  "_key": "!tables!psJNS8kTyuAOrJ64"
+}

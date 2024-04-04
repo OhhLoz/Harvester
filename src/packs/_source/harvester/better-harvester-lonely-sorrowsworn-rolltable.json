@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Lonely Sorrowsworn RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Lonely Sorrowsworn'.",
+  "results": [
+    {
+      "text": "Sorrowsworn Saliva (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Lonely Sorrowsworn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QhrDMS5Hx2tWr491",
+          "brt-result-custom-name": "Sorrowsworn Saliva (vial)",
+          "brt-result-original-name": "Sorrowsworn Saliva (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "QhrDMS5Hx2tWr491",
+      "_id": "yTnfdOFXiafnFVeg",
+      "_key": "!tables.results!KtpyeTAFGylOri3s.yTnfdOFXiafnFVeg"
+    },
+    {
+      "text": "Lost Sorrowsworn Harpoon (x2)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Lonely Sorrowsworn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ReP4T1ap79cLUcLA",
+          "brt-result-custom-name": "Lost Sorrowsworn Harpoon",
+          "brt-result-original-name": "Lost Sorrowsworn Harpoon (x2)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "ReP4T1ap79cLUcLA",
+      "_id": "Tvzhapf4Omo1ORm4",
+      "_key": "!tables.results!KtpyeTAFGylOri3s.Tvzhapf4Omo1ORm4"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Lonely Sorrowsworn",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568801,
+    "modifiedTime": 1696756757628,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "KtpyeTAFGylOri3s",
+  "sort": 0,
+  "_key": "!tables!KtpyeTAFGylOri3s"
+}

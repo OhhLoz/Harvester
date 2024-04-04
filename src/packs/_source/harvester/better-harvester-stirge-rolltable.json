@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Stirge RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Stirge'.",
+  "results": [
+    {
+      "text": "Stirge Needle",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-spiked-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Stirge",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fti4Ho9ADre3BWsd",
+          "brt-result-custom-name": "Stirge Needle",
+          "brt-result-original-name": "Stirge Needle",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-spiked-brown.webp"
+        }
+      },
+      "documentId": "fti4Ho9ADre3BWsd",
+      "_id": "joO4XerP1Z0NVNUg",
+      "_key": "!tables.results!vXvMmYux4Tdr2XMA.joO4XerP1Z0NVNUg"
+    },
+    {
+      "text": "Stirge Stomach Acid (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Stirge",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qglGNOhQH68bc2ek",
+          "brt-result-custom-name": "Stirge Stomach Acid (vial)",
+          "brt-result-original-name": "Stirge Stomach Acid (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "qglGNOhQH68bc2ek",
+      "_id": "fnmNLbpNBjHdjVnv",
+      "_key": "!tables.results!vXvMmYux4Tdr2XMA.fnmNLbpNBjHdjVnv"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Stirge",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756579232,
+    "modifiedTime": 1696756760001,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "vXvMmYux4Tdr2XMA",
+  "sort": 0,
+  "_key": "!tables!vXvMmYux4Tdr2XMA"
+}

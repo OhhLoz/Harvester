@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Owlbear RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Owlbear'.",
+  "results": [
+    {
+      "text": "Owlbear Liver",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-liver-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Owlbear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PsaqKDMg0Drwt2wN",
+          "brt-result-custom-name": "Owlbear Liver",
+          "brt-result-original-name": "Owlbear Liver",
+          "brt-result-original-icon": "icons/commodities/biological/organ-liver-red.webp"
+        }
+      },
+      "documentId": "PsaqKDMg0Drwt2wN",
+      "_id": "oACB34MeB0WZ5CBe",
+      "_key": "!tables.results!fb6T6AToKhQfBtG4.oACB34MeB0WZ5CBe"
+    },
+    {
+      "text": "Owlbear Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Owlbear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RxbH36tSXCjBQNXU",
+          "brt-result-custom-name": "Owlbear Claws (pouch)",
+          "brt-result-original-name": "Owlbear Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "RxbH36tSXCjBQNXU",
+      "_id": "yvd5wcWUmYtRLTQj",
+      "_key": "!tables.results!fb6T6AToKhQfBtG4.yvd5wcWUmYtRLTQj"
+    },
+    {
+      "text": "Owlbear Feathers (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Owlbear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ivPt9Fc19DgLhbrU",
+          "brt-result-custom-name": "Owlbear Feathers (large pouch)",
+          "brt-result-original-name": "Owlbear Feathers (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ivPt9Fc19DgLhbrU",
+      "_id": "Ia6rKTvAhjFkLYj9",
+      "_key": "!tables.results!fb6T6AToKhQfBtG4.Ia6rKTvAhjFkLYj9"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Owlbear",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568459,
+    "modifiedTime": 1696756758347,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fb6T6AToKhQfBtG4",
+  "sort": 0,
+  "_key": "!tables!fb6T6AToKhQfBtG4"
+}

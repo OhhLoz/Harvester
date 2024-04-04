@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Night Hag RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Night Hag'.",
+  "results": [
+    {
+      "text": "Night Hag's Eyeball",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Night Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0u23GBUg8JEFiar2",
+          "brt-result-custom-name": "Night Hag's Eyeball",
+          "brt-result-original-name": "Night Hag's Eyeball",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "0u23GBUg8JEFiar2",
+      "_id": "bG9Q3QwInZdWk0Gj",
+      "_key": "!tables.results!j7QDJs1gtI50hkYJ.bG9Q3QwInZdWk0Gj"
+    },
+    {
+      "text": "Night Hag's Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Night Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7l3BagXuAxi7vZBy",
+          "brt-result-custom-name": "Night Hag's Blood vial",
+          "brt-result-original-name": "Night Hag's Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "7l3BagXuAxi7vZBy",
+      "_id": "PV3EKGrPIR0xD0NM",
+      "_key": "!tables.results!j7QDJs1gtI50hkYJ.PV3EKGrPIR0xD0NM"
+    },
+    {
+      "text": "Night Hag's Nails (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Night Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UtHs1FvuQWAwJ02v",
+          "brt-result-custom-name": "Night Hag's Nails (pouch)",
+          "brt-result-original-name": "Night Hag's Nails (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "UtHs1FvuQWAwJ02v",
+      "_id": "ccVyLorzISRUmCIp",
+      "_key": "!tables.results!j7QDJs1gtI50hkYJ.ccVyLorzISRUmCIp"
+    },
+    {
+      "text": "Night Hag's Hair (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Night Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lR53HKqS68ypqPsl",
+          "brt-result-custom-name": "Night Hag's Hair (small pouch)",
+          "brt-result-original-name": "Night Hag's Hair (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "lR53HKqS68ypqPsl",
+      "_id": "0gZbyfKiO1kfYKVE",
+      "_key": "!tables.results!j7QDJs1gtI50hkYJ.0gZbyfKiO1kfYKVE"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Night Hag",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560479,
+    "modifiedTime": 1696756758294,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "j7QDJs1gtI50hkYJ",
+  "sort": 0,
+  "_key": "!tables!j7QDJs1gtI50hkYJ"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Oaken Bolter RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Oaken Bolter'.",
+  "results": [
+    {
+      "text": "Clockwork Oil (flask)",
+      "type": 2,
+      "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Oaken Bolter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TgUbQKMci1ok5swb",
+          "brt-result-custom-name": "Clockwork Oil (flask)",
+          "brt-result-original-name": "Clockwork Oil (flask)",
+          "brt-result-original-icon": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp"
+        }
+      },
+      "documentId": "TgUbQKMci1ok5swb",
+      "_id": "vIOD35rC3rjKbk1v",
+      "_key": "!tables.results!iRl4itjZvK4MyzRM.vIOD35rC3rjKbk1v"
+    },
+    {
+      "text": "Clockwork Gears and Scrap Metal",
+      "type": 2,
+      "img": "icons/commodities/metal/barstock-broken-steel.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Oaken Bolter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.suNgmmMLfgm2sTs7",
+          "brt-result-custom-name": "Clockwork Gears and Scrap Metal",
+          "brt-result-original-name": "Clockwork Gears and Scrap Metal",
+          "brt-result-original-icon": "icons/commodities/metal/barstock-broken-steel.webp"
+        }
+      },
+      "documentId": "suNgmmMLfgm2sTs7",
+      "_id": "nw8GSPN63xKmBbeo",
+      "_key": "!tables.results!iRl4itjZvK4MyzRM.nw8GSPN63xKmBbeo"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Oaken Bolter",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569693,
+    "modifiedTime": 1696756758308,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "iRl4itjZvK4MyzRM",
+  "sort": 0,
+  "_key": "!tables!iRl4itjZvK4MyzRM"
+}

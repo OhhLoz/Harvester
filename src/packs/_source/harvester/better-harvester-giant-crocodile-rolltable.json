@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Giant Crocodile RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Crocodile'.",
+  "results": [
+    {
+      "text": "Giant Crocodile Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Crocodile",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZOIKk1Reh4F7IpNc",
+          "brt-result-custom-name": "Giant Crocodile Skin",
+          "brt-result-original-name": "Giant Crocodile Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "ZOIKk1Reh4F7IpNc",
+      "_id": "rWDgNGnlHZqljfho",
+      "_key": "!tables.results!9gTVSbMk7LIzM34p.rWDgNGnlHZqljfho"
+    },
+    {
+      "text": "Giant Crocodile Teeth",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-jaw-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Crocodile",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.abEOdEp11cOD3lhi",
+          "brt-result-custom-name": "Giant Crocodile Teeth",
+          "brt-result-original-name": "Giant Crocodile Teeth",
+          "brt-result-original-icon": "icons/commodities/bones/bone-jaw-white.webp"
+        }
+      },
+      "documentId": "abEOdEp11cOD3lhi",
+      "_id": "vIZjMgiBcgJ8a2ae",
+      "_key": "!tables.results!9gTVSbMk7LIzM34p.vIZjMgiBcgJ8a2ae"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Crocodile",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756574132,
+    "modifiedTime": 1696756756335,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9gTVSbMk7LIzM34p",
+  "sort": 0,
+  "_key": "!tables!9gTVSbMk7LIzM34p"
+}

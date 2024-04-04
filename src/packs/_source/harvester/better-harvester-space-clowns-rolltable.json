@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Space Clowns RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Space Clowns'.",
+  "results": [
+    {
+      "text": "Space Clown Ichor (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Space Clowns",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wirE57FYQaw3H9PB",
+          "brt-result-custom-name": "Space Clown Ichor vial",
+          "brt-result-original-name": "Space Clown Ichor (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "wirE57FYQaw3H9PB",
+      "_id": "MTAZlsrbgZzSs7Yp",
+      "_key": "!tables.results!l7ynbLHxwZTW1RdD.MTAZlsrbgZzSs7Yp"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Space Clowns",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756588796,
+    "modifiedTime": 1696756759965,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "l7ynbLHxwZTW1RdD",
+  "sort": 0,
+  "_key": "!tables!l7ynbLHxwZTW1RdD"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Black Abishai RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Black Abishai'.",
+  "results": [
+    {
+      "text": "Black Abishai Scales",
+      "type": 2,
+      "img": "icons/commodities/leather/scales-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Black Abishai",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0nIMR0ukDhk0ta04",
+          "brt-result-custom-name": "Black Abishai Scales",
+          "brt-result-original-name": "Black Abishai Scales",
+          "brt-result-original-icon": "icons/commodities/leather/scales-brown.webp"
+        }
+      },
+      "documentId": "0nIMR0ukDhk0ta04",
+      "_id": "AjnidJAL21q5OW3R",
+      "_key": "!tables.results!3KkfeEDowvJl9lpv.AjnidJAL21q5OW3R"
+    },
+    {
+      "text": "Black Abishai Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Black Abishai",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bzJQfu5wxYro91YT",
+          "brt-result-custom-name": "Black Abishai Wing",
+          "brt-result-original-name": "Black Abishai Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "bzJQfu5wxYro91YT",
+      "_id": "Ik6YEVAughHk6XfQ",
+      "_key": "!tables.results!3KkfeEDowvJl9lpv.Ik6YEVAughHk6XfQ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Black Abishai",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560436,
+    "modifiedTime": 1696756755959,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3KkfeEDowvJl9lpv",
+  "sort": 0,
+  "_key": "!tables!3KkfeEDowvJl9lpv"
+}

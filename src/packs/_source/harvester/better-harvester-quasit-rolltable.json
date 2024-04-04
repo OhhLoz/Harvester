@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Quasit RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Quasit'.",
+  "results": [
+    {
+      "text": "Quasit Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Quasit",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3WdQ1WEg2P7P3M4K",
+          "brt-result-custom-name": "Quasit Venom (vial)",
+          "brt-result-original-name": "Quasit Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "3WdQ1WEg2P7P3M4K",
+      "_id": "x2ff7FzJ7E8jOFfR",
+      "_key": "!tables.results!w1QsCUD3YX7yl0WN.x2ff7FzJ7E8jOFfR"
+    },
+    {
+      "text": "Quasit Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Quasit",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.pAV45rCmnaKDx12T",
+          "brt-result-custom-name": "Quasit Blood (vial)",
+          "brt-result-original-name": "Quasit Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "pAV45rCmnaKDx12T",
+      "_id": "Y6wRy1JXMmWl5nDh",
+      "_key": "!tables.results!w1QsCUD3YX7yl0WN.Y6wRy1JXMmWl5nDh"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Quasit",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561267,
+    "modifiedTime": 1696756759108,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "w1QsCUD3YX7yl0WN",
+  "sort": 0,
+  "_key": "!tables!w1QsCUD3YX7yl0WN"
+}

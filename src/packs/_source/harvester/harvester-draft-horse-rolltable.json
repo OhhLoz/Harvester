@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Draft Horse RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Draft Horse'.",
+  "results": [
+    {
+      "text": "Horse Hoof (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Draft Horse",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AJ5KBnEXnjIrfHha",
+          "brt-result-custom-name": "Horse Hoof",
+          "brt-result-original-name": "Horse Hoof (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "AJ5KBnEXnjIrfHha",
+      "_id": "iMf8Z04XzP0Ndq9g",
+      "_key": "!tables.results!5Xk5kCasUSpD3E9G.iMf8Z04XzP0Ndq9g"
+    },
+    {
+      "text": "Horse Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Draft Horse",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BG84rYeWWezbdM2k",
+          "brt-result-custom-name": "Horse Hide",
+          "brt-result-original-name": "Horse Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "BG84rYeWWezbdM2k",
+      "_id": "OjUYhIzbzNQ3BI3S",
+      "_key": "!tables.results!5Xk5kCasUSpD3E9G.OjUYhIzbzNQ3BI3S"
+    },
+    {
+      "text": "Horse Mane/Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Draft Horse",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ENyuI52y5hxNqEoC",
+          "brt-result-custom-name": "Horse Mane/Tail",
+          "brt-result-original-name": "Horse Mane/Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "ENyuI52y5hxNqEoC",
+      "_id": "Bzk21t3iGZOcAzyD",
+      "_key": "!tables.results!5Xk5kCasUSpD3E9G.Bzk21t3iGZOcAzyD"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Draft Horse",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563387,
+    "modifiedTime": 1696756756134,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "5Xk5kCasUSpD3E9G",
+  "sort": 0,
+  "_key": "!tables!5Xk5kCasUSpD3E9G"
+}

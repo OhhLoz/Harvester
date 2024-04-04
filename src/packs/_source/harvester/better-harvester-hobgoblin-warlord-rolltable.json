@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Hobgoblin Warlord RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hobgoblin Warlord'.",
+  "results": [
+    {
+      "text": "Hobgoblin War Braid",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hobgoblin Warlord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7zW2GB8w3EGBGI1k",
+          "brt-result-custom-name": "Hobgoblin War Braid",
+          "brt-result-original-name": "Hobgoblin War Braid",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "7zW2GB8w3EGBGI1k",
+      "_id": "sGtRZTIrma6cbEle",
+      "_key": "!tables.results!S10xgi49UYg3TXKd.sGtRZTIrma6cbEle"
+    },
+    {
+      "text": "Mark of Maglubiyet",
+      "type": 2,
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hobgoblin Warlord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.d8pRUcOqVRTENbFU",
+          "brt-result-custom-name": "Mark of Maglubiyet",
+          "brt-result-original-name": "Mark of Maglubiyet",
+          "brt-result-original-icon": "icons/magic/symbols/rune-sigil-black-pink.webp"
+        }
+      },
+      "documentId": "d8pRUcOqVRTENbFU",
+      "_id": "xzx5e3PFmS3B7Qwr",
+      "_key": "!tables.results!S10xgi49UYg3TXKd.xzx5e3PFmS3B7Qwr"
+    },
+    {
+      "text": "Hobgoblin Ear",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hobgoblin Warlord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jBhbwpQjAWhwYOMS",
+          "brt-result-custom-name": "Hobgoblin Ear",
+          "brt-result-original-name": "Hobgoblin Ear",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "jBhbwpQjAWhwYOMS",
+      "_id": "4lJWgKFsAgzfCjqd",
+      "_key": "!tables.results!S10xgi49UYg3TXKd.4lJWgKFsAgzfCjqd"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Hobgoblin Warlord",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562568,
+    "modifiedTime": 1696756757108,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "S10xgi49UYg3TXKd",
+  "sort": 0,
+  "_key": "!tables!S10xgi49UYg3TXKd"
+}

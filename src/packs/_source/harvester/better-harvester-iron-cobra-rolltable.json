@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Iron Cobra RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Iron Cobra'.",
+  "results": [
+    {
+      "text": "Clockwork Oil (flask)",
+      "type": 2,
+      "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Iron Cobra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RiNGLUD725ZxK8l2",
+          "brt-result-custom-name": "Clockwork Oil (flask)",
+          "brt-result-original-name": "Clockwork Oil (flask)",
+          "brt-result-original-icon": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp"
+        }
+      },
+      "documentId": "RiNGLUD725ZxK8l2",
+      "_id": "jRNvOEjtOcSb7NlO",
+      "_key": "!tables.results!Yu4fI4ASkmlGHwgs.jRNvOEjtOcSb7NlO"
+    },
+    {
+      "text": "Clockwork Gears and Scrap Metal",
+      "type": 2,
+      "img": "icons/commodities/metal/barstock-broken-steel.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Iron Cobra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kmGGi0ZNQ6bVLDso",
+          "brt-result-custom-name": "Clockwork Gears and Scrap Metal",
+          "brt-result-original-name": "Clockwork Gears and Scrap Metal",
+          "brt-result-original-icon": "icons/commodities/metal/barstock-broken-steel.webp"
+        }
+      },
+      "documentId": "kmGGi0ZNQ6bVLDso",
+      "_id": "tWL7dB8J69WK6kSb",
+      "_key": "!tables.results!Yu4fI4ASkmlGHwgs.tWL7dB8J69WK6kSb"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Iron Cobra",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569118,
+    "modifiedTime": 1696756757138,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Yu4fI4ASkmlGHwgs",
+  "sort": 0,
+  "_key": "!tables!Yu4fI4ASkmlGHwgs"
+}

@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Chuul RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Chuul'.",
+  "results": [
+    {
+      "text": "Chuul's Parietal Lobe",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Chuul",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BK8AdEfOEZgbNkOt",
+          "brt-result-custom-name": "Chuul's Parietal Lobe",
+          "brt-result-original-name": "Chuul's Parietal Lobe",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "BK8AdEfOEZgbNkOt",
+      "_id": "MMti4mcZbAJkokxF",
+      "_key": "!tables.results!Sj8hWW9fpOUYQ7Zu.MMti4mcZbAJkokxF"
+    },
+    {
+      "text": "Chuul Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Chuul",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XYgrCH9fHOMYVBvc",
+          "brt-result-custom-name": "Chuul Venom (vial)",
+          "brt-result-original-name": "Chuul Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "XYgrCH9fHOMYVBvc",
+      "_id": "urAvm9nUsfS9sLSL",
+      "_key": "!tables.results!Sj8hWW9fpOUYQ7Zu.urAvm9nUsfS9sLSL"
+    },
+    {
+      "text": "Chuul Carapace",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Chuul",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cTSxpXv03PMvko2r",
+          "brt-result-custom-name": "Chuul Carapace",
+          "brt-result-original-name": "Chuul Carapace",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "cTSxpXv03PMvko2r",
+      "_id": "P2uxsicrcjfZry6C",
+      "_key": "!tables.results!Sj8hWW9fpOUYQ7Zu.P2uxsicrcjfZry6C"
+    },
+    {
+      "text": "Chuul Pincer (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/mouth-pincer-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Chuul",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yauEC7KU7O4FiPur",
+          "brt-result-custom-name": "Chuul Pincer",
+          "brt-result-original-name": "Chuul Pincer (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/mouth-pincer-brown.webp"
+        }
+      },
+      "documentId": "yauEC7KU7O4FiPur",
+      "_id": "S1K6j7PFIJPZvZ09",
+      "_key": "!tables.results!Sj8hWW9fpOUYQ7Zu.S1K6j7PFIJPZvZ09"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Chuul",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563875,
+    "modifiedTime": 1696756756042,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Sj8hWW9fpOUYQ7Zu",
+  "sort": 0,
+  "_key": "!tables!Sj8hWW9fpOUYQ7Zu"
+}

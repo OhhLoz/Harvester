@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Stegosaurus RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Stegosaurus'.",
+  "results": [
+    {
+      "text": "Stegosaurus Ridge (x4)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Stegosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BT5MurBLVf9kydFM",
+          "brt-result-custom-name": "Stegosaurus Ridge",
+          "brt-result-original-name": "Stegosaurus Ridge (x4)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "BT5MurBLVf9kydFM",
+      "_id": "zQQZIHLeanNUGqzL",
+      "_key": "!tables.results!knBTq33Smo2u3Fso.zQQZIHLeanNUGqzL"
+    },
+    {
+      "text": "Stegosaurus Tail Spike",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-spiked-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Stegosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hohNkSjt6FQNvQAK",
+          "brt-result-custom-name": "Stegosaurus Tail Spike",
+          "brt-result-original-name": "Stegosaurus Tail Spike",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-spiked-brown.webp"
+        }
+      },
+      "documentId": "hohNkSjt6FQNvQAK",
+      "_id": "DDScguFPJ844AtFg",
+      "_key": "!tables.results!knBTq33Smo2u3Fso.DDScguFPJ844AtFg"
+    },
+    {
+      "text": "Stegosaurus Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Stegosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iVsEmFBtF6ry2sog",
+          "brt-result-custom-name": "Stegosaurus Skin",
+          "brt-result-original-name": "Stegosaurus Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "iVsEmFBtF6ry2sog",
+      "_id": "G882SOMx4mPCImjE",
+      "_key": "!tables.results!knBTq33Smo2u3Fso.G882SOMx4mPCImjE"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Stegosaurus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563910,
+    "modifiedTime": 1696756759996,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "knBTq33Smo2u3Fso",
+  "sort": 0,
+  "_key": "!tables!knBTq33Smo2u3Fso"
+}

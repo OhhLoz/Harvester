@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Will-o'-Wisp RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Will-o'-Wisp'.",
+  "results": [
+    {
+      "text": "Will-o'-Wisp Essence",
+      "type": 2,
+      "img": "icons/commodities/materials/glass-orb-teal.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Will-o'-Wisp",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dFkUJMRokwOWXpa7",
+          "brt-result-custom-name": "Will-o'-Wisp Essence",
+          "brt-result-original-name": "Will-o'-Wisp Essence",
+          "brt-result-original-icon": "icons/commodities/materials/glass-orb-teal.webp"
+        }
+      },
+      "documentId": "dFkUJMRokwOWXpa7",
+      "_id": "TYX0E8AzvGIJEImy",
+      "_key": "!tables.results!zfZkmBB2ORAV6Ig1.TYX0E8AzvGIJEImy"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Will-o'-Wisp",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756577192,
+    "modifiedTime": 1696756761158,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "zfZkmBB2ORAV6Ig1",
+  "sort": 0,
+  "_key": "!tables!zfZkmBB2ORAV6Ig1"
+}

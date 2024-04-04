@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Marid RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Marid'.",
+  "results": [
+    {
+      "text": "Water Elemental Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Marid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Kbysv1HQveFpGGGd",
+          "brt-result-custom-name": "Water Elemental Essence (vial)",
+          "brt-result-original-name": "Water Elemental Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Kbysv1HQveFpGGGd",
+      "_id": "MK0thEZgiFDejbIC",
+      "_key": "!tables.results!jCY9bMGdpERaOAeg.MK0thEZgiFDejbIC"
+    },
+    {
+      "text": "Marid Foam (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Marid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QsCuZJtsvPvGkhRU",
+          "brt-result-custom-name": "Marid Foam (vial)",
+          "brt-result-original-name": "Marid Foam (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "QsCuZJtsvPvGkhRU",
+      "_id": "zhi91GoQtUCsxpcY",
+      "_key": "!tables.results!jCY9bMGdpERaOAeg.zhi91GoQtUCsxpcY"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Marid",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566915,
+    "modifiedTime": 1696756757640,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "jCY9bMGdpERaOAeg",
+  "sort": 0,
+  "_key": "!tables!jCY9bMGdpERaOAeg"
+}

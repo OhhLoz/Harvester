@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Orc Nurtured One of Yurtrus RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Orc Nurtured One of Yurtrus'.",
+  "results": [
+    {
+      "text": "Nurtured One of Yurtrus Puss (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc Nurtured One of Yurtrus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VpJ1JHIMnclABP5U",
+          "brt-result-custom-name": "Nurtured One of Yurtrus Puss (vial)",
+          "brt-result-original-name": "Nurtured One of Yurtrus Puss (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "VpJ1JHIMnclABP5U",
+      "_id": "A4c55NqHAZREMnox",
+      "_key": "!tables.results!If7z0KNAc8lsSsAm.A4c55NqHAZREMnox"
+    },
+    {
+      "text": "Orc Tusks",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc Nurtured One of Yurtrus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nKYao3E3N5twHMF0",
+          "brt-result-custom-name": "Orc Tusks",
+          "brt-result-original-name": "Orc Tusks",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "nKYao3E3N5twHMF0",
+      "_id": "TllDFcdrP8HffARg",
+      "_key": "!tables.results!If7z0KNAc8lsSsAm.TllDFcdrP8HffARg"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Orc Nurtured One of Yurtrus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756571245,
+    "modifiedTime": 1696756758333,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "If7z0KNAc8lsSsAm",
+  "sort": 0,
+  "_key": "!tables!If7z0KNAc8lsSsAm"
+}

@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Grung Wildling RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Grung Wildling'.",
+  "results": [
+    {
+      "text": "Grung Poison Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Grung Wildling",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WRrYyG4GOT9MQgK2",
+          "brt-result-custom-name": "Grung Poison Gland",
+          "brt-result-original-name": "Grung Poison Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "WRrYyG4GOT9MQgK2",
+      "_id": "hZfu8330nRBkFswm",
+      "_key": "!tables.results!nJs6DDNb3RMEihlS.hZfu8330nRBkFswm"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Grung Wildling",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756571615,
+    "modifiedTime": 1696756756735,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nJs6DDNb3RMEihlS",
+  "sort": 0,
+  "_key": "!tables!nJs6DDNb3RMEihlS"
+}

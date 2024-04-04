@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Ghost RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ghost'.",
+  "results": [
+    {
+      "text": "Spirit Shard",
+      "type": 2,
+      "img": "icons/commodities/gems/gem-shattered-blue.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ghost",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Dn8uYKlZ3jOzSafM",
+          "brt-result-custom-name": "Spirit Shard",
+          "brt-result-original-name": "Spirit Shard",
+          "brt-result-original-icon": "icons/commodities/gems/gem-shattered-blue.webp"
+        }
+      },
+      "documentId": "Dn8uYKlZ3jOzSafM",
+      "_id": "ZSENoifcJkMfWk49",
+      "_key": "!tables.results!12GW9QNrjCNoqg0D.ZSENoifcJkMfWk49"
+    },
+    {
+      "text": "Ghost Ectoplasm",
+      "type": 2,
+      "img": "icons/commodities/materials/liquid-blue.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ghost",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kZ7FeP6Ih66TGiYd",
+          "brt-result-custom-name": "Ghost Ectoplasm",
+          "brt-result-original-name": "Ghost Ectoplasm",
+          "brt-result-original-icon": "icons/commodities/materials/liquid-blue.webp"
+        }
+      },
+      "documentId": "kZ7FeP6Ih66TGiYd",
+      "_id": "UTeqXDmEQ3ZTGDib",
+      "_key": "!tables.results!12GW9QNrjCNoqg0D.UTeqXDmEQ3ZTGDib"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Ghost",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564887,
+    "modifiedTime": 1696756756323,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "12GW9QNrjCNoqg0D",
+  "sort": 0,
+  "_key": "!tables!12GW9QNrjCNoqg0D"
+}

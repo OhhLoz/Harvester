@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Scarecrow RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Scarecrow'.",
+  "results": [
+    {
+      "text": "Scarecrow Cloth",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Scarecrow",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.40I1UMx40VuVc2cK",
+          "brt-result-custom-name": "Scarecrow Cloth",
+          "brt-result-original-name": "Scarecrow Cloth",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "40I1UMx40VuVc2cK",
+      "_id": "SbC3aEnluXbRvhYm",
+      "_key": "!tables.results!tsxdTqbs0SEMd82J.SbC3aEnluXbRvhYm"
+    },
+    {
+      "text": "Scarecrow Stuffing (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Scarecrow",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AO7nwOFajrvjgrC8",
+          "brt-result-custom-name": "Scarecrow Stuffing (pouch)",
+          "brt-result-original-name": "Scarecrow Stuffing (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "AO7nwOFajrvjgrC8",
+      "_id": "GhR1Gz9SR2JtfYjU",
+      "_key": "!tables.results!tsxdTqbs0SEMd82J.GhR1Gz9SR2JtfYjU"
+    },
+    {
+      "text": "Scarecrow Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Scarecrow",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oRdNMn8m5Ox6smUR",
+          "brt-result-custom-name": "Scarecrow Essence (vial)",
+          "brt-result-original-name": "Scarecrow Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "oRdNMn8m5Ox6smUR",
+      "_id": "VW0NtjppbX96v7Hu",
+      "_key": "!tables.results!tsxdTqbs0SEMd82J.VW0NtjppbX96v7Hu"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Scarecrow",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561407,
+    "modifiedTime": 1696756759153,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tsxdTqbs0SEMd82J",
+  "sort": 0,
+  "_key": "!tables!tsxdTqbs0SEMd82J"
+}

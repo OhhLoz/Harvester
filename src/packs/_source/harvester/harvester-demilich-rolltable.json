@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Demilich RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Demilich'.",
+  "results": [
+    {
+      "text": "Soul Gem (Acererak disciple Demilich only)",
+      "type": 2,
+      "img": "icons/commodities/gems/gem-faceted-round-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Demilich",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1G3W8ILtPmnfPR47",
+          "brt-result-custom-name": "Soul Gem (Acererak disciple Demilich only)",
+          "brt-result-original-name": "Soul Gem (Acererak disciple Demilich only)",
+          "brt-result-original-icon": "icons/commodities/gems/gem-faceted-round-white.webp"
+        }
+      },
+      "documentId": "1G3W8ILtPmnfPR47",
+      "_id": "imwMLepyrZBUWYXB",
+      "_key": "!tables.results!ODZzPAQFhr48r4vm.imwMLepyrZBUWYXB"
+    },
+    {
+      "text": "Bone Dust (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Demilich",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7p3S24N4vCIlDywi",
+          "brt-result-custom-name": "Bone Dust (small pouch)",
+          "brt-result-original-name": "Bone Dust (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "7p3S24N4vCIlDywi",
+      "_id": "45UKB1WxVzSp5pJg",
+      "_key": "!tables.results!ODZzPAQFhr48r4vm.45UKB1WxVzSp5pJg"
+    },
+    {
+      "text": "Demilich Smoke (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Demilich",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WWLAiyjRgfr2UuIV",
+          "brt-result-custom-name": "Demilich Smoke (vial)",
+          "brt-result-original-name": "Demilich Smoke (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "WWLAiyjRgfr2UuIV",
+      "_id": "hqT8ElxFG2x8firA",
+      "_key": "!tables.results!ODZzPAQFhr48r4vm.hqT8ElxFG2x8firA"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Demilich",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560536,
+    "modifiedTime": 1696756756094,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ODZzPAQFhr48r4vm",
+  "sort": 0,
+  "_key": "!tables!ODZzPAQFhr48r4vm"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Winged Kobold RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Winged Kobold'.",
+  "results": [
+    {
+      "text": "Kobold's Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Winged Kobold",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tiSJZd0CQ4dAF7G2",
+          "brt-result-custom-name": "Kobold's Tail",
+          "brt-result-original-name": "Kobold's Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "tiSJZd0CQ4dAF7G2",
+      "_id": "vgz7ld9YuVne5VJS",
+      "_key": "!tables.results!7Z9w3YoYY1QKUpxF.vgz7ld9YuVne5VJS"
+    },
+    {
+      "text": "Kobold Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Winged Kobold",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.to1hz9OOcjmz3Wn5",
+          "brt-result-custom-name": "Kobold Wing",
+          "brt-result-original-name": "Kobold Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "to1hz9OOcjmz3Wn5",
+      "_id": "wMRJcpL9BWC4bNZ8",
+      "_key": "!tables.results!7Z9w3YoYY1QKUpxF.wMRJcpL9BWC4bNZ8"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Winged Kobold",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756586729,
+    "modifiedTime": 1696756762246,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "7Z9w3YoYY1QKUpxF",
+  "sort": 0,
+  "_key": "!tables!7Z9w3YoYY1QKUpxF"
+}

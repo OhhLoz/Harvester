@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Phase Spider RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Phase Spider'.",
+  "results": [
+    {
+      "text": "Phase Spider Venom (2 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Phase Spider",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Q3lPZ4fNPahT7fvh",
+          "brt-result-custom-name": "Phase Spider Venom vial",
+          "brt-result-original-name": "Phase Spider Venom (2 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Q3lPZ4fNPahT7fvh",
+      "_id": "TBPXDKvPbE6aoNEA",
+      "_key": "!tables.results!miSI8jena2mj90yG.TBPXDKvPbE6aoNEA"
+    },
+    {
+      "text": "Phase Spider Ethereal Spindle",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Phase Spider",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.p0bmrFaTR66o2gEL",
+          "brt-result-custom-name": "Phase Spider Ethereal Spindle",
+          "brt-result-original-name": "Phase Spider Ethereal Spindle",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "p0bmrFaTR66o2gEL",
+      "_id": "X7JRtCS0xwFk57Ek",
+      "_key": "!tables.results!miSI8jena2mj90yG.X7JRtCS0xwFk57Ek"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Phase Spider",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568614,
+    "modifiedTime": 1696756758355,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "miSI8jena2mj90yG",
+  "sort": 0,
+  "_key": "!tables!miSI8jena2mj90yG"
+}

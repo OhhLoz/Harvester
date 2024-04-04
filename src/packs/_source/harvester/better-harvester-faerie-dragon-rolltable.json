@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Faerie Dragon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Faerie Dragon'.",
+  "results": [
+    {
+      "text": "Faerie Dragon's Euphoric Breath",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Faerie Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DZFmlTVY5KeWWepX",
+          "brt-result-custom-name": "Faerie Dragon's Euphoric Breath",
+          "brt-result-original-name": "Faerie Dragon's Euphoric Breath",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "DZFmlTVY5KeWWepX",
+      "_id": "Crj0PitTjTGNbFJO",
+      "_key": "!tables.results!NgHogSYpToHop4Mi.Crj0PitTjTGNbFJO"
+    },
+    {
+      "text": "Faerie Dragon Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Faerie Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gWMPmRFRL699Ao6n",
+          "brt-result-custom-name": "Faerie Dragon Blood (vial)",
+          "brt-result-original-name": "Faerie Dragon Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "gWMPmRFRL699Ao6n",
+      "_id": "xqrTKLWHtWHEYfFM",
+      "_key": "!tables.results!NgHogSYpToHop4Mi.xqrTKLWHtWHEYfFM"
+    },
+    {
+      "text": "Faerie Dragon Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Faerie Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.upHJnWxnH4nkxWbL",
+          "brt-result-custom-name": "Faerie Dragon Wing",
+          "brt-result-original-name": "Faerie Dragon Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "upHJnWxnH4nkxWbL",
+      "_id": "UhDolla6hvjsOxlJ",
+      "_key": "!tables.results!NgHogSYpToHop4Mi.UhDolla6hvjsOxlJ"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Faerie Dragon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564829,
+    "modifiedTime": 1696756756219,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NgHogSYpToHop4Mi",
+  "sort": 0,
+  "_key": "!tables!NgHogSYpToHop4Mi"
+}

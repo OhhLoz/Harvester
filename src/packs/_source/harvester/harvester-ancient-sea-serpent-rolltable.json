@@ -1,0 +1,181 @@
+{
+  "name": "Better Harvester | Ancient Sea Serpent RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ancient Sea Serpent'.",
+  "results": [
+    {
+      "text": "Ancient Sea Serpent Teeth (2 sacks)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DwTISDi7tdQFH1PI",
+          "brt-result-custom-name": "Ancient Sea Serpent Teeth sack",
+          "brt-result-original-name": "Ancient Sea Serpent Teeth (2 sacks)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "DwTISDi7tdQFH1PI",
+      "_id": "PorYHTiIYsKPJSRF",
+      "_key": "!tables.results!4ZKF8bgLpReOjy1O.PorYHTiIYsKPJSRF"
+    },
+    {
+      "text": "Sea Serpent Blood (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IMW3lE8sc5yW83eV",
+          "brt-result-custom-name": "Sea Serpent Blood vial",
+          "brt-result-original-name": "Sea Serpent Blood (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "IMW3lE8sc5yW83eV",
+      "_id": "bwSKDY4yMfJb4fNK",
+      "_key": "!tables.results!4ZKF8bgLpReOjy1O.bwSKDY4yMfJb4fNK"
+    },
+    {
+      "text": "Sea Serpent Fins (x10)",
+      "type": 2,
+      "img": "icons/commodities/biological/fin-red-green.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PHxeqwMUBu8tztHu",
+          "brt-result-custom-name": "Sea Serpent Fin",
+          "brt-result-original-name": "Sea Serpent Fins (x10)",
+          "brt-result-original-icon": "icons/commodities/biological/fin-red-green.webp"
+        }
+      },
+      "documentId": "PHxeqwMUBu8tztHu",
+      "_id": "OTJIbqsMGtydHaAd",
+      "_key": "!tables.results!4ZKF8bgLpReOjy1O.OTJIbqsMGtydHaAd"
+    },
+    {
+      "text": "Ancient Sea Serpent Scales (3 sacks)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Zc9T02eksEZbPe9Z",
+          "brt-result-custom-name": "Ancient Sea Serpent Scale sack",
+          "brt-result-original-name": "Ancient Sea Serpent Scales (3 sacks)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "Zc9T02eksEZbPe9Z",
+      "_id": "GYvDyWNzH8Pufbdz",
+      "_key": "!tables.results!4ZKF8bgLpReOjy1O.GYvDyWNzH8Pufbdz"
+    },
+    {
+      "text": "Sea Serpent Blubber (x8)",
+      "type": 2,
+      "img": "icons/commodities/materials/slime-white.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "8"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ancient Sea Serpent",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gikR3Ua0E3AT3WF7",
+          "brt-result-custom-name": "Sea Serpent Blubber",
+          "brt-result-original-name": "Sea Serpent Blubber (x8)",
+          "brt-result-original-icon": "icons/commodities/materials/slime-white.webp"
+        }
+      },
+      "documentId": "gikR3Ua0E3AT3WF7",
+      "_id": "l0WQS0CNICbRguPI",
+      "_key": "!tables.results!4ZKF8bgLpReOjy1O.l0WQS0CNICbRguPI"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Ancient Sea Serpent",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564978,
+    "modifiedTime": 1696756755876,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "4ZKF8bgLpReOjy1O",
+  "sort": 0,
+  "_key": "!tables!4ZKF8bgLpReOjy1O"
+}

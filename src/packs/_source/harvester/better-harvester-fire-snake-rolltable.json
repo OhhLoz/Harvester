@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Fire Snake RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Fire Snake'.",
+  "results": [
+    {
+      "text": "Salamander Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Fire Snake",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.78hNEZMvDAL4CSgQ",
+          "brt-result-custom-name": "Salamander Blood vial",
+          "brt-result-original-name": "Salamander Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "78hNEZMvDAL4CSgQ",
+      "_id": "Kle2mwWO79OJHzUK",
+      "_key": "!tables.results!HKWB1RKuHhw817Zt.Kle2mwWO79OJHzUK"
+    },
+    {
+      "text": "Fire Snake Scales (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Fire Snake",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CTiuvWPqrUOpRGql",
+          "brt-result-custom-name": "Fire Snake Scales (small pouch)",
+          "brt-result-original-name": "Fire Snake Scales (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "CTiuvWPqrUOpRGql",
+      "_id": "dLV0aPJrkMHvHIzF",
+      "_key": "!tables.results!HKWB1RKuHhw817Zt.dLV0aPJrkMHvHIzF"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Fire Snake",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562275,
+    "modifiedTime": 1696756756231,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "HKWB1RKuHhw817Zt",
+  "sort": 0,
+  "_key": "!tables!HKWB1RKuHhw817Zt"
+}

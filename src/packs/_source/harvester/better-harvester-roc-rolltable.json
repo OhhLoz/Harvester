@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Roc RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Roc'.",
+  "results": [
+    {
+      "text": "Roc Feathers (5 large pouches)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Roc",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5PBFYIQrqHIOUXIY",
+          "brt-result-custom-name": "Roc Feathers large pouches",
+          "brt-result-original-name": "Roc Feathers (5 large pouches)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "5PBFYIQrqHIOUXIY",
+      "_id": "PLPhZQDZLHVSjCfp",
+      "_key": "!tables.results!kUQilXw8uY28BvKz.PLPhZQDZLHVSjCfp"
+    },
+    {
+      "text": "Roc Talon (x6)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-bird-pink.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Roc",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8yn2e02acPF3sjwY",
+          "brt-result-custom-name": "Roc Talon",
+          "brt-result-original-name": "Roc Talon (x6)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-bird-pink.webp"
+        }
+      },
+      "documentId": "8yn2e02acPF3sjwY",
+      "_id": "oBJr1Q3HZyg8KkL1",
+      "_key": "!tables.results!kUQilXw8uY28BvKz.oBJr1Q3HZyg8KkL1"
+    },
+    {
+      "text": "Roc Blood (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Roc",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ix8hkMgzqSKkZOLD",
+          "brt-result-custom-name": "Roc Blood vial",
+          "brt-result-original-name": "Roc Blood (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "ix8hkMgzqSKkZOLD",
+      "_id": "Bb5WL4UNnpwEp9Ae",
+      "_key": "!tables.results!kUQilXw8uY28BvKz.Bb5WL4UNnpwEp9Ae"
+    },
+    {
+      "text": "Roc Liver",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-liver-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Roc",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tiwWtPwijVVnKruZ",
+          "brt-result-custom-name": "Roc Liver",
+          "brt-result-original-name": "Roc Liver",
+          "brt-result-original-icon": "icons/commodities/biological/organ-liver-red.webp"
+        }
+      },
+      "documentId": "tiwWtPwijVVnKruZ",
+      "_id": "Lrt5RmwH7i1k6FgX",
+      "_key": "!tables.results!kUQilXw8uY28BvKz.Lrt5RmwH7i1k6FgX"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Roc",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561734,
+    "modifiedTime": 1696756759135,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "kUQilXw8uY28BvKz",
+  "sort": 0,
+  "_key": "!tables!kUQilXw8uY28BvKz"
+}

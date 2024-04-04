@@ -1,0 +1,181 @@
+{
+  "name": "Better Harvester | Pit Fiend RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Pit Fiend'.",
+  "results": [
+    {
+      "text": "Pit Fiend Claw (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Pit Fiend",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1rBA2ZTo9FFKHHNu",
+          "brt-result-custom-name": "Pit Fiend Claw",
+          "brt-result-original-name": "Pit Fiend Claw (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "1rBA2ZTo9FFKHHNu",
+      "_id": "1iwthRYkN0F9poC6",
+      "_key": "!tables.results!8vPYeIZlRNpIEe4L.1iwthRYkN0F9poC6"
+    },
+    {
+      "text": "Pit Fiend Venom (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Pit Fiend",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ADdthBsWf0KIZqa6",
+          "brt-result-custom-name": "Pit Fiend Venom vial",
+          "brt-result-original-name": "Pit Fiend Venom (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "ADdthBsWf0KIZqa6",
+      "_id": "FVSRCWgJfWBcXqwq",
+      "_key": "!tables.results!8vPYeIZlRNpIEe4L.FVSRCWgJfWBcXqwq"
+    },
+    {
+      "text": "Devil Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Pit Fiend",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.McxM7dg9R5OtXmMY",
+          "brt-result-custom-name": "Devil Wing",
+          "brt-result-original-name": "Devil Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "McxM7dg9R5OtXmMY",
+      "_id": "b75SLaOkoQD0q4oi",
+      "_key": "!tables.results!8vPYeIZlRNpIEe4L.b75SLaOkoQD0q4oi"
+    },
+    {
+      "text": "Pit Fiend Head",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Pit Fiend",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.YtN2uq8Jjchyrasx",
+          "brt-result-custom-name": "Pit Fiend Head",
+          "brt-result-original-name": "Pit Fiend Head",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "YtN2uq8Jjchyrasx",
+      "_id": "vx380h4fyGCRGJi3",
+      "_key": "!tables.results!8vPYeIZlRNpIEe4L.vx380h4fyGCRGJi3"
+    },
+    {
+      "text": "Pit Fiend Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Pit Fiend",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cdhbykuFQ1Xbrn6w",
+          "brt-result-custom-name": "Pit Fiend Blood vial",
+          "brt-result-original-name": "Pit Fiend Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "cdhbykuFQ1Xbrn6w",
+      "_id": "G4R0ME3UUaITpj8H",
+      "_key": "!tables.results!8vPYeIZlRNpIEe4L.G4R0ME3UUaITpj8H"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Pit Fiend",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560701,
+    "modifiedTime": 1696756759084,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8vPYeIZlRNpIEe4L",
+  "sort": 0,
+  "_key": "!tables!8vPYeIZlRNpIEe4L"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Astral Blight RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Astral Blight'.",
+  "results": [
+    {
+      "text": "Blight Seeds (x5)",
+      "type": 2,
+      "img": "icons/consumables/nuts/pistachios-nute-shell-green-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Astral Blight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3CYctzvgB0GEC7FK",
+          "brt-result-custom-name": "Blight Seeds",
+          "brt-result-original-name": "Blight Seeds (x5)",
+          "brt-result-original-icon": "icons/consumables/nuts/pistachios-nute-shell-green-white.webp"
+        }
+      },
+      "documentId": "3CYctzvgB0GEC7FK",
+      "_id": "DIQ3M7o1lgnGoOyj",
+      "_key": "!tables.results!XbuUp9SBRFmBwEof.DIQ3M7o1lgnGoOyj"
+    },
+    {
+      "text": "Blight Pollen (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Astral Blight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6ZnbRcqjOzbtLqrQ",
+          "brt-result-custom-name": "Blight Pollen (small pouch)",
+          "brt-result-original-name": "Blight Pollen (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "6ZnbRcqjOzbtLqrQ",
+      "_id": "yXlrd4JeZJzahvGr",
+      "_key": "!tables.results!XbuUp9SBRFmBwEof.yXlrd4JeZJzahvGr"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Astral Blight",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561109,
+    "modifiedTime": 1696756755905,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "XbuUp9SBRFmBwEof",
+  "sort": 0,
+  "_key": "!tables!XbuUp9SBRFmBwEof"
+}

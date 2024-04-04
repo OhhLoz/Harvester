@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Magmin RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Magmin'.",
+  "results": [
+    {
+      "text": "Magmin Igneous Rock",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Magmin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cWMCu322qiALv5bT",
+          "brt-result-custom-name": "Magmin Igneous Rock",
+          "brt-result-original-name": "Magmin Igneous Rock",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "cWMCu322qiALv5bT",
+      "_id": "WV0AfiuzgCEjKDQF",
+      "_key": "!tables.results!480RmKsIGzgXKjLu.WV0AfiuzgCEjKDQF"
+    },
+    {
+      "text": "Elemental Fire Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Magmin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rRVYrkkXVI4Uy7CF",
+          "brt-result-custom-name": "Elemental Fire Essence (vial)",
+          "brt-result-original-name": "Elemental Fire Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "rRVYrkkXVI4Uy7CF",
+      "_id": "VnjoiccuIoZO8sJx",
+      "_key": "!tables.results!480RmKsIGzgXKjLu.VnjoiccuIoZO8sJx"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Magmin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756576646,
+    "modifiedTime": 1696756757632,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "480RmKsIGzgXKjLu",
+  "sort": 0,
+  "_key": "!tables!480RmKsIGzgXKjLu"
+}

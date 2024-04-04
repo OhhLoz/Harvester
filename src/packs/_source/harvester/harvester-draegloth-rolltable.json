@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Draegloth RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Draegloth'.",
+  "results": [
+    {
+      "text": "Draegloth Claws (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Draegloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bqFx9wgRKl6T6QD0",
+          "brt-result-custom-name": "Draegloth Claw",
+          "brt-result-original-name": "Draegloth Claws (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "bqFx9wgRKl6T6QD0",
+      "_id": "62WequSHLMzRjrj1",
+      "_key": "!tables.results!eNAw1UoXU6ljNoZZ.62WequSHLMzRjrj1"
+    },
+    {
+      "text": "Draegloth Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Draegloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ddyp9pL0NeyodYPC",
+          "brt-result-custom-name": "Draegloth Heart",
+          "brt-result-original-name": "Draegloth Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "ddyp9pL0NeyodYPC",
+      "_id": "y7n7qFcTWW53aMo7",
+      "_key": "!tables.results!eNAw1UoXU6ljNoZZ.y7n7qFcTWW53aMo7"
+    },
+    {
+      "text": "Mark of Lolth",
+      "type": 2,
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Draegloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nLDUhMNofzcwaM3H",
+          "brt-result-custom-name": "Mark of Lolth",
+          "brt-result-original-name": "Mark of Lolth",
+          "brt-result-original-icon": "icons/magic/symbols/rune-sigil-black-pink.webp"
+        }
+      },
+      "documentId": "nLDUhMNofzcwaM3H",
+      "_id": "N3DIdqQNZgRKIrQD",
+      "_key": "!tables.results!eNAw1UoXU6ljNoZZ.N3DIdqQNZgRKIrQD"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Draegloth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756576115,
+    "modifiedTime": 1696756756132,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "eNAw1UoXU6ljNoZZ",
+  "sort": 0,
+  "_key": "!tables!eNAw1UoXU6ljNoZZ"
+}

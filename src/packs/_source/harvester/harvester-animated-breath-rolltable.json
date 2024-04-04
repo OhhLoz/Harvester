@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Animated Breath RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Animated Breath'.",
+  "results": [
+    {
+      "text": "Dragon Breath (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Animated Breath",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EYg4jKKIZdGBwEoC",
+          "brt-result-custom-name": "Dragon Breath (vial)",
+          "brt-result-original-name": "Dragon Breath (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "EYg4jKKIZdGBwEoC",
+      "_id": "S5edwC13PHCcqQBW",
+      "_key": "!tables.results!NJP1bH8zO1pxISAr.S5edwC13PHCcqQBW"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Animated Breath",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565079,
+    "modifiedTime": 1696756755888,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NJP1bH8zO1pxISAr",
+  "sort": 0,
+  "_key": "!tables!NJP1bH8zO1pxISAr"
+}

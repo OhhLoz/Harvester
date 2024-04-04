@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Swarm of Poisonous Snakes RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Swarm of Poisonous Snakes'.",
+  "results": [
+    {
+      "text": "Poisonous Snake Skins (1d8)",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1d8"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Swarm of Poisonous Snakes",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TFgNUDMK1GnYuV7i",
+          "brt-result-custom-name": "Poisonous Snake Skins d",
+          "brt-result-original-name": "Poisonous Snake Skins (1d8)",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "TFgNUDMK1GnYuV7i",
+      "_id": "aFOjoo7cfIjbG4Ln",
+      "_key": "!tables.results!QrojZZdxFi6NhDtg.aFOjoo7cfIjbG4Ln"
+    },
+    {
+      "text": "Poisonous Snake Venom (1d8 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1d8"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Swarm of Poisonous Snakes",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.f0nQJG8SCIkCanUp",
+          "brt-result-custom-name": "Poisonous Snake Venom d vial",
+          "brt-result-original-name": "Poisonous Snake Venom (1d8 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "f0nQJG8SCIkCanUp",
+      "_id": "8udKLEem4epY6IVR",
+      "_key": "!tables.results!QrojZZdxFi6NhDtg.8udKLEem4epY6IVR"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Swarm of Poisonous Snakes",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569471,
+    "modifiedTime": 1696756760036,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "QrojZZdxFi6NhDtg",
+  "sort": 0,
+  "_key": "!tables!QrojZZdxFi6NhDtg"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Succubus RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Succubus'.",
+  "results": [
+    {
+      "text": "Succubus/Incubus Saliva",
+      "type": 2,
+      "img": "icons/commodities/materials/liquid-green.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Succubus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.98GbPI9Qkd57l4lV",
+          "brt-result-custom-name": "Succubus/Incubus Saliva",
+          "brt-result-original-name": "Succubus/Incubus Saliva",
+          "brt-result-original-icon": "icons/commodities/materials/liquid-green.webp"
+        }
+      },
+      "documentId": "98GbPI9Qkd57l4lV",
+      "_id": "RwVOTWCbhlp98UzO",
+      "_key": "!tables.results!PBOoveOFHyTecR7m.RwVOTWCbhlp98UzO"
+    },
+    {
+      "text": "Succubus/Incubus Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Succubus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BWb5P1QnYsFM7jRm",
+          "brt-result-custom-name": "Succubus/Incubus Horn",
+          "brt-result-original-name": "Succubus/Incubus Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "BWb5P1QnYsFM7jRm",
+      "_id": "N7jVwfCosLH24AUh",
+      "_key": "!tables.results!PBOoveOFHyTecR7m.N7jVwfCosLH24AUh"
+    },
+    {
+      "text": "Succubus/Incubus Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Succubus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Hzfb7PDYnkmEz3hQ",
+          "brt-result-custom-name": "Succubus/Incubus Blood vial",
+          "brt-result-original-name": "Succubus/Incubus Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Hzfb7PDYnkmEz3hQ",
+      "_id": "zFeXKg5UMiImIJ7U",
+      "_key": "!tables.results!PBOoveOFHyTecR7m.zFeXKg5UMiImIJ7U"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Succubus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562939,
+    "modifiedTime": 1696756760026,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "PBOoveOFHyTecR7m",
+  "sort": 0,
+  "_key": "!tables!PBOoveOFHyTecR7m"
+}

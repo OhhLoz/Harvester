@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Gray Slaad RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gray Slaad'.",
+  "results": [
+    {
+      "text": "Gray Slaad Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gray Slaad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1b4FYPxnOSz5Oh76",
+          "brt-result-custom-name": "Gray Slaad Hide",
+          "brt-result-original-name": "Gray Slaad Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "1b4FYPxnOSz5Oh76",
+      "_id": "HqZ8iXECREBv5wIa",
+      "_key": "!tables.results!tYOlpSSYNGb90WWK.HqZ8iXECREBv5wIa"
+    },
+    {
+      "text": "Slaad Slime (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gray Slaad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.sc603OskK9G9QErb",
+          "brt-result-custom-name": "Slaad Slime (vial)",
+          "brt-result-original-name": "Slaad Slime (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "sc603OskK9G9QErb",
+      "_id": "hYg6lf1HlaU5D78n",
+      "_key": "!tables.results!tYOlpSSYNGb90WWK.hYg6lf1HlaU5D78n"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Gray Slaad",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560612,
+    "modifiedTime": 1696756756719,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tYOlpSSYNGb90WWK",
+  "sort": 0,
+  "_key": "!tables!tYOlpSSYNGb90WWK"
+}

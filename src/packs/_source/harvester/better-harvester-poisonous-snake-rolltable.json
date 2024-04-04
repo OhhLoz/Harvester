@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Poisonous Snake RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Poisonous Snake'.",
+  "results": [
+    {
+      "text": "Poisonous Snake Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Poisonous Snake",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9UdbAT7dCuOb7jwG",
+          "brt-result-custom-name": "Poisonous Snake Venom (vial)",
+          "brt-result-original-name": "Poisonous Snake Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "9UdbAT7dCuOb7jwG",
+      "_id": "spJHM7GfeE2cNg3G",
+      "_key": "!tables.results!t8XLyzDGB88ijptI.spJHM7GfeE2cNg3G"
+    },
+    {
+      "text": "Poisonous Snake Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Poisonous Snake",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Ct4pvGNUMdj2WDLz",
+          "brt-result-custom-name": "Poisonous Snake Skin",
+          "brt-result-original-name": "Poisonous Snake Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "Ct4pvGNUMdj2WDLz",
+      "_id": "LpH8TkJ3fHnQyjlK",
+      "_key": "!tables.results!t8XLyzDGB88ijptI.LpH8TkJ3fHnQyjlK"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Poisonous Snake",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563104,
+    "modifiedTime": 1696756759094,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "t8XLyzDGB88ijptI",
+  "sort": 0,
+  "_key": "!tables!t8XLyzDGB88ijptI"
+}

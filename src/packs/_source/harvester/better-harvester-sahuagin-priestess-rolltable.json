@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Sahuagin Priestess RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Sahuagin Priestess'.",
+  "results": [
+    {
+      "text": "Sahuagin Egg Clutch (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "med",
+          "brt-source-value": "Sahuagin Priestess",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3cH8B2TdGr57a8wA",
+          "brt-result-custom-name": "Sahuagin Egg Clutch (pouch)",
+          "brt-result-original-name": "Sahuagin Egg Clutch (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "3cH8B2TdGr57a8wA",
+      "_id": "qqkVV2AXXRDMXm0f",
+      "_key": "!tables.results!S9UHy87SGcFwgxIp.qqkVV2AXXRDMXm0f"
+    },
+    {
+      "text": "Sahuagin Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Sahuagin Priestess",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qrtwkb7l9HuJoh6O",
+          "brt-result-custom-name": "Sahuagin Blood vial",
+          "brt-result-original-name": "Sahuagin Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "qrtwkb7l9HuJoh6O",
+      "_id": "F8rWjI0a9IFcISgV",
+      "_key": "!tables.results!S9UHy87SGcFwgxIp.F8rWjI0a9IFcISgV"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Sahuagin Priestess",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561304,
+    "modifiedTime": 1696756759148,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "S9UHy87SGcFwgxIp",
+  "sort": 0,
+  "_key": "!tables!S9UHy87SGcFwgxIp"
+}

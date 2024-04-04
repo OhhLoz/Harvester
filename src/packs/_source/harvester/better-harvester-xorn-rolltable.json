@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Xorn RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Xorn'.",
+  "results": [
+    {
+      "text": "Xorn Stomach Acid (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Xorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DDGC7P3nRl73uREt",
+          "brt-result-custom-name": "Xorn Stomach Acid vial",
+          "brt-result-original-name": "Xorn Stomach Acid (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "DDGC7P3nRl73uREt",
+      "_id": "YcHmwI06yqJzN1rn",
+      "_key": "!tables.results!sxzmubqINr0ZZJwm.YcHmwI06yqJzN1rn"
+    },
+    {
+      "text": "Xorn Olfactory Bulb (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Xorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.S5hz9E0AD6pD6SSd",
+          "brt-result-custom-name": "Xorn Olfactory Bulb (vial)",
+          "brt-result-original-name": "Xorn Olfactory Bulb (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "S5hz9E0AD6pD6SSd",
+      "_id": "fTmfS0gzhlVB9Ea9",
+      "_key": "!tables.results!sxzmubqINr0ZZJwm.fTmfS0gzhlVB9Ea9"
+    },
+    {
+      "text": "Xorn Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Xorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kpiYITvfKwwahPR1",
+          "brt-result-custom-name": "Xorn Skin",
+          "brt-result-original-name": "Xorn Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "kpiYITvfKwwahPR1",
+      "_id": "xzgoSjkFYYeUBKQc",
+      "_key": "!tables.results!sxzmubqINr0ZZJwm.xzgoSjkFYYeUBKQc"
+    },
+    {
+      "text": "Xorn Tooth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Xorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.l8gHlM0ZVlt4TBNC",
+          "brt-result-custom-name": "Xorn Tooth (pouch)",
+          "brt-result-original-name": "Xorn Tooth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "l8gHlM0ZVlt4TBNC",
+      "_id": "v3xd6x7CEEDCD7uU",
+      "_key": "!tables.results!sxzmubqINr0ZZJwm.v3xd6x7CEEDCD7uU"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Xorn",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564735,
+    "modifiedTime": 1696756762259,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "sxzmubqINr0ZZJwm",
+  "sort": 0,
+  "_key": "!tables!sxzmubqINr0ZZJwm"
+}

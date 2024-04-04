@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Nightmare RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Nightmare'.",
+  "results": [
+    {
+      "text": "Nightmare Ashes (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nightmare",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2ohMZOQjcaNZuyjg",
+          "brt-result-custom-name": "Nightmare Ashes (vial)",
+          "brt-result-original-name": "Nightmare Ashes (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "2ohMZOQjcaNZuyjg",
+      "_id": "LuZSVYcOvUw2QRWQ",
+      "_key": "!tables.results!OShE5vI6Yuv0kL6t.LuZSVYcOvUw2QRWQ"
+    },
+    {
+      "text": "Nightmare Hoof (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nightmare",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FW9wUmFY1T1xdgGU",
+          "brt-result-custom-name": "Nightmare Hoof",
+          "brt-result-original-name": "Nightmare Hoof (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "FW9wUmFY1T1xdgGU",
+      "_id": "ldlWwWv1EUhXh7mP",
+      "_key": "!tables.results!OShE5vI6Yuv0kL6t.ldlWwWv1EUhXh7mP"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Nightmare",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561027,
+    "modifiedTime": 1696756758297,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "OShE5vI6Yuv0kL6t",
+  "sort": 0,
+  "_key": "!tables!OShE5vI6Yuv0kL6t"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Star Spawn Mangler RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Star Spawn Mangler'.",
+  "results": [
+    {
+      "text": "Star Spawn Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Star Spawn Mangler",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ADcvzZEXYVUTCsjM",
+          "brt-result-custom-name": "Star Spawn Claws (pouch)",
+          "brt-result-original-name": "Star Spawn Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ADcvzZEXYVUTCsjM",
+      "_id": "VCzRBXKfYcRAOMLB",
+      "_key": "!tables.results!tUDAvdPB7jzIlhBT.VCzRBXKfYcRAOMLB"
+    },
+    {
+      "text": "Star Spawn Dust (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Star Spawn Mangler",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VKBZex7lSEyNFzMi",
+          "brt-result-custom-name": "Star Spawn Dust (pouch)",
+          "brt-result-original-name": "Star Spawn Dust (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "VKBZex7lSEyNFzMi",
+      "_id": "gnFSb8ZnkCJDcPgq",
+      "_key": "!tables.results!tUDAvdPB7jzIlhBT.gnFSb8ZnkCJDcPgq"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Star Spawn Mangler",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563321,
+    "modifiedTime": 1696756759990,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tUDAvdPB7jzIlhBT",
+  "sort": 0,
+  "_key": "!tables!tUDAvdPB7jzIlhBT"
+}

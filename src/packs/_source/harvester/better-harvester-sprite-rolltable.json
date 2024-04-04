@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Sprite RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Sprite'.",
+  "results": [
+    {
+      "text": "Sprite Dust (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sprite",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6IciDQpCe7NwOGWk",
+          "brt-result-custom-name": "Sprite Dust (small pouch)",
+          "brt-result-original-name": "Sprite Dust (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "6IciDQpCe7NwOGWk",
+      "_id": "sT7Y8GH4SkzIYHPD",
+      "_key": "!tables.results!nSOtnUZoDiEVqVkM.sT7Y8GH4SkzIYHPD"
+    },
+    {
+      "text": "Sprite Wings (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sprite",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Y9XfFUyQGc0A77TW",
+          "brt-result-custom-name": "Sprite Wings",
+          "brt-result-original-name": "Sprite Wings (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "Y9XfFUyQGc0A77TW",
+      "_id": "FuwMDxtKsa6R8eVE",
+      "_key": "!tables.results!nSOtnUZoDiEVqVkM.FuwMDxtKsa6R8eVE"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Sprite",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561909,
+    "modifiedTime": 1696756759981,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nSOtnUZoDiEVqVkM",
+  "sort": 0,
+  "_key": "!tables!nSOtnUZoDiEVqVkM"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Hooked Horror RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hooked Horror'.",
+  "results": [
+    {
+      "text": "Hooked Horror Hook (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hooked Horror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.o4oDYehaD4SlhsUm",
+          "brt-result-custom-name": "Hooked Horror Hook",
+          "brt-result-original-name": "Hooked Horror Hook (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "o4oDYehaD4SlhsUm",
+      "_id": "YxKLXHEuVslcomwS",
+      "_key": "!tables.results!odqt5suYv13fHZ99.YxKLXHEuVslcomwS"
+    },
+    {
+      "text": "Hooked Horror Shell",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-turtle-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hooked Horror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yfM8feahr1f4dF7D",
+          "brt-result-custom-name": "Hooked Horror Shell",
+          "brt-result-original-name": "Hooked Horror Shell",
+          "brt-result-original-icon": "icons/commodities/biological/shell-turtle-grey.webp"
+        }
+      },
+      "documentId": "yfM8feahr1f4dF7D",
+      "_id": "aOnEl6FeclV9wpyT",
+      "_key": "!tables.results!odqt5suYv13fHZ99.aOnEl6FeclV9wpyT"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Hooked Horror",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756583527,
+    "modifiedTime": 1696756757114,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "odqt5suYv13fHZ99",
+  "sort": 0,
+  "_key": "!tables!odqt5suYv13fHZ99"
+}

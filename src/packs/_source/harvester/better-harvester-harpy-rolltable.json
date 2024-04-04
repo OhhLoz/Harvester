@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Harpy RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Harpy'.",
+  "results": [
+    {
+      "text": "Harpy Vocal Cords",
+      "type": 2,
+      "img": "icons/consumables/meat/chicken-breast-raw-pink.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Harpy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0Mr0wm2CuyuuYKbr",
+          "brt-result-custom-name": "Harpy Vocal Cords",
+          "brt-result-original-name": "Harpy Vocal Cords",
+          "brt-result-original-icon": "icons/consumables/meat/chicken-breast-raw-pink.webp"
+        }
+      },
+      "documentId": "0Mr0wm2CuyuuYKbr",
+      "_id": "ftjoJWNp3iGiJbGo",
+      "_key": "!tables.results!NfJ8benfwYmfNChJ.ftjoJWNp3iGiJbGo"
+    },
+    {
+      "text": "Harpy Feathers (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Harpy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HG5iN2treiweRxXE",
+          "brt-result-custom-name": "Harpy Feathers (pouch)",
+          "brt-result-original-name": "Harpy Feathers (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "HG5iN2treiweRxXE",
+      "_id": "jQVww4i0eG56gjgV",
+      "_key": "!tables.results!NfJ8benfwYmfNChJ.jQVww4i0eG56gjgV"
+    },
+    {
+      "text": "Harpy Talons (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Harpy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.c1EaiyVmvCDq9VpP",
+          "brt-result-custom-name": "Harpy Talons (pouch)",
+          "brt-result-original-name": "Harpy Talons (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "c1EaiyVmvCDq9VpP",
+      "_id": "AZ5Ro24bDvB1Cbt3",
+      "_key": "!tables.results!NfJ8benfwYmfNChJ.AZ5Ro24bDvB1Cbt3"
+    },
+    {
+      "text": "Harpy Egg",
+      "type": 2,
+      "img": "icons/consumables/eggs/egg-speckled-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Harpy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xv6aCs86K2WLel7M",
+          "brt-result-custom-name": "Harpy Egg",
+          "brt-result-original-name": "Harpy Egg",
+          "brt-result-original-icon": "icons/consumables/eggs/egg-speckled-tan.webp"
+        }
+      },
+      "documentId": "xv6aCs86K2WLel7M",
+      "_id": "Zimtwa7eFULzcdbx",
+      "_key": "!tables.results!NfJ8benfwYmfNChJ.Zimtwa7eFULzcdbx"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Harpy",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560344,
+    "modifiedTime": 1696756756752,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NfJ8benfwYmfNChJ",
+  "sort": 0,
+  "_key": "!tables!NfJ8benfwYmfNChJ"
+}

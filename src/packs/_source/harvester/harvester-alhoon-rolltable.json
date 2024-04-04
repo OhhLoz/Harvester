@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Alhoon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Alhoon'.",
+  "results": [
+    {
+      "text": "Alhoon Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Alhoon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1x9GArPtdxzHEpoY",
+          "brt-result-custom-name": "Alhoon Brain",
+          "brt-result-original-name": "Alhoon Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "1x9GArPtdxzHEpoY",
+      "_id": "5L10hHtQ2MgN1c3d",
+      "_key": "!tables.results!Rtst6B8jYVkdzFYq.5L10hHtQ2MgN1c3d"
+    },
+    {
+      "text": "Alhoon Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Alhoon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Uo1jzUwtU1sD6nMR",
+          "brt-result-custom-name": "Alhoon Skin",
+          "brt-result-original-name": "Alhoon Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "Uo1jzUwtU1sD6nMR",
+      "_id": "bQS1rKBqKeoYDOS3",
+      "_key": "!tables.results!Rtst6B8jYVkdzFYq.bQS1rKBqKeoYDOS3"
+    },
+    {
+      "text": "Alhoon Tentacle (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Alhoon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.W72Y21dBsa4dheQ5",
+          "brt-result-custom-name": "Alhoon Tentacle",
+          "brt-result-original-name": "Alhoon Tentacle (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "W72Y21dBsa4dheQ5",
+      "_id": "Xzaj8Yq1jCJjiJW7",
+      "_key": "!tables.results!Rtst6B8jYVkdzFYq.Xzaj8Yq1jCJjiJW7"
+    },
+    {
+      "text": "Alhoon Ichor (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Alhoon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iUO094AJexVgivOj",
+          "brt-result-custom-name": "Alhoon Ichor (vial)",
+          "brt-result-original-name": "Alhoon Ichor (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "iUO094AJexVgivOj",
+      "_id": "FUKD18Rdxj0itI2C",
+      "_key": "!tables.results!Rtst6B8jYVkdzFYq.FUKD18Rdxj0itI2C"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Alhoon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560802,
+    "modifiedTime": 1696756755856,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Rtst6B8jYVkdzFYq",
+  "sort": 0,
+  "_key": "!tables!Rtst6B8jYVkdzFYq"
+}

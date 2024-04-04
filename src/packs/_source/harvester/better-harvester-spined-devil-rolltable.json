@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Spined Devil RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Spined Devil'.",
+  "results": [
+    {
+      "text": "Spined Devil Spines",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-spiked-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Spined Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Kaxzrr9aUAwNPXGJ",
+          "brt-result-custom-name": "Spined Devil Spines",
+          "brt-result-original-name": "Spined Devil Spines",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-spiked-brown.webp"
+        }
+      },
+      "documentId": "Kaxzrr9aUAwNPXGJ",
+      "_id": "jRHENik5cVqIXWOK",
+      "_key": "!tables.results!Cn5H377Blz1VDKIN.jRHENik5cVqIXWOK"
+    },
+    {
+      "text": "Spine Devil Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Spined Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.upQUtDDAm3vNzIir",
+          "brt-result-custom-name": "Spine Devil Blood (vial)",
+          "brt-result-original-name": "Spine Devil Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "upQUtDDAm3vNzIir",
+      "_id": "v8XwyDU5tZJmoq1j",
+      "_key": "!tables.results!Cn5H377Blz1VDKIN.v8XwyDU5tZJmoq1j"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Spined Devil",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566820,
+    "modifiedTime": 1696756759976,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Cn5H377Blz1VDKIN",
+  "sort": 0,
+  "_key": "!tables!Cn5H377Blz1VDKIN"
+}

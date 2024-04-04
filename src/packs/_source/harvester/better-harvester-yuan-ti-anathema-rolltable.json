@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Yuan-ti Anathema RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Yuan-ti Anathema'.",
+  "results": [
+    {
+      "text": "Yuan-ti Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Anathema",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.05Izz6cKFDaUKyNi",
+          "brt-result-custom-name": "Yuan-ti Blood vial",
+          "brt-result-original-name": "Yuan-ti Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "05Izz6cKFDaUKyNi",
+      "_id": "rJcSjUJ5bh1LNJbj",
+      "_key": "!tables.results!rwO4XcJ6uBVVQG6I.rJcSjUJ5bh1LNJbj"
+    },
+    {
+      "text": "Anathema Spine",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-spine-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Anathema",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LBqzCtLj5yjMpnNZ",
+          "brt-result-custom-name": "Anathema Spine",
+          "brt-result-original-name": "Anathema Spine",
+          "brt-result-original-icon": "icons/commodities/bones/bone-spine-white.webp"
+        }
+      },
+      "documentId": "LBqzCtLj5yjMpnNZ",
+      "_id": "QTTYPPd9MdfPxRyI",
+      "_key": "!tables.results!rwO4XcJ6uBVVQG6I.QTTYPPd9MdfPxRyI"
+    },
+    {
+      "text": "Yuan-ti Anathema Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Anathema",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UPrRVGNZusUHd64S",
+          "brt-result-custom-name": "Yuan-ti Anathema Heart",
+          "brt-result-original-name": "Yuan-ti Anathema Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "UPrRVGNZusUHd64S",
+      "_id": "nHPVa1eAXZQmkhpQ",
+      "_key": "!tables.results!rwO4XcJ6uBVVQG6I.nHPVa1eAXZQmkhpQ"
+    },
+    {
+      "text": "Yuan-ti Venom (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Anathema",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.w3h1YGaeY9qNk9bG",
+          "brt-result-custom-name": "Yuan-ti Venom vial",
+          "brt-result-original-name": "Yuan-ti Venom (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "w3h1YGaeY9qNk9bG",
+      "_id": "3fNA9x0ZczHK3yKK",
+      "_key": "!tables.results!rwO4XcJ6uBVVQG6I.3fNA9x0ZczHK3yKK"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Yuan-ti Anathema",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560199,
+    "modifiedTime": 1696756762281,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rwO4XcJ6uBVVQG6I",
+  "sort": 0,
+  "_key": "!tables!rwO4XcJ6uBVVQG6I"
+}

@@ -1,0 +1,268 @@
+{
+  "name": "Better Harvester | Adult Dragon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Adult Dragon'.",
+  "results": [
+    {
+      "text": "Raw Dragon Meat",
+      "type": 2,
+      "img": "icons/consumables/meat/steak-raw-red-pink.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3L22ErJ9nivw9FNX",
+          "brt-result-custom-name": "Raw Dragon Meat",
+          "brt-result-original-name": "Raw Dragon Meat",
+          "brt-result-original-icon": "icons/consumables/meat/steak-raw-red-pink.webp"
+        }
+      },
+      "documentId": "3L22ErJ9nivw9FNX",
+      "_id": "RRWmB9lMvHhunAEH",
+      "_key": "!tables.results!DRPiTiOQB4h3GdM6.RRWmB9lMvHhunAEH"
+    },
+    {
+      "text": "Adult Dragon Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.J2pW4FMHvpNCttNC",
+          "brt-result-custom-name": "Adult Dragon Wing",
+          "brt-result-original-name": "Adult Dragon Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "J2pW4FMHvpNCttNC",
+      "_id": "3NXKQPy1aur9CJxx",
+      "_key": "!tables.results!DRPiTiOQB4h3GdM6.3NXKQPy1aur9CJxx"
+    },
+    {
+      "text": "Adult Dragon Tooth (10x)",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.T2hRKj2lEUUXXnbY",
+          "brt-result-custom-name": "Adult Dragon Tooth",
+          "brt-result-original-name": "Adult Dragon Tooth (10x)",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "T2hRKj2lEUUXXnbY",
+      "_id": "5t3EbCW1H72VbeTL",
+      "_key": "!tables.results!DRPiTiOQB4h3GdM6.5t3EbCW1H72VbeTL"
+    },
+    {
+      "text": "Adult Dragon Bone (x6)",
+      "type": 2,
+      "img": "icons/commodities/bones/bones-stack-yellow.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Vo9UCFdsIZmjEY75",
+          "brt-result-custom-name": "Adult Dragon Bone",
+          "brt-result-original-name": "Adult Dragon Bone (x6)",
+          "brt-result-original-icon": "icons/commodities/bones/bones-stack-yellow.webp"
+        }
+      },
+      "documentId": "Vo9UCFdsIZmjEY75",
+      "_id": "Q4kvVXLnUjefZDdw",
+      "_key": "!tables.results!DRPiTiOQB4h3GdM6.Q4kvVXLnUjefZDdw"
+    },
+    {
+      "text": "Adult Dragon Breath Pouch",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ccpSM25xjQScnn7s",
+          "brt-result-custom-name": "Adult Dragon Breath Pouch",
+          "brt-result-original-name": "Adult Dragon Breath Pouch",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ccpSM25xjQScnn7s",
+      "_id": "DLrkzwTd6E7N6PBJ",
+      "_key": "!tables.results!DRPiTiOQB4h3GdM6.DLrkzwTd6E7N6PBJ"
+    },
+    {
+      "text": "Adult Dragon Scales",
+      "type": 2,
+      "img": "icons/commodities/leather/scales-brown.webp",
+      "weight": 1,
+      "range": [
+        6,
+        6
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jPthYwNjCckJWoVX",
+          "brt-result-custom-name": "Adult Dragon Scales",
+          "brt-result-original-name": "Adult Dragon Scales",
+          "brt-result-original-icon": "icons/commodities/leather/scales-brown.webp"
+        }
+      },
+      "documentId": "jPthYwNjCckJWoVX",
+      "_id": "rS4aYws1h8GYrCMG",
+      "_key": "!tables.results!DRPiTiOQB4h3GdM6.rS4aYws1h8GYrCMG"
+    },
+    {
+      "text": "Adult Dragon Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        7,
+        7
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.noMmYuB6EAuRBmGj",
+          "brt-result-custom-name": "Adult Dragon Blood vial",
+          "brt-result-original-name": "Adult Dragon Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "noMmYuB6EAuRBmGj",
+      "_id": "0WqDBksq7FNwpg2C",
+      "_key": "!tables.results!DRPiTiOQB4h3GdM6.0WqDBksq7FNwpg2C"
+    },
+    {
+      "text": "Adult Dragon Horn",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        8,
+        8
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Dragon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qN1RYUxhsD134yGO",
+          "brt-result-custom-name": "Adult Dragon Horn",
+          "brt-result-original-name": "Adult Dragon Horn",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "qN1RYUxhsD134yGO",
+      "_id": "IIXgDlYBqBdVHB3R",
+      "_key": "!tables.results!DRPiTiOQB4h3GdM6.IIXgDlYBqBdVHB3R"
+    }
+  ],
+  "formula": "1d8",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Adult Dragon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 8
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561175,
+    "modifiedTime": 1696756755841,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "DRPiTiOQB4h3GdM6",
+  "sort": 0,
+  "_key": "!tables!DRPiTiOQB4h3GdM6"
+}

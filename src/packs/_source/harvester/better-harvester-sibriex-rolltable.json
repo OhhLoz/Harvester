@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Sibriex RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Sibriex'.",
+  "results": [
+    {
+      "text": "Sibriex Chains",
+      "type": 2,
+      "img": "icons/commodities/metal/chain-steel.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sibriex",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3SdW3ArNGSsZYbYs",
+          "brt-result-custom-name": "Sibriex Chains",
+          "brt-result-original-name": "Sibriex Chains",
+          "brt-result-original-icon": "icons/commodities/metal/chain-steel.webp"
+        }
+      },
+      "documentId": "3SdW3ArNGSsZYbYs",
+      "_id": "5LOYlpVF4Cjbc7Bf",
+      "_key": "!tables.results!8w4BY64AwD05jWZi.5LOYlpVF4Cjbc7Bf"
+    },
+    {
+      "text": "Sibriex Bile (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sibriex",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OHRE1CWcsR4y9hZY",
+          "brt-result-custom-name": "Sibriex Bile vial",
+          "brt-result-original-name": "Sibriex Bile (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "OHRE1CWcsR4y9hZY",
+      "_id": "dy3mevDPEw0ZwIrI",
+      "_key": "!tables.results!8w4BY64AwD05jWZi.dy3mevDPEw0ZwIrI"
+    },
+    {
+      "text": "Sibriex Hippocampus",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sibriex",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.mPFVGdP87IuSLccy",
+          "brt-result-custom-name": "Sibriex Hippocampus",
+          "brt-result-original-name": "Sibriex Hippocampus",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "mPFVGdP87IuSLccy",
+      "_id": "DjcfqIGdTEAQ9V4H",
+      "_key": "!tables.results!8w4BY64AwD05jWZi.DjcfqIGdTEAQ9V4H"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Sibriex",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561228,
+    "modifiedTime": 1696756759938,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8w4BY64AwD05jWZi",
+  "sort": 0,
+  "_key": "!tables!8w4BY64AwD05jWZi"
+}

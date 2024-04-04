@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Hippogriff RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hippogriff'.",
+  "results": [
+    {
+      "text": "Hippogriff Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hippogriff",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LiTvqF9D1poQ7pdZ",
+          "brt-result-custom-name": "Hippogriff Eye",
+          "brt-result-original-name": "Hippogriff Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "LiTvqF9D1poQ7pdZ",
+      "_id": "S8MBFLQQCFuTr35n",
+      "_key": "!tables.results!75LpZowXJKe2T4FL.S8MBFLQQCFuTr35n"
+    },
+    {
+      "text": "Hippogriff Feathers (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hippogriff",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NCjQAykyu3DNxS2x",
+          "brt-result-custom-name": "Hippogriff Feathers (pouch)",
+          "brt-result-original-name": "Hippogriff Feathers (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "NCjQAykyu3DNxS2x",
+      "_id": "LrE9CiBaNb9XXSPC",
+      "_key": "!tables.results!75LpZowXJKe2T4FL.LrE9CiBaNb9XXSPC"
+    },
+    {
+      "text": "Hippogriff Hoof (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hippogriff",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gPqdDtMk0jfUT33b",
+          "brt-result-custom-name": "Hippogriff Hoof",
+          "brt-result-original-name": "Hippogriff Hoof (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "gPqdDtMk0jfUT33b",
+      "_id": "doRMoPNC4HW2fcG3",
+      "_key": "!tables.results!75LpZowXJKe2T4FL.doRMoPNC4HW2fcG3"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Hippogriff",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567362,
+    "modifiedTime": 1696756757099,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "75LpZowXJKe2T4FL",
+  "sort": 0,
+  "_key": "!tables!75LpZowXJKe2T4FL"
+}

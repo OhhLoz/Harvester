@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Orc Claw of Luthic RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Orc Claw of Luthic'.",
+  "results": [
+    {
+      "text": "Orc Tusks",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc Claw of Luthic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fPe0xzXn2zOhA11K",
+          "brt-result-custom-name": "Orc Tusks",
+          "brt-result-original-name": "Orc Tusks",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "fPe0xzXn2zOhA11K",
+      "_id": "e3JnPI8yczs5tDiZ",
+      "_key": "!tables.results!T08u09baOQqhWv4U.e3JnPI8yczs5tDiZ"
+    },
+    {
+      "text": "Claw of Luthic Claws",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc Claw of Luthic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ssCPsuqTMW6rmA8K",
+          "brt-result-custom-name": "Claw of Luthic Claws",
+          "brt-result-original-name": "Claw of Luthic Claws",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "ssCPsuqTMW6rmA8K",
+      "_id": "f4WZ7gJdcGv2R4pV",
+      "_key": "!tables.results!T08u09baOQqhWv4U.f4WZ7gJdcGv2R4pV"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Orc Claw of Luthic",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756578588,
+    "modifiedTime": 1696756758327,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "T08u09baOQqhWv4U",
+  "sort": 0,
+  "_key": "!tables!T08u09baOQqhWv4U"
+}

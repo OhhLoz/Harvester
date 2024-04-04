@@ -1,0 +1,181 @@
+{
+  "name": "Better Harvester | Dragon Wyrmling RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dragon Wyrmling'.",
+  "results": [
+    {
+      "text": "Dragon Wyrmling Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragon Wyrmling",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.L2qnigNdnq6nclnV",
+          "brt-result-custom-name": "Dragon Wyrmling Wing",
+          "brt-result-original-name": "Dragon Wyrmling Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "L2qnigNdnq6nclnV",
+      "_id": "37UB1YVFwxIN2xPa",
+      "_key": "!tables.results!M7UPhyHHxe0sOQaO.37UB1YVFwxIN2xPa"
+    },
+    {
+      "text": "Raw Dragon Meat",
+      "type": 2,
+      "img": "icons/consumables/meat/steak-raw-red-pink.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragon Wyrmling",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Odazn75XSjlBNUrV",
+          "brt-result-custom-name": "Raw Dragon Meat",
+          "brt-result-original-name": "Raw Dragon Meat",
+          "brt-result-original-icon": "icons/consumables/meat/steak-raw-red-pink.webp"
+        }
+      },
+      "documentId": "Odazn75XSjlBNUrV",
+      "_id": "0s528ryZ8kMpRDrm",
+      "_key": "!tables.results!M7UPhyHHxe0sOQaO.0s528ryZ8kMpRDrm"
+    },
+    {
+      "text": "Dragon Wyrmling Breath Pouch",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragon Wyrmling",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.W41ysvAidz52II0Q",
+          "brt-result-custom-name": "Dragon Wyrmling Breath Pouch",
+          "brt-result-original-name": "Dragon Wyrmling Breath Pouch",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "W41ysvAidz52II0Q",
+      "_id": "EP1rMriODb1MZjqX",
+      "_key": "!tables.results!M7UPhyHHxe0sOQaO.EP1rMriODb1MZjqX"
+    },
+    {
+      "text": "Dragon Wyrmling Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragon Wyrmling",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XesSRbWoQ2vKUnrH",
+          "brt-result-custom-name": "Dragon Wyrmling Skin",
+          "brt-result-original-name": "Dragon Wyrmling Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "XesSRbWoQ2vKUnrH",
+      "_id": "eknFyVtiRgcuCA3X",
+      "_key": "!tables.results!M7UPhyHHxe0sOQaO.eknFyVtiRgcuCA3X"
+    },
+    {
+      "text": "Dragon Wyrmling Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragon Wyrmling",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fsq3bQQ8j11Kp4Rc",
+          "brt-result-custom-name": "Dragon Wyrmling Blood vial",
+          "brt-result-original-name": "Dragon Wyrmling Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "fsq3bQQ8j11Kp4Rc",
+      "_id": "6KzkQved1nUKietA",
+      "_key": "!tables.results!M7UPhyHHxe0sOQaO.6KzkQved1nUKietA"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Dragon Wyrmling",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567129,
+    "modifiedTime": 1696756756137,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "M7UPhyHHxe0sOQaO",
+  "sort": 0,
+  "_key": "!tables!M7UPhyHHxe0sOQaO"
+}

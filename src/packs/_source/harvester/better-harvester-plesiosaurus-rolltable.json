@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Plesiosaurus RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Plesiosaurus'.",
+  "results": [
+    {
+      "text": "Plesiosaurus Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Plesiosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.enPWhkZFR9ldbigc",
+          "brt-result-custom-name": "Plesiosaurus Skin",
+          "brt-result-original-name": "Plesiosaurus Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "enPWhkZFR9ldbigc",
+      "_id": "idwPhdGw0i938j46",
+      "_key": "!tables.results!wQhUYCMLc7ysGXHu.idwPhdGw0i938j46"
+    },
+    {
+      "text": "Plesiosaurus Tooth (x10)",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Plesiosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vzdfv1Gxi0tBViqe",
+          "brt-result-custom-name": "Plesiosaurus Tooth",
+          "brt-result-original-name": "Plesiosaurus Tooth (x10)",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "vzdfv1Gxi0tBViqe",
+      "_id": "NuKgVYSGF7Q5TxIt",
+      "_key": "!tables.results!wQhUYCMLc7ysGXHu.NuKgVYSGF7Q5TxIt"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Plesiosaurus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756578273,
+    "modifiedTime": 1696756759093,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wQhUYCMLc7ysGXHu",
+  "sort": 0,
+  "_key": "!tables!wQhUYCMLc7ysGXHu"
+}

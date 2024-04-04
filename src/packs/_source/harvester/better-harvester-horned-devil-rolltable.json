@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Horned Devil RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Horned Devil'.",
+  "results": [
+    {
+      "text": "Horned Devil's Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Horned Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HK59A7ar4QeVshEu",
+          "brt-result-custom-name": "Horned Devil's Blood vial",
+          "brt-result-original-name": "Horned Devil's Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "HK59A7ar4QeVshEu",
+      "_id": "gQrheTVNZB6Qc6sJ",
+      "_key": "!tables.results!QwqBmkf66zY72Grf.gQrheTVNZB6Qc6sJ"
+    },
+    {
+      "text": "Horned Devil's Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Horned Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Rixe6ibAdpkx7zSO",
+          "brt-result-custom-name": "Horned Devil's Horn",
+          "brt-result-original-name": "Horned Devil's Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "Rixe6ibAdpkx7zSO",
+      "_id": "PeAtUUaD8OowbIte",
+      "_key": "!tables.results!QwqBmkf66zY72Grf.PeAtUUaD8OowbIte"
+    },
+    {
+      "text": "Horned Devil Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Horned Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hWDhn1Ik0ErKXOXE",
+          "brt-result-custom-name": "Horned Devil Tail",
+          "brt-result-original-name": "Horned Devil Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "hWDhn1Ik0ErKXOXE",
+      "_id": "ASqt2T9Dxcx7PV79",
+      "_key": "!tables.results!QwqBmkf66zY72Grf.ASqt2T9Dxcx7PV79"
+    },
+    {
+      "text": "Devil Wings (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Horned Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oIjpxtDOXiJrNmSq",
+          "brt-result-custom-name": "Devil Wings",
+          "brt-result-original-name": "Devil Wings (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "oIjpxtDOXiJrNmSq",
+      "_id": "8yrD39TXp6HAVodt",
+      "_key": "!tables.results!QwqBmkf66zY72Grf.8yrD39TXp6HAVodt"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Horned Devil",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565896,
+    "modifiedTime": 1696756757115,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "QwqBmkf66zY72Grf",
+  "sort": 0,
+  "_key": "!tables!QwqBmkf66zY72Grf"
+}

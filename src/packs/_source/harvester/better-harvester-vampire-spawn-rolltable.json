@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Vampire Spawn RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Vampire Spawn'.",
+  "results": [
+    {
+      "text": "Vampire Spawn Fang (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/teeth-pointed-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Vampire Spawn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.KGw4l1GoTMCXtU16",
+          "brt-result-custom-name": "Vampire Spawn Fang",
+          "brt-result-original-name": "Vampire Spawn Fang (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/teeth-pointed-white.webp"
+        }
+      },
+      "documentId": "KGw4l1GoTMCXtU16",
+      "_id": "TwoQzFucCLjQXcWj",
+      "_key": "!tables.results!lwddfsGSg3RAzA9i.TwoQzFucCLjQXcWj"
+    },
+    {
+      "text": "Vampire Spawn Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Vampire Spawn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ml09RuAn9VUP0QN2",
+          "brt-result-custom-name": "Vampire Spawn Heart",
+          "brt-result-original-name": "Vampire Spawn Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "ml09RuAn9VUP0QN2",
+      "_id": "vsKSJrA74yWJfa9a",
+      "_key": "!tables.results!lwddfsGSg3RAzA9i.vsKSJrA74yWJfa9a"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Vampire Spawn",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566707,
+    "modifiedTime": 1696756761123,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lwddfsGSg3RAzA9i",
+  "sort": 0,
+  "_key": "!tables!lwddfsGSg3RAzA9i"
+}

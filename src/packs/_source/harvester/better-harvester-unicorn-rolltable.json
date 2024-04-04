@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Unicorn RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Unicorn'.",
+  "results": [
+    {
+      "text": "Unicorn Hoof (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Unicorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JPhDG6O82CfcbaZO",
+          "brt-result-custom-name": "Unicorn Hoof",
+          "brt-result-original-name": "Unicorn Hoof (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "JPhDG6O82CfcbaZO",
+      "_id": "9RZAJC7tsPnMttcg",
+      "_key": "!tables.results!ksjys3i8e2J3seS8.9RZAJC7tsPnMttcg"
+    },
+    {
+      "text": "Unicorn Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Unicorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VcmMjX5uu980Z6nV",
+          "brt-result-custom-name": "Unicorn Blood vial",
+          "brt-result-original-name": "Unicorn Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "VcmMjX5uu980Z6nV",
+      "_id": "KT0UiHpqcJ7N8vUl",
+      "_key": "!tables.results!ksjys3i8e2J3seS8.KT0UiHpqcJ7N8vUl"
+    },
+    {
+      "text": "Unicorn Horn",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Unicorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dJ6ICC7wpHs49xqx",
+          "brt-result-custom-name": "Unicorn Horn",
+          "brt-result-original-name": "Unicorn Horn",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "dJ6ICC7wpHs49xqx",
+      "_id": "eLpqG24MJ3kbneRK",
+      "_key": "!tables.results!ksjys3i8e2J3seS8.eLpqG24MJ3kbneRK"
+    },
+    {
+      "text": "Unicorn Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Unicorn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zNwhxQADDMtfY4Fa",
+          "brt-result-custom-name": "Unicorn Hide",
+          "brt-result-original-name": "Unicorn Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "zNwhxQADDMtfY4Fa",
+      "_id": "PhlRtMgGdOP46fUQ",
+      "_key": "!tables.results!ksjys3i8e2J3seS8.PhlRtMgGdOP46fUQ"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Unicorn",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566430,
+    "modifiedTime": 1696756761116,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ksjys3i8e2J3seS8",
+  "sort": 0,
+  "_key": "!tables!ksjys3i8e2J3seS8"
+}

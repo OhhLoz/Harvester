@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Boggle RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Boggle'.",
+  "results": [
+    {
+      "text": "Slippery Boggle Oil (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Boggle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8W5JPFSVWUv2yKzZ",
+          "brt-result-custom-name": "Slippery Boggle Oil (vial)",
+          "brt-result-original-name": "Slippery Boggle Oil (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "8W5JPFSVWUv2yKzZ",
+      "_id": "Dc748xAj7bZdP4p7",
+      "_key": "!tables.results!SG2dXwdeM6LNp6kT.Dc748xAj7bZdP4p7"
+    },
+    {
+      "text": "Boggle Tar (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Boggle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9UbJA9RZzDNzNuIQ",
+          "brt-result-custom-name": "Boggle Tar (vial)",
+          "brt-result-original-name": "Boggle Tar (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "9UbJA9RZzDNzNuIQ",
+      "_id": "bylPx3jtH7aJUYfx",
+      "_key": "!tables.results!SG2dXwdeM6LNp6kT.bylPx3jtH7aJUYfx"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Boggle",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562730,
+    "modifiedTime": 1696756755972,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "SG2dXwdeM6LNp6kT",
+  "sort": 0,
+  "_key": "!tables!SG2dXwdeM6LNp6kT"
+}

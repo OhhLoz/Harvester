@@ -1,0 +1,181 @@
+{
+  "name": "Better Harvester | Androsphinx RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Androsphinx'.",
+  "results": [
+    {
+      "text": "Sphinx Mane/Hair (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Androsphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ITjM8YR1XXxkmN7m",
+          "brt-result-custom-name": "Sphinx Mane/Hair (large pouch)",
+          "brt-result-original-name": "Sphinx Mane/Hair (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ITjM8YR1XXxkmN7m",
+      "_id": "lRccmuRUj6sqm6Ot",
+      "_key": "!tables.results!Cn47s8xN3BfgsPlD.lRccmuRUj6sqm6Ot"
+    },
+    {
+      "text": "Sphinx Claws (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Androsphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.R1wLnVsAPG2oTmA4",
+          "brt-result-custom-name": "Sphinx Claws (large pouch)",
+          "brt-result-original-name": "Sphinx Claws (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "R1wLnVsAPG2oTmA4",
+      "_id": "6H2aEqtJaDJQcXg1",
+      "_key": "!tables.results!Cn47s8xN3BfgsPlD.6H2aEqtJaDJQcXg1"
+    },
+    {
+      "text": "Sphinx Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Androsphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SojdoKrZNrYKXYIB",
+          "brt-result-custom-name": "Sphinx Hide",
+          "brt-result-original-name": "Sphinx Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "SojdoKrZNrYKXYIB",
+      "_id": "cdeNmSLhJy9jPdW7",
+      "_key": "!tables.results!Cn47s8xN3BfgsPlD.cdeNmSLhJy9jPdW7"
+    },
+    {
+      "text": "Sphinx Roar",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "30",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Androsphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UtH1kL2a64ZqwfEk",
+          "brt-result-custom-name": "Sphinx Roar",
+          "brt-result-original-name": "Sphinx Roar",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "UtH1kL2a64ZqwfEk",
+      "_id": "xT4TnSJUYnisIHBa",
+      "_key": "!tables.results!Cn47s8xN3BfgsPlD.xT4TnSJUYnisIHBa"
+    },
+    {
+      "text": "Sphinx Feathers (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Androsphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ctUFZHin3kwSQlBI",
+          "brt-result-custom-name": "Sphinx Feathers (large pouch)",
+          "brt-result-original-name": "Sphinx Feathers (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ctUFZHin3kwSQlBI",
+      "_id": "QHFVIU33S778PHCg",
+      "_key": "!tables.results!Cn47s8xN3BfgsPlD.QHFVIU33S778PHCg"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Androsphinx",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566142,
+    "modifiedTime": 1696756755879,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Cn47s8xN3BfgsPlD",
+  "sort": 0,
+  "_key": "!tables!Cn47s8xN3BfgsPlD"
+}

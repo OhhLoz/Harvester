@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Giff Warlord RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giff Warlord'.",
+  "results": [
+    {
+      "text": "Giff Teeth (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-jaw-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Giff Warlord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1v2XEzsxUo7f5IQy",
+          "brt-result-custom-name": "Giff Teeth",
+          "brt-result-original-name": "Giff Teeth (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/bone-jaw-white.webp"
+        }
+      },
+      "documentId": "1v2XEzsxUo7f5IQy",
+      "_id": "rhSaVh34YeqW4OPm",
+      "_key": "!tables.results!cFgPtUIZoU5JQH2d.rhSaVh34YeqW4OPm"
+    },
+    {
+      "text": "Giff Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Giff Warlord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WwykNYlIEvyxB9iS",
+          "brt-result-custom-name": "Giff Hide",
+          "brt-result-original-name": "Giff Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "WwykNYlIEvyxB9iS",
+      "_id": "CIrwjqfXXZN4jfGK",
+      "_key": "!tables.results!cFgPtUIZoU5JQH2d.CIrwjqfXXZN4jfGK"
+    },
+    {
+      "text": "Giff Ears (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Giff Warlord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gfte8rK7gvfZJqdq",
+          "brt-result-custom-name": "Giff Ears",
+          "brt-result-original-name": "Giff Ears (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "gfte8rK7gvfZJqdq",
+      "_id": "ve9o4IA2ko82wiOj",
+      "_key": "!tables.results!cFgPtUIZoU5JQH2d.ve9o4IA2ko82wiOj"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Giff Warlord",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560756,
+    "modifiedTime": 1696756756668,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "cFgPtUIZoU5JQH2d",
+  "sort": 0,
+  "_key": "!tables!cFgPtUIZoU5JQH2d"
+}

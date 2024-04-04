@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Aartuk Priest RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Aartuk Priest'.",
+  "results": [
+    {
+      "text": "Aartuk Bark",
+      "type": 2,
+      "img": "icons/commodities/wood/bark-beige.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Priest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.L3VZuNBu7VFCftFv",
+          "brt-result-custom-name": "Aartuk Bark",
+          "brt-result-original-name": "Aartuk Bark",
+          "brt-result-original-icon": "icons/commodities/wood/bark-beige.webp"
+        }
+      },
+      "documentId": "L3VZuNBu7VFCftFv",
+      "_id": "m9fbm6AyP2hiG2M9",
+      "_key": "!tables.results!a2QOYt9vVoiJ96dR.m9fbm6AyP2hiG2M9"
+    },
+    {
+      "text": "Aartuk Stone",
+      "type": 2,
+      "img": "icons/commodities/stone/ore-chunk-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Priest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lYNnlHqhuaUTRlIH",
+          "brt-result-custom-name": "Aartuk Stone",
+          "brt-result-original-name": "Aartuk Stone",
+          "brt-result-original-icon": "icons/commodities/stone/ore-chunk-red.webp"
+        }
+      },
+      "documentId": "lYNnlHqhuaUTRlIH",
+      "_id": "K5mHY4l3UzqRIg8w",
+      "_key": "!tables.results!a2QOYt9vVoiJ96dR.K5mHY4l3UzqRIg8w"
+    },
+    {
+      "text": "Aartuk Sap (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Priest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lprO2RquJbRaOuMX",
+          "brt-result-custom-name": "Aartuk Sap vial",
+          "brt-result-original-name": "Aartuk Sap (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "lprO2RquJbRaOuMX",
+      "_id": "0YcuCCWxM14nq4hx",
+      "_key": "!tables.results!a2QOYt9vVoiJ96dR.0YcuCCWxM14nq4hx"
+    },
+    {
+      "text": "Aartuk Tongue",
+      "type": 2,
+      "img": "icons/commodities/biological/tongue-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Aartuk Priest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.td0FHaOOwP8iKWvm",
+          "brt-result-custom-name": "Aartuk Tongue",
+          "brt-result-original-name": "Aartuk Tongue",
+          "brt-result-original-icon": "icons/commodities/biological/tongue-red.webp"
+        }
+      },
+      "documentId": "td0FHaOOwP8iKWvm",
+      "_id": "R4wjrqyysAqP7xET",
+      "_key": "!tables.results!a2QOYt9vVoiJ96dR.R4wjrqyysAqP7xET"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Aartuk Priest",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567180,
+    "modifiedTime": 1696756755820,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "a2QOYt9vVoiJ96dR",
+  "sort": 0,
+  "_key": "!tables!a2QOYt9vVoiJ96dR"
+}

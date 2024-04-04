@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Bulette RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bulette'.",
+  "results": [
+    {
+      "text": "Bulette Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Bulette",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Bng4kxvlvJBIksgS",
+          "brt-result-custom-name": "Bulette Teeth (small pouch)",
+          "brt-result-original-name": "Bulette Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "Bng4kxvlvJBIksgS",
+      "_id": "km4jqStniOxoW70n",
+      "_key": "!tables.results!3odL0KKJ5xCgNOzQ.km4jqStniOxoW70n"
+    },
+    {
+      "text": "Bulette Claw (x4)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Bulette",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VGyGFUaW7umMBt3Q",
+          "brt-result-custom-name": "Bulette Claw",
+          "brt-result-original-name": "Bulette Claw (x4)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "VGyGFUaW7umMBt3Q",
+      "_id": "y4aQtyvEw7qINpXn",
+      "_key": "!tables.results!3odL0KKJ5xCgNOzQ.y4aQtyvEw7qINpXn"
+    },
+    {
+      "text": "Bulette Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Bulette",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.z4CMz1yGMR74NoWo",
+          "brt-result-custom-name": "Bulette Hide",
+          "brt-result-original-name": "Bulette Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "z4CMz1yGMR74NoWo",
+      "_id": "y885orHYtTh6SlEp",
+      "_key": "!tables.results!3odL0KKJ5xCgNOzQ.y885orHYtTh6SlEp"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Bulette",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564012,
+    "modifiedTime": 1696756755996,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3odL0KKJ5xCgNOzQ",
+  "sort": 0,
+  "_key": "!tables!3odL0KKJ5xCgNOzQ"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Githyanki Gish RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Githyanki Gish'.",
+  "results": [
+    {
+      "text": "Githyanki Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githyanki Gish",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GXsPCfaQHGOvZSJV",
+          "brt-result-custom-name": "Githyanki Heart",
+          "brt-result-original-name": "Githyanki Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "GXsPCfaQHGOvZSJV",
+      "_id": "GjmZaPFQdfFAbT4K",
+      "_key": "!tables.results!NEur14wvmh8xOZOA.GjmZaPFQdfFAbT4K"
+    },
+    {
+      "text": "Githyanki Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githyanki Gish",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GdUBpdbKYtoDKjz3",
+          "brt-result-custom-name": "Githyanki Brain",
+          "brt-result-original-name": "Githyanki Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "GdUBpdbKYtoDKjz3",
+      "_id": "88EvuIeEoSueo2lk",
+      "_key": "!tables.results!NEur14wvmh8xOZOA.88EvuIeEoSueo2lk"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Githyanki Gish",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565680,
+    "modifiedTime": 1696756756671,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NEur14wvmh8xOZOA",
+  "sort": 0,
+  "_key": "!tables!NEur14wvmh8xOZOA"
+}

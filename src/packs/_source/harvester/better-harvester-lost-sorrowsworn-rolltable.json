@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Lost Sorrowsworn RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Lost Sorrowsworn'.",
+  "results": [
+    {
+      "text": "Lost Sorrowsworn Scythe (x5)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Lost Sorrowsworn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PFole9wkuNJvQz5q",
+          "brt-result-custom-name": "Lost Sorrowsworn Scythe",
+          "brt-result-original-name": "Lost Sorrowsworn Scythe (x5)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "PFole9wkuNJvQz5q",
+      "_id": "Tcay80mnP5SJ8u2o",
+      "_key": "!tables.results!2juPUOwWoBNHba96.Tcay80mnP5SJ8u2o"
+    },
+    {
+      "text": "Sorrowsworn Saliva (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Lost Sorrowsworn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oCVeXxNbL52c9ygt",
+          "brt-result-custom-name": "Sorrowsworn Saliva (vial)",
+          "brt-result-original-name": "Sorrowsworn Saliva (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "oCVeXxNbL52c9ygt",
+      "_id": "xVxGBciuVRbeJDrA",
+      "_key": "!tables.results!2juPUOwWoBNHba96.xVxGBciuVRbeJDrA"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Lost Sorrowsworn",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568266,
+    "modifiedTime": 1696756757629,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "2juPUOwWoBNHba96",
+  "sort": 0,
+  "_key": "!tables!2juPUOwWoBNHba96"
+}

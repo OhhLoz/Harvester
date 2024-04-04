@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Dragon Turtle RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dragon Turtle'.",
+  "results": [
+    {
+      "text": "Dragon Turtle Pearl",
+      "type": 2,
+      "img": "icons/commodities/gems/pearls-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragon Turtle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3cnGLCT3ybizmWjf",
+          "brt-result-custom-name": "Dragon Turtle Pearl",
+          "brt-result-original-name": "Dragon Turtle Pearl",
+          "brt-result-original-icon": "icons/commodities/gems/pearls-white.webp"
+        }
+      },
+      "documentId": "3cnGLCT3ybizmWjf",
+      "_id": "xp3nQKNnsSLZl5Yv",
+      "_key": "!tables.results!xCI0JphP05JAZwVh.xp3nQKNnsSLZl5Yv"
+    },
+    {
+      "text": "Dragon Turtle Blood (20 barrel)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "20"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragon Turtle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6aZ3tgQG7Cpa8aPg",
+          "brt-result-custom-name": "Dragon Turtle Blood barrel",
+          "brt-result-original-name": "Dragon Turtle Blood (20 barrel)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-red.webp"
+        }
+      },
+      "documentId": "6aZ3tgQG7Cpa8aPg",
+      "_id": "70tBD5IlbI7RO438",
+      "_key": "!tables.results!xCI0JphP05JAZwVh.70tBD5IlbI7RO438"
+    },
+    {
+      "text": "Dragon Turtle Tooth (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragon Turtle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UJpfnOpvcrX1wQbc",
+          "brt-result-custom-name": "Dragon Turtle Tooth",
+          "brt-result-original-name": "Dragon Turtle Tooth (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "UJpfnOpvcrX1wQbc",
+      "_id": "RuURE0GamAan9A6E",
+      "_key": "!tables.results!xCI0JphP05JAZwVh.RuURE0GamAan9A6E"
+    },
+    {
+      "text": "Steam Satchel",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragon Turtle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.crUw3Z6MYmul8u3O",
+          "brt-result-custom-name": "Steam Satchel",
+          "brt-result-original-name": "Steam Satchel",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "crUw3Z6MYmul8u3O",
+      "_id": "kIBUvYMli5z3zzRC",
+      "_key": "!tables.results!xCI0JphP05JAZwVh.kIBUvYMli5z3zzRC"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Dragon Turtle",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561318,
+    "modifiedTime": 1696756756135,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xCI0JphP05JAZwVh",
+  "sort": 0,
+  "_key": "!tables!xCI0JphP05JAZwVh"
+}

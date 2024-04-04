@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Needle Blight RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Needle Blight'.",
+  "results": [
+    {
+      "text": "Gulthias Sap (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Needle Blight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2dV1sQg5Zv9HhXl4",
+          "brt-result-custom-name": "Gulthias Sap (vial)",
+          "brt-result-original-name": "Gulthias Sap (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "2dV1sQg5Zv9HhXl4",
+      "_id": "r2iGHf03ajQYA6tp",
+      "_key": "!tables.results!POd1zsgFWzEy61cA.r2iGHf03ajQYA6tp"
+    },
+    {
+      "text": "Blight Pollen (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Needle Blight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IXy5tZUE9f6BzamX",
+          "brt-result-custom-name": "Blight Pollen (small pouch)",
+          "brt-result-original-name": "Blight Pollen (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "IXy5tZUE9f6BzamX",
+      "_id": "Qrod6mHxgkA5jEeG",
+      "_key": "!tables.results!POd1zsgFWzEy61cA.Qrod6mHxgkA5jEeG"
+    },
+    {
+      "text": "Blight Seeds (x5)",
+      "type": 2,
+      "img": "icons/consumables/nuts/pistachios-nute-shell-green-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Needle Blight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dH8jRQkdZhqAOAAF",
+          "brt-result-custom-name": "Blight Seeds",
+          "brt-result-original-name": "Blight Seeds (x5)",
+          "brt-result-original-icon": "icons/consumables/nuts/pistachios-nute-shell-green-white.webp"
+        }
+      },
+      "documentId": "dH8jRQkdZhqAOAAF",
+      "_id": "nSI4NTZfRjIjJeRF",
+      "_key": "!tables.results!POd1zsgFWzEy61cA.nSI4NTZfRjIjJeRF"
+    },
+    {
+      "text": "Blight Needles (small bundle)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Needle Blight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ydgg5Xyg2JKfCrYI",
+          "brt-result-custom-name": "Blight Needles (small bundle)",
+          "brt-result-original-name": "Blight Needles (small bundle)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ydgg5Xyg2JKfCrYI",
+      "_id": "ZrnPctKyumm8fqzp",
+      "_key": "!tables.results!POd1zsgFWzEy61cA.ZrnPctKyumm8fqzp"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Needle Blight",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560955,
+    "modifiedTime": 1696756758279,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "POd1zsgFWzEy61cA",
+  "sort": 0,
+  "_key": "!tables!POd1zsgFWzEy61cA"
+}

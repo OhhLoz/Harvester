@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Marilith RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Marilith'.",
+  "results": [
+    {
+      "text": "Marilith Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Marilith",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7yrl6ow5bTVJmLtg",
+          "brt-result-custom-name": "Marilith Blood vial",
+          "brt-result-original-name": "Marilith Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "7yrl6ow5bTVJmLtg",
+      "_id": "lmodjsbtTn2KOtrx",
+      "_key": "!tables.results!QNt537SOdjoYSmeL.lmodjsbtTn2KOtrx"
+    },
+    {
+      "text": "Marilith Snake Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Marilith",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.K5K6XSuVMq4wjbNq",
+          "brt-result-custom-name": "Marilith Snake Skin",
+          "brt-result-original-name": "Marilith Snake Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "K5K6XSuVMq4wjbNq",
+      "_id": "X9xagJ4boLovCoPX",
+      "_key": "!tables.results!QNt537SOdjoYSmeL.X9xagJ4boLovCoPX"
+    },
+    {
+      "text": "Marilith Spine",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-spine-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Marilith",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vY68ZYn7I2LmyHRt",
+          "brt-result-custom-name": "Marilith Spine",
+          "brt-result-original-name": "Marilith Spine",
+          "brt-result-original-icon": "icons/commodities/bones/bone-spine-white.webp"
+        }
+      },
+      "documentId": "vY68ZYn7I2LmyHRt",
+      "_id": "2RWTyZuGLyN5B9lt",
+      "_key": "!tables.results!QNt537SOdjoYSmeL.2RWTyZuGLyN5B9lt"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Marilith",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562553,
+    "modifiedTime": 1696756757641,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "QNt537SOdjoYSmeL",
+  "sort": 0,
+  "_key": "!tables!QNt537SOdjoYSmeL"
+}

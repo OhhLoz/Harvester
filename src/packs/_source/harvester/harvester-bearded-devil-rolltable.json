@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Bearded Devil RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bearded Devil'.",
+  "results": [
+    {
+      "text": "Bearded Devil Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bearded Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2rtaHbFtKSsRKrr3",
+          "brt-result-custom-name": "Bearded Devil Blood vial",
+          "brt-result-original-name": "Bearded Devil Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "2rtaHbFtKSsRKrr3",
+      "_id": "mZhs2wK6xv6YBree",
+      "_key": "!tables.results!faPGnQon7nYf1ctW.mZhs2wK6xv6YBree"
+    },
+    {
+      "text": "Beared Devil Poison Gland (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bearded Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IMHnp4iuaeF2Ljjz",
+          "brt-result-custom-name": "Beared Devil Poison Gland (vial)",
+          "brt-result-original-name": "Beared Devil Poison Gland (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "IMHnp4iuaeF2Ljjz",
+      "_id": "GiMPwN7vEEEITT4a",
+      "_key": "!tables.results!faPGnQon7nYf1ctW.GiMPwN7vEEEITT4a"
+    },
+    {
+      "text": "Beard Lashes",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bearded Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MTQtH5G2SMfjsH1o",
+          "brt-result-custom-name": "Beard Lashes",
+          "brt-result-original-name": "Beard Lashes",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "MTQtH5G2SMfjsH1o",
+      "_id": "hu7f5OwCxz917nml",
+      "_key": "!tables.results!faPGnQon7nYf1ctW.hu7f5OwCxz917nml"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Bearded Devil",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561054,
+    "modifiedTime": 1696756755947,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "faPGnQon7nYf1ctW",
+  "sort": 0,
+  "_key": "!tables!faPGnQon7nYf1ctW"
+}

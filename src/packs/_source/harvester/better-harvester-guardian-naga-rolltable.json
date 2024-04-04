@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Guardian Naga RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Guardian Naga'.",
+  "results": [
+    {
+      "text": "Naga Spine",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-spine-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Guardian Naga",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.KbaxlJvXFIWj0pVg",
+          "brt-result-custom-name": "Naga Spine",
+          "brt-result-original-name": "Naga Spine",
+          "brt-result-original-icon": "icons/commodities/bones/bone-spine-white.webp"
+        }
+      },
+      "documentId": "KbaxlJvXFIWj0pVg",
+      "_id": "q8rH0Vt1fgzHOXek",
+      "_key": "!tables.results!YER34SDDLxkvkCMD.q8rH0Vt1fgzHOXek"
+    },
+    {
+      "text": "Naga Fang (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/teeth-pointed-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Guardian Naga",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.L1rfKhI6ZNvSN6wS",
+          "brt-result-custom-name": "Naga Fang",
+          "brt-result-original-name": "Naga Fang (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/teeth-pointed-white.webp"
+        }
+      },
+      "documentId": "L1rfKhI6ZNvSN6wS",
+      "_id": "XzzY6mdy0TyEQs39",
+      "_key": "!tables.results!YER34SDDLxkvkCMD.XzzY6mdy0TyEQs39"
+    },
+    {
+      "text": "Naga Scales (3 pouches)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "12",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Guardian Naga",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XvD4aaPNV15IsCOq",
+          "brt-result-custom-name": "Naga Scale pouches",
+          "brt-result-original-name": "Naga Scales (3 pouches)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "XvD4aaPNV15IsCOq",
+      "_id": "b06cHPBFSeaw4XfX",
+      "_key": "!tables.results!YER34SDDLxkvkCMD.b06cHPBFSeaw4XfX"
+    },
+    {
+      "text": "Guardian Naga Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Guardian Naga",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vihzPXugXghPiUtM",
+          "brt-result-custom-name": "Guardian Naga Heart",
+          "brt-result-original-name": "Guardian Naga Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "vihzPXugXghPiUtM",
+      "_id": "f3UFFORwh3pxh9Hv",
+      "_key": "!tables.results!YER34SDDLxkvkCMD.f3UFFORwh3pxh9Hv"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Guardian Naga",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566881,
+    "modifiedTime": 1696756756738,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "YER34SDDLxkvkCMD",
+  "sort": 0,
+  "_key": "!tables!YER34SDDLxkvkCMD"
+}

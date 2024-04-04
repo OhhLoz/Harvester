@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Orc War Chief RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Orc War Chief'.",
+  "results": [
+    {
+      "text": "Orc Tusks",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc War Chief",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.T5R8nNdNQIStZrZi",
+          "brt-result-custom-name": "Orc Tusks",
+          "brt-result-original-name": "Orc Tusks",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "T5R8nNdNQIStZrZi",
+      "_id": "ZVRsPLSH7BoS4qXw",
+      "_key": "!tables.results!eNul2LFrHh0U6RV4.ZVRsPLSH7BoS4qXw"
+    },
+    {
+      "text": "Orc Warchief Ornamentation",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc War Chief",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.k8mudvt51iU20z0U",
+          "brt-result-custom-name": "Orc Warchief Ornamentation",
+          "brt-result-original-name": "Orc Warchief Ornamentation",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "k8mudvt51iU20z0U",
+      "_id": "ryngU2N2X0gUWH3K",
+      "_key": "!tables.results!eNul2LFrHh0U6RV4.ryngU2N2X0gUWH3K"
+    },
+    {
+      "text": "Mark or Gruumsh",
+      "type": 2,
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc War Chief",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xVNkkHo6vBmKP5Bm",
+          "brt-result-custom-name": "Mark or Gruumsh",
+          "brt-result-original-name": "Mark or Gruumsh",
+          "brt-result-original-icon": "icons/magic/symbols/rune-sigil-black-pink.webp"
+        }
+      },
+      "documentId": "xVNkkHo6vBmKP5Bm",
+      "_id": "LMWixcNCjWm28tfU",
+      "_key": "!tables.results!eNul2LFrHh0U6RV4.LMWixcNCjWm28tfU"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Orc War Chief",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569360,
+    "modifiedTime": 1696756758337,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "eNul2LFrHh0U6RV4",
+  "sort": 0,
+  "_key": "!tables!eNul2LFrHh0U6RV4"
+}

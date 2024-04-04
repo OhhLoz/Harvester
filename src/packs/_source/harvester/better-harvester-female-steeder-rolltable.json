@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Female Steeder RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Female Steeder'.",
+  "results": [
+    {
+      "text": "Steeder Chitin Plates (x8)",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "8"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Female Steeder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9GFuMvtGR3Uw0nXk",
+          "brt-result-custom-name": "Steeder Chitin Plate",
+          "brt-result-original-name": "Steeder Chitin Plates (x8)",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "9GFuMvtGR3Uw0nXk",
+      "_id": "JQz0DebrfJGlCjmR",
+      "_key": "!tables.results!zHm0uJ4B9FOSEin1.JQz0DebrfJGlCjmR"
+    },
+    {
+      "text": "Steeder Glue (x5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Female Steeder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AEjRcfpaFbiaFS80",
+          "brt-result-custom-name": "Steeder Glue vial",
+          "brt-result-original-name": "Steeder Glue (x5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "AEjRcfpaFbiaFS80",
+      "_id": "GQLL7I7j72mbZgwJ",
+      "_key": "!tables.results!zHm0uJ4B9FOSEin1.GQLL7I7j72mbZgwJ"
+    },
+    {
+      "text": "Steeder Fur (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Female Steeder",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ni3CBJkxhZgEhUQQ",
+          "brt-result-custom-name": "Steeder Fur (large pouch)",
+          "brt-result-original-name": "Steeder Fur (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ni3CBJkxhZgEhUQQ",
+      "_id": "5WA3R26yl2Umzxr7",
+      "_key": "!tables.results!zHm0uJ4B9FOSEin1.5WA3R26yl2Umzxr7"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Female Steeder",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563002,
+    "modifiedTime": 1696756756221,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "zHm0uJ4B9FOSEin1",
+  "sort": 0,
+  "_key": "!tables!zHm0uJ4B9FOSEin1"
+}

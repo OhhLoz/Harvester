@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Giant Badger RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Badger'.",
+  "results": [
+    {
+      "text": "Giant Badger Claws",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Badger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8t8HSCWEBZaut3YD",
+          "brt-result-custom-name": "Giant Badger Claws",
+          "brt-result-original-name": "Giant Badger Claws",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "8t8HSCWEBZaut3YD",
+      "_id": "QH5KZxJ0eobwO4Yf",
+      "_key": "!tables.results!1UH65VS04aHudtlJ.QH5KZxJ0eobwO4Yf"
+    },
+    {
+      "text": "Giant Badger Pelt",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Badger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.j1bEV2gv7FjiBHuh",
+          "brt-result-custom-name": "Giant Badger Pelt",
+          "brt-result-original-name": "Giant Badger Pelt",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "j1bEV2gv7FjiBHuh",
+      "_id": "NgQY2cwLosftKr7e",
+      "_key": "!tables.results!1UH65VS04aHudtlJ.NgQY2cwLosftKr7e"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Badger",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562894,
+    "modifiedTime": 1696756756326,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1UH65VS04aHudtlJ",
+  "sort": 0,
+  "_key": "!tables!1UH65VS04aHudtlJ"
+}

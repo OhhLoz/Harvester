@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Draconic Shard RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Draconic Shard'.",
+  "results": [
+    {
+      "text": "Draconic Shard Gem",
+      "type": 2,
+      "img": "icons/commodities/gems/gem-faceted-round-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Draconic Shard",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vISMTql8FlhGQ4QI",
+          "brt-result-custom-name": "Draconic Shard Gem",
+          "brt-result-original-name": "Draconic Shard Gem",
+          "brt-result-original-icon": "icons/commodities/gems/gem-faceted-round-white.webp"
+        }
+      },
+      "documentId": "vISMTql8FlhGQ4QI",
+      "_id": "skReaEbu4oS5NZ5f",
+      "_key": "!tables.results!JZtQ1IMIu9SNbhln.skReaEbu4oS5NZ5f"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Draconic Shard",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756587533,
+    "modifiedTime": 1696756756129,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JZtQ1IMIu9SNbhln",
+  "sort": 0,
+  "_key": "!tables!JZtQ1IMIu9SNbhln"
+}

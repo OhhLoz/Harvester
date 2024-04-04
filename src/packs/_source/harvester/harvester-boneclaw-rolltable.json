@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Boneclaw RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Boneclaw'.",
+  "results": [
+    {
+      "text": "Boneclaw Claw (x6)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Boneclaw",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EmfESRYaKYHOVxoI",
+          "brt-result-custom-name": "Boneclaw Claw",
+          "brt-result-original-name": "Boneclaw Claw (x6)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "EmfESRYaKYHOVxoI",
+      "_id": "6bSf7IF56pGyWqg7",
+      "_key": "!tables.results!87x4g9FW6NIwoUQS.6bSf7IF56pGyWqg7"
+    },
+    {
+      "text": "Boneclaw Flesh",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Boneclaw",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xx0mdQAtL76r2EIF",
+          "brt-result-custom-name": "Boneclaw Flesh",
+          "brt-result-original-name": "Boneclaw Flesh",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "xx0mdQAtL76r2EIF",
+      "_id": "VxNEfajgrXVZwQRg",
+      "_key": "!tables.results!87x4g9FW6NIwoUQS.VxNEfajgrXVZwQRg"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Boneclaw",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565160,
+    "modifiedTime": 1696756755978,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "87x4g9FW6NIwoUQS",
+  "sort": 0,
+  "_key": "!tables!87x4g9FW6NIwoUQS"
+}

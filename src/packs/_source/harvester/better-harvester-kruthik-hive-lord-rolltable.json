@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Kruthik Hive Lord RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Kruthik Hive Lord'.",
+  "results": [
+    {
+      "text": "Kruthik Hive Lord Acid Glands",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kruthik Hive Lord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Ad0EvNs0ZZHgfOvo",
+          "brt-result-custom-name": "Kruthik Hive Lord Acid Glands",
+          "brt-result-original-name": "Kruthik Hive Lord Acid Glands",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "Ad0EvNs0ZZHgfOvo",
+      "_id": "ojwWLNTh3fWIkg3B",
+      "_key": "!tables.results!b4HFNowZGineCyTw.ojwWLNTh3fWIkg3B"
+    },
+    {
+      "text": "Kruthik Hive Lord Leg (x6)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kruthik Hive Lord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hmWnFxvsTHsjMaqo",
+          "brt-result-custom-name": "Kruthik Hive Lord Leg",
+          "brt-result-original-name": "Kruthik Hive Lord Leg (x6)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "hmWnFxvsTHsjMaqo",
+      "_id": "m784BtoP8uz8I0E2",
+      "_key": "!tables.results!b4HFNowZGineCyTw.m784BtoP8uz8I0E2"
+    },
+    {
+      "text": "Kruthik Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kruthik Hive Lord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.x3mBethBe33AoZF6",
+          "brt-result-custom-name": "Kruthik Blood vial",
+          "brt-result-original-name": "Kruthik Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "x3mBethBe33AoZF6",
+      "_id": "r5QZunj9PMdfRRxa",
+      "_key": "!tables.results!b4HFNowZGineCyTw.r5QZunj9PMdfRRxa"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Kruthik Hive Lord",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563536,
+    "modifiedTime": 1696756757166,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "b4HFNowZGineCyTw",
+  "sort": 0,
+  "_key": "!tables!b4HFNowZGineCyTw"
+}

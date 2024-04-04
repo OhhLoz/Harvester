@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Slithering Tracker RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Slithering Tracker'.",
+  "results": [
+    {
+      "text": "Slithering Tracker Fluid (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Slithering Tracker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9xXfEGCufPyM0x7D",
+          "brt-result-custom-name": "Slithering Tracker Fluid (vial)",
+          "brt-result-original-name": "Slithering Tracker Fluid (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "9xXfEGCufPyM0x7D",
+      "_id": "0IruvjWCLn2yBwuQ",
+      "_key": "!tables.results!JuwKy0lvo48XeeLB.0IruvjWCLn2yBwuQ"
+    },
+    {
+      "text": "Slithering Tracker Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Slithering Tracker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oNdixzdv557gQtf7",
+          "brt-result-custom-name": "Slithering Tracker Essence (vial)",
+          "brt-result-original-name": "Slithering Tracker Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "oNdixzdv557gQtf7",
+      "_id": "Pc7e5Zmna0dIbsXi",
+      "_key": "!tables.results!JuwKy0lvo48XeeLB.Pc7e5Zmna0dIbsXi"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Slithering Tracker",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563239,
+    "modifiedTime": 1696756759959,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JuwKy0lvo48XeeLB",
+  "sort": 0,
+  "_key": "!tables!JuwKy0lvo48XeeLB"
+}

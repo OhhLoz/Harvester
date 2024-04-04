@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Spirit Naga RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Spirit Naga'.",
+  "results": [
+    {
+      "text": "Naga Scales (3 pouches)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "12",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Spirit Naga",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1JUd1mtFQNdPDjJe",
+          "brt-result-custom-name": "Naga Scale pouches",
+          "brt-result-original-name": "Naga Scales (3 pouches)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "1JUd1mtFQNdPDjJe",
+      "_id": "vb6CZoKf72tliJ7D",
+      "_key": "!tables.results!iA1uBoTEO2N4Kz1o.vb6CZoKf72tliJ7D"
+    },
+    {
+      "text": "Naga Fang (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/teeth-pointed-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Spirit Naga",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.K4xY1oidEkoRJ8ze",
+          "brt-result-custom-name": "Naga Fang",
+          "brt-result-original-name": "Naga Fang (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/teeth-pointed-white.webp"
+        }
+      },
+      "documentId": "K4xY1oidEkoRJ8ze",
+      "_id": "W647EXlNcKKjMpym",
+      "_key": "!tables.results!iA1uBoTEO2N4Kz1o.W647EXlNcKKjMpym"
+    },
+    {
+      "text": "Naga Spine",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-spine-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Spirit Naga",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vKFqQQ8gqVd5x4mE",
+          "brt-result-custom-name": "Naga Spine",
+          "brt-result-original-name": "Naga Spine",
+          "brt-result-original-icon": "icons/commodities/bones/bone-spine-white.webp"
+        }
+      },
+      "documentId": "vKFqQQ8gqVd5x4mE",
+      "_id": "wmkt4aDvjXVt7RW9",
+      "_key": "!tables.results!iA1uBoTEO2N4Kz1o.wmkt4aDvjXVt7RW9"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Spirit Naga",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560557,
+    "modifiedTime": 1696756759977,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "iA1uBoTEO2N4Kz1o",
+  "sort": 0,
+  "_key": "!tables!iA1uBoTEO2N4Kz1o"
+}

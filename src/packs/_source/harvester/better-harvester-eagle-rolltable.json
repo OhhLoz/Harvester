@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Eagle RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Eagle'.",
+  "results": [
+    {
+      "text": "Eagle Feathers (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Eagle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fgKnGs24x4Uh4dZS",
+          "brt-result-custom-name": "Eagle Feathers (pouch)",
+          "brt-result-original-name": "Eagle Feathers (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "fgKnGs24x4Uh4dZS",
+      "_id": "vLvN4sMxIzGxhY7V",
+      "_key": "!tables.results!li7i2LgrZozVHmUO.vLvN4sMxIzGxhY7V"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Eagle",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756579125,
+    "modifiedTime": 1696756756176,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "li7i2LgrZozVHmUO",
+  "sort": 0,
+  "_key": "!tables!li7i2LgrZozVHmUO"
+}

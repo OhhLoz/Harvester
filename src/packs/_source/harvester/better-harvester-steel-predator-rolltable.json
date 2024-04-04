@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Steel Predator RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Steel Predator'.",
+  "results": [
+    {
+      "text": "Steel Predator Scrap Metal",
+      "type": 2,
+      "img": "icons/commodities/metal/barstock-broken-steel.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Steel Predator",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RjOTOG6WYmGcYIN9",
+          "brt-result-custom-name": "Steel Predator Scrap Metal",
+          "brt-result-original-name": "Steel Predator Scrap Metal",
+          "brt-result-original-icon": "icons/commodities/metal/barstock-broken-steel.webp"
+        }
+      },
+      "documentId": "RjOTOG6WYmGcYIN9",
+      "_id": "PEltpvt4xC3opxqB",
+      "_key": "!tables.results!oWVciLKUbQp4KM5l.PEltpvt4xC3opxqB"
+    },
+    {
+      "text": "Steel Predator Amplifier",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Steel Predator",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RjYtNy6XZXduY4ed",
+          "brt-result-custom-name": "Steel Predator Amplifier",
+          "brt-result-original-name": "Steel Predator Amplifier",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "RjYtNy6XZXduY4ed",
+      "_id": "rgDSc1NlkaVtuTGW",
+      "_key": "!tables.results!oWVciLKUbQp4KM5l.rgDSc1NlkaVtuTGW"
+    },
+    {
+      "text": "Steel Predator Power Gem",
+      "type": 2,
+      "img": "icons/commodities/gems/gem-faceted-round-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Steel Predator",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bhnXGwlGtrK4oHQN",
+          "brt-result-custom-name": "Steel Predator Power Gem",
+          "brt-result-original-name": "Steel Predator Power Gem",
+          "brt-result-original-icon": "icons/commodities/gems/gem-faceted-round-white.webp"
+        }
+      },
+      "documentId": "bhnXGwlGtrK4oHQN",
+      "_id": "cCwh7zBim8vy5Asf",
+      "_key": "!tables.results!oWVciLKUbQp4KM5l.cCwh7zBim8vy5Asf"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Steel Predator",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569145,
+    "modifiedTime": 1696756759995,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "oWVciLKUbQp4KM5l",
+  "sort": 0,
+  "_key": "!tables!oWVciLKUbQp4KM5l"
+}

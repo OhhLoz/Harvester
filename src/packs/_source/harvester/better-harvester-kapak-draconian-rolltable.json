@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Kapak Draconian RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Kapak Draconian'.",
+  "results": [
+    {
+      "text": "Draconian Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kapak Draconian",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PyzOhYwn7q5Hrb3S",
+          "brt-result-custom-name": "Draconian Tail",
+          "brt-result-original-name": "Draconian Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "PyzOhYwn7q5Hrb3S",
+      "_id": "L1AjHOTeJ2p6LLjy",
+      "_key": "!tables.results!21xzzBiqXRxfalN1.L1AjHOTeJ2p6LLjy"
+    },
+    {
+      "text": "Draconian Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Kapak Draconian",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tUREp5MQvmgYnlMM",
+          "brt-result-custom-name": "Draconian Blood vial",
+          "brt-result-original-name": "Draconian Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "tUREp5MQvmgYnlMM",
+      "_id": "XL2FEIML7cLCUcGK",
+      "_key": "!tables.results!21xzzBiqXRxfalN1.XL2FEIML7cLCUcGK"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Kapak Draconian",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568535,
+    "modifiedTime": 1696756757149,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "21xzzBiqXRxfalN1",
+  "sort": 0,
+  "_key": "!tables!21xzzBiqXRxfalN1"
+}

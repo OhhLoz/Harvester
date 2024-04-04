@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Rakshasa RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Rakshasa'.",
+  "results": [
+    {
+      "text": "Rakshasa Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Rakshasa",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UIilbLw5FJlAu2qZ",
+          "brt-result-custom-name": "Rakshasa Hide",
+          "brt-result-original-name": "Rakshasa Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "UIilbLw5FJlAu2qZ",
+      "_id": "GqiUTYhls38QqxWP",
+      "_key": "!tables.results!xCCRjkq4Gjz4XLdS.GqiUTYhls38QqxWP"
+    },
+    {
+      "text": "Rakshasa Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Rakshasa",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qmcxk06EqPuiH5rB",
+          "brt-result-custom-name": "Rakshasa Heart",
+          "brt-result-original-name": "Rakshasa Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "qmcxk06EqPuiH5rB",
+      "_id": "9ITox9ix2PZoq4Q4",
+      "_key": "!tables.results!xCCRjkq4Gjz4XLdS.9ITox9ix2PZoq4Q4"
+    },
+    {
+      "text": "Rakshasa Whiskers (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Rakshasa",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xi3Xc4T1rET8JKaG",
+          "brt-result-custom-name": "Rakshasa Whiskers (pouch)",
+          "brt-result-original-name": "Rakshasa Whiskers (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "xi3Xc4T1rET8JKaG",
+      "_id": "8xXfV7BWNuCdny36",
+      "_key": "!tables.results!xCCRjkq4Gjz4XLdS.8xXfV7BWNuCdny36"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Rakshasa",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569910,
+    "modifiedTime": 1696756759113,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xCCRjkq4Gjz4XLdS",
+  "sort": 0,
+  "_key": "!tables!xCCRjkq4Gjz4XLdS"
+}

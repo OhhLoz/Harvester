@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Neothelid RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Neothelid'.",
+  "results": [
+    {
+      "text": "Neothelid Glandular Sack",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neothelid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5CgR1HQiOuJIPUtD",
+          "brt-result-custom-name": "Neothelid Glandular Sack",
+          "brt-result-original-name": "Neothelid Glandular Sack",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "5CgR1HQiOuJIPUtD",
+      "_id": "6CXCRmOPIKqE1xl1",
+      "_key": "!tables.results!dJxxunaspuFlJFwP.6CXCRmOPIKqE1xl1"
+    },
+    {
+      "text": "Neothelid Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neothelid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GooR6IDLnSqv4Nx6",
+          "brt-result-custom-name": "Neothelid Hide",
+          "brt-result-original-name": "Neothelid Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "GooR6IDLnSqv4Nx6",
+      "_id": "mfkgCqFgYkjVcfo1",
+      "_key": "!tables.results!dJxxunaspuFlJFwP.mfkgCqFgYkjVcfo1"
+    },
+    {
+      "text": "Neothelid Hook (4x)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neothelid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IQHee9BPn9mOqJGl",
+          "brt-result-custom-name": "Neothelid Hook",
+          "brt-result-original-name": "Neothelid Hook (4x)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "IQHee9BPn9mOqJGl",
+      "_id": "yuDUwQyh6LnbYrBd",
+      "_key": "!tables.results!dJxxunaspuFlJFwP.yuDUwQyh6LnbYrBd"
+    },
+    {
+      "text": "Neothelid Tentacle (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neothelid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OcdXtwxxMDWNbOxo",
+          "brt-result-custom-name": "Neothelid Tentacle",
+          "brt-result-original-name": "Neothelid Tentacle (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "OcdXtwxxMDWNbOxo",
+      "_id": "8odCXMrbtq9USSAc",
+      "_key": "!tables.results!dJxxunaspuFlJFwP.8odCXMrbtq9USSAc"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Neothelid",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561653,
+    "modifiedTime": 1696756758292,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dJxxunaspuFlJFwP",
+  "sort": 0,
+  "_key": "!tables!dJxxunaspuFlJFwP"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Tyrannosaurus Rex RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Tyrannosaurus Rex'.",
+  "results": [
+    {
+      "text": "Tyrannosaurus Rex Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Tyrannosaurus Rex",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AUKuq5TadvS9iNzF",
+          "brt-result-custom-name": "Tyrannosaurus Rex Skin",
+          "brt-result-original-name": "Tyrannosaurus Rex Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "AUKuq5TadvS9iNzF",
+      "_id": "sW1ZGOzX1kbm4rJo",
+      "_key": "!tables.results!NEBteBqUpPIVdxwr.sW1ZGOzX1kbm4rJo"
+    },
+    {
+      "text": "Tyrannosaurus Rex Teeth (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-jaw-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Tyrannosaurus Rex",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WjjCiHxs52Rh0i7h",
+          "brt-result-custom-name": "Tyrannosaurus Rex Teeth",
+          "brt-result-original-name": "Tyrannosaurus Rex Teeth (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/bone-jaw-white.webp"
+        }
+      },
+      "documentId": "WjjCiHxs52Rh0i7h",
+      "_id": "UXIu7ilheiBDguhg",
+      "_key": "!tables.results!NEBteBqUpPIVdxwr.UXIu7ilheiBDguhg"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Tyrannosaurus Rex",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563487,
+    "modifiedTime": 1696756761107,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NEBteBqUpPIVdxwr",
+  "sort": 0,
+  "_key": "!tables!NEBteBqUpPIVdxwr"
+}

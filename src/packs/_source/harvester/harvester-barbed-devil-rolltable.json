@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Barbed Devil RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Barbed Devil'.",
+  "results": [
+    {
+      "text": "Barbed Devil Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barbed Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5hJx6anUTrayXEjR",
+          "brt-result-custom-name": "Barbed Devil Blood vial",
+          "brt-result-original-name": "Barbed Devil Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "5hJx6anUTrayXEjR",
+      "_id": "b6N3xfDAsoMpjKpg",
+      "_key": "!tables.results!Qil4iSZOCz91VGR6.b6N3xfDAsoMpjKpg"
+    },
+    {
+      "text": "Barbed Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barbed Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JYH4NS7BGUrZf7hS",
+          "brt-result-custom-name": "Barbed Hide",
+          "brt-result-original-name": "Barbed Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "JYH4NS7BGUrZf7hS",
+      "_id": "Tro5hUZ4svc1ij8B",
+      "_key": "!tables.results!Qil4iSZOCz91VGR6.Tro5hUZ4svc1ij8B"
+    },
+    {
+      "text": "Barbed Devil Barb (x10)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barbed Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VbbcyxyXDzh6Lblx",
+          "brt-result-custom-name": "Barbed Devil Barb",
+          "brt-result-original-name": "Barbed Devil Barb (x10)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "VbbcyxyXDzh6Lblx",
+      "_id": "qph1bEtkfhzvokJK",
+      "_key": "!tables.results!Qil4iSZOCz91VGR6.qph1bEtkfhzvokJK"
+    },
+    {
+      "text": "Barbed Devil Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barbed Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bPhOV3jgE4DgrwTz",
+          "brt-result-custom-name": "Barbed Devil Tail",
+          "brt-result-original-name": "Barbed Devil Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "bPhOV3jgE4DgrwTz",
+      "_id": "65HJ2cNL5Uji6Gk7",
+      "_key": "!tables.results!Qil4iSZOCz91VGR6.65HJ2cNL5Uji6Gk7"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Barbed Devil",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561803,
+    "modifiedTime": 1696756755938,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Qil4iSZOCz91VGR6",
+  "sort": 0,
+  "_key": "!tables!Qil4iSZOCz91VGR6"
+}

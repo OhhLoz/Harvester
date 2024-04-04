@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Polar Bear RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Polar Bear'.",
+  "results": [
+    {
+      "text": "Bear Claws/Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Polar Bear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BF2YQYfcXBk7Tsr3",
+          "brt-result-custom-name": "Bear Claws/Teeth (small pouch)",
+          "brt-result-original-name": "Bear Claws/Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "BF2YQYfcXBk7Tsr3",
+      "_id": "7YOK4JF2NsqE86jM",
+      "_key": "!tables.results!R0AC6asp3r6EMMhy.7YOK4JF2NsqE86jM"
+    },
+    {
+      "text": "Polar Bear Pelt",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Polar Bear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vVmG43K3ARGvG6Cs",
+          "brt-result-custom-name": "Polar Bear Pelt",
+          "brt-result-original-name": "Polar Bear Pelt",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "vVmG43K3ARGvG6Cs",
+      "_id": "pvFOc2b8auW1FyW4",
+      "_key": "!tables.results!R0AC6asp3r6EMMhy.pvFOc2b8auW1FyW4"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Polar Bear",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563840,
+    "modifiedTime": 1696756759096,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "R0AC6asp3r6EMMhy",
+  "sort": 0,
+  "_key": "!tables!R0AC6asp3r6EMMhy"
+}

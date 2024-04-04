@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Merfolk RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Merfolk'.",
+  "results": [
+    {
+      "text": "Merfolk Scales (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Merfolk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Gl8JjTE9W34Vgppo",
+          "brt-result-custom-name": "Merfolk Scales (small pouch)",
+          "brt-result-original-name": "Merfolk Scales (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "Gl8JjTE9W34Vgppo",
+      "_id": "WanzUSjg7UsBC8ZE",
+      "_key": "!tables.results!1SqLF8e2VsM1PXxY.WanzUSjg7UsBC8ZE"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Merfolk",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565758,
+    "modifiedTime": 1696756757668,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1SqLF8e2VsM1PXxY",
+  "sort": 0,
+  "_key": "!tables!1SqLF8e2VsM1PXxY"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Space Swine RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Space Swine'.",
+  "results": [
+    {
+      "text": "Space Swine Tusks",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Space Swine",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CF2ip3g7c7VdjD2R",
+          "brt-result-custom-name": "Space Swine Tusks",
+          "brt-result-original-name": "Space Swine Tusks",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "CF2ip3g7c7VdjD2R",
+      "_id": "xp9wfllGR1T4nGYE",
+      "_key": "!tables.results!MYkZXB2QLTstxQ3G.xp9wfllGR1T4nGYE"
+    },
+    {
+      "text": "Space Swine Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Space Swine",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.m2mIOWCdFUZPZGZx",
+          "brt-result-custom-name": "Space Swine Hide",
+          "brt-result-original-name": "Space Swine Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "m2mIOWCdFUZPZGZx",
+      "_id": "LrRgtYOQMaDVrhOH",
+      "_key": "!tables.results!MYkZXB2QLTstxQ3G.LrRgtYOQMaDVrhOH"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Space Swine",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564201,
+    "modifiedTime": 1696756759970,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "MYkZXB2QLTstxQ3G",
+  "sort": 0,
+  "_key": "!tables!MYkZXB2QLTstxQ3G"
+}

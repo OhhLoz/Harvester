@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Orc Eye of Gruumsh RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Orc Eye of Gruumsh'.",
+  "results": [
+    {
+      "text": "Eye of Gruumsh Eyeball",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc Eye of Gruumsh",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0Ivn3tFXkPXQu2ar",
+          "brt-result-custom-name": "Eye of Gruumsh Eyeball",
+          "brt-result-original-name": "Eye of Gruumsh Eyeball",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "0Ivn3tFXkPXQu2ar",
+      "_id": "LD0HbOwxKKyMnmqr",
+      "_key": "!tables.results!RtJcyH81vm3ocXeH.LD0HbOwxKKyMnmqr"
+    },
+    {
+      "text": "Orc Tusks",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc Eye of Gruumsh",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5y2lL4aCWmXXE7tZ",
+          "brt-result-custom-name": "Orc Tusks",
+          "brt-result-original-name": "Orc Tusks",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "5y2lL4aCWmXXE7tZ",
+      "_id": "NBR7Kqep2fDlABTW",
+      "_key": "!tables.results!RtJcyH81vm3ocXeH.NBR7Kqep2fDlABTW"
+    },
+    {
+      "text": "Eye of Gruumsh Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc Eye of Gruumsh",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.toNTczctxHYI6gTL",
+          "brt-result-custom-name": "Eye of Gruumsh Blood (vial)",
+          "brt-result-original-name": "Eye of Gruumsh Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "toNTczctxHYI6gTL",
+      "_id": "WsaHTGd0G2qPzlPk",
+      "_key": "!tables.results!RtJcyH81vm3ocXeH.WsaHTGd0G2qPzlPk"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Orc Eye of Gruumsh",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560280,
+    "modifiedTime": 1696756758329,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "RtJcyH81vm3ocXeH",
+  "sort": 0,
+  "_key": "!tables!RtJcyH81vm3ocXeH"
+}

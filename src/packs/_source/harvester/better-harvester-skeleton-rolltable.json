@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Skeleton RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Skeleton'.",
+  "results": [
+    {
+      "text": "Bone Dust (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Skeleton",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.APd7ZjlzE3C0j8Mp",
+          "brt-result-custom-name": "Bone Dust (pouch)",
+          "brt-result-original-name": "Bone Dust (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "APd7ZjlzE3C0j8Mp",
+      "_id": "8RYjAKyAnudaER6q",
+      "_key": "!tables.results!KiBeruat3kw1AOnv.8RYjAKyAnudaER6q"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Skeleton",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563454,
+    "modifiedTime": 1696756759945,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "KiBeruat3kw1AOnv",
+  "sort": 0,
+  "_key": "!tables!KiBeruat3kw1AOnv"
+}

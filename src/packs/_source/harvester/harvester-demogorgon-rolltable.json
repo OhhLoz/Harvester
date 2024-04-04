@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Demogorgon RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Demogorgon'.",
+  "results": [
+    {
+      "text": "Demogorgan's Tentacles (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Demogorgon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9NyEb0MFjmiUUU92",
+          "brt-result-custom-name": "Demogorgan's Tentacles",
+          "brt-result-original-name": "Demogorgan's Tentacles (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "9NyEb0MFjmiUUU92",
+      "_id": "8lRPwKOBm12FzUlN",
+      "_key": "!tables.results!Z9Zshg2zFzDGg5mD.8lRPwKOBm12FzUlN"
+    },
+    {
+      "text": "Demogorgan Eye (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Demogorgon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MH6EzSB6vUeEZA0G",
+          "brt-result-custom-name": "Demogorgan Eye",
+          "brt-result-original-name": "Demogorgan Eye (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "MH6EzSB6vUeEZA0G",
+      "_id": "8XuFEi8v1RU5TtUp",
+      "_key": "!tables.results!Z9Zshg2zFzDGg5mD.8XuFEi8v1RU5TtUp"
+    },
+    {
+      "text": "Demogorgan's Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Demogorgon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jy4e2dFdJP0HSXp4",
+          "brt-result-custom-name": "Demogorgan's Hide",
+          "brt-result-original-name": "Demogorgan's Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "jy4e2dFdJP0HSXp4",
+      "_id": "FsT6p1Wwsq4cqB1U",
+      "_key": "!tables.results!Z9Zshg2zFzDGg5mD.FsT6p1Wwsq4cqB1U"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Demogorgon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563067,
+    "modifiedTime": 1696756756096,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Z9Zshg2zFzDGg5mD",
+  "sort": 0,
+  "_key": "!tables!Z9Zshg2zFzDGg5mD"
+}

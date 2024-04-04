@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Stone Giant RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Stone Giant'.",
+  "results": [
+    {
+      "text": "Stone Giant Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Stone Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Puz3wYfqoCF4wFuB",
+          "brt-result-custom-name": "Stone Giant Blood vial",
+          "brt-result-original-name": "Stone Giant Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Puz3wYfqoCF4wFuB",
+      "_id": "M2nUH7JexDMLWKAM",
+      "_key": "!tables.results!1xHOn24pLaWGMQNG.M2nUH7JexDMLWKAM"
+    },
+    {
+      "text": "Stone Giant Molar",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "med",
+          "brt-source-value": "Stone Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.foT8uq4FbmteMX8s",
+          "brt-result-custom-name": "Stone Giant Molar",
+          "brt-result-original-name": "Stone Giant Molar",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "foT8uq4FbmteMX8s",
+      "_id": "IHUXIAfznZf725ti",
+      "_key": "!tables.results!1xHOn24pLaWGMQNG.IHUXIAfznZf725ti"
+    },
+    {
+      "text": "Stone Giant Toenails",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Stone Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.k56IhINMxL26r13e",
+          "brt-result-custom-name": "Stone Giant Toenails",
+          "brt-result-original-name": "Stone Giant Toenails",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "k56IhINMxL26r13e",
+      "_id": "1gTuyqMSRV445SC6",
+      "_key": "!tables.results!1xHOn24pLaWGMQNG.1gTuyqMSRV445SC6"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Stone Giant",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568509,
+    "modifiedTime": 1696756760017,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1xHOn24pLaWGMQNG",
+  "sort": 0,
+  "_key": "!tables!1xHOn24pLaWGMQNG"
+}

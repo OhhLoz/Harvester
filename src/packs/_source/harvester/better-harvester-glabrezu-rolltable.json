@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Glabrezu RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Glabrezu'.",
+  "results": [
+    {
+      "text": "Glabrezu Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Glabrezu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Rjb9af0NVKSE4ZL2",
+          "brt-result-custom-name": "Glabrezu Skin",
+          "brt-result-original-name": "Glabrezu Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "Rjb9af0NVKSE4ZL2",
+      "_id": "9ciVxGYlkBz0Sybm",
+      "_key": "!tables.results!A5WuzOpFgFwwnHeB.9ciVxGYlkBz0Sybm"
+    },
+    {
+      "text": "Glabrezu Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Glabrezu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iba4vCldQpd1PMS8",
+          "brt-result-custom-name": "Glabrezu Horn",
+          "brt-result-original-name": "Glabrezu Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "iba4vCldQpd1PMS8",
+      "_id": "2ZPggHUlGwK29ai8",
+      "_key": "!tables.results!A5WuzOpFgFwwnHeB.2ZPggHUlGwK29ai8"
+    },
+    {
+      "text": "Glabrezu Claws",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Glabrezu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zMN4JMBGztMTnWDo",
+          "brt-result-custom-name": "Glabrezu Claws",
+          "brt-result-original-name": "Glabrezu Claws",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "zMN4JMBGztMTnWDo",
+      "_id": "4nZAZUvqPFMq1flI",
+      "_key": "!tables.results!A5WuzOpFgFwwnHeB.4nZAZUvqPFMq1flI"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Glabrezu",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569169,
+    "modifiedTime": 1696756756688,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "A5WuzOpFgFwwnHeB",
+  "sort": 0,
+  "_key": "!tables!A5WuzOpFgFwwnHeB"
+}

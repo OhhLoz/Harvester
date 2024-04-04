@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Lizardfolk RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Lizardfolk'.",
+  "results": [
+    {
+      "text": "Lizardfolk Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Lizardfolk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.82mKHZ1MbQUK93Pn",
+          "brt-result-custom-name": "Lizardfolk Tail",
+          "brt-result-original-name": "Lizardfolk Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "82mKHZ1MbQUK93Pn",
+      "_id": "3Ul5nblTKiZxPAh3",
+      "_key": "!tables.results!19vyDKOWCp1ae6nX.3Ul5nblTKiZxPAh3"
+    },
+    {
+      "text": "Lizardfolk Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Lizardfolk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hdY9XdVFCTnIkwZv",
+          "brt-result-custom-name": "Lizardfolk Skin",
+          "brt-result-original-name": "Lizardfolk Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "hdY9XdVFCTnIkwZv",
+      "_id": "QTzA40Sc0TIJ277l",
+      "_key": "!tables.results!19vyDKOWCp1ae6nX.QTzA40Sc0TIJ277l"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Lizardfolk",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562596,
+    "modifiedTime": 1696756757625,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "19vyDKOWCp1ae6nX",
+  "sort": 0,
+  "_key": "!tables!19vyDKOWCp1ae6nX"
+}

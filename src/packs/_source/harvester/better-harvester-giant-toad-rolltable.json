@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Giant Toad RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Toad'.",
+  "results": [
+    {
+      "text": "Giant Toad Slime (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Toad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IWv7z2Awp7yH7GqR",
+          "brt-result-custom-name": "Giant Toad Slime (vial)",
+          "brt-result-original-name": "Giant Toad Slime (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "IWv7z2Awp7yH7GqR",
+      "_id": "GvJq6BYioYD45HDO",
+      "_key": "!tables.results!1w6RUi5xWeM56nAo.GvJq6BYioYD45HDO"
+    },
+    {
+      "text": "Giant Toad Stomach Acid (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Toad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZfdAoLUv2tHYD3Fy",
+          "brt-result-custom-name": "Giant Toad Stomach Acid (vial)",
+          "brt-result-original-name": "Giant Toad Stomach Acid (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "ZfdAoLUv2tHYD3Fy",
+      "_id": "nGKsg7e9SsqNXmjt",
+      "_key": "!tables.results!1w6RUi5xWeM56nAo.nGKsg7e9SsqNXmjt"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Toad",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566184,
+    "modifiedTime": 1696756756362,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1w6RUi5xWeM56nAo",
+  "sort": 0,
+  "_key": "!tables!1w6RUi5xWeM56nAo"
+}

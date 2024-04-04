@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Chasme RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Chasme'.",
+  "results": [
+    {
+      "text": "Chasme Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Chasme",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5qD0Ia3SFZSQIexQ",
+          "brt-result-custom-name": "Chasme Wing",
+          "brt-result-original-name": "Chasme Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "5qD0Ia3SFZSQIexQ",
+      "_id": "CgQ01Slk0ZgpB04E",
+      "_key": "!tables.results!Xg8LvVpljqrhyRzk.CgQ01Slk0ZgpB04E"
+    },
+    {
+      "text": "Chasme Proboscis",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Chasme",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.O0M13k0fSofY89he",
+          "brt-result-custom-name": "Chasme Proboscis",
+          "brt-result-original-name": "Chasme Proboscis",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "O0M13k0fSofY89he",
+      "_id": "Fagb2mKVJIK9EAR7",
+      "_key": "!tables.results!Xg8LvVpljqrhyRzk.Fagb2mKVJIK9EAR7"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Chasme",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561842,
+    "modifiedTime": 1696756756028,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Xg8LvVpljqrhyRzk",
+  "sort": 0,
+  "_key": "!tables!Xg8LvVpljqrhyRzk"
+}

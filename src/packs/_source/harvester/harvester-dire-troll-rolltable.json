@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Dire Troll RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dire Troll'.",
+  "results": [
+    {
+      "text": "Dire Troll Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Dire Troll",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2v0PqMvocHxaGpow",
+          "brt-result-custom-name": "Dire Troll Heart",
+          "brt-result-original-name": "Dire Troll Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "2v0PqMvocHxaGpow",
+      "_id": "gQYZoHwF9uuAfkE0",
+      "_key": "!tables.results!X4XSNRarUGc10LXG.gQYZoHwF9uuAfkE0"
+    },
+    {
+      "text": "Dire Troll Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Dire Troll",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fggg6wb85beQ6g15",
+          "brt-result-custom-name": "Dire Troll Blood vial",
+          "brt-result-original-name": "Dire Troll Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "fggg6wb85beQ6g15",
+      "_id": "3rkSoBkXzu9nAchj",
+      "_key": "!tables.results!X4XSNRarUGc10LXG.3rkSoBkXzu9nAchj"
+    },
+    {
+      "text": "Dire Troll Skin Strips (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Dire Troll",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yVpwydmkmGx7VyeI",
+          "brt-result-custom-name": "Dire Troll Skin Strips (pouch)",
+          "brt-result-original-name": "Dire Troll Skin Strips (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "yVpwydmkmGx7VyeI",
+      "_id": "ckpVXXlUIhkq28Jy",
+      "_key": "!tables.results!X4XSNRarUGc10LXG.ckpVXXlUIhkq28Jy"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Dire Troll",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561068,
+    "modifiedTime": 1696756756107,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "X4XSNRarUGc10LXG",
+  "sort": 0,
+  "_key": "!tables!X4XSNRarUGc10LXG"
+}

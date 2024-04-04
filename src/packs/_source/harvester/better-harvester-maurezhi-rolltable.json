@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Maurezhi RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Maurezhi'.",
+  "results": [
+    {
+      "text": "Maurezhi Saliva (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Maurezhi",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.S5HNaxNrLEwcKDKs",
+          "brt-result-custom-name": "Maurezhi Saliva vial",
+          "brt-result-original-name": "Maurezhi Saliva (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "S5HNaxNrLEwcKDKs",
+      "_id": "gfKnyuFlrSkoBBhk",
+      "_key": "!tables.results!iHlpRkuv2Dav1QrE.gfKnyuFlrSkoBBhk"
+    },
+    {
+      "text": "Maurezhi Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Maurezhi",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.juG647oflb1KBKOy",
+          "brt-result-custom-name": "Maurezhi Claws (pouch)",
+          "brt-result-original-name": "Maurezhi Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "juG647oflb1KBKOy",
+      "_id": "xWH2RK3IpBdAdfa0",
+      "_key": "!tables.results!iHlpRkuv2Dav1QrE.xWH2RK3IpBdAdfa0"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Maurezhi",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569218,
+    "modifiedTime": 1696756757658,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "iHlpRkuv2Dav1QrE",
+  "sort": 0,
+  "_key": "!tables!iHlpRkuv2Dav1QrE"
+}

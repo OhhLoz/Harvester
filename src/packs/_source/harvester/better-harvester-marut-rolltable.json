@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Marut RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Marut'.",
+  "results": [
+    {
+      "text": "Marut Components",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Marut",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3I2KFN480Lf4aumT",
+          "brt-result-custom-name": "Marut Components",
+          "brt-result-original-name": "Marut Components",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "3I2KFN480Lf4aumT",
+      "_id": "YPTeKs8IAMcLTcDY",
+      "_key": "!tables.results!YIdksGDYtWl2uEas.YPTeKs8IAMcLTcDY"
+    },
+    {
+      "text": "Marut Gold Plate",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Marut",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6XaoWuEXNe5O4YIC",
+          "brt-result-custom-name": "Marut Gold Plate",
+          "brt-result-original-name": "Marut Gold Plate",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "6XaoWuEXNe5O4YIC",
+      "_id": "MRvtFWSoy1xAayVg",
+      "_key": "!tables.results!YIdksGDYtWl2uEas.MRvtFWSoy1xAayVg"
+    },
+    {
+      "text": "Marut Onyx Shards (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Marut",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.F1zkHdY9gQXQyTYc",
+          "brt-result-custom-name": "Marut Onyx Shards (pouch)",
+          "brt-result-original-name": "Marut Onyx Shards (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "F1zkHdY9gQXQyTYc",
+      "_id": "LmMScL2q88ezGyG3",
+      "_key": "!tables.results!YIdksGDYtWl2uEas.LmMScL2q88ezGyG3"
+    },
+    {
+      "text": "Marut Scrap Metal (1d8)",
+      "type": 2,
+      "img": "icons/commodities/metal/barstock-broken-steel.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1d8"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Marut",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TO6QqCSrLjKbkvls",
+          "brt-result-custom-name": "Marut Scrap Metal d",
+          "brt-result-original-name": "Marut Scrap Metal (1d8)",
+          "brt-result-original-icon": "icons/commodities/metal/barstock-broken-steel.webp"
+        }
+      },
+      "documentId": "TO6QqCSrLjKbkvls",
+      "_id": "w8Se1IZLORsVpRyF",
+      "_key": "!tables.results!YIdksGDYtWl2uEas.w8Se1IZLORsVpRyF"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Marut",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561161,
+    "modifiedTime": 1696756757644,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "YIdksGDYtWl2uEas",
+  "sort": 0,
+  "_key": "!tables!YIdksGDYtWl2uEas"
+}

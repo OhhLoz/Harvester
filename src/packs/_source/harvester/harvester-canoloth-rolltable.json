@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Canoloth RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Canoloth'.",
+  "results": [
+    {
+      "text": "Canoloth Chitinous Plates",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Canoloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5G3r8xlwWZpKop2t",
+          "brt-result-custom-name": "Canoloth Chitinous Plates",
+          "brt-result-original-name": "Canoloth Chitinous Plates",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "5G3r8xlwWZpKop2t",
+      "_id": "cNj8oIgkPzkZGtEJ",
+      "_key": "!tables.results!0A3ri1kT8nW1CEfP.cNj8oIgkPzkZGtEJ"
+    },
+    {
+      "text": "Yugoloth Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Canoloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ERzDOCzj1D1OUT2Y",
+          "brt-result-custom-name": "Yugoloth Heart",
+          "brt-result-original-name": "Yugoloth Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "ERzDOCzj1D1OUT2Y",
+      "_id": "zM5mmfGbgaOtmTGb",
+      "_key": "!tables.results!0A3ri1kT8nW1CEfP.zM5mmfGbgaOtmTGb"
+    },
+    {
+      "text": "Canoloth Tongue",
+      "type": 2,
+      "img": "icons/commodities/biological/tongue-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Canoloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.F4PjY50xAfNljJCI",
+          "brt-result-custom-name": "Canoloth Tongue",
+          "brt-result-original-name": "Canoloth Tongue",
+          "brt-result-original-icon": "icons/commodities/biological/tongue-red.webp"
+        }
+      },
+      "documentId": "F4PjY50xAfNljJCI",
+      "_id": "sn2Dc2vVVoxJ5EkB",
+      "_key": "!tables.results!0A3ri1kT8nW1CEfP.sn2Dc2vVVoxJ5EkB"
+    },
+    {
+      "text": "Yugoloth Ichor (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Canoloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jDEeLcT3LVKQiHLw",
+          "brt-result-custom-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "jDEeLcT3LVKQiHLw",
+      "_id": "bNcxb0NltM8M7dFm",
+      "_key": "!tables.results!0A3ri1kT8nW1CEfP.bNcxb0NltM8M7dFm"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Canoloth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561692,
+    "modifiedTime": 1696756756011,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "0A3ri1kT8nW1CEfP",
+  "sort": 0,
+  "_key": "!tables!0A3ri1kT8nW1CEfP"
+}

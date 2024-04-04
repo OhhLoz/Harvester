@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Lamia RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Lamia'.",
+  "results": [
+    {
+      "text": "Lamia Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Lamia",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.L2wWO7LXUWoqW8os",
+          "brt-result-custom-name": "Lamia Blood vial",
+          "brt-result-original-name": "Lamia Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "L2wWO7LXUWoqW8os",
+      "_id": "vb32kX8M5TfuAQ5k",
+      "_key": "!tables.results!G6fTalu7L0dB9Owj.vb32kX8M5TfuAQ5k"
+    },
+    {
+      "text": "Lamia Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Lamia",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MOXIXR1YoJnVd7SC",
+          "brt-result-custom-name": "Lamia Claws (pouch)",
+          "brt-result-original-name": "Lamia Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "MOXIXR1YoJnVd7SC",
+      "_id": "ncxYQj43Lm6EG7pw",
+      "_key": "!tables.results!G6fTalu7L0dB9Owj.ncxYQj43Lm6EG7pw"
+    },
+    {
+      "text": "Lamia Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Lamia",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TaBAZx0XwqF1jjV0",
+          "brt-result-custom-name": "Lamia Hide",
+          "brt-result-original-name": "Lamia Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "TaBAZx0XwqF1jjV0",
+      "_id": "BZxLVM40odFmmdjD",
+      "_key": "!tables.results!G6fTalu7L0dB9Owj.BZxLVM40odFmmdjD"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Lamia",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567154,
+    "modifiedTime": 1696756757171,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "G6fTalu7L0dB9Owj",
+  "sort": 0,
+  "_key": "!tables!G6fTalu7L0dB9Owj"
+}

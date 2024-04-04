@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Warhorse Skeleton RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Warhorse Skeleton'.",
+  "results": [
+    {
+      "text": "Bone Dust (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Warhorse Skeleton",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kr4cp43oW3H3EptW",
+          "brt-result-custom-name": "Bone Dust (pouch)",
+          "brt-result-original-name": "Bone Dust (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "kr4cp43oW3H3EptW",
+      "_id": "o5os2mau1EFyoUBY",
+      "_key": "!tables.results!PO5iHUNJUy7nYWyG.o5os2mau1EFyoUBY"
+    },
+    {
+      "text": "Horse Hoof (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Warhorse Skeleton",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.szCIaRlIi8Xtck98",
+          "brt-result-custom-name": "Horse Hoof",
+          "brt-result-original-name": "Horse Hoof (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "szCIaRlIi8Xtck98",
+      "_id": "O5mpRl2b7eAmplPo",
+      "_key": "!tables.results!PO5iHUNJUy7nYWyG.O5mpRl2b7eAmplPo"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Warhorse Skeleton",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756581447,
+    "modifiedTime": 1696756761141,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "PO5iHUNJUy7nYWyG",
+  "sort": 0,
+  "_key": "!tables!PO5iHUNJUy7nYWyG"
+}

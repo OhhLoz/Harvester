@@ -1,0 +1,65 @@
+{
+  "name": "Better Harvester | Drow Mage RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Drow Mage'.",
+  "results": [
+    {
+      "text": "Drow Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Drow Mage",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IeCmMluu0w47SzIs",
+          "brt-result-custom-name": "Drow Blood vial",
+          "brt-result-original-name": "Drow Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "IeCmMluu0w47SzIs",
+      "_id": "eunyZmoNPGupC5Ub",
+      "_key": "!tables.results!YbcTXiVTCOy8oyXc.eunyZmoNPGupC5Ub"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Drow Mage",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566206,
+    "modifiedTime": 1696756756154,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "YbcTXiVTCOy8oyXc",
+  "sort": 0,
+  "_key": "!tables!YbcTXiVTCOy8oyXc"
+}

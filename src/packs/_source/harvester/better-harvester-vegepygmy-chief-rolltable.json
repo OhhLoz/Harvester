@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Vegepygmy Chief RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Vegepygmy Chief'.",
+  "results": [
+    {
+      "text": "Vegepygmy Skin (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Vegepygmy Chief",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DqnwTcMGeBOlw8Y0",
+          "brt-result-custom-name": "Vegepygmy Skin (pouch)",
+          "brt-result-original-name": "Vegepygmy Skin (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "DqnwTcMGeBOlw8Y0",
+      "_id": "TXVQf2q4tBvAl9Jd",
+      "_key": "!tables.results!ZB6BaU1w6kCVQc8X.TXVQf2q4tBvAl9Jd"
+    },
+    {
+      "text": "Vegepygmy Russet Mold Spores (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Vegepygmy Chief",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FVcbxiHjN6pbFUYp",
+          "brt-result-custom-name": "Vegepygmy Russet Mold Spores (pouch)",
+          "brt-result-original-name": "Vegepygmy Russet Mold Spores (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "FVcbxiHjN6pbFUYp",
+      "_id": "6WrBEKmQEmsyPLK9",
+      "_key": "!tables.results!ZB6BaU1w6kCVQc8X.6WrBEKmQEmsyPLK9"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Vegepygmy Chief",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564942,
+    "modifiedTime": 1696756761126,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ZB6BaU1w6kCVQc8X",
+  "sort": 0,
+  "_key": "!tables!ZB6BaU1w6kCVQc8X"
+}

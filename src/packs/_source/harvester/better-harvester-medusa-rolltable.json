@@ -1,0 +1,123 @@
+{
+  "name": "Better Harvester | Medusa RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Medusa'.",
+  "results": [
+    {
+      "text": "Medusa Head (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Medusa",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RsX4kojV8CSDFYgM",
+          "brt-result-custom-name": "Medusa Head (sack)",
+          "brt-result-original-name": "Medusa Head (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "RsX4kojV8CSDFYgM",
+      "_id": "MuftQJZhvkIqBH1N",
+      "_key": "!tables.results!ZKuWrHlL8Bl9bOZQ.MuftQJZhvkIqBH1N"
+    },
+    {
+      "text": "Medusa Snake Hair (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Medusa",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TM2yFWgpDejcx3i4",
+          "brt-result-custom-name": "Medusa Snake Hair (large pouch)",
+          "brt-result-original-name": "Medusa Snake Hair (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "TM2yFWgpDejcx3i4",
+      "_id": "PBuhOJo2Blif15bI",
+      "_key": "!tables.results!ZKuWrHlL8Bl9bOZQ.PBuhOJo2Blif15bI"
+    },
+    {
+      "text": "Medusa Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Medusa",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.sOK2VbByYiLLQsfn",
+          "brt-result-custom-name": "Medusa Heart",
+          "brt-result-original-name": "Medusa Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "sOK2VbByYiLLQsfn",
+      "_id": "BAB5KvL4njGpObQ8",
+      "_key": "!tables.results!ZKuWrHlL8Bl9bOZQ.BAB5KvL4njGpObQ8"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Medusa",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569194,
+    "modifiedTime": 1696756757662,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ZKuWrHlL8Bl9bOZQ",
+  "sort": 0,
+  "_key": "!tables!ZKuWrHlL8Bl9bOZQ"
+}

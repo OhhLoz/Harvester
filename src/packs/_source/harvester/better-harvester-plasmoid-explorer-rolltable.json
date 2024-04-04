@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Plasmoid Explorer RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Plasmoid Explorer'.",
+  "results": [
+    {
+      "text": "Plasmoid Ooze (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Plasmoid Explorer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CSJ5HW9oJ9PL7K2l",
+          "brt-result-custom-name": "Plasmoid Ooze (vial)",
+          "brt-result-original-name": "Plasmoid Ooze (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "CSJ5HW9oJ9PL7K2l",
+      "_id": "kX3OBuaCqXLpXBAh",
+      "_key": "!tables.results!NgIgxoj3xmN20exI.kX3OBuaCqXLpXBAh"
+    },
+    {
+      "text": "Plasmoid Nerve Cluster",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Plasmoid Explorer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.mvDJUu8uqc44juA4",
+          "brt-result-custom-name": "Plasmoid Nerve Cluster",
+          "brt-result-original-name": "Plasmoid Nerve Cluster",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "mvDJUu8uqc44juA4",
+      "_id": "SHdu9XssbV9KtZsg",
+      "_key": "!tables.results!NgIgxoj3xmN20exI.SHdu9XssbV9KtZsg"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Plasmoid Explorer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564294,
+    "modifiedTime": 1696756759090,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NgIgxoj3xmN20exI",
+  "sort": 0,
+  "_key": "!tables!NgIgxoj3xmN20exI"
+}

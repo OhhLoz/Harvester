@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Githzerai Monk RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Githzerai Monk'.",
+  "results": [
+    {
+      "text": "Githzerai Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githzerai Monk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4snfLAfGFNqVtAhD",
+          "brt-result-custom-name": "Githzerai Heart",
+          "brt-result-original-name": "Githzerai Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "4snfLAfGFNqVtAhD",
+      "_id": "ZjS6PebAtEUvSC96",
+      "_key": "!tables.results!F1K4k1ek4Z2UqsXb.ZjS6PebAtEUvSC96"
+    },
+    {
+      "text": "Githzerai Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githzerai Monk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7dAuLYa2nMwJIwx5",
+          "brt-result-custom-name": "Githzerai Brain",
+          "brt-result-original-name": "Githzerai Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "7dAuLYa2nMwJIwx5",
+      "_id": "He9hQwqfPGGdzvYY",
+      "_key": "!tables.results!F1K4k1ek4Z2UqsXb.He9hQwqfPGGdzvYY"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Githzerai Monk",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561559,
+    "modifiedTime": 1696756756685,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "F1K4k1ek4Z2UqsXb",
+  "sort": 0,
+  "_key": "!tables!F1K4k1ek4Z2UqsXb"
+}

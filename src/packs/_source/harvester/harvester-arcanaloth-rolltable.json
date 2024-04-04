@@ -1,0 +1,152 @@
+{
+  "name": "Better Harvester | Arcanaloth RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Arcanaloth'.",
+  "results": [
+    {
+      "text": "Yugoloth Ichor (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Arcanaloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8gEMZk6gNpGrppIN",
+          "brt-result-custom-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "8gEMZk6gNpGrppIN",
+      "_id": "EVC0BYcwY8e98gMj",
+      "_key": "!tables.results!9Pxtvwy3e8ZzZQ2r.EVC0BYcwY8e98gMj"
+    },
+    {
+      "text": "Yugoloth Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Arcanaloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FGWNqEQhiqS7bBDb",
+          "brt-result-custom-name": "Yugoloth Heart",
+          "brt-result-original-name": "Yugoloth Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "FGWNqEQhiqS7bBDb",
+      "_id": "awpOOIozzTKErzp9",
+      "_key": "!tables.results!9Pxtvwy3e8ZzZQ2r.awpOOIozzTKErzp9"
+    },
+    {
+      "text": "Arcanaloth Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Arcanaloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.YB14ladG1bUWKc27",
+          "brt-result-custom-name": "Arcanaloth Venom (vial)",
+          "brt-result-original-name": "Arcanaloth Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "YB14ladG1bUWKc27",
+      "_id": "oAyHBTTosejHmtPq",
+      "_key": "!tables.results!9Pxtvwy3e8ZzZQ2r.oAyHBTTosejHmtPq"
+    },
+    {
+      "text": "Arcanaloth Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Arcanaloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.okhhmgA25bFYQLC4",
+          "brt-result-custom-name": "Arcanaloth Hide",
+          "brt-result-original-name": "Arcanaloth Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "okhhmgA25bFYQLC4",
+      "_id": "6tGd5Zd41XsmgJV4",
+      "_key": "!tables.results!9Pxtvwy3e8ZzZQ2r.6tGd5Zd41XsmgJV4"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Arcanaloth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562810,
+    "modifiedTime": 1696756755901,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9Pxtvwy3e8ZzZQ2r",
+  "sort": 0,
+  "_key": "!tables!9Pxtvwy3e8ZzZQ2r"
+}

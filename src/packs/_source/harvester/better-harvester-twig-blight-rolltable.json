@@ -1,0 +1,94 @@
+{
+  "name": "Better Harvester | Twig Blight RollTable",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Twig Blight'.",
+  "results": [
+    {
+      "text": "Gulthias Sap (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Twig Blight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JjK0S1Yn6rMuZKGX",
+          "brt-result-custom-name": "Gulthias Sap (vial)",
+          "brt-result-original-name": "Gulthias Sap (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "JjK0S1Yn6rMuZKGX",
+      "_id": "SrzR2YJKAaoJ3Bsa",
+      "_key": "!tables.results!38VR1YtfKfsfY460.SrzR2YJKAaoJ3Bsa"
+    },
+    {
+      "text": "Blight Seeds (x5)",
+      "type": 2,
+      "img": "icons/consumables/nuts/pistachios-nute-shell-green-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Twig Blight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.huOzQcftVF0Ssinp",
+          "brt-result-custom-name": "Blight Seeds",
+          "brt-result-original-name": "Blight Seeds (x5)",
+          "brt-result-original-icon": "icons/consumables/nuts/pistachios-nute-shell-green-white.webp"
+        }
+      },
+      "documentId": "huOzQcftVF0Ssinp",
+      "_id": "tmDVMb0mrqQz2RYP",
+      "_key": "!tables.results!38VR1YtfKfsfY460.tmDVMb0mrqQz2RYP"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Twig Blight",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566560,
+    "modifiedTime": 1696756761106,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "38VR1YtfKfsfY460",
+  "sort": 0,
+  "_key": "!tables!38VR1YtfKfsfY460"
+}
