@@ -134,3 +134,109 @@ export function parseAsArray(obj) {
     }
     return arr;
 }
+
+ /**
+     * Turns a string of currencies into an array containing the data and quantities for each currency
+     * @deprecated the solution with item piles is much better
+     *
+     * @param {string} currenciesS                               A string of currencies to convert (eg, "5gp 25sp")
+     *
+     * @returns {Array<object>}                                 An array of object containing the data and quantity for each currency
+     */
+export function _retrieveCurrenciesSimpleFromStringNoDep(currenciesS) {
+    const c = ItemPilesHelpers.generateCurrenciesStringFromString(currenciesS);
+    if (!c) {
+        return "";
+    }
+    const arr = [];
+    const cc = c.split(" ");
+    for(const abbreviation of CONSTANTS.currencyMap.values()) {
+        for(const roll of cc) {
+            if(roll.includes(abbreviation)) {
+                let currency = roll.replaceAll(abbreviation)?.trim();
+                let roll = new Roll(currency);
+                let rollResult = roll.roll({ async: false });
+                arr.push({
+                    abbreviation: abbreviation,
+                    quantity: 1,
+                    roll: rollResult
+                });
+            }
+        }
+    }
+    const currencies = {};
+    for (const cc of arr) {
+        const abbreviation = cc.abbreviation.toLowerCase().replace("{#}", "").trim();
+        currencies[abbreviation] = (cc.roll ? cc.roll.total : cc.quantity) ?? 0;
+    }
+    return currencies;
+}
+
+ /**
+ * @deprecated the solution with item piles is much better
+ * @param {*} actor
+ * @param {*} currencyLabel
+ * @param {*} toAdd
+ */
+export async function updateActorCurrencyNoDep(actor, currencyLabel) {
+    const currenciesToAdd = _retrieveCurrenciesSimpleFromStringNoDep(currencyLabel);
+    for (const [currencyRef, toAdd] of Object.entries(currenciesToAdd)) {
+        let total = actor.system.currency[currencyRef] + toAdd;
+        await actor.update({
+            system: {
+                currency: {
+                [currencyRef]: total,
+                },
+            },
+        });
+        Logger.log(`Added ${toAdd} ${currencyLabel} to: ${actor.name}`);
+    }
+  }
+
+/**
+ * @deprecated the solution with item piles is much better
+ * @param {*} actorName
+ * @param {*} actionName
+ * @returns
+ */
+  export function searchCompendium(actorName, actionName) {
+    let returnArr = [];
+    if (actorName.includes("Dragon")) {
+      actorName = formatDragon(actorName);
+    }
+    if (actionName === harvestAction.name) {
+      returnArr = checkCompendium(customCompendium, "name", actorName);
+
+      if (returnArr.length !== 0) {
+        return returnArr;
+      }
+      returnArr = checkCompendium(harvestCompendium, "system.source.label", actorName);
+    } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
+      returnArr = checkCompendium(customLootCompendium, "name", actorName);
+
+      if (returnArr.length !== 0) {
+        return returnArr;
+      }
+      returnArr = checkCompendium(lootCompendium, "name", actorName);
+    }
+
+    return returnArr;
+  }
+
+  /**
+   * @deprecated the solution with item piles is much better
+   * @param {*} compendium
+   * @param {*} checkProperty
+   * @param {*} matchProperty
+   * @returns
+   */
+  export function checkCompendium(compendium, checkProperty, matchProperty) {
+    let returnArr = [];
+    compendium.forEach((doc) => {
+      if (eval(`doc.${checkProperty}`) === matchProperty) {
+        returnArr.push(doc);
+      }
+    });
+    return returnArr;
+  }
+

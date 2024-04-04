@@ -59,6 +59,19 @@
             "flags": {}
         },
         {
+            "name": "harvester",
+            "label": "Harvester",
+            "path": "packs/harvester",
+            "type": "RollTable",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "harvester",
+            "system": "dnd5e",
+            "flags": {}
+        },
+        {
             "name": "custom",
             "label": "Custom",
             "path": "storage/custom",
@@ -103,7 +116,7 @@
             "name": "Better Harvesting and Looting",
             "color": "#ffb38a",
             "sorting": "a",
-            "packs": ["harvest", "actions", "loot", "custom", "custom-loot", "license"]
+            "packs": ["harvest", "harvester", "actions", "loot", "custom", "custom-loot", "license"]
         }
     ],
     "relationships": {
@@ -124,7 +137,9 @@
             {
                 "id": "requestor",
                 "type": "module"
-            },
+            }
+        ],
+        "recommended": [
             {
                 "id": "better-rolltables",
                 "type": "module"
@@ -135,7 +150,6 @@
             }
         ]
     },
-    "id": "harvester",
     "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.8.0/module.json",
     "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.8.0/harvester.zip"
 }

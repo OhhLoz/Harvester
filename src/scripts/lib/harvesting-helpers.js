@@ -1,15 +1,6 @@
 import {
     validateAction,
-    actionCompendium,
-    harvestCompendium,
-    lootCompendium,
-    customCompendium,
-    customLootCompendium,
-    harvestBetterRollCompendium,
     harvestAction,
-    lootAction,
-    currencyFlavors,
-    hasBetterRollTables,
     addEffect,
     addItemsToActor,
 } from "../../module.js";
@@ -22,10 +13,6 @@ import BetterRollTablesHelpers from "./better-rolltables-helpers.js";
 import ItemPilesHelpers from "./item-piles-helpers.js";
 import {
     checkItemSourceLabel,
-    retrieveItemSourceLabelDC,
-    retrieveItemSourceLabel,
-    formatDragon,
-    isRealBoolean,
     parseAsArray,
 } from "./lib.js";
 import { RetrieveHelpers } from "./retrieve-helpers.js";
@@ -96,8 +83,17 @@ export class HarvestingHelpers {
             }
 
             Logger.debug(`HarvestingHelpers | BRT is enable`);
-            let skillCheckVerbose = getProperty(rollTablesMatched[0], `flags.better-rolltables.brt-skill-value`);
-            if (!skillCheckVerbose) {
+            let skillCheckVerbose;
+            if (game.modules.get("better-rolltables")?.active) {
+                skillCheckVerbose = getProperty(rollTablesMatched[0], `flags.better-rolltables.brt-skill-value`);
+            } else {
+                // let skillDenomination = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`); // TODO make this better
+                // let skillCheck = skillCheckVerbose ? skillCheckVerbose : "nat"; // TODO make this better maybe with requestor
+                // item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
+                // item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
+                skillCheckVerbose = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`) || "nat"; // TODO make this better
+            }
+            if(!skillCheckVerbose) {
                 Logger.warn(
                     `ATTENTION: No 'flags.better-rolltables.brt-skill-value' is been setted on table '${rollTablesMatched[0]}'`,
                     true,
@@ -105,18 +101,10 @@ export class HarvestingHelpers {
                 );
                 return;
             }
-            // let skillDenomination = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`); // TODO make this better
-            // let skillCheck = skillCheckVerbose ? skillCheckVerbose : "nat"; // TODO make this better maybe with requestor
-            // item.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skillCheck);
-            // item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
 
             let skillCheckVerboseArr = parseAsArray(skillCheckVerbose);
             const skillCheckVerboseList = [];
             for (const skill of skillCheckVerboseArr) {
-                // let itemClone = new Item(item?.toObject());
-                // // itemClone.ownership.default = CONST.DOCUMENT_PERMISSION_LEVELS.LIMITED;
-                // itemClone.setFlag(CONSTANTS.MODULE_ID, "skillCheck", skill);
-                // itemClone.update({ system: { formula: `1d20 + @skills.${skill}.total` } });
                 skillCheckVerboseList.push({
                     skillDenomination: skill,
                     skillItem: item,
@@ -288,47 +276,52 @@ export class HarvestingHelpers {
     }
 
     static async addItemsToActorHarvesterOption(actorId, targetedTokenId, itemsToAdd, harvesterMessage, userId) {
-        const actor = await RetrieveHelpers.getActorAsync(actorId);
-        const targetedToken = RetrieveHelpers.getTokenSync(targetedTokenId);
-        if (SETTINGS.harvestAddItemsMode === "ShareItOrKeepIt") {
-            Logger.debug(`SHARE IT OR KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
-            await RequestorHelpers.requestHarvestMessage(actor, undefined, userId, itemsToAdd, targetedToken, {
-                popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
-            });
-        } else if (SETTINGS.harvestAddItemsMode === "ShareIt") {
-            Logger.debug(`SHARE IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
-            // await warpgate.mutate(targetedToken.document, updates, {}, {}); // TODO NOT WORK...
-            await ItemPilesHelpers.unlinkToken(targetedToken);
-            await ItemPilesHelpers.addItems(targetedToken, itemsToAdd, {
-                mergeSimilarItems: true,
-                removeExistingActorItems: SETTINGS.harvestRemoveExistingActorItems,
-            });
-            await ItemPilesHelpers.convertTokenToItemPilesContainer(targetedToken);
-            let messageData = { content: "", whisper: {} };
-            if (SETTINGS.gmOnly) {
-                messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
+        if (game.modules.get("item-piles")?.active) {
+            const actor = await RetrieveHelpers.getActorAsync(actorId);
+            const targetedToken = RetrieveHelpers.getTokenSync(targetedTokenId);
+            if (SETTINGS.harvestAddItemsMode === "ShareItOrKeepIt") {
+                Logger.debug(`SHARE IT OR KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+                await RequestorHelpers.requestHarvestMessage(actor, undefined, userId, itemsToAdd, targetedToken, {
+                    popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
+                });
+            } else if (SETTINGS.harvestAddItemsMode === "ShareIt") {
+                Logger.debug(`SHARE IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+                // await warpgate.mutate(targetedToken.document, updates, {}, {}); // TODO NOT WORK...
+                await ItemPilesHelpers.unlinkToken(targetedToken);
+                await ItemPilesHelpers.addItems(targetedToken, itemsToAdd, {
+                    mergeSimilarItems: true,
+                    removeExistingActorItems: SETTINGS.harvestRemoveExistingActorItems,
+                });
+                await ItemPilesHelpers.convertTokenToItemPilesContainer(targetedToken);
+                let messageData = { content: "", whisper: {} };
+                if (SETTINGS.gmOnly) {
+                    messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
+                }
+                if (harvesterMessage) {
+                    messageData.content = `${harvesterMessage}`;
+                }
+                Logger.debug(`HarvestingHelpers | FINAL create the message`);
+                ChatMessage.create(messageData);
+            } else if (SETTINGS.harvestAddItemsMode === "KeepIt") {
+                Logger.debug(`KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+                await ItemPilesHelpers.addItems(actor, itemsToAdd, {
+                    mergeSimilarItems: true,
+                });
+                let messageData = { content: "", whisper: {} };
+                if (SETTINGS.gmOnly) {
+                    messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
+                }
+                if (harvesterMessage) {
+                    messageData.content = `${harvesterMessage}`;
+                }
+                Logger.debug(`HarvestingHelpers | FINAL create the message`);
+                ChatMessage.create(messageData);
+            } else {
+                Logger.error(`Something went wrong with the harvester code`, true);
             }
-            if (harvesterMessage) {
-                messageData.content = `${harvesterMessage}`;
-            }
-            Logger.debug(`HarvestingHelpers | FINAL create the message`);
-            ChatMessage.create(messageData);
-        } else if (SETTINGS.harvestAddItemsMode === "KeepIt") {
-            Logger.debug(`KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
-            await ItemPilesHelpers.addItems(actor, itemsToAdd, {
-                mergeSimilarItems: true,
-            });
-            let messageData = { content: "", whisper: {} };
-            if (SETTINGS.gmOnly) {
-                messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
-            }
-            if (harvesterMessage) {
-                messageData.content = `${harvesterMessage}`;
-            }
-            Logger.debug(`HarvestingHelpers | FINAL create the message`);
-            ChatMessage.create(messageData);
         } else {
-            Logger.error(`Something went wrong with the harvester code`, true);
+            Logger.debug(`KEEP IT | Add items with STANDARD to ${actor.name}`, itemsToAdd);
+            await addItemsToActor(actor, itemsToAdd);
         }
     }
 }

@@ -9,7 +9,6 @@ import {
     harvestAction,
     lootAction,
     currencyFlavors,
-    hasBetterRollTables,
     addEffect,
     addItemsToActor,
 } from "../../module.js";
@@ -20,7 +19,7 @@ import { harvesterAndLootingSocket } from "../socket.js";
 import Logger from "./Logger.js";
 import BetterRollTablesHelpers from "./better-rolltables-helpers.js";
 import ItemPilesHelpers from "./item-piles-helpers.js";
-import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel } from "./lib.js";
+import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel, updateActorCurrencyNoDep } from "./lib.js";
 
 export class LootingHelpers {
     static async handlePreRollLootAction(options) {
@@ -87,7 +86,7 @@ export class LootingHelpers {
         */
         let matchedItems = [];
         Logger.debug(`LootingHelpersHelpers | BRT is enable, and has a rollTable '${rollTableLoot.name}'`);
-        matchedItems = await BetterRollTablesHelpers.retrieveResultsDataLootWithBetterRollTablesV2(
+        matchedItems = await BetterRollTablesHelpers.retrieveResultsDataLootWithBetterRollTables(
             rollTableLoot,
             actorName,
             item.name,
@@ -116,10 +115,21 @@ export class LootingHelpers {
             let lootMessageList = "";
             for (const result of matchedItems) {
                 const currencyLabel = ItemPilesHelpers.generateCurrenciesStringFromString(result.text);
-                if (SETTINGS.autoAddItems) {
-                    await ItemPilesHelpers.addCurrencies(controlledToken, currencyLabel);
+                if(game.modules.get("item-piles")?.active) {
+                    Logger.debug(`LootingHelpers | addCurrencies ITEM PILES ${currencyLabel}`)
+                    if (SETTINGS.autoAddItems) {
+                        await ItemPilesHelpers.addCurrencies(controlledToken, currencyLabel);
+                    }
+                    lootMessageList += `<li>${currencyLabel}</li>`; ; // TODO calculate the total to show to the message
+                } else {
+                    Logger.debug(`LootingHelpers | addCurrencies STANDARD ${currencyLabel}`)
+                    if (SETTINGS.autoAddItems) {
+                        await updateActorCurrencyNoDep(controlActor, currencyLabel);
+                    }
+                    // lootMessageList += `<li>${rollResult.total} ${currency}</li>`;
+                    lootMessageList += `<li>${currencyLabel}</li>`; // TODO calculate the total to show to the message
                 }
-                lootMessageList += `<li>${currencyLabel}</li>`;
+
             }
 
             let messageDataList = { content: "", whisper: {} };
