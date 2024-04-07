@@ -1,9 +1,4 @@
-import {
-    validateAction,
-    harvestAction,
-    addEffect,
-    addItemsToActor,
-} from "../../module.js";
+import { validateAction, harvestAction, addEffect, addItemsToActor } from "../../module.js";
 import { CONSTANTS } from "../constants.js";
 import { RequestorHelpers } from "../requestor-helpers.js";
 import { SETTINGS } from "../settings.js";
@@ -11,10 +6,7 @@ import { harvesterAndLootingSocket } from "../socket.js";
 import Logger from "./Logger.js";
 import BetterRollTablesHelpers from "./better-rolltables-helpers.js";
 import ItemPilesHelpers from "./item-piles-helpers.js";
-import {
-    checkItemSourceLabel,
-    parseAsArray,
-} from "./lib.js";
+import { checkItemSourceLabel, parseAsArray } from "./lib.js";
 import { RetrieveHelpers } from "./retrieve-helpers.js";
 
 export class HarvestingHelpers {
@@ -93,7 +85,7 @@ export class HarvestingHelpers {
                 // item.update({ system: { formula: `1d20 + @skills.${skillCheck}.total` } });
                 skillCheckVerbose = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`) || "nat"; // TODO make this better
             }
-            if(!skillCheckVerbose) {
+            if (!skillCheckVerbose) {
                 Logger.warn(
                     `ATTENTION: No 'flags.better-rolltables.brt-skill-value' is been setted on table '${rollTablesMatched[0]}'`,
                     true,
@@ -276,8 +268,8 @@ export class HarvestingHelpers {
     }
 
     static async addItemsToActorHarvesterOption(actorId, targetedTokenId, itemsToAdd, harvesterMessage, userId) {
+        const actor = await RetrieveHelpers.getActorAsync(actorId);
         if (game.modules.get("item-piles")?.active) {
-            const actor = await RetrieveHelpers.getActorAsync(actorId);
             const targetedToken = RetrieveHelpers.getTokenSync(targetedTokenId);
             if (SETTINGS.harvestAddItemsMode === "ShareItOrKeepIt") {
                 Logger.debug(`SHARE IT OR KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
@@ -322,6 +314,15 @@ export class HarvestingHelpers {
         } else {
             Logger.debug(`KEEP IT | Add items with STANDARD to ${actor.name}`, itemsToAdd);
             await addItemsToActor(actor, itemsToAdd);
+            let messageData = { content: "", whisper: {} };
+            if (SETTINGS.gmOnly) {
+                messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
+            }
+            if (harvesterMessage) {
+                messageData.content = `${harvesterMessage}`;
+            }
+            Logger.debug(`HarvestingHelpers | FINAL create the message`);
+            ChatMessage.create(messageData);
         }
     }
 }

@@ -5,7 +5,7 @@ import {
     lootCompendium,
     customCompendium,
     customLootCompendium,
-    harvestBetterRollCompendium,
+    harvesterBetterRollCompendium,
     harvestAction,
     lootAction,
     currencyFlavors,
@@ -19,7 +19,12 @@ import { harvesterAndLootingSocket } from "../socket.js";
 import Logger from "./Logger.js";
 import BetterRollTablesHelpers from "./better-rolltables-helpers.js";
 import ItemPilesHelpers from "./item-piles-helpers.js";
-import { checkItemSourceLabel, retrieveItemSourceLabelDC, retrieveItemSourceLabel, updateActorCurrencyNoDep } from "./lib.js";
+import {
+    checkItemSourceLabel,
+    retrieveItemSourceLabelDC,
+    retrieveItemSourceLabel,
+    updateActorCurrencyNoDep,
+} from "./lib.js";
 
 export class LootingHelpers {
     static async handlePreRollLootAction(options) {
@@ -115,21 +120,20 @@ export class LootingHelpers {
             let lootMessageList = "";
             for (const result of matchedItems) {
                 const currencyLabel = ItemPilesHelpers.generateCurrenciesStringFromString(result.text);
-                if(game.modules.get("item-piles")?.active) {
-                    Logger.debug(`LootingHelpers | addCurrencies ITEM PILES ${currencyLabel}`)
+                if (game.modules.get("item-piles")?.active) {
+                    Logger.debug(`LootingHelpers | addCurrencies ITEM PILES ${currencyLabel}`);
                     if (SETTINGS.autoAddItems) {
                         await ItemPilesHelpers.addCurrencies(controlledToken, currencyLabel);
                     }
-                    lootMessageList += `<li>${currencyLabel}</li>`; ; // TODO calculate the total to show to the message
+                    lootMessageList += `<li>${currencyLabel}</li>`; // TODO calculate the total to show to the message
                 } else {
-                    Logger.debug(`LootingHelpers | addCurrencies STANDARD ${currencyLabel}`)
+                    Logger.debug(`LootingHelpers | addCurrencies STANDARD ${currencyLabel}`);
                     if (SETTINGS.autoAddItems) {
                         await updateActorCurrencyNoDep(controlActor, currencyLabel);
                     }
                     // lootMessageList += `<li>${rollResult.total} ${currency}</li>`;
                     lootMessageList += `<li>${currencyLabel}</li>`; // TODO calculate the total to show to the message
                 }
-
             }
 
             let messageDataList = { content: "", whisper: {} };

@@ -1,7 +1,8 @@
 import {
     customLootCompendium,
     harvestAction,
-    harvestBetterRollCompendium,
+    harvesterBetterRollCompendium,
+    harvesterCompendium,
     lootAction,
     lootCompendium,
 } from "../../module";
@@ -10,23 +11,24 @@ import Logger from "./Logger";
 import { checkCompendium, formatDragon, retrieveItemSourceLabelDC, searchCompendium, testWithRegex } from "./lib";
 
 export default class BetterRollTablesHelpers {
-
     static _testRegexTable(sourceValue, doc, actionName) {
-        if(game.modules.get("better-rolltables")?.active) {
-            if (actionName === harvestAction.name) {
-                return testWithRegex(sourceValue, getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim());
-            }
-            else if(actionName === lootAction.name) {
-                return testWithRegex(sourceValue, getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim());
+        if (game.modules.get("better-rolltables")?.active) {
+            let brtSourceReference = getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim() || "";
+            if (brtSourceReference && actionName === harvestAction.name) {
+                return testWithRegex(sourceValue, brtSourceReference);
+            } else if (brtSourceReference && actionName === lootAction.name) {
+                return testWithRegex(sourceValue, brtSourceReference);
             } else {
                 return false;
             }
         } else {
-            if (actionName === harvestAction.name) {
-                return testWithRegex(sourceValue, getProperty(doc, `name`)?.trim()); // TODO Add Harvest prefix ?
-            }
-            else if(actionName === lootAction.name) {
-                return testWithRegex(sourceValue, getProperty(doc, `name`)?.trim());
+            let standardSourceReference = getProperty(doc, `name`)?.trim() || "";
+            standardSourceReference = standardSourceReference.replaceAll("Loot | ", "");
+            standardSourceReference = standardSourceReference.replaceAll("Harvester | ", "");
+            if (standardSourceReference && actionName === harvestAction.name) {
+                return testWithRegex(sourceValue, standardSourceReference);
+            } else if (standardSourceReference && actionName === lootAction.name) {
+                return testWithRegex(sourceValue, standardSourceReference);
             } else {
                 return false;
             }
@@ -40,13 +42,22 @@ export default class BetterRollTablesHelpers {
                 sourceValue = formatDragon(sourceValue)?.trim();
             }
             let tablesChecked = [];
-            // Try with the compendium first
-            for (const doc of harvestBetterRollCompendium) {
+            // Try with the base compendium
+            for (const doc of harvesterCompendium) {
                 if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
-                    Logger.debug(
-                        `retrieveTablesHarvestWithBetterRollTables | Find document with check regex ${sourceValue}=${getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim()}`,
-                    );
                     tablesChecked.push(doc);
+                }
+            }
+            // TODO add some custom compendium ?
+            if (game.modules.get("better-rolltables")?.active && harvesterBetterRollCompendium) {
+                // Try with the brt tables
+                for (const doc of harvesterBetterRollCompendium) {
+                    if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
+                        Logger.debug(
+                            `retrieveTablesHarvestWithBetterRollTables | Find document with check regex ${sourceValue}=${getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim()}`,
+                        );
+                        tablesChecked.push(doc);
+                    }
                 }
             }
             // Try on the tables imported
@@ -100,7 +111,7 @@ export default class BetterRollTablesHelpers {
                 return [];
             }
             const tableHarvester = tablesChecked[0];
-            if(game.modules.get("better-rolltables")?.active) {
+            if (game.modules.get("better-rolltables")?.active) {
                 returnArr = await game.modules.get("better-rolltables").api.retrieveItemsDataFromRollTableResult({
                     table: tableHarvester,
                     options: {
@@ -112,7 +123,7 @@ export default class BetterRollTablesHelpers {
                 });
             } else {
                 // let results = (await tableHarvester.drawMany(roll.total, { displayChat, recursive: true })).results;
-                let results = tableHarvester.results;
+                let results = tableHarvester.results.contents || [];
                 const rolledItems = [];
                 for (const rollData of results) {
                     let item;
@@ -125,14 +136,19 @@ export default class BetterRollTablesHelpers {
                         }
                     }
 
+                    if (!item) {
+                        Logger.warn(`No item is been found with this reference`, false, rollData);
+                        continue;
+                    }
+
                     if (item instanceof RollTable) {
                         // do nothing
                     } else if (item instanceof Item) {
                         rolledItems.push(item);
                     }
                 }
-                for(const item of rolledItems) {
-                    if(item) {
+                for (const item of rolledItems) {
+                    if (item) {
                         Logger.debug(`HarvestingHelpers | STANDARD check matchedItem`, item);
                         let itemDC = 0;
                         if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
@@ -140,12 +156,14 @@ export default class BetterRollTablesHelpers {
                         } else {
                             itemDC = retrieveItemSourceLabelDC(item);
                         }
-                        if (itemDC <= result.total) {
+                        Logger.debug(`HarvestingHelpers | Item DC is '${itemDC}'`);
+                        if (itemDC <= dcValue) {
                             Logger.debug(`HarvestingHelpers | STANDARD the item ${item.name} is been added as success`);
-                            returnArr.push(item.toObject());
+                            const itemData = item instanceof Item ? item.toObject() : item;
+                            foundry.utils.setProperty(itemData, `uuid`, item.uuid || null);
+                            returnArr.push(item);
                         }
                         Logger.debug(`HarvestingHelpers | STANDARD returnArr`, returnArr);
-                        returnArr.push(r.item);
                     }
                 }
             }
@@ -164,7 +182,7 @@ export default class BetterRollTablesHelpers {
         let returnArr = [];
         if (actionName === lootAction.name) {
             const tableLooting = tableEntity;
-            if(game.modules.get("better-rolltables")?.active) {
+            if (game.modules.get("better-rolltables")?.active) {
                 returnArr = await game.modules.get("better-rolltables").api.betterTableRoll(tableLooting, {
                     rollMode: "gmroll",
                     displayChat: false,
@@ -193,17 +211,19 @@ export default class BetterRollTablesHelpers {
                 sourceValue = formatDragon(sourceValue)?.trim();
             }
             let tablesChecked = [];
-            // Try with the compendium first
+            // Try with the base compendium
             for (const doc of lootCompendium) {
                 if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
                     tablesChecked.push(doc);
                 }
             }
+            // Try with the custom compendium
             for (const doc of customLootCompendium) {
                 if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
                     tablesChecked.push(doc);
                 }
             }
+            // TODO add some brt compendium ?
             // Try on the tables imported
             if (!tablesChecked || tablesChecked.length === 0) {
                 tablesChecked = game.tables.contents.filter((doc) => {

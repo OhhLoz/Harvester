@@ -1038,7 +1038,8 @@ export default class ItemPilesHelpers {
                 // get their items
                 const items = tok.actor.items.reduce((acc, item) => {
                     if (ItemPilesHelpers._shouldBeLoot(item)) {
-                        acc[randomID()] = item.toObject();
+                        const itemData = item instanceof Item ? item.toObject() : item;
+                        acc[randomID()] = itemData;
                     }
                     return acc;
                 }, {});

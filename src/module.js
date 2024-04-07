@@ -20,7 +20,8 @@ export let harvestCompendium;
 export let lootCompendium;
 export let customCompendium;
 export let customLootCompendium;
-export let harvestBetterRollCompendium;
+export let harvesterCompendium;
+export let harvesterBetterRollCompendium;
 export let harvestAction;
 export let lootAction;
 export let currencyFlavors;
@@ -38,9 +39,12 @@ Hooks.on("ready", async function () {
     actionCompendium = await game.packs.get(CONSTANTS.actionCompendiumId).getDocuments();
     harvestCompendium = await game.packs.get(CONSTANTS.harvestCompendiumId).getDocuments();
     lootCompendium = await game.packs.get(CONSTANTS.lootCompendiumId).getDocuments();
+    harvesterCompendium = await game.packs.get(CONSTANTS.harvesterCompendiumId).getDocuments();
     customCompendium = await game.packs.get(CONSTANTS.customCompendiumId).getDocuments();
     customLootCompendium = await game.packs.get(CONSTANTS.customLootCompendiumId).getDocuments();
-    harvestBetterRollCompendium = await game.packs.get(CONSTANTS.betterRollTableId).getDocuments();
+    if (game.modules.get("better-rolltables")?.active) {
+        harvesterBetterRollCompendium = await game.packs.get(CONSTANTS.betterRollTableId)?.getDocuments();
+    }
 
     harvestAction = await actionCompendium.find((a) => a.id === CONSTANTS.harvestActionId);
     lootAction = await actionCompendium.find((a) => a.id === CONSTANTS.lootActionId);
@@ -72,6 +76,19 @@ Hooks.on("ready", async function () {
         return;
     }
     await addActionToActors();
+    // Add Effects+
+    CONFIG.statusEffects = CONFIG.statusEffects.concat(
+        {
+            id: CONSTANTS.harvestActionEffectId,
+            icon: CONSTANTS.harvestActionEffectIcon,
+            name: CONSTANTS.harvestActionEffectName,
+        },
+        {
+            id: CONSTANTS.lootActionEffectId,
+            icon: CONSTANTS.lootActionEffectIcon,
+            name: CONSTANTS.lootActionEffectName,
+        },
+    );
 });
 
 Hooks.once("socketlib.ready", () => {

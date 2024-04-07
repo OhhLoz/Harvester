@@ -135,14 +135,14 @@ export function parseAsArray(obj) {
     return arr;
 }
 
- /**
-     * Turns a string of currencies into an array containing the data and quantities for each currency
-     * @deprecated the solution with item piles is much better
-     *
-     * @param {string} currenciesS                               A string of currencies to convert (eg, "5gp 25sp")
-     *
-     * @returns {Array<object>}                                 An array of object containing the data and quantity for each currency
-     */
+/**
+ * Turns a string of currencies into an array containing the data and quantities for each currency
+ * @deprecated the solution with item piles is much better
+ *
+ * @param {string} currenciesS                               A string of currencies to convert (eg, "5gp 25sp")
+ *
+ * @returns {Array<object>}                                 An array of object containing the data and quantity for each currency
+ */
 export function _retrieveCurrenciesSimpleFromStringNoDep(currenciesS) {
     const c = ItemPilesHelpers.generateCurrenciesStringFromString(currenciesS);
     if (!c) {
@@ -150,16 +150,16 @@ export function _retrieveCurrenciesSimpleFromStringNoDep(currenciesS) {
     }
     const arr = [];
     const cc = c.split(" ");
-    for(const abbreviation of CONSTANTS.currencyMap.values()) {
-        for(const roll of cc) {
-            if(roll.includes(abbreviation)) {
+    for (const abbreviation of CONSTANTS.currencyMap.values()) {
+        for (const roll of cc) {
+            if (roll.includes(abbreviation)) {
                 let currency = roll.replaceAll(abbreviation)?.trim();
                 let roll = new Roll(currency);
                 let rollResult = roll.roll({ async: false });
                 arr.push({
                     abbreviation: abbreviation,
                     quantity: 1,
-                    roll: rollResult
+                    roll: rollResult,
                 });
             }
         }
@@ -172,7 +172,7 @@ export function _retrieveCurrenciesSimpleFromStringNoDep(currenciesS) {
     return currencies;
 }
 
- /**
+/**
  * @deprecated the solution with item piles is much better
  * @param {*} actor
  * @param {*} currencyLabel
@@ -185,13 +185,13 @@ export async function updateActorCurrencyNoDep(actor, currencyLabel) {
         await actor.update({
             system: {
                 currency: {
-                [currencyRef]: total,
+                    [currencyRef]: total,
                 },
             },
         });
         Logger.log(`Added ${toAdd} ${currencyLabel} to: ${actor.name}`);
     }
-  }
+}
 
 /**
  * @deprecated the solution with item piles is much better
@@ -199,44 +199,43 @@ export async function updateActorCurrencyNoDep(actor, currencyLabel) {
  * @param {*} actionName
  * @returns
  */
-  export function searchCompendium(actorName, actionName) {
+export function searchCompendium(actorName, actionName) {
     let returnArr = [];
     if (actorName.includes("Dragon")) {
-      actorName = formatDragon(actorName);
+        actorName = formatDragon(actorName);
     }
     if (actionName === harvestAction.name) {
-      returnArr = checkCompendium(customCompendium, "name", actorName);
+        returnArr = checkCompendium(customCompendium, "name", actorName);
 
-      if (returnArr.length !== 0) {
-        return returnArr;
-      }
-      returnArr = checkCompendium(harvestCompendium, "system.source.label", actorName);
+        if (returnArr.length !== 0) {
+            return returnArr;
+        }
+        returnArr = checkCompendium(harvestCompendium, "system.source.label", actorName);
     } else if (actionName === lootAction.name && !SETTINGS.disableLoot) {
-      returnArr = checkCompendium(customLootCompendium, "name", actorName);
+        returnArr = checkCompendium(customLootCompendium, "name", actorName);
 
-      if (returnArr.length !== 0) {
-        return returnArr;
-      }
-      returnArr = checkCompendium(lootCompendium, "name", actorName);
+        if (returnArr.length !== 0) {
+            return returnArr;
+        }
+        returnArr = checkCompendium(lootCompendium, "name", actorName);
     }
 
     return returnArr;
-  }
+}
 
-  /**
-   * @deprecated the solution with item piles is much better
-   * @param {*} compendium
-   * @param {*} checkProperty
-   * @param {*} matchProperty
-   * @returns
-   */
-  export function checkCompendium(compendium, checkProperty, matchProperty) {
+/**
+ * @deprecated the solution with item piles is much better
+ * @param {*} compendium
+ * @param {*} checkProperty
+ * @param {*} matchProperty
+ * @returns
+ */
+export function checkCompendium(compendium, checkProperty, matchProperty) {
     let returnArr = [];
     compendium.forEach((doc) => {
-      if (eval(`doc.${checkProperty}`) === matchProperty) {
-        returnArr.push(doc);
-      }
+        if (eval(`doc.${checkProperty}`) === matchProperty) {
+            returnArr.push(doc);
+        }
     });
     return returnArr;
-  }
-
+}
