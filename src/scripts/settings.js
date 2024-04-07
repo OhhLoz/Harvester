@@ -77,7 +77,7 @@ export function registerSettings() {
 
     game.settings.register(CONSTANTS.MODULE_ID, "harvestRemoveExistingActorItems", {
         name: "Harvesting: Automatically remove Items with Item Piles from the targeted token",
-        hint: "This will enable to true the Item Piles setting 'removeExistingActorItems', for security reason is limited only to token target, so if you destroy a token on scene the original actor is no touched",
+        hint: "ONLY WITH 'Item Piles' MODULE PRESENT AND ACTIVE. This will enable to true the Item Piles setting 'removeExistingActorItems', for security reason is limited only to token target, so if you destroy a token on scene the original actor is no touched",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -87,7 +87,7 @@ export function registerSettings() {
 
     game.settings.register(CONSTANTS.MODULE_ID, "harvestAddItemsMode", {
         name: "Harvesting: Add items harvest mode",
-        hint: "Harvest action considers three modes: 'Shared it or Keep it', 'Shared it', 'Keep it'",
+        hint: "ONLY WITH 'Item Piles' MODULE PRESENT AND ACTIVE. Harvest action considers three modes: 'Shared it or Keep it', 'Shared it', 'Keep it'",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -130,6 +130,16 @@ export function registerSettings() {
         default: false,
     });
 
+    game.settings.register(CONSTANTS.MODULE_ID, "forceSearchRollTableByName", {
+        name: "Looting: Search RollTable by name if no 'Source reference is found with BRT",
+        hint: "ONLY WITH 'Better RollTables' MODULE PRESENT AND ACTIVE. If no rolltable is been found by the property 'Source Reference' we try to retrieve the RollTable by name as on the STANDARD method. IT IS NOT ADVISABLE TO ENABLE THIS IF YOU USE BRT, BUT FOR RETRO COMPATIBILITY IT WILL BE ENABLED BY DEFAULT",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: true,
+    });
+
     game.settings.register(CONSTANTS.MODULE_ID, "debug", {
         name: "Enable debugging",
         hint: "Prints debug messages to the console",
@@ -153,6 +163,7 @@ export function registerSettings() {
     SETTINGS.enforceRange = game.settings.get(CONSTANTS.MODULE_ID, "enforceRange");
     SETTINGS.allowAbilityChange = game.settings.get(CONSTANTS.MODULE_ID, "allowAbilityChange");
     SETTINGS.disableLoot = game.settings.get(CONSTANTS.MODULE_ID, "disableLoot");
+    SETTINGS.forceSearchRollTableByName = game.settings.get(CONSTANTS.MODULE_ID, "forceSearchRollTableByName");
     SETTINGS.debug = game.settings.get(CONSTANTS.MODULE_ID, "debug");
 }
 
@@ -168,4 +179,5 @@ export const SETTINGS = {
     enforceRange: true,
     allowAbilityChange: false,
     disableLoot: false,
+    forceSearchRollTableByName: true,
 };

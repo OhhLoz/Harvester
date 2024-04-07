@@ -4,6 +4,10 @@
 
 A QoL FoundryVTT module to improve the harvesting and looting experience.
 
+**IMPORTANT NOTE**: To make the module work with the requestor module you have to set the module setting of the latter with key `Module Permissions` with the value ` Request: Anyone. Accept: Only if GM or self` 
+
+![](/wiki/images/requestor_settings.png)
+
 This work includes material taken from the System Reference Document 5.1 (“SRD 5.1”) by Wizards of
 the Coast LLC and available at https://dnd.wizards.com/resources/systems-reference-document. The
 SRD 5.1 is licensed under the Creative Commons Attribution 4.0 International License available at
@@ -21,29 +25,43 @@ To install this module manually:
 4.  Click 'Install' and wait for installation to complete
 5.  Don't forget to enable the module in game using the "Manage Module" button
 
-### libWrapper
-
-This module uses the [libWrapper](https://github.com/ruipin/fvtt-lib-wrapper) library for wrapping utility methods. It is a hard dependency and it is recommended for the best experience and compatibility with other modules.
-
 ### socketlib
 
-This module uses the [socketlib](https://github.com/manuelVo/foundryvtt-socketlib) library for wrapping utility methods. It is a hard dependency and it is recommended for the best experience and compatibility with other modules.
+This module uses the [socketlib](https://github.com/manuelVo/foundryvtt-socketlib) library for wrapping utility methods. **It is a hard dependency** and it is recommended for the best experience and compatibility with other modules.
 
 ### Better Rolltables
 
-This module uses the [Better Rolltables](https://github.com/p4535992/foundryvtt-better-rolltables) library for wrapping utility methods. It is a hard dependency and it is recommended for the best experience and compatibility with other modules.
+This module uses the [Better Rolltables](https://github.com/p4535992/foundryvtt-better-rolltables) library for add utility methods. **It is a optional dependency** and it is recommended for the best experience and compatibility with other modules.
 
 ### Item Piles
 
-This module uses the [Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles) library for wrapping utility methods. It is a hard dependency and it is recommended for the best experience and compatibility with other modules.
+This module uses the [Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles) library for add utility methods. **It is a optional dependency** and it is recommended for the best experience and compatibility with other modules.
 
 ## NOTE i need really help with a good documentation of this module, please someone help me...
 
-## Harvester Feature
+## Harvester Feature 
 
-**IMPORTANT NOTE**: To make the module work with the requestor module you have to set the module setting of the latter with key `Module Permissions` with the value ` Request: Anyone. Accept: Only if GM or self` 
+This action allows the Harvesting action to be linked to a standard rolltable retrieve the result items.
 
-![](/wiki/images/requestor_settings.png)
+In the standard Harvest Rolltable sheet, the "association" field is the name of the token monster with the name of the rolltable! So **"Name of The Monster" OR a regex === "NAme of the Rolltable"**.
+
+```
+Example 1
+Name of the monster: Wolf
+Name of the rolltable: Wolf or Harvester | Wolf
+Result: get any monster 'Wolf' with a BRT Rolltbale with the same name or subset of names 'Wolf'
+```
+
+```
+Example 2
+Name of the monster: Wolf
+Name of the rolltable: as regex: /^Wolf/ or /^Harvester | Wolf/
+Result: get any monster 'Wolf' with a Rolltbale with the same name or subset of names 'Wolf'
+```
+
+REMEMBER YOU MUST PUT THE NEW ROLLTABLE IN THE HARVESTER COMPENDIUM "harvester.harvester" or in the Rolltable directory of the world itself (for now).
+
+## Harvester Feature with Item Piles and Better Rolltable
 
 This action allows the Harvesting action to be linked to a BRT rolltable retrieve the result items and display it with the "Item Piles" module for retrieval.
 
@@ -58,7 +76,31 @@ Given the various needs there are three modes offeature behavior
 
 ## Looting Feature
 
-This action allows the Looting action to be linked to a BRT rolltable retrieve the result currencies and display it with the "Item Piles" module for retrieval.
+This action allows the Looting action to be linked to a rolltable retrieve the result currencies and display on the chat.
+
+Every rolltable apply inline roll for the currency data on text table result.
+
+**NOTE:** Every text table result in a type BRT Loot tables is treated as a currencyData formula and converted in a item piles supported formula.
+
+This feature support many format from old and other modules here a list:
+
+- Old brt format: `100*1d6[gp],4d4+4[sp] to 100*1d6gp 4d4+4sp`
+- Harvester format: `[[/r 5d6]]{Copper} and [[/r 1d6*100]]{Electrum}[[/r 2d6*10]]`
+- Old brt loot currency formula: `{(2d8+1)*10[cp], 6d8+3 [sp]}`
+- Html code base with the editor: `<p>100*1d6[gp],4d4+4[sp]</p>`,`<p>[[/r 5d6]]{Copper} and [[/r 1d6*100]]{Electrum}[[/r 2d6*10]]</p>`, `<p>{(2d8+1)*10[cp], 6d8+3 [sp]}</p>`
+- Item Piles format **(The advisable format to use)**: `((2d8+1)*10)cp (6d8+3)sp`
+
+As a example a text like this:
+
+```
+{(2d8+1)*10[cp], 2d8+1 [sp]}
+```
+
+is converted runtime in this
+
+```
+20cp 16sp
+```
 
 
 ## Integration with the module [Better Rolltables](https://github.com/p4535992/foundryvtt-better-rolltables) Feature
@@ -88,7 +130,7 @@ and launch the harvester action !
 ![](/wiki/images/multi_skill_1.png)
 
 REMEMBER YOU MUST PUT THE NEW ROLLTABLE IN THE BRT COMPENDIUM "better-rolltables.brt-harvest-harvester" or in the Rolltable directory of the world itself (for now).
-  
+
 # Build
 
 ## Install all packages

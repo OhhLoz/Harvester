@@ -644,7 +644,7 @@ export class RequestorHelpers {
                                 options.itemsToAdd,
                             );
                         // await warpgate.mutate(options.targetedToken.document, updates, {}, {}); // TODO NOT WORK...
-                        await game.modules.get(moduleIdRef).api._ItemPilesHelpers.unlinkToken(targetedToken);
+                        await game.modules.get(moduleIdRef).api._ItemPilesHelpers.unlinkToken(options.targetedToken);
                         await game.modules
                             .get(moduleIdRef)
                             .api._ItemPilesHelpers.addItems(options.targetedToken, options.itemsToAdd, {
