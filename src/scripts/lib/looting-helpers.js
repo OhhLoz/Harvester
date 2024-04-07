@@ -97,7 +97,7 @@ export class LootingHelpers {
             item.name,
         );
 
-        if (matchedItems.length === 0) {
+        if (!matchedItems || matchedItems.length === 0) {
             Logger.debug(`LootingHelpers | MatchedItems is empty`);
             Logger.debug(
                 `LootingHelpers | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,

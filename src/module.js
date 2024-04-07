@@ -192,6 +192,7 @@ export function validateAction(controlToken, targetedToken, actionName) {
         return false;
     }
     if (checkEffect(targetedToken, `${actionName}ed`)) {
+        // TODO make more dynamic maybe with a map {"harvest","harvested"},{"loot","looted"}
         Logger.warn(`${targetedToken.name} has been ${actionName.toLowerCase()}ed already`, true);
         return false;
     }

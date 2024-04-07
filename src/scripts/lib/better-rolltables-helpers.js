@@ -188,10 +188,13 @@ export default class BetterRollTablesHelpers {
                     displayChat: false,
                 });
             } else {
-                returnArr = await tableLooting.drawMany({
-                    rollMode: "gmroll",
-                    displayChat: false,
-                });
+                returnArr = (
+                    await tableLooting.drawMany(1, {
+                        rollMode: "gmroll",
+                        displayChat: false,
+                        recursive: true,
+                    })
+                ).results;
             }
         } else {
             Logger.warn(

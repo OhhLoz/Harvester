@@ -211,7 +211,7 @@ export class HarvestingHelpers {
             getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
         );
 
-        if (matchedItems.length === 0) {
+        if (!matchedItems || matchedItems.length === 0) {
             Logger.debug(`HarvestingHelpers | MatchedItems is empty`);
             Logger.debug(
                 `HarvestingHelpers | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,

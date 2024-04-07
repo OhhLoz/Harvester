@@ -1,5 +1,6 @@
 import { CONSTANTS } from "../constants";
 import Logger from "./Logger";
+import ItemPilesHelpers from "./item-piles-helpers";
 
 export function getByValue(map, searchValue) {
     let keyMap = "";
@@ -151,9 +152,9 @@ export function _retrieveCurrenciesSimpleFromStringNoDep(currenciesS) {
     const arr = [];
     const cc = c.split(" ");
     for (const abbreviation of CONSTANTS.currencyMap.values()) {
-        for (const roll of cc) {
-            if (roll.includes(abbreviation)) {
-                let currency = roll.replaceAll(abbreviation)?.trim();
+        for (const formula of cc) {
+            if (formula.includes(abbreviation)) {
+                let currency = formula.replaceAll(abbreviation, "")?.trim();
                 let roll = new Roll(currency);
                 let rollResult = roll.roll({ async: false });
                 arr.push({
