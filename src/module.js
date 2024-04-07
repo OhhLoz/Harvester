@@ -52,16 +52,16 @@ Hooks.on("ready", async function () {
         if (game.modules.get("socketlib")) word = "activate";
         throw Logger.error(`Requires the 'socketlib' module. Please ${word} it.`);
     }
-    if (!game.modules.get("item-piles")?.active && game.user?.isGM) {
-        let word = "install and activate";
-        if (game.modules.get("item-piles")) word = "activate";
-        throw Logger.error(`Requires the 'item-piles' module. Please ${word} it.`);
-    }
-    if (!game.modules.get("better-rolltables")?.active && game.user?.isGM) {
-        let word = "install and activate";
-        if (game.modules.get("better-rolltables")) word = "activate";
-        throw Logger.error(`Requires the 'better-rolltables' module. Please ${word} it.`);
-    }
+    // if (!game.modules.get("item-piles")?.active && game.user?.isGM) {
+    //     let word = "install and activate";
+    //     if (game.modules.get("item-piles")) word = "activate";
+    //     throw Logger.error(`Requires the 'item-piles' module. Please ${word} it.`);
+    // }
+    // if (!game.modules.get("better-rolltables")?.active && game.user?.isGM) {
+    //     let word = "install and activate";
+    //     if (game.modules.get("better-rolltables")) word = "activate";
+    //     throw Logger.error(`Requires the 'better-rolltables' module. Please ${word} it.`);
+    // }
     if (!game.modules.get("requestor")?.active && game.user?.isGM) {
         let word = "install and activate";
         if (game.modules.get("requestor")) word = "activate";
@@ -239,6 +239,10 @@ function resetToDefault(item) {
 
 export async function addEffect(targetTokenId, actionName) {
     let targetToken = RetrieveHelpers.getTokenSync(targetTokenId); // canvas.tokens.get(targetTokenId);
+    if (!targetToken) {
+        Logger.warn(`No target token is found for  reference '${targetTokenId}' for add the effect '${actionName}'`);
+        return;
+    }
     await ItemPilesHelpers.unlinkToken(targetToken);
     if (actionName === harvestAction.name) {
         targetToken.document.toggleActiveEffect(
@@ -263,7 +267,7 @@ export async function addEffect(targetTokenId, actionName) {
 }
 
 export async function addItemsToActor(actor, itemsToAdd) {
-    if(SETTINGS.autoAddItems) {
+    if (SETTINGS.autoAddItems) {
         if (game.modules.get("item-piles")?.active) {
             Logger.debug(`Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
             await game.itempiles.API.addItems(targetedToken, itemsToAdd, {
