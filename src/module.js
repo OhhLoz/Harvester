@@ -47,7 +47,17 @@ Hooks.on("ready", async function () {
     }
 
     harvestAction = await actionCompendium.find((a) => a.id === CONSTANTS.harvestActionId);
+    if (!harvestAction) {
+        throw Logger.error(
+            `Requires the 'harvestAction' on the compendium '${CONSTANTS.actionCompendiumId}' with id '${CONSTANTS.harvestActionId}'`,
+        );
+    }
     lootAction = await actionCompendium.find((a) => a.id === CONSTANTS.lootActionId);
+    if (!lootAction) {
+        throw Logger.error(
+            `Requires the 'lootAction' on the compendium '${CONSTANTS.actionCompendiumId}' with id '${CONSTANTS.lootActionId}'`,
+        );
+    }
 
     currencyFlavors = Array.from(CONSTANTS.currencyMap.keys());
 
