@@ -27,15 +27,19 @@ To install this module manually:
 
 ### socketlib
 
-This module uses the [socketlib](https://github.com/manuelVo/foundryvtt-socketlib) library for wrapping utility methods. **It is a hard dependency** and it is recommended for the best experience and compatibility with other modules.
+This module uses the [socketlib](https://github.com/manuelVo/foundryvtt-socketlib) library for wrapping utility methods. **It is a hard dependency**
+
+### requestor
+
+This module uses the [requestor](https://foundryvtt.com/packages/requestor) library for a better visual display experience for the user. **It is a hard dependency**
 
 ### Better Rolltables
 
-This module uses the [Better Rolltables](https://github.com/p4535992/foundryvtt-better-rolltables) library for add utility methods. **It is a optional dependency** and it is recommended for the best experience and compatibility with other modules.
+This module uses the [Better Rolltables](https://github.com/p4535992/foundryvtt-better-rolltables) for more flexibility with harvesting. **It is an optional dependency** and it is recommended for the best experience and compatibility with other modules.
 
 ### Item Piles
 
-This module uses the [Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles) library for add utility methods. **It is a optional dependency** and it is recommended for the best experience and compatibility with other modules.
+This module uses the [Item Piles](https://github.com/fantasycalendar/FoundryVTT-ItemPiles) for convenience with sharing. **It is an optional dependency** and it is recommended for the best experience and compatibility with other modules.
 
 ## NOTE i need really help with a good documentation of this module, please someone help me...
 
@@ -61,14 +65,14 @@ Result: get any monster 'Wolf' with a Rolltbale with the same name or subset of 
 
 REMEMBER YOU MUST PUT THE NEW ROLLTABLE IN THE HARVESTER COMPENDIUM "harvester.harvester" or in the Rolltable directory of the world itself (for now).
 
-## Harvester Feature with Item Piles and Better Rolltable
+## Harvester Feature with Item Piles and Better Rolltables
 
 This action allows the Harvesting action to be linked to a BRT rolltable retrieve the result items and display it with the "Item Piles" module for retrieval.
 
 ![](/wiki/images/harvester_requestor.png)
 
 Given the various needs there are three modes offeature behavior 
-- **"Keep It or Share It !"** : The player decides whether to keep the loot for himself or share it with others
+- **"Keep It or Share It !"** : The player decides whether to keep the loot for themself or share it with others
 - **"Share It"** : It is shared with others by default
 - **"Keep It"** : It is kept for itself by default.
 
@@ -76,9 +80,9 @@ Given the various needs there are three modes offeature behavior
 
 ## Looting Feature
 
-This action allows the Looting action to be linked to a rolltable retrieve the result currencies and display on the chat.
+This action allows the Looting action to be linked to a rolltable to  retrieve the result currencies and display on the chat.
 
-Every rolltable apply inline roll for the currency data on text table result.
+Every rolltable applies inline roll for the currency data on text table result.
 
 **NOTE:** Every text table result in a type BRT Loot tables is treated as a currencyData formula and converted in a item piles supported formula.
 
@@ -118,14 +122,14 @@ Result: get any monster 'Wolf' with a BRT Rolltbale with source reference 'Wolf'
 Example 2
 Name of the monster: Wolf
 Source Reference on the BRT rolltable as regex: /^Wolf/ 
-Result: get any monster 'Wolf' with a BRT Rolltbale with source reference stating with the string 'Wolf'
+Result: get any monster 'Wolf' with a BRT Rolltable with source reference stating with the string 'Wolf'
 ```
 
-BRT now support multi skill integration just set a array of skills on the source reference filed on the BRT rolltable
+BRT now support multi skill integration, just set an array of skills on the source reference field on the BRT rolltable
 
 ![](/wiki/images/multi_skill_2.png)
 
-and launch the harvester action !
+and launch the harvester action!
 
 ![](/wiki/images/multi_skill_1.png)
 
@@ -141,7 +145,7 @@ npm install
 
 ### dev
 
-`dev` will let you develop you own code with hot reloading on the browser
+`dev` will let you develop your own code with hot reloading on the browser
 
 ```bash
 npm run dev
@@ -226,5 +230,5 @@ This package is under an [GPL-3.0 license](LICENSE) and the [Foundry Virtual Tab
 Thanks to anyone who helps me with this code! I appreciate the user community's feedback on this project!
 
 * [data-toolbox](https://foundryvtt.com/packages/data-toolbox) For providing an easy method for importing items programmatically from a csv to a compendium
-* [p4535992](https://github.com/p4535992) For adding Compatibility with Better Roll Tables, Requestor & Ongoing Support
+* [p4535992](https://github.com/p4535992) For adding Compatibility with Better Roll Tables, Requestor & Ongoing Support/Development
 * [ctbritt](https://github.com/ctbritt) For adding Item Piles integration
