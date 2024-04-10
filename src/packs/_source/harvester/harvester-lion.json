@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Lion",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Lion'.",
+  "results": [
+    {
+      "text": "Lion's Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Lion",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NqBsGF7XIdNqca7i",
+          "brt-result-custom-name": "Lion's Hide",
+          "brt-result-original-name": "Lion's Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "NqBsGF7XIdNqca7i",
+      "_id": "YxT7IQmdJWC6Oo8H",
+      "_key": "!tables.results!35TlXn3ynLGg0eNs.YxT7IQmdJWC6Oo8H"
+    },
+    {
+      "text": "Lion's Mane",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-white-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Lion",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kxWpdIUuwoMpWigT",
+          "brt-result-custom-name": "Lion's Mane",
+          "brt-result-original-name": "Lion's Mane",
+          "brt-result-original-icon": "icons/commodities/leather/fur-white-tan.webp"
+        }
+      },
+      "documentId": "kxWpdIUuwoMpWigT",
+      "_id": "JvT9wgzFpWofoI0B",
+      "_key": "!tables.results!35TlXn3ynLGg0eNs.JvT9wgzFpWofoI0B"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Lion",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567917,
+    "modifiedTime": 1696756757617,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "35TlXn3ynLGg0eNs",
+  "sort": 0,
+  "_key": "!tables!35TlXn3ynLGg0eNs"
+}

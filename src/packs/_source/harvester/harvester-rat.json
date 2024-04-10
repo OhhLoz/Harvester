@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Rat",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Rat'.",
+  "results": [
+    {
+      "text": "Rat Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Rat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8X3p5VJu7WxjJ5Gg",
+          "brt-result-custom-name": "Rat Tail",
+          "brt-result-original-name": "Rat Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "8X3p5VJu7WxjJ5Gg",
+      "_id": "jSvzBA1AHMHUsTDY",
+      "_key": "!tables.results!ZxstGwvJPFGPz8Fs.jSvzBA1AHMHUsTDY"
+    },
+    {
+      "text": "Rat Carcass",
+      "type": 2,
+      "img": "icons/commodities/bones/bones-rib-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Rat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tbmbv1nOowSWqhnk",
+          "brt-result-custom-name": "Rat Carcass",
+          "brt-result-original-name": "Rat Carcass",
+          "brt-result-original-icon": "icons/commodities/bones/bones-rib-white.webp"
+        }
+      },
+      "documentId": "tbmbv1nOowSWqhnk",
+      "_id": "XDHEfWOCE1txdR3F",
+      "_key": "!tables.results!ZxstGwvJPFGPz8Fs.XDHEfWOCE1txdR3F"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Rat",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562744,
+    "modifiedTime": 1696756759116,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ZxstGwvJPFGPz8Fs",
+  "sort": 0,
+  "_key": "!tables!ZxstGwvJPFGPz8Fs"
+}

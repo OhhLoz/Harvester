@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Metallic Warbler",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Metallic Warbler'.",
+  "results": [
+    {
+      "text": "Metallic Warbler Parts",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Metallic Warbler",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.pLp04ThDNOW8IH6R",
+          "brt-result-custom-name": "Metallic Warbler Parts",
+          "brt-result-original-name": "Metallic Warbler Parts",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "pLp04ThDNOW8IH6R",
+      "_id": "lckpLySnKmCK4gM3",
+      "_key": "!tables.results!eiMgQo53vC9rNAXY.lckpLySnKmCK4gM3"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Metallic Warbler",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756584547,
+    "modifiedTime": 1696756757675,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "eiMgQo53vC9rNAXY",
+  "sort": 0,
+  "_key": "!tables!eiMgQo53vC9rNAXY"
+}

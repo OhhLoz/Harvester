@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Triceratops",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Triceratops'.",
+  "results": [
+    {
+      "text": "Triceratops Skull",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-deformed-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Triceratops",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MGPMd3psi8qObIy5",
+          "brt-result-custom-name": "Triceratops Skull",
+          "brt-result-original-name": "Triceratops Skull",
+          "brt-result-original-icon": "icons/commodities/bones/skull-deformed-white.webp"
+        }
+      },
+      "documentId": "MGPMd3psi8qObIy5",
+      "_id": "7ekfGG5j3ocs4weQ",
+      "_key": "!tables.results!pV5x8oLJrEZPeKQx.7ekfGG5j3ocs4weQ"
+    },
+    {
+      "text": "Triceratops Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Triceratops",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tSXbE81jU2gevams",
+          "brt-result-custom-name": "Triceratops Skin",
+          "brt-result-original-name": "Triceratops Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "tSXbE81jU2gevams",
+      "_id": "uz2byFzIwaHxubJK",
+      "_key": "!tables.results!pV5x8oLJrEZPeKQx.uz2byFzIwaHxubJK"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Triceratops",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567482,
+    "modifiedTime": 1696756761102,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "pV5x8oLJrEZPeKQx",
+  "sort": 0,
+  "_key": "!tables!pV5x8oLJrEZPeKQx"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Cadaver Collector",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Cadaver Collector'.",
+  "results": [
+    {
+      "text": "Cadaver Collector Armor and Weapons",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "0",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Cadaver Collector",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3FBRiGi2Fjhsr5lF",
+          "brt-result-custom-name": "Cadaver Collector Armor and Weapons",
+          "brt-result-original-name": "Cadaver Collector Armor and Weapons",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "3FBRiGi2Fjhsr5lF",
+      "_id": "jq2KZ1uYn2snw8By",
+      "_key": "!tables.results!pu84e2aO4d6nAVQA.jq2KZ1uYn2snw8By"
+    },
+    {
+      "text": "Cadaver Collector Core",
+      "type": 2,
+      "img": "icons/commodities/gems/pearl-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Cadaver Collector",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7cQmu4zMTsxMTsZC",
+          "brt-result-custom-name": "Cadaver Collector Core",
+          "brt-result-original-name": "Cadaver Collector Core",
+          "brt-result-original-icon": "icons/commodities/gems/pearl-brown-red.webp"
+        }
+      },
+      "documentId": "7cQmu4zMTsxMTsZC",
+      "_id": "BfpSzDQkFkQq9gLZ",
+      "_key": "!tables.results!pu84e2aO4d6nAVQA.BfpSzDQkFkQq9gLZ"
+    },
+    {
+      "text": "Cadaver Collector Paralytic Gas Canister",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Cadaver Collector",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JbTIl7pkggI6NxK8",
+          "brt-result-custom-name": "Cadaver Collector Paralytic Gas Canister",
+          "brt-result-original-name": "Cadaver Collector Paralytic Gas Canister",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "JbTIl7pkggI6NxK8",
+      "_id": "PUyDsrQolVi6YHs1",
+      "_key": "!tables.results!pu84e2aO4d6nAVQA.PUyDsrQolVi6YHs1"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Cadaver Collector",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561136,
+    "modifiedTime": 1696756756005,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "pu84e2aO4d6nAVQA",
+  "sort": 0,
+  "_key": "!tables!pu84e2aO4d6nAVQA"
+}

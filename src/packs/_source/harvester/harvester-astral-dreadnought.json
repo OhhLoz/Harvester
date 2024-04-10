@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Astral Dreadnought",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Astral Dreadnought'.",
+  "results": [
+    {
+      "text": "Astral Dreadnought Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Astral Dreadnought",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4Jm8H7dxC3Sh0bae",
+          "brt-result-custom-name": "Astral Dreadnought Eye",
+          "brt-result-original-name": "Astral Dreadnought Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "4Jm8H7dxC3Sh0bae",
+      "_id": "Csp8HdwqC9Bfg5BI",
+      "_key": "!tables.results!XJkMvLUP3noRgr7b.Csp8HdwqC9Bfg5BI"
+    },
+    {
+      "text": "Astral Dreadnought Horns (4)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Astral Dreadnought",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ETStRIHOFB1hJgvE",
+          "brt-result-custom-name": "Astral Dreadnought Horns",
+          "brt-result-original-name": "Astral Dreadnought Horns (4)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "ETStRIHOFB1hJgvE",
+      "_id": "VFZorkJR7eyrPdEc",
+      "_key": "!tables.results!XJkMvLUP3noRgr7b.VFZorkJR7eyrPdEc"
+    },
+    {
+      "text": "Astral Dreadnought Plates (x6)",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Astral Dreadnought",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.U4MLhMaZwxsB0x7i",
+          "brt-result-custom-name": "Astral Dreadnought Plate",
+          "brt-result-original-name": "Astral Dreadnought Plates (x6)",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "U4MLhMaZwxsB0x7i",
+      "_id": "CQMzXn6IB7LrkH7U",
+      "_key": "!tables.results!XJkMvLUP3noRgr7b.CQMzXn6IB7LrkH7U"
+    },
+    {
+      "text": "Astral Dreadnought Stomach Lining",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-stomach.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "30",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Astral Dreadnought",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.e01IGCh4YMb6TX16",
+          "brt-result-custom-name": "Astral Dreadnought Stomach Lining",
+          "brt-result-original-name": "Astral Dreadnought Stomach Lining",
+          "brt-result-original-icon": "icons/commodities/biological/organ-stomach.webp"
+        }
+      },
+      "documentId": "e01IGCh4YMb6TX16",
+      "_id": "4spPNEsEG6Y9a9px",
+      "_key": "!tables.results!XJkMvLUP3noRgr7b.4spPNEsEG6Y9a9px"
+    },
+    {
+      "text": "Astral Dreadnought Tooth (x10)",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Astral Dreadnought",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xhMZ7Sdi9mmDe0wb",
+          "brt-result-custom-name": "Astral Dreadnought Tooth",
+          "brt-result-original-name": "Astral Dreadnought Tooth (x10)",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "xhMZ7Sdi9mmDe0wb",
+      "_id": "LsCLomp8K1XKKxfg",
+      "_key": "!tables.results!XJkMvLUP3noRgr7b.LsCLomp8K1XKKxfg"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Astral Dreadnought",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561458,
+    "modifiedTime": 1696756755906,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "XJkMvLUP3noRgr7b",
+  "sort": 0,
+  "_key": "!tables!XJkMvLUP3noRgr7b"
+}

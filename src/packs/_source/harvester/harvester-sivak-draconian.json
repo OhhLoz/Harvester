@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Sivak Draconian",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Sivak Draconian'.",
+  "results": [
+    {
+      "text": "Draconian Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Sivak Draconian",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Lc4YfNbRxvuehfIR",
+          "brt-result-custom-name": "Draconian Blood vial",
+          "brt-result-original-name": "Draconian Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Lc4YfNbRxvuehfIR",
+      "_id": "sy4aLwT1wY8kvX6x",
+      "_key": "!tables.results!Ldc00f7BTlxZI3Q5.sy4aLwT1wY8kvX6x"
+    },
+    {
+      "text": "Draconian Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Sivak Draconian",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XErcaGZ7jWIjUQyp",
+          "brt-result-custom-name": "Draconian Tail",
+          "brt-result-original-name": "Draconian Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "XErcaGZ7jWIjUQyp",
+      "_id": "2k84jqPDrS5GOK4B",
+      "_key": "!tables.results!Ldc00f7BTlxZI3Q5.2k84jqPDrS5GOK4B"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Sivak Draconian",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567314,
+    "modifiedTime": 1696756759942,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Ldc00f7BTlxZI3Q5",
+  "sort": 0,
+  "_key": "!tables!Ldc00f7BTlxZI3Q5"
+}

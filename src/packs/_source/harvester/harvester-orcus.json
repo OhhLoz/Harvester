@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Orcus",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Orcus'.",
+  "results": [
+    {
+      "text": "Orcus Skin (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Orcus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FXBrPrKHISUN6KpO",
+          "brt-result-custom-name": "Orcus Skin (pouch)",
+          "brt-result-original-name": "Orcus Skin (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "FXBrPrKHISUN6KpO",
+      "_id": "XZyJA4eWOLWakoAm",
+      "_key": "!tables.results!DCp2XyWGGT6hxjYY.XZyJA4eWOLWakoAm"
+    },
+    {
+      "text": "Wand of Orcus",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "1",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Orcus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MiI1YpJrNBLHoOMn",
+          "brt-result-custom-name": "Wand of Orcus",
+          "brt-result-original-name": "Wand of Orcus",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "MiI1YpJrNBLHoOMn",
+      "_id": "tlN1yUfSjyhbOULh",
+      "_key": "!tables.results!DCp2XyWGGT6hxjYY.tlN1yUfSjyhbOULh"
+    },
+    {
+      "text": "Orcus' Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Orcus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.N5g658Bxy2d8njao",
+          "brt-result-custom-name": "Orcus' Horn",
+          "brt-result-original-name": "Orcus' Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "N5g658Bxy2d8njao",
+      "_id": "26d2kWJXoZ1S9jrf",
+      "_key": "!tables.results!DCp2XyWGGT6hxjYY.26d2kWJXoZ1S9jrf"
+    },
+    {
+      "text": "Orcus' Wings",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Orcus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.X7yuu2WpZ7rwmxgL",
+          "brt-result-custom-name": "Orcus' Wings",
+          "brt-result-original-name": "Orcus' Wings",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "X7yuu2WpZ7rwmxgL",
+      "_id": "YT9hnUibl9p5uZ7M",
+      "_key": "!tables.results!DCp2XyWGGT6hxjYY.YT9hnUibl9p5uZ7M"
+    },
+    {
+      "text": "Orcus' Hooves (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Orcus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hNF5bzv8klafuQPP",
+          "brt-result-custom-name": "Orcus' Hooves",
+          "brt-result-original-name": "Orcus' Hooves (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "hNF5bzv8klafuQPP",
+      "_id": "h2CaxWFjpcU0ingO",
+      "_key": "!tables.results!DCp2XyWGGT6hxjYY.h2CaxWFjpcU0ingO"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Orcus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565363,
+    "modifiedTime": 1696756758339,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "DCp2XyWGGT6hxjYY",
+  "sort": 0,
+  "_key": "!tables!DCp2XyWGGT6hxjYY"
+}

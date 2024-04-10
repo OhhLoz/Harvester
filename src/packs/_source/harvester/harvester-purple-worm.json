@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Purple Worm",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Purple Worm'.",
+  "results": [
+    {
+      "text": "Purple Worm Stomach Acid (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Purple Worm",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3oiNbZBapyv8XYtX",
+          "brt-result-custom-name": "Purple Worm Stomach Acid vial",
+          "brt-result-original-name": "Purple Worm Stomach Acid (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "3oiNbZBapyv8XYtX",
+      "_id": "IDueVxCcB7MXkVty",
+      "_key": "!tables.results!njJpVYzqUDDk9Ntr.IDueVxCcB7MXkVty"
+    },
+    {
+      "text": "Purple Worm Blood (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Purple Worm",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DNs3UNvzRuc37069",
+          "brt-result-custom-name": "Purple Worm Blood vial",
+          "brt-result-original-name": "Purple Worm Blood (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "DNs3UNvzRuc37069",
+      "_id": "uQio7AzLDOecc6Pa",
+      "_key": "!tables.results!njJpVYzqUDDk9Ntr.uQio7AzLDOecc6Pa"
+    },
+    {
+      "text": "Purple Worm Tooth (x6)",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Purple Worm",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.INoq7JYHqOFrfL6S",
+          "brt-result-custom-name": "Purple Worm Tooth",
+          "brt-result-original-name": "Purple Worm Tooth (x6)",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "INoq7JYHqOFrfL6S",
+      "_id": "MKm2wKTTRI0TBTZY",
+      "_key": "!tables.results!njJpVYzqUDDk9Ntr.MKm2wKTTRI0TBTZY"
+    },
+    {
+      "text": "Purple Worm Pearl",
+      "type": 2,
+      "img": "icons/commodities/gems/pearls-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Purple Worm",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LFzCPuEcNSXPUzdC",
+          "brt-result-custom-name": "Purple Worm Pearl",
+          "brt-result-original-name": "Purple Worm Pearl",
+          "brt-result-original-icon": "icons/commodities/gems/pearls-white.webp"
+        }
+      },
+      "documentId": "LFzCPuEcNSXPUzdC",
+      "_id": "QOj6SY9JU3gYgGfr",
+      "_key": "!tables.results!njJpVYzqUDDk9Ntr.QOj6SY9JU3gYgGfr"
+    },
+    {
+      "text": "Purple Worm Stinger",
+      "type": 2,
+      "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Purple Worm",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.y5kG1tDRs9ZkUlTT",
+          "brt-result-custom-name": "Purple Worm Stinger",
+          "brt-result-original-name": "Purple Worm Stinger",
+          "brt-result-original-icon": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp"
+        }
+      },
+      "documentId": "y5kG1tDRs9ZkUlTT",
+      "_id": "tqwj3gO3ZCyrFtsB",
+      "_key": "!tables.results!njJpVYzqUDDk9Ntr.tqwj3gO3ZCyrFtsB"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Purple Worm",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561356,
+    "modifiedTime": 1696756759105,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "njJpVYzqUDDk9Ntr",
+  "sort": 0,
+  "_key": "!tables!njJpVYzqUDDk9Ntr"
+}

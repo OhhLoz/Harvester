@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Gargoyle",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gargoyle'.",
+  "results": [
+    {
+      "text": "Gargoyle Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gargoyle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IfUJZv7MMLj3iGpT",
+          "brt-result-custom-name": "Gargoyle Heart",
+          "brt-result-original-name": "Gargoyle Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "IfUJZv7MMLj3iGpT",
+      "_id": "4gmUU3iykxtbhPO8",
+      "_key": "!tables.results!FxsHGYEyYDz8eApk.4gmUU3iykxtbhPO8"
+    },
+    {
+      "text": "Gargoyle Talons (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-bird-pink.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gargoyle",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zAwFBJcptvQ6GiwG",
+          "brt-result-custom-name": "Gargoyle Talons",
+          "brt-result-original-name": "Gargoyle Talons (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-bird-pink.webp"
+        }
+      },
+      "documentId": "zAwFBJcptvQ6GiwG",
+      "_id": "sJ6sWE0IsDdA4zk1",
+      "_key": "!tables.results!FxsHGYEyYDz8eApk.sJ6sWE0IsDdA4zk1"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Gargoyle",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566225,
+    "modifiedTime": 1696756756309,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FxsHGYEyYDz8eApk",
+  "sort": 0,
+  "_key": "!tables!FxsHGYEyYDz8eApk"
+}

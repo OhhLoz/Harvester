@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Tlincalli",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Tlincalli'.",
+  "results": [
+    {
+      "text": "Tlincalli Chitin",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Tlincalli",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.KznFYqw0sBYccmTs",
+          "brt-result-custom-name": "Tlincalli Chitin",
+          "brt-result-original-name": "Tlincalli Chitin",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "KznFYqw0sBYccmTs",
+      "_id": "p9JVRvwZs7nvSmBy",
+      "_key": "!tables.results!YcSDmoL9nwWW0Pl3.p9JVRvwZs7nvSmBy"
+    },
+    {
+      "text": "Tlincalli Stinger",
+      "type": 2,
+      "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Tlincalli",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VUtTrX43cKWde5PC",
+          "brt-result-custom-name": "Tlincalli Stinger",
+          "brt-result-original-name": "Tlincalli Stinger",
+          "brt-result-original-icon": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp"
+        }
+      },
+      "documentId": "VUtTrX43cKWde5PC",
+      "_id": "O2Aq8uHFthYUBTOl",
+      "_key": "!tables.results!YcSDmoL9nwWW0Pl3.O2Aq8uHFthYUBTOl"
+    },
+    {
+      "text": "Tlincalli Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Tlincalli",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.op15LY2Lkc5PkkOA",
+          "brt-result-custom-name": "Tlincalli Blood vial",
+          "brt-result-original-name": "Tlincalli Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "op15LY2Lkc5PkkOA",
+      "_id": "nZHEHBH5ZcFpJRtD",
+      "_key": "!tables.results!YcSDmoL9nwWW0Pl3.nZHEHBH5ZcFpJRtD"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Tlincalli",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567107,
+    "modifiedTime": 1696756761094,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "YcSDmoL9nwWW0Pl3",
+  "sort": 0,
+  "_key": "!tables!YcSDmoL9nwWW0Pl3"
+}

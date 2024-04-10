@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Giant Centipede",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Centipede'.",
+  "results": [
+    {
+      "text": "Giant Centipede Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Centipede",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AsHI1vYoFGTmwhaY",
+          "brt-result-custom-name": "Giant Centipede Venom (vial)",
+          "brt-result-original-name": "Giant Centipede Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "AsHI1vYoFGTmwhaY",
+      "_id": "OKrfIP2H5Z8mSTEp",
+      "_key": "!tables.results!XelMiM8Y9Apf6stE.OKrfIP2H5Z8mSTEp"
+    },
+    {
+      "text": "Giant Centipede Shell",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-turtle-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Centipede",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HoIrGgQYljLkY6Jc",
+          "brt-result-custom-name": "Giant Centipede Shell",
+          "brt-result-original-name": "Giant Centipede Shell",
+          "brt-result-original-icon": "icons/commodities/biological/shell-turtle-grey.webp"
+        }
+      },
+      "documentId": "HoIrGgQYljLkY6Jc",
+      "_id": "D9fhAypJ5s5B37LB",
+      "_key": "!tables.results!XelMiM8Y9Apf6stE.D9fhAypJ5s5B37LB"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Centipede",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563653,
+    "modifiedTime": 1696756756330,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "XelMiM8Y9Apf6stE",
+  "sort": 0,
+  "_key": "!tables!XelMiM8Y9Apf6stE"
+}

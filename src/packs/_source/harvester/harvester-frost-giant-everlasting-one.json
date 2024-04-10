@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Frost Giant Everlasting One",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Frost Giant Everlasting One'.",
+  "results": [
+    {
+      "text": "Frost Giant Toenails",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Frost Giant Everlasting One",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DnuxAB6X4RLSLvBx",
+          "brt-result-custom-name": "Frost Giant Toenails",
+          "brt-result-original-name": "Frost Giant Toenails",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "DnuxAB6X4RLSLvBx",
+      "_id": "QPx1ZyM1lgV9RRdP",
+      "_key": "!tables.results!FwK466ktF8ixcteQ.QPx1ZyM1lgV9RRdP"
+    },
+    {
+      "text": "Frost Giant Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Frost Giant Everlasting One",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gVw3o4HCwhN7tf9E",
+          "brt-result-custom-name": "Frost Giant Blood vial",
+          "brt-result-original-name": "Frost Giant Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "gVw3o4HCwhN7tf9E",
+      "_id": "UEf5zX6hzwQoddXQ",
+      "_key": "!tables.results!FwK466ktF8ixcteQ.UEf5zX6hzwQoddXQ"
+    },
+    {
+      "text": "Frost Giant Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "med",
+          "brt-source-value": "Frost Giant Everlasting One",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jlYdUyGibaCmfSmk",
+          "brt-result-custom-name": "Frost Giant Skin",
+          "brt-result-original-name": "Frost Giant Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "jlYdUyGibaCmfSmk",
+      "_id": "cdJAs9wxhK7rYtWC",
+      "_key": "!tables.results!FwK466ktF8ixcteQ.cdJAs9wxhK7rYtWC"
+    },
+    {
+      "text": "Lock of Frost Giant Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Frost Giant Everlasting One",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lU3S9FusTK5LpOcT",
+          "brt-result-custom-name": "Lock of Frost Giant Hair",
+          "brt-result-original-name": "Lock of Frost Giant Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "lU3S9FusTK5LpOcT",
+      "_id": "WVBzm4han9Q6GBlm",
+      "_key": "!tables.results!FwK466ktF8ixcteQ.WVBzm4han9Q6GBlm"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Frost Giant Everlasting One",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564905,
+    "modifiedTime": 1696756756300,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FwK466ktF8ixcteQ",
+  "sort": 0,
+  "_key": "!tables!FwK466ktF8ixcteQ"
+}

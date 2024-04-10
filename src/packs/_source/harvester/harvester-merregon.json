@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Merregon",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Merregon'.",
+  "results": [
+    {
+      "text": "Merregon Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Merregon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LyLFgUqB3CfybZBv",
+          "brt-result-custom-name": "Merregon Blood vial",
+          "brt-result-original-name": "Merregon Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "LyLFgUqB3CfybZBv",
+      "_id": "YbY9GpHg4DqzFYuo",
+      "_key": "!tables.results!0B8YB9YQmXcloOVa.YbY9GpHg4DqzFYuo"
+    },
+    {
+      "text": "Merregon Mask",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Merregon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.a88SraPiGtHRtxg3",
+          "brt-result-custom-name": "Merregon Mask",
+          "brt-result-original-name": "Merregon Mask",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "a88SraPiGtHRtxg3",
+      "_id": "7e9EdpV20R1tbZ1Y",
+      "_key": "!tables.results!0B8YB9YQmXcloOVa.7e9EdpV20R1tbZ1Y"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Merregon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567409,
+    "modifiedTime": 1696756757670,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "0B8YB9YQmXcloOVa",
+  "sort": 0,
+  "_key": "!tables!0B8YB9YQmXcloOVa"
+}

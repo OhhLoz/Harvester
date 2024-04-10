@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Hobgoblin",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hobgoblin'.",
+  "results": [
+    {
+      "text": "Hobgoblin Ear",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hobgoblin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FvNuqjjMZJozdE8g",
+          "brt-result-custom-name": "Hobgoblin Ear",
+          "brt-result-original-name": "Hobgoblin Ear",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "FvNuqjjMZJozdE8g",
+      "_id": "n5AA0PF6RmQb79PD",
+      "_key": "!tables.results!qIKE7ys2tOLPFmpq.n5AA0PF6RmQb79PD"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Hobgoblin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565444,
+    "modifiedTime": 1696756757107,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "qIKE7ys2tOLPFmpq",
+  "sort": 0,
+  "_key": "!tables!qIKE7ys2tOLPFmpq"
+}

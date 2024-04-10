@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Duergar Soulblade",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Duergar Soulblade'.",
+  "results": [
+    {
+      "text": "Duergar Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Soulblade",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.h6rfVue06qVzJxt4",
+          "brt-result-custom-name": "Duergar Pineal Gland",
+          "brt-result-original-name": "Duergar Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "h6rfVue06qVzJxt4",
+      "_id": "dUJyejy1IcnGaNnc",
+      "_key": "!tables.results!KzlkKm88J4GqhjYg.dUJyejy1IcnGaNnc"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Duergar Soulblade",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756579771,
+    "modifiedTime": 1696756756169,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "KzlkKm88J4GqhjYg",
+  "sort": 0,
+  "_key": "!tables!KzlkKm88J4GqhjYg"
+}

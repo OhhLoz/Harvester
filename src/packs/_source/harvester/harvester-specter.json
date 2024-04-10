@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Specter",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Specter'.",
+  "results": [
+    {
+      "text": "Specter Remnants",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Specter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ptji3307e9ygXkuV",
+          "brt-result-custom-name": "Specter Remnants",
+          "brt-result-original-name": "Specter Remnants",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "ptji3307e9ygXkuV",
+      "_id": "TzOr1HSkilmr7Hu0",
+      "_key": "!tables.results!ks5n8VRIslkgc4l0.TzOr1HSkilmr7Hu0"
+    },
+    {
+      "text": "Specter Dust",
+      "type": 2,
+      "img": "icons/commodities/materials/bowl-powder-gold.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Specter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vQOaphU7WhbkoV14",
+          "brt-result-custom-name": "Specter Dust",
+          "brt-result-original-name": "Specter Dust",
+          "brt-result-original-icon": "icons/commodities/materials/bowl-powder-gold.webp"
+        }
+      },
+      "documentId": "vQOaphU7WhbkoV14",
+      "_id": "YLLCgCOhZLp9G0cZ",
+      "_key": "!tables.results!ks5n8VRIslkgc4l0.YLLCgCOhZLp9G0cZ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Specter",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756585250,
+    "modifiedTime": 1696756759974,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ks5n8VRIslkgc4l0",
+  "sort": 0,
+  "_key": "!tables!ks5n8VRIslkgc4l0"
+}

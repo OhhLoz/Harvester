@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Imp",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Imp'.",
+  "results": [
+    {
+      "text": "Imp Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Imp",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OhIQPTIPdiBGIidk",
+          "brt-result-custom-name": "Imp Blood (vial)",
+          "brt-result-original-name": "Imp Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "OhIQPTIPdiBGIidk",
+      "_id": "K03J7oDjRmmxbLy2",
+      "_key": "!tables.results!e2psML3gQTB6kAP4.K03J7oDjRmmxbLy2"
+    },
+    {
+      "text": "Imp Poison Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Imp",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.R5d5pyS7N0wYIcwN",
+          "brt-result-custom-name": "Imp Poison Gland",
+          "brt-result-original-name": "Imp Poison Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "R5d5pyS7N0wYIcwN",
+      "_id": "0NI59E7Qj3WgyS3x",
+      "_key": "!tables.results!e2psML3gQTB6kAP4.0NI59E7Qj3WgyS3x"
+    },
+    {
+      "text": "Imp Head",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Imp",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xLTjjeVWLQ3nBM6X",
+          "brt-result-custom-name": "Imp Head",
+          "brt-result-original-name": "Imp Head",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "xLTjjeVWLQ3nBM6X",
+      "_id": "5SnMOBKQC7MW0UQo",
+      "_key": "!tables.results!e2psML3gQTB6kAP4.5SnMOBKQC7MW0UQo"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Imp",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568102,
+    "modifiedTime": 1696756757132,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "e2psML3gQTB6kAP4",
+  "sort": 0,
+  "_key": "!tables!e2psML3gQTB6kAP4"
+}

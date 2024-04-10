@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Draconian Infiltrator",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Draconian Infiltrator'.",
+  "results": [
+    {
+      "text": "Draconian Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Draconian Infiltrator",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BpE5w58w0huYhSUy",
+          "brt-result-custom-name": "Draconian Tail",
+          "brt-result-original-name": "Draconian Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "BpE5w58w0huYhSUy",
+      "_id": "l7p6tMaPYHkwDlr0",
+      "_key": "!tables.results!UQx6HEfdeyP5Kj0o.l7p6tMaPYHkwDlr0"
+    },
+    {
+      "text": "Draconian Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Draconian Infiltrator",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rnzLJfV0UXcxeeK9",
+          "brt-result-custom-name": "Draconian Blood vial",
+          "brt-result-original-name": "Draconian Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "rnzLJfV0UXcxeeK9",
+      "_id": "WNHS2VyKWaew3CIK",
+      "_key": "!tables.results!UQx6HEfdeyP5Kj0o.WNHS2VyKWaew3CIK"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Draconian Infiltrator",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564046,
+    "modifiedTime": 1696756756125,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "UQx6HEfdeyP5Kj0o",
+  "sort": 0,
+  "_key": "!tables!UQx6HEfdeyP5Kj0o"
+}

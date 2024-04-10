@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Xvart Warlock of Raxivort",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Xvart Warlock of Raxivort'.",
+  "results": [
+    {
+      "text": "Mark of Raxivort (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Xvart Warlock of Raxivort",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CVzQDaOeknAkDWhJ",
+          "brt-result-custom-name": "Mark of Raxivort (vial)",
+          "brt-result-original-name": "Mark of Raxivort (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "CVzQDaOeknAkDWhJ",
+      "_id": "NVmUdW1F2dT6Xs5c",
+      "_key": "!tables.results!rm258n0NFXgP3lRE.NVmUdW1F2dT6Xs5c"
+    },
+    {
+      "text": "Xvart Hair (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Xvart Warlock of Raxivort",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.R3DnYLMe60x32rho",
+          "brt-result-custom-name": "Xvart Hair (pouch)",
+          "brt-result-original-name": "Xvart Hair (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "R3DnYLMe60x32rho",
+      "_id": "GzhdfSZBSR64ZHld",
+      "_key": "!tables.results!rm258n0NFXgP3lRE.GzhdfSZBSR64ZHld"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Xvart Warlock of Raxivort",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564327,
+    "modifiedTime": 1696756762262,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rm258n0NFXgP3lRE",
+  "sort": 0,
+  "_key": "!tables!rm258n0NFXgP3lRE"
+}

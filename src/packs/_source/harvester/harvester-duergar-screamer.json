@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Duergar Screamer",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Duergar Screamer'.",
+  "results": [
+    {
+      "text": "Duergar Screamer Drill",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Screamer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.K484UwZ2JsV7dA2Q",
+          "brt-result-custom-name": "Duergar Screamer Drill",
+          "brt-result-original-name": "Duergar Screamer Drill",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "K484UwZ2JsV7dA2Q",
+      "_id": "2OTtCvIQONYjaPG1",
+      "_key": "!tables.results!eSNAxtoZji9WACEa.2OTtCvIQONYjaPG1"
+    },
+    {
+      "text": "Duergar Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Screamer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LY638jADc583Q2A3",
+          "brt-result-custom-name": "Duergar Pineal Gland",
+          "brt-result-original-name": "Duergar Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "LY638jADc583Q2A3",
+      "_id": "us3e1dg29t4B7avJ",
+      "_key": "!tables.results!eSNAxtoZji9WACEa.us3e1dg29t4B7avJ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Duergar Screamer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566662,
+    "modifiedTime": 1696756756167,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "eSNAxtoZji9WACEa",
+  "sort": 0,
+  "_key": "!tables!eSNAxtoZji9WACEa"
+}

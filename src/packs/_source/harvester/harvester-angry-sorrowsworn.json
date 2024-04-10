@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Angry Sorrowsworn",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Angry Sorrowsworn'.",
+  "results": [
+    {
+      "text": "Angry Sorrowsworn Hooks",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Angry Sorrowsworn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.42YmvQqttlflk4q1",
+          "brt-result-custom-name": "Angry Sorrowsworn Hooks",
+          "brt-result-original-name": "Angry Sorrowsworn Hooks",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "42YmvQqttlflk4q1",
+      "_id": "rpQK9YavbxaKLHyy",
+      "_key": "!tables.results!pFGuliyacMSPUpa3.rpQK9YavbxaKLHyy"
+    },
+    {
+      "text": "Sorrowsworn Saliva (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Angry Sorrowsworn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Hfd3qezwzYFaCGTt",
+          "brt-result-custom-name": "Sorrowsworn Saliva (vial)",
+          "brt-result-original-name": "Sorrowsworn Saliva (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Hfd3qezwzYFaCGTt",
+      "_id": "o5FmIi98a1tEnfxV",
+      "_key": "!tables.results!pFGuliyacMSPUpa3.o5FmIi98a1tEnfxV"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Angry Sorrowsworn",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561435,
+    "modifiedTime": 1696756755882,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "pFGuliyacMSPUpa3",
+  "sort": 0,
+  "_key": "!tables!pFGuliyacMSPUpa3"
+}

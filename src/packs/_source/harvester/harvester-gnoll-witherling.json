@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Gnoll Witherling",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gnoll Witherling'.",
+  "results": [
+    {
+      "text": "Gnoll Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gnoll Witherling",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wFpIGJBW3uFoHU9x",
+          "brt-result-custom-name": "Gnoll Teeth (small pouch)",
+          "brt-result-original-name": "Gnoll Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "wFpIGJBW3uFoHU9x",
+      "_id": "GtPl6VNYZI6ZNYjJ",
+      "_key": "!tables.results!dEY3VXs2nKcjaJ8s.GtPl6VNYZI6ZNYjJ"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Gnoll Witherling",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756588134,
+    "modifiedTime": 1696756756696,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dEY3VXs2nKcjaJ8s",
+  "sort": 0,
+  "_key": "!tables!dEY3VXs2nKcjaJ8s"
+}

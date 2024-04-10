@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Ape",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ape'.",
+  "results": [
+    {
+      "text": "Ape Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ape",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hXolfwIGH6OkVLHs",
+          "brt-result-custom-name": "Ape Hide",
+          "brt-result-original-name": "Ape Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "hXolfwIGH6OkVLHs",
+      "_id": "5zMa9MtIvBw9RWrI",
+      "_key": "!tables.results!l5ZBgZ2q2uBRzSSM.5zMa9MtIvBw9RWrI"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Ape",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756579984,
+    "modifiedTime": 1696756755899,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "l5ZBgZ2q2uBRzSSM",
+  "sort": 0,
+  "_key": "!tables!l5ZBgZ2q2uBRzSSM"
+}

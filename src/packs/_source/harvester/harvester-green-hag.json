@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Green Hag",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Green Hag'.",
+  "results": [
+    {
+      "text": "Green Hag's Nails (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Green Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5LydeNocmyyMbuBZ",
+          "brt-result-custom-name": "Green Hag's Nails (pouch)",
+          "brt-result-original-name": "Green Hag's Nails (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "5LydeNocmyyMbuBZ",
+      "_id": "hLYpgXLsSMJCGU06",
+      "_key": "!tables.results!yS8Fbfh8YkB9U1bL.hLYpgXLsSMJCGU06"
+    },
+    {
+      "text": "Green Hag's Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Green Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NyHMaIOcEoFOh5yI",
+          "brt-result-custom-name": "Green Hag's Blood vial",
+          "brt-result-original-name": "Green Hag's Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "NyHMaIOcEoFOh5yI",
+      "_id": "hKDWGvHrKvQi6j2c",
+      "_key": "!tables.results!yS8Fbfh8YkB9U1bL.hKDWGvHrKvQi6j2c"
+    },
+    {
+      "text": "Green Hag's Hair (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Green Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PhVD39vSLdAVeSq8",
+          "brt-result-custom-name": "Green Hag's Hair (small pouch)",
+          "brt-result-original-name": "Green Hag's Hair (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "PhVD39vSLdAVeSq8",
+      "_id": "duiwxFAmqOftCyqy",
+      "_key": "!tables.results!yS8Fbfh8YkB9U1bL.duiwxFAmqOftCyqy"
+    },
+    {
+      "text": "Green Hag's Eyeball",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Green Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QTMQjo3NkddGpkFm",
+          "brt-result-custom-name": "Green Hag's Eyeball",
+          "brt-result-original-name": "Green Hag's Eyeball",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "QTMQjo3NkddGpkFm",
+      "_id": "pVS6xHJOhVNfpcql",
+      "_key": "!tables.results!yS8Fbfh8YkB9U1bL.pVS6xHJOhVNfpcql"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Green Hag",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561707,
+    "modifiedTime": 1696756756723,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "yS8Fbfh8YkB9U1bL",
+  "sort": 0,
+  "_key": "!tables!yS8Fbfh8YkB9U1bL"
+}

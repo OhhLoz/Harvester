@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Rhinoceros",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Rhinoceros'.",
+  "results": [
+    {
+      "text": "Rhinoceros Horn",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Rhinoceros",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9fGx3oYF2k4OAOij",
+          "brt-result-custom-name": "Rhinoceros Horn",
+          "brt-result-original-name": "Rhinoceros Horn",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "9fGx3oYF2k4OAOij",
+      "_id": "f8IY8jpZBVulR7Im",
+      "_key": "!tables.results!2j13ZKILyWY5oalh.f8IY8jpZBVulR7Im"
+    },
+    {
+      "text": "Rhinoceros Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Rhinoceros",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.s0q7TuqetzfqqyRN",
+          "brt-result-custom-name": "Rhinoceros Skin",
+          "brt-result-original-name": "Rhinoceros Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "s0q7TuqetzfqqyRN",
+      "_id": "KoNRENtn5q7vwqYX",
+      "_key": "!tables.results!2j13ZKILyWY5oalh.KoNRENtn5q7vwqYX"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Rhinoceros",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563206,
+    "modifiedTime": 1696756759131,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "2j13ZKILyWY5oalh",
+  "sort": 0,
+  "_key": "!tables!2j13ZKILyWY5oalh"
+}

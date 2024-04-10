@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Empyrean",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Empyrean'.",
+  "results": [
+    {
+      "text": "Empyreans Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Empyrean",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AKWnzLn206AFTmvt",
+          "brt-result-custom-name": "Empyreans Skin",
+          "brt-result-original-name": "Empyreans Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "AKWnzLn206AFTmvt",
+      "_id": "R8a2Ab4Kq4SicCva",
+      "_key": "!tables.results!6QQoUZJb9CPqtZX0.R8a2Ab4Kq4SicCva"
+    },
+    {
+      "text": "Lock of Empyrean Hair (x10)",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Empyrean",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DfhfiSeGtryfeyql",
+          "brt-result-custom-name": "Lock of Empyrean Hair",
+          "brt-result-original-name": "Lock of Empyrean Hair (x10)",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "DfhfiSeGtryfeyql",
+      "_id": "NdXoQRxcER3ND02A",
+      "_key": "!tables.results!6QQoUZJb9CPqtZX0.NdXoQRxcER3ND02A"
+    },
+    {
+      "text": "Empyrean Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Empyrean",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.maJ9yOW07SMrybnH",
+          "brt-result-custom-name": "Empyrean Blood vial",
+          "brt-result-original-name": "Empyrean Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "maJ9yOW07SMrybnH",
+      "_id": "nGvH0vwZGgTZw37l",
+      "_key": "!tables.results!6QQoUZJb9CPqtZX0.nGvH0vwZGgTZw37l"
+    },
+    {
+      "text": "Empyreans Essence",
+      "type": 2,
+      "img": "icons/commodities/materials/glass-orb-teal.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Empyrean",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xscnAmQIHaXdmPWt",
+          "brt-result-custom-name": "Empyreans Essence",
+          "brt-result-original-name": "Empyreans Essence",
+          "brt-result-original-icon": "icons/commodities/materials/glass-orb-teal.webp"
+        }
+      },
+      "documentId": "xscnAmQIHaXdmPWt",
+      "_id": "bmfvv3GtfNC6v0cj",
+      "_key": "!tables.results!6QQoUZJb9CPqtZX0.bmfvv3GtfNC6v0cj"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Empyrean",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563404,
+    "modifiedTime": 1696756756208,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "6QQoUZJb9CPqtZX0",
+  "sort": 0,
+  "_key": "!tables!6QQoUZJb9CPqtZX0"
+}

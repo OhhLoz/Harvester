@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Kuo-toa Whip",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Kuo-toa Whip'.",
+  "results": [
+    {
+      "text": "Kuo-toa's Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Kuo-toa Whip",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.H4HPBW79iyyDicOa",
+          "brt-result-custom-name": "Kuo-toa's Teeth (pouch)",
+          "brt-result-original-name": "Kuo-toa's Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "H4HPBW79iyyDicOa",
+      "_id": "GLjjvxGjU81r3Qjv",
+      "_key": "!tables.results!268ktLzc9bAU08sO.GLjjvxGjU81r3Qjv"
+    },
+    {
+      "text": "Kuo-Toa Eyes (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Kuo-toa Whip",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NEKZPdzJ0Xd5LjiI",
+          "brt-result-custom-name": "Kuo-Toa Eyes",
+          "brt-result-original-name": "Kuo-Toa Eyes (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "NEKZPdzJ0Xd5LjiI",
+      "_id": "uEJFJOORvqEUJZUD",
+      "_key": "!tables.results!268ktLzc9bAU08sO.uEJFJOORvqEUJZUD"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Kuo-toa Whip",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565779,
+    "modifiedTime": 1696756757170,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "268ktLzc9bAU08sO",
+  "sort": 0,
+  "_key": "!tables!268ktLzc9bAU08sO"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Aarakocra",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Aarakocra'.",
+  "results": [
+    {
+      "text": "Aarakocra Feathers (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Aarakocra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.O2foZcsOypyQ1AuV",
+          "brt-result-custom-name": "Aarakocra Feathers (small pouch)",
+          "brt-result-original-name": "Aarakocra Feathers (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "O2foZcsOypyQ1AuV",
+      "_id": "BvO0iUqxuOm87pnY",
+      "_key": "!tables.results!J9zpx32E1yuaD603.BvO0iUqxuOm87pnY"
+    },
+    {
+      "text": "Aarakocra Beak",
+      "type": 2,
+      "img": "icons/commodities/bones/beak-hooked-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Aarakocra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yWMxYTsKB8MzQmKd",
+          "brt-result-custom-name": "Aarakocra Beak",
+          "brt-result-original-name": "Aarakocra Beak",
+          "brt-result-original-icon": "icons/commodities/bones/beak-hooked-red.webp"
+        }
+      },
+      "documentId": "yWMxYTsKB8MzQmKd",
+      "_id": "GnwLDKhDQHWFPB8t",
+      "_key": "!tables.results!J9zpx32E1yuaD603.GnwLDKhDQHWFPB8t"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Aarakocra",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567960,
+    "modifiedTime": 1696756755792,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "J9zpx32E1yuaD603",
+  "sort": 0,
+  "_key": "!tables!J9zpx32E1yuaD603"
+}

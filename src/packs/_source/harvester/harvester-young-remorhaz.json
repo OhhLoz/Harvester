@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Young Remorhaz",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Young Remorhaz'.",
+  "results": [
+    {
+      "text": "Remorhaz Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Remorhaz",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.P81ZZ2Hv6TKjH0wt",
+          "brt-result-custom-name": "Remorhaz Blood vial",
+          "brt-result-original-name": "Remorhaz Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "P81ZZ2Hv6TKjH0wt",
+      "_id": "U9sXS43ob2t0Lyb1",
+      "_key": "!tables.results!8OT75Ei3ZvSyODpr.U9sXS43ob2t0Lyb1"
+    },
+    {
+      "text": "Young Remorhaz Chitin Plates",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Remorhaz",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ciijsxoJbTeOTSTh",
+          "brt-result-custom-name": "Young Remorhaz Chitin Plates",
+          "brt-result-original-name": "Young Remorhaz Chitin Plates",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "ciijsxoJbTeOTSTh",
+      "_id": "DddWkuwykMpXbxyU",
+      "_key": "!tables.results!8OT75Ei3ZvSyODpr.DddWkuwykMpXbxyU"
+    },
+    {
+      "text": "Young Remorhaz Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Young Remorhaz",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fArKJbbtKSdNMGza",
+          "brt-result-custom-name": "Young Remorhaz Heart",
+          "brt-result-original-name": "Young Remorhaz Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "fArKJbbtKSdNMGza",
+      "_id": "esPGMsjk4oJnnahH",
+      "_key": "!tables.results!8OT75Ei3ZvSyODpr.esPGMsjk4oJnnahH"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Young Remorhaz",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568242,
+    "modifiedTime": 1696756762276,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8OT75Ei3ZvSyODpr",
+  "sort": 0,
+  "_key": "!tables!8OT75Ei3ZvSyODpr"
+}

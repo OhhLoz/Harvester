@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Tortle Druid",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Tortle Druid'.",
+  "results": [
+    {
+      "text": "Tortle Shell",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-turtle-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Tortle Druid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.B07D3y78V7v32n5s",
+          "brt-result-custom-name": "Tortle Shell",
+          "brt-result-original-name": "Tortle Shell",
+          "brt-result-original-icon": "icons/commodities/biological/shell-turtle-grey.webp"
+        }
+      },
+      "documentId": "B07D3y78V7v32n5s",
+      "_id": "of5YFS4HHUzEzVTe",
+      "_key": "!tables.results!3U4HvtGcE6SkYvqY.of5YFS4HHUzEzVTe"
+    },
+    {
+      "text": "Tortle Fat (flask)",
+      "type": 2,
+      "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Tortle Druid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oY6vba99CH4l6mXQ",
+          "brt-result-custom-name": "Tortle Fat (flask)",
+          "brt-result-original-name": "Tortle Fat (flask)",
+          "brt-result-original-icon": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp"
+        }
+      },
+      "documentId": "oY6vba99CH4l6mXQ",
+      "_id": "JNbfYywY0KYI7dMr",
+      "_key": "!tables.results!3U4HvtGcE6SkYvqY.JNbfYywY0KYI7dMr"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Tortle Druid",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563703,
+    "modifiedTime": 1696756761096,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3U4HvtGcE6SkYvqY",
+  "sort": 0,
+  "_key": "!tables!3U4HvtGcE6SkYvqY"
+}

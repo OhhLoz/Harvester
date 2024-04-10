@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Swarm of Rot Grubs",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Swarm of Rot Grubs'.",
+  "results": [
+    {
+      "text": "Rot Grubs (x2d10)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Swarm of Rot Grubs",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.s4NF4vlf8yYan2Fg",
+          "brt-result-custom-name": "Rot Grubsd",
+          "brt-result-original-name": "Rot Grubs (x2d10)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "s4NF4vlf8yYan2Fg",
+      "_id": "XitFkQpqTDPOLjJo",
+      "_key": "!tables.results!thgF0WunncbKH08x.XitFkQpqTDPOLjJo"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Swarm of Rot Grubs",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756586499,
+    "modifiedTime": 1696756761078,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "thgF0WunncbKH08x",
+  "sort": 0,
+  "_key": "!tables!thgF0WunncbKH08x"
+}

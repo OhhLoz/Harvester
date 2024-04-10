@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Gnoll Fang of Yeenoghu",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gnoll Fang of Yeenoghu'.",
+  "results": [
+    {
+      "text": "Gnoll Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gnoll Fang of Yeenoghu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.72VsfxHB9AMQ5FQQ",
+          "brt-result-custom-name": "Gnoll Teeth (small pouch)",
+          "brt-result-original-name": "Gnoll Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "72VsfxHB9AMQ5FQQ",
+      "_id": "fOzLM2JHbtPPZuKA",
+      "_key": "!tables.results!Q9MvHAo04q8NVKhr.fOzLM2JHbtPPZuKA"
+    },
+    {
+      "text": "Fang's Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gnoll Fang of Yeenoghu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LLfpWSfytHnNTiKz",
+          "brt-result-custom-name": "Fang's Heart",
+          "brt-result-original-name": "Fang's Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "LLfpWSfytHnNTiKz",
+      "_id": "vC7ae8GOrDNmsnDN",
+      "_key": "!tables.results!Q9MvHAo04q8NVKhr.vC7ae8GOrDNmsnDN"
+    },
+    {
+      "text": "Mark of Yeenoghu",
+      "type": 2,
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gnoll Fang of Yeenoghu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.V8xk3nS5mVB0zlvf",
+          "brt-result-custom-name": "Mark of Yeenoghu",
+          "brt-result-original-name": "Mark of Yeenoghu",
+          "brt-result-original-icon": "icons/magic/symbols/rune-sigil-black-pink.webp"
+        }
+      },
+      "documentId": "V8xk3nS5mVB0zlvf",
+      "_id": "wVwysn4ZZ1B4ncP7",
+      "_key": "!tables.results!Q9MvHAo04q8NVKhr.wVwysn4ZZ1B4ncP7"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Gnoll Fang of Yeenoghu",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562243,
+    "modifiedTime": 1696756756690,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Q9MvHAo04q8NVKhr",
+  "sort": 0,
+  "_key": "!tables!Q9MvHAo04q8NVKhr"
+}

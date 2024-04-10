@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Intellect Devourer",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Intellect Devourer'.",
+  "results": [
+    {
+      "text": "Intellect Devourer Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Intellect Devourer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.txUbwtErvK3mYzQF",
+          "brt-result-custom-name": "Intellect Devourer Pineal Gland",
+          "brt-result-original-name": "Intellect Devourer Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "txUbwtErvK3mYzQF",
+      "_id": "n5TBoxRMfqBopzWO",
+      "_key": "!tables.results!OpNTaHkuBBm2fswR.n5TBoxRMfqBopzWO"
+    },
+    {
+      "text": "Intellect Devourer Brain Fluid (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Intellect Devourer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vKHiyITLdg8HPrRz",
+          "brt-result-custom-name": "Intellect Devourer Brain Fluid (vial)",
+          "brt-result-original-name": "Intellect Devourer Brain Fluid (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "vKHiyITLdg8HPrRz",
+      "_id": "jYbhHgNW0xxYJvRO",
+      "_key": "!tables.results!OpNTaHkuBBm2fswR.jYbhHgNW0xxYJvRO"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Intellect Devourer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756587046,
+    "modifiedTime": 1696756757135,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "OpNTaHkuBBm2fswR",
+  "sort": 0,
+  "_key": "!tables!OpNTaHkuBBm2fswR"
+}

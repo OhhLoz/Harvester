@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Yuan-ti Pit Master",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Yuan-ti Pit Master'.",
+  "results": [
+    {
+      "text": "Yuan-ti Pit Master Tendrils (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Pit Master",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8FdxQpxZJZOxKNE7",
+          "brt-result-custom-name": "Yuan-ti Pit Master Tendrils (sack)",
+          "brt-result-original-name": "Yuan-ti Pit Master Tendrils (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "8FdxQpxZJZOxKNE7",
+      "_id": "j5XXfzdSieOy8XUC",
+      "_key": "!tables.results!bkrXeCMMGKWbAmXu.j5XXfzdSieOy8XUC"
+    },
+    {
+      "text": "Yuan-ti Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Pit Master",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.enJbGA9rlJwp2ou8",
+          "brt-result-custom-name": "Yuan-ti Blood vial",
+          "brt-result-original-name": "Yuan-ti Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "enJbGA9rlJwp2ou8",
+      "_id": "RbRaP9a2R1somyII",
+      "_key": "!tables.results!bkrXeCMMGKWbAmXu.RbRaP9a2R1somyII"
+    },
+    {
+      "text": "Yuan-ti Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Pit Master",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vGS86gJVyropQ4DN",
+          "brt-result-custom-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "vGS86gJVyropQ4DN",
+      "_id": "SFMNfUhOXZFBK2v0",
+      "_key": "!tables.results!bkrXeCMMGKWbAmXu.SFMNfUhOXZFBK2v0"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Yuan-ti Pit Master",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562655,
+    "modifiedTime": 1696756762288,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "bkrXeCMMGKWbAmXu",
+  "sort": 0,
+  "_key": "!tables!bkrXeCMMGKWbAmXu"
+}

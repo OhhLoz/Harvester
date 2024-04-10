@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Titivilus",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Titivilus'.",
+  "results": [
+    {
+      "text": "Titivilus' Hooves (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Titivilus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6L5FsSsosIxG70NG",
+          "brt-result-custom-name": "Titivilus' Hooves",
+          "brt-result-original-name": "Titivilus' Hooves (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "6L5FsSsosIxG70NG",
+      "_id": "QMbiejXXZBFnOxA8",
+      "_key": "!tables.results!8KL707nDHePILUzz.QMbiejXXZBFnOxA8"
+    },
+    {
+      "text": "Titivilus' Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Titivilus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SH5iiCs9PUp2hVbj",
+          "brt-result-custom-name": "Titivilus' Blood vial",
+          "brt-result-original-name": "Titivilus' Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "SH5iiCs9PUp2hVbj",
+      "_id": "Ww8Y0ONjYr1JlZcA",
+      "_key": "!tables.results!8KL707nDHePILUzz.Ww8Y0ONjYr1JlZcA"
+    },
+    {
+      "text": "Titivilus' Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Titivilus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kFW8iuNEzYSu81XJ",
+          "brt-result-custom-name": "Titivilus' Horn",
+          "brt-result-original-name": "Titivilus' Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "kFW8iuNEzYSu81XJ",
+      "_id": "7n4kYx3SDzh3CRLY",
+      "_key": "!tables.results!8KL707nDHePILUzz.7n4kYx3SDzh3CRLY"
+    },
+    {
+      "text": "Titivilus' Tongue",
+      "type": 2,
+      "img": "icons/commodities/biological/tongue-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Titivilus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.o8CFEuO1q3L82lJM",
+          "brt-result-custom-name": "Titivilus' Tongue",
+          "brt-result-original-name": "Titivilus' Tongue",
+          "brt-result-original-icon": "icons/commodities/biological/tongue-red.webp"
+        }
+      },
+      "documentId": "o8CFEuO1q3L82lJM",
+      "_id": "BVToNj7MtjwSRTKF",
+      "_key": "!tables.results!8KL707nDHePILUzz.BVToNj7MtjwSRTKF"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Titivilus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561938,
+    "modifiedTime": 1696756761092,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8KL707nDHePILUzz",
+  "sort": 0,
+  "_key": "!tables!8KL707nDHePILUzz"
+}

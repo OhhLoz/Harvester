@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Skull Lord",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Skull Lord'.",
+  "results": [
+    {
+      "text": "Skull Lord Dust (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Skull Lord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NB2lepV3m8kJzhDp",
+          "brt-result-custom-name": "Skull Lord Dust (pouch)",
+          "brt-result-original-name": "Skull Lord Dust (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "NB2lepV3m8kJzhDp",
+      "_id": "cHwrmDWPC0rMjafT",
+      "_key": "!tables.results!aHDpuHt30XF8FBV9.cHwrmDWPC0rMjafT"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Skull Lord",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567756,
+    "modifiedTime": 1696756759950,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "aHDpuHt30XF8FBV9",
+  "sort": 0,
+  "_key": "!tables!aHDpuHt30XF8FBV9"
+}

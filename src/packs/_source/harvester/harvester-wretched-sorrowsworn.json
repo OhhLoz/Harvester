@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Wretched Sorrowsworn",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Wretched Sorrowsworn'.",
+  "results": [
+    {
+      "text": "Sorrowsworn Saliva (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Wretched Sorrowsworn",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5YQAqdiCaPYa7YPu",
+          "brt-result-custom-name": "Sorrowsworn Saliva (vial)",
+          "brt-result-original-name": "Sorrowsworn Saliva (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "5YQAqdiCaPYa7YPu",
+      "_id": "uDaYewG1bOkUay1s",
+      "_key": "!tables.results!2tdBUZ5aQEghDQcR.uDaYewG1bOkUay1s"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Wretched Sorrowsworn",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561761,
+    "modifiedTime": 1696756762256,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "2tdBUZ5aQEghDQcR",
+  "sort": 0,
+  "_key": "!tables!2tdBUZ5aQEghDQcR"
+}

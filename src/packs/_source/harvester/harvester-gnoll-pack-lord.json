@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Gnoll Pack Lord",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gnoll Pack Lord'.",
+  "results": [
+    {
+      "text": "Mark of Yeenoghu",
+      "type": 2,
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Gnoll Pack Lord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dnFzxomGyf17Ib9Z",
+          "brt-result-custom-name": "Mark of Yeenoghu",
+          "brt-result-original-name": "Mark of Yeenoghu",
+          "brt-result-original-icon": "icons/magic/symbols/rune-sigil-black-pink.webp"
+        }
+      },
+      "documentId": "dnFzxomGyf17Ib9Z",
+      "_id": "P75kwG949jfXDKz3",
+      "_key": "!tables.results!chrx0Ti9CQOqkyts.P75kwG949jfXDKz3"
+    },
+    {
+      "text": "Gnoll Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Gnoll Pack Lord",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qANABa4ztaCXhsO3",
+          "brt-result-custom-name": "Gnoll Teeth (small pouch)",
+          "brt-result-original-name": "Gnoll Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "qANABa4ztaCXhsO3",
+      "_id": "NrDvIfOJmqS0BcUm",
+      "_key": "!tables.results!chrx0Ti9CQOqkyts.NrDvIfOJmqS0BcUm"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Gnoll Pack Lord",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756577764,
+    "modifiedTime": 1696756756693,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "chrx0Ti9CQOqkyts",
+  "sort": 0,
+  "_key": "!tables!chrx0Ti9CQOqkyts"
+}

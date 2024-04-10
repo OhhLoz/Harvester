@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Nagpa",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Nagpa'.",
+  "results": [
+    {
+      "text": "Nagpa Beak",
+      "type": 2,
+      "img": "icons/commodities/bones/beak-hooked-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Nagpa",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6jPtMbbSl3W4lqWf",
+          "brt-result-custom-name": "Nagpa Beak",
+          "brt-result-original-name": "Nagpa Beak",
+          "brt-result-original-icon": "icons/commodities/bones/beak-hooked-red.webp"
+        }
+      },
+      "documentId": "6jPtMbbSl3W4lqWf",
+      "_id": "bbmsFk3vNdgnb55d",
+      "_key": "!tables.results!LcpC216pv4WXckUT.bbmsFk3vNdgnb55d"
+    },
+    {
+      "text": "Nagpa Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Nagpa",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WP8YrGMzKNPVQtQq",
+          "brt-result-custom-name": "Nagpa Claws (pouch)",
+          "brt-result-original-name": "Nagpa Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "WP8YrGMzKNPVQtQq",
+      "_id": "lV3ABuqQJz5QfPGP",
+      "_key": "!tables.results!LcpC216pv4WXckUT.lV3ABuqQJz5QfPGP"
+    },
+    {
+      "text": "Nagpa Hair (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Nagpa",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tBmzlOfO4AB2GLAx",
+          "brt-result-custom-name": "Nagpa Hair (pouch)",
+          "brt-result-original-name": "Nagpa Hair (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "tBmzlOfO4AB2GLAx",
+      "_id": "neQ9JAS9X4DJZ1sP",
+      "_key": "!tables.results!LcpC216pv4WXckUT.neQ9JAS9X4DJZ1sP"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Nagpa",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562123,
+    "modifiedTime": 1696756758268,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "LcpC216pv4WXckUT",
+  "sort": 0,
+  "_key": "!tables!LcpC216pv4WXckUT"
+}

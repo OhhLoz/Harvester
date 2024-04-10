@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Beholder Zombie",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Beholder Zombie'.",
+  "results": [
+    {
+      "text": "Zombie Fluid",
+      "type": 2,
+      "img": "icons/commodities/materials/liquid-green.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Beholder Zombie",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.A4SsH9fFfFq5PeK8",
+          "brt-result-custom-name": "Zombie Fluid",
+          "brt-result-original-name": "Zombie Fluid",
+          "brt-result-original-icon": "icons/commodities/materials/liquid-green.webp"
+        }
+      },
+      "documentId": "A4SsH9fFfFq5PeK8",
+      "_id": "dnyTjQz1T6HKdiGT",
+      "_key": "!tables.results!IX2EmqmuaNxZDUhh.dnyTjQz1T6HKdiGT"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Beholder Zombie",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563255,
+    "modifiedTime": 1696756755953,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "IX2EmqmuaNxZDUhh",
+  "sort": 0,
+  "_key": "!tables!IX2EmqmuaNxZDUhh"
+}

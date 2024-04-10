@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Jabberwock",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Jabberwock'.",
+  "results": [
+    {
+      "text": "Jabberwock Larynx",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Jabberwock",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DBGw819x1gOhmjHY",
+          "brt-result-custom-name": "Jabberwock Larynx",
+          "brt-result-original-name": "Jabberwock Larynx",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "DBGw819x1gOhmjHY",
+      "_id": "MiSkoGGdq9NKOJnQ",
+      "_key": "!tables.results!DqG6Lzy7VEmRuCec.MiSkoGGdq9NKOJnQ"
+    },
+    {
+      "text": "Jabberwock Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Jabberwock",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Fv1T3XmYN5XEd8YG",
+          "brt-result-custom-name": "Jabberwock Eye",
+          "brt-result-original-name": "Jabberwock Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "Fv1T3XmYN5XEd8YG",
+      "_id": "y1L22zxuU8RlP0uS",
+      "_key": "!tables.results!DqG6Lzy7VEmRuCec.y1L22zxuU8RlP0uS"
+    },
+    {
+      "text": "Jabberwock Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Jabberwock",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.s2Prha95hYMl0MG3",
+          "brt-result-custom-name": "Jabberwock Blood vial",
+          "brt-result-original-name": "Jabberwock Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "s2Prha95hYMl0MG3",
+      "_id": "jwDEimB3MyIqggzf",
+      "_key": "!tables.results!DqG6Lzy7VEmRuCec.jwDEimB3MyIqggzf"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Jabberwock",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564701,
+    "modifiedTime": 1696756757142,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "DqG6Lzy7VEmRuCec",
+  "sort": 0,
+  "_key": "!tables!DqG6Lzy7VEmRuCec"
+}

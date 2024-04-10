@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Shoosuva",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Shoosuva'.",
+  "results": [
+    {
+      "text": "Shoosuva Fur (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Shoosuva",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Mjfq7igW9ujnnhMl",
+          "brt-result-custom-name": "Shoosuva Fur (small pouch)",
+          "brt-result-original-name": "Shoosuva Fur (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "Mjfq7igW9ujnnhMl",
+      "_id": "sI2kBvZ1NOmuD3nB",
+      "_key": "!tables.results!UQU2gBHcI9W8k8NB.sI2kBvZ1NOmuD3nB"
+    },
+    {
+      "text": "Shoosuva Poison Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Shoosuva",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SqdYhMWcxROusElq",
+          "brt-result-custom-name": "Shoosuva Poison Gland",
+          "brt-result-original-name": "Shoosuva Poison Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "SqdYhMWcxROusElq",
+      "_id": "J8DHJG72F7tBVxUI",
+      "_key": "!tables.results!UQU2gBHcI9W8k8NB.J8DHJG72F7tBVxUI"
+    },
+    {
+      "text": "Shoosuva Spike",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-spiked-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Shoosuva",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bAQMnokHooayXc59",
+          "brt-result-custom-name": "Shoosuva Spike",
+          "brt-result-original-name": "Shoosuva Spike",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-spiked-brown.webp"
+        }
+      },
+      "documentId": "bAQMnokHooayXc59",
+      "_id": "6pvhsEAwvRSBTJXD",
+      "_key": "!tables.results!UQU2gBHcI9W8k8NB.6pvhsEAwvRSBTJXD"
+    },
+    {
+      "text": "Shoosuva Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Shoosuva",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wiEcGVVscn6KNBLa",
+          "brt-result-custom-name": "Shoosuva Heart",
+          "brt-result-original-name": "Shoosuva Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "wiEcGVVscn6KNBLa",
+      "_id": "EXhvfFS2C3OSogYQ",
+      "_key": "!tables.results!UQU2gBHcI9W8k8NB.EXhvfFS2C3OSogYQ"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Shoosuva",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567602,
+    "modifiedTime": 1696756759935,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "UQU2gBHcI9W8k8NB",
+  "sort": 0,
+  "_key": "!tables!UQU2gBHcI9W8k8NB"
+}

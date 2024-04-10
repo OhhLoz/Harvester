@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Gray Ooze",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gray Ooze'.",
+  "results": [
+    {
+      "text": "Gray Ooze Sample (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Gray Ooze",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RCk8du1h6w6RGNcn",
+          "brt-result-custom-name": "Gray Ooze Sample (vial)",
+          "brt-result-original-name": "Gray Ooze Sample (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "RCk8du1h6w6RGNcn",
+      "_id": "exGy3e8rnVmjHRc4",
+      "_key": "!tables.results!qCZZpvrp51HFCxc5.exGy3e8rnVmjHRc4"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Gray Ooze",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568954,
+    "modifiedTime": 1696756756712,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "qCZZpvrp51HFCxc5",
+  "sort": 0,
+  "_key": "!tables!qCZZpvrp51HFCxc5"
+}

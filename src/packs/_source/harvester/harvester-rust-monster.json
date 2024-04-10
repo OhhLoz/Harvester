@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Rust Monster",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Rust Monster'.",
+  "results": [
+    {
+      "text": "Rust Monster Antenna (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/antenna-blue.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Rust Monster",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.YM7aOGt1AzMZzHNm",
+          "brt-result-custom-name": "Rust Monster Antenna",
+          "brt-result-original-name": "Rust Monster Antenna (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/antenna-blue.webp"
+        }
+      },
+      "documentId": "YM7aOGt1AzMZzHNm",
+      "_id": "aSTCbwBe9OjAE0i8",
+      "_key": "!tables.results!1wQJbTdqg3oZNe1b.aSTCbwBe9OjAE0i8"
+    },
+    {
+      "text": "Rust Monster Saliva (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Rust Monster",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ot02JIRsoWpwBybF",
+          "brt-result-custom-name": "Rust Monster Saliva vial",
+          "brt-result-original-name": "Rust Monster Saliva (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "ot02JIRsoWpwBybF",
+      "_id": "EDbpR0g2szq5mAF0",
+      "_key": "!tables.results!1wQJbTdqg3oZNe1b.EDbpR0g2szq5mAF0"
+    },
+    {
+      "text": "Rust Monster Chitin",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Rust Monster",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zpujwDMrNJsyj90R",
+          "brt-result-custom-name": "Rust Monster Chitin",
+          "brt-result-original-name": "Rust Monster Chitin",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "zpujwDMrNJsyj90R",
+      "_id": "9scoQBZAEvnStcZq",
+      "_key": "!tables.results!1wQJbTdqg3oZNe1b.9scoQBZAEvnStcZq"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Rust Monster",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756573394,
+    "modifiedTime": 1696756759140,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1wQJbTdqg3oZNe1b",
+  "sort": 0,
+  "_key": "!tables!1wQJbTdqg3oZNe1b"
+}

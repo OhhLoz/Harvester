@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Cambion",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Cambion'.",
+  "results": [
+    {
+      "text": "Cambion Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cambion",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4r70WmLoByDkofhK",
+          "brt-result-custom-name": "Cambion Wing",
+          "brt-result-original-name": "Cambion Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "4r70WmLoByDkofhK",
+      "_id": "AzBPiI5dwUxWyrVe",
+      "_key": "!tables.results!rd6w3UT7VpTgkQjA.AzBPiI5dwUxWyrVe"
+    },
+    {
+      "text": "Cambion Sulfur (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cambion",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5Qmk1bu1msrfdgPP",
+          "brt-result-custom-name": "Cambion Sulfur (small pouch)",
+          "brt-result-original-name": "Cambion Sulfur (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "5Qmk1bu1msrfdgPP",
+      "_id": "VTtbDaBTqhy6QAbg",
+      "_key": "!tables.results!rd6w3UT7VpTgkQjA.VTtbDaBTqhy6QAbg"
+    },
+    {
+      "text": "Devil-Tinged Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cambion",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hdeEuTiu6GscNvUo",
+          "brt-result-custom-name": "Devil-Tinged Blood vial",
+          "brt-result-original-name": "Devil-Tinged Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "hdeEuTiu6GscNvUo",
+      "_id": "d5Hqqcbz5sKcS2al",
+      "_key": "!tables.results!rd6w3UT7VpTgkQjA.d5Hqqcbz5sKcS2al"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Cambion",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561535,
+    "modifiedTime": 1696756756006,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rd6w3UT7VpTgkQjA",
+  "sort": 0,
+  "_key": "!tables!rd6w3UT7VpTgkQjA"
+}

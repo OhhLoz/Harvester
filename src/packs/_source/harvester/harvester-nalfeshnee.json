@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Nalfeshnee",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Nalfeshnee'.",
+  "results": [
+    {
+      "text": "Nalfeshnee Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nalfeshnee",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QCalsBzTotOVinbv",
+          "brt-result-custom-name": "Nalfeshnee Teeth (small pouch)",
+          "brt-result-original-name": "Nalfeshnee Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "QCalsBzTotOVinbv",
+      "_id": "v5I6yOQ66yjBMYQT",
+      "_key": "!tables.results!JbUwCfxgckjaDBWn.v5I6yOQ66yjBMYQT"
+    },
+    {
+      "text": "Nalfeshnee Eyes (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nalfeshnee",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TxFL4rBnQjhWaqxc",
+          "brt-result-custom-name": "Nalfeshnee Eyes",
+          "brt-result-original-name": "Nalfeshnee Eyes (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "TxFL4rBnQjhWaqxc",
+      "_id": "Of1XvPDY0LdNe0ia",
+      "_key": "!tables.results!JbUwCfxgckjaDBWn.Of1XvPDY0LdNe0ia"
+    },
+    {
+      "text": "Nalfeshnee Tusk (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nalfeshnee",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VCCWSIYjtn99HjE5",
+          "brt-result-custom-name": "Nalfeshnee Tusk",
+          "brt-result-original-name": "Nalfeshnee Tusk (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "VCCWSIYjtn99HjE5",
+      "_id": "0IVJ6622AvigttX9",
+      "_key": "!tables.results!JbUwCfxgckjaDBWn.0IVJ6622AvigttX9"
+    },
+    {
+      "text": "Nalfeshnee Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nalfeshnee",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vl6E6qFybdZheN2H",
+          "brt-result-custom-name": "Nalfeshnee Wing",
+          "brt-result-original-name": "Nalfeshnee Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "vl6E6qFybdZheN2H",
+      "_id": "rWrZsDTMN0RB681z",
+      "_key": "!tables.results!JbUwCfxgckjaDBWn.rWrZsDTMN0RB681z"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Nalfeshnee",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568642,
+    "modifiedTime": 1696756758270,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JbUwCfxgckjaDBWn",
+  "sort": 0,
+  "_key": "!tables!JbUwCfxgckjaDBWn"
+}

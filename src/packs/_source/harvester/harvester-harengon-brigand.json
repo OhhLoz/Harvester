@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Harengon Brigand",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Harengon Brigand'.",
+  "results": [
+    {
+      "text": "Harengon Ear (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Harengon Brigand",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XqyWH9W22wkh4se9",
+          "brt-result-custom-name": "Harengon Ear",
+          "brt-result-original-name": "Harengon Ear (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "XqyWH9W22wkh4se9",
+      "_id": "qsbahP2Uyo8NO40A",
+      "_key": "!tables.results!5RhKSbjQ4Hbe0VQv.qsbahP2Uyo8NO40A"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Harengon Brigand",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756572880,
+    "modifiedTime": 1696756756750,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "5RhKSbjQ4Hbe0VQv",
+  "sort": 0,
+  "_key": "!tables!5RhKSbjQ4Hbe0VQv"
+}

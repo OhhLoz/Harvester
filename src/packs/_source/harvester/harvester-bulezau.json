@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Bulezau",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bulezau'.",
+  "results": [
+    {
+      "text": "Bulezau Tail Oil (3x vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bulezau",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VK8e24S5F3sPn5x7",
+          "brt-result-custom-name": "Bulezau Tail Oil vial",
+          "brt-result-original-name": "Bulezau Tail Oil (3x vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "VK8e24S5F3sPn5x7",
+      "_id": "oXt3EzYPLY4VcUyx",
+      "_key": "!tables.results!m4LGhU3rhOfMSItK.oXt3EzYPLY4VcUyx"
+    },
+    {
+      "text": "Bulezau Mane",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-white-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bulezau",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nP8T0l2a4DJx6F8F",
+          "brt-result-custom-name": "Bulezau Mane",
+          "brt-result-original-name": "Bulezau Mane",
+          "brt-result-original-icon": "icons/commodities/leather/fur-white-tan.webp"
+        }
+      },
+      "documentId": "nP8T0l2a4DJx6F8F",
+      "_id": "8VXXtND3do6GVoZf",
+      "_key": "!tables.results!m4LGhU3rhOfMSItK.8VXXtND3do6GVoZf"
+    },
+    {
+      "text": "Bulezau Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bulezau",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xWsOqqD6fY9JJChu",
+          "brt-result-custom-name": "Bulezau Horn",
+          "brt-result-original-name": "Bulezau Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "xWsOqqD6fY9JJChu",
+      "_id": "my8pIRKXmScHi5NF",
+      "_key": "!tables.results!m4LGhU3rhOfMSItK.my8pIRKXmScHi5NF"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Bulezau",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756570677,
+    "modifiedTime": 1696756755998,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "m4LGhU3rhOfMSItK",
+  "sort": 0,
+  "_key": "!tables!m4LGhU3rhOfMSItK"
+}

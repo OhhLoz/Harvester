@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Dohwar",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dohwar'.",
+  "results": [
+    {
+      "text": "Dohwar Beak",
+      "type": 2,
+      "img": "icons/commodities/bones/beak-hooked-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Dohwar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wEqPoYRlEzM2yvLK",
+          "brt-result-custom-name": "Dohwar Beak",
+          "brt-result-original-name": "Dohwar Beak",
+          "brt-result-original-icon": "icons/commodities/bones/beak-hooked-red.webp"
+        }
+      },
+      "documentId": "wEqPoYRlEzM2yvLK",
+      "_id": "3T9bsrmjKoPG0tiR",
+      "_key": "!tables.results!M8WawFrXckubZZCw.3T9bsrmjKoPG0tiR"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Dohwar",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756588006,
+    "modifiedTime": 1696756756113,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "M8WawFrXckubZZCw",
+  "sort": 0,
+  "_key": "!tables!M8WawFrXckubZZCw"
+}

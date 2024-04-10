@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Hobgoblin Devastator",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hobgoblin Devastator'.",
+  "results": [
+    {
+      "text": "Hobgoblin Ear",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hobgoblin Devastator",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8Prpy3Uc2ySO1fPN",
+          "brt-result-custom-name": "Hobgoblin Ear",
+          "brt-result-original-name": "Hobgoblin Ear",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "8Prpy3Uc2ySO1fPN",
+      "_id": "ectCQ42QS7fzS4MC",
+      "_key": "!tables.results!0APZ9BCUyvkvUrCp.ectCQ42QS7fzS4MC"
+    },
+    {
+      "text": "Hobgoblin War Braid",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hobgoblin Devastator",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qA6QSX9tMx06EKgs",
+          "brt-result-custom-name": "Hobgoblin War Braid",
+          "brt-result-original-name": "Hobgoblin War Braid",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "qA6QSX9tMx06EKgs",
+      "_id": "exNFEfQCJgkmPMw9",
+      "_key": "!tables.results!0APZ9BCUyvkvUrCp.exNFEfQCJgkmPMw9"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Hobgoblin Devastator",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562702,
+    "modifiedTime": 1696756757105,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "0APZ9BCUyvkvUrCp",
+  "sort": 0,
+  "_key": "!tables!0APZ9BCUyvkvUrCp"
+}

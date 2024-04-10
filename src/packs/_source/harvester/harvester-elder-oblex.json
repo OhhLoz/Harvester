@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Elder Oblex",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Elder Oblex'.",
+  "results": [
+    {
+      "text": "Oblex Ooze (9x vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Elder Oblex",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VhcMYY4w3h8XEqbz",
+          "brt-result-custom-name": "Oblex Ooze vial",
+          "brt-result-original-name": "Oblex Ooze (9x vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "VhcMYY4w3h8XEqbz",
+      "_id": "2Fjj7SH0pa0JQQlI",
+      "_key": "!tables.results!Uly0QSy2tAEPgSuC.2Fjj7SH0pa0JQQlI"
+    },
+    {
+      "text": "Elder Oblex Nucleus",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Elder Oblex",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.eUb5SioRdnjWd493",
+          "brt-result-custom-name": "Elder Oblex Nucleus",
+          "brt-result-original-name": "Elder Oblex Nucleus",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "eUb5SioRdnjWd493",
+      "_id": "gGlT38lBEF45RPNP",
+      "_key": "!tables.results!Uly0QSy2tAEPgSuC.gGlT38lBEF45RPNP"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Elder Oblex",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756571145,
+    "modifiedTime": 1696756756197,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Uly0QSy2tAEPgSuC",
+  "sort": 0,
+  "_key": "!tables!Uly0QSy2tAEPgSuC"
+}

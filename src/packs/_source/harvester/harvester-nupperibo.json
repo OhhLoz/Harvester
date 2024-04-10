@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Nupperibo",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Nupperibo'.",
+  "results": [
+    {
+      "text": "Nupperibo Blubber",
+      "type": 2,
+      "img": "icons/commodities/materials/slime-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nupperibo",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.YrHY0v41VdgVpxNf",
+          "brt-result-custom-name": "Nupperibo Blubber",
+          "brt-result-original-name": "Nupperibo Blubber",
+          "brt-result-original-icon": "icons/commodities/materials/slime-white.webp"
+        }
+      },
+      "documentId": "YrHY0v41VdgVpxNf",
+      "_id": "JRfrgx4VH8g9816R",
+      "_key": "!tables.results!AbR7JTdNSxx89W2M.JRfrgx4VH8g9816R"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Nupperibo",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756573818,
+    "modifiedTime": 1696756758305,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AbR7JTdNSxx89W2M",
+  "sort": 0,
+  "_key": "!tables!AbR7JTdNSxx89W2M"
+}

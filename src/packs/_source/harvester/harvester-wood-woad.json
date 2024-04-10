@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Wood Woad",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Wood Woad'.",
+  "results": [
+    {
+      "text": "Wood Woad Seed",
+      "type": 2,
+      "img": "icons/consumables/nuts/pistachios-nute-shell-green-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Wood Woad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Bz7WyhfEYtZ6Bomy",
+          "brt-result-custom-name": "Wood Woad Seed",
+          "brt-result-original-name": "Wood Woad Seed",
+          "brt-result-original-icon": "icons/consumables/nuts/pistachios-nute-shell-green-white.webp"
+        }
+      },
+      "documentId": "Bz7WyhfEYtZ6Bomy",
+      "_id": "5RDI88HrbycfoJEU",
+      "_key": "!tables.results!Kke85JzgWWsbqbzP.5RDI88HrbycfoJEU"
+    },
+    {
+      "text": "Wood Woad Lichen (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Wood Woad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PRM1FBSj3i5bHqBX",
+          "brt-result-custom-name": "Wood Woad Lichen (pouch)",
+          "brt-result-original-name": "Wood Woad Lichen (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "PRM1FBSj3i5bHqBX",
+      "_id": "qEotcFiX2oAQQYlI",
+      "_key": "!tables.results!Kke85JzgWWsbqbzP.qEotcFiX2oAQQYlI"
+    },
+    {
+      "text": "Wood Woad Bark",
+      "type": 2,
+      "img": "icons/commodities/wood/bark-beige.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Wood Woad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XhGdSQAeTxuafFKj",
+          "brt-result-custom-name": "Wood Woad Bark",
+          "brt-result-original-name": "Wood Woad Bark",
+          "brt-result-original-icon": "icons/commodities/wood/bark-beige.webp"
+        }
+      },
+      "documentId": "XhGdSQAeTxuafFKj",
+      "_id": "qWDvhI3aWYLC969s",
+      "_key": "!tables.results!Kke85JzgWWsbqbzP.qWDvhI3aWYLC969s"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Wood Woad",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564146,
+    "modifiedTime": 1696756762253,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Kke85JzgWWsbqbzP",
+  "sort": 0,
+  "_key": "!tables!Kke85JzgWWsbqbzP"
+}

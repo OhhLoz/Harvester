@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Summer Eladrin",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Summer Eladrin'.",
+  "results": [
+    {
+      "text": "Summer Eladrin Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Summer Eladrin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ADq35OVV7wXLEJcf",
+          "brt-result-custom-name": "Summer Eladrin Hair",
+          "brt-result-original-name": "Summer Eladrin Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "ADq35OVV7wXLEJcf",
+      "_id": "Pwh6a2SBp0XSdE43",
+      "_key": "!tables.results!iLieV1SrUYBO9KQ9.Pwh6a2SBp0XSdE43"
+    },
+    {
+      "text": "Eladrin Ear (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Summer Eladrin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.evPeaVG0KM70VRZt",
+          "brt-result-custom-name": "Eladrin Ear",
+          "brt-result-original-name": "Eladrin Ear (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "evPeaVG0KM70VRZt",
+      "_id": "MbOsVTLq6oeQd8iC",
+      "_key": "!tables.results!iLieV1SrUYBO9KQ9.MbOsVTLq6oeQd8iC"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Summer Eladrin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563338,
+    "modifiedTime": 1696756760027,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "iLieV1SrUYBO9KQ9",
+  "sort": 0,
+  "_key": "!tables!iLieV1SrUYBO9KQ9"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Brown Scavver",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Brown Scavver'.",
+  "results": [
+    {
+      "text": "Brown Scavver Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Brown Scavver",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TGpPlpc8uBk9mmw7",
+          "brt-result-custom-name": "Brown Scavver Teeth (pouch)",
+          "brt-result-original-name": "Brown Scavver Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "TGpPlpc8uBk9mmw7",
+      "_id": "ufOsZ41dE2vbO7Rt",
+      "_key": "!tables.results!ZfoKTpPfV3mSVjoC.ufOsZ41dE2vbO7Rt"
+    },
+    {
+      "text": "Brown Scavver Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Brown Scavver",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nvfDGLer4V3u5AqP",
+          "brt-result-custom-name": "Brown Scavver Skin",
+          "brt-result-original-name": "Brown Scavver Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "nvfDGLer4V3u5AqP",
+      "_id": "5cN2Ut1m8PWzLYXZ",
+      "_key": "!tables.results!ZfoKTpPfV3mSVjoC.5cN2Ut1m8PWzLYXZ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Brown Scavver",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569545,
+    "modifiedTime": 1696756755991,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ZfoKTpPfV3mSVjoC",
+  "sort": 0,
+  "_key": "!tables!ZfoKTpPfV3mSVjoC"
+}

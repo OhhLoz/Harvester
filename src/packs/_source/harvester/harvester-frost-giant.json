@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Frost Giant",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Frost Giant'.",
+  "results": [
+    {
+      "text": "Frost Giant Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Frost Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OXWlx3yJOS3kjiM5",
+          "brt-result-custom-name": "Frost Giant Blood vial",
+          "brt-result-original-name": "Frost Giant Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "OXWlx3yJOS3kjiM5",
+      "_id": "zfC5pRqZ1VGSYKFN",
+      "_key": "!tables.results!G4uBs7pciCp8GFgU.zfC5pRqZ1VGSYKFN"
+    },
+    {
+      "text": "Frost Giant Toenails",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Frost Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Q4WzbXdtONv8uHBc",
+          "brt-result-custom-name": "Frost Giant Toenails",
+          "brt-result-original-name": "Frost Giant Toenails",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "Q4WzbXdtONv8uHBc",
+      "_id": "b8HrFWq8H3wp2jkc",
+      "_key": "!tables.results!G4uBs7pciCp8GFgU.b8HrFWq8H3wp2jkc"
+    },
+    {
+      "text": "Frost Giant Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "med",
+          "brt-source-value": "Frost Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.YtEMubWOEtMrLobl",
+          "brt-result-custom-name": "Frost Giant Skin",
+          "brt-result-original-name": "Frost Giant Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "YtEMubWOEtMrLobl",
+      "_id": "DETMvkM1HYhn1fVR",
+      "_key": "!tables.results!G4uBs7pciCp8GFgU.DETMvkM1HYhn1fVR"
+    },
+    {
+      "text": "Lock of Frost Giant Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Frost Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ddx5FSaFenG4AsOc",
+          "brt-result-custom-name": "Lock of Frost Giant Hair",
+          "brt-result-original-name": "Lock of Frost Giant Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "ddx5FSaFenG4AsOc",
+      "_id": "d8jaZfqdZ0djBGWo",
+      "_key": "!tables.results!G4uBs7pciCp8GFgU.d8jaZfqdZ0djBGWo"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Frost Giant",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568050,
+    "modifiedTime": 1696756756302,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "G4uBs7pciCp8GFgU",
+  "sort": 0,
+  "_key": "!tables!G4uBs7pciCp8GFgU"
+}

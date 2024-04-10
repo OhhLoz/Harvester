@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Redcap",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Redcap'.",
+  "results": [
+    {
+      "text": "Redcap Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Redcap",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4yIaOu53JsFsaNpL",
+          "brt-result-custom-name": "Redcap Blood (vial)",
+          "brt-result-original-name": "Redcap Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "4yIaOu53JsFsaNpL",
+      "_id": "HOdrIXj2FxaTZ4es",
+      "_key": "!tables.results!ziOniX4ZJmF9MR7X.HOdrIXj2FxaTZ4es"
+    },
+    {
+      "text": "Redcap Hat",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Redcap",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XT9DApvQhWIScOkV",
+          "brt-result-custom-name": "Redcap Hat",
+          "brt-result-original-name": "Redcap Hat",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "XT9DApvQhWIScOkV",
+      "_id": "DoPYq69CLM3Ru2oT",
+      "_key": "!tables.results!ziOniX4ZJmF9MR7X.DoPYq69CLM3Ru2oT"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Redcap",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561600,
+    "modifiedTime": 1696756759121,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ziOniX4ZJmF9MR7X",
+  "sort": 0,
+  "_key": "!tables!ziOniX4ZJmF9MR7X"
+}

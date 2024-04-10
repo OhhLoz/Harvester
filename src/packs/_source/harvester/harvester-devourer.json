@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Devourer",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Devourer'.",
+  "results": [
+    {
+      "text": "Devourer Claw (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Devourer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0shUaaJLK10kpwlz",
+          "brt-result-custom-name": "Devourer Claw",
+          "brt-result-original-name": "Devourer Claw (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "0shUaaJLK10kpwlz",
+      "_id": "Ztk4BygMbeOT0TMM",
+      "_key": "!tables.results!840yOpijTuiBiz4H.Ztk4BygMbeOT0TMM"
+    },
+    {
+      "text": "Soul Shard (gem)",
+      "type": 2,
+      "img": "icons/commodities/gems/gem-faceted-round-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Devourer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.28dtJoNKyUU3J7fi",
+          "brt-result-custom-name": "Soul Shard (gem)",
+          "brt-result-original-name": "Soul Shard (gem)",
+          "brt-result-original-icon": "icons/commodities/gems/gem-faceted-round-white.webp"
+        }
+      },
+      "documentId": "28dtJoNKyUU3J7fi",
+      "_id": "wAm44daev5Hs4cty",
+      "_key": "!tables.results!840yOpijTuiBiz4H.wAm44daev5Hs4cty"
+    },
+    {
+      "text": "Devourer Ribcage",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Devourer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SitU1G2cezMQT16B",
+          "brt-result-custom-name": "Devourer Ribcage",
+          "brt-result-original-name": "Devourer Ribcage",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "SitU1G2cezMQT16B",
+      "_id": "JNtXuIa3bbc935Sl",
+      "_key": "!tables.results!840yOpijTuiBiz4H.JNtXuIa3bbc935Sl"
+    },
+    {
+      "text": "Devourer Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Devourer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vVN5PG42eDBkLoaD",
+          "brt-result-custom-name": "Devourer Skin",
+          "brt-result-original-name": "Devourer Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "vVN5PG42eDBkLoaD",
+      "_id": "E0VzP8zZ0tOhQVz6",
+      "_key": "!tables.results!840yOpijTuiBiz4H.E0VzP8zZ0tOhQVz6"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Devourer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560457,
+    "modifiedTime": 1696756756103,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "840yOpijTuiBiz4H",
+  "sort": 0,
+  "_key": "!tables!840yOpijTuiBiz4H"
+}

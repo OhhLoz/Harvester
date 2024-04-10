@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Earth Elemental",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Earth Elemental'.",
+  "results": [
+    {
+      "text": "Elemental Earth Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Earth Elemental",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.v54Pjwbv1lpGdCJk",
+          "brt-result-custom-name": "Elemental Earth Essence (vial)",
+          "brt-result-original-name": "Elemental Earth Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "v54Pjwbv1lpGdCJk",
+      "_id": "IFjAk7k046n03uWv",
+      "_key": "!tables.results!oPBk7IwDuQJCB7yH.IFjAk7k046n03uWv"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Earth Elemental",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756587414,
+    "modifiedTime": 1696756756179,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "oPBk7IwDuQJCB7yH",
+  "sort": 0,
+  "_key": "!tables!oPBk7IwDuQJCB7yH"
+}

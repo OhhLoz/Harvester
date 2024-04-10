@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Leviathan",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Leviathan'.",
+  "results": [
+    {
+      "text": "Leviathan Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Leviathan",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wOaZEs7ZKznx1wnv",
+          "brt-result-custom-name": "Leviathan Essence (vial)",
+          "brt-result-original-name": "Leviathan Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "wOaZEs7ZKznx1wnv",
+      "_id": "sAclQdyMx6m7r0Hx",
+      "_key": "!tables.results!PO525B6vQQLqcjdE.sAclQdyMx6m7r0Hx"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Leviathan",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756588242,
+    "modifiedTime": 1696756757612,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "PO525B6vQQLqcjdE",
+  "sort": 0,
+  "_key": "!tables!PO525B6vQQLqcjdE"
+}

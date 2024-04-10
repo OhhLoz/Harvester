@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | B'rohg",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'B'rohg'.",
+  "results": [
+    {
+      "text": "B'rohg Fingernails (sack of 20)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "20"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "B'rohg",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WmeYfPIlLLWwvzE6",
+          "brt-result-custom-name": "B'rohg Fingernails sack of",
+          "brt-result-original-name": "B'rohg Fingernails (sack of 20)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "WmeYfPIlLLWwvzE6",
+      "_id": "23mgIVTL8qePvZwC",
+      "_key": "!tables.results!7a5lzhJUDbLtsxKw.23mgIVTL8qePvZwC"
+    },
+    {
+      "text": "B'rohg Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "B'rohg",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cFBX8lFf0MuxZtwH",
+          "brt-result-custom-name": "B'rohg Blood vial",
+          "brt-result-original-name": "B'rohg Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "cFBX8lFf0MuxZtwH",
+      "_id": "YrQ8tjxFrgDJeDCr",
+      "_key": "!tables.results!7a5lzhJUDbLtsxKw.YrQ8tjxFrgDJeDCr"
+    },
+    {
+      "text": "B'rohg Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "med",
+          "brt-source-value": "B'rohg",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.uBpwAlGV3BxV2nka",
+          "brt-result-custom-name": "B'rohg Skin",
+          "brt-result-original-name": "B'rohg Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "uBpwAlGV3BxV2nka",
+      "_id": "Ugi2SrI5enPQlcnt",
+      "_key": "!tables.results!7a5lzhJUDbLtsxKw.Ugi2SrI5enPQlcnt"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "B'rohg",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756571795,
+    "modifiedTime": 1696756755919,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "7a5lzhJUDbLtsxKw",
+  "sort": 0,
+  "_key": "!tables!7a5lzhJUDbLtsxKw"
+}

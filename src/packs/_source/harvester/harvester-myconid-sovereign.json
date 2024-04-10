@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Myconid Sovereign",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Myconid Sovereign'.",
+  "results": [
+    {
+      "text": "Pacifying Spores (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Myconid Sovereign",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CxFGSBtDeYqVFcy8",
+          "brt-result-custom-name": "Pacifying Spores (small pouch)",
+          "brt-result-original-name": "Pacifying Spores (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "CxFGSBtDeYqVFcy8",
+      "_id": "PgWuwRwJKIxMBa8S",
+      "_key": "!tables.results!nDOKJWAYuzZfN92M.PgWuwRwJKIxMBa8S"
+    },
+    {
+      "text": "Rapport Spores (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Myconid Sovereign",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VfYjRrRnTHjhZN7W",
+          "brt-result-custom-name": "Rapport Spores (small pouch)",
+          "brt-result-original-name": "Rapport Spores (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "VfYjRrRnTHjhZN7W",
+      "_id": "WfROz8AsXnXdsUdR",
+      "_key": "!tables.results!nDOKJWAYuzZfN92M.WfROz8AsXnXdsUdR"
+    },
+    {
+      "text": "Animating Spores (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Myconid Sovereign",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.eNOGGU4ulzC5UloZ",
+          "brt-result-custom-name": "Animating Spores (small pouch)",
+          "brt-result-original-name": "Animating Spores (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "eNOGGU4ulzC5UloZ",
+      "_id": "6xjypE1uoGzBpwHC",
+      "_key": "!tables.results!nDOKJWAYuzZfN92M.6xjypE1uoGzBpwHC"
+    },
+    {
+      "text": "Hallucination Spores (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Myconid Sovereign",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hv4uh5dKOB1IezkQ",
+          "brt-result-custom-name": "Hallucination Spores (small pouch)",
+          "brt-result-original-name": "Hallucination Spores (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "hv4uh5dKOB1IezkQ",
+      "_id": "hzUWEJ6qLhep02lV",
+      "_key": "!tables.results!nDOKJWAYuzZfN92M.hzUWEJ6qLhep02lV"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Myconid Sovereign",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564645,
+    "modifiedTime": 1696756757702,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nDOKJWAYuzZfN92M",
+  "sort": 0,
+  "_key": "!tables!nDOKJWAYuzZfN92M"
+}

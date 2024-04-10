@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Azer",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Azer'.",
+  "results": [
+    {
+      "text": "Azer Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Azer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PQJFo4yrV5nugg9k",
+          "brt-result-custom-name": "Azer Skin",
+          "brt-result-original-name": "Azer Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "PQJFo4yrV5nugg9k",
+      "_id": "goKnalRVHlplT6jV",
+      "_key": "!tables.results!fdMKoErsdx1h8Ygp.goKnalRVHlplT6jV"
+    },
+    {
+      "text": "Smoldering Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Azer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SRUsmBZwjpKRD6go",
+          "brt-result-custom-name": "Smoldering Heart",
+          "brt-result-original-name": "Smoldering Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "SRUsmBZwjpKRD6go",
+      "_id": "OeO9oGjZPYbwyNvR",
+      "_key": "!tables.results!fdMKoErsdx1h8Ygp.OeO9oGjZPYbwyNvR"
+    },
+    {
+      "text": "Azer Ash",
+      "type": 2,
+      "img": "icons/commodities/materials/bowl-powder-gold.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Azer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yX93xmDpjkndkH2M",
+          "brt-result-custom-name": "Azer Ash",
+          "brt-result-original-name": "Azer Ash",
+          "brt-result-original-icon": "icons/commodities/materials/bowl-powder-gold.webp"
+        }
+      },
+      "documentId": "yX93xmDpjkndkH2M",
+      "_id": "C6XNYtvfdTIN3km8",
+      "_key": "!tables.results!fdMKoErsdx1h8Ygp.C6XNYtvfdTIN3km8"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Azer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568310,
+    "modifiedTime": 1696756755916,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fdMKoErsdx1h8Ygp",
+  "sort": 0,
+  "_key": "!tables!fdMKoErsdx1h8Ygp"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Gray Render",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gray Render'.",
+  "results": [
+    {
+      "text": "Gray Render Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gray Render",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PpKWNXoxPl41N3Wn",
+          "brt-result-custom-name": "Gray Render Blood vial",
+          "brt-result-original-name": "Gray Render Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "PpKWNXoxPl41N3Wn",
+      "_id": "wp3rR3XqxDYeOtK1",
+      "_key": "!tables.results!xuwOKGMhD6racy3E.wp3rR3XqxDYeOtK1"
+    },
+    {
+      "text": "Gray Render Liver",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-liver-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gray Render",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZyeCuXTeR7nEtdlD",
+          "brt-result-custom-name": "Gray Render Liver",
+          "brt-result-original-name": "Gray Render Liver",
+          "brt-result-original-icon": "icons/commodities/biological/organ-liver-red.webp"
+        }
+      },
+      "documentId": "ZyeCuXTeR7nEtdlD",
+      "_id": "ELkQngSFzwEfSZ3h",
+      "_key": "!tables.results!xuwOKGMhD6racy3E.ELkQngSFzwEfSZ3h"
+    },
+    {
+      "text": "Gray Render Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gray Render",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.idCCUlBXER1dtWf5",
+          "brt-result-custom-name": "Gray Render Claws (pouch)",
+          "brt-result-original-name": "Gray Render Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "idCCUlBXER1dtWf5",
+      "_id": "PZIyKznTqFfRCCux",
+      "_key": "!tables.results!xuwOKGMhD6racy3E.PZIyKznTqFfRCCux"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Gray Render",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568431,
+    "modifiedTime": 1696756756714,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xuwOKGMhD6racy3E",
+  "sort": 0,
+  "_key": "!tables!xuwOKGMhD6racy3E"
+}

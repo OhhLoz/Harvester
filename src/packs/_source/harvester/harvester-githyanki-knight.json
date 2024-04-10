@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Githyanki Knight",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Githyanki Knight'.",
+  "results": [
+    {
+      "text": "Githyanki Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githyanki Knight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.12JmrP2QjcSP60aH",
+          "brt-result-custom-name": "Githyanki Heart",
+          "brt-result-original-name": "Githyanki Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "12JmrP2QjcSP60aH",
+      "_id": "YZ1gt1HydyHhy985",
+      "_key": "!tables.results!5pmVSIroJ2zbRbJU.YZ1gt1HydyHhy985"
+    },
+    {
+      "text": "Githyanki Braid",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githyanki Knight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HDuUtvKJC3ryiK94",
+          "brt-result-custom-name": "Githyanki Braid",
+          "brt-result-original-name": "Githyanki Braid",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "HDuUtvKJC3ryiK94",
+      "_id": "9H0ccfvsilCabfQB",
+      "_key": "!tables.results!5pmVSIroJ2zbRbJU.9H0ccfvsilCabfQB"
+    },
+    {
+      "text": "Githyanki Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githyanki Knight",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.uTByznpic9RtAnUJ",
+          "brt-result-custom-name": "Githyanki Brain",
+          "brt-result-original-name": "Githyanki Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "uTByznpic9RtAnUJ",
+      "_id": "ltgZyfeqjx005Gfz",
+      "_key": "!tables.results!5pmVSIroJ2zbRbJU.ltgZyfeqjx005Gfz"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Githyanki Knight",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560512,
+    "modifiedTime": 1696756756673,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "5pmVSIroJ2zbRbJU",
+  "sort": 0,
+  "_key": "!tables!5pmVSIroJ2zbRbJU"
+}

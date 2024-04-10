@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Hydra",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hydra'.",
+  "results": [
+    {
+      "text": "Hydra Head",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hydra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7OQDaQuSIeBuXepy",
+          "brt-result-custom-name": "Hydra Head",
+          "brt-result-original-name": "Hydra Head",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "7OQDaQuSIeBuXepy",
+      "_id": "ywaOG5YmhdAk7a8Q",
+      "_key": "!tables.results!3PqKffkxrT9CZ5tP.ywaOG5YmhdAk7a8Q"
+    },
+    {
+      "text": "Hydra Scales (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hydra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.X5D8mFETnUcYpdhs",
+          "brt-result-custom-name": "Hydra Scales (sack)",
+          "brt-result-original-name": "Hydra Scales (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "X5D8mFETnUcYpdhs",
+      "_id": "bxxOSN3MhOOQSlqI",
+      "_key": "!tables.results!3PqKffkxrT9CZ5tP.bxxOSN3MhOOQSlqI"
+    },
+    {
+      "text": "Hydra Teeth (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hydra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jDwyjKcPyOvJqUqf",
+          "brt-result-custom-name": "Hydra Teeth (sack)",
+          "brt-result-original-name": "Hydra Teeth (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "jDwyjKcPyOvJqUqf",
+      "_id": "QA0aWsXN5DkkDiZL",
+      "_key": "!tables.results!3PqKffkxrT9CZ5tP.QA0aWsXN5DkkDiZL"
+    },
+    {
+      "text": "Hydra Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Hydra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yUEbJZqtvz92RMay",
+          "brt-result-custom-name": "Hydra Blood vial",
+          "brt-result-original-name": "Hydra Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "yUEbJZqtvz92RMay",
+      "_id": "EcK14aIGnrEQp2i7",
+      "_key": "!tables.results!3PqKffkxrT9CZ5tP.EcK14aIGnrEQp2i7"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Hydra",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562354,
+    "modifiedTime": 1696756757122,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3PqKffkxrT9CZ5tP",
+  "sort": 0,
+  "_key": "!tables!3PqKffkxrT9CZ5tP"
+}

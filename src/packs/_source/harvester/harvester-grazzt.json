@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Graz'zt",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Graz'zt'.",
+  "results": [
+    {
+      "text": "Graz'zt's Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Graz'zt",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9CxgsMn8HuB0qmTW",
+          "brt-result-custom-name": "Graz'zt's Blood vial",
+          "brt-result-original-name": "Graz'zt's Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "9CxgsMn8HuB0qmTW",
+      "_id": "O1AVKQx2hc0rdEyR",
+      "_key": "!tables.results!akwP41bfy1eUsYLz.O1AVKQx2hc0rdEyR"
+    },
+    {
+      "text": "Graz'zt's Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Graz'zt",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hDOBkEKHcl1D7xba",
+          "brt-result-custom-name": "Graz'zt's Heart",
+          "brt-result-original-name": "Graz'zt's Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "hDOBkEKHcl1D7xba",
+      "_id": "ouOJ8nDtNn6FWaCE",
+      "_key": "!tables.results!akwP41bfy1eUsYLz.ouOJ8nDtNn6FWaCE"
+    },
+    {
+      "text": "Graz'zt's Tongue",
+      "type": 2,
+      "img": "icons/commodities/biological/tongue-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Graz'zt",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qZoI0ZW2RpuB6WWk",
+          "brt-result-custom-name": "Graz'zt's Tongue",
+          "brt-result-original-name": "Graz'zt's Tongue",
+          "brt-result-original-icon": "icons/commodities/biological/tongue-red.webp"
+        }
+      },
+      "documentId": "qZoI0ZW2RpuB6WWk",
+      "_id": "D0rq8Z36CSzGOuYX",
+      "_key": "!tables.results!akwP41bfy1eUsYLz.D0rq8Z36CSzGOuYX"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Graz'zt",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562956,
+    "modifiedTime": 1696756756721,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "akwP41bfy1eUsYLz",
+  "sort": 0,
+  "_key": "!tables!akwP41bfy1eUsYLz"
+}

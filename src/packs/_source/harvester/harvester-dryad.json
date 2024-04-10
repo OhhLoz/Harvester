@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Dryad",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dryad'.",
+  "results": [
+    {
+      "text": "Dryad Sap (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Dryad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2dbflEpL7gEOIBqX",
+          "brt-result-custom-name": "Dryad Sap (vial)",
+          "brt-result-original-name": "Dryad Sap (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "2dbflEpL7gEOIBqX",
+      "_id": "A9TnX39S7jsOCier",
+      "_key": "!tables.results!qauCc0YN6dtnCEPP.A9TnX39S7jsOCier"
+    },
+    {
+      "text": "Dryad Petals",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Dryad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cZCaHqMXzrQx6mTO",
+          "brt-result-custom-name": "Dryad Petals",
+          "brt-result-original-name": "Dryad Petals",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "cZCaHqMXzrQx6mTO",
+      "_id": "YCHM6iWWtGRwi7GZ",
+      "_key": "!tables.results!qauCc0YN6dtnCEPP.YCHM6iWWtGRwi7GZ"
+    },
+    {
+      "text": "Dryad Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Dryad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yy93jBLIb3oBr63o",
+          "brt-result-custom-name": "Dryad Hair",
+          "brt-result-original-name": "Dryad Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "yy93jBLIb3oBr63o",
+      "_id": "iLw8AAvk26rRXEFd",
+      "_key": "!tables.results!qauCc0YN6dtnCEPP.iLw8AAvk26rRXEFd"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Dryad",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560968,
+    "modifiedTime": 1696756756158,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "qauCc0YN6dtnCEPP",
+  "sort": 0,
+  "_key": "!tables!qauCc0YN6dtnCEPP"
+}

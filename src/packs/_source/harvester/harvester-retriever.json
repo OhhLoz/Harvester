@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Retriever",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Retriever'.",
+  "results": [
+    {
+      "text": "Retriever Oil (flask)",
+      "type": 2,
+      "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Retriever",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0wEqNmwL8EoXvXNA",
+          "brt-result-custom-name": "Retriever Oil (flask)",
+          "brt-result-original-name": "Retriever Oil (flask)",
+          "brt-result-original-icon": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp"
+        }
+      },
+      "documentId": "0wEqNmwL8EoXvXNA",
+      "_id": "Ite1PZ0UMYQoYDXU",
+      "_key": "!tables.results!eMg9XtwS70YegBjd.Ite1PZ0UMYQoYDXU"
+    },
+    {
+      "text": "Retriever Scarp Metal",
+      "type": 2,
+      "img": "icons/commodities/metal/barstock-broken-steel.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Retriever",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6mlSYuW5L8EUHG1w",
+          "brt-result-custom-name": "Retriever Scarp Metal",
+          "brt-result-original-name": "Retriever Scarp Metal",
+          "brt-result-original-icon": "icons/commodities/metal/barstock-broken-steel.webp"
+        }
+      },
+      "documentId": "6mlSYuW5L8EUHG1w",
+      "_id": "XZrp4HuuxEGsxNl5",
+      "_key": "!tables.results!eMg9XtwS70YegBjd.XZrp4HuuxEGsxNl5"
+    },
+    {
+      "text": "Retriever Core",
+      "type": 2,
+      "img": "icons/commodities/gems/pearl-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Retriever",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hR8oSd2LUoQ1ZcmI",
+          "brt-result-custom-name": "Retriever Core",
+          "brt-result-original-name": "Retriever Core",
+          "brt-result-original-icon": "icons/commodities/gems/pearl-brown-red.webp"
+        }
+      },
+      "documentId": "hR8oSd2LUoQ1ZcmI",
+      "_id": "fAYR40eLVmv23sF8",
+      "_key": "!tables.results!eMg9XtwS70YegBjd.fAYR40eLVmv23sF8"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Retriever",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560491,
+    "modifiedTime": 1696756759127,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "eMg9XtwS70YegBjd",
+  "sort": 0,
+  "_key": "!tables!eMg9XtwS70YegBjd"
+}

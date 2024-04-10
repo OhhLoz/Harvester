@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Mule",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Mule'.",
+  "results": [
+    {
+      "text": "Mule Hoof (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Mule",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.KjV6fMRglnVo0JmG",
+          "brt-result-custom-name": "Mule Hoof",
+          "brt-result-original-name": "Mule Hoof (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "KjV6fMRglnVo0JmG",
+      "_id": "ybq2FpqfbP2Y1H1i",
+      "_key": "!tables.results!u7t7fL2fhW3vA1IV.ybq2FpqfbP2Y1H1i"
+    },
+    {
+      "text": "Mule Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Mule",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gBJXTbYKhjr3U0j7",
+          "brt-result-custom-name": "Mule Hide",
+          "brt-result-original-name": "Mule Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "gBJXTbYKhjr3U0j7",
+      "_id": "eWO2uOL8MImidIV7",
+      "_key": "!tables.results!u7t7fL2fhW3vA1IV.eWO2uOL8MImidIV7"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Mule",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566944,
+    "modifiedTime": 1696756757695,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "u7t7fL2fhW3vA1IV",
+  "sort": 0,
+  "_key": "!tables!u7t7fL2fhW3vA1IV"
+}

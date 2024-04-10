@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Kobold Scale Sorceror",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Kobold Scale Sorceror'.",
+  "results": [
+    {
+      "text": "Kobold's Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Kobold Scale Sorceror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.KL6nd6HuYdYjJDvd",
+          "brt-result-custom-name": "Kobold's Tail",
+          "brt-result-original-name": "Kobold's Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "KL6nd6HuYdYjJDvd",
+      "_id": "Ip3NTdV1wXs4VrHT",
+      "_key": "!tables.results!5mwItTHgFW2ie9zM.Ip3NTdV1wXs4VrHT"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Kobold Scale Sorceror",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566751,
+    "modifiedTime": 1696756757160,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "5mwItTHgFW2ie9zM",
+  "sort": 0,
+  "_key": "!tables!5mwItTHgFW2ie9zM"
+}

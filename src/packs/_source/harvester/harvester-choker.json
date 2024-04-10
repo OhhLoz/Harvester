@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Choker",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Choker'.",
+  "results": [
+    {
+      "text": "Choker Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Choker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JYly50sWslquhc0a",
+          "brt-result-custom-name": "Choker Skin",
+          "brt-result-original-name": "Choker Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "JYly50sWslquhc0a",
+      "_id": "oX1N85VzJvCmmtqr",
+      "_key": "!tables.results!8opN7FR5aswVrCeI.oX1N85VzJvCmmtqr"
+    },
+    {
+      "text": "Choker Cartilage",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Choker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tv0NmNTt2EN0myWA",
+          "brt-result-custom-name": "Choker Cartilage",
+          "brt-result-original-name": "Choker Cartilage",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "tv0NmNTt2EN0myWA",
+      "_id": "EwJBjbmVoDbPUs8A",
+      "_key": "!tables.results!8opN7FR5aswVrCeI.EwJBjbmVoDbPUs8A"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Choker",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566472,
+    "modifiedTime": 1696756756038,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8opN7FR5aswVrCeI",
+  "sort": 0,
+  "_key": "!tables!8opN7FR5aswVrCeI"
+}

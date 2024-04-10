@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Vampirate Mage",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Vampirate Mage'.",
+  "results": [
+    {
+      "text": "Vampirate Ash (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Vampirate Mage",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TDTjLHGPyzUw1QaS",
+          "brt-result-custom-name": "Vampirate Ash (pouch)",
+          "brt-result-original-name": "Vampirate Ash (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "TDTjLHGPyzUw1QaS",
+      "_id": "9xRl204QWcYze808",
+      "_key": "!tables.results!D5AvP6INNK5GhEGf.9xRl204QWcYze808"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Vampirate Mage",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569410,
+    "modifiedTime": 1696756761119,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "D5AvP6INNK5GhEGf",
+  "sort": 0,
+  "_key": "!tables!D5AvP6INNK5GhEGf"
+}

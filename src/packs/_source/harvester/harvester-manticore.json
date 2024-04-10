@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Manticore",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Manticore'.",
+  "results": [
+    {
+      "text": "Manticore Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Manticore",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3ZmWdzQvVJXu1xTy",
+          "brt-result-custom-name": "Manticore Teeth (small pouch)",
+          "brt-result-original-name": "Manticore Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "3ZmWdzQvVJXu1xTy",
+      "_id": "y86s7WBaR1SWwJiF",
+      "_key": "!tables.results!p3zLdIBZKqhVZlh7.y86s7WBaR1SWwJiF"
+    },
+    {
+      "text": "Manticore Wings (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Manticore",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rHCJcZGR0QB4aAtF",
+          "brt-result-custom-name": "Manticore Wings",
+          "brt-result-original-name": "Manticore Wings (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "rHCJcZGR0QB4aAtF",
+      "_id": "LcTweKX4v6AjLyBn",
+      "_key": "!tables.results!p3zLdIBZKqhVZlh7.LcTweKX4v6AjLyBn"
+    },
+    {
+      "text": "Manticore Tail Spikes (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Manticore",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.sMgoYuPZxHrj4EmT",
+          "brt-result-custom-name": "Manticore Tail Spikes (large pouch)",
+          "brt-result-original-name": "Manticore Tail Spikes (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "sMgoYuPZxHrj4EmT",
+      "_id": "hq02ZYlOT9Pdt1EP",
+      "_key": "!tables.results!p3zLdIBZKqhVZlh7.hq02ZYlOT9Pdt1EP"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Manticore",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561277,
+    "modifiedTime": 1696756757638,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "p3zLdIBZKqhVZlh7",
+  "sort": 0,
+  "_key": "!tables!p3zLdIBZKqhVZlh7"
+}

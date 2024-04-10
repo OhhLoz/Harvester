@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Brontosaurus",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Brontosaurus'.",
+  "results": [
+    {
+      "text": "Brontosaurus Spine",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-spine-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Brontosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IpIrBwnAOa1OKbcC",
+          "brt-result-custom-name": "Brontosaurus Spine",
+          "brt-result-original-name": "Brontosaurus Spine",
+          "brt-result-original-icon": "icons/commodities/bones/bone-spine-white.webp"
+        }
+      },
+      "documentId": "IpIrBwnAOa1OKbcC",
+      "_id": "FVhEn0q4YOHYmrO1",
+      "_key": "!tables.results!dNDl78kIdm9Aqgv7.FVhEn0q4YOHYmrO1"
+    },
+    {
+      "text": "Brontosaurus Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Brontosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LXTSw7ZpghDnYu8a",
+          "brt-result-custom-name": "Brontosaurus Skin",
+          "brt-result-original-name": "Brontosaurus Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "LXTSw7ZpghDnYu8a",
+      "_id": "IbIspKpketLs1h9B",
+      "_key": "!tables.results!dNDl78kIdm9Aqgv7.IbIspKpketLs1h9B"
+    },
+    {
+      "text": "Brontosaurus Toe (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "12",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Brontosaurus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lAiUR84s5uHdPV2H",
+          "brt-result-custom-name": "Brontosaurus Toe",
+          "brt-result-original-name": "Brontosaurus Toe (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "lAiUR84s5uHdPV2H",
+      "_id": "CalTytpQh66u4xOn",
+      "_key": "!tables.results!dNDl78kIdm9Aqgv7.CalTytpQh66u4xOn"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Brontosaurus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566305,
+    "modifiedTime": 1696756755985,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dNDl78kIdm9Aqgv7",
+  "sort": 0,
+  "_key": "!tables!dNDl78kIdm9Aqgv7"
+}

@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Aboleth",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Aboleth'.",
+  "results": [
+    {
+      "text": "Aboleth Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Aboleth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9anKz5IzGqqqfFNS",
+          "brt-result-custom-name": "Aboleth Brain",
+          "brt-result-original-name": "Aboleth Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "9anKz5IzGqqqfFNS",
+      "_id": "xgLaaq9Un0wltVkm",
+      "_key": "!tables.results!MNXgT2j7cmw1KA6m.xgLaaq9Un0wltVkm"
+    },
+    {
+      "text": "Aboleth Teeth (large bag)",
+      "type": 2,
+      "img": "icons/containers/bags/pack-canvas-white-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Aboleth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AEc6BMYe4pdRQzwP",
+          "brt-result-custom-name": "Aboleth Teeth (large bag)",
+          "brt-result-original-name": "Aboleth Teeth (large bag)",
+          "brt-result-original-icon": "icons/containers/bags/pack-canvas-white-brown.webp"
+        }
+      },
+      "documentId": "AEc6BMYe4pdRQzwP",
+      "_id": "AXLPJQhaVDjSocsi",
+      "_key": "!tables.results!MNXgT2j7cmw1KA6m.AXLPJQhaVDjSocsi"
+    },
+    {
+      "text": "Aboleth Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Aboleth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IB4jwRAGQjl0gMMg",
+          "brt-result-custom-name": "Aboleth Eye",
+          "brt-result-original-name": "Aboleth Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "IB4jwRAGQjl0gMMg",
+      "_id": "g9trsKqLklQ4BOXQ",
+      "_key": "!tables.results!MNXgT2j7cmw1KA6m.g9trsKqLklQ4BOXQ"
+    },
+    {
+      "text": "Aboleth Mucus (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Aboleth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JiW4URGbRB7PBPKQ",
+          "brt-result-custom-name": "Aboleth Mucus vial",
+          "brt-result-original-name": "Aboleth Mucus (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "JiW4URGbRB7PBPKQ",
+      "_id": "ULcIhJkEkjc8zPYz",
+      "_key": "!tables.results!MNXgT2j7cmw1KA6m.ULcIhJkEkjc8zPYz"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Aboleth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563173,
+    "modifiedTime": 1696756755824,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "MNXgT2j7cmw1KA6m",
+  "sort": 0,
+  "_key": "!tables!MNXgT2j7cmw1KA6m"
+}

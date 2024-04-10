@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Animated Armor",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Animated Armor'.",
+  "results": [
+    {
+      "text": "Animated Sigil Material",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Animated Armor",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8vCot9CZAvilSZl7",
+          "brt-result-custom-name": "Animated Sigil Material",
+          "brt-result-original-name": "Animated Sigil Material",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "8vCot9CZAvilSZl7",
+      "_id": "JOJJ9BQZrtpJmbur",
+      "_key": "!tables.results!rLy1nztqZStca8aN.JOJJ9BQZrtpJmbur"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Animated Armor",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562909,
+    "modifiedTime": 1696756755885,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rLy1nztqZStca8aN",
+  "sort": 0,
+  "_key": "!tables!rLy1nztqZStca8aN"
+}

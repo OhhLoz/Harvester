@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Giant Snail",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Snail'.",
+  "results": [
+    {
+      "text": "Giant Snail Shell",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-turtle-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Snail",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7lq0ORxPgMUGq4dj",
+          "brt-result-custom-name": "Giant Snail Shell",
+          "brt-result-original-name": "Giant Snail Shell",
+          "brt-result-original-icon": "icons/commodities/biological/shell-turtle-grey.webp"
+        }
+      },
+      "documentId": "7lq0ORxPgMUGq4dj",
+      "_id": "fn35b65ZWPOHtIA7",
+      "_key": "!tables.results!JNT2XCWqkWSXUVKq.fn35b65ZWPOHtIA7"
+    },
+    {
+      "text": "Giant Snail Slime (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Snail",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9aypd6i5PrObRJ76",
+          "brt-result-custom-name": "Giant Snail Slime vial",
+          "brt-result-original-name": "Giant Snail Slime (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "9aypd6i5PrObRJ76",
+      "_id": "uYx0IcGoxcOuSAeg",
+      "_key": "!tables.results!JNT2XCWqkWSXUVKq.uYx0IcGoxcOuSAeg"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Snail",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562509,
+    "modifiedTime": 1696756756356,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JNT2XCWqkWSXUVKq",
+  "sort": 0,
+  "_key": "!tables!JNT2XCWqkWSXUVKq"
+}

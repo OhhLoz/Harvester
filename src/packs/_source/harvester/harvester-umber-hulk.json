@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Umber Hulk",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Umber Hulk'.",
+  "results": [
+    {
+      "text": "Umber Hulk Eye (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Umber Hulk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PMExaq60BzwFeFNP",
+          "brt-result-custom-name": "Umber Hulk Eye",
+          "brt-result-original-name": "Umber Hulk Eye (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "PMExaq60BzwFeFNP",
+      "_id": "jez0LbfSnu37IHNr",
+      "_key": "!tables.results!fXhHOuxaIKbBzMuM.jez0LbfSnu37IHNr"
+    },
+    {
+      "text": "Umber Hulk Carapace",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Umber Hulk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.T2vGOHvQFrYv32B8",
+          "brt-result-custom-name": "Umber Hulk Carapace",
+          "brt-result-original-name": "Umber Hulk Carapace",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "T2vGOHvQFrYv32B8",
+      "_id": "cmeY7NpaRPxnn9qB",
+      "_key": "!tables.results!fXhHOuxaIKbBzMuM.cmeY7NpaRPxnn9qB"
+    },
+    {
+      "text": "Umber Hulk Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Umber Hulk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.f5lr5hOFF8GQGahe",
+          "brt-result-custom-name": "Umber Hulk Blood vial",
+          "brt-result-original-name": "Umber Hulk Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "f5lr5hOFF8GQGahe",
+      "_id": "ffcZYvllSgCOLldv",
+      "_key": "!tables.results!fXhHOuxaIKbBzMuM.ffcZYvllSgCOLldv"
+    },
+    {
+      "text": "Umber Hulk Mandible (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/mouth-pincer-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Umber Hulk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.n2bdJrgIlV0prqFc",
+          "brt-result-custom-name": "Umber Hulk Mandible",
+          "brt-result-original-name": "Umber Hulk Mandible (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/mouth-pincer-brown.webp"
+        }
+      },
+      "documentId": "n2bdJrgIlV0prqFc",
+      "_id": "fO2Ygn9YqP7fopb3",
+      "_key": "!tables.results!fXhHOuxaIKbBzMuM.fO2Ygn9YqP7fopb3"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Umber Hulk",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568287,
+    "modifiedTime": 1696756761114,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fXhHOuxaIKbBzMuM",
+  "sort": 0,
+  "_key": "!tables!fXhHOuxaIKbBzMuM"
+}

@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Cosmic Horror",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Cosmic Horror'.",
+  "results": [
+    {
+      "text": "Cosmic Horror Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cosmic Horror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.K5sZi5Z6h7xeV2Is",
+          "brt-result-custom-name": "Cosmic Horror Pineal Gland",
+          "brt-result-original-name": "Cosmic Horror Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "K5sZi5Z6h7xeV2Is",
+      "_id": "nwicSNDChNCbsIBB",
+      "_key": "!tables.results!84PbxWmqfss4OLsz.nwicSNDChNCbsIBB"
+    },
+    {
+      "text": "Cosmic Horror Heart (1d3)",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1d3"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cosmic Horror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hpPK3XX1U7dtPsup",
+          "brt-result-custom-name": "Cosmic Horror Heart d",
+          "brt-result-original-name": "Cosmic Horror Heart (1d3)",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "hpPK3XX1U7dtPsup",
+      "_id": "W6pY12eaOgIU0zU9",
+      "_key": "!tables.results!84PbxWmqfss4OLsz.W6pY12eaOgIU0zU9"
+    },
+    {
+      "text": "Cosmic Horror Poison Sack",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cosmic Horror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.j0szAJZK9tFLhAxY",
+          "brt-result-custom-name": "Cosmic Horror Poison Sack",
+          "brt-result-original-name": "Cosmic Horror Poison Sack",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "j0szAJZK9tFLhAxY",
+      "_id": "JhGAvX0N42vZL2ij",
+      "_key": "!tables.results!84PbxWmqfss4OLsz.JhGAvX0N42vZL2ij"
+    },
+    {
+      "text": "Cosmic Horror Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cosmic Horror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.uJfIwJH1sJKg8GLy",
+          "brt-result-custom-name": "Cosmic Horror Hide",
+          "brt-result-original-name": "Cosmic Horror Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "uJfIwJH1sJKg8GLy",
+      "_id": "ZAI7nulTdIPrUUAS",
+      "_key": "!tables.results!84PbxWmqfss4OLsz.ZAI7nulTdIPrUUAS"
+    },
+    {
+      "text": "Cosmic Horror Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Cosmic Horror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.z5uILDkG9FCWUiYm",
+          "brt-result-custom-name": "Cosmic Horror Blood vial",
+          "brt-result-original-name": "Cosmic Horror Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "z5uILDkG9FCWUiYm",
+      "_id": "RgeGNhu7963o7iVN",
+      "_key": "!tables.results!84PbxWmqfss4OLsz.RgeGNhu7963o7iVN"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Cosmic Horror",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566685,
+    "modifiedTime": 1696756756058,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "84PbxWmqfss4OLsz",
+  "sort": 0,
+  "_key": "!tables!84PbxWmqfss4OLsz"
+}

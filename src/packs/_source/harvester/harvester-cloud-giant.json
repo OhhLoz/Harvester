@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Cloud Giant",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Cloud Giant'.",
+  "results": [
+    {
+      "text": "Lock of Cloud Giant Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Cloud Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.MsrL6I1CQw7iOzNm",
+          "brt-result-custom-name": "Lock of Cloud Giant Hair",
+          "brt-result-original-name": "Lock of Cloud Giant Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "MsrL6I1CQw7iOzNm",
+      "_id": "CxSP4FdjkZ1Pkw6o",
+      "_key": "!tables.results!bJ8vaHSQ6fqcXQAf.CxSP4FdjkZ1Pkw6o"
+    },
+    {
+      "text": "Cloud Giant Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Cloud Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RJhbQI0a7GGvRzvz",
+          "brt-result-custom-name": "Cloud Giant Blood vial",
+          "brt-result-original-name": "Cloud Giant Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "RJhbQI0a7GGvRzvz",
+      "_id": "fSMpI2QWYK6Me3AN",
+      "_key": "!tables.results!bJ8vaHSQ6fqcXQAf.fSMpI2QWYK6Me3AN"
+    },
+    {
+      "text": "Cloud Giant Toenails",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Cloud Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bGCR9uTuNEeZmZgL",
+          "brt-result-custom-name": "Cloud Giant Toenails",
+          "brt-result-original-name": "Cloud Giant Toenails",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "bGCR9uTuNEeZmZgL",
+      "_id": "udWTZ1vqawB97MMz",
+      "_key": "!tables.results!bJ8vaHSQ6fqcXQAf.udWTZ1vqawB97MMz"
+    },
+    {
+      "text": "Cloud Giant Mist (1 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "med",
+          "brt-source-value": "Cloud Giant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cCOHA1XpOsstZGdH",
+          "brt-result-custom-name": "Cloud Giant Mist vial",
+          "brt-result-original-name": "Cloud Giant Mist (1 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "cCOHA1XpOsstZGdH",
+      "_id": "Mgric7a5gqr0rc30",
+      "_key": "!tables.results!bJ8vaHSQ6fqcXQAf.Mgric7a5gqr0rc30"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Cloud Giant",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567667,
+    "modifiedTime": 1696756756049,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "bJ8vaHSQ6fqcXQAf",
+  "sort": 0,
+  "_key": "!tables!bJ8vaHSQ6fqcXQAf"
+}

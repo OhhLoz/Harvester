@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Braxat",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Braxat'.",
+  "results": [
+    {
+      "text": "Braxat Saliva (1 vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Braxat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Q09Ql2DNd2W6XISp",
+          "brt-result-custom-name": "Braxat Saliva vial",
+          "brt-result-original-name": "Braxat Saliva (1 vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Q09Ql2DNd2W6XISp",
+      "_id": "RWjJZGyUFY8GNtOM",
+      "_key": "!tables.results!OX3Dv5LKc6hjWJIq.RWjJZGyUFY8GNtOM"
+    },
+    {
+      "text": "Braxat Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "med",
+          "brt-source-value": "Braxat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.czOTdZY3eTZ8Umbt",
+          "brt-result-custom-name": "Braxat Pineal Gland",
+          "brt-result-original-name": "Braxat Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "czOTdZY3eTZ8Umbt",
+      "_id": "7h3dE7ryxMQ4GvZe",
+      "_key": "!tables.results!OX3Dv5LKc6hjWJIq.7h3dE7ryxMQ4GvZe"
+    },
+    {
+      "text": "Braxat Plates",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Braxat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gbm9D6H9qggQ9BgE",
+          "brt-result-custom-name": "Braxat Plates",
+          "brt-result-original-name": "Braxat Plates",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "gbm9D6H9qggQ9BgE",
+      "_id": "XiXg7iaZQgeNQEHf",
+      "_key": "!tables.results!OX3Dv5LKc6hjWJIq.XiXg7iaZQgeNQEHf"
+    },
+    {
+      "text": "Braxat Acid Glands",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Braxat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wNyxJhQRz4H4L7Ps",
+          "brt-result-custom-name": "Braxat Acid Glands",
+          "brt-result-original-name": "Braxat Acid Glands",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "wNyxJhQRz4H4L7Ps",
+      "_id": "hjcTNyJN5b2rIVw3",
+      "_key": "!tables.results!OX3Dv5LKc6hjWJIq.hjcTNyJN5b2rIVw3"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Braxat",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568562,
+    "modifiedTime": 1696756755981,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "OX3Dv5LKc6hjWJIq",
+  "sort": 0,
+  "_key": "!tables!OX3Dv5LKc6hjWJIq"
+}

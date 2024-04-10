@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Kindori",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Kindori'.",
+  "results": [
+    {
+      "text": "Kindori Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Kindori",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.L3oJXyR0ed0p9nEp",
+          "brt-result-custom-name": "Kindori Blood vial",
+          "brt-result-original-name": "Kindori Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "L3oJXyR0ed0p9nEp",
+      "_id": "Z0s0NWZxhDE3ECQT",
+      "_key": "!tables.results!4fD27ynerCchwSLY.Z0s0NWZxhDE3ECQT"
+    },
+    {
+      "text": "Kindori Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Kindori",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OMpC5nj19QnnmdvX",
+          "brt-result-custom-name": "Kindori Hide",
+          "brt-result-original-name": "Kindori Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "OMpC5nj19QnnmdvX",
+      "_id": "kk7CTaZXQMBmmu7l",
+      "_key": "!tables.results!4fD27ynerCchwSLY.kk7CTaZXQMBmmu7l"
+    },
+    {
+      "text": "Kindori Eyes (x6)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Kindori",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OrkHzQbCZ2VBwlmN",
+          "brt-result-custom-name": "Kindori Eyes",
+          "brt-result-original-name": "Kindori Eyes (x6)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "OrkHzQbCZ2VBwlmN",
+      "_id": "Cxnc8I91ry2vJNiL",
+      "_key": "!tables.results!4fD27ynerCchwSLY.Cxnc8I91ry2vJNiL"
+    },
+    {
+      "text": "Kindori Moss (x4 sacks)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Kindori",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.q3VlA8meGZvKnD8G",
+          "brt-result-custom-name": "Kindori Moss sack",
+          "brt-result-original-name": "Kindori Moss (x4 sacks)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "q3VlA8meGZvKnD8G",
+      "_id": "OHRn8M2aPfHc4ybN",
+      "_key": "!tables.results!4fD27ynerCchwSLY.OHRn8M2aPfHc4ybN"
+    },
+    {
+      "text": "Kindori Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Kindori",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yZACcYlokpK61j62",
+          "brt-result-custom-name": "Kindori Heart",
+          "brt-result-original-name": "Kindori Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "yZACcYlokpK61j62",
+      "_id": "V4b2tJKfNyBRbrfQ",
+      "_key": "!tables.results!4fD27ynerCchwSLY.V4b2tJKfNyBRbrfQ"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Kindori",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567201,
+    "modifiedTime": 1696756757154,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "4fD27ynerCchwSLY",
+  "sort": 0,
+  "_key": "!tables!4fD27ynerCchwSLY"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Neh-thalggu",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Neh-thalggu'.",
+  "results": [
+    {
+      "text": "Neh-thalggu Brain Sacks (x 1d12)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1d12"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neh-thalggu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TDlC2HoQFaiYtHxt",
+          "brt-result-custom-name": "Neh-thalggu Brain Sack d",
+          "brt-result-original-name": "Neh-thalggu Brain Sacks (x 1d12)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "TDlC2HoQFaiYtHxt",
+      "_id": "tgq6D35e0lV3RcBd",
+      "_key": "!tables.results!JOsisN2JdwjGAd8x.tgq6D35e0lV3RcBd"
+    },
+    {
+      "text": "Neh-thalggu Pincers (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/mouth-pincer-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neh-thalggu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ii2Z4GzMkojCNZu8",
+          "brt-result-custom-name": "Neh-thalggu Pincers",
+          "brt-result-original-name": "Neh-thalggu Pincers (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/mouth-pincer-brown.webp"
+        }
+      },
+      "documentId": "ii2Z4GzMkojCNZu8",
+      "_id": "9EdoXxOB3f7sdToR",
+      "_key": "!tables.results!JOsisN2JdwjGAd8x.9EdoXxOB3f7sdToR"
+    },
+    {
+      "text": "Neh-thalggu Saliva (x2 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neh-thalggu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.r3AVbiCya2R0nBhg",
+          "brt-result-custom-name": "Neh-thalggu Saliva vial",
+          "brt-result-original-name": "Neh-thalggu Saliva (x2 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "r3AVbiCya2R0nBhg",
+      "_id": "dp2qtHxl27K0kyNZ",
+      "_key": "!tables.results!JOsisN2JdwjGAd8x.dp2qtHxl27K0kyNZ"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Neh-thalggu",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569434,
+    "modifiedTime": 1696756758281,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JOsisN2JdwjGAd8x",
+  "sort": 0,
+  "_key": "!tables!JOsisN2JdwjGAd8x"
+}

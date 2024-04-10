@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Brown Bear",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Brown Bear'.",
+  "results": [
+    {
+      "text": "Bear Claws/Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Brown Bear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZZmZ40fkqxzxnurz",
+          "brt-result-custom-name": "Bear Claws/Teeth (small pouch)",
+          "brt-result-original-name": "Bear Claws/Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ZZmZ40fkqxzxnurz",
+      "_id": "hk87tyRGszRuOEJa",
+      "_key": "!tables.results!dfh6lUPhqWobw6n9.hk87tyRGszRuOEJa"
+    },
+    {
+      "text": "Brown Bear Pelt",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Brown Bear",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lnoquyA3XxyAnxFf",
+          "brt-result-custom-name": "Brown Bear Pelt",
+          "brt-result-original-name": "Brown Bear Pelt",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "lnoquyA3XxyAnxFf",
+      "_id": "C3H3n4pTHvQZnarD",
+      "_key": "!tables.results!dfh6lUPhqWobw6n9.C3H3n4pTHvQZnarD"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Brown Bear",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756574323,
+    "modifiedTime": 1696756755989,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dfh6lUPhqWobw6n9",
+  "sort": 0,
+  "_key": "!tables!dfh6lUPhqWobw6n9"
+}

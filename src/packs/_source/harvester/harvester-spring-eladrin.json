@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Spring Eladrin",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Spring Eladrin'.",
+  "results": [
+    {
+      "text": "Spring Eladrin Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Spring Eladrin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lbnJK5GchV92dWYg",
+          "brt-result-custom-name": "Spring Eladrin Hair",
+          "brt-result-original-name": "Spring Eladrin Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "lbnJK5GchV92dWYg",
+      "_id": "GHNZG9t4NYS03iN7",
+      "_key": "!tables.results!Z9U906hUuAaUQQxs.GHNZG9t4NYS03iN7"
+    },
+    {
+      "text": "Eladrin Ear (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Spring Eladrin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nAqrER5M7dypihno",
+          "brt-result-custom-name": "Eladrin Ear",
+          "brt-result-original-name": "Eladrin Ear (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "nAqrER5M7dypihno",
+      "_id": "yaFCXiMLGfIBisBR",
+      "_key": "!tables.results!Z9U906hUuAaUQQxs.yaFCXiMLGfIBisBR"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Spring Eladrin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756581851,
+    "modifiedTime": 1696756759980,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Z9U906hUuAaUQQxs",
+  "sort": 0,
+  "_key": "!tables!Z9U906hUuAaUQQxs"
+}

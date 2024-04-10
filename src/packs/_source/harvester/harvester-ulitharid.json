@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Ulitharid",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ulitharid'.",
+  "results": [
+    {
+      "text": "Ulitharid Tentacle (x6)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ulitharid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6HlzAXGuVpkRtVxO",
+          "brt-result-custom-name": "Ulitharid Tentacle",
+          "brt-result-original-name": "Ulitharid Tentacle (x6)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "6HlzAXGuVpkRtVxO",
+      "_id": "BIwcyFcqDThLeMHi",
+      "_key": "!tables.results!t37thy1NCIoFDSa0.BIwcyFcqDThLeMHi"
+    },
+    {
+      "text": "Ulitharid Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ulitharid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.U1WWX3FPxDKnVo9v",
+          "brt-result-custom-name": "Ulitharid Brain",
+          "brt-result-original-name": "Ulitharid Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "U1WWX3FPxDKnVo9v",
+      "_id": "zzRNqnKgX2LFDY1X",
+      "_key": "!tables.results!t37thy1NCIoFDSa0.zzRNqnKgX2LFDY1X"
+    },
+    {
+      "text": "Mind Flayer Membrane",
+      "type": 2,
+      "img": "icons/commodities/biological/pustules-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ulitharid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.sAmWNk4nHLzZy9OG",
+          "brt-result-custom-name": "Mind Flayer Membrane",
+          "brt-result-original-name": "Mind Flayer Membrane",
+          "brt-result-original-icon": "icons/commodities/biological/pustules-red.webp"
+        }
+      },
+      "documentId": "sAmWNk4nHLzZy9OG",
+      "_id": "Uhx16lIHySVEBEGF",
+      "_key": "!tables.results!t37thy1NCIoFDSa0.Uhx16lIHySVEBEGF"
+    },
+    {
+      "text": "Mind Flayer Mucus",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ulitharid",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wwjH0f4cfY1Mf0zP",
+          "brt-result-custom-name": "Mind Flayer Mucus",
+          "brt-result-original-name": "Mind Flayer Mucus",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "wwjH0f4cfY1Mf0zP",
+      "_id": "8IW6AAlvYQ4seUsT",
+      "_key": "!tables.results!t37thy1NCIoFDSa0.8IW6AAlvYQ4seUsT"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Ulitharid",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561896,
+    "modifiedTime": 1696756761108,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "t37thy1NCIoFDSa0",
+  "sort": 0,
+  "_key": "!tables!t37thy1NCIoFDSa0"
+}

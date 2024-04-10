@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Xvart",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Xvart'.",
+  "results": [
+    {
+      "text": "Xvart Hair (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Xvart",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yUV7cCq3gJ0Fea1K",
+          "brt-result-custom-name": "Xvart Hair (pouch)",
+          "brt-result-original-name": "Xvart Hair (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "yUV7cCq3gJ0Fea1K",
+      "_id": "MCkj623s1JIygUot",
+      "_key": "!tables.results!i4hwqIL5quVJ7F5r.MCkj623s1JIygUot"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Xvart",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756589993,
+    "modifiedTime": 1696756762261,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "i4hwqIL5quVJ7F5r",
+  "sort": 0,
+  "_key": "!tables!i4hwqIL5quVJ7F5r"
+}

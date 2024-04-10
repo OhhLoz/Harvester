@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Mindwitness",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Mindwitness'.",
+  "results": [
+    {
+      "text": "Mindwitness Large Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mindwitness",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0PmzDSqPrp4ymD78",
+          "brt-result-custom-name": "Mindwitness Large Eye",
+          "brt-result-original-name": "Mindwitness Large Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "0PmzDSqPrp4ymD78",
+      "_id": "L7HOnnL1jUVHyIHE",
+      "_key": "!tables.results!nzeOIo96kb1a9XyF.L7HOnnL1jUVHyIHE"
+    },
+    {
+      "text": "Mindwitness Eye Stalk",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mindwitness",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PoIWhOygpzvUUO3f",
+          "brt-result-custom-name": "Mindwitness Eye Stalk",
+          "brt-result-original-name": "Mindwitness Eye Stalk",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "PoIWhOygpzvUUO3f",
+      "_id": "ihyV2EwDCMyrVq1A",
+      "_key": "!tables.results!nzeOIo96kb1a9XyF.ihyV2EwDCMyrVq1A"
+    },
+    {
+      "text": "Mindwitness Tentacle (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mindwitness",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.v4QoRbIEomwE0jIr",
+          "brt-result-custom-name": "Mindwitness Tentacle",
+          "brt-result-original-name": "Mindwitness Tentacle (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "v4QoRbIEomwE0jIr",
+      "_id": "uPUAtsbsq6m7sQc5",
+      "_key": "!tables.results!nzeOIo96kb1a9XyF.uPUAtsbsq6m7sQc5"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Mindwitness",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560369,
+    "modifiedTime": 1696756757683,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nzeOIo96kb1a9XyF",
+  "sort": 0,
+  "_key": "!tables!nzeOIo96kb1a9XyF"
+}

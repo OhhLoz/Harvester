@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Autumn Eladrin",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Autumn Eladrin'.",
+  "results": [
+    {
+      "text": "Eladrin Ear (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Autumn Eladrin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AgBxnDYF2OSAnZi5",
+          "brt-result-custom-name": "Eladrin Ear",
+          "brt-result-original-name": "Eladrin Ear (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "AgBxnDYF2OSAnZi5",
+      "_id": "OOF5NDJmpwJTdAdm",
+      "_key": "!tables.results!TWeMlXU0PxDu8E2b.OOF5NDJmpwJTdAdm"
+    },
+    {
+      "text": "Autumn Eladrin Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Autumn Eladrin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.eYbr1AOmusga96U9",
+          "brt-result-custom-name": "Autumn Eladrin Hair",
+          "brt-result-original-name": "Autumn Eladrin Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "eYbr1AOmusga96U9",
+      "_id": "Yg4FGESTcIt3nerp",
+      "_key": "!tables.results!TWeMlXU0PxDu8E2b.Yg4FGESTcIt3nerp"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Autumn Eladrin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563554,
+    "modifiedTime": 1696756755913,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "TWeMlXU0PxDu8E2b",
+  "sort": 0,
+  "_key": "!tables!TWeMlXU0PxDu8E2b"
+}

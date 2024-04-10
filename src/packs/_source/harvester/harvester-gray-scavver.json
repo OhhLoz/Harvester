@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Gray Scavver",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gray Scavver'.",
+  "results": [
+    {
+      "text": "Gray Scavver Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gray Scavver",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dpTVPcAZbPmT8Gl4",
+          "brt-result-custom-name": "Gray Scavver Teeth (pouch)",
+          "brt-result-original-name": "Gray Scavver Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "dpTVPcAZbPmT8Gl4",
+      "_id": "GEhw36HG0kBgP8Km",
+      "_key": "!tables.results!KnuGLqlmfYnnCYmP.GEhw36HG0kBgP8Km"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Gray Scavver",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756577869,
+    "modifiedTime": 1696756756718,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "KnuGLqlmfYnnCYmP",
+  "sort": 0,
+  "_key": "!tables!KnuGLqlmfYnnCYmP"
+}

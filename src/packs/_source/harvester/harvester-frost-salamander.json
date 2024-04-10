@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Frost Salamander",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Frost Salamander'.",
+  "results": [
+    {
+      "text": "Frost Salamander Claws",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Frost Salamander",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2LraTRDguObpXj0V",
+          "brt-result-custom-name": "Frost Salamander Claws",
+          "brt-result-original-name": "Frost Salamander Claws",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "2LraTRDguObpXj0V",
+      "_id": "qvdrbcwerbo8eKBo",
+      "_key": "!tables.results!4vhtLHDVuwNhtFLD.qvdrbcwerbo8eKBo"
+    },
+    {
+      "text": "Frost Salamander Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Frost Salamander",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6hDAqT5rPr1ZqtBw",
+          "brt-result-custom-name": "Frost Salamander Hide",
+          "brt-result-original-name": "Frost Salamander Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "6hDAqT5rPr1ZqtBw",
+      "_id": "HeLbXldEKK2I5BKV",
+      "_key": "!tables.results!4vhtLHDVuwNhtFLD.HeLbXldEKK2I5BKV"
+    },
+    {
+      "text": "Frost Salamander Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Frost Salamander",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XL8306z01c7Y2cnS",
+          "brt-result-custom-name": "Frost Salamander Blood vial",
+          "brt-result-original-name": "Frost Salamander Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "XL8306z01c7Y2cnS",
+      "_id": "iW2xHZFKjD8UKPiQ",
+      "_key": "!tables.results!4vhtLHDVuwNhtFLD.iW2xHZFKjD8UKPiQ"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Frost Salamander",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560870,
+    "modifiedTime": 1696756756303,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "4vhtLHDVuwNhtFLD",
+  "sort": 0,
+  "_key": "!tables!4vhtLHDVuwNhtFLD"
+}

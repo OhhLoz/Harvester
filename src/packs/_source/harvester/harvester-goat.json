@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Goat",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Goat'.",
+  "results": [
+    {
+      "text": "Goat Horns (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Goat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iUNSnQR3auIq63D3",
+          "brt-result-custom-name": "Goat Horns",
+          "brt-result-original-name": "Goat Horns (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "iUNSnQR3auIq63D3",
+      "_id": "KhsOCQcIyylstsaZ",
+      "_key": "!tables.results!Du4Y2RhnExL5U3mh.KhsOCQcIyylstsaZ"
+    },
+    {
+      "text": "Goat Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Goat",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.syy1LDk76nCQuxte",
+          "brt-result-custom-name": "Goat Hide",
+          "brt-result-original-name": "Goat Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "syy1LDk76nCQuxte",
+      "_id": "bvqUx4nJ6bocLSGw",
+      "_key": "!tables.results!Du4Y2RhnExL5U3mh.bvqUx4nJ6bocLSGw"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Goat",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756580584,
+    "modifiedTime": 1696756756697,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Du4Y2RhnExL5U3mh",
+  "sort": 0,
+  "_key": "!tables!Du4Y2RhnExL5U3mh"
+}

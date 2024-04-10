@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Giant Vulture",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Vulture'.",
+  "results": [
+    {
+      "text": "Vulture Stomach Acid (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Vulture",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5pN1GB7mFor0CsMI",
+          "brt-result-custom-name": "Vulture Stomach Acid vial",
+          "brt-result-original-name": "Vulture Stomach Acid (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "5pN1GB7mFor0CsMI",
+      "_id": "pBZBSjgrgQqGxOVN",
+      "_key": "!tables.results!UdqofMSDevJRDGHV.pBZBSjgrgQqGxOVN"
+    },
+    {
+      "text": "Giant Vulture Feathers (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Vulture",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UiqYySR87ATdWd0e",
+          "brt-result-custom-name": "Giant Vulture Feathers (large pouch)",
+          "brt-result-original-name": "Giant Vulture Feathers (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "UiqYySR87ATdWd0e",
+      "_id": "K7U0Tf8TYzfSj2ov",
+      "_key": "!tables.results!UdqofMSDevJRDGHV.K7U0Tf8TYzfSj2ov"
+    },
+    {
+      "text": "Giant Vulture Talons (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Vulture",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lu7HNnPGYmZAnu5J",
+          "brt-result-custom-name": "Giant Vulture Talons (pouch)",
+          "brt-result-original-name": "Giant Vulture Talons (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "lu7HNnPGYmZAnu5J",
+      "_id": "OSlE3Nx5Q3E1xOnQ",
+      "_key": "!tables.results!UdqofMSDevJRDGHV.OSlE3Nx5Q3E1xOnQ"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Vulture",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561829,
+    "modifiedTime": 1696756756364,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "UdqofMSDevJRDGHV",
+  "sort": 0,
+  "_key": "!tables!UdqofMSDevJRDGHV"
+}

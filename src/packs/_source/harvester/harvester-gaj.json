@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Gaj",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gaj'.",
+  "results": [
+    {
+      "text": "Gaj's Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gaj",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3x07Zsd18cmgJhls",
+          "brt-result-custom-name": "Gaj's Pineal Gland",
+          "brt-result-original-name": "Gaj's Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "3x07Zsd18cmgJhls",
+      "_id": "KsWBbJHT9Q22asS2",
+      "_key": "!tables.results!Z5D3j5vRejaL0lKm.KsWBbJHT9Q22asS2"
+    },
+    {
+      "text": "Gaj Plates (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gaj",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8GsEpIWh5uX7Jcob",
+          "brt-result-custom-name": "Gaj Plate",
+          "brt-result-original-name": "Gaj Plates (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "8GsEpIWh5uX7Jcob",
+      "_id": "F1sh2BkHP1BJtrQ3",
+      "_key": "!tables.results!Z5D3j5vRejaL0lKm.F1sh2BkHP1BJtrQ3"
+    },
+    {
+      "text": "Gaj Antennae (x3)",
+      "type": 2,
+      "img": "icons/commodities/biological/antenna-blue.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gaj",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EHZJjhuYLEoJWQMv",
+          "brt-result-custom-name": "Gaj Antennae",
+          "brt-result-original-name": "Gaj Antennae (x3)",
+          "brt-result-original-icon": "icons/commodities/biological/antenna-blue.webp"
+        }
+      },
+      "documentId": "EHZJjhuYLEoJWQMv",
+      "_id": "lPRpT9GVIjVfJLv4",
+      "_key": "!tables.results!Z5D3j5vRejaL0lKm.lPRpT9GVIjVfJLv4"
+    },
+    {
+      "text": "Gaj Mandibles (x6)",
+      "type": 2,
+      "img": "icons/commodities/biological/mouth-pincer-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gaj",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FmHoVJ08v0OrhM55",
+          "brt-result-custom-name": "Gaj Mandibles",
+          "brt-result-original-name": "Gaj Mandibles (x6)",
+          "brt-result-original-icon": "icons/commodities/biological/mouth-pincer-brown.webp"
+        }
+      },
+      "documentId": "FmHoVJ08v0OrhM55",
+      "_id": "Sb8MTeM5SZ1KSfaG",
+      "_key": "!tables.results!Z5D3j5vRejaL0lKm.Sb8MTeM5SZ1KSfaG"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Gaj",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561384,
+    "modifiedTime": 1696756756306,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Z5D3j5vRejaL0lKm",
+  "sort": 0,
+  "_key": "!tables!Z5D3j5vRejaL0lKm"
+}

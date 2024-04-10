@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Salamander",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Salamander'.",
+  "results": [
+    {
+      "text": "Salamander Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Salamander",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2lbpT8fYxtTiXxhB",
+          "brt-result-custom-name": "Salamander Blood vial",
+          "brt-result-original-name": "Salamander Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "2lbpT8fYxtTiXxhB",
+      "_id": "979af0UTiiFNnq6P",
+      "_key": "!tables.results!fNWftq54T28CH8q8.979af0UTiiFNnq6P"
+    },
+    {
+      "text": "Salamander Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Salamander",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UqZ7YGZyvujL4IEs",
+          "brt-result-custom-name": "Salamander Heart",
+          "brt-result-original-name": "Salamander Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "UqZ7YGZyvujL4IEs",
+      "_id": "46Rbescz9zI99eet",
+      "_key": "!tables.results!fNWftq54T28CH8q8.46Rbescz9zI99eet"
+    },
+    {
+      "text": "Salamander Scales (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Salamander",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.m8dejiUmGWWwOmQO",
+          "brt-result-custom-name": "Salamander Scales (large pouch)",
+          "brt-result-original-name": "Salamander Scales (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "m8dejiUmGWWwOmQO",
+      "_id": "Hm9gE0O2XwuF48G2",
+      "_key": "!tables.results!fNWftq54T28CH8q8.Hm9gE0O2XwuF48G2"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Salamander",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561017,
+    "modifiedTime": 1696756759150,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fNWftq54T28CH8q8",
+  "sort": 0,
+  "_key": "!tables!fNWftq54T28CH8q8"
+}

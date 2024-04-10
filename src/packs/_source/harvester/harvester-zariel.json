@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Zariel",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Zariel'.",
+  "results": [
+    {
+      "text": "Zariel Flail Head",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Zariel",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6yApAavZE2cqpeZQ",
+          "brt-result-custom-name": "Zariel Flail Head",
+          "brt-result-original-name": "Zariel Flail Head",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "6yApAavZE2cqpeZQ",
+      "_id": "0CDukk7drWWsab5v",
+      "_key": "!tables.results!FBGgDVRVIK27IzT8.0CDukk7drWWsab5v"
+    },
+    {
+      "text": "Zariel Feather",
+      "type": 2,
+      "img": "icons/commodities/materials/feather-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Zariel",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Y7Atyl2qpE9rJ9M0",
+          "brt-result-custom-name": "Zariel Feather",
+          "brt-result-original-name": "Zariel Feather",
+          "brt-result-original-icon": "icons/commodities/materials/feather-white.webp"
+        }
+      },
+      "documentId": "Y7Atyl2qpE9rJ9M0",
+      "_id": "hc0kVfa48pBkooox",
+      "_key": "!tables.results!FBGgDVRVIK27IzT8.hc0kVfa48pBkooox"
+    },
+    {
+      "text": "Zariel Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Zariel",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.eTeyEPzNncvFDS3P",
+          "brt-result-custom-name": "Zariel Blood vial",
+          "brt-result-original-name": "Zariel Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "eTeyEPzNncvFDS3P",
+      "_id": "LF3L07QcjAVLYUyQ",
+      "_key": "!tables.results!FBGgDVRVIK27IzT8.LF3L07QcjAVLYUyQ"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Zariel",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562217,
+    "modifiedTime": 1696756762293,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FBGgDVRVIK27IzT8",
+  "sort": 0,
+  "_key": "!tables!FBGgDVRVIK27IzT8"
+}

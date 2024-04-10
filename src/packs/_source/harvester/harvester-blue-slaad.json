@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Blue Slaad",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Blue Slaad'.",
+  "results": [
+    {
+      "text": "Slaad Slime (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Blue Slaad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lHnXeFXXyO8Yob2n",
+          "brt-result-custom-name": "Slaad Slime (vial)",
+          "brt-result-original-name": "Slaad Slime (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "lHnXeFXXyO8Yob2n",
+      "_id": "KG0eKFz6gGkbaid7",
+      "_key": "!tables.results!wbHNlW1JbxEO3Lkr.KG0eKFz6gGkbaid7"
+    },
+    {
+      "text": "Blue Slaad Hooked Claw (x4)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Blue Slaad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.s9Mi7ARcjWf1lpWC",
+          "brt-result-custom-name": "Blue Slaad Hooked Claw",
+          "brt-result-original-name": "Blue Slaad Hooked Claw (x4)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "s9Mi7ARcjWf1lpWC",
+      "_id": "pvite9jfnrHtBsgz",
+      "_key": "!tables.results!wbHNlW1JbxEO3Lkr.pvite9jfnrHtBsgz"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Blue Slaad",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756581607,
+    "modifiedTime": 1696756755967,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wbHNlW1JbxEO3Lkr",
+  "sort": 0,
+  "_key": "!tables!wbHNlW1JbxEO3Lkr"
+}

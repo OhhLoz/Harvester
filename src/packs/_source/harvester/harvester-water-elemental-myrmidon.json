@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Water Elemental Myrmidon",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Water Elemental Myrmidon'.",
+  "results": [
+    {
+      "text": "Myymidon Armor Plates",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Water Elemental Myrmidon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.M8ZFvQ72CAEzs13C",
+          "brt-result-custom-name": "Myymidon Armor Plates",
+          "brt-result-original-name": "Myymidon Armor Plates",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "M8ZFvQ72CAEzs13C",
+      "_id": "s0nKeskY9rO9YiSR",
+      "_key": "!tables.results!Zff99HMi9m6Z97bV.s0nKeskY9rO9YiSR"
+    },
+    {
+      "text": "Elemental Water Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Water Elemental Myrmidon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cUvKgpAbCDsnKkgp",
+          "brt-result-custom-name": "Elemental Water Essence (vial)",
+          "brt-result-original-name": "Elemental Water Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "cUvKgpAbCDsnKkgp",
+      "_id": "CYGtNWAY1qd4tgz9",
+      "_key": "!tables.results!Zff99HMi9m6Z97bV.CYGtNWAY1qd4tgz9"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Water Elemental Myrmidon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567457,
+    "modifiedTime": 1696756761145,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Zff99HMi9m6Z97bV",
+  "sort": 0,
+  "_key": "!tables!Zff99HMi9m6Z97bV"
+}
