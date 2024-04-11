@@ -15,8 +15,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "1"
-          ,
+          "brt-result-custom-quantity": "1",
           "brt-dc-value": "15",
           "brt-skill-value": "arc",
           "brt-source-value": "Animated Breath",

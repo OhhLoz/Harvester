@@ -42,8 +42,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "1"
-          ,
+          "brt-result-custom-quantity": "1",
           "brt-dc-value": "15",
           "brt-skill-value": "nat",
           "brt-source-value": "Aartuk Elder",
@@ -70,8 +69,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "1"
-          ,
+          "brt-result-custom-quantity": "1",
           "brt-dc-value": "25",
           "brt-skill-value": "nat",
           "brt-source-value": "Aartuk Elder",
@@ -98,8 +96,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "1"
-          ,
+          "brt-result-custom-quantity": "1",
           "brt-dc-value": "10",
           "brt-skill-value": "nat",
           "brt-source-value": "Aartuk Elder",

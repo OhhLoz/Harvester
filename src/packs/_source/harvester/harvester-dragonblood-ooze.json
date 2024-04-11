@@ -15,8 +15,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "5"
-          ,
+          "brt-result-custom-quantity": "5",
           "brt-dc-value": "10",
           "brt-skill-value": "inv",
           "brt-source-value": "Dragonblood Ooze",

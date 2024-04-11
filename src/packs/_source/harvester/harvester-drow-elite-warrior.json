@@ -15,8 +15,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "3"
-          ,
+          "brt-result-custom-quantity": "3",
           "brt-dc-value": "10",
           "brt-skill-value": "med",
           "brt-source-value": "Drow Elite Warrior",

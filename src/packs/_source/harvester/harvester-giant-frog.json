@@ -15,8 +15,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "5"
-          ,
+          "brt-result-custom-quantity": "5",
           "brt-dc-value": "5",
           "brt-skill-value": "nat",
           "brt-source-value": "Giant Frog",

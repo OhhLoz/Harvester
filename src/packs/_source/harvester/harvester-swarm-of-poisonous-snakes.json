@@ -15,8 +15,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "1d8"
-          ,
+          "brt-result-custom-quantity": "1d8",
           "brt-dc-value": "5",
           "brt-skill-value": "nat",
           "brt-source-value": "Swarm of Poisonous Snakes",
@@ -43,8 +42,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "1d8"
-          ,
+          "brt-result-custom-quantity": "1d8",
           "brt-dc-value": "15",
           "brt-skill-value": "nat",
           "brt-source-value": "Swarm of Poisonous Snakes",

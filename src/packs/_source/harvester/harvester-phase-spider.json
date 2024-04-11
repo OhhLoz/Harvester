@@ -15,8 +15,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "2"
-          ,
+          "brt-result-custom-quantity": "2",
           "brt-dc-value": "15",
           "brt-skill-value": "nat",
           "brt-source-value": "Phase Spider",
@@ -43,8 +42,7 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-custom-quantity": "1"
-          ,
+          "brt-result-custom-quantity": "1",
           "brt-dc-value": "20",
           "brt-skill-value": "nat",
           "brt-source-value": "Phase Spider",
