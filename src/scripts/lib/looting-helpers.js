@@ -64,15 +64,12 @@ export class LootingHelpers {
         }
 
         let rollTablesMatched = [];
-        Logger.debug(`LootingHelpers | Searching RollTablesMatched with BRT`);
+        Logger.debug(`LootingHelpers | Searching RollTablesMatched`);
         rollTablesMatched = BetterRollTablesHelpers.retrieveTablesLootWithBetterRollTables(
             actorName,
             lootAction.name || item.name,
         );
-        Logger.debug(
-            `LootingHelpers | Found RollTablesMatched with BRT (${rollTablesMatched?.length})`,
-            rollTablesMatched,
-        );
+        Logger.debug(`LootingHelpers | Found RollTablesMatched (${rollTablesMatched?.length})`, rollTablesMatched);
 
         const rollTableLoot = rollTablesMatched[0];
 

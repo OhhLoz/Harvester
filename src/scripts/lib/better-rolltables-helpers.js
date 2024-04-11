@@ -63,7 +63,7 @@ export default class BetterRollTablesHelpers {
                 for (const doc of harvesterBetterRollCompendium) {
                     if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
                         Logger.debug(
-                            `retrieveTablesHarvestWithBetterRollTables | Find document with check regex ${sourceValue}=${getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim()}`,
+                            `retrieveTablesHarvestWithBetterRollTables | BRT COMPENDIUM | Find document ${doc.name} with check regex ${sourceValue} validate with ${getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim()}`,
                         );
                         tablesChecked.push(doc);
                     }
@@ -72,15 +72,32 @@ export default class BetterRollTablesHelpers {
             // Try with the base compendium
             for (const doc of harvesterCompendium) {
                 if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
+                    Logger.debug(
+                        `retrieveTablesHarvestWithBetterRollTables | STANDARD COMPENDIUM | Find document ${doc.name} with check regex ${sourceValue} validate with ${doc.name}}`,
+                    );
                     tablesChecked.push(doc);
                 }
             }
             // TODO add some custom compendium ?
             // Try on the tables imported
             if (!tablesChecked || tablesChecked.length === 0) {
-                tablesChecked = game.tables.contents.filter((doc) => {
-                    return BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName);
-                });
+                // tablesChecked = game.tables.contents.filter((doc) => {
+                //     if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
+                //         Logger.debug(
+                //             `retrieveTablesHarvestWithBetterRollTables | STANDARD | Find document ${doc.name} with check regex ${sourceValue} validate with ${doc.name}}`,
+                //         );
+                //         return true;
+                //     }
+                //     return false;
+                // });
+                for (const doc of game.tables.contents) {
+                    if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
+                        Logger.debug(
+                            `retrieveTablesHarvestWithBetterRollTables | STANDARD WORLD | Find document ${doc.name} with check regex ${sourceValue} validate with ${doc.name}}`,
+                        );
+                        tablesChecked.push(doc);
+                    }
+                }
             }
             // We juts get the first
             if (!tablesChecked || tablesChecked.length === 0) {
@@ -236,20 +253,34 @@ export default class BetterRollTablesHelpers {
             // Try with the base compendium
             for (const doc of lootCompendium) {
                 if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
+                    Logger.debug(
+                        `retrieveTablesLootWithBetterRollTables | STANDARD COMPENDIUM | Find document ${doc.name} with check regex ${sourceValue} validate with ${doc.name}}`,
+                    );
                     tablesChecked.push(doc);
                 }
             }
             // Try with the custom compendium
             for (const doc of customLootCompendium) {
                 if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
+                    Logger.debug(
+                        `retrieveTablesLootWithBetterRollTables | STANDARD COMPENDIUM CUSTOM | Find document ${doc.name} with check regex ${sourceValue} validate with ${doc.name}}`,
+                    );
                     tablesChecked.push(doc);
                 }
             }
             // Try on the tables imported
             if (!tablesChecked || tablesChecked.length === 0) {
-                tablesChecked = game.tables.contents.filter((doc) => {
-                    return BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName);
-                });
+                // tablesChecked = game.tables.contents.filter((doc) => {
+                //     return BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName);
+                // });
+                for (const doc of game.tables.contents) {
+                    if (BetterRollTablesHelpers._testRegexTable(sourceValue, doc, actionName)) {
+                        Logger.debug(
+                            `retrieveTablesLootWithBetterRollTables | STANDARD WORLD | Find document ${doc.name} with check regex ${sourceValue} validate with ${doc.name}}`,
+                        );
+                        tablesChecked.push(doc);
+                    }
+                }
             }
             // We juts get the first
             if (!tablesChecked || tablesChecked.length === 0) {

@@ -43,15 +43,12 @@ export class HarvestingHelpers {
         }
 
         let rollTablesMatched = [];
-        Logger.debug(`HarvestingHelpers | Searching RollTablesMatched with BRT`);
+        Logger.debug(`HarvestingHelpers | Searching RollTablesMatched`);
         rollTablesMatched = BetterRollTablesHelpers.retrieveTablesHarvestWithBetterRollTables(
             actorName,
             harvestAction.name || item.name,
         );
-        Logger.debug(
-            `HarvestingHelpers | Found RollTablesMatched with BRT (${rollTablesMatched?.length})`,
-            rollTablesMatched,
-        );
+        Logger.debug(`HarvestingHelpers | Found RollTablesMatched (${rollTablesMatched?.length})`, rollTablesMatched);
 
         if (rollTablesMatched.length === 0) {
             Logger.debug(`HarvestingHelpers | RollTablesMatched is empty`);

@@ -1,4 +1,9 @@
 
+### 1.8.1
+
+- add some additional log
+- update packs (remove old brt flag even is is not used...)
+
 ### 1.8.0
 
 - Code refactor
@@ -45,4 +50,4 @@
 
 - Cleanup of the projetc
 - Add vite integration for hot reloading developing
-- Add Item piles integration from https://github.com/OhhLoz/Harvester/pull/29 ty to @ctbritt 
+- Add Item piles integration from https://github.com/OhhLoz/Harvester/pull/29 ty to @ctbritt
