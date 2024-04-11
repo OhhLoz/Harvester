@@ -15,9 +15,8 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-formula": {
-            "formula": "1d8"
-          },
+          "brt-result-custom-quantity": "1d8"
+          ,
           "brt-dc-value": "5",
           "brt-skill-value": "nat",
           "brt-source-value": "Swarm of Ravens",

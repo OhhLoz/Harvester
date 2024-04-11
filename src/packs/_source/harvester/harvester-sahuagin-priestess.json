@@ -15,9 +15,8 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-formula": {
-            "formula": "1"
-          },
+          "brt-result-custom-quantity": "1"
+          ,
           "brt-dc-value": "25",
           "brt-skill-value": "med",
           "brt-source-value": "Sahuagin Priestess",
@@ -44,9 +43,8 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-formula": {
-            "formula": "3"
-          },
+          "brt-result-custom-quantity": "3"
+          ,
           "brt-dc-value": "5",
           "brt-skill-value": "med",
           "brt-source-value": "Sahuagin Priestess",

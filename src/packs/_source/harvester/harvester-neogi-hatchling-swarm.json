@@ -15,9 +15,8 @@
       "drawn": false,
       "flags": {
         "better-rolltables": {
-          "brt-result-formula": {
-            "formula": "3"
-          },
+          "brt-result-custom-quantity": "3"
+          ,
           "brt-dc-value": "10",
           "brt-skill-value": "arc",
           "brt-source-value": "Neogi Hatchling Swarm",
