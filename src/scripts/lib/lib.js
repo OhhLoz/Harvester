@@ -54,6 +54,55 @@ export function formatDragon(actorName) {
 // ===========================
 
 /**
+ * A little function that checks the validity of both types of regexes, strings or patterns.
+ * The user will be able to test both test and /test/g for example.
+ * @href https://stackoverflow.com/questions/17250815/how-to-check-if-the-input-string-is-a-valid-regular-expression
+ * @param {string} pattern
+ * @returns {boolean}
+ */
+function validateRegex(pattern) {
+    let parts = pattern.split("/");
+    let regex = pattern;
+    let options = "";
+    if (parts.length > 1) {
+        regex = parts[1];
+        options = parts[2];
+    }
+    try {
+        new RegExp(regex, options);
+        return true;
+    } catch (e) {
+        Logger.error("validateRegex | Regex error", false, e);
+        return false;
+    }
+}
+
+/**
+ * This function could handle the '/' char as a normal char in regex, and also consider escaping when is a common string.
+ * It will always return an Regex, null if not a good regex string.
+ * @href https://stackoverflow.com/questions/17250815/how-to-check-if-the-input-string-is-a-valid-regular-expression
+ * @param {string} regex
+ * @returns {RegExp|null}
+ */
+function getRegex(regex) {
+    try {
+        regex = regex.trim();
+        let parts = regex.split("/");
+        if (regex[0] !== "/" || parts.length < 3) {
+            regex = regex.replace(/[.*+\-?^${}()|[\]\\]/g, "\\$&"); //escap common string
+            return new RegExp(regex);
+        }
+        const option = parts[parts.length - 1];
+        const lastIndex = regex.lastIndexOf("/");
+        regex = regex.substring(1, lastIndex);
+        return new RegExp(regex, option);
+    } catch (e) {
+        Logger.error("getRegex | Regex error", false, e);
+        return null;
+    }
+}
+
+/**
  * Here is a little function that checks the validity of both types of regexes, strings or patterns
  * The user will be able to test both 'test' and '/test/g'.
  * let a = validateRegex("/test/i");
@@ -62,16 +111,30 @@ export function formatDragon(actorName) {
  * let t1 = a.test(s); // true
  * let t2 = b.test(s); // false
  * @href https://stackoverflow.com/questions/17250815/how-to-check-if-the-input-string-is-a-valid-regular-expression
- * @param {*} pattern
- * @returns
+ * @param {string} stringToCheck
+ * @param {string} [pattern=""]
+ * @returns {boolean}
  */
 export function testWithRegex(stringToCheck, pattern = "") {
-    let patternTmp = pattern ? pattern : `/^${stringToCheck}$/i`; // .match(/^([a-z0-9]{5,})$/);
+    let patternTmp = pattern ? pattern : stringToCheck; // .match(/^([a-z0-9]{5,})$/);
+    if (!validateRegex(patternTmp)) {
+        let r = getRegex(patternTmp);
+        patternTmp = r ? r : patternTmp;
+    }
+    // if(!validateRegex(patternTmp)) {
+    //     patternTmp = `/^${stringToCheck}$/i`;
+    // }
+    // if(!validateRegex(patternTmp)) {
+    //     let r = getRegex(patternTmp);
+    //     patternTmp = r ? r : patternTmp;
+    // }
     try {
-        let t1 = stringToCheck.match(patternTmp);
-        return t1;
+        if (!validateRegex(patternTmp)) {
+            let t1 = patternTmp.test(stringToCheck); // stringToCheck.match(patternTmp);
+            return t1;
+        }
     } catch (e) {
-        Logger.error("Regex error", false, e);
+        Logger.error("testWithRegex | Regex error", false, e);
         return false;
     }
 }
