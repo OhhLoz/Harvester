@@ -121,20 +121,18 @@ export function testWithRegex(stringToCheck, pattern = "") {
         let r = getRegex(patternTmp);
         patternTmp = r ? r : patternTmp;
     }
-    // if(!validateRegex(patternTmp)) {
-    //     patternTmp = `/^${stringToCheck}$/i`;
-    // }
-    // if(!validateRegex(patternTmp)) {
-    //     let r = getRegex(patternTmp);
-    //     patternTmp = r ? r : patternTmp;
-    // }
+    if (!validateRegex(patternTmp)) {
+        // patternTmp = `/^${stringToCheck}$/i`;
+        let r = getRegex(`/^${stringToCheck}$/i`);
+        patternTmp = r ? r : patternTmp;
+    }
     try {
-        if (!validateRegex(patternTmp)) {
-            let t1 = patternTmp.test(stringToCheck); // stringToCheck.match(patternTmp);
+        if (validateRegex(patternTmp)) {
+            let t1 = new RegExp(patternTmp).test(stringToCheck); // stringToCheck.match(patternTmp);
             return t1;
         }
     } catch (e) {
-        Logger.error("testWithRegex | Regex error", false, e);
+        Logger.error(`testWithRegex | Regex error ${stringToCheck} ${patternTmp}`, false, e);
         return false;
     }
 }

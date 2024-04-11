@@ -1,4 +1,8 @@
 
+### 1.8.2
+
+- Try to fix https://github.com/OhhLoz/Harvester/issues/43
+
 ### 1.8.1
 
 - add some additional log

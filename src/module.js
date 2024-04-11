@@ -298,10 +298,10 @@ export async function addItemsToActor(actor, itemsToAdd) {
     if (SETTINGS.autoAddItems) {
         if (game.modules.get("item-piles")?.active) {
             Logger.debug(`Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
-            await game.itempiles.API.addItems(targetedToken, itemsToAdd, {
+            await game.itempiles.API.addItems(actor, itemsToAdd, {
                 mergeSimilarItems: true,
             });
-            Logger.log(`Added ${itemsToAdd.length} items to ${targetedToken.name}`);
+            Logger.log(`Added ${itemsToAdd.length} items to ${actor.name}`);
         } else {
             Logger.debug(`Add items with STANDARD to ${actor.name}`, itemsToAdd);
             await _addItemsToActorStandard(actor, itemsToAdd);
