@@ -1,0 +1,40 @@
+{
+  "name": "Zyggtmoy Fungus (sack)",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "Zyggtmoy is a creature made of, and covered in, various kinds of fungi. When the creature is destroyed, much of these fungi are left behind. Many adventurers would rather be safe and burn everything, but it is possible to harvest some of the rarer fungi to sell to healers and alchemists.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Zuggtmoy",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979101,
+    "modifiedTime": 1688174979101,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1i3iNNfwpM2XtPIv",
+  "_key": "!items!1i3iNNfwpM2XtPIv"
+}

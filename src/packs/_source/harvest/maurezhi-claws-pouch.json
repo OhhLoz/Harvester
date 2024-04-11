@@ -1,0 +1,40 @@
+{
+  "name": "Maurezhi Claws (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A maurezhi's claws are covered in a numbing paralytic, which makes their claws useful. Harvesting the claws incorrectly can destroy the paralytic. Some alchemists, artificers and other spellcasters can use these claws in the craft.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Maurezhi",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976973,
+    "modifiedTime": 1688174976973,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "juG647oflb1KBKOy",
+  "_key": "!items!juG647oflb1KBKOy"
+}

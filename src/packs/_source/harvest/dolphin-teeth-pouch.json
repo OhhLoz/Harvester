@@ -1,0 +1,40 @@
+{
+  "name": "Dolphin Teeth (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Dolphins are mainly harvested for their teeth and meat. The teeth are used in jewelry. Some primitive island tribes use the teeth as currency.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Dolphin",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974989,
+    "modifiedTime": 1688174974989,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "MtYbNc7AgetXX4Pc",
+  "_key": "!items!MtYbNc7AgetXX4Pc"
+}

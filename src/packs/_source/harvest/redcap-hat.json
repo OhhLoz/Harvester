@@ -1,0 +1,40 @@
+{
+  "name": "Redcap Hat",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The hat is regularly soaked in the fresh blood of a redcap's victims, and the hat retains a vivid red color (not drying, or crusting). The dark fey magic that courses through the hat can be modified by artificers and spellcasters. When the blood is wringed from the hat, its has trace amounts of magical energy that alchemists can tap into.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Redcap",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977841,
+    "modifiedTime": 1688174977841,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "XT9DApvQhWIScOkV",
+  "_key": "!items!XT9DApvQhWIScOkV"
+}

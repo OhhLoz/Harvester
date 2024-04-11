@@ -1,0 +1,40 @@
+{
+  "name": "Moloch's Hooves (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+  "system": {
+    "description": {
+      "value": "The two hooves of Moloch are almost indestructible. It is rumored that the hard objects can be magical reshaped into a powerful warhammer head.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Moloch",
+    "quantity": 1,
+    "weight": 35,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977161,
+    "modifiedTime": 1688174977161,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "PvUJm8B4HF1qYiyw",
+  "_key": "!items!PvUJm8B4HF1qYiyw"
+}

@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Ultraloth",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ultraloth'.",
+  "results": [
+    {
+      "text": "Yugoloth Ichor (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ultraloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4swT0XbZGi3bMJMd",
+          "brt-result-custom-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "4swT0XbZGi3bMJMd",
+      "_id": "FoKwsUPiVSuBreT8",
+      "_key": "!tables.results!nJlUqIC3AVKikVqT.FoKwsUPiVSuBreT8"
+    },
+    {
+      "text": "Ultroloth Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ultraloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Fmrzhqxhp354X6AS",
+          "brt-result-custom-name": "Ultroloth Eye",
+          "brt-result-original-name": "Ultroloth Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "Fmrzhqxhp354X6AS",
+      "_id": "9CyBVCgy0OKkmppx",
+      "_key": "!tables.results!nJlUqIC3AVKikVqT.9CyBVCgy0OKkmppx"
+    },
+    {
+      "text": "Ultroloth Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ultraloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.mnfFGklPzUh1fAjt",
+          "brt-result-custom-name": "Ultroloth Skin",
+          "brt-result-original-name": "Ultroloth Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "mnfFGklPzUh1fAjt",
+      "_id": "hSZcG6jkwKmEvKsk",
+      "_key": "!tables.results!nJlUqIC3AVKikVqT.hSZcG6jkwKmEvKsk"
+    },
+    {
+      "text": "Yugoloth Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ultraloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.pcGIHUoJYLoHmZej",
+          "brt-result-custom-name": "Yugoloth Heart",
+          "brt-result-original-name": "Yugoloth Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "pcGIHUoJYLoHmZej",
+      "_id": "4tOLn1UJnvwIbniM",
+      "_key": "!tables.results!nJlUqIC3AVKikVqT.4tOLn1UJnvwIbniM"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Ultraloth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561573,
+    "modifiedTime": 1696756761112,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nJlUqIC3AVKikVqT",
+  "sort": 0,
+  "_key": "!tables!nJlUqIC3AVKikVqT"
+}

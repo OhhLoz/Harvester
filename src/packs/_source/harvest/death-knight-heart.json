@@ -1,0 +1,40 @@
+{
+  "name": "Death Knight Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "Harvesting a Death Knight's heart involves a complex ritual, and must be done before the death knight rises in a new body. Once harvested, the heart can be used to track and find the death knight. The heart beats faster as it gets closer to the risen death knight, but does not point in the direction.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Death Knight",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 3000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974808,
+    "modifiedTime": 1688174974808,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wi3aRg60dS3p77pJ",
+  "_key": "!items!wi3aRg60dS3p77pJ"
+}

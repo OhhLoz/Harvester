@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Nabassu",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Nabassu'.",
+  "results": [
+    {
+      "text": "Nabassu Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nabassu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FhvoJeCav0tqewB2",
+          "brt-result-custom-name": "Nabassu Blood vial",
+          "brt-result-original-name": "Nabassu Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "FhvoJeCav0tqewB2",
+      "_id": "Sskpka8vfMTy2Ekt",
+      "_key": "!tables.results!lDlU3LCGtyrGyGVg.Sskpka8vfMTy2Ekt"
+    },
+    {
+      "text": "Nabassu Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nabassu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XPz4PgVGIxGuUSLx",
+          "brt-result-custom-name": "Nabassu Hide",
+          "brt-result-original-name": "Nabassu Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "XPz4PgVGIxGuUSLx",
+      "_id": "MnpOAglQdsWVnFUt",
+      "_key": "!tables.results!lDlU3LCGtyrGyGVg.MnpOAglQdsWVnFUt"
+    },
+    {
+      "text": "Nabassu Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nabassu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rKF5X5b9fb92bvKt",
+          "brt-result-custom-name": "Nabassu Eye",
+          "brt-result-original-name": "Nabassu Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "rKF5X5b9fb92bvKt",
+      "_id": "cDkHGlnD9vlGJyqv",
+      "_key": "!tables.results!lDlU3LCGtyrGyGVg.cDkHGlnD9vlGJyqv"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Nabassu",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565423,
+    "modifiedTime": 1696756758265,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lDlU3LCGtyrGyGVg",
+  "sort": 0,
+  "_key": "!tables!lDlU3LCGtyrGyGVg"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Frost Giant Toenails",
+  "type": "loot",
+  "img": "icons/commodities/biological/foot-black-grey.webp",
+  "system": {
+    "description": {
+      "value": "The hard toenails of a frost giant. In order to retain their usefulness, the nails must be pulled out slowly and removed whole. Alchemists and healers use the toenails to create various concoctions.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Frost Giant",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 125,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975657,
+    "modifiedTime": 1688174975657,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Q4WzbXdtONv8uHBc",
+  "_key": "!items!Q4WzbXdtONv8uHBc"
+}

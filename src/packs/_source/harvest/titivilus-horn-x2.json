@@ -1,0 +1,40 @@
+{
+  "name": "Titivilus' Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "Titivilus has two small, iron-pointed devil horns on his forehead. The horns are difficult to remove without cracking. Once removed the horns can be used to craft jewelry and decorations, and can be shaved down and used as an ingredient in potions.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Titivilus",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 800,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978512,
+    "modifiedTime": 1688174978512,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "kFW8iuNEzYSu81XJ",
+  "_key": "!items!kFW8iuNEzYSu81XJ"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Gorgon Gas Sac",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A gorgon has the ability to exhale a petrifying gas. This gas builds up and is stored in a sac at the base of the creatures neck. If the sac is removed too quickly, or incorrectly, it may burst. On a successful harvesting check, the character harvests the gas sac. On a failed check, the character is unable to extract the gas sac. If the character fails the check by 5 or more, the character is subjected to the petrifying vapor. Use: As an action you may throw the sac up to 20 feet, where it explodes. Each creature in a 10-foot radius must succeed on a DC 10 Constitution saving throw. On a failed save, a target begins to turn to stone and is restrained. The restrained target must repeat the saving throw at the end of its next turn. On a success, the effects ends on the target. On a failure, the target is petrified until freed by the greater restoration spell or other magic.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Gorgon",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976157,
+    "modifiedTime": 1688174976157,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xR9copVuKH6Mcex6",
+  "_key": "!items!xR9copVuKH6Mcex6"
+}

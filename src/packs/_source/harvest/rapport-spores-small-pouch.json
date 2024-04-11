@@ -1,0 +1,40 @@
+{
+  "name": "Rapport Spores (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "All myconids emit miniscule motes of fuzzy yellow spores, that look almost invisible as they float through the air like dust. These spores allows the myconids to communicate with each other. Alchemists, artificers and spellcasters may be able to repurpose these spores.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Myconid Sprout",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977241,
+    "modifiedTime": 1688174977241,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wWLrsPCkPjG2hEvp",
+  "_key": "!items!wWLrsPCkPjG2hEvp"
+}

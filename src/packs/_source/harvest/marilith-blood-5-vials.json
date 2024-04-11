@@ -1,0 +1,40 @@
+{
+  "name": "Marilith Blood (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Marilith blood is infused with many magical properties, and is believed to help reflexes and coordination. Alchemists can use the blood to create powerful potions.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Marilith",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976944,
+    "modifiedTime": 1688174976944,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "7yrl6ow5bTVJmLtg",
+  "_key": "!items!7yrl6ow5bTVJmLtg"
+}

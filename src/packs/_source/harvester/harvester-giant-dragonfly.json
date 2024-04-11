@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Giant Dragonfly",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Dragonfly'.",
+  "results": [
+    {
+      "text": "Giant Dragonfly Wings",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Dragonfly",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oO40BWyp1PGKK95R",
+          "brt-result-custom-name": "Giant Dragonfly Wings",
+          "brt-result-original-name": "Giant Dragonfly Wings",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "oO40BWyp1PGKK95R",
+      "_id": "KtrwJrN7ymgtTAqh",
+      "_key": "!tables.results!9RildEA2tE1D9WK6.KtrwJrN7ymgtTAqh"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Dragonfly",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756583744,
+    "modifiedTime": 1696756756337,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9RildEA2tE1D9WK6",
+  "sort": 0,
+  "_key": "!tables!9RildEA2tE1D9WK6"
+}

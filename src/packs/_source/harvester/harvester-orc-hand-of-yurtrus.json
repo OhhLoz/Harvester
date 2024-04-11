@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Orc Hand of Yurtrus",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Orc Hand of Yurtrus'.",
+  "results": [
+    {
+      "text": "White Hand of Yurtrus",
+      "type": 2,
+      "img": "icons/commodities/biological/hand-clawed-blue.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc Hand of Yurtrus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.U0VZiEUdvJLuVcf8",
+          "brt-result-custom-name": "White Hand of Yurtrus",
+          "brt-result-original-name": "White Hand of Yurtrus",
+          "brt-result-original-icon": "icons/commodities/biological/hand-clawed-blue.webp"
+        }
+      },
+      "documentId": "U0VZiEUdvJLuVcf8",
+      "_id": "9B5ky0t8VDHMba4z",
+      "_key": "!tables.results!4RacgxGWIFhKrZdW.9B5ky0t8VDHMba4z"
+    },
+    {
+      "text": "Orc Tusks",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orc Hand of Yurtrus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qxnQAxo9ltiXcrBD",
+          "brt-result-custom-name": "Orc Tusks",
+          "brt-result-original-name": "Orc Tusks",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "qxnQAxo9ltiXcrBD",
+      "_id": "bifJQ8TsFgV39U3P",
+      "_key": "!tables.results!4RacgxGWIFhKrZdW.bifJQ8TsFgV39U3P"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Orc Hand of Yurtrus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569840,
+    "modifiedTime": 1696756758331,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "4RacgxGWIFhKrZdW",
+  "sort": 0,
+  "_key": "!tables!4RacgxGWIFhKrZdW"
+}

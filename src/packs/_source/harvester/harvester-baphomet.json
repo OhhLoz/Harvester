@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Baphomet",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Baphomet'.",
+  "results": [
+    {
+      "text": "Baphomet's Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Baphomet",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.9DWnVgw6WV3Snd6A",
+          "brt-result-custom-name": "Baphomet's Pineal Gland",
+          "brt-result-original-name": "Baphomet's Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "9DWnVgw6WV3Snd6A",
+      "_id": "WlMCFBYiND5IuNom",
+      "_key": "!tables.results!U0uklizGLah5BVu7.WlMCFBYiND5IuNom"
+    },
+    {
+      "text": "Baphomet's Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Baphomet",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Q16T7WvwlUlNKAqr",
+          "brt-result-custom-name": "Baphomet's Hide",
+          "brt-result-original-name": "Baphomet's Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "Q16T7WvwlUlNKAqr",
+      "_id": "JCKIZMqeo9AK1tXB",
+      "_key": "!tables.results!U0uklizGLah5BVu7.JCKIZMqeo9AK1tXB"
+    },
+    {
+      "text": "Baphomet's Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Baphomet",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.teSQKp1wqOjbMkwo",
+          "brt-result-custom-name": "Baphomet's Horn",
+          "brt-result-original-name": "Baphomet's Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "teSQKp1wqOjbMkwo",
+      "_id": "zkxtwr3R24gMqtI1",
+      "_key": "!tables.results!U0uklizGLah5BVu7.zkxtwr3R24gMqtI1"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Baphomet",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562987,
+    "modifiedTime": 1696756755937,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "U0uklizGLah5BVu7",
+  "sort": 0,
+  "_key": "!tables!U0uklizGLah5BVu7"
+}

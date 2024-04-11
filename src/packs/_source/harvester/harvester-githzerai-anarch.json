@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Githzerai Anarch",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Githzerai Anarch'.",
+  "results": [
+    {
+      "text": "Githzerai Anarch Tattoo (x3)",
+      "type": 2,
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githzerai Anarch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3PPwYaHssSvAYKCs",
+          "brt-result-custom-name": "Githzerai Anarch Tattoo",
+          "brt-result-original-name": "Githzerai Anarch Tattoo (x3)",
+          "brt-result-original-icon": "icons/magic/symbols/rune-sigil-black-pink.webp"
+        }
+      },
+      "documentId": "3PPwYaHssSvAYKCs",
+      "_id": "4HEQEkYkeqdo6wuk",
+      "_key": "!tables.results!NOoJoNkQN4Fo65rF.4HEQEkYkeqdo6wuk"
+    },
+    {
+      "text": "Githzerai Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githzerai Anarch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QFzDQgz6JNzHHaYP",
+          "brt-result-custom-name": "Githzerai Brain",
+          "brt-result-original-name": "Githzerai Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "QFzDQgz6JNzHHaYP",
+      "_id": "bgQ4J72WH112Pqmf",
+      "_key": "!tables.results!NOoJoNkQN4Fo65rF.bgQ4J72WH112Pqmf"
+    },
+    {
+      "text": "Githzerai Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githzerai Anarch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nE2dTUIZ4dgi2Qb1",
+          "brt-result-custom-name": "Githzerai Heart",
+          "brt-result-original-name": "Githzerai Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "nE2dTUIZ4dgi2Qb1",
+      "_id": "scS7JFOA3HP8BIOa",
+      "_key": "!tables.results!NOoJoNkQN4Fo65rF.scS7JFOA3HP8BIOa"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Githzerai Anarch",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561188,
+    "modifiedTime": 1696756756680,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NOoJoNkQN4Fo65rF",
+  "sort": 0,
+  "_key": "!tables!NOoJoNkQN4Fo65rF"
+}

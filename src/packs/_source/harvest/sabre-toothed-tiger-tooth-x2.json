@@ -1,0 +1,40 @@
+{
+  "name": "Sabre-Toothed Tiger Tooth (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+  "system": {
+    "description": {
+      "value": "A sabre-toothed tiger has a distinctive pair of long, razor sharp canine teeth. The teeth can be crafted into small weapons and tools, or carved into small statues and decorations.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Saber-Toothed Tiger",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977973,
+    "modifiedTime": 1688174977973,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Q25TQa7IgwsDEP3S",
+  "_key": "!items!Q25TQa7IgwsDEP3S"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Panther's Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The panther's hide is covered in a coat of short fur (colors vary, usually black or light brown). It is often used to make rugs and apparel.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Panther",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977622,
+    "modifiedTime": 1688174977622,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "kqZGaer0wIlwwMQ5",
+  "_key": "!items!kqZGaer0wIlwwMQ5"
+}

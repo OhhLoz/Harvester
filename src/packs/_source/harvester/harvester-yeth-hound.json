@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Yeth Hound",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Yeth Hound'.",
+  "results": [
+    {
+      "text": "Yeth Hound Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Yeth Hound",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CL0WU82ePKpGa2aJ",
+          "brt-result-custom-name": "Yeth Hound Hide",
+          "brt-result-original-name": "Yeth Hound Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "CL0WU82ePKpGa2aJ",
+      "_id": "LO5MDTeXjjiXsnBA",
+      "_key": "!tables.results!cIcm5JTuRuiuaM5k.LO5MDTeXjjiXsnBA"
+    },
+    {
+      "text": "Yeth Hound Teeth (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Yeth Hound",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TSu5DbgnQsExhu2S",
+          "brt-result-custom-name": "Yeth Hound Teeth (large pouch)",
+          "brt-result-original-name": "Yeth Hound Teeth (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "TSu5DbgnQsExhu2S",
+      "_id": "YeTOmSUdozauFbw2",
+      "_key": "!tables.results!cIcm5JTuRuiuaM5k.YeTOmSUdozauFbw2"
+    },
+    {
+      "text": "Yeth Hound Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Yeth Hound",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gA0tWaUNZn5tM69F",
+          "brt-result-custom-name": "Yeth Hound Pineal Gland",
+          "brt-result-original-name": "Yeth Hound Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "gA0tWaUNZn5tM69F",
+      "_id": "Eh24iOtxO9wtzcNs",
+      "_key": "!tables.results!cIcm5JTuRuiuaM5k.Eh24iOtxO9wtzcNs"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Yeth Hound",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564259,
+    "modifiedTime": 1696756762267,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "cIcm5JTuRuiuaM5k",
+  "sort": 0,
+  "_key": "!tables!cIcm5JTuRuiuaM5k"
+}

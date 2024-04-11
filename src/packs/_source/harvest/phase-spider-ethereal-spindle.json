@@ -1,0 +1,40 @@
+{
+  "name": "Phase Spider Ethereal Spindle",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Unlike a regular spider that spins silk, a phase spider has an spindle it it abdomen that allows the creature to jump in and out of the ethereal plane. The spindle is several rings of cartilage that rotate like a gyroscope creating a wave of arcane energy. The spindles is a valuable item to artificers.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Phase Spider",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977653,
+    "modifiedTime": 1688174977653,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "p0bmrFaTR66o2gEL",
+  "_key": "!items!p0bmrFaTR66o2gEL"
+}

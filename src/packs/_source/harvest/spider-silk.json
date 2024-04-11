@@ -1,0 +1,40 @@
+{
+  "name": "Spider Silk",
+  "type": "loot",
+  "img": "icons/commodities/cloth/yarn-skein-white-red.webp",
+  "system": {
+    "description": {
+      "value": "A giant spider has a spinneret in its abdomen where white silk thread can be harvested. A skilled harvester can extract over 100 feet of thread. Weavers use the thread to create a light, soft, lustrous fabric.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Spider",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975901,
+    "modifiedTime": 1688174975901,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dxdEjRs9Edj4SUf9",
+  "_key": "!items!dxdEjRs9Edj4SUf9"
+}

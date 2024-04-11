@@ -1,0 +1,40 @@
+{
+  "name": "Neogi Eyes (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "A neogi's eyes can hypnotize and subdue creatures much larger than themselves. If harvested correctly, the eyes retain trace amounts of the trance-like power, which can be harnessed by other spellcasters and artificers. The eyes can also be used as an ingredient in various charm potions.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Neogi Pirate",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977321,
+    "modifiedTime": 1688174977321,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xMMH2ZCC4aNxNuwy",
+  "_key": "!items!xMMH2ZCC4aNxNuwy"
+}

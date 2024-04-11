@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Helmed Horror",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Helmed Horror'.",
+  "results": [
+    {
+      "text": "Helmed Horror Helm",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Helmed Horror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yGkCAC2bzGGEiOdx",
+          "brt-result-custom-name": "Helmed Horror Helm",
+          "brt-result-original-name": "Helmed Horror Helm",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "yGkCAC2bzGGEiOdx",
+      "_id": "fmdDPDrW9Kjkmg8m",
+      "_key": "!tables.results!tBQJrvK8TvWMRhSU.fmdDPDrW9Kjkmg8m"
+    },
+    {
+      "text": "Helmed Horror Spark (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Helmed Horror",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ydbyvJ6FzE83GQ6V",
+          "brt-result-custom-name": "Helmed Horror Spark (vial)",
+          "brt-result-original-name": "Helmed Horror Spark (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "ydbyvJ6FzE83GQ6V",
+      "_id": "Tbf3i302rKDi4UAV",
+      "_key": "!tables.results!tBQJrvK8TvWMRhSU.Tbf3i302rKDi4UAV"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Helmed Horror",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756589859,
+    "modifiedTime": 1696756757091,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tBQJrvK8TvWMRhSU",
+  "sort": 0,
+  "_key": "!tables!tBQJrvK8TvWMRhSU"
+}

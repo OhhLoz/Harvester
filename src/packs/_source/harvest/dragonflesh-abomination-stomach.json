@@ -1,0 +1,40 @@
+{
+  "name": "Dragonflesh Abomination Stomach",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-stomach.webp",
+  "system": {
+    "description": {
+      "value": "A dragonflesh abomination's stomach is a bulbous pouch, about the size of a large football. The flesh-like sac churns with noxious acid. The stomach lining may be used to line armor and clothes, protecting them from acid. The stomach contents can be used by alchemists.Use: As an action, a creature may throw this sac at a point it can see within 20 feet, bursting on impact. All creatures within 5 feet of that point must succeed on a DC 14 Dexterity saving throw, taking 5d6 acid damage on a failed save, or half as much damage on a successful one.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Dragonflesh Abomination",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 300,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975116,
+    "modifiedTime": 1688174975116,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "QHpYMPtV0tVpiuJQ",
+  "_key": "!items!QHpYMPtV0tVpiuJQ"
+}

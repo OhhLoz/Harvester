@@ -1,0 +1,40 @@
+{
+  "name": "Medusa Snake Hair (large pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A medusa's hair is a nest of venomous serpents. The snakes can be harvested and used by various craftsmen. Some use the snakes for their skin, others for the venom.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Medusa",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976989,
+    "modifiedTime": 1688174976989,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "TM2yFWgpDejcx3i4",
+  "_key": "!items!TM2yFWgpDejcx3i4"
+}

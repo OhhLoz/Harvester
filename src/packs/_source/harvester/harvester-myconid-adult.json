@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Myconid Adult",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Myconid Adult'.",
+  "results": [
+    {
+      "text": "Rapport Spores (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Myconid Adult",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.G9N0UDCyEuGOWldi",
+          "brt-result-custom-name": "Rapport Spores (small pouch)",
+          "brt-result-original-name": "Rapport Spores (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "G9N0UDCyEuGOWldi",
+      "_id": "Yj8XMwbTiMWEat8q",
+      "_key": "!tables.results!xN9kcBmaKxttsqc1.Yj8XMwbTiMWEat8q"
+    },
+    {
+      "text": "Pacifying Spores (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Myconid Adult",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.mr3u9EEpUjwxOIIy",
+          "brt-result-custom-name": "Pacifying Spores (small pouch)",
+          "brt-result-original-name": "Pacifying Spores (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "mr3u9EEpUjwxOIIy",
+      "_id": "jGAhMSFKxBgy6ZEQ",
+      "_key": "!tables.results!xN9kcBmaKxttsqc1.jGAhMSFKxBgy6ZEQ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Myconid Adult",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565485,
+    "modifiedTime": 1696756757701,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xN9kcBmaKxttsqc1",
+  "sort": 0,
+  "_key": "!tables!xN9kcBmaKxttsqc1"
+}

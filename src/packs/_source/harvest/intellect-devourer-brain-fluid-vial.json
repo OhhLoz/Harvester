@@ -1,0 +1,40 @@
+{
+  "name": "Intellect Devourer Brain Fluid (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "An intellect devourer's brain fluid is a thick, clear fluid with a pink tint. The fluid is produced by tissues lining the ventricles of the brain. The fluid begins to dry quickly after death and must be harvested quickly. The fluid is useful to alchemists and artificers (especially those with an interest in flesh golems). Use: As an action a creature may drink a vial of brain fluid. That creature must make a DC 12 Intelligence saving throw. On a failure, it becomes stunned for 1 minute as its mind struggles to grasp with a sudden rush of information. On a success, the creature learns the identity of who the intellect devourer used to be, as well as one key memory (DM discretion). The memory may be something that the intellect devourer knew in its original life, or something it learned after becoming an intellect devourer (i.e. the location of a mind flayer's lair).",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Intellect Devourer",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976621,
+    "modifiedTime": 1688174976621,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "vKHiyITLdg8HPrRz",
+  "_key": "!items!vKHiyITLdg8HPrRz"
+}

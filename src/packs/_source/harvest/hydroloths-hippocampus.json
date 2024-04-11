@@ -1,0 +1,40 @@
+{
+  "name": "Hydroloth's Hippocampus",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A hydroloth's hippocampus is a complex brain structure embedded deep into the creature's temporal lobe. Its hippocampus is used for memory encoding and consolidation, which is important to the creature's ability to steal memories. A hydroloth's hippocampus has several healing properties, especially pertaining to memory loss and aging.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Hydroloth",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976579,
+    "modifiedTime": 1688174976579,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "EsLpiJj0emz5HIYx",
+  "_key": "!items!EsLpiJj0emz5HIYx"
+}

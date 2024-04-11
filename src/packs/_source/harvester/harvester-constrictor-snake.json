@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Constrictor Snake",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Constrictor Snake'.",
+  "results": [
+    {
+      "text": "Constrictor Snake Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "7",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Constrictor Snake",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CtYSvwVsUeO8s2VY",
+          "brt-result-custom-name": "Constrictor Snake Skin",
+          "brt-result-original-name": "Constrictor Snake Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "CtYSvwVsUeO8s2VY",
+      "_id": "mInylIO8cTw59Eix",
+      "_key": "!tables.results!fQ4zRWYVCZg2j9hj.mInylIO8cTw59Eix"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Constrictor Snake",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564628,
+    "modifiedTime": 1696756756054,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fQ4zRWYVCZg2j9hj",
+  "sort": 0,
+  "_key": "!tables!fQ4zRWYVCZg2j9hj"
+}

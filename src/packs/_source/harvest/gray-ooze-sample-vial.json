@@ -1,0 +1,40 @@
+{
+  "name": "Gray Ooze Sample (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A gray ooze is a fast flowing, gray liquid with many corrosive properties. The ooze is highly acidic and known to eat through metal and armor. Samples of this ooze are often bought by alchemists and most merchants.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Gray Ooze",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 7,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976184,
+    "modifiedTime": 1688174976184,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "RCk8du1h6w6RGNcn",
+  "_key": "!items!RCk8du1h6w6RGNcn"
+}

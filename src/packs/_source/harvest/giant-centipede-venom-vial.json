@@ -1,0 +1,40 @@
+{
+  "name": "Giant Centipede Venom (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The giant centipede has a poisonous bite. A skilled harvester can extract a vial of the thick yellow venom. Proficiency with the poisoner kit may be used for harvesting this venom. On a successful check, the character harvests enough venom for a single vial. On a failed check, the character is unable to extract any venom. If the character fails the check by 5 or more, the character is subjected to the creature's poison. Refining the Poison: Once the venom is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend an 3 hours and 60gp worth of material to create Scorpion Poison (DC 10 Poisoner Kit or Alchemist Supplies check). Centipede Poison (Contact): Upon contact with this poison, the target must succeed on a DC 11 Constitution saving throw or take 4 (1d8) poison damage (NOT the poison condition). If the poison damage reduces the target to 0 hit points, the target is stable but paralyzed for 1 hour, even after regaining hit points. This poison usually sells for 120gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Centipede",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975801,
+    "modifiedTime": 1688174975801,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AsHI1vYoFGTmwhaY",
+  "_key": "!items!AsHI1vYoFGTmwhaY"
+}

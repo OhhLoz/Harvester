@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Barlgura",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Barlgura'.",
+  "results": [
+    {
+      "text": "Barlgura Bile (2 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barlgura",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0fJDvt6iPK1GKWDA",
+          "brt-result-custom-name": "Barlgura Bile vial",
+          "brt-result-original-name": "Barlgura Bile (2 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "0fJDvt6iPK1GKWDA",
+      "_id": "2ea8vq4y71UoB3DJ",
+      "_key": "!tables.results!4R4pLTt4FOqmoOqQ.2ea8vq4y71UoB3DJ"
+    },
+    {
+      "text": "Barlgura Knucklebones (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barlgura",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DnrsK2NeQbPwtg65",
+          "brt-result-custom-name": "Barlgura Knucklebones",
+          "brt-result-original-name": "Barlgura Knucklebones (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "DnrsK2NeQbPwtg65",
+      "_id": "61bdoTxtANebAMb5",
+      "_key": "!tables.results!4R4pLTt4FOqmoOqQ.61bdoTxtANebAMb5"
+    },
+    {
+      "text": "Barlgura Fang (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/teeth-pointed-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barlgura",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rHjIpKOo8ZsdLDTA",
+          "brt-result-custom-name": "Barlgura Fang",
+          "brt-result-original-name": "Barlgura Fang (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/teeth-pointed-white.webp"
+        }
+      },
+      "documentId": "rHjIpKOo8ZsdLDTA",
+      "_id": "1VYfhEYkni3lp5F8",
+      "_key": "!tables.results!4R4pLTt4FOqmoOqQ.1VYfhEYkni3lp5F8"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Barlgura",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560410,
+    "modifiedTime": 1696756755943,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "4R4pLTt4FOqmoOqQ",
+  "sort": 0,
+  "_key": "!tables!4R4pLTt4FOqmoOqQ"
+}

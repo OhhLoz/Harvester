@@ -1,0 +1,40 @@
+{
+  "name": "Venom Troll Skin Strips (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A venom troll's skin is often covered in warts, pustules, mold and moist with poison. The skins regenerative properties are valued by healers, while the venom is often used by alchemists and poisoners.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Venom Troll",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978675,
+    "modifiedTime": 1688174978675,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FNm917ew2A0t1hFJ",
+  "_key": "!items!FNm917ew2A0t1hFJ"
+}

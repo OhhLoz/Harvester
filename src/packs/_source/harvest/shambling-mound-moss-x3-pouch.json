@@ -1,0 +1,40 @@
+{
+  "name": "Shambling Mound Moss (x3 pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The amorphous body of a shambling mound is often covered in a soft, green moss, which is usually layered with a variety of molds and fungus, all of which have some healing or botanical uses.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Shambling Mound",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978070,
+    "modifiedTime": 1688174978070,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "oMWuOEr8lAilhpCF",
+  "_key": "!items!oMWuOEr8lAilhpCF"
+}

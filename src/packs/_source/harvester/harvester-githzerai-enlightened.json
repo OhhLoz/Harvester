@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Githzerai Enlightened",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Githzerai Enlightened'.",
+  "results": [
+    {
+      "text": "Githzerai Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githzerai Enlightened",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.39P0LTJ4Cr3QCjHu",
+          "brt-result-custom-name": "Githzerai Brain",
+          "brt-result-original-name": "Githzerai Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "39P0LTJ4Cr3QCjHu",
+      "_id": "ujQ2O6zQ4Ez2kduf",
+      "_key": "!tables.results!ouUbBH56bFhvg0gq.ujQ2O6zQ4Ez2kduf"
+    },
+    {
+      "text": "Githzerai Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githzerai Enlightened",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rSbbCXYdTG1GMRHg",
+          "brt-result-custom-name": "Githzerai Heart",
+          "brt-result-original-name": "Githzerai Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "rSbbCXYdTG1GMRHg",
+      "_id": "G79zcKp9MC4EN6hJ",
+      "_key": "!tables.results!ouUbBH56bFhvg0gq.G79zcKp9MC4EN6hJ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Githzerai Enlightened",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561091,
+    "modifiedTime": 1696756756682,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ouUbBH56bFhvg0gq",
+  "sort": 0,
+  "_key": "!tables!ouUbBH56bFhvg0gq"
+}

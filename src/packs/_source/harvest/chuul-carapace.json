@@ -1,0 +1,40 @@
+{
+  "name": "Chuul Carapace",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "The hard chitinous shell of the Chuul. Armorers often use the carapace to craft armor and shields.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Chuul",
+    "quantity": 1,
+    "weight": 40,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974615,
+    "modifiedTime": 1688174974615,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "cTSxpXv03PMvko2r",
+  "_key": "!items!cTSxpXv03PMvko2r"
+}

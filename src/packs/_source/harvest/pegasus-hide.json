@@ -1,0 +1,40 @@
+{
+  "name": "Pegasus Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The pure white hide of a pegasus is known for its durability and resistance to moisture absorption. It is softer than the hide of a typical riding horse and valued by leatherworkers and tailors.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Pegasus",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977629,
+    "modifiedTime": 1688174977629,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "HQs2IRgirpISiDcZ",
+  "_key": "!items!HQs2IRgirpISiDcZ"
+}

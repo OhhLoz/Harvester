@@ -1,0 +1,40 @@
+{
+  "name": "Nalfeshnee Tusk (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+  "system": {
+    "description": {
+      "value": "A nalfeshnee's tusks often protrude from their bottom lip (although some protrude from their bottom lip, and a few have tusks on both). The tusks are solid, curved ivory. They average around 2 to 3 feet long. The smaller tusks make excellent hilts, while longer tusks can be fashioned into their own weapons.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Nalfeshnee",
+    "quantity": 1,
+    "weight": 18,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977265,
+    "modifiedTime": 1688174977265,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "VCCWSIYjtn99HjE5",
+  "_key": "!items!VCCWSIYjtn99HjE5"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Dracohydra Teeth (sack)",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "A dracohydra has rows of sharp, jagged teeth. The teeth can be used to make jewelry, but also make good arrowheads. A sack of dracohydra teeth can produce about 6d10 arrows.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Dracohydra",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975014,
+    "modifiedTime": 1688174975014,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1NYHLfIXcPDoi5kC",
+  "_key": "!items!1NYHLfIXcPDoi5kC"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Babau Horn",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "A demon's horn is strengthened by the fires of the Abyss. The horns are stronger than steel and can be crafted into deadly weapons by expert weaponsmiths.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Babau",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973924,
+    "modifiedTime": 1688174973924,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wqBFsbO2ak5BquRC",
+  "_key": "!items!wqBFsbO2ak5BquRC"
+}

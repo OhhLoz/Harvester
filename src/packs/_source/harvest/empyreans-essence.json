@@ -1,0 +1,40 @@
+{
+  "name": "Empyreans Essence",
+  "type": "loot",
+  "img": "icons/commodities/materials/glass-orb-teal.webp",
+  "system": {
+    "description": {
+      "value": "It is difficult to harvest, but the divine essence of an empyrean may be captured immediately after death. The essence is a swirling vortex of pure emotion, that can be used to empower and bolsters mortals. Requires and enchanted vial. Use: Using an action, the vial can be uncorked, releasing some of the essence into the immediate area. Every friendly creature within 60' becomes more aware and alert, gaining +5 to perception. They also can't be charmed or frightened, and they gain advantage on ability checks and saving throws. This effect lasts until the end of the wielder's next turn. This ability may be used 3 times, after which, all of the essence is gone.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Empyrean",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 6000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975393,
+    "modifiedTime": 1688174975393,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xscnAmQIHaXdmPWt",
+  "_key": "!items!xscnAmQIHaXdmPWt"
+}

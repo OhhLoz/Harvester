@@ -1,0 +1,40 @@
+{
+  "name": "Metallic Peacekeeper Parts",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "When destroyed, the magic holding a metallic peacekeeper together disperses, and the construct falls to pieces. All that remains are several pieces of scrap metal, including cogs, gears and wires. These items can be used by artificers, tinkerers, inventors, smiths and jewelers.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Metallic Peacekeeper",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977061,
+    "modifiedTime": 1688174977061,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "m5dcUm1qhbzyhr1Y",
+  "_key": "!items!m5dcUm1qhbzyhr1Y"
+}

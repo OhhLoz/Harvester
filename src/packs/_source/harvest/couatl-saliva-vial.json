@@ -1,0 +1,40 @@
+{
+  "name": "Couatl Saliva (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Couatl saliva is a clear, sticky liquid with a rainbow sheen. The fluid is believed to have many anesthetic properties, making it prized by alchemists and healers. Proficiency with the poisoner kit may be used for harvesting this saliva. On a successful check, the character harvests enough saliva for a single vial. On a failed check, the character is unable to extract any saliva. If the character fails the check by 5 or more, the character is subjected to the creature's poison. Refining the Poison: Once the saliva is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend an 12 hours and 250gp worth of material to create Couatl Poison (DC 13 Poisoner Kit or Alchemist Supplies check). Couatl Poison: The poison can be used to coat one slashing or piercing weapon or up to three pieces of ammunition. Once applied, the poison retains potency for 1 minute before drying, or until a creature is hit with the poison. Any Medium or smaller creature successfully hit must make a DC 13 Constitution saving throw or become poisoned for 24 hours. Until this poison ends, the target is unconscious. A creature automatically wakes up if they receive damage or if an adjacent creature spends their action to wake them up. The poisons does not work on undead or construct (or any creature with poison immunity). This poison usually sells for 500gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Couatl",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974726,
+    "modifiedTime": 1688174974726,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AILnJI6NgqFMepqs",
+  "_key": "!items!AILnJI6NgqFMepqs"
+}

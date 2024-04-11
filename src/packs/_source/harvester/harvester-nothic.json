@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Nothic",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Nothic'.",
+  "results": [
+    {
+      "text": "Nothic Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nothic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Txwi4XdEteNAvLCy",
+          "brt-result-custom-name": "Nothic Eye",
+          "brt-result-original-name": "Nothic Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "Txwi4XdEteNAvLCy",
+      "_id": "V6xqvcHliazjaMM7",
+      "_key": "!tables.results!tpJR81mlGRqrnHOf.V6xqvcHliazjaMM7"
+    },
+    {
+      "text": "Nothic Claws (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nothic",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rk1QECGdP4RjT8zQ",
+          "brt-result-custom-name": "Nothic Claw",
+          "brt-result-original-name": "Nothic Claws (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "rk1QECGdP4RjT8zQ",
+      "_id": "lWLV3OJ77yAVZ26A",
+      "_key": "!tables.results!tpJR81mlGRqrnHOf.lWLV3OJ77yAVZ26A"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Nothic",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569786,
+    "modifiedTime": 1696756758304,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tpJR81mlGRqrnHOf",
+  "sort": 0,
+  "_key": "!tables!tpJR81mlGRqrnHOf"
+}

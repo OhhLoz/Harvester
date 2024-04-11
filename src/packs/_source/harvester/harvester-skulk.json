@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Skulk",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Skulk'.",
+  "results": [
+    {
+      "text": "Skulk Residue (flask)",
+      "type": 2,
+      "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Skulk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QJRufNNhlyU4tXIW",
+          "brt-result-custom-name": "Skulk Residue (flask)",
+          "brt-result-original-name": "Skulk Residue (flask)",
+          "brt-result-original-icon": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp"
+        }
+      },
+      "documentId": "QJRufNNhlyU4tXIW",
+      "_id": "TO3ku73nZL1uKXzB",
+      "_key": "!tables.results!gd243vECsKMdhnao.TO3ku73nZL1uKXzB"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Skulk",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568722,
+    "modifiedTime": 1696756759948,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gd243vECsKMdhnao",
+  "sort": 0,
+  "_key": "!tables!gd243vECsKMdhnao"
+}

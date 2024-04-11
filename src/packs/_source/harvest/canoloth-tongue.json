@@ -1,0 +1,40 @@
+{
+  "name": "Canoloth Tongue",
+  "type": "loot",
+  "img": "icons/commodities/biological/tongue-red.webp",
+  "system": {
+    "description": {
+      "value": "A canoloth's tongue is a rough, spongy slab of red flesh, about 25 feet long, and covered in sharp barbs. The barbs can be shaved into dust that is useful to alchemists, and the flesh of the tongue can be mashed into pulp, and used for medicinal purposes.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Canoloth",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974454,
+    "modifiedTime": 1688174974454,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "F4PjY50xAfNljJCI",
+  "_key": "!items!F4PjY50xAfNljJCI"
+}

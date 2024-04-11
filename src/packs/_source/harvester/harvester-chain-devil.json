@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Chain Devil",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Chain Devil'.",
+  "results": [
+    {
+      "text": "Chain Devil Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Chain Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.I6i5HK5yShE0VYWB",
+          "brt-result-custom-name": "Chain Devil Eye",
+          "brt-result-original-name": "Chain Devil Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "I6i5HK5yShE0VYWB",
+      "_id": "pjjOx3KMU9YDWCAa",
+      "_key": "!tables.results!tm3W2651vL84hfft.pjjOx3KMU9YDWCAa"
+    },
+    {
+      "text": "Chain Devil's Chains",
+      "type": 2,
+      "img": "icons/commodities/metal/chain-steel.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Chain Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WgM8qD7ATYqJEt6q",
+          "brt-result-custom-name": "Chain Devil's Chains",
+          "brt-result-original-name": "Chain Devil's Chains",
+          "brt-result-original-icon": "icons/commodities/metal/chain-steel.webp"
+        }
+      },
+      "documentId": "WgM8qD7ATYqJEt6q",
+      "_id": "N8vBuzYcUgu4Fl71",
+      "_key": "!tables.results!tm3W2651vL84hfft.N8vBuzYcUgu4Fl71"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Chain Devil",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566061,
+    "modifiedTime": 1696756756026,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tm3W2651vL84hfft",
+  "sort": 0,
+  "_key": "!tables!tm3W2651vL84hfft"
+}

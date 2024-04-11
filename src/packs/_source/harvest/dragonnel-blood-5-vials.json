@@ -1,0 +1,40 @@
+{
+  "name": "Dragonnel Blood (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "As dragonnel are distantly related to dragons, their blood has a trace amount of arcane properties. The blood is still useful to alchemists, healers and spellcasters.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Dragonnel",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975142,
+    "modifiedTime": 1688174975142,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wNpYIqmyBsDDZlug",
+  "_key": "!items!wNpYIqmyBsDDZlug"
+}

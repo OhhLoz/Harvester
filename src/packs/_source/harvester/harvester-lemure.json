@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Lemure",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Lemure'.",
+  "results": [
+    {
+      "text": "Lemure Blubber",
+      "type": 2,
+      "img": "icons/commodities/materials/slime-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Lemure",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.3S5zeUcBG2ddYDpe",
+          "brt-result-custom-name": "Lemure Blubber",
+          "brt-result-original-name": "Lemure Blubber",
+          "brt-result-original-icon": "icons/commodities/materials/slime-white.webp"
+        }
+      },
+      "documentId": "3S5zeUcBG2ddYDpe",
+      "_id": "PCeIpmtvXKEy30ja",
+      "_key": "!tables.results!JaM4y0Emn6UgHVeC.PCeIpmtvXKEy30ja"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Lemure",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561218,
+    "modifiedTime": 1696756757174,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JaM4y0Emn6UgHVeC",
+  "sort": 0,
+  "_key": "!tables!JaM4y0Emn6UgHVeC"
+}

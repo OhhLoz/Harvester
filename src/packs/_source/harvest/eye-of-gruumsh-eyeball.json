@@ -1,0 +1,40 @@
+{
+  "name": "Eye of Gruumsh Eyeball",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "An orc Eye of Gruumsh has a single eye, having sacrificed the other for its deity. This remaining eye has a strong connection to Gruumsh, and radiates a magic aura. Divination wizards and seers value the eye, but it also has uses among other spellcasters and alchemists.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Orc Eye of Gruumsh",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977524,
+    "modifiedTime": 1688174977524,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "0Ivn3tFXkPXQu2ar",
+  "_key": "!items!0Ivn3tFXkPXQu2ar"
+}

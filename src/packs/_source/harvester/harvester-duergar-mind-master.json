@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Duergar Mind Master",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Duergar Mind Master'.",
+  "results": [
+    {
+      "text": "Duergar Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Mind Master",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Ol9KJPGqLu1Txahi",
+          "brt-result-custom-name": "Duergar Pineal Gland",
+          "brt-result-original-name": "Duergar Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "Ol9KJPGqLu1Txahi",
+      "_id": "1uOJL4A9DYCA4Jq1",
+      "_key": "!tables.results!gAJiagv3JkZAYOI2.1uOJL4A9DYCA4Jq1"
+    },
+    {
+      "text": "Duergar Mind Master Mask",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Mind Master",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wC6GfCb0bTmAeozv",
+          "brt-result-custom-name": "Duergar Mind Master Mask",
+          "brt-result-original-name": "Duergar Mind Master Mask",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "wC6GfCb0bTmAeozv",
+      "_id": "4E00WosgMlPbhHEv",
+      "_key": "!tables.results!gAJiagv3JkZAYOI2.4E00WosgMlPbhHEv"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Duergar Mind Master",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568151,
+    "modifiedTime": 1696756756165,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gAJiagv3JkZAYOI2",
+  "sort": 0,
+  "_key": "!tables!gAJiagv3JkZAYOI2"
+}

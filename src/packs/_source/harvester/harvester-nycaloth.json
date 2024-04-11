@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Nycaloth",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Nycaloth'.",
+  "results": [
+    {
+      "text": "Yugoloth Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nycaloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NDaAN4nUiO1zq3ug",
+          "brt-result-custom-name": "Yugoloth Heart",
+          "brt-result-original-name": "Yugoloth Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "NDaAN4nUiO1zq3ug",
+      "_id": "8eutvNif32iZL0Rj",
+      "_key": "!tables.results!bdUddJayQNcw7z1X.8eutvNif32iZL0Rj"
+    },
+    {
+      "text": "Nycaloth Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nycaloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TkDeUvoYXVOg6pwi",
+          "brt-result-custom-name": "Nycaloth Wing",
+          "brt-result-original-name": "Nycaloth Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "TkDeUvoYXVOg6pwi",
+      "_id": "crnRzEYF7ERY77ko",
+      "_key": "!tables.results!bdUddJayQNcw7z1X.crnRzEYF7ERY77ko"
+    },
+    {
+      "text": "Nycaloth Horn (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nycaloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.f6dpSoOpFjAXBp1w",
+          "brt-result-custom-name": "Nycaloth Horn",
+          "brt-result-original-name": "Nycaloth Horn (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "f6dpSoOpFjAXBp1w",
+      "_id": "DXkhV1Lj5ANTwySO",
+      "_key": "!tables.results!bdUddJayQNcw7z1X.DXkhV1Lj5ANTwySO"
+    },
+    {
+      "text": "Yugoloth Ichor (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nycaloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rMotoHjEx2tn3aWn",
+          "brt-result-custom-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "rMotoHjEx2tn3aWn",
+      "_id": "BY9Quj44dZ52dOS3",
+      "_key": "!tables.results!bdUddJayQNcw7z1X.BY9Quj44dZ52dOS3"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Nycaloth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567801,
+    "modifiedTime": 1696756758306,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "bdUddJayQNcw7z1X",
+  "sort": 0,
+  "_key": "!tables!bdUddJayQNcw7z1X"
+}

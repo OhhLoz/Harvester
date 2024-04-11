@@ -1,0 +1,40 @@
+{
+  "name": "Lost Sorrowsworn Scythe (x5)",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The 5 arms of a lost sorrowsworn end in sharp scythes. These scythes can often be harvested and used to make weapons.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Lost Sorrowsworn",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976895,
+    "modifiedTime": 1688174976895,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "PFole9wkuNJvQz5q",
+  "_key": "!items!PFole9wkuNJvQz5q"
+}

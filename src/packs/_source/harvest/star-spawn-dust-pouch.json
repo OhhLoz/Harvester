@@ -1,0 +1,40 @@
+{
+  "name": "Star Spawn Dust (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The skin of star spawn is covered in a translucent dust. The dust begins to evaporate once the creature is killed and must be harvested quickly. The dust swirls with arcane energy.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Star Spawn Seer",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978257,
+    "modifiedTime": 1688174978257,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "kCKAL1vxZeNsltaB",
+  "_key": "!items!kCKAL1vxZeNsltaB"
+}

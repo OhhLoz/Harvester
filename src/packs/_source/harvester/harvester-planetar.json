@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Planetar",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Planetar'.",
+  "results": [
+    {
+      "text": "Planetar Bone",
+      "type": 2,
+      "img": "icons/commodities/bones/bones-stack-yellow.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Planetar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HHOH9D2Uye0R7eBz",
+          "brt-result-custom-name": "Planetar Bone",
+          "brt-result-original-name": "Planetar Bone",
+          "brt-result-original-icon": "icons/commodities/bones/bones-stack-yellow.webp"
+        }
+      },
+      "documentId": "HHOH9D2Uye0R7eBz",
+      "_id": "OADtz0AVFB9aZUlz",
+      "_key": "!tables.results!HTijz8ayh3F0fWoF.OADtz0AVFB9aZUlz"
+    },
+    {
+      "text": "Planetar Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Planetar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RCml6AmQSlBCUVo1",
+          "brt-result-custom-name": "Planetar Blood vial",
+          "brt-result-original-name": "Planetar Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "RCml6AmQSlBCUVo1",
+      "_id": "gadq3DRJMPGWcdBT",
+      "_key": "!tables.results!HTijz8ayh3F0fWoF.gadq3DRJMPGWcdBT"
+    },
+    {
+      "text": "Planetar Ear (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Planetar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cduhfIVHUHMZcxm6",
+          "brt-result-custom-name": "Planetar Ear",
+          "brt-result-original-name": "Planetar Ear (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "cduhfIVHUHMZcxm6",
+      "_id": "3Ucuh2Kg0iabaY1a",
+      "_key": "!tables.results!HTijz8ayh3F0fWoF.3Ucuh2Kg0iabaY1a"
+    },
+    {
+      "text": "Planetar Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Planetar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hjHSabr2qOPSgBsa",
+          "brt-result-custom-name": "Planetar Wing",
+          "brt-result-original-name": "Planetar Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "hjHSabr2qOPSgBsa",
+      "_id": "Bdag2xDD94PRyJ3j",
+      "_key": "!tables.results!HTijz8ayh3F0fWoF.Bdag2xDD94PRyJ3j"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Planetar",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565874,
+    "modifiedTime": 1696756759088,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "HTijz8ayh3F0fWoF",
+  "sort": 0,
+  "_key": "!tables!HTijz8ayh3F0fWoF"
+}

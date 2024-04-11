@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Barghest",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Barghest'.",
+  "results": [
+    {
+      "text": "Barghest Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barghest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Burdju9Q3GeuFyMz",
+          "brt-result-custom-name": "Barghest Blood vial",
+          "brt-result-original-name": "Barghest Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Burdju9Q3GeuFyMz",
+      "_id": "P3byyNDBmRi8mtzx",
+      "_key": "!tables.results!Ffb9z21ew5RJc5pA.P3byyNDBmRi8mtzx"
+    },
+    {
+      "text": "Barghest Fang (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/teeth-pointed-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barghest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.S1DWytIqRCBtDyNX",
+          "brt-result-custom-name": "Barghest Fang",
+          "brt-result-original-name": "Barghest Fang (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/teeth-pointed-white.webp"
+        }
+      },
+      "documentId": "S1DWytIqRCBtDyNX",
+      "_id": "jfcKpGt5qVCgfFTu",
+      "_key": "!tables.results!Ffb9z21ew5RJc5pA.jfcKpGt5qVCgfFTu"
+    },
+    {
+      "text": "Barghest Fur (small bag)",
+      "type": 2,
+      "img": "icons/containers/bags/pack-canvas-white-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barghest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xlxoiJTmqdvqMB8d",
+          "brt-result-custom-name": "Barghest Fur (small bag)",
+          "brt-result-original-name": "Barghest Fur (small bag)",
+          "brt-result-original-icon": "icons/containers/bags/pack-canvas-white-brown.webp"
+        }
+      },
+      "documentId": "xlxoiJTmqdvqMB8d",
+      "_id": "HhpXhlSXLAkHCAVf",
+      "_key": "!tables.results!Ffb9z21ew5RJc5pA.HhpXhlSXLAkHCAVf"
+    },
+    {
+      "text": "Barghest Stomach Acid (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Barghest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yQhykBGbRL3YUzWZ",
+          "brt-result-custom-name": "Barghest Stomach Acid (vial)",
+          "brt-result-original-name": "Barghest Stomach Acid (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "yQhykBGbRL3YUzWZ",
+      "_id": "gvwG8q4HRqQmiOyV",
+      "_key": "!tables.results!Ffb9z21ew5RJc5pA.gvwG8q4HRqQmiOyV"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Barghest",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564096,
+    "modifiedTime": 1696756755940,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Ffb9z21ew5RJc5pA",
+  "sort": 0,
+  "_key": "!tables!Ffb9z21ew5RJc5pA"
+}

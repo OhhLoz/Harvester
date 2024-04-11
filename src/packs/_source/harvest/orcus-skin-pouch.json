@@ -1,0 +1,40 @@
+{
+  "name": "Orcus Skin (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Orcus has rotting, dry skin, similar to that of a corpse. It's possible to delicately peel off several strips of desiccated skin flakes. These pieces of skin can be used in dark rituals to create undead. Alternatively, it's believed that the flakes can also be used to create elixirs that halt the undead process from bites and injuries.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Orcus",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977574,
+    "modifiedTime": 1688174977574,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FXBrPrKHISUN6KpO",
+  "_key": "!items!FXBrPrKHISUN6KpO"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Kraken Eye x2",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "A kraken is an old and ancient creature, believed to have been around since the dawn of time. Their eyes hold the secrets of the deep, many of which are long forgotten. Spellcasters can tap into the magic within those eyes, often revealing useful information about long forgotten creatures, ships and treasures.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Kraken",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976767,
+    "modifiedTime": 1688174976767,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "I0issEb7H3g8FIAC",
+  "_key": "!items!I0issEb7H3g8FIAC"
+}

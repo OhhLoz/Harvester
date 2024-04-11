@@ -1,0 +1,40 @@
+{
+  "name": "Manticore Teeth (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A manticore has rows of sharp, pointed teeth that they use to tear into their victims. Prying out the teeth can be difficult, and often results in chipping or cracking the teeth. The teeth can be used in jewelry and decorations. They are also used to line blades to make serrated edges and saws.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Manticore",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976929,
+    "modifiedTime": 1688174976929,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3ZmWdzQvVJXu1xTy",
+  "_key": "!items!3ZmWdzQvVJXu1xTy"
+}

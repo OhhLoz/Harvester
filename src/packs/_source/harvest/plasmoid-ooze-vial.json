@@ -1,0 +1,40 @@
+{
+  "name": "Plasmoid Ooze (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The clear-blue ooze of a plasmoid is valued for its high electrical conductivity.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Plasmoid Warrior",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977712,
+    "modifiedTime": 1688174977712,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tzo4bSYrNcqJIO2w",
+  "_key": "!items!tzo4bSYrNcqJIO2w"
+}

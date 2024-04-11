@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Gas Spore",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gas Spore'.",
+  "results": [
+    {
+      "text": "Gas Spore Spores (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gas Spore",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7011aPIsJZOTkF1i",
+          "brt-result-custom-name": "Gas Spore Spores (pouch)",
+          "brt-result-original-name": "Gas Spore Spores (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "7011aPIsJZOTkF1i",
+      "_id": "MPmbJrqudzxVuNHR",
+      "_key": "!tables.results!ult9lKOEk3BtFpuE.MPmbJrqudzxVuNHR"
+    },
+    {
+      "text": "Gas Spore Gas (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gas Spore",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lPGan12OkSKllBIU",
+          "brt-result-custom-name": "Gas Spore Gas (vial)",
+          "brt-result-original-name": "Gas Spore Gas (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "lPGan12OkSKllBIU",
+      "_id": "FoEKid91M9hA6S1a",
+      "_key": "!tables.results!ult9lKOEk3BtFpuE.FoEKid91M9hA6S1a"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Gas Spore",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562230,
+    "modifiedTime": 1696756756310,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ult9lKOEk3BtFpuE",
+  "sort": 0,
+  "_key": "!tables!ult9lKOEk3BtFpuE"
+}

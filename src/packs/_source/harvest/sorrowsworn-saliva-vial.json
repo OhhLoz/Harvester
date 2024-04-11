@@ -1,0 +1,40 @@
+{
+  "name": "Sorrowsworn Saliva (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The saliva of sorrowsworn is a thick, sticky, transparent fluid. The saliva is believed to be an ingredient in elixirs that treat depression. It is also studied by anyone interested in the Shadowfell.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Hungry Sorrowsworn",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976537,
+    "modifiedTime": 1688174976537,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wz26Dyzl5BcE210K",
+  "_key": "!items!wz26Dyzl5BcE210K"
+}

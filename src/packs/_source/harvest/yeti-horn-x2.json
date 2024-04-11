@@ -1,0 +1,40 @@
+{
+  "name": "Yeti Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "A yeti has two pointy, curved, dark blue horns that extend backward from the sides of its forehead, just above its ears. The horns always seem to be cold, even after they are removed from the yeti. Some weaponsmiths can carve the horns into curved daggers. Others value the item because they make ideal drinking horns in warmer climates, keeping liquid contents at a cool temperature.",
+      "chat": "12",
+      "unidentified": "Nature"
+    },
+    "source": "Yeti",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978923,
+    "modifiedTime": 1688174978923,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "kDv23DfpT8WiZPaz",
+  "_key": "!items!kDv23DfpT8WiZPaz"
+}

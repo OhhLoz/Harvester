@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Blue Abishai",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Blue Abishai'.",
+  "results": [
+    {
+      "text": "Blue Abishai Scales",
+      "type": 2,
+      "img": "icons/commodities/leather/scales-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Blue Abishai",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VEPPsPQ94Q4qRkR9",
+          "brt-result-custom-name": "Blue Abishai Scales",
+          "brt-result-original-name": "Blue Abishai Scales",
+          "brt-result-original-icon": "icons/commodities/leather/scales-brown.webp"
+        }
+      },
+      "documentId": "VEPPsPQ94Q4qRkR9",
+      "_id": "Alp8t9apundC0BEn",
+      "_key": "!tables.results!gulYfahQAQZvrNgN.Alp8t9apundC0BEn"
+    },
+    {
+      "text": "Blue Abishai Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Blue Abishai",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XocSOTJBvYRDn9CH",
+          "brt-result-custom-name": "Blue Abishai Wing",
+          "brt-result-original-name": "Blue Abishai Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "XocSOTJBvYRDn9CH",
+      "_id": "NNV0ERarpGAAjUOJ",
+      "_key": "!tables.results!gulYfahQAQZvrNgN.NNV0ERarpGAAjUOJ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Blue Abishai",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756570589,
+    "modifiedTime": 1696756755965,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gulYfahQAQZvrNgN",
+  "sort": 0,
+  "_key": "!tables!gulYfahQAQZvrNgN"
+}

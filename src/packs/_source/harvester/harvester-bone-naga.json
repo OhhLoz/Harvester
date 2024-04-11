@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Bone Naga",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bone Naga'.",
+  "results": [
+    {
+      "text": "Naga Fang (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/teeth-pointed-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Bone Naga",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LtpZVmh6sbZfH7I6",
+          "brt-result-custom-name": "Naga Fang",
+          "brt-result-original-name": "Naga Fang (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/teeth-pointed-white.webp"
+        }
+      },
+      "documentId": "LtpZVmh6sbZfH7I6",
+      "_id": "I39VRciNglYnKBUL",
+      "_key": "!tables.results!xxKQlR1PZCQnDE5V.I39VRciNglYnKBUL"
+    },
+    {
+      "text": "Naga Spine",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-spine-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Bone Naga",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OGwa1uYjDZOysEpL",
+          "brt-result-custom-name": "Naga Spine",
+          "brt-result-original-name": "Naga Spine",
+          "brt-result-original-icon": "icons/commodities/bones/bone-spine-white.webp"
+        }
+      },
+      "documentId": "OGwa1uYjDZOysEpL",
+      "_id": "Haml7JT5W57qTXWA",
+      "_key": "!tables.results!xxKQlR1PZCQnDE5V.Haml7JT5W57qTXWA"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Bone Naga",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567386,
+    "modifiedTime": 1696756755976,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xxKQlR1PZCQnDE5V",
+  "sort": 0,
+  "_key": "!tables!xxKQlR1PZCQnDE5V"
+}

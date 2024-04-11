@@ -1,0 +1,40 @@
+{
+  "name": "Moloch's Horns (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "The horns of Moloch are strong as steel, and can only be reshaped using magical means (either by spellcasters, or by using enchanted tools). They can also be ground into a fine dust, which can be refined and used to strengthen weapons and armor.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Moloch",
+    "quantity": 1,
+    "weight": 35,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977157,
+    "modifiedTime": 1688174977157,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "SmlLNPJzrT9gTuQw",
+  "_key": "!items!SmlLNPJzrT9gTuQw"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Kuo-Toa Eyes (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "A kuo-toa's eyes are large, bulbous spheres. The eyes are edible, and often used as an ingredient in many coastal societies. However, many communities pay for the eyes as proof of a bounty being fulfilled.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Kuo-toa",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 8,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976794,
+    "modifiedTime": 1688174976794,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ScRv8EVkvwi3ZjjN",
+  "_key": "!items!ScRv8EVkvwi3ZjjN"
+}

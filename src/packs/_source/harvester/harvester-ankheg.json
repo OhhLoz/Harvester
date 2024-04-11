@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Ankheg",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ankheg'.",
+  "results": [
+    {
+      "text": "Ankheg Bile (2 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ankheg",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CguDTadF9uDMnObh",
+          "brt-result-custom-name": "Ankheg Bile vial",
+          "brt-result-original-name": "Ankheg Bile (2 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "CguDTadF9uDMnObh",
+      "_id": "JZRJ3HxJTjb4dXcZ",
+      "_key": "!tables.results!epxM0ptCmde2Ihcc.JZRJ3HxJTjb4dXcZ"
+    },
+    {
+      "text": "Ankheg Chitin",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ankheg",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PFDXtZ6nnEbmGiFX",
+          "brt-result-custom-name": "Ankheg Chitin",
+          "brt-result-original-name": "Ankheg Chitin",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "PFDXtZ6nnEbmGiFX",
+      "_id": "rpu6ZMF9l3K9dEDj",
+      "_key": "!tables.results!epxM0ptCmde2Ihcc.rpu6ZMF9l3K9dEDj"
+    },
+    {
+      "text": "Ankheg Stomach",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-stomach.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Ankheg",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VnzlNf5dZ7Wu5HzA",
+          "brt-result-custom-name": "Ankheg Stomach",
+          "brt-result-original-name": "Ankheg Stomach",
+          "brt-result-original-icon": "icons/commodities/biological/organ-stomach.webp"
+        }
+      },
+      "documentId": "VnzlNf5dZ7Wu5HzA",
+      "_id": "cNNydqXu8sxo5UEB",
+      "_key": "!tables.results!epxM0ptCmde2Ihcc.cNNydqXu8sxo5UEB"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Ankheg",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564442,
+    "modifiedTime": 1696756755891,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "epxM0ptCmde2Ihcc",
+  "sort": 0,
+  "_key": "!tables!epxM0ptCmde2Ihcc"
+}

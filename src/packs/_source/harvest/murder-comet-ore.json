@@ -1,0 +1,40 @@
+{
+  "name": "Murder Comet Ore",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The stone that makes up a murder comet goes through a metamorphosis as it flies through Wildspace over the decades. The rock develops veins of a unique white-silver ore. This ore can be smelted, purified and then fashioned into jewelry and weapons. The ore in a single murder comet can be used to create a dagger or shortsword (more ore is required for larger weapons)",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Murder Comet",
+    "quantity": 1,
+    "weight": 25,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977221,
+    "modifiedTime": 1688174977221,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "RM3jF2Szu3POg5m7",
+  "_key": "!items!RM3jF2Szu3POg5m7"
+}

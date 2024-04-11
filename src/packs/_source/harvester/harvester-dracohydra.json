@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Dracohydra",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dracohydra'.",
+  "results": [
+    {
+      "text": "Dracohydra Teeth (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dracohydra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1NYHLfIXcPDoi5kC",
+          "brt-result-custom-name": "Dracohydra Teeth (sack)",
+          "brt-result-original-name": "Dracohydra Teeth (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "1NYHLfIXcPDoi5kC",
+      "_id": "b8vKzGLzQky5srHS",
+      "_key": "!tables.results!WOiO6MoKUhaY4KcI.b8vKzGLzQky5srHS"
+    },
+    {
+      "text": "Dracohydra Head",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dracohydra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZuJyDelHM3Hf9njs",
+          "brt-result-custom-name": "Dracohydra Head",
+          "brt-result-original-name": "Dracohydra Head",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "ZuJyDelHM3Hf9njs",
+      "_id": "tB7dTylVw6isrvAj",
+      "_key": "!tables.results!WOiO6MoKUhaY4KcI.tB7dTylVw6isrvAj"
+    },
+    {
+      "text": "Dracohydra Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dracohydra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.cabdLt8606u2AGu9",
+          "brt-result-custom-name": "Dracohydra Blood vial",
+          "brt-result-original-name": "Dracohydra Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "cabdLt8606u2AGu9",
+      "_id": "lTimxAVVRZn8rkro",
+      "_key": "!tables.results!WOiO6MoKUhaY4KcI.lTimxAVVRZn8rkro"
+    },
+    {
+      "text": "Dracohydra Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dracohydra",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kJgE55v4nbeXHBHV",
+          "brt-result-custom-name": "Dracohydra Hide",
+          "brt-result-original-name": "Dracohydra Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "kJgE55v4nbeXHBHV",
+      "_id": "i4yVr04YLGMjnxSN",
+      "_key": "!tables.results!WOiO6MoKUhaY4KcI.i4yVr04YLGMjnxSN"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Dracohydra",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560590,
+    "modifiedTime": 1696756756119,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "WOiO6MoKUhaY4KcI",
+  "sort": 0,
+  "_key": "!tables!WOiO6MoKUhaY4KcI"
+}

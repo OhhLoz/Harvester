@@ -1,0 +1,40 @@
+{
+  "name": "Succubus/Incubus Saliva",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-green.webp",
+  "system": {
+    "description": {
+      "value": "The kiss of a Succubus/Incubus is known to be deadly. Their saliva isn't poisonous, but provides a strong telepathic connection to the Succubus/Incubus and allows it to drain a creature's life essence. The saliva is valued by alchemists and anyone studying telepathy.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Succubus",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 7,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978360,
+    "modifiedTime": 1688174978360,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "98GbPI9Qkd57l4lV",
+  "_key": "!items!98GbPI9Qkd57l4lV"
+}

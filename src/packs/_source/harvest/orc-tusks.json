@@ -1,0 +1,40 @@
+{
+  "name": "Orc Tusks",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+  "system": {
+    "description": {
+      "value": "Orcs have a set of lower canines that resembled boar tusks. While these tusks have little uses, except for ornamentation and trophies, they can be used to collect the bounty for an orc.",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Orc Hand of Yurtrus",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977540,
+    "modifiedTime": 1688174977540,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "qxnQAxo9ltiXcrBD",
+  "_key": "!items!qxnQAxo9ltiXcrBD"
+}

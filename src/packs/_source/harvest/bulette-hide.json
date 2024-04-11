@@ -1,0 +1,40 @@
+{
+  "name": "Bulette Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A bulette's thick hide sweats with a slimy, slightly acidic chemical. Upon death, this chemical hardens the hide, making it prized by those that craft protective armor and equipment.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Bulette",
+    "quantity": 1,
+    "weight": 50,
+    "price": {
+      "value": 60,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974372,
+    "modifiedTime": 1688174974372,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "z4CMz1yGMR74NoWo",
+  "_key": "!items!z4CMz1yGMR74NoWo"
+}

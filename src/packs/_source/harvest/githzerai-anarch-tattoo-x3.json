@@ -1,0 +1,40 @@
+{
+  "name": "Githzerai Anarch Tattoo (x3)",
+  "type": "loot",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "Ritualistic tattoos are common among githzerai, and an Anarchs flesh are covered with symbols that resonate with psionic power. Peeling the skin off intact can be difficult, but there are those that will pay well for the tattoos.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Githzerai Anarch",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976048,
+    "modifiedTime": 1688174976048,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3PPwYaHssSvAYKCs",
+  "_key": "!items!3PPwYaHssSvAYKCs"
+}

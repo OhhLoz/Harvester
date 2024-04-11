@@ -1,0 +1,40 @@
+{
+  "name": "Reverant's Spark of Revenge (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A revenant's body is just a vessel for a soul craving revenge. When the body is killed, the soul flees to seek out another vessel, sometimes leaving behind a spark of dark necrotic energy that resonates with a deep hatred. Finding this spark requires a short arcane ritual, which isn't always successful. Requires an enchanted flask/vial. Use: A spellcaster can spend a minute performing an arcane ritual with this item. Once the ritual is complete, for the next hour, the spellcaster will know the distance and direction of any creature(s) the revenant seeks revenge on (as long as the creature is on the same plane of existence). If a tracked creature dies, the spellcaster will know immediately. The spellcaster can repeat the ritual with the same spark after an hour. When the revenant finds a new vessel, the revenant will be aware of the distance and direction of this spark, regardless of whether the ritual was performed or not, and will kill to get it back.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Revenant",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977872,
+    "modifiedTime": 1688174977872,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "irPWfClvuM1uWgkK",
+  "_key": "!items!irPWfClvuM1uWgkK"
+}

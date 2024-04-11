@@ -1,0 +1,40 @@
+{
+  "name": "Graz'zt's Tongue",
+  "type": "loot",
+  "img": "icons/commodities/biological/tongue-red.webp",
+  "system": {
+    "description": {
+      "value": "Graz'zt's tongue is a slab of spongy, red flesh, that hardens upon the creature's death. The tongue can be used by alchemists to create potions of persuasion and charm. Use: Rumor has it that a bard who holds the tongue (even if dried out, and preserved), gains a persuasive gift of gab. When performing to a crowd, a creature that holds the tongue will get a +2 to their performance check.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Graz'zt",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976210,
+    "modifiedTime": 1688174976210,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "qZoI0ZW2RpuB6WWk",
+  "_key": "!items!qZoI0ZW2RpuB6WWk"
+}

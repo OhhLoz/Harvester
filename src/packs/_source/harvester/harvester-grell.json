@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Grell",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Grell'.",
+  "results": [
+    {
+      "text": "Grell Poison (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Grell",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Xn1ieziWqf32BcIf",
+          "brt-result-custom-name": "Grell Poison (vial)",
+          "brt-result-original-name": "Grell Poison (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Xn1ieziWqf32BcIf",
+      "_id": "0JaZRkYSkCwtDj5S",
+      "_key": "!tables.results!xV8K7VrM4KRsZEDM.0JaZRkYSkCwtDj5S"
+    },
+    {
+      "text": "Grell Tentacle (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Grell",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.rkrvVJ7YJIqyHD0e",
+          "brt-result-custom-name": "Grell Tentacle",
+          "brt-result-original-name": "Grell Tentacle (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "rkrvVJ7YJIqyHD0e",
+      "_id": "iHZ3x8W2AR9GOLQ5",
+      "_key": "!tables.results!xV8K7VrM4KRsZEDM.iHZ3x8W2AR9GOLQ5"
+    },
+    {
+      "text": "Grell Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Grell",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zvGgnHQCbi6tva1j",
+          "brt-result-custom-name": "Grell Hide",
+          "brt-result-original-name": "Grell Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "zvGgnHQCbi6tva1j",
+      "_id": "6pJCSLMy3BJZ4tCR",
+      "_key": "!tables.results!xV8K7VrM4KRsZEDM.6pJCSLMy3BJZ4tCR"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Grell",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756572676,
+    "modifiedTime": 1696756756726,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xV8K7VrM4KRsZEDM",
+  "sort": 0,
+  "_key": "!tables!xV8K7VrM4KRsZEDM"
+}

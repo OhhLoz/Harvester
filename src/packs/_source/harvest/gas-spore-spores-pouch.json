@@ -1,0 +1,40 @@
+{
+  "name": "Gas Spore Spores (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "These spores disperse quickly and must be harvested with some haste. They are light, white balls about half a millimeter wide that float through the air. Dwarves and underground dwellers value the spores, but others may find them useful as well.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Gas Spore",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975706,
+    "modifiedTime": 1688174975706,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "7011aPIsJZOTkF1i",
+  "_key": "!items!7011aPIsJZOTkF1i"
+}

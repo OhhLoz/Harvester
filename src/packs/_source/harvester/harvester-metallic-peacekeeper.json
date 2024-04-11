@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Metallic Peacekeeper",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Metallic Peacekeeper'.",
+  "results": [
+    {
+      "text": "Metallic Peacekeeper Parts",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Metallic Peacekeeper",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.m5dcUm1qhbzyhr1Y",
+          "brt-result-custom-name": "Metallic Peacekeeper Parts",
+          "brt-result-original-name": "Metallic Peacekeeper Parts",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "m5dcUm1qhbzyhr1Y",
+      "_id": "VLxXprkpWk8wNo5u",
+      "_key": "!tables.results!aCgTzLqC4a6f7RzW.VLxXprkpWk8wNo5u"
+    },
+    {
+      "text": "Metallic Peacekeeper Mist",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Metallic Peacekeeper",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oICXZZ8mS1KC2OQs",
+          "brt-result-custom-name": "Metallic Peacekeeper Mist",
+          "brt-result-original-name": "Metallic Peacekeeper Mist",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "oICXZZ8mS1KC2OQs",
+      "_id": "tCnmgcj8AASQp2AR",
+      "_key": "!tables.results!aCgTzLqC4a6f7RzW.tCnmgcj8AASQp2AR"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Metallic Peacekeeper",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756582087,
+    "modifiedTime": 1696756757674,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "aCgTzLqC4a6f7RzW",
+  "sort": 0,
+  "_key": "!tables!aCgTzLqC4a6f7RzW"
+}

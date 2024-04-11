@@ -1,0 +1,40 @@
+{
+  "name": "Axe Beak Beak",
+  "type": "loot",
+  "img": "icons/commodities/bones/beak-hooked-red.webp",
+  "system": {
+    "description": {
+      "value": "An axe beak's beak is a hard chitinous snout covered in a layer of keratin. In many breeds, the beak is shaped like the head of an axe. The beak is often used to make tools and weapons.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Axe Beak",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973875,
+    "modifiedTime": 1688174973875,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3ZvyLNGxmzoNkkyX",
+  "_key": "!items!3ZvyLNGxmzoNkkyX"
+}

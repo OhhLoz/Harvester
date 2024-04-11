@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Hellfire Engine",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hellfire Engine'.",
+  "results": [
+    {
+      "text": "Hellfire Engine Scrap Metal",
+      "type": 2,
+      "img": "icons/commodities/metal/barstock-broken-steel.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Hellfire Engine",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AIfmauJzlqPfVr28",
+          "brt-result-custom-name": "Hellfire Engine Scrap Metal",
+          "brt-result-original-name": "Hellfire Engine Scrap Metal",
+          "brt-result-original-icon": "icons/commodities/metal/barstock-broken-steel.webp"
+        }
+      },
+      "documentId": "AIfmauJzlqPfVr28",
+      "_id": "XYyIEqP9Iux6P9z1",
+      "_key": "!tables.results!6NHCAPnJMjBVk3N5.XYyIEqP9Iux6P9z1"
+    },
+    {
+      "text": "Hellfire Engine Arcane Gunpowder",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Hellfire Engine",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TrBGHfjK2u6SYJou",
+          "brt-result-custom-name": "Hellfire Engine Arcane Gunpowder",
+          "brt-result-original-name": "Hellfire Engine Arcane Gunpowder",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "TrBGHfjK2u6SYJou",
+      "_id": "de0mf2JwLeBkWPrw",
+      "_key": "!tables.results!6NHCAPnJMjBVk3N5.de0mf2JwLeBkWPrw"
+    },
+    {
+      "text": "Hellfire Engine Core",
+      "type": 2,
+      "img": "icons/commodities/gems/pearl-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Hellfire Engine",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.f5Tqpxn3GT7ZDIRT",
+          "brt-result-custom-name": "Hellfire Engine Core",
+          "brt-result-original-name": "Hellfire Engine Core",
+          "brt-result-original-icon": "icons/commodities/gems/pearl-brown-red.webp"
+        }
+      },
+      "documentId": "f5Tqpxn3GT7ZDIRT",
+      "_id": "YiGqwPsNJIliD0Zj",
+      "_key": "!tables.results!6NHCAPnJMjBVk3N5.YiGqwPsNJIliD0Zj"
+    },
+    {
+      "text": "Hellfire Engine Lightning Coil",
+      "type": 2,
+      "img": "icons/commodities/tech/coil-steel.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Hellfire Engine",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lGd4JggyDtT41tFm",
+          "brt-result-custom-name": "Hellfire Engine Lightning Coil",
+          "brt-result-original-name": "Hellfire Engine Lightning Coil",
+          "brt-result-original-icon": "icons/commodities/tech/coil-steel.webp"
+        }
+      },
+      "documentId": "lGd4JggyDtT41tFm",
+      "_id": "V2eUjTNuwkhpBVmo",
+      "_key": "!tables.results!6NHCAPnJMjBVk3N5.V2eUjTNuwkhpBVmo"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Hellfire Engine",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563371,
+    "modifiedTime": 1696756756755,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "6NHCAPnJMjBVk3N5",
+  "sort": 0,
+  "_key": "!tables!6NHCAPnJMjBVk3N5"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Corpse Flower Petals (sack)",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "The flowers of a Corpse Flower begin as red buds, but blossom into large yellow petals with red tips. When these petals reach full bloom, they can be harvested and used in various potions.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Corpse Flower",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 300,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974709,
+    "modifiedTime": 1688174974709,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "oleQM71OuASqvt0i",
+  "_key": "!items!oleQM71OuASqvt0i"
+}

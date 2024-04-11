@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Sword Wraith Commander",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Sword Wraith Commander'.",
+  "results": [
+    {
+      "text": "Wraith Dust",
+      "type": 2,
+      "img": "icons/commodities/materials/bowl-powder-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Sword Wraith Commander",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hrlGKQOEVBkyqwnS",
+          "brt-result-custom-name": "Wraith Dust",
+          "brt-result-original-name": "Wraith Dust",
+          "brt-result-original-icon": "icons/commodities/materials/bowl-powder-gold.webp"
+        }
+      },
+      "documentId": "hrlGKQOEVBkyqwnS",
+      "_id": "5S67E5bnCdgr9kAa",
+      "_key": "!tables.results!LZlThYtBXDd0AZgT.5S67E5bnCdgr9kAa"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Sword Wraith Commander",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756580284,
+    "modifiedTime": 1696756761079,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "LZlThYtBXDd0AZgT",
+  "sort": 0,
+  "_key": "!tables!LZlThYtBXDd0AZgT"
+}

@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Yeenoghu",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Yeenoghu'.",
+  "results": [
+    {
+      "text": "Yeenoghu Teeth (sack)",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Yeenoghu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FdOBi35P32zmq4XP",
+          "brt-result-custom-name": "Yeenoghu Teeth (sack)",
+          "brt-result-original-name": "Yeenoghu Teeth (sack)",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "FdOBi35P32zmq4XP",
+      "_id": "ZmynBW7RAZzX24sV",
+      "_key": "!tables.results!CyxeN4niXrR5OSQy.ZmynBW7RAZzX24sV"
+    },
+    {
+      "text": "Yeenoghu Canine (x2)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Yeenoghu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HfJVAxti6smzskfb",
+          "brt-result-custom-name": "Yeenoghu Canine",
+          "brt-result-original-name": "Yeenoghu Canine (x2)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "HfJVAxti6smzskfb",
+      "_id": "dKlhqRYfIxCog35C",
+      "_key": "!tables.results!CyxeN4niXrR5OSQy.dKlhqRYfIxCog35C"
+    },
+    {
+      "text": "Yeenoghu Saliva (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Yeenoghu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.nsUiSzjvBkaqh1zB",
+          "brt-result-custom-name": "Yeenoghu Saliva vial",
+          "brt-result-original-name": "Yeenoghu Saliva (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "nsUiSzjvBkaqh1zB",
+      "_id": "m0JCrdRrdS8Naowo",
+      "_key": "!tables.results!CyxeN4niXrR5OSQy.m0JCrdRrdS8Naowo"
+    },
+    {
+      "text": "Yeenoghu Amygdala",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Yeenoghu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wdu1Gbkh3rcT8LE2",
+          "brt-result-custom-name": "Yeenoghu Amygdala",
+          "brt-result-original-name": "Yeenoghu Amygdala",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "wdu1Gbkh3rcT8LE2",
+      "_id": "xkr6UgqeTVLmngIr",
+      "_key": "!tables.results!CyxeN4niXrR5OSQy.xkr6UgqeTVLmngIr"
+    },
+    {
+      "text": "Yeenoghu Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Yeenoghu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zREWER7266EqVq3B",
+          "brt-result-custom-name": "Yeenoghu Hide",
+          "brt-result-original-name": "Yeenoghu Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "zREWER7266EqVq3B",
+      "_id": "10VrABtx9v17Os3E",
+      "_key": "!tables.results!CyxeN4niXrR5OSQy.10VrABtx9v17Os3E"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Yeenoghu",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565402,
+    "modifiedTime": 1696756762265,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "CyxeN4niXrR5OSQy",
+  "sort": 0,
+  "_key": "!tables!CyxeN4niXrR5OSQy"
+}

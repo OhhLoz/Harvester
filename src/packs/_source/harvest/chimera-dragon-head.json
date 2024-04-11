@@ -1,0 +1,40 @@
+{
+  "name": "Chimera Dragon Head",
+  "type": "loot",
+  "img": "icons/commodities/bones/skull-tusked-grey.webp",
+  "system": {
+    "description": {
+      "value": "One of the chimera's three heads. The head is a prized trophy, but contains valuable items like teeth, scales and fire glands. The teeth and scales can be used in jewelry and decorations. The glands are cherished by alchemists and magic users.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Chimera",
+    "quantity": 1,
+    "weight": 25,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974549,
+    "modifiedTime": 1688174974549,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "RjJc4EYkSYAiCQhX",
+  "_key": "!items!RjJc4EYkSYAiCQhX"
+}

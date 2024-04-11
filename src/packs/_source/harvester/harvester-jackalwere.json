@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Jackalwere",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Jackalwere'.",
+  "results": [
+    {
+      "text": "Jackal Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Jackalwere",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.r3UV4vdxapUtuFYL",
+          "brt-result-custom-name": "Jackal Hide",
+          "brt-result-original-name": "Jackal Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "r3UV4vdxapUtuFYL",
+      "_id": "pXCUnmgKORNI19dZ",
+      "_key": "!tables.results!gROSqf5vtOiFTkfX.pXCUnmgKORNI19dZ"
+    },
+    {
+      "text": "Jackalwere Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Jackalwere",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.sCXQpqfGsgqVUkLg",
+          "brt-result-custom-name": "Jackalwere Heart",
+          "brt-result-original-name": "Jackalwere Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "sCXQpqfGsgqVUkLg",
+      "_id": "1WvPH7lXNOxaXE6H",
+      "_key": "!tables.results!gROSqf5vtOiFTkfX.1WvPH7lXNOxaXE6H"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Jackalwere",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756585575,
+    "modifiedTime": 1696756757144,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gROSqf5vtOiFTkfX",
+  "sort": 0,
+  "_key": "!tables!gROSqf5vtOiFTkfX"
+}

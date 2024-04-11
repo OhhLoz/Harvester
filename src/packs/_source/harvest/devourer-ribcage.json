@@ -1,0 +1,40 @@
+{
+  "name": "Devourer Ribcage",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The iron-like rungs of the devourers ribcage, used to imprison souls, ring with dark arcane energy. The bones may be used to make weapons and tools, however, a skilled artificer may be able to retain the dark magic and create powerful armor.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Devourer",
+    "quantity": 1,
+    "weight": 35,
+    "price": {
+      "value": 560,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974925,
+    "modifiedTime": 1688174974925,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "SitU1G2cezMQT16B",
+  "_key": "!items!SitU1G2cezMQT16B"
+}

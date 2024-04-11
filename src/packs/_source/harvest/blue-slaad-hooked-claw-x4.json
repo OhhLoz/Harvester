@@ -1,0 +1,40 @@
+{
+  "name": "Blue Slaad Hooked Claw (x4)",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "A blue slaad has two black bone-like hooks protruding on the back of each of its hands. The hooks are used to inflict a terrible disease called the chaos phage, which transforms its victim into a fully grown slaad. The contagion loses its effectiveness once the slaad dies, but they still must be handled carefully. Healers and researchers are especially interested this item, although most communities forbid its study.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Blue Slaad",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974196,
+    "modifiedTime": 1688174974196,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "s9Mi7ARcjWf1lpWC",
+  "_key": "!items!s9Mi7ARcjWf1lpWC"
+}

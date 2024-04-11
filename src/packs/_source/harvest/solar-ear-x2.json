@@ -1,0 +1,40 @@
+{
+  "name": "Solar Ear (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/ear-grey-brown.webp",
+  "system": {
+    "description": {
+      "value": "Solar's are natural lie detectors, making their ear's highly sought after. Use: If a player is holding 2 solar ears, they have advantage on Wisdom (Insight) ability checks to detect lies. The ears lose their magic and become ineffective after two weeks.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Solar",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978134,
+    "modifiedTime": 1688174978134,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Ar16AcuTjayZpqrq",
+  "_key": "!items!Ar16AcuTjayZpqrq"
+}

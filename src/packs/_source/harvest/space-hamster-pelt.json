@@ -1,0 +1,40 @@
+{
+  "name": "Space Hamster Pelt",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A space hamster's pelt can be made into anything from rugs to coats to bedspreads. Once removed from the corpse, typically with a skinning knife, the hide ranges from 6-8 feet long.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Space Hamster",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975893,
+    "modifiedTime": 1688174975893,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NTQtALPKII3574tV",
+  "_key": "!items!NTQtALPKII3574tV"
+}

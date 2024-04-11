@@ -1,0 +1,40 @@
+{
+  "name": "Demogorgan's Tentacles (x4)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "The strong tentacle-like arms of Demogorgon have a draining effect on creatures (reducing a creature's maximum hit points). If harvested incorrectly, the tentacles may begin to wither and drain themselves. An expert craftsman can stretch the tentacles and carefully comb them into long, thin fibers. These fibers are then soaked and treated with oils, making them useful filaments for creating ropes and whips, which may be easily enchanted.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Demogorgon",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974892,
+    "modifiedTime": 1688174974892,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9NyEb0MFjmiUUU92",
+  "_key": "!items!9NyEb0MFjmiUUU92"
+}

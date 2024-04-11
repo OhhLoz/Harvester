@@ -1,0 +1,40 @@
+{
+  "name": "Aartuk Pearl",
+  "type": "loot",
+  "img": "icons/commodities/gems/pearls-white.webp",
+  "system": {
+    "description": {
+      "value": "Aartuk's produce pellets of radiant energy that they can spit at their enemies. These pellets are produced in a fleshy sac in its torso. While rare, grains inside this sac can form a large white radiant pearl, about 2 inches in diameter.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Aartuk Elder",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973409,
+    "modifiedTime": 1688174973409,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "sktsmaWMR4IoEZ0u",
+  "_key": "!items!sktsmaWMR4IoEZ0u"
+}

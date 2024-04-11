@@ -1,0 +1,40 @@
+{
+  "name": "Neothelid Hook (4x)",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "The neothelid's mouth opens like a flower with four barbed petals ending in sharp hooks. These black, curved hooks act as psionic antennas and are prized in the arcane community. The large hooks can also be crafted into various weapons.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Neothelid",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 450,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977340,
+    "modifiedTime": 1688174977340,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "IQHee9BPn9mOqJGl",
+  "_key": "!items!IQHee9BPn9mOqJGl"
+}

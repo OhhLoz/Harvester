@@ -1,0 +1,40 @@
+{
+  "name": "Elder Brain Tentacle (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "The tentacles of an elder brain flow with psionic energy. Harvesting a tentacle intact, and with enough psionic power, can be difficult. An expert craftsman can stretch the tentacles and carefully comb them into long, thin fibers. These fibers are then soaked and treated with oils, making them useful filaments for creating ropes and whips, which may be easily enchanted.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Elder Brain",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975333,
+    "modifiedTime": 1688174975333,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "QKHUnmQLGmCLmvNf",
+  "_key": "!items!QKHUnmQLGmCLmvNf"
+}

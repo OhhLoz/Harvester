@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Lizardfolk Shaman",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Lizardfolk Shaman'.",
+  "results": [
+    {
+      "text": "Lizardfolk Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Lizardfolk Shaman",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4dNG3QX7ybHVR2xJ",
+          "brt-result-custom-name": "Lizardfolk Skin",
+          "brt-result-original-name": "Lizardfolk Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "4dNG3QX7ybHVR2xJ",
+      "_id": "CJiyK9UPzMSgDkEJ",
+      "_key": "!tables.results!sZfzjLWQwsPcDctu.CJiyK9UPzMSgDkEJ"
+    },
+    {
+      "text": "Lizardfolk Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Lizardfolk Shaman",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LmsDyWEtHnLHFzym",
+          "brt-result-custom-name": "Lizardfolk Tail",
+          "brt-result-original-name": "Lizardfolk Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "LmsDyWEtHnLHFzym",
+      "_id": "1dNnvrOjKHBAx7XZ",
+      "_key": "!tables.results!sZfzjLWQwsPcDctu.1dNnvrOjKHBAx7XZ"
+    },
+    {
+      "text": "Lizardfolk Horns",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Lizardfolk Shaman",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yKfwbn1PaNwn5Epv",
+          "brt-result-custom-name": "Lizardfolk Horns",
+          "brt-result-original-name": "Lizardfolk Horns",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "yKfwbn1PaNwn5Epv",
+      "_id": "KmFWRcjfRE0QlBnH",
+      "_key": "!tables.results!sZfzjLWQwsPcDctu.KmFWRcjfRE0QlBnH"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Lizardfolk Shaman",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561509,
+    "modifiedTime": 1696756757627,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "sZfzjLWQwsPcDctu",
+  "sort": 0,
+  "_key": "!tables!sZfzjLWQwsPcDctu"
+}

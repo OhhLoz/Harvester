@@ -1,0 +1,40 @@
+{
+  "name": "Marilith Spine",
+  "type": "loot",
+  "img": "icons/commodities/bones/bone-spine-white.webp",
+  "system": {
+    "description": {
+      "value": "A marilith's spine is much stronger and flexible than a human spine. Being a creature from the Abyss, the spine is infused with dark magic that a spellcaster may be able to adapt. Or, a crafter can use the bones for their own trade (1/20 the value).",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Marilith",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976950,
+    "modifiedTime": 1688174976950,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "vY68ZYn7I2LmyHRt",
+  "_key": "!items!vY68ZYn7I2LmyHRt"
+}

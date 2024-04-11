@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Chitine",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Chitine'.",
+  "results": [
+    {
+      "text": "Chitine Fur (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Chitine",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4OzEo5dCR0rsKnZO",
+          "brt-result-custom-name": "Chitine Fur (small pouch)",
+          "brt-result-original-name": "Chitine Fur (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "4OzEo5dCR0rsKnZO",
+      "_id": "d2Q0qcTXS6TJ1FEL",
+      "_key": "!tables.results!gLBJ9zfBfogCZNXj.d2Q0qcTXS6TJ1FEL"
+    },
+    {
+      "text": "Chitine Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Chitine",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UTv9B6q07SB4CTZ2",
+          "brt-result-custom-name": "Chitine Blood (vial)",
+          "brt-result-original-name": "Chitine Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "UTv9B6q07SB4CTZ2",
+      "_id": "HKmLlh7NWqjsNsih",
+      "_key": "!tables.results!gLBJ9zfBfogCZNXj.HKmLlh7NWqjsNsih"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Chitine",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561485,
+    "modifiedTime": 1696756756036,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gLBJ9zfBfogCZNXj",
+  "sort": 0,
+  "_key": "!tables!gLBJ9zfBfogCZNXj"
+}

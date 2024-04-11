@@ -1,0 +1,40 @@
+{
+  "name": "Spirit Troll Skin Strips (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A spirit troll's skin is transparent, with a green hue. The skin has properties that are tied to the ethereal plane. Alchemists can use the skin to make special oils.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Spirit Troll",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978205,
+    "modifiedTime": 1688174978205,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "E1Mn5DZvd5OvigPR",
+  "_key": "!items!E1Mn5DZvd5OvigPR"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Manticore Wings (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "A manticore has a set of large, dragon-like, leathery wings on its back. The leather is extremely tough, yet very light, making it an ideal material for leatherworkers. The leather can be used to make apparel and accessories.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Manticore",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976935,
+    "modifiedTime": 1688174976935,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rHCJcZGR0QB4aAtF",
+  "_key": "!items!rHCJcZGR0QB4aAtF"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Faerie Dragon Wing (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "A faerie dragon's wings are covered in a semi-translucent, rainbow-colored enzyme. Alchemists can coat the wings in a chemical concoction, dry them, and mash them into a fine powder that can be very useful.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Faerie Dragon",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 12,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975483,
+    "modifiedTime": 1688174975483,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "upHJnWxnH4nkxWbL",
+  "_key": "!items!upHJnWxnH4nkxWbL"
+}

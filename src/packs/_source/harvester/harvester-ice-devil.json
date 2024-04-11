@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Ice Devil",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ice Devil'.",
+  "results": [
+    {
+      "text": "Ice Devil Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ice Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7BYeCUaCAzUmZquI",
+          "brt-result-custom-name": "Ice Devil Blood vial",
+          "brt-result-original-name": "Ice Devil Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "7BYeCUaCAzUmZquI",
+      "_id": "nZxW6qgWjmwnIyXg",
+      "_key": "!tables.results!VDRzE5Zz7glLgGBS.nZxW6qgWjmwnIyXg"
+    },
+    {
+      "text": "Ice Devil Mandible (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/mouth-pincer-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ice Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NXEQlrIy3uimA0GS",
+          "brt-result-custom-name": "Ice Devil Mandible",
+          "brt-result-original-name": "Ice Devil Mandible (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/mouth-pincer-brown.webp"
+        }
+      },
+      "documentId": "NXEQlrIy3uimA0GS",
+      "_id": "9iQcJw4ceRsFCGvW",
+      "_key": "!tables.results!VDRzE5Zz7glLgGBS.9iQcJw4ceRsFCGvW"
+    },
+    {
+      "text": "Ice Devil Carapace",
+      "type": 2,
+      "img": "icons/commodities/biological/shell-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ice Devil",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iCK5uJydA5Qxjzpz",
+          "brt-result-custom-name": "Ice Devil Carapace",
+          "brt-result-original-name": "Ice Devil Carapace",
+          "brt-result-original-icon": "icons/commodities/biological/shell-tan.webp"
+        }
+      },
+      "documentId": "iCK5uJydA5Qxjzpz",
+      "_id": "mEwzOUlMZEoIDMjc",
+      "_key": "!tables.results!VDRzE5Zz7glLgGBS.mEwzOUlMZEoIDMjc"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Ice Devil",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562289,
+    "modifiedTime": 1696756757129,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "VDRzE5Zz7glLgGBS",
+  "sort": 0,
+  "_key": "!tables!VDRzE5Zz7glLgGBS"
+}

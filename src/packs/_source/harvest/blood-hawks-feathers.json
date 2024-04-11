@@ -1,0 +1,40 @@
+{
+  "name": "Blood Hawks Feathers",
+  "type": "loot",
+  "img": "icons/commodities/materials/feather-white.webp",
+  "system": {
+    "description": {
+      "value": "A blood hawk has small crimson feather which can be used in jewelry or decorations. If ample feathers are available, they can be used in apparel. Since blood hawks hunt alone, finding large sources of blood hawk feathers is very difficult. If 10 batches of feathers are sold together, tailors will often pay 10x as much.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Blood Hawk",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974183,
+    "modifiedTime": 1688174974183,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ISLiEMQcbKKBx7YY",
+  "_key": "!items!ISLiEMQcbKKBx7YY"
+}

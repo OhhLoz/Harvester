@@ -1,0 +1,40 @@
+{
+  "name": "Marut Components",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Inside a Marut is a collection of complex robotic components, include wires, sensors, circuit boards and magical batteries. All of these components fetch a high price in gnomish communities and with skilled artificers.",
+      "chat": "20",
+      "unidentified": "Investigation"
+    },
+    "source": "Marut",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 1500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976961,
+    "modifiedTime": 1688174976961,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3I2KFN480Lf4aumT",
+  "_key": "!items!3I2KFN480Lf4aumT"
+}

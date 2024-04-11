@@ -1,0 +1,40 @@
+{
+  "name": "Elder Oblex Nucleus",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "In the center of an Elder Oblex is a bundle of hardened gelatinous material, surrounded by the skull of a creature that it devoured while it was an Oblex Spawn. This bundle of flesh is believed to be the storage center for the memories that the Elder Oblex has collected over the years. Spellcasters and scholars may be able to tap into this core, accessing these memories and possibly tap into lost knowledge. The nucleus also has many alchemical properties.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Elder Oblex",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975365,
+    "modifiedTime": 1688174975365,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "eUb5SioRdnjWd493",
+  "_key": "!items!eUb5SioRdnjWd493"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Erinyes",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Erinyes'.",
+  "results": [
+    {
+      "text": "Fiend's Poison (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Erinyes",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Y5wxL6qzNUHriZZi",
+          "brt-result-custom-name": "Fiend's Poison (vial)",
+          "brt-result-original-name": "Fiend's Poison (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Y5wxL6qzNUHriZZi",
+      "_id": "2AZrx45AJdiIgzLw",
+      "_key": "!tables.results!DK6oD1sBAnv4TW1i.2AZrx45AJdiIgzLw"
+    },
+    {
+      "text": "Devil Wings (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Erinyes",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ovITupJHYMD5XB9r",
+          "brt-result-custom-name": "Devil Wings",
+          "brt-result-original-name": "Devil Wings (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "ovITupJHYMD5XB9r",
+      "_id": "90kpym3Ek2xhUGvu",
+      "_key": "!tables.results!DK6oD1sBAnv4TW1i.90kpym3Ek2xhUGvu"
+    },
+    {
+      "text": "Erinyes Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Erinyes",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.phWQbuDs8uPyNABz",
+          "brt-result-custom-name": "Erinyes Heart",
+          "brt-result-original-name": "Erinyes Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "phWQbuDs8uPyNABz",
+      "_id": "kdCJVHb9Z2rR7dQa",
+      "_key": "!tables.results!DK6oD1sBAnv4TW1i.kdCJVHb9Z2rR7dQa"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Erinyes",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756573147,
+    "modifiedTime": 1696756756210,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "DK6oD1sBAnv4TW1i",
+  "sort": 0,
+  "_key": "!tables!DK6oD1sBAnv4TW1i"
+}

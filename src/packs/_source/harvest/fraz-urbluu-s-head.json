@@ -1,0 +1,40 @@
+{
+  "name": "Fraz-Urb'luu's Head",
+  "type": "loot",
+  "img": "icons/commodities/bones/skull-tusked-grey.webp",
+  "system": {
+    "description": {
+      "value": "Fraz-Urb'luu's head has a large, smiling face framed by long, pointed ears. A master leatherworker can create a mask from the creatures head. The craftsman carefully removes the skin from the head, treats the material, stretches the skin over a metal faceplate, and have a spellcaster perform several rituals on the mask using the creatures eyes, tongue and brain.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Fraz-Urb'luu",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 1500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975628,
+    "modifiedTime": 1688174975628,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "0q81fSt69Tkz2Nme",
+  "_key": "!items!0q81fSt69Tkz2Nme"
+}

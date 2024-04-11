@@ -1,0 +1,40 @@
+{
+  "name": "Goristro Blood (7 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Goristro blood is dark red and always extremely hot. Some alchemists and healers make use of the blood in potions.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Goristro",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976170,
+    "modifiedTime": 1688174976170,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tMIKnxFS7P0Cg1sG",
+  "_key": "!items!tMIKnxFS7P0Cg1sG"
+}

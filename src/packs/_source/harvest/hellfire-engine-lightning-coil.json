@@ -1,0 +1,40 @@
+{
+  "name": "Hellfire Engine Lightning Coil",
+  "type": "loot",
+  "img": "icons/commodities/tech/coil-steel.webp",
+  "system": {
+    "description": {
+      "value": "Inside the Hellfire Engine is a large silver coil, about a foot long, that is used to power the constructs lightning flair. This silver coil is a highly conductive item, often used by artificers.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Hellfire Engine",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976422,
+    "modifiedTime": 1688174976422,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lGd4JggyDtT41tFm",
+  "_key": "!items!lGd4JggyDtT41tFm"
+}

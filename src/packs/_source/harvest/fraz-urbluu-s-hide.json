@@ -1,0 +1,40 @@
+{
+  "name": "Fraz-Urb'luu's Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The hide of Fraz-Urb'luu torso is hard, thick, and resembles a rock surface. A master leatherworker can use the hide to create strong leather armor that looks like stone.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Fraz-Urb'luu",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975623,
+    "modifiedTime": 1688174975623,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Tt3THil3tz6JDNgv",
+  "_key": "!items!Tt3THil3tz6JDNgv"
+}

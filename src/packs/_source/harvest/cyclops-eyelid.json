@@ -1,0 +1,40 @@
+{
+  "name": "Cyclops Eyelid",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The large eyelid of a cyclops is a flat, thick flap of skin, about a foot long. Various crafters may be able to fashion the lid into something useful.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Cyclops",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974753,
+    "modifiedTime": 1688174974753,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "A9x1Y6fwK7VC60Ft",
+  "_key": "!items!A9x1Y6fwK7VC60Ft"
+}

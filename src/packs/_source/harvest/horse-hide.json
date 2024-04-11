@@ -1,0 +1,40 @@
+{
+  "name": "Horse Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A horse's hide is known for its durability and resistance to moisture absorption. The hide is primarily used to make harnesses, bags, shoes and rugs.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Warhorse",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978757,
+    "modifiedTime": 1688174978757,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ZmyYZLJHqf5trlSd",
+  "_key": "!items!ZmyYZLJHqf5trlSd"
+}

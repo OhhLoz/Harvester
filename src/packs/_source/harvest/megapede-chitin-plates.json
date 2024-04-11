@@ -1,0 +1,40 @@
+{
+  "name": "Megapede Chitin Plates",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "A megapede has a segmented exoskeleton of large, heavy chitinous plates. The chitin can be cut, treated and repurposed as armor or shields.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Megapede",
+    "quantity": 1,
+    "weight": 60,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977014,
+    "modifiedTime": 1688174977014,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wqechSCbwDL0V0sa",
+  "_key": "!items!wqechSCbwDL0V0sa"
+}

@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Hydroloth",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hydroloth'.",
+  "results": [
+    {
+      "text": "Hydroloth Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hydroloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6NBfIxIpyoAQaPnW",
+          "brt-result-custom-name": "Hydroloth Eye",
+          "brt-result-original-name": "Hydroloth Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "6NBfIxIpyoAQaPnW",
+      "_id": "5V3CmH4KS66fc9fW",
+      "_key": "!tables.results!CyPr61yhciW8FJdb.5V3CmH4KS66fc9fW"
+    },
+    {
+      "text": "Hydroloth's Hippocampus",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hydroloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EsLpiJj0emz5HIYx",
+          "brt-result-custom-name": "Hydroloth's Hippocampus",
+          "brt-result-original-name": "Hydroloth's Hippocampus",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "EsLpiJj0emz5HIYx",
+      "_id": "9SbYNZaf1sF5wyUk",
+      "_key": "!tables.results!CyPr61yhciW8FJdb.9SbYNZaf1sF5wyUk"
+    },
+    {
+      "text": "Yugoloth Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hydroloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.U6Jtk6fqx1RM9yVt",
+          "brt-result-custom-name": "Yugoloth Heart",
+          "brt-result-original-name": "Yugoloth Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "U6Jtk6fqx1RM9yVt",
+      "_id": "Ah7f6Zzc8WX6cOCW",
+      "_key": "!tables.results!CyPr61yhciW8FJdb.Ah7f6Zzc8WX6cOCW"
+    },
+    {
+      "text": "Yugoloth Ichor (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hydroloth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VdzNY8AdPCloYWQN",
+          "brt-result-custom-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-name": "Yugoloth Ichor (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "VdzNY8AdPCloYWQN",
+      "_id": "htO5u5SrD6o3JCpn",
+      "_key": "!tables.results!CyPr61yhciW8FJdb.htO5u5SrD6o3JCpn"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Hydroloth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562035,
+    "modifiedTime": 1696756757124,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "CyPr61yhciW8FJdb",
+  "sort": 0,
+  "_key": "!tables!CyPr61yhciW8FJdb"
+}

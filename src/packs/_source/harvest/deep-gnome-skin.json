@@ -1,0 +1,40 @@
+{
+  "name": "Deep Gnome Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A deep gnome's skin is tough and sturdy, having had to adapt to a grueling life underground. Being an underground dwelling species, the skin holds some properties which may be valued by alchemists and magic users. However, while a reclusive species, deep gnomes are inherently good, and it is highly frowned upon to cut one apart.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Deep Gnome (Svirfneblin)",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974846,
+    "modifiedTime": 1688174974846,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "7kbP8ASXtX0AiSX8",
+  "_key": "!items!7kbP8ASXtX0AiSX8"
+}

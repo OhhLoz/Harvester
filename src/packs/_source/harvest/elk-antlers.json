@@ -1,0 +1,40 @@
+{
+  "name": "Elk Antlers",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-antler-tan.webp",
+  "system": {
+    "description": {
+      "value": "An elks's antlers are prized hunting trophies, but they can also be used to create weapon handles and simple tools (hoes, rakes, etc.).",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Elk",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 15,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975381,
+    "modifiedTime": 1688174975381,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "CVKj1p9YE8JcM19N",
+  "_key": "!items!CVKj1p9YE8JcM19N"
+}

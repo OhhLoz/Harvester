@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Hadozee Shipmate",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hadozee Shipmate'.",
+  "results": [
+    {
+      "text": "Hadozee Toe Knuckles (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hadozee Shipmate",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2EVHz7n5LLeFCQ8q",
+          "brt-result-custom-name": "Hadozee Toe Knuckles",
+          "brt-result-original-name": "Hadozee Toe Knuckles (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "2EVHz7n5LLeFCQ8q",
+      "_id": "aeNS7fzkmbH62fKW",
+      "_key": "!tables.results!fpybQBk2CEIxzKIF.aeNS7fzkmbH62fKW"
+    },
+    {
+      "text": "Hadozee Skin Membranes (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/pustules-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hadozee Shipmate",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Q2lSj2pMkZmbEce4",
+          "brt-result-custom-name": "Hadozee Skin Membranes",
+          "brt-result-original-name": "Hadozee Skin Membranes (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/pustules-red.webp"
+        }
+      },
+      "documentId": "Q2lSj2pMkZmbEce4",
+      "_id": "an7kZKcyvCd55BV0",
+      "_key": "!tables.results!fpybQBk2CEIxzKIF.an7kZKcyvCd55BV0"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Hadozee Shipmate",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560857,
+    "modifiedTime": 1696756756743,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fpybQBk2CEIxzKIF",
+  "sort": 0,
+  "_key": "!tables!fpybQBk2CEIxzKIF"
+}

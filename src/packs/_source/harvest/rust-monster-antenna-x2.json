@@ -1,0 +1,40 @@
+{
+  "name": "Rust Monster Antenna (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/antenna-blue.webp",
+  "system": {
+    "description": {
+      "value": "A rust monster has two long, feather-like appendages sticking off its head. The antenna aid the rust monster in detecting metal, as well as secreting a corrosive substance that breaks down any metal the antennas brush up against. Upon death, the antennas stop secreting any fluids, but an artificer may be able to repurpose the item. It is highly recommended that the antennas be cleaned and wrapped before placing them in an adventurer's backpack.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Rust Monster",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977962,
+    "modifiedTime": 1688174977962,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "YM7aOGt1AzMZzHNm",
+  "_key": "!items!YM7aOGt1AzMZzHNm"
+}

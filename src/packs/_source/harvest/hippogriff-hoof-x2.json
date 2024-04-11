@@ -1,0 +1,40 @@
+{
+  "name": "Hippogriff Hoof (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+  "system": {
+    "description": {
+      "value": "A hippogriff's hooves contains a unique collagen that is used to make a strong adhesive. The glue is used by all kinds of craftsmen. The hooves can also be used to make tools (bowls, small shovels) and decorations.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Hippogriff",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976460,
+    "modifiedTime": 1688174976460,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gPqdDtMk0jfUT33b",
+  "_key": "!items!gPqdDtMk0jfUT33b"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Wand of Orcus",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Orcus wields the legendary Wand of Orcus. This is a powerful artifact. The DM will need to decide if this item remains after the creature is slain.",
+      "chat": "1",
+      "unidentified": "Arcana"
+    },
+    "source": "Orcus",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 50000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977586,
+    "modifiedTime": 1688174977586,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "MiI1YpJrNBLHoOMn",
+  "_key": "!items!MiI1YpJrNBLHoOMn"
+}

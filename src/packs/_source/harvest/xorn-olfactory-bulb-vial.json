@@ -1,0 +1,40 @@
+{
+  "name": "Xorn Olfactory Bulb (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Xorns are capable of pinpointing, by scent, the location of precious metals and stones. This \"\"treasure sense\"\" is tied to the creature's olfactory bulb, a tiny flesh-like ball located in the center of the brain. Spellcasters may be able to use magic to tap into this item's unique ability.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Xorn",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978870,
+    "modifiedTime": 1688174978870,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "S5hz9E0AD6pD6SSd",
+  "_key": "!items!S5hz9E0AD6pD6SSd"
+}

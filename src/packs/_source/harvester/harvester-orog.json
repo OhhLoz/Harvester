@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Orog",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Orog'.",
+  "results": [
+    {
+      "text": "Orc Tusks",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orog",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AAxVSZr0o5EiehWQ",
+          "brt-result-custom-name": "Orc Tusks",
+          "brt-result-original-name": "Orc Tusks",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "AAxVSZr0o5EiehWQ",
+      "_id": "GDPxhQl8gy59P4bB",
+      "_key": "!tables.results!7lbHBiBXWPAwqBrL.GDPxhQl8gy59P4bB"
+    },
+    {
+      "text": "Orog Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Orog",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.O96EXj8JBHOGC4nr",
+          "brt-result-custom-name": "Orog Heart",
+          "brt-result-original-name": "Orog Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "O96EXj8JBHOGC4nr",
+      "_id": "RdCshZ9Tjqj2ybcZ",
+      "_key": "!tables.results!7lbHBiBXWPAwqBrL.RdCshZ9Tjqj2ybcZ"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Orog",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563304,
+    "modifiedTime": 1696756758341,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "7lbHBiBXWPAwqBrL",
+  "sort": 0,
+  "_key": "!tables!7lbHBiBXWPAwqBrL"
+}

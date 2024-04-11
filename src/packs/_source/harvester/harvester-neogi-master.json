@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Neogi Master",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Neogi Master'.",
+  "results": [
+    {
+      "text": "Neogi Eyes (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neogi Master",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0Krj9p8r9cTcEwen",
+          "brt-result-custom-name": "Neogi Eyes",
+          "brt-result-original-name": "Neogi Eyes (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "0Krj9p8r9cTcEwen",
+      "_id": "yUtiyLywoiD2oGgR",
+      "_key": "!tables.results!h9DpQ2OUkfrFpzex.yUtiyLywoiD2oGgR"
+    },
+    {
+      "text": "Neogi Egg Sack",
+      "type": 2,
+      "img": "icons/containers/bags/sack-leather-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neogi Master",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AUjpcxQaIVj7c1sy",
+          "brt-result-custom-name": "Neogi Egg Sack",
+          "brt-result-original-name": "Neogi Egg Sack",
+          "brt-result-original-icon": "icons/containers/bags/sack-leather-tan.webp"
+        }
+      },
+      "documentId": "AUjpcxQaIVj7c1sy",
+      "_id": "4OVcAFHUhORXvEx8",
+      "_key": "!tables.results!h9DpQ2OUkfrFpzex.4OVcAFHUhORXvEx8"
+    },
+    {
+      "text": "Neogi Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Neogi Master",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wbc5GksC3Yd77kuf",
+          "brt-result-custom-name": "Neogi Venom (vial)",
+          "brt-result-original-name": "Neogi Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "wbc5GksC3Yd77kuf",
+      "_id": "fr1fGKTsn3vJCV2y",
+      "_key": "!tables.results!h9DpQ2OUkfrFpzex.fr1fGKTsn3vJCV2y"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Neogi Master",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560319,
+    "modifiedTime": 1696756758286,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "h9DpQ2OUkfrFpzex",
+  "sort": 0,
+  "_key": "!tables!h9DpQ2OUkfrFpzex"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Mummy Bandages (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Prior to a mummy being set to rest, strips of white cotton cloth are soaked in a secret alchemical formula. These bandages are then carefully wrapped around the body while an arcane ritual is performed. Add centuries of rest, and the bandages arcane magic becomes even stronger. The bandages are old, and some may deteriorate upon harvesting, but many should be viable for use. The bandages can be treated by alchemists and healers to treat injuries and disease. Spellcasters, especially necromancers, may be able to pull some arcane power from the item.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Mummy",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977203,
+    "modifiedTime": 1688174977203,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "YHRa3NI8lxSnPHCL",
+  "_key": "!items!YHRa3NI8lxSnPHCL"
+}

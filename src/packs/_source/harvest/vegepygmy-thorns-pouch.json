@@ -1,0 +1,40 @@
+{
+  "name": "Vegepygmy Thorns (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Some vegepygmy are covered in sharp, hard thorny protrusions. These thorns can be broken off and used by alchemists in cultivation potions. Gardeners and botanists can use the thorns to make a rich fertilizer.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Thorny Vegepygmy",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978457,
+    "modifiedTime": 1688174978457,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "mwUkC30xZ5ocngLV",
+  "_key": "!items!mwUkC30xZ5ocngLV"
+}

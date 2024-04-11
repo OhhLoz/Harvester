@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Manes",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Manes'.",
+  "results": [
+    {
+      "text": "Manes Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Manes",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xjTRHLBhoyn0dAb6",
+          "brt-result-custom-name": "Manes Blood (vial)",
+          "brt-result-original-name": "Manes Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "xjTRHLBhoyn0dAb6",
+      "_id": "AYgGyChJurPJgsOS",
+      "_key": "!tables.results!X7FvFERpDX1mx667.AYgGyChJurPJgsOS"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Manes",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756589384,
+    "modifiedTime": 1696756757637,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "X7FvFERpDX1mx667",
+  "sort": 0,
+  "_key": "!tables!X7FvFERpDX1mx667"
+}

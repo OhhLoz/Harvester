@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Giant Owl",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Giant Owl'.",
+  "results": [
+    {
+      "text": "Giant Owl Feathers (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Owl",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DqOuPhiHr3zxMs4W",
+          "brt-result-custom-name": "Giant Owl Feathers (large pouch)",
+          "brt-result-original-name": "Giant Owl Feathers (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "DqOuPhiHr3zxMs4W",
+      "_id": "tq2aVuNoZQ8dXGNT",
+      "_key": "!tables.results!SyAprZQG64QmQlC9.tq2aVuNoZQ8dXGNT"
+    },
+    {
+      "text": "Giant Owl Talons (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Giant Owl",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FFoUVeordE3vcNJh",
+          "brt-result-custom-name": "Giant Owl Talons (pouch)",
+          "brt-result-original-name": "Giant Owl Talons (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "FFoUVeordE3vcNJh",
+      "_id": "CwBGp8kNEwkEu3he",
+      "_key": "!tables.results!SyAprZQG64QmQlC9.CwBGp8kNEwkEu3he"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Giant Owl",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564924,
+    "modifiedTime": 1696756756348,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "SyAprZQG64QmQlC9",
+  "sort": 0,
+  "_key": "!tables!SyAprZQG64QmQlC9"
+}

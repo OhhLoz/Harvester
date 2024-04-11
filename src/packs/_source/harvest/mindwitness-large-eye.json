@@ -1,0 +1,40 @@
+{
+  "name": "Mindwitness Large Eye",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "A mindwitness is a telepathic hub or beacon for mind flayers. This link is tied directly to the large eye of the mindwitness, which acts like a signal dish, receiving and transmitting telepathic messages. The large eye can be used by spellcasters, artificers and anyone that studies psionics. Alchemists may be able to mash the eye into a fine paste to create potions and salves.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Mindwitness",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977102,
+    "modifiedTime": 1688174977102,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "0PmzDSqPrp4ymD78",
+  "_key": "!items!0PmzDSqPrp4ymD78"
+}

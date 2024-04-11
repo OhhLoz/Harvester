@@ -1,0 +1,40 @@
+{
+  "name": "Lock of Cloud Giant Hair",
+  "type": "loot",
+  "img": "icons/commodities/materials/hair-tuft-gold.webp",
+  "system": {
+    "description": {
+      "value": "Long and strong strands of silvery-white hair. Highly valued among tailors, weavers and textile makers.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Cloud Giant Smiling One",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974675,
+    "modifiedTime": 1688174974675,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NF2pfbYrLiPRsUR2",
+  "_key": "!items!NF2pfbYrLiPRsUR2"
+}

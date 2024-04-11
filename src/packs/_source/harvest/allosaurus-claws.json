@@ -1,0 +1,40 @@
+{
+  "name": "Allosaurus Claws",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "An allosaurs claws are hooked, allowing the beast to grab and pull prey into their mouth. The hooked claws average around 7 inches long. The claws can be used for crafts and decoration, but also for curved daggers.",
+      "chat": "8",
+      "unidentified": "Nature"
+    },
+    "source": "Allosaurus",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973607,
+    "modifiedTime": 1688174973607,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "CsuRWl0FkZJBybk0",
+  "_key": "!items!CsuRWl0FkZJBybk0"
+}

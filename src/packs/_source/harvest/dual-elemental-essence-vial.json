@@ -1,0 +1,40 @@
+{
+  "name": "Dual Elemental Essence (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "When a mephit is killed, it's elemental form disperses, leaving behind trace remnants from two different elemental planes. If harvested quickly, a mote of residual energy can be found - an essence resulting from the mixture of two elemental powers. The essence is useful to elemental spellcasters and those that study the elemental planes. Requires an enchanted vial.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Smoke Mephit",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978129,
+    "modifiedTime": 1688174978129,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "jIRKxTdlCrLvIklp",
+  "_key": "!items!jIRKxTdlCrLvIklp"
+}

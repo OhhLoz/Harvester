@@ -1,0 +1,40 @@
+{
+  "name": "Yeth Hound Teeth (large pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A yeth hound has a mouth full of large, sharp, canine teeth. The teeth are fused with arcane energy, giving them a psychically charged bite. The teeth can be used to make small weapons, like punching daggers, and simple tools. They can also line blades and be used as decorations.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Yeth Hound",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978917,
+    "modifiedTime": 1688174978917,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "TSu5DbgnQsExhu2S",
+  "_key": "!items!TSu5DbgnQsExhu2S"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Corpse Flower Dirt (large pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Inside the bundle of fibrous vines that make up the creatures body, is a complex root structure enveloping a ball of dirt. This dirt is mixed with several rotting corpses and can be used as a highly effective fertilizer.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Corpse Flower",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974703,
+    "modifiedTime": 1688174974703,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Oj9kzxdpkrxcXDBd",
+  "_key": "!items!Oj9kzxdpkrxcXDBd"
+}

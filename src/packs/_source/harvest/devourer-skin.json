@@ -1,0 +1,40 @@
+{
+  "name": "Devourer Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "The dead, necrotic skin of a devourer is difficult to harvest without tearing. However, if successful, magic users can create dark necromancer apparel and arcane vellum. Normal leatherworkers may be able to create simple leather from the skin (1/10 the value).",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Devourer",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 2250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974928,
+    "modifiedTime": 1688174974928,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "vVN5PG42eDBkLoaD",
+  "_key": "!items!vVN5PG42eDBkLoaD"
+}

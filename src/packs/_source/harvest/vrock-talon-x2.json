@@ -1,0 +1,40 @@
+{
+  "name": "Vrock Talon (x2)",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-bird-pink.webp",
+  "system": {
+    "description": {
+      "value": "A vrock's talons are razor sharp and about a foot long. Weaponsmiths may find the talons useful.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Vrock",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978736,
+    "modifiedTime": 1688174978736,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Cdzm9pKB2rGhI2YU",
+  "_key": "!items!Cdzm9pKB2rGhI2YU"
+}

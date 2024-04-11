@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Elder Tempest",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Elder Tempest'.",
+  "results": [
+    {
+      "text": "Elder Tempest Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Tempest",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1fDRRlYKPY7Rrz19",
+          "brt-result-custom-name": "Elder Tempest Essence (vial)",
+          "brt-result-original-name": "Elder Tempest Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "1fDRRlYKPY7Rrz19",
+      "_id": "a5cUUYfVe5QrQiJh",
+      "_key": "!tables.results!AiEGOZrQiO1ygZTk.a5cUUYfVe5QrQiJh"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Elder Tempest",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560635,
+    "modifiedTime": 1696756756204,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AiEGOZrQiO1ygZTk",
+  "sort": 0,
+  "_key": "!tables!AiEGOZrQiO1ygZTk"
+}

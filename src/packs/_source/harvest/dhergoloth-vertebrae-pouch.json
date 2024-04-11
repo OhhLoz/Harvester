@@ -1,0 +1,40 @@
+{
+  "name": "Dhergoloth Vertebrae (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A dhergoloth's skeletal structure allows its body to swivel 360 degrees, while its head and legs remain stationary. The bones and cartilage of a dhergoloth's vertebrae are extremely flexible. The bones can be ground into a fine powder by healers that treat bone injuries.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Dhergoloth",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974937,
+    "modifiedTime": 1688174974937,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "XHXsGa6ZTo9kzPHr",
+  "_key": "!items!XHXsGa6ZTo9kzPHr"
+}

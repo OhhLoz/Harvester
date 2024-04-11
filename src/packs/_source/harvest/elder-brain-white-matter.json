@@ -1,0 +1,40 @@
+{
+  "name": "Elder Brain White Matter",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+  "system": {
+    "description": {
+      "value": "White matter is found in the deeper tissue of the brain. Ripples of psionic energy flow through the tissue like electricity. Harvesting the tissue can be difficult, as it takes a great deal of dexterity and medical knowledge. Failing the DC check by 5 or more results in a backlash of psionic energy, sending out a wave of 4d6 psionic damage to every conscious creature in a 15-foot radius. The tissue is a psionic sponge, valued by spellcasters.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Elder Brain",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975336,
+    "modifiedTime": 1688174975336,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "yfE6MMxrcvOMPRZ6",
+  "_key": "!items!yfE6MMxrcvOMPRZ6"
+}

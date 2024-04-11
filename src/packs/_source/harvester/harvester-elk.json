@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Elk",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Elk'.",
+  "results": [
+    {
+      "text": "Elk Antlers",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-antler-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Elk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CVKj1p9YE8JcM19N",
+          "brt-result-custom-name": "Elk Antlers",
+          "brt-result-original-name": "Elk Antlers",
+          "brt-result-original-icon": "icons/commodities/bones/horn-antler-tan.webp"
+        }
+      },
+      "documentId": "CVKj1p9YE8JcM19N",
+      "_id": "zKraRkuj2IitHj7l",
+      "_key": "!tables.results!xh11vjFgZaOGATDj.zKraRkuj2IitHj7l"
+    },
+    {
+      "text": "Elk Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Elk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TYMT4WX806hxR8iW",
+          "brt-result-custom-name": "Elk Hide",
+          "brt-result-original-name": "Elk Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "TYMT4WX806hxR8iW",
+      "_id": "j4SgqycVzqrjLonE",
+      "_key": "!tables.results!xh11vjFgZaOGATDj.j4SgqycVzqrjLonE"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Elk",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564310,
+    "modifiedTime": 1696756756207,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xh11vjFgZaOGATDj",
+  "sort": 0,
+  "_key": "!tables!xh11vjFgZaOGATDj"
+}

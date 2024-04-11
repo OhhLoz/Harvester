@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Bullywug",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bullywug'.",
+  "results": [
+    {
+      "text": "Bullywug Tongue",
+      "type": 2,
+      "img": "icons/commodities/biological/tongue-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Bullywug",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.2Q8Q8KcwWPOzFMQZ",
+          "brt-result-custom-name": "Bullywug Tongue",
+          "brt-result-original-name": "Bullywug Tongue",
+          "brt-result-original-icon": "icons/commodities/biological/tongue-red.webp"
+        }
+      },
+      "documentId": "2Q8Q8KcwWPOzFMQZ",
+      "_id": "10qBrKiLsW9yhcoA",
+      "_key": "!tables.results!oJh4spGU3Rxo9WNn.10qBrKiLsW9yhcoA"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Bullywug",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560895,
+    "modifiedTime": 1696756756001,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "oJh4spGU3Rxo9WNn",
+  "sort": 0,
+  "_key": "!tables!oJh4spGU3Rxo9WNn"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Catoblepas Milk (1 gallon)",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A pale, reddish liquid. It is easy to mistake even fresh catoblepas milk as having gone rancid, due to its sharp taste and odor. Despite this, it is considerably valuable, as it is the basis for death cheese - cherished among the gourmet community.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Catoblepas",
+    "quantity": 1,
+    "weight": 9,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974470,
+    "modifiedTime": 1688174974470,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Zjqmnh4vQE0689Ph",
+  "_key": "!items!Zjqmnh4vQE0689Ph"
+}

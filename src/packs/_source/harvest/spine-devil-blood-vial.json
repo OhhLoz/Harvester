@@ -1,0 +1,40 @@
+{
+  "name": "Spine Devil Blood (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The spine devil's blood is a clear, reddish substance that smells like kerosene. Alchemists can use the blood as a potion ingredient, while others choose to create fiery concoctions.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Spined Devil",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978193,
+    "modifiedTime": 1688174978193,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "upQUtDDAm3vNzIir",
+  "_key": "!items!upQUtDDAm3vNzIir"
+}

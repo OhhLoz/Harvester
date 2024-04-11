@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Ogre Howdah",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ogre Howdah'.",
+  "results": [
+    {
+      "text": "Ogre Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Howdah",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.GQ4JEqHZh0dL9xAd",
+          "brt-result-custom-name": "Ogre Skin",
+          "brt-result-original-name": "Ogre Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "GQ4JEqHZh0dL9xAd",
+      "_id": "49jfNO3zm20puS0z",
+      "_key": "!tables.results!jF5QGWrarVF6ZTSo.49jfNO3zm20puS0z"
+    },
+    {
+      "text": "Ogre Stomach",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-stomach.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Howdah",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RY32ZhsZMDtxcwfg",
+          "brt-result-custom-name": "Ogre Stomach",
+          "brt-result-original-name": "Ogre Stomach",
+          "brt-result-original-icon": "icons/commodities/biological/organ-stomach.webp"
+        }
+      },
+      "documentId": "RY32ZhsZMDtxcwfg",
+      "_id": "8KI3TD6FVuhcJ0xI",
+      "_key": "!tables.results!jF5QGWrarVF6ZTSo.8KI3TD6FVuhcJ0xI"
+    },
+    {
+      "text": "Ogre Fat (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Howdah",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oWRX4YV7osd0KmNH",
+          "brt-result-custom-name": "Ogre Fat (large pouch)",
+          "brt-result-original-name": "Ogre Fat (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "oWRX4YV7osd0KmNH",
+      "_id": "X3wrZ76fQ32SU0kP",
+      "_key": "!tables.results!jF5QGWrarVF6ZTSo.X3wrZ76fQ32SU0kP"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Ogre Howdah",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565623,
+    "modifiedTime": 1696756758319,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "jF5QGWrarVF6ZTSo",
+  "sort": 0,
+  "_key": "!tables!jF5QGWrarVF6ZTSo"
+}

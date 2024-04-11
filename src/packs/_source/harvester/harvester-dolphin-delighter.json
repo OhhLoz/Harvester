@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Dolphin Delighter",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dolphin Delighter'.",
+  "results": [
+    {
+      "text": "Dolphin Delighter Dorsal Fin",
+      "type": 2,
+      "img": "icons/commodities/biological/fin-red-green.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Dolphin Delighter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZJyv5IQpmfxO3Ypa",
+          "brt-result-custom-name": "Dolphin Delighter Dorsal Fin",
+          "brt-result-original-name": "Dolphin Delighter Dorsal Fin",
+          "brt-result-original-icon": "icons/commodities/biological/fin-red-green.webp"
+        }
+      },
+      "documentId": "ZJyv5IQpmfxO3Ypa",
+      "_id": "E6OBAHE8zJA65PCe",
+      "_key": "!tables.results!eiLCajLQxGO9nnxS.E6OBAHE8zJA65PCe"
+    },
+    {
+      "text": "Dolphin Delighter Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Dolphin Delighter",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wbOZ8EVKV8pZITzV",
+          "brt-result-custom-name": "Dolphin Delighter Teeth (pouch)",
+          "brt-result-original-name": "Dolphin Delighter Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "wbOZ8EVKV8pZITzV",
+      "_id": "aRnlQMyITvxWbRvU",
+      "_key": "!tables.results!eiLCajLQxGO9nnxS.aRnlQMyITvxWbRvU"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Dolphin Delighter",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756574022,
+    "modifiedTime": 1696756756114,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "eiLCajLQxGO9nnxS",
+  "sort": 0,
+  "_key": "!tables!eiLCajLQxGO9nnxS"
+}

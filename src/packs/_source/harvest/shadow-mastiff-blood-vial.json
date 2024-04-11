@@ -1,0 +1,40 @@
+{
+  "name": "Shadow Mastiff Blood (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A shadow mastiff's blood is a black fluid that quickly turns to a dark vapor when exposed to air, making it hard to harvest. The blood is useful to alchemists, spellcasters, and anyone studying the Shadowfell.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Shadow Mastiff",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978055,
+    "modifiedTime": 1688174978055,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "htT20QeJoOuYj4Ux",
+  "_key": "!items!htT20QeJoOuYj4Ux"
+}

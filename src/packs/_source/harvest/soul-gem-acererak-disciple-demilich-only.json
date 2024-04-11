@@ -1,0 +1,40 @@
+{
+  "name": "Soul Gem (Acererak disciple Demilich only)",
+  "type": "loot",
+  "img": "icons/commodities/gems/gem-faceted-round-white.webp",
+  "system": {
+    "description": {
+      "value": "Demilich disciples of Acererak insert soul gems into their empty eye sockets to steal the spirits of their victims. Harvesting control over these gems requires a complex ritual.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Demilich",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 16000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974882,
+    "modifiedTime": 1688174974882,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1G3W8ILtPmnfPR47",
+  "_key": "!items!1G3W8ILtPmnfPR47"
+}

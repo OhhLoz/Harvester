@@ -1,0 +1,40 @@
+{
+  "name": "Dragonnel Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A dragonnel's scales are soft and flexible, but too weak to provide any protection. However, the hide can be treated and turned into a soft leather.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Dragonnel",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975127,
+    "modifiedTime": 1688174975127,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "p0m2zc0hokLV48V3",
+  "_key": "!items!p0m2zc0hokLV48V3"
+}

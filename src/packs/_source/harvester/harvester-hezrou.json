@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Hezrou",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hezrou'.",
+  "results": [
+    {
+      "text": "Hezrou Claw (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hezrou",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AkPiTzF2YbqNWrnu",
+          "brt-result-custom-name": "Hezrou Claw",
+          "brt-result-original-name": "Hezrou Claw (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "AkPiTzF2YbqNWrnu",
+      "_id": "5M03mgmwmMgN6QWY",
+      "_key": "!tables.results!lvmxPqftOavWV5GX.5M03mgmwmMgN6QWY"
+    },
+    {
+      "text": "Hezrou Stink Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hezrou",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.B01u85fjvWigmoqa",
+          "brt-result-custom-name": "Hezrou Stink Gland",
+          "brt-result-original-name": "Hezrou Stink Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "B01u85fjvWigmoqa",
+      "_id": "hwS0L8zrBc8VAbvK",
+      "_key": "!tables.results!lvmxPqftOavWV5GX.hwS0L8zrBc8VAbvK"
+    },
+    {
+      "text": "Hezrou Teeth (small bundle)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hezrou",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JNiheaN4Tkx4FRci",
+          "brt-result-custom-name": "Hezrou Teeth (small bundle)",
+          "brt-result-original-name": "Hezrou Teeth (small bundle)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "JNiheaN4Tkx4FRci",
+      "_id": "d5A223fGQlecNPmJ",
+      "_key": "!tables.results!lvmxPqftOavWV5GX.d5A223fGQlecNPmJ"
+    },
+    {
+      "text": "Hezrou Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Hezrou",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.qr2IkyBMBzUR23XO",
+          "brt-result-custom-name": "Hezrou Blood vial",
+          "brt-result-original-name": "Hezrou Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "qr2IkyBMBzUR23XO",
+      "_id": "6EOriQAMOcK1IHPX",
+      "_key": "!tables.results!lvmxPqftOavWV5GX.6EOriQAMOcK1IHPX"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Hezrou",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563617,
+    "modifiedTime": 1696756757093,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lvmxPqftOavWV5GX",
+  "sort": 0,
+  "_key": "!tables!lvmxPqftOavWV5GX"
+}

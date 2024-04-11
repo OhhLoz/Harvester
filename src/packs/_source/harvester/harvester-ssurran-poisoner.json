@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Ssurran Poisoner",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ssurran Poisoner'.",
+  "results": [
+    {
+      "text": "Ssurran Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ssurran Poisoner",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4yUxdOajm0pAiZjU",
+          "brt-result-custom-name": "Ssurran Skin",
+          "brt-result-original-name": "Ssurran Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "4yUxdOajm0pAiZjU",
+      "_id": "EirRNDUpnLm6eHC1",
+      "_key": "!tables.results!RQDyAZytDNtUkLoh.EirRNDUpnLm6eHC1"
+    },
+    {
+      "text": "Ssurran Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ssurran Poisoner",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.acXCrcvoDGzz9vIw",
+          "brt-result-custom-name": "Ssurran Tail",
+          "brt-result-original-name": "Ssurran Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "acXCrcvoDGzz9vIw",
+      "_id": "Xj4HLw68LAYTxrP0",
+      "_key": "!tables.results!RQDyAZytDNtUkLoh.Xj4HLw68LAYTxrP0"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Ssurran Poisoner",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561611,
+    "modifiedTime": 1696756759985,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "RQDyAZytDNtUkLoh",
+  "sort": 0,
+  "_key": "!tables!RQDyAZytDNtUkLoh"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Zariel Flail Head",
+  "type": "loot",
+  "img": "icons/commodities/bones/skull-tusked-grey.webp",
+  "system": {
+    "description": {
+      "value": "The striking head of Zariel's flail was forged in flames of the Nine Hells, and is wreathed in arcane energy. If the flail is not too damages, the item may be recovered. A master smith, working with a powerful spellcaster, may be able to reforge the flail.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Zariel",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979087,
+    "modifiedTime": 1688174979087,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "6yApAavZE2cqpeZQ",
+  "_key": "!items!6yApAavZE2cqpeZQ"
+}

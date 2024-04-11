@@ -1,0 +1,40 @@
+{
+  "name": "Wastrilith Pearl",
+  "type": "loot",
+  "img": "icons/commodities/gems/pearls-white.webp",
+  "system": {
+    "description": {
+      "value": "At times, small objects get caught in a wastrilith's digestive system. Over time, the wastrilith's natural enzymes coat the item, which hardens. This process happens over-and-over again, layer-after-layer. In rare cases, a shiny white pearl forms. The pearl can be found lodged inside the creature's stomach.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Wastrilith",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 750,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978774,
+    "modifiedTime": 1688174978774,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "n4MNxexYZRfv3Rg4",
+  "_key": "!items!n4MNxexYZRfv3Rg4"
+}

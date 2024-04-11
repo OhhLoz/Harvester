@@ -1,0 +1,40 @@
+{
+  "name": "Corpse Flower Vine (x4)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-thorned-green.webp",
+  "system": {
+    "description": {
+      "value": "A shambling mound usually has several long, vines wrapped around its plant-like form. The vines can be combed into fibrous threads used to make rope or simple apparel.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Corpse Flower",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974706,
+    "modifiedTime": 1688174974706,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fkM9TXQDVCLFY1kZ",
+  "_key": "!items!fkM9TXQDVCLFY1kZ"
+}

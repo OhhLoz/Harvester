@@ -1,0 +1,40 @@
+{
+  "name": "Stone Golem Stone",
+  "type": "loot",
+  "img": "icons/commodities/stone/ore-chunk-red.webp",
+  "system": {
+    "description": {
+      "value": "When a stone golem crumbles to pieces, much of the stone is nothing but useless rock. However, it may be possible to find a stone that retains some trace amounts of arcane energy. One of these such stones may be used to craft certain weapons.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Stone Golem",
+    "quantity": 1,
+    "weight": 25,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978330,
+    "modifiedTime": 1688174978330,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "L7qvRrWMFYLChxLF",
+  "_key": "!items!L7qvRrWMFYLChxLF"
+}

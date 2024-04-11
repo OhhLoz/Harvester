@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Yuan-ti Abomination",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Yuan-ti Abomination'.",
+  "results": [
+    {
+      "text": "Yuan-ti Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Abomination",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LGZP41OdgnlUms8u",
+          "brt-result-custom-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "LGZP41OdgnlUms8u",
+      "_id": "0Vp6NpCPQkVBL963",
+      "_key": "!tables.results!gRRVTt3Ho4bzxSb2.0Vp6NpCPQkVBL963"
+    },
+    {
+      "text": "Yuan-ti Abomination Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Abomination",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Q7Ubuh9YGRM44yM9",
+          "brt-result-custom-name": "Yuan-ti Abomination Heart",
+          "brt-result-original-name": "Yuan-ti Abomination Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "Q7Ubuh9YGRM44yM9",
+      "_id": "glVJt81RbU71Ja4u",
+      "_key": "!tables.results!gRRVTt3Ho4bzxSb2.glVJt81RbU71Ja4u"
+    },
+    {
+      "text": "Yuan-ti Abomination Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Abomination",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fLfeMQnuA0Sp7Q5G",
+          "brt-result-custom-name": "Yuan-ti Abomination Skin",
+          "brt-result-original-name": "Yuan-ti Abomination Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "fLfeMQnuA0Sp7Q5G",
+      "_id": "Wgvysr8Ns0vzeOVQ",
+      "_key": "!tables.results!gRRVTt3Ho4bzxSb2.Wgvysr8Ns0vzeOVQ"
+    },
+    {
+      "text": "Yuan-ti Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Abomination",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.x7U3EmT3NWYA0exw",
+          "brt-result-custom-name": "Yuan-ti Blood vial",
+          "brt-result-original-name": "Yuan-ti Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "x7U3EmT3NWYA0exw",
+      "_id": "08umSkVyCqoGTvPh",
+      "_key": "!tables.results!gRRVTt3Ho4bzxSb2.08umSkVyCqoGTvPh"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Yuan-ti Abomination",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567226,
+    "modifiedTime": 1696756762279,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gRRVTt3Ho4bzxSb2",
+  "sort": 0,
+  "_key": "!tables!gRRVTt3Ho4bzxSb2"
+}

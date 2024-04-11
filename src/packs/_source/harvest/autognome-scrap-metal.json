@@ -1,0 +1,40 @@
+{
+  "name": "Autognome Scrap Metal",
+  "type": "loot",
+  "img": "icons/commodities/metal/barstock-broken-steel.webp",
+  "system": {
+    "description": {
+      "value": "When destroyed, an autognome often leaves behind various pieces of scrap metal. This magically infused metal can be often be forged into trinkets and jewelry. Option: To determine the metal that the creature was made of, roll a d8. 1-4: iron (1 gp); 5-6: steel (2 gp); 7: silver (5 gp); 8: gold (10 gp)",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Autognome",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973853,
+    "modifiedTime": 1688174973853,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wVOOv6q6AMjm3nqV",
+  "_key": "!items!wVOOv6q6AMjm3nqV"
+}

@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Flind",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Flind'.",
+  "results": [
+    {
+      "text": "Flind's Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flind",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Ct1508yKxD9Xjfeo",
+          "brt-result-custom-name": "Flind's Heart",
+          "brt-result-original-name": "Flind's Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "Ct1508yKxD9Xjfeo",
+      "_id": "iEBNhamdoArFA0aL",
+      "_key": "!tables.results!GyWef4CAGF5F93t0.iEBNhamdoArFA0aL"
+    },
+    {
+      "text": "Mark of Yeenoghu",
+      "type": 2,
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flind",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iHBRMFwN5Y5C6HyK",
+          "brt-result-custom-name": "Mark of Yeenoghu",
+          "brt-result-original-name": "Mark of Yeenoghu",
+          "brt-result-original-icon": "icons/magic/symbols/rune-sigil-black-pink.webp"
+        }
+      },
+      "documentId": "iHBRMFwN5Y5C6HyK",
+      "_id": "0q65RsvovDLLIMZh",
+      "_key": "!tables.results!GyWef4CAGF5F93t0.0q65RsvovDLLIMZh"
+    },
+    {
+      "text": "Gnoll Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flind",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tl2U6aAmXgpxE8XF",
+          "brt-result-custom-name": "Gnoll Teeth (small pouch)",
+          "brt-result-original-name": "Gnoll Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "tl2U6aAmXgpxE8XF",
+      "_id": "m20Q2w3BPBPQwBRL",
+      "_key": "!tables.results!GyWef4CAGF5F93t0.m20Q2w3BPBPQwBRL"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Flind",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564593,
+    "modifiedTime": 1696756756290,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "GyWef4CAGF5F93t0",
+  "sort": 0,
+  "_key": "!tables!GyWef4CAGF5F93t0"
+}

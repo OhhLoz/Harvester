@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Githyanki Supreme Commander",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Githyanki Supreme Commander'.",
+  "results": [
+    {
+      "text": "Githyanki Brain",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githyanki Supreme Commander",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.27LVYoyj7BmTbY9v",
+          "brt-result-custom-name": "Githyanki Brain",
+          "brt-result-original-name": "Githyanki Brain",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "27LVYoyj7BmTbY9v",
+      "_id": "MZrjC7F8HR8gNsR9",
+      "_key": "!tables.results!8JpCBo0Exuc8AgfG.MZrjC7F8HR8gNsR9"
+    },
+    {
+      "text": "Githyanki Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Githyanki Supreme Commander",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.bQ8k1Pl8lR79NDSV",
+          "brt-result-custom-name": "Githyanki Heart",
+          "brt-result-original-name": "Githyanki Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "bQ8k1Pl8lR79NDSV",
+      "_id": "CPeQim7e6kKpQZQx",
+      "_key": "!tables.results!8JpCBo0Exuc8AgfG.CPeQim7e6kKpQZQx"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Githyanki Supreme Commander",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560824,
+    "modifiedTime": 1696756756676,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8JpCBo0Exuc8AgfG",
+  "sort": 0,
+  "_key": "!tables!8JpCBo0Exuc8AgfG"
+}

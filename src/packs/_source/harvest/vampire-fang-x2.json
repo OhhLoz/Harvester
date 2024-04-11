@@ -1,0 +1,40 @@
+{
+  "name": "Vampire Fang (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/teeth-pointed-white.webp",
+  "system": {
+    "description": {
+      "value": "A vampire has a prominent pair of long fangs protruding down from its upper jaw. The sharp teeth resonate with dark necrotic energy and can be used to power great objects of power.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Vampire",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978642,
+    "modifiedTime": 1688174978642,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dWUftOqbsj7ebCXn",
+  "_key": "!items!dWUftOqbsj7ebCXn"
+}

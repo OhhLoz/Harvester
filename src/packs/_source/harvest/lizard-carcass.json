@@ -1,0 +1,40 @@
+{
+  "name": "Lizard Carcass",
+  "type": "loot",
+  "img": "icons/commodities/bones/bones-rib-white.webp",
+  "system": {
+    "description": {
+      "value": "If the lizard's carcass isn't completely destroyed, the creature's body can be can sold to alchemists and healers. The little beast's eyes, tongue, tail, tiny teeth, claws and organs may have uses in potions, salves and ointments.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Lizard",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 3,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976849,
+    "modifiedTime": 1688174976849,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "n6hTxDGc0xxZBsfo",
+  "_key": "!items!n6hTxDGc0xxZBsfo"
+}

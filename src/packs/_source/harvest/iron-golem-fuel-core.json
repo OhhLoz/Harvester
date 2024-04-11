@@ -1,0 +1,40 @@
+{
+  "name": "Iron Golem Fuel Core",
+  "type": "loot",
+  "img": "icons/commodities/gems/pearl-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "Embedded in the chest of an iron golem is a burning red rock, resembling a large chuck of hot coal. This hot stone continues to give off heat, long after the golem is destroyed. The core is useful to artificers and other spellcasters.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Iron Golem",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976636,
+    "modifiedTime": 1688174976636,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "L5uaRICzpLbPEDCM",
+  "_key": "!items!L5uaRICzpLbPEDCM"
+}

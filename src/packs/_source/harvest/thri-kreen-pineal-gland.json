@@ -1,0 +1,40 @@
+{
+  "name": "Thri-kreen Pineal Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "Some thri-kreens are known to be strong with psionic magic. The pineal gland is a pea-shaped, spongy ball of flesh, located at the center of the creature's brain, that helps focus the creature's psionic power. The gland has some healing properties, but also has value among psionic researchers.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Thri-kreen Gladiator",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 6,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978478,
+    "modifiedTime": 1688174978478,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "SdbtwsxiPTdL7lHy",
+  "_key": "!items!SdbtwsxiPTdL7lHy"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Dybbuk Fluid",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-green.webp",
+  "system": {
+    "description": {
+      "value": "If on the Material Plane, all that remains of this creature is the corpse that it possessed. However, if on the Abyss, one must first dissect the corpse to find the jellyfish-like form of the dybbuk. Once the dybbuk's semi-translucent membrane is pierced, a small amount of fluid can be extracted. This fluid has many alchemical properties, and is often studied by anyone researching necromancy and those that practice it.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Dybbuk",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975296,
+    "modifiedTime": 1688174975296,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nl2AOWnCxK6788Te",
+  "_key": "!items!nl2AOWnCxK6788Te"
+}

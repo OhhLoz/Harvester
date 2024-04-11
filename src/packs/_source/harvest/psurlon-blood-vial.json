@@ -1,0 +1,40 @@
+{
+  "name": "Psurlon Blood (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Psurlons live for thousands of years, and have blood with a rich history. As such, the blood is valued by divination wizards and often used by others in blood rituals.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Psurlon Leader",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977754,
+    "modifiedTime": 1688174977754,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xzGw6sJcDGH2WoY8",
+  "_key": "!items!xzGw6sJcDGH2WoY8"
+}

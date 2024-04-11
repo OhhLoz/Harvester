@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Mercane",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Mercane'.",
+  "results": [
+    {
+      "text": "Mercane Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Mercane",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8j9R8qJJCfNW4v4O",
+          "brt-result-custom-name": "Mercane Blood vial",
+          "brt-result-original-name": "Mercane Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "8j9R8qJJCfNW4v4O",
+      "_id": "rYDUh4YCIhqcXHKx",
+      "_key": "!tables.results!86dJibsSo6w27z1G.rYDUh4YCIhqcXHKx"
+    },
+    {
+      "text": "Mercane Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Mercane",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JFd2sBJaMhgpzaCI",
+          "brt-result-custom-name": "Mercane Pineal Gland",
+          "brt-result-original-name": "Mercane Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "JFd2sBJaMhgpzaCI",
+      "_id": "IXJFrCeQKpSk9254",
+      "_key": "!tables.results!86dJibsSo6w27z1G.IXJFrCeQKpSk9254"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Mercane",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562828,
+    "modifiedTime": 1696756757667,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "86dJibsSo6w27z1G",
+  "sort": 0,
+  "_key": "!tables!86dJibsSo6w27z1G"
+}

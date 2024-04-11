@@ -1,0 +1,40 @@
+{
+  "name": "Giant Centipede Shell",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-turtle-grey.webp",
+  "system": {
+    "description": {
+      "value": "The segmented chitinous shell of the giant centipede can be used by armor smiths to create shields and armor.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Centipede",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975796,
+    "modifiedTime": 1688174975796,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "HoIrGgQYljLkY6Jc",
+  "_key": "!items!HoIrGgQYljLkY6Jc"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Deinonychus Claw",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "Each of the hind feet has a very large sharp claw, that it used to kick and rip its prey apart. The claw can be anywhere from 4-7 inches long.",
+      "chat": "12",
+      "unidentified": "Nature"
+    },
+    "source": "Deinonychus",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974867,
+    "modifiedTime": 1688174974867,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gZ70UJMG7tigFcBp",
+  "_key": "!items!gZ70UJMG7tigFcBp"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Grung Air Sack",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "Grungs can produce a sound from the air sac below their mouth that from the outside, is seen to inflate and deflate. Air from the lungs is channeled to the air sac, which resonates to make the sound louder. Orange and gold grungs, the elite warriors, have a more developed air sac, allowing them to communicate with lesser grungs more effectively. This sac has value among many craftsmen, especially those that make musical instruments (particularly bagpipes and other similar wind instruments).",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Grung Elite Warrior",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976292,
+    "modifiedTime": 1688174976292,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wQoD5vA3pX24m7ac",
+  "_key": "!items!wQoD5vA3pX24m7ac"
+}

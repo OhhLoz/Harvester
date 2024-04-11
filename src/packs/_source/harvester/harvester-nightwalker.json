@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Nightwalker",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Nightwalker'.",
+  "results": [
+    {
+      "text": "Nightwalker Dust (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Nightwalker",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VpZMJCG2qtce2e6K",
+          "brt-result-custom-name": "Nightwalker Dust (pouch)",
+          "brt-result-original-name": "Nightwalker Dust (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "VpZMJCG2qtce2e6K",
+      "_id": "J0FyB0i6Ut4jvJWR",
+      "_key": "!tables.results!ijgKXTGvtBHv47Z9.J0FyB0i6Ut4jvJWR"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Nightwalker",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756571342,
+    "modifiedTime": 1696756758301,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ijgKXTGvtBHv47Z9",
+  "sort": 0,
+  "_key": "!tables!ijgKXTGvtBHv47Z9"
+}

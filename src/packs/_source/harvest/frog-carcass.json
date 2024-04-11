@@ -1,0 +1,40 @@
+{
+  "name": "Frog Carcass",
+  "type": "loot",
+  "img": "icons/commodities/bones/bones-rib-white.webp",
+  "system": {
+    "description": {
+      "value": "If the frogs carcass isn't completely destroyed, the creature's body can be can sold to alchemists and healers. The little beast's eyes, tongue, legs, and organs may have uses in potions, salves and ointments.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Frog",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975631,
+    "modifiedTime": 1688174975631,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "MWcJpIpq15YFa2kb",
+  "_key": "!items!MWcJpIpq15YFa2kb"
+}

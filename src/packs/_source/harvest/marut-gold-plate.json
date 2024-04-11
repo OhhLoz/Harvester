@@ -1,0 +1,40 @@
+{
+  "name": "Marut Gold Plate",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "Inside of each marut is a thin golden plate, with various geometric symbols etched on its surface (if the plate survives the constructs destruction). The symbols are the modron language, and outline a contract with instructions for the Marut, which the creature would follow to the letter. The plate is valued for the gold, but is also valued for its contents. If the holder of the plate fulfills the Marut's instructions, a high price can be collected from the Kolyarut (the modron that write the contract), in the Hall of Concordance, in Sigil. Or, if the gold plate is given to the party that broke the contract, it may be possible to collect an award for destroying the Marut.",
+      "chat": "20",
+      "unidentified": "Investigation"
+    },
+    "source": "Marut",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976964,
+    "modifiedTime": 1688174976964,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "6XaoWuEXNe5O4YIC",
+  "_key": "!items!6XaoWuEXNe5O4YIC"
+}

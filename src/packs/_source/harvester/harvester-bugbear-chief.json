@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Bugbear Chief",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bugbear Chief'.",
+  "results": [
+    {
+      "text": "Heart of Hruggek",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Bugbear Chief",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NcXY61PmhPinBWjT",
+          "brt-result-custom-name": "Heart of Hruggek",
+          "brt-result-original-name": "Heart of Hruggek",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "NcXY61PmhPinBWjT",
+      "_id": "So5NqKQl5WMeD0wf",
+      "_key": "!tables.results!AhnitQTxkuLpbFeQ.So5NqKQl5WMeD0wf"
+    },
+    {
+      "text": "Bugbear Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Bugbear Chief",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VJ8J3VfofBcZjrCK",
+          "brt-result-custom-name": "Bugbear Hide",
+          "brt-result-original-name": "Bugbear Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "VJ8J3VfofBcZjrCK",
+      "_id": "xmswLPmho0bw6zDE",
+      "_key": "!tables.results!AhnitQTxkuLpbFeQ.xmswLPmho0bw6zDE"
+    },
+    {
+      "text": "Bugbear Tusk (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Bugbear Chief",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jdLvN5amx4gOjvSF",
+          "brt-result-custom-name": "Bugbear Tusk",
+          "brt-result-original-name": "Bugbear Tusk (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "jdLvN5amx4gOjvSF",
+      "_id": "W7VgJhhxtuSDRKx3",
+      "_key": "!tables.results!AhnitQTxkuLpbFeQ.W7VgJhhxtuSDRKx3"
+    },
+    {
+      "text": "Bugbear Ears (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Bugbear Chief",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.m6AMr20ocX0KYC3J",
+          "brt-result-custom-name": "Bugbear Ears",
+          "brt-result-original-name": "Bugbear Ears (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "m6AMr20ocX0KYC3J",
+      "_id": "LQlGdYQ9A7i7ibdm",
+      "_key": "!tables.results!AhnitQTxkuLpbFeQ.LQlGdYQ9A7i7ibdm"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Bugbear Chief",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567871,
+    "modifiedTime": 1696756755992,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AhnitQTxkuLpbFeQ",
+  "sort": 0,
+  "_key": "!tables!AhnitQTxkuLpbFeQ"
+}

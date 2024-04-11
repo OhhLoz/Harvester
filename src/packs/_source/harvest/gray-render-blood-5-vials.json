@@ -1,0 +1,40 @@
+{
+  "name": "Gray Render Blood (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Gray Renders have thick reddish-black blood. The blood is an alchemical ingredient, and sometime used by powerful spellcasters to create bonds between creatures.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Gray Render",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976187,
+    "modifiedTime": 1688174976187,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "PpKWNXoxPl41N3Wn",
+  "_key": "!items!PpKWNXoxPl41N3Wn"
+}

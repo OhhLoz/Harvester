@@ -1,0 +1,40 @@
+{
+  "name": "Tiger's Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The tiger's hide varies from shades of orange and brown with white ventral areas and distinctive vertical black stripes. It is often used to make rugs and apparel.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Tiger",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978503,
+    "modifiedTime": 1688174978503,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Jgic91dPirLmagYb",
+  "_key": "!items!Jgic91dPirLmagYb"
+}

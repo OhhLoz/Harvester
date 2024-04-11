@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Bheur Hag",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bheur Hag'.",
+  "results": [
+    {
+      "text": "Bheur Hag's Nails (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bheur Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EA09qnoERefngkgT",
+          "brt-result-custom-name": "Bheur Hag's Nails (pouch)",
+          "brt-result-original-name": "Bheur Hag's Nails (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "EA09qnoERefngkgT",
+      "_id": "ook0f4o8fyDt3QfG",
+      "_key": "!tables.results!0SYZn8d3dtyJM74O.ook0f4o8fyDt3QfG"
+    },
+    {
+      "text": "Bheur Hag's Hair (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bheur Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QJAW77sgFZDo8vNL",
+          "brt-result-custom-name": "Bheur Hag's Hair (small pouch)",
+          "brt-result-original-name": "Bheur Hag's Hair (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "QJAW77sgFZDo8vNL",
+      "_id": "0Df0sQsvv1ZSQBkZ",
+      "_key": "!tables.results!0SYZn8d3dtyJM74O.0Df0sQsvv1ZSQBkZ"
+    },
+    {
+      "text": "Bheur Hag's Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bheur Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oHgNghlWUwPTHU7G",
+          "brt-result-custom-name": "Bheur Hag's Blood vial",
+          "brt-result-original-name": "Bheur Hag's Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "oHgNghlWUwPTHU7G",
+      "_id": "cjHovqHpT9Cgx5qX",
+      "_key": "!tables.results!0SYZn8d3dtyJM74O.cjHovqHpT9Cgx5qX"
+    },
+    {
+      "text": "Bheur Hag's Eyeball",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bheur Hag",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.pudvsxvkjhKaOqBB",
+          "brt-result-custom-name": "Bheur Hag's Eyeball",
+          "brt-result-original-name": "Bheur Hag's Eyeball",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "pudvsxvkjhKaOqBB",
+      "_id": "71r6HA4OjM69IRrt",
+      "_key": "!tables.results!0SYZn8d3dtyJM74O.71r6HA4OjM69IRrt"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Bheur Hag",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565001,
+    "modifiedTime": 1696756755957,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "0SYZn8d3dtyJM74O",
+  "sort": 0,
+  "_key": "!tables!0SYZn8d3dtyJM74O"
+}

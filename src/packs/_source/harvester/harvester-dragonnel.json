@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Dragonnel",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Dragonnel'.",
+  "results": [
+    {
+      "text": "Dragonnel Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragonnel",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6DXpXSkgrlKx7kVD",
+          "brt-result-custom-name": "Dragonnel Wing",
+          "brt-result-original-name": "Dragonnel Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "6DXpXSkgrlKx7kVD",
+      "_id": "qk2w0oritvc5IsUe",
+      "_key": "!tables.results!RiKWFskYYw7hWRx0.qk2w0oritvc5IsUe"
+    },
+    {
+      "text": "Dragonnel Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragonnel",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.p0m2zc0hokLV48V3",
+          "brt-result-custom-name": "Dragonnel Skin",
+          "brt-result-original-name": "Dragonnel Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "p0m2zc0hokLV48V3",
+      "_id": "2uqljzPLpUJrJsMx",
+      "_key": "!tables.results!RiKWFskYYw7hWRx0.2uqljzPLpUJrJsMx"
+    },
+    {
+      "text": "Dragonnel Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Dragonnel",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wNpYIqmyBsDDZlug",
+          "brt-result-custom-name": "Dragonnel Blood vial",
+          "brt-result-original-name": "Dragonnel Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "wNpYIqmyBsDDZlug",
+      "_id": "SzTgFr1fLdNVkfKe",
+      "_key": "!tables.results!RiKWFskYYw7hWRx0.SzTgFr1fLdNVkfKe"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Dragonnel",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561885,
+    "modifiedTime": 1696756756148,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "RiKWFskYYw7hWRx0",
+  "sort": 0,
+  "_key": "!tables!RiKWFskYYw7hWRx0"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Chasme Wing (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "A chasme's insect-like wings are thin, translucent, and amazingly strong. The are capable of moving at extremely high speeds, creating a loud buzzing noise, allowing the chasme to take flight. Artificers and researchers often have an interest in these wings.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Chasme",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 60,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974527,
+    "modifiedTime": 1688174974527,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "5qD0Ia3SFZSQIexQ",
+  "_key": "!items!5qD0Ia3SFZSQIexQ"
+}

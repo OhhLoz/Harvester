@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Gynosphinx",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gynosphinx'.",
+  "results": [
+    {
+      "text": "Sphinx Claws (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gynosphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0tnuS876CrttEILU",
+          "brt-result-custom-name": "Sphinx Claws (large pouch)",
+          "brt-result-original-name": "Sphinx Claws (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "0tnuS876CrttEILU",
+      "_id": "iy3NlWtvgUeytx5w",
+      "_key": "!tables.results!SQTqq1wKHXV75NNs.iy3NlWtvgUeytx5w"
+    },
+    {
+      "text": "Sphinx Feathers (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gynosphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RHt5gITlakhuCORY",
+          "brt-result-custom-name": "Sphinx Feathers (large pouch)",
+          "brt-result-original-name": "Sphinx Feathers (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "RHt5gITlakhuCORY",
+      "_id": "V5gQZrrjGfTjA9zA",
+      "_key": "!tables.results!SQTqq1wKHXV75NNs.V5gQZrrjGfTjA9zA"
+    },
+    {
+      "text": "Sphinx Mane/Hair (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gynosphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.fhVn55CQPllrHZgG",
+          "brt-result-custom-name": "Sphinx Mane/Hair (large pouch)",
+          "brt-result-original-name": "Sphinx Mane/Hair (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "fhVn55CQPllrHZgG",
+      "_id": "HhoKJV2Sg5KMEDnI",
+      "_key": "!tables.results!SQTqq1wKHXV75NNs.HhoKJV2Sg5KMEDnI"
+    },
+    {
+      "text": "Sphinx Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gynosphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gQavb6VlbuttmiLH",
+          "brt-result-custom-name": "Sphinx Hide",
+          "brt-result-original-name": "Sphinx Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "gQavb6VlbuttmiLH",
+      "_id": "wx7sEtqunZ5IdgEo",
+      "_key": "!tables.results!SQTqq1wKHXV75NNs.wx7sEtqunZ5IdgEo"
+    },
+    {
+      "text": "Gynosphinx Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Gynosphinx",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.l5dFtwPWDcnteMkX",
+          "brt-result-custom-name": "Gynosphinx Eye",
+          "brt-result-original-name": "Gynosphinx Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "l5dFtwPWDcnteMkX",
+      "_id": "EclMDhiYCsSdLXry",
+      "_key": "!tables.results!SQTqq1wKHXV75NNs.EclMDhiYCsSdLXry"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Gynosphinx",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560469,
+    "modifiedTime": 1696756756739,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "SQTqq1wKHXV75NNs",
+  "sort": 0,
+  "_key": "!tables!SQTqq1wKHXV75NNs"
+}

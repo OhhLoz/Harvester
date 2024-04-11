@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Pony",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Pony'.",
+  "results": [
+    {
+      "text": "Pony Hoof (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Pony",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.03YsOhdtWLe9es9c",
+          "brt-result-custom-name": "Pony Hoof",
+          "brt-result-original-name": "Pony Hoof (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "03YsOhdtWLe9es9c",
+      "_id": "BiyajgfwtdOkUoUz",
+      "_key": "!tables.results!gaMe0aDhXX9BazMy.BiyajgfwtdOkUoUz"
+    },
+    {
+      "text": "Pony Mane/Tail",
+      "type": 2,
+      "img": "icons/commodities/biological/tail-rodent-orange.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Pony",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PaQJjKeicmjD1uLh",
+          "brt-result-custom-name": "Pony Mane/Tail",
+          "brt-result-original-name": "Pony Mane/Tail",
+          "brt-result-original-icon": "icons/commodities/biological/tail-rodent-orange.webp"
+        }
+      },
+      "documentId": "PaQJjKeicmjD1uLh",
+      "_id": "iel68JCulCRanvZo",
+      "_key": "!tables.results!gaMe0aDhXX9BazMy.iel68JCulCRanvZo"
+    },
+    {
+      "text": "Pony Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Pony",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lisyqroDQ38pesIB",
+          "brt-result-custom-name": "Pony Hide",
+          "brt-result-original-name": "Pony Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "lisyqroDQ38pesIB",
+      "_id": "jix5fITpi7dD3vh3",
+      "_key": "!tables.results!gaMe0aDhXX9BazMy.jix5fITpi7dD3vh3"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Pony",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560170,
+    "modifiedTime": 1696756759097,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gaMe0aDhXX9BazMy",
+  "sort": 0,
+  "_key": "!tables!gaMe0aDhXX9BazMy"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Grick Tentacle (x4)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "The grick has 4 thick, rubbery tentacles with sharp barbs near the end. Some Underdark societies hunt gricks for the tentacle meat. When cooked, its texture resembles large calamari, but the meat is much oilier with a sharp acidic taste. An expert craftsman can stretch the tentacles and carefully comb them into long, thin fibers. These fibers are then soaked and treated with oils, making them useful filaments for creating ropes and whips.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Alpha Grick",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973614,
+    "modifiedTime": 1688174973614,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "kjQtsQ8hHK3ov0f2",
+  "_key": "!items!kjQtsQ8hHK3ov0f2"
+}

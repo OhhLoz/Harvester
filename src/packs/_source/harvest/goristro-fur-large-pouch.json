@@ -1,0 +1,40 @@
+{
+  "name": "Goristro Fur (large pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Goristroi fur is short, rough, and radiates heat for some time after death. The fur can be used to make cloaks and other apparel.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Goristro",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976174,
+    "modifiedTime": 1688174976174,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "De5ZZA4nLJjJj1qu",
+  "_key": "!items!De5ZZA4nLJjJj1qu"
+}

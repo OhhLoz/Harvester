@@ -1,0 +1,40 @@
+{
+  "name": "Red Fang of Shargaas Blood (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "This orc is touched by the orc god Shargaas, the Night Lord. The blood of the orc is pure black, and resonates with dark energy. Alchemists often look for this blood to create various potions. Use: A creature may use an action to drink this blood. For the next 10 minutes, a creature's darkvision range is doubled. If the creature does not have darkvision, they have darkvision up to 60'. This ability does not work for elves and half-elves.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Orc Red Fang of Shargaas",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977559,
+    "modifiedTime": 1688174977559,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tU76SYZ2YkqV2moH",
+  "_key": "!items!tU76SYZ2YkqV2moH"
+}

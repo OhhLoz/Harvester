@@ -1,0 +1,40 @@
+{
+  "name": "Hoard Scarab Dust (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Hoard scarabs produce a sticky, glittering metallic dust from their wings. The sticky glitter is difficult to collect, but a swarm of hoard scarabs may have enough dust to fill a pouch. The dust has arcane properties and is valued by alchemists, often aiding in the creation of potions and elixirs involving light and tracking.Use: A pouch of this dust may be thrown up to 20 feet and the pouch explodes upon impact. Any creature within 10 feet of impact must roll a DC 13 Dexterity saving throw or be outlined in blue light for 10 minutes. While outlined in this way, a creature sheds dim light in a 10-foot radius and can't benefit from being invisible.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Swarm of Hoard Scarabs",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978388,
+    "modifiedTime": 1688174978388,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "GLbgZp6Sv9mPW1er",
+  "_key": "!items!GLbgZp6Sv9mPW1er"
+}

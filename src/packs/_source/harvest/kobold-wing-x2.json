@@ -1,0 +1,40 @@
+{
+  "name": "Kobold Wing (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "Kobold wings have a thin but durable skin, which can be useful to many leatherworkers. They are often used to make small pieces of apparel and accessories.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Winged Kobold",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 1,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978826,
+    "modifiedTime": 1688174978826,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "to1hz9OOcjmz3Wn5",
+  "_key": "!items!to1hz9OOcjmz3Wn5"
+}

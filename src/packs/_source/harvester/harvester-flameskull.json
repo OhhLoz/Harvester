@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Flameskull",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Flameskull'.",
+  "results": [
+    {
+      "text": "Flameskull Skull",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-deformed-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flameskull",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BYy83WPjlO8NIUKC",
+          "brt-result-custom-name": "Flameskull Skull",
+          "brt-result-original-name": "Flameskull Skull",
+          "brt-result-original-icon": "icons/commodities/bones/skull-deformed-white.webp"
+        }
+      },
+      "documentId": "BYy83WPjlO8NIUKC",
+      "_id": "6s3PeTdbYYmlZKUq",
+      "_key": "!tables.results!3QqeCIhbDf2F5OFI.6s3PeTdbYYmlZKUq"
+    },
+    {
+      "text": "Flameskull Ashes (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Flameskull",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hF7Or4pfKSfPkX47",
+          "brt-result-custom-name": "Flameskull Ashes (small pouch)",
+          "brt-result-original-name": "Flameskull Ashes (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "hF7Or4pfKSfPkX47",
+      "_id": "RjgYbWeMSW7AqKEa",
+      "_key": "!tables.results!3QqeCIhbDf2F5OFI.RjgYbWeMSW7AqKEa"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Flameskull",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563926,
+    "modifiedTime": 1696756756286,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3QqeCIhbDf2F5OFI",
+  "sort": 0,
+  "_key": "!tables!3QqeCIhbDf2F5OFI"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Merregon Mask",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A metal mask is bolted, and often fused, to a merregon's face. The shape and style of the mask indicates the merregon's commander and the layer of the Nine Hells it was assigned to. The mask is made of metal forged in the Nine Hells, and has value to collectors and anyone studying devils and the Nine Hells.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Merregon",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977035,
+    "modifiedTime": 1688174977035,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "a88SraPiGtHRtxg3",
+  "_key": "!items!a88SraPiGtHRtxg3"
+}

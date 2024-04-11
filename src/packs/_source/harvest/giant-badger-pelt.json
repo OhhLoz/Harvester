@@ -1,0 +1,40 @@
+{
+  "name": "Giant Badger Pelt",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "Badger are valued for their pelts, which can be used to make small apparel items. In addition, their hair can be used to make shaving brushes, owing to its high water retention.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Badger",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975781,
+    "modifiedTime": 1688174975781,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "j1bEV2gv7FjiBHuh",
+  "_key": "!items!j1bEV2gv7FjiBHuh"
+}

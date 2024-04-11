@@ -1,0 +1,40 @@
+{
+  "name": "Homunculus Blood (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "In order to create a homunculus, a spellcaster must use some of their own blood, which becomes part of the creature. If harvested quickly, some of the homunculus' blood can be gathered, and is strongly tied to its master. This blood is an ingredient that can be used by alchemist and healers. It can also be used to track the location of the homunculus' master. Use: As an action, a creature can drink the homunculus' blood while performing a ritual with a dagger. The dagger becomes magically enchanted for the next 6 hours. As an action, the creature can place the dagger on the ground and the dagger will spin, stopping to point in the direction of the homunculus' master. If the master moves, the dagger will not continue to spin until the creature picks the dagger up, and spends another action to place it down again.",
+      "chat": "20",
+      "unidentified": "Investigation"
+    },
+    "source": "Homunculus",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976505,
+    "modifiedTime": 1688174976505,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "jTYNpQPX2YYz5fKq",
+  "_key": "!items!jTYNpQPX2YYz5fKq"
+}

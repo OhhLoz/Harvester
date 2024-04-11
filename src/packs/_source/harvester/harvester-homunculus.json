@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Homunculus",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Homunculus'.",
+  "results": [
+    {
+      "text": "Homunculus Clay",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Homunculus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CiBFVVcCCFjumffg",
+          "brt-result-custom-name": "Homunculus Clay",
+          "brt-result-original-name": "Homunculus Clay",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "CiBFVVcCCFjumffg",
+      "_id": "WCTk5dGzm1eXoUSc",
+      "_key": "!tables.results!YkNsJohk2CAN3i7C.WCTk5dGzm1eXoUSc"
+    },
+    {
+      "text": "Homunculus Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "inv",
+          "brt-source-value": "Homunculus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jTYNpQPX2YYz5fKq",
+          "brt-result-custom-name": "Homunculus Blood (vial)",
+          "brt-result-original-name": "Homunculus Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "jTYNpQPX2YYz5fKq",
+      "_id": "6fhc9lBokUQ96qif",
+      "_key": "!tables.results!YkNsJohk2CAN3i7C.6fhc9lBokUQ96qif"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "inv",
+      "brt-source-value": "Homunculus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564465,
+    "modifiedTime": 1696756757112,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "YkNsJohk2CAN3i7C",
+  "sort": 0,
+  "_key": "!tables!YkNsJohk2CAN3i7C"
+}

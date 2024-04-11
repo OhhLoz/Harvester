@@ -1,0 +1,40 @@
+{
+  "name": "Wolf Spider Venom (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A wolf spider has a venomous bite. The venom can be extracted and refined into a poison. Proficiency with the poisoner kit may be used for harvesting this venom. On a successful check, the character harvests 1 vial of venom that must be refined before producing 1 dose of Wolf Spider Poison (see below). On a failed check, the character is unable to extract the venom. If the character fails the check by 5 or more, the character is subjected to the creature's poison. Refining the Poison: Once the venom is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 12 hour and 100gp worth of material to create Wolf Spider Poison (DC 12 Poisoner Kit or Alchemist Supplies check). Wolf Spider Poison (Injury): A creature can spend an action to coat 1 melee weapon, or 3 pieces of ammunition with this poison. The poison lasts for 1 minute, or until it successfully affects a target. A creature hit with a weapon coated with this poison must succeed on a DC 11 Constitution saving throw, taking 7 (2d6) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way. This poison usually sells for 200gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Wolf Spider",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975945,
+    "modifiedTime": 1688174975945,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "mgFnHezAS7aDnTfM",
+  "_key": "!items!mgFnHezAS7aDnTfM"
+}

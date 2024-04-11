@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Death Kiss",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Death Kiss'.",
+  "results": [
+    {
+      "text": "Death Kiss Tentacle (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Death Kiss",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OTF5jZzjTpnXIduU",
+          "brt-result-custom-name": "Death Kiss Tentacle",
+          "brt-result-original-name": "Death Kiss Tentacle (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "OTF5jZzjTpnXIduU",
+      "_id": "Bq0tjQm2HZhhluHN",
+      "_key": "!tables.results!NXAp2aE1TdkH2Y70.Bq0tjQm2HZhhluHN"
+    },
+    {
+      "text": "Large Death Kiss Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Death Kiss",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Ye3V5UlZXnRsdETY",
+          "brt-result-custom-name": "Large Death Kiss Eye",
+          "brt-result-original-name": "Large Death Kiss Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "Ye3V5UlZXnRsdETY",
+      "_id": "u7jU8u2tCG4A0d4w",
+      "_key": "!tables.results!NXAp2aE1TdkH2Y70.u7jU8u2tCG4A0d4w"
+    },
+    {
+      "text": "Death Kiss Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Death Kiss",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.kuE3BFFzmBwVsLtK",
+          "brt-result-custom-name": "Death Kiss Blood vial",
+          "brt-result-original-name": "Death Kiss Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "kuE3BFFzmBwVsLtK",
+      "_id": "tSgNPhiSABA8bkmW",
+      "_key": "!tables.results!NXAp2aE1TdkH2Y70.tSgNPhiSABA8bkmW"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Death Kiss",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568026,
+    "modifiedTime": 1696756756075,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NXAp2aE1TdkH2Y70",
+  "sort": 0,
+  "_key": "!tables!NXAp2aE1TdkH2Y70"
+}

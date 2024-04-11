@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Vulture",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Vulture'.",
+  "results": [
+    {
+      "text": "Vulture Feathers (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Vulture",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IPq6Eyn1qWXoQfpk",
+          "brt-result-custom-name": "Vulture Feathers (pouch)",
+          "brt-result-original-name": "Vulture Feathers (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "IPq6Eyn1qWXoQfpk",
+      "_id": "mSJUEKcmYEkcVFUF",
+      "_key": "!tables.results!55a1JddrFUGCCy00.mSJUEKcmYEkcVFUF"
+    },
+    {
+      "text": "Vulture Stomach Acid (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Vulture",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.O5RvWKDvpoNAw8rz",
+          "brt-result-custom-name": "Vulture Stomach Acid (vial)",
+          "brt-result-original-name": "Vulture Stomach Acid (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "O5RvWKDvpoNAw8rz",
+      "_id": "wpj6hxBelYj1WRwc",
+      "_key": "!tables.results!55a1JddrFUGCCy00.wpj6hxBelYj1WRwc"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Vulture",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566079,
+    "modifiedTime": 1696756761138,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "55a1JddrFUGCCy00",
+  "sort": 0,
+  "_key": "!tables!55a1JddrFUGCCy00"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Harpy Talons (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The talons on a harpy's foot are large, sharp, and often used to claw and pierce their prey. The talons can be used in jewelry, ornamentation and to make simple tools.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Harpy",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976402,
+    "modifiedTime": 1688174976402,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "c1EaiyVmvCDq9VpP",
+  "_key": "!items!c1EaiyVmvCDq9VpP"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Ghost Dragon Spirit Shard",
+  "type": "loot",
+  "img": "icons/commodities/gems/gem-shattered-blue.webp",
+  "system": {
+    "description": {
+      "value": "When a ghost dragon disperses, a trace amount of its spiritual essence is briefly left behind. It may be possible to collect this essence using a gem worth at least 500gp. A ritual can capture the essence into the gem, creating a spirit shard. The gem contains arcane energy that spellcasters (especially necromancers) may be able to use and study. In addition, using the gem, a magic user with specific training may be able to pull the memories from the ghost's past life.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Ghost Dragon",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975766,
+    "modifiedTime": 1688174975766,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "7ef3ZLaSyANlZ6hb",
+  "_key": "!items!7ef3ZLaSyANlZ6hb"
+}

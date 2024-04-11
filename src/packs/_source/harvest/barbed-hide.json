@@ -1,0 +1,40 @@
+{
+  "name": "Barbed Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "Due to being covered in barbs, the skin of a barbed devil is very difficult to harvest. If the harvester fails the attempt by 5 or more, they accidentally get stabbed by one of the barbs, taking 1d8 damage. While any leatherworker can create apparel from the leather, some artificers may be able to craft magically infused apparel.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Barbed Devil",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974017,
+    "modifiedTime": 1688174974017,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JYH4NS7BGUrZf7hS",
+  "_key": "!items!JYH4NS7BGUrZf7hS"
+}

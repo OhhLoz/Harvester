@@ -1,0 +1,40 @@
+{
+  "name": "Purple Worm Blood (9 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The dark blood of a purple worm has a good deal of healing properties. Once refined with other ingredients, it is often used by the healers of many underground communities. The nutrient-rich substance can also be used to make a fertilizer for fungal crops.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Purple Worm",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977775,
+    "modifiedTime": 1688174977775,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "DNs3UNvzRuc37069",
+  "_key": "!items!DNs3UNvzRuc37069"
+}

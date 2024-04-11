@@ -1,0 +1,40 @@
+{
+  "name": "Drider Venom Gland (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A drider's venom is produced by a gland at the back of its mouth. The venom is a black, sticky substance that smells of rot. Proficiency with the poisoner kit may be used for harvesting this gland. On a successful check, the character harvests the creature's poison gland that must be refined before producing 1 dose of Drider Poison (see below). On a failed check, the character is unable to extract the poison gland. If the character fails the check by 5 or more, the character accidentally gets poisoned. Refining the Poison: Once the gland is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 3 hours and 100gp worth of material to create Drider Poison (DC 14 Poisoner Kit or Alchemist Supplies check). Drider Poison (Injury): A creature can use an action to coat 1 melee weapon, or 3 pieces of ammunition with this poison. Once applied, the poison retains potency for 1 minute, or until a target is successfully affected by the poison. A creature successfully hit with Drider Poison must make a DC 12 Constitution saving throw, taking 2d8 poison damage on a failed save, or half that on a successful saving throw. This poison usually sells for 200gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Drider",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975160,
+    "modifiedTime": 1688174975160,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "LPbVyWgBA2TFzvpV",
+  "_key": "!items!LPbVyWgBA2TFzvpV"
+}

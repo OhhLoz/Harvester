@@ -1,0 +1,40 @@
+{
+  "name": "Xorn Stomach Acid (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The stomach acid of a xorn is highly corrosive, allowing the creature to digest precious gems and hard metals. The acid is useful to many craftsmen and alchemists. Failing the harvesting check by 5 or more results in the harvester getting burned by the acid, taking 7 (2d6) acid damage. Use: A xorn's stomach acid is the equivalent of a vial of acid (PHB). As an action, a creature can splash the contents of this vial onto a target within 5 feet or throw the vial up to 20 feet, shattering it on impact. In either case, the creature makes a ranged attack against a target or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Xorn",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978864,
+    "modifiedTime": 1688174978864,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "DDGC7P3nRl73uREt",
+  "_key": "!items!DDGC7P3nRl73uREt"
+}

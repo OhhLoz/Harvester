@@ -1,0 +1,40 @@
+{
+  "name": "Merrenoloth Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Merrenoloth blood is an oozing black substance. It is believed to make creatures immune to the effects of the River Styx, and is valued by spellcasters and alchemists.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Merrenoloth",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977037,
+    "modifiedTime": 1688174977037,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "mHPJV2vmiBDFv8jt",
+  "_key": "!items!mHPJV2vmiBDFv8jt"
+}

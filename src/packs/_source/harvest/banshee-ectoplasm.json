@@ -1,0 +1,40 @@
+{
+  "name": "Banshee Ectoplasm",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-blue.webp",
+  "system": {
+    "description": {
+      "value": "The opaque viscous liquid is often left behind by banshees. Ectoplasm is valued by enchanters and magic users. Requires a magical pouch, jar or similar container.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Banshee",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973992,
+    "modifiedTime": 1688174973992,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1hSQwbua2BmV8gP6",
+  "_key": "!items!1hSQwbua2BmV8gP6"
+}

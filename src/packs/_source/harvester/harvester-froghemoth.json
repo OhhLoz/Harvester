@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Froghemoth",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Froghemoth'.",
+  "results": [
+    {
+      "text": "Froghemoth Tongue",
+      "type": 2,
+      "img": "icons/commodities/biological/tongue-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Froghemoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.J4irG7dI9okB6ZAV",
+          "brt-result-custom-name": "Froghemoth Tongue",
+          "brt-result-original-name": "Froghemoth Tongue",
+          "brt-result-original-icon": "icons/commodities/biological/tongue-red.webp"
+        }
+      },
+      "documentId": "J4irG7dI9okB6ZAV",
+      "_id": "6wK3Wjh6aYtVupe1",
+      "_key": "!tables.results!PkhhHqgSAghiyzBQ.6wK3Wjh6aYtVupe1"
+    },
+    {
+      "text": "Froghemoth Eye (x3)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Froghemoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hJjo0XoJSOkhaNGa",
+          "brt-result-custom-name": "Froghemoth Eye",
+          "brt-result-original-name": "Froghemoth Eye (x3)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "hJjo0XoJSOkhaNGa",
+      "_id": "y7t9Vs25jySfsEIM",
+      "_key": "!tables.results!PkhhHqgSAghiyzBQ.y7t9Vs25jySfsEIM"
+    },
+    {
+      "text": "Froghemoth Saliva (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Froghemoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lQmshlUpiC0AkZhd",
+          "brt-result-custom-name": "Froghemoth Saliva vial",
+          "brt-result-original-name": "Froghemoth Saliva (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "lQmshlUpiC0AkZhd",
+      "_id": "6FWyo04SwN7cZeDP",
+      "_key": "!tables.results!PkhhHqgSAghiyzBQ.6FWyo04SwN7cZeDP"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Froghemoth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566366,
+    "modifiedTime": 1696756756299,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "PkhhHqgSAghiyzBQ",
+  "sort": 0,
+  "_key": "!tables!PkhhHqgSAghiyzBQ"
+}

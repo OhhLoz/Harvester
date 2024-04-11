@@ -1,0 +1,40 @@
+{
+  "name": "Lightning Sac",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Harvested from the Behir's mouth, this light leathery sac contains caustic chemicals that continually crackle and pop. The sac is prized by alchemists, armorers and weaponsmiths. Use: The lightning sack can be thrown up to a range of 20 feet. If thrown, the sack explodes on impact, dealing 4d10 lightning damage to all creatures in a 10 foot radius, or half that on a successful DC 12 Dexterity saving throw.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Behir",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 875,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974094,
+    "modifiedTime": 1688174974094,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rHwEYIbeFAmDsRlF",
+  "_key": "!items!rHwEYIbeFAmDsRlF"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Ancient Dragon Wing (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "The large wings of a dragon are prized for their leather, which still retains some of the dragon's magical essence.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Ancient Dragon",
+    "quantity": 1,
+    "weight": 75,
+    "price": {
+      "value": 8000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973658,
+    "modifiedTime": 1688174973658,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Naj2LcnJt118Na1X",
+  "_key": "!items!Naj2LcnJt118Na1X"
+}

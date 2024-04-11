@@ -1,0 +1,40 @@
+{
+  "name": "Eagle Feathers (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Eagle feathers are light decorative plumage, that help the bird soar through the sky. The feathers are used in decorations, dusters, apparel and creating arrows and bolts.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Eagle",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975300,
+    "modifiedTime": 1688174975300,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fgKnGs24x4Uh4dZS",
+  "_key": "!items!fgKnGs24x4Uh4dZS"
+}

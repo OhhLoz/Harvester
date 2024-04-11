@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Deva",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Deva'.",
+  "results": [
+    {
+      "text": "Deva Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Deva",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.IqEBOItCloV7HHWD",
+          "brt-result-custom-name": "Deva Blood vial",
+          "brt-result-original-name": "Deva Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "IqEBOItCloV7HHWD",
+      "_id": "UwDKStCRcbIQgwJ8",
+      "_key": "!tables.results!vcve3hAQRA3mPlwp.UwDKStCRcbIQgwJ8"
+    },
+    {
+      "text": "Deva Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Deva",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.YRJ8dqYfbGczjaDG",
+          "brt-result-custom-name": "Deva Wing",
+          "brt-result-original-name": "Deva Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "YRJ8dqYfbGczjaDG",
+      "_id": "D2u7SJR9pWeXw8Ej",
+      "_key": "!tables.results!vcve3hAQRA3mPlwp.D2u7SJR9pWeXw8Ej"
+    },
+    {
+      "text": "Deva Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Deva",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.olaPYXJd9bEi2rhZ",
+          "brt-result-custom-name": "Deva Skin",
+          "brt-result-original-name": "Deva Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "olaPYXJd9bEi2rhZ",
+      "_id": "YJLskVycXpT2yxlw",
+      "_key": "!tables.results!vcve3hAQRA3mPlwp.YJLskVycXpT2yxlw"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Deva",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566326,
+    "modifiedTime": 1696756756101,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "vcve3hAQRA3mPlwp",
+  "sort": 0,
+  "_key": "!tables!vcve3hAQRA3mPlwp"
+}

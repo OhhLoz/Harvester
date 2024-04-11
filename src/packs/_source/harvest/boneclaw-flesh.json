@@ -1,0 +1,40 @@
+{
+  "name": "Boneclaw Flesh",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A boneclaw has pale, decaying flesh, which is easily pulled off the bone. When placed in darkness, the skin turns almost invisible. The flesh can be used by alchemists and spellcasters interested in invisibility and stealth. The flesh must be wrapped in enchanted paper or it will fade from existence in a few hours.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Boneclaw",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974257,
+    "modifiedTime": 1688174974257,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xx0mdQAtL76r2EIF",
+  "_key": "!items!xx0mdQAtL76r2EIF"
+}

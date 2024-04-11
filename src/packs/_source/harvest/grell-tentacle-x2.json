@@ -1,0 +1,40 @@
+{
+  "name": "Grell Tentacle (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "The long tentacles of a grell are tough whip-like arms. An expert craftsman can stretch the tentacles and carefully comb them into long, thin fibers. These fibers are then soaked and treated with oils, making them useful filaments for creating ropes and whips. Some adept weavers can even make strands small enough to make fabric.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Grell",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976244,
+    "modifiedTime": 1688174976244,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rkrvVJ7YJIqyHD0e",
+  "_key": "!items!rkrvVJ7YJIqyHD0e"
+}

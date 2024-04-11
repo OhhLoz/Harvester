@@ -1,0 +1,40 @@
+{
+  "name": "Cockatrice Droppings (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "While cockatrices don't intentionally eat stone, many petrified objects end up in their stomach. Unique stone trinkets, molded and shaped by the cockatrices digestive system, can be found in their droppings. Jewelers and artists find these trinkets valuable.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Cockatrice",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974697,
+    "modifiedTime": 1688174974697,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "62FvaWG7pwaiDHIP",
+  "_key": "!items!62FvaWG7pwaiDHIP"
+}

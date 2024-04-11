@@ -1,0 +1,40 @@
+{
+  "name": "Storm Giant Toenails",
+  "type": "loot",
+  "img": "icons/commodities/biological/foot-black-grey.webp",
+  "system": {
+    "description": {
+      "value": "The hard toenails of a storm giant. In order to retain their usefulness, the nails must be pulled out slowly and removed whole. Alchemists and healers use the toenails to create various concoctions.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Storm Giant",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978341,
+    "modifiedTime": 1688174978341,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "pmJuqFl7B4xQlovE",
+  "_key": "!items!pmJuqFl7B4xQlovE"
+}

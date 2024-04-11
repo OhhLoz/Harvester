@@ -1,0 +1,40 @@
+{
+  "name": "Jubilex Eye (x1d6)",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "Jubilex has numerous glaring red eyes, all different sizes, floating around inside its amorphous form. Fluids can be extracted from these soft orbs that can be used to create powerful cleaning and detoxifying solutions.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Jubilex",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976678,
+    "modifiedTime": 1688174976678,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ONdIxgF6U2EtDTDP",
+  "_key": "!items!ONdIxgF6U2EtDTDP"
+}

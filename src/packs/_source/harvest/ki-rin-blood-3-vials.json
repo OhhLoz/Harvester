@@ -1,0 +1,40 @@
+{
+  "name": "Ki-rin Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A ki'rin's blood is a thick, golden fluid. The blood has strong healing and regenerative properties.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Ki-rin",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976693,
+    "modifiedTime": 1688174976693,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AwkDo7Jp7BqM1Vxf",
+  "_key": "!items!AwkDo7Jp7BqM1Vxf"
+}

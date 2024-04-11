@@ -1,0 +1,40 @@
+{
+  "name": "Dragonnel Wing (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "The wings of a dragonnel provide an small amount of smooth leather, which can be used to fashion apparel and light armor.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Dragonnel",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975133,
+    "modifiedTime": 1688174975133,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "6DXpXSkgrlKx7kVD",
+  "_key": "!items!6DXpXSkgrlKx7kVD"
+}

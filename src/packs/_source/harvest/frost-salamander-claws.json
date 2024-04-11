@@ -1,0 +1,40 @@
+{
+  "name": "Frost Salamander Claws",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "A frost salamander's claws resemble curved shards of sharp ice. They are hard as steel and always feel cold to the touch. Once the creature dies, if they are not harvested fast enough, they begin to crack and then melt. Azer often hunt these creatures for their claws to make weapons.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Frost Salamander",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975678,
+    "modifiedTime": 1688174975678,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "2LraTRDguObpXj0V",
+  "_key": "!items!2LraTRDguObpXj0V"
+}

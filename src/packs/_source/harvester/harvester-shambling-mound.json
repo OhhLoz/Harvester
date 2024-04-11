@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Shambling Mound",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Shambling Mound'.",
+  "results": [
+    {
+      "text": "Shambling Mound Vine (x4)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-thorned-green.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Shambling Mound",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.VD7lk9rfnYAZE7Dy",
+          "brt-result-custom-name": "Shambling Mound Vine",
+          "brt-result-original-name": "Shambling Mound Vine (x4)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-thorned-green.webp"
+        }
+      },
+      "documentId": "VD7lk9rfnYAZE7Dy",
+      "_id": "0aUkAa2VO0gf9K9R",
+      "_key": "!tables.results!L9wJtW6TE9q107NY.0aUkAa2VO0gf9K9R"
+    },
+    {
+      "text": "Shambling Mound Root-Stem",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Shambling Mound",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WXkT2flqFZXvcovR",
+          "brt-result-custom-name": "Shambling Mound Root-Stem",
+          "brt-result-original-name": "Shambling Mound Root-Stem",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "WXkT2flqFZXvcovR",
+      "_id": "PK7NcfbBsjG6PsKi",
+      "_key": "!tables.results!L9wJtW6TE9q107NY.PK7NcfbBsjG6PsKi"
+    },
+    {
+      "text": "Shambling Mound Moss (x3 pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Shambling Mound",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.oMWuOEr8lAilhpCF",
+          "brt-result-custom-name": "Shambling Mound Moss pouch",
+          "brt-result-original-name": "Shambling Mound Moss (x3 pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "oMWuOEr8lAilhpCF",
+      "_id": "xefkIscbdlKEKhRy",
+      "_key": "!tables.results!L9wJtW6TE9q107NY.xefkIscbdlKEKhRy"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Shambling Mound",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756570493,
+    "modifiedTime": 1696756759932,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "L9wJtW6TE9q107NY",
+  "sort": 0,
+  "_key": "!tables!L9wJtW6TE9q107NY"
+}

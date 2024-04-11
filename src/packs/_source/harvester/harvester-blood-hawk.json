@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Blood Hawk",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Blood Hawk'.",
+  "results": [
+    {
+      "text": "Blood Hawks Feathers",
+      "type": 2,
+      "img": "icons/commodities/materials/feather-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Blood Hawk",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ISLiEMQcbKKBx7YY",
+          "brt-result-custom-name": "Blood Hawks Feathers",
+          "brt-result-original-name": "Blood Hawks Feathers",
+          "brt-result-original-icon": "icons/commodities/materials/feather-white.webp"
+        }
+      },
+      "documentId": "ISLiEMQcbKKBx7YY",
+      "_id": "XIsc9VZFhIKPu6ct",
+      "_key": "!tables.results!znHvmopnO8asM6Jb.XIsc9VZFhIKPu6ct"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Blood Hawk",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566100,
+    "modifiedTime": 1696756755963,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "znHvmopnO8asM6Jb",
+  "sort": 0,
+  "_key": "!tables!znHvmopnO8asM6Jb"
+}

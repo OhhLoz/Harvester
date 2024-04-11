@@ -1,0 +1,40 @@
+{
+  "name": "Giant Strider Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The reptilian skin of a giant strider is tough and sturdy. A leatherworker can work the skin into a tough leather.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Strider",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975913,
+    "modifiedTime": 1688174975913,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "T1RTwka9KD0pZCmi",
+  "_key": "!items!T1RTwka9KD0pZCmi"
+}

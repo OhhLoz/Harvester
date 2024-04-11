@@ -1,0 +1,40 @@
+{
+  "name": "Geryon's Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The long, scaly, serpent-like tail of Geryon has extremely tough skin that resonates with hellish arcane energy. It can be used to make magical Scale Mail and other leather goods.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Geryon",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975740,
+    "modifiedTime": 1688174975740,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "U2yacZ0sO9qw2vPy",
+  "_key": "!items!U2yacZ0sO9qw2vPy"
+}

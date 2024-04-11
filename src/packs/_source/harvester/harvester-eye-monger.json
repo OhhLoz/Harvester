@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Eye Monger",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Eye Monger'.",
+  "results": [
+    {
+      "text": "Eye Monger Stomach",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-stomach.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Eye Monger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EjmNzk5GgCoJdgfH",
+          "brt-result-custom-name": "Eye Monger Stomach",
+          "brt-result-original-name": "Eye Monger Stomach",
+          "brt-result-original-icon": "icons/commodities/biological/organ-stomach.webp"
+        }
+      },
+      "documentId": "EjmNzk5GgCoJdgfH",
+      "_id": "TAB3u5hJ90YHjhx8",
+      "_key": "!tables.results!kE61XKAFBzqgPPau.TAB3u5hJ90YHjhx8"
+    },
+    {
+      "text": "Eye Monger Saliva (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Eye Monger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.F3kXv9hEHlWPqBFS",
+          "brt-result-custom-name": "Eye Monger Saliva vial",
+          "brt-result-original-name": "Eye Monger Saliva (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "F3kXv9hEHlWPqBFS",
+      "_id": "bvB6gu6ViacaDyL5",
+      "_key": "!tables.results!kE61XKAFBzqgPPau.bvB6gu6ViacaDyL5"
+    },
+    {
+      "text": "Eye Monger Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Eye Monger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hUz3IXVXzKDddNGT",
+          "brt-result-custom-name": "Eye Monger Eye",
+          "brt-result-original-name": "Eye Monger Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "hUz3IXVXzKDddNGT",
+      "_id": "8M1tX2PHXLgmSuqD",
+      "_key": "!tables.results!kE61XKAFBzqgPPau.8M1tX2PHXLgmSuqD"
+    },
+    {
+      "text": "Eye Monger Teeth (x10)",
+      "type": 2,
+      "img": "icons/commodities/bones/bone-jaw-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Eye Monger",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xM12AEtq0ZGR5jGY",
+          "brt-result-custom-name": "Eye Monger Teeth",
+          "brt-result-original-name": "Eye Monger Teeth (x10)",
+          "brt-result-original-icon": "icons/commodities/bones/bone-jaw-white.webp"
+        }
+      },
+      "documentId": "xM12AEtq0ZGR5jGY",
+      "_id": "cHQnOn4ZgyzxSKR4",
+      "_key": "!tables.results!kE61XKAFBzqgPPau.cHQnOn4ZgyzxSKR4"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Eye Monger",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565139,
+    "modifiedTime": 1696756756216,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "kE61XKAFBzqgPPau",
+  "sort": 0,
+  "_key": "!tables!kE61XKAFBzqgPPau"
+}

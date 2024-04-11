@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Spectator",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Spectator'.",
+  "results": [
+    {
+      "text": "Spectator Eye Stalk",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Spectator",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5Cv8DyySdsHAk4uI",
+          "brt-result-custom-name": "Spectator Eye Stalk",
+          "brt-result-original-name": "Spectator Eye Stalk",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "5Cv8DyySdsHAk4uI",
+      "_id": "ag5G6dYL8st6mKzP",
+      "_key": "!tables.results!fkgmylszKpQ6wMhi.ag5G6dYL8st6mKzP"
+    },
+    {
+      "text": "Large Spectator Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Spectator",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.OLs3P3W40A7r6tU2",
+          "brt-result-custom-name": "Large Spectator Eye",
+          "brt-result-original-name": "Large Spectator Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "OLs3P3W40A7r6tU2",
+      "_id": "3Q6DM1od2wXUcd8b",
+      "_key": "!tables.results!fkgmylszKpQ6wMhi.3Q6DM1od2wXUcd8b"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Spectator",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561667,
+    "modifiedTime": 1696756759973,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fkgmylszKpQ6wMhi",
+  "sort": 0,
+  "_key": "!tables!fkgmylszKpQ6wMhi"
+}

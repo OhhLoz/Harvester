@@ -1,0 +1,40 @@
+{
+  "name": "Giant Scorpion Chitin",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "A giant scorpion is covered in large, segmented plates of hard chitin. It can be difficult removing this shell-like covering from the scorpion's large body. Armorers can often fashion chitin armor using these plates.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Scorpion",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975872,
+    "modifiedTime": 1688174975872,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ISpz1DmyvuBJIhsU",
+  "_key": "!items!ISpz1DmyvuBJIhsU"
+}

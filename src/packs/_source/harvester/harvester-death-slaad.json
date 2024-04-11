@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Death Slaad",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Death Slaad'.",
+  "results": [
+    {
+      "text": "Slaad Slime (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Death Slaad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.tfQpKMbGTX12wEjH",
+          "brt-result-custom-name": "Slaad Slime (vial)",
+          "brt-result-original-name": "Slaad Slime (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "tfQpKMbGTX12wEjH",
+      "_id": "r4CvL8GiZVD7wZWi",
+      "_key": "!tables.results!fcdHTjd0CdZV1kfK.r4CvL8GiZVD7wZWi"
+    },
+    {
+      "text": "Death Slaad Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Death Slaad",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wic0fN2bRwE9JeWb",
+          "brt-result-custom-name": "Death Slaad Heart",
+          "brt-result-original-name": "Death Slaad Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "wic0fN2bRwE9JeWb",
+      "_id": "YL2gWl4NxGWdNJdo",
+      "_key": "!tables.results!fcdHTjd0CdZV1kfK.YL2gWl4NxGWdNJdo"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Death Slaad",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756586609,
+    "modifiedTime": 1696756756078,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fcdHTjd0CdZV1kfK",
+  "sort": 0,
+  "_key": "!tables!fcdHTjd0CdZV1kfK"
+}

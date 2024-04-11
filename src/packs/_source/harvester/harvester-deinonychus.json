@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Deinonychus",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Deinonychus'.",
+  "results": [
+    {
+      "text": "Deinonychus Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Deinonychus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1MDt4v2YEjjdaE5Y",
+          "brt-result-custom-name": "Deinonychus Skin",
+          "brt-result-original-name": "Deinonychus Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "1MDt4v2YEjjdaE5Y",
+      "_id": "eQ8d8fZmXHWxba3A",
+      "_key": "!tables.results!hSRdflTLgWAsSmdu.eQ8d8fZmXHWxba3A"
+    },
+    {
+      "text": "Deinonychus Claw",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-brown-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "12",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Deinonychus",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gZ70UJMG7tigFcBp",
+          "brt-result-custom-name": "Deinonychus Claw",
+          "brt-result-original-name": "Deinonychus Claw",
+          "brt-result-original-icon": "icons/commodities/claws/claw-brown-black.webp"
+        }
+      },
+      "documentId": "gZ70UJMG7tigFcBp",
+      "_id": "xzSssoiad3DwmDh0",
+      "_key": "!tables.results!hSRdflTLgWAsSmdu.xzSssoiad3DwmDh0"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Deinonychus",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560570,
+    "modifiedTime": 1696756756093,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "hSRdflTLgWAsSmdu",
+  "sort": 0,
+  "_key": "!tables!hSRdflTLgWAsSmdu"
+}

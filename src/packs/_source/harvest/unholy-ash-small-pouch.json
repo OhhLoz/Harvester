@@ -1,0 +1,40 @@
+{
+  "name": "Unholy Ash (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "To harvest unholy ash, a defeated death knight must be burned in a ritual fire. Alchemists often use to ash in potions to thwart undead.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Death Knight",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974802,
+    "modifiedTime": 1688174974802,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "B5MIzsD1oMffPcqP",
+  "_key": "!items!B5MIzsD1oMffPcqP"
+}

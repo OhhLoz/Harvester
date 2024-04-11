@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Mummy",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Mummy'.",
+  "results": [
+    {
+      "text": "Mummy Bandages (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mummy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.YHRa3NI8lxSnPHCL",
+          "brt-result-custom-name": "Mummy Bandages (pouch)",
+          "brt-result-original-name": "Mummy Bandages (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "YHRa3NI8lxSnPHCL",
+      "_id": "1VgXINmHz7l31AlL",
+      "_key": "!tables.results!4y7J71Xv6WPz5msT.1VgXINmHz7l31AlL"
+    },
+    {
+      "text": "Mummy Dust (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Mummy",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zBu5SxUoPzwT6wB3",
+          "brt-result-custom-name": "Mummy Dust (small pouch)",
+          "brt-result-original-name": "Mummy Dust (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "zBu5SxUoPzwT6wB3",
+      "_id": "FHKARDavhjskb2sV",
+      "_key": "!tables.results!4y7J71Xv6WPz5msT.FHKARDavhjskb2sV"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Mummy",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756573276,
+    "modifiedTime": 1696756757698,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "4y7J71Xv6WPz5msT",
+  "sort": 0,
+  "_key": "!tables!4y7J71Xv6WPz5msT"
+}

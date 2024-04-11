@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Morkoth",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Morkoth'.",
+  "results": [
+    {
+      "text": "Morkoth Blood (7 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "7"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Morkoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.JgoDSBnxW3vIde9c",
+          "brt-result-custom-name": "Morkoth Blood vial",
+          "brt-result-original-name": "Morkoth Blood (7 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "JgoDSBnxW3vIde9c",
+      "_id": "9TlPCkDaT9xotBwe",
+      "_key": "!tables.results!oMfEKOoei4ssBN2n.9TlPCkDaT9xotBwe"
+    },
+    {
+      "text": "Morkoth Tentacle (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Morkoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SZ23KMuB55en7VwE",
+          "brt-result-custom-name": "Morkoth Tentacle",
+          "brt-result-original-name": "Morkoth Tentacle (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "SZ23KMuB55en7VwE",
+      "_id": "9GDdvEceTV0RHJbT",
+      "_key": "!tables.results!oMfEKOoei4ssBN2n.9GDdvEceTV0RHJbT"
+    },
+    {
+      "text": "Morkoth Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Morkoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.lFh1KTTIuJYgNDbo",
+          "brt-result-custom-name": "Morkoth Eye",
+          "brt-result-original-name": "Morkoth Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "lFh1KTTIuJYgNDbo",
+      "_id": "GVB9Q2OVOD0tQZdn",
+      "_key": "!tables.results!oMfEKOoei4ssBN2n.GVB9Q2OVOD0tQZdn"
+    },
+    {
+      "text": "Morkoth Celestial Pearl",
+      "type": 2,
+      "img": "icons/commodities/gems/pearls-white.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Morkoth",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.uhf3OGIqI6VCx3Fa",
+          "brt-result-custom-name": "Morkoth Celestial Pearl",
+          "brt-result-original-name": "Morkoth Celestial Pearl",
+          "brt-result-original-icon": "icons/commodities/gems/pearls-white.webp"
+        }
+      },
+      "documentId": "uhf3OGIqI6VCx3Fa",
+      "_id": "za0cioI9mIujY7Vm",
+      "_key": "!tables.results!oMfEKOoei4ssBN2n.za0cioI9mIujY7Vm"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Morkoth",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756566538,
+    "modifiedTime": 1696756757691,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "oMfEKOoei4ssBN2n",
+  "sort": 0,
+  "_key": "!tables!oMfEKOoei4ssBN2n"
+}

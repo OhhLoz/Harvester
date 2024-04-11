@@ -1,0 +1,40 @@
+{
+  "name": "Dracohydra Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "The scaled hide of a dracohydra is extremely tough and durable. The scales are highly decorative, and often used in jewelry. Smiths can use the hide to make scale armor.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Dracohydra",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 300,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975019,
+    "modifiedTime": 1688174975019,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "kJgE55v4nbeXHBHV",
+  "_key": "!items!kJgE55v4nbeXHBHV"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Lizardfolk Horns",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "Lizardfolk Shaman are blessed by Semuanya and develop a distinctive set of ridges/horns that run from the top of the shaman's head down to the end of its tail. These horns act as a conduit between the shaman and Semuanya. The horns must be harvested before the link with Semuanya is broken. If the horns are ground to dust, one can tap into their arcane power.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Lizardfolk Shaman",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976878,
+    "modifiedTime": 1688174976878,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "yKfwbn1PaNwn5Epv",
+  "_key": "!items!yKfwbn1PaNwn5Epv"
+}

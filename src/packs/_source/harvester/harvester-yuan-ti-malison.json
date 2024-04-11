@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Yuan-ti Malison",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Yuan-ti Malison'.",
+  "results": [
+    {
+      "text": "Yuan-ti Venom (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Malison",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PTKh5tLpgYtsgD66",
+          "brt-result-custom-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-name": "Yuan-ti Venom (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "PTKh5tLpgYtsgD66",
+      "_id": "oBMZYRRC8oqPHDmo",
+      "_key": "!tables.results!9T00GJQwNtgRMO8V.oBMZYRRC8oqPHDmo"
+    },
+    {
+      "text": "Yuan-ti Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Yuan-ti Malison",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RG5Gemgf8hav4vKb",
+          "brt-result-custom-name": "Yuan-ti Blood vial",
+          "brt-result-original-name": "Yuan-ti Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "RG5Gemgf8hav4vKb",
+      "_id": "wydPtkdnqkWABW9e",
+      "_key": "!tables.results!9T00GJQwNtgRMO8V.wydPtkdnqkWABW9e"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Yuan-ti Malison",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568358,
+    "modifiedTime": 1696756762284,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9T00GJQwNtgRMO8V",
+  "sort": 0,
+  "_key": "!tables!9T00GJQwNtgRMO8V"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Glabrezu Claws",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "A glabrezu's hard, crab-like pincers are made of a strong fire-proof material. The claws can be fashioned into useful smithy tools.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Glabrezu",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976088,
+    "modifiedTime": 1688174976088,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "zMN4JMBGztMTnWDo",
+  "_key": "!items!zMN4JMBGztMTnWDo"
+}

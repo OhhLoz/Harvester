@@ -1,0 +1,40 @@
+{
+  "name": "Ssurran Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A Ssurran's skin is covered in small scales. The scales aren't strong or large enough to make armor, but the skin can be used to make apparel and accessories, including belts and footwear. The scales can also be used by alchemists and healers.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Ssurran",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978228,
+    "modifiedTime": 1688174978228,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "SQckYPaSEaPK55ex",
+  "_key": "!items!SQckYPaSEaPK55ex"
+}

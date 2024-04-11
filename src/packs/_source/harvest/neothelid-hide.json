@@ -1,0 +1,40 @@
+{
+  "name": "Neothelid Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A neothelid's purple hide is covered in a thick caustic enzyme, that doesn't appear to harm the skin due to the creature's natural psionic abilities. However, when the creature dies, the acidic substance begins to eat away at the creature's flesh. Harvesting must be done quickly before the skin begins to melt away. The hide can be used to make a tough leather that still retains some of the creature's psionic powers.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Neothelid",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977343,
+    "modifiedTime": 1688174977343,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "GooR6IDLnSqv4Nx6",
+  "_key": "!items!GooR6IDLnSqv4Nx6"
+}

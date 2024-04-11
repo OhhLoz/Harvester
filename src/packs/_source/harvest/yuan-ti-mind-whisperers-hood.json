@@ -1,0 +1,40 @@
+{
+  "name": "Yuan-ti Mind Whisperer's Hood",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The cobra-like hood of a yuan-ti mind whisperer enhances their innate magical abilities. The hood's skin must be harvested intact, or it loses its amplification power. Leatherworkers and craftsmen can create simple hoods and garments using the skin, which can then be enchanted by artificers and other spellcasters to enhance their own abilities.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Yuan-ti Mind Whisperer",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979041,
+    "modifiedTime": 1688174979041,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1cy1nM7lARGf7m5m",
+  "_key": "!items!1cy1nM7lARGf7m5m"
+}

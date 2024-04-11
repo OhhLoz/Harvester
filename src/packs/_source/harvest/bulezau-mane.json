@@ -1,0 +1,40 @@
+{
+  "name": "Bulezau Mane",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-white-tan.webp",
+  "system": {
+    "description": {
+      "value": "A bulezau has a mane of hair that grows downwards, covering most of the neck, shoulders, and chest. The mane smells horrible, is covered in filth, and is riddled with insects. Alchemists and healers may want the mane for the filthy oil that coats the hair.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Bulezau",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974383,
+    "modifiedTime": 1688174974383,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nP8T0l2a4DJx6F8F",
+  "_key": "!items!nP8T0l2a4DJx6F8F"
+}

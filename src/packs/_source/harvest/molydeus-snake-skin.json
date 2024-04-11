@@ -1,0 +1,40 @@
+{
+  "name": "Molydeus' Snake Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "A molydeus has a second head, that of a giant snake protruding out of its neck. The thick reptilian hide can provide soft, but strong leather. Leatherworkers can use the skin in their craft, but some artificers may be able to create highly protective armor using the skin. Some say the snake skin provides protection from poison.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Molydeus",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977169,
+    "modifiedTime": 1688174977169,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3PY0ukrP1oAqk0rc",
+  "_key": "!items!3PY0ukrP1oAqk0rc"
+}

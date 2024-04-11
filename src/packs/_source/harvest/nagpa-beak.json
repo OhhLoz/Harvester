@@ -1,0 +1,40 @@
+{
+  "name": "Nagpa Beak",
+  "type": "loot",
+  "img": "icons/commodities/bones/beak-hooked-red.webp",
+  "system": {
+    "description": {
+      "value": "The large, vulture-like beak is extremely hard. It may be used to fashion helms, pauldrons and other armaments. Craftsmen can use the beak to make shovels and other tools.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Nagpa",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 300,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977255,
+    "modifiedTime": 1688174977255,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "6jPtMbbSl3W4lqWf",
+  "_key": "!items!6jPtMbbSl3W4lqWf"
+}

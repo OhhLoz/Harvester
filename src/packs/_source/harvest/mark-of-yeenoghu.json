@@ -1,0 +1,40 @@
+{
+  "name": "Mark of Yeenoghu",
+  "type": "loot",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "This mark, a brand of a triple-headed flail, is used to pay homage to Yeenoghu, the Ruler of Ruin, a demon lord worshipped by gnolls. The mark has little artistic worth, but it has value among demonologists, summoners, and those that study the abyss.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Flind",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975588,
+    "modifiedTime": 1688174975588,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "iHBRMFwN5Y5C6HyK",
+  "_key": "!items!iHBRMFwN5Y5C6HyK"
+}

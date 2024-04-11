@@ -1,0 +1,40 @@
+{
+  "name": "Choldrith Fur (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Gray-black fur that is surprisingly light and fluffy. The fur is used by the Choldrith to sense tiny vibrations on their webs. The fur is used by the Chitine to sense tiny vibrations on their webs. Crafters and tailors may be able to use this fur in their trade.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Choldrith",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974583,
+    "modifiedTime": 1688174974583,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "UxeYiAd4iDRKfg6m",
+  "_key": "!items!UxeYiAd4iDRKfg6m"
+}

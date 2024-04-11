@@ -1,0 +1,40 @@
+{
+  "name": "Orcus' Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "Orcus has two large horns protruding from its goat-like head. The horns are heavy and difficult to remove, being firmly attached to the demon lord's skull. The horns are seething with necrotic power.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Orcus",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 4000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977582,
+    "modifiedTime": 1688174977582,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "N5g658Bxy2d8njao",
+  "_key": "!items!N5g658Bxy2d8njao"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Flail Snail Shell",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-turtle-grey.webp",
+  "system": {
+    "description": {
+      "value": "This incredibly hard shell is constantly coated by the flail snail's slime, which hardens over time, providing layer-upon-layer of protection. After years, the shell gets a metallic, rainbow sheen. While large and heavy, its hard surface is valued among most merchants.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Flail Snail",
+    "quantity": 1,
+    "weight": 250,
+    "price": {
+      "value": 5000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975568,
+    "modifiedTime": 1688174975568,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JYh91JVkparDQMav",
+  "_key": "!items!JYh91JVkparDQMav"
+}

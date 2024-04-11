@@ -1,0 +1,40 @@
+{
+  "name": "Faerie Dragon's Euphoric Breath",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Requires an enchanted vial. If one is quick, and has an enchanted vial, it is possible to capture the final breath of a faerie dragon. The breath contains a highly euphoric gas that is valued by alchemists and artificers. Use: Using an action, you can throw the vial at a target within 20 ft. On a successful hit, the vial shatters and the gas is released. The target must succeed a DC 11 Wisdom saving throw, or for 1 minute, the target is affected by a sense of euphoria. It can't take an action, bonus action or reaction, and must use its movement to move in a random direction. At the end of each of its turn, it can attempt the save again. A successful roll ends the effect.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Faerie Dragon",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975480,
+    "modifiedTime": 1688174975480,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "DZFmlTVY5KeWWepX",
+  "_key": "!items!DZFmlTVY5KeWWepX"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Troll Blood (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Trolls have amazing regenerative properties. A troll's blood clots, scabs and heals the surrounding tissue extremely quickly. The blood is a common ingredient in many healing potions.",
+      "chat": "15",
+      "unidentified": "Medicine"
+    },
+    "source": "Troll",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978560,
+    "modifiedTime": 1688174978560,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dTCJCoFEUjueZtCA",
+  "_key": "!items!dTCJCoFEUjueZtCA"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Deathlock Mastermind Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A deathlock's blood is a viscous black fluid. The blood has motes of necrotic energy, which can be harnessed by adept spellcasters.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Deathlock Mastermind",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974830,
+    "modifiedTime": 1688174974830,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "kyDjjOgVnDE3Pv3R",
+  "_key": "!items!kyDjjOgVnDE3Pv3R"
+}

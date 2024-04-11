@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Duergar Despot",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Duergar Despot'.",
+  "results": [
+    {
+      "text": "Duergar Despot Fuel Core",
+      "type": 2,
+      "img": "icons/commodities/gems/pearl-brown-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Despot",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HZfEm0qtHhYTOA0R",
+          "brt-result-custom-name": "Duergar Despot Fuel Core",
+          "brt-result-original-name": "Duergar Despot Fuel Core",
+          "brt-result-original-icon": "icons/commodities/gems/pearl-brown-red.webp"
+        }
+      },
+      "documentId": "HZfEm0qtHhYTOA0R",
+      "_id": "Du6eJzr7WRvRG85q",
+      "_key": "!tables.results!sGrI5hyGa0OvdvQR.Du6eJzr7WRvRG85q"
+    },
+    {
+      "text": "Duergar Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Despot",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZGVtjbq5irosRjbH",
+          "brt-result-custom-name": "Duergar Pineal Gland",
+          "brt-result-original-name": "Duergar Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "ZGVtjbq5irosRjbH",
+      "_id": "OfIPGnxXs7cZ7VXd",
+      "_key": "!tables.results!sGrI5hyGa0OvdvQR.OfIPGnxXs7cZ7VXd"
+    },
+    {
+      "text": "Duergar Despot Iron Fist",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Duergar Despot",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.jrUarF2uT3Pkyvy1",
+          "brt-result-custom-name": "Duergar Despot Iron Fist",
+          "brt-result-original-name": "Duergar Despot Iron Fist",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "jrUarF2uT3Pkyvy1",
+      "_id": "Td4NB0ySCvmBpHm4",
+      "_key": "!tables.results!sGrI5hyGa0OvdvQR.Td4NB0ySCvmBpHm4"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Duergar Despot",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565978,
+    "modifiedTime": 1696756756159,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "sGrI5hyGa0OvdvQR",
+  "sort": 0,
+  "_key": "!tables!sGrI5hyGa0OvdvQR"
+}

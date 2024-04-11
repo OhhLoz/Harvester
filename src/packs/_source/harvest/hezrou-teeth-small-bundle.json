@@ -1,0 +1,40 @@
+{
+  "name": "Hezrou Teeth (small bundle)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Hezrou have razor sharp, shark-like teeth. The teeth can be used in jewelry or to create special tools (i.e. saws).",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Hezrou",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976436,
+    "modifiedTime": 1688174976436,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "JNiheaN4Tkx4FRci",
+  "_key": "!items!JNiheaN4Tkx4FRci"
+}

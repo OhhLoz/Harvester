@@ -1,0 +1,40 @@
+{
+  "name": "Kobold's Tail",
+  "type": "loot",
+  "img": "icons/commodities/biological/tail-rodent-orange.webp",
+  "system": {
+    "description": {
+      "value": "A kobold's tail has little value, but it can be used to collect any bounties on the creatures.",
+      "chat": "5",
+      "unidentified": "Medicine"
+    },
+    "source": "Kobold Dragonshield",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 5,
+      "denomination": "cp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976728,
+    "modifiedTime": 1688174976728,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wfVbqbSz86XcfwxK",
+  "_key": "!items!wfVbqbSz86XcfwxK"
+}

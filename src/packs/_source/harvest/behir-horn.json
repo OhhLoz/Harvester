@@ -1,0 +1,40 @@
+{
+  "name": "Behir Horn",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "As Behir's were created to fight dragons, their horn magically resonates when a dragon is nearby. Once a behir dies, the power is diminished significantly, but the horn is still effective. Use: The behir's horn will begin to vibrate when it comes within 1 mile of a dragon (whether in its true form or polymorphed), but does not point in any direction. The vibrations become more pronounced as it gets closer to the dragon.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Behir",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 300,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974088,
+    "modifiedTime": 1688174974088,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "uDioeo8X91ydECsp",
+  "_key": "!items!uDioeo8X91ydECsp"
+}

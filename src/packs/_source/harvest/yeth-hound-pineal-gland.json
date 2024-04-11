@@ -1,0 +1,40 @@
+{
+  "name": "Yeth Hound Pineal Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "A yeth hound's pineal gland is the source of their telepathic power, connecting them to their pack and their master. The pineal gland is useful to spellcasters and anyone studying telepathy. Use: A spellcaster can spend an uninterrupted hour and use the pineal gland to perform an arcane ritual. Upon completion, the caster will know the exact direction and approximate location of something the yeth beast has a connection to (typically the beast's current master, or pack leader, whichever is more dominant). The caster will not know any details about this source of power. Once the ritual is complete, the spellcaster will not know if this source moves, unless they perform the ritual again. For example, the spellcaster may learn the following: \"\"the yeth hound has a strong connection to something about a mile and a half to the northeast.\"\"",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Yeth Hound",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 80,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978920,
+    "modifiedTime": 1688174978920,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gA0tWaUNZn5tM69F",
+  "_key": "!items!gA0tWaUNZn5tM69F"
+}

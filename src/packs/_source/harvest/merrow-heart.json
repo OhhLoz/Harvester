@@ -1,0 +1,40 @@
+{
+  "name": "Merrow Heart",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-red.webp",
+  "system": {
+    "description": {
+      "value": "A merrow's heart is a bulbous blue ball of flesh and veins. The heart has a loose connection to the Abyss and the demon lord Demogorgon. Spellcasters, especially summoners, and demonologists value the heart.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Merrow",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977055,
+    "modifiedTime": 1688174977055,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "IrQ72TofBr3wx35q",
+  "_key": "!items!IrQ72TofBr3wx35q"
+}

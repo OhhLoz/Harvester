@@ -1,0 +1,40 @@
+{
+  "name": "Froghemoth Saliva (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The saliva of a froghemoth is a clear, sticky substance with a green-yellow tint. The saliva has a great deal of medicinal properties, and is valued by healers and doctors.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Froghemoth",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975635,
+    "modifiedTime": 1688174975635,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lQmshlUpiC0AkZhd",
+  "_key": "!items!lQmshlUpiC0AkZhd"
+}

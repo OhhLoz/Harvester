@@ -1,0 +1,40 @@
+{
+  "name": "Yeenoghu Amygdala",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The amygdala is a dark red, almond–shaped piece of spongy flesh in the Yeenoghu's brain, that is associated with rage and anger. Finding the amygdala in Yeenoghu's skull may be difficult, and it often ruptures when separated from the rest of the brain. Alchemists and spellcasters value this item. The amygdala can also be used to craft a powerful magic item, the Fang of Yeenoghu.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Yeenoghu",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978911,
+    "modifiedTime": 1688174978911,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "wdu1Gbkh3rcT8LE2",
+  "_key": "!items!wdu1Gbkh3rcT8LE2"
+}

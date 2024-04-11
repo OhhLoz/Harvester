@@ -1,0 +1,40 @@
+{
+  "name": "Esthetic Tentacles (x4)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "An esthetic's tentacles are long, rubbery limbs, used to grapple and attack prey. Each tentacle can reach up to 50 feet long, but only the last 5 feet are harvestable. The rubbery skin in used in fabrics. The suction cups are used by alchemists and artificers. And while the tentacle meat has a sour chemical taste, it is still edible.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Esthetic",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975415,
+    "modifiedTime": 1688174975415,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "t5VN21UFBFBQ08XS",
+  "_key": "!items!t5VN21UFBFBQ08XS"
+}

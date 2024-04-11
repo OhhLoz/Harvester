@@ -1,0 +1,40 @@
+{
+  "name": "Kindori Blood (7 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Kindori blood is light blue and has a luminescent glow. The blood is extremely rich in nutrients. It is often used in healing salves.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Kindori",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976710,
+    "modifiedTime": 1688174976710,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "L3oJXyR0ed0p9nEp",
+  "_key": "!items!L3oJXyR0ed0p9nEp"
+}

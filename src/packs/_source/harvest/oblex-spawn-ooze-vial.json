@@ -1,0 +1,40 @@
+{
+  "name": "Oblex Spawn Ooze (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The gelatinous form of an oblex spawn smells of sulfur. Before the ooze disperses and evaporates, it is possible to collect a sample. Some craftsmen use the ooze to create acidic baths, to dispose of trash and wasted materials.",
+      "chat": "10",
+      "unidentified": "Investigation"
+    },
+    "source": "Oblex Spawn",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977420,
+    "modifiedTime": 1688174977420,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "RKV78HsqoC3UitSy",
+  "_key": "!items!RKV78HsqoC3UitSy"
+}

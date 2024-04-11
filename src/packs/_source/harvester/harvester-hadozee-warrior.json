@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Hadozee Warrior",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Hadozee Warrior'.",
+  "results": [
+    {
+      "text": "Hadozee Skin Membranes (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/pustules-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hadozee Warrior",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.CKz8H2QP7CC7NBK6",
+          "brt-result-custom-name": "Hadozee Skin Membranes",
+          "brt-result-original-name": "Hadozee Skin Membranes (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/pustules-red.webp"
+        }
+      },
+      "documentId": "CKz8H2QP7CC7NBK6",
+      "_id": "xe1Sue2DPEuhO1yZ",
+      "_key": "!tables.results!R4FNOGsaHNH9XdSx.xe1Sue2DPEuhO1yZ"
+    },
+    {
+      "text": "Hadozee Toe Knuckles (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Hadozee Warrior",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.N0gxbxROPk4ELMqL",
+          "brt-result-custom-name": "Hadozee Toe Knuckles",
+          "brt-result-original-name": "Hadozee Toe Knuckles (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "N0gxbxROPk4ELMqL",
+      "_id": "ivaZiedSMBwzj2Gl",
+      "_key": "!tables.results!R4FNOGsaHNH9XdSx.ivaZiedSMBwzj2Gl"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Hadozee Warrior",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756564240,
+    "modifiedTime": 1696756756744,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "R4FNOGsaHNH9XdSx",
+  "sort": 0,
+  "_key": "!tables!R4FNOGsaHNH9XdSx"
+}

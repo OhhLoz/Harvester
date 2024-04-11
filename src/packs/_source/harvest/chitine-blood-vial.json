@@ -1,0 +1,40 @@
+{
+  "name": "Chitine Blood (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A thick, black liquid that smells of both metal and decay. Chitine blood has lot in common with drow blood, and can be used to create drow poison. Proficiency with the poisoner kit can be used for harvesting this poison. Refining the Poison: Once the blood is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 12 hours and 100gp worth of material to create Drow Poison (DC 14 Poisoner Kit or Alchemist Supplies check). Drow Poison (Injury): A creature can spend an action to coat 1 melee weapon, or 3 pieces of ammunition with this poison. The poison lasts for 1 minute, or until it successfully affects a target. A creature hit with a weapon coated with this poison must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. If the saving throw fails by 5 or more, the creature is also unconscious while poisoned in this way. The creature wakes up if it takes damage or if another creature takes an action to shake it awake. This poison usually sells for 200gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Chitine",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974552,
+    "modifiedTime": 1688174974552,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "UTv9B6q07SB4CTZ2",
+  "_key": "!items!UTv9B6q07SB4CTZ2"
+}

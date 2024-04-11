@@ -1,0 +1,40 @@
+{
+  "name": "Hadozee Skin Membranes (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/pustules-red.webp",
+  "system": {
+    "description": {
+      "value": "Hadozee have cloak-like flaps of skin that hang from their arms to their back. A hadozee can extended these skin membranes to glide during a descent. If harvested correctly, this membrane may be dried out, treated and used to create special fabric.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Hadozee Explorer",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976356,
+    "modifiedTime": 1688174976356,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "VNojIw2C8e7ZHXda",
+  "_key": "!items!VNojIw2C8e7ZHXda"
+}

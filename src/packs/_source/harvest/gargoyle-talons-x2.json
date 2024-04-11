@@ -1,0 +1,40 @@
+{
+  "name": "Gargoyle Talons (x2)",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-bird-pink.webp",
+  "system": {
+    "description": {
+      "value": "When a gargoyle is destroyed, much of its body crumbles to the ground. However, it may be possible to salvage an intact stone talon or two. These stone talons are valued by artificers and animators, and sometimes contain traces of arcane magic.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Gargoyle",
+    "quantity": 1,
+    "weight": 7,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975701,
+    "modifiedTime": 1688174975701,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "zAwFBJcptvQ6GiwG",
+  "_key": "!items!zAwFBJcptvQ6GiwG"
+}

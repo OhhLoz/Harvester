@@ -1,0 +1,40 @@
+{
+  "name": "Lion's Mane [male only]",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-white-tan.webp",
+  "system": {
+    "description": {
+      "value": "A male liondrake has a long, blonde mane that grows around its head, and down its long neck. The mane can be blond, reddish-brown or black. Harvesting the mane incorrectly means it was ruined during the battle or is spoiled with the creature's blood. The hair is mainly used by weavers, tailors and wig makers.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Liondrake",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976844,
+    "modifiedTime": 1688174976844,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dLaIsEP5pyGpn4uc",
+  "_key": "!items!dLaIsEP5pyGpn4uc"
+}

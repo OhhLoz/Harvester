@@ -1,0 +1,40 @@
+{
+  "name": "Giff Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "Giff have a thick gray leathery hide. Common merchants can easily mistake the hide for that of a small hippopotamus. Giff will know the difference immediately.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Giff Warlord",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975977,
+    "modifiedTime": 1688174975977,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "WwykNYlIEvyxB9iS",
+  "_key": "!items!WwykNYlIEvyxB9iS"
+}

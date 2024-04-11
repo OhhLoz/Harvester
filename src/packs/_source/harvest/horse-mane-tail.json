@@ -1,0 +1,40 @@
+{
+  "name": "Horse Mane/Tail",
+  "type": "loot",
+  "img": "icons/commodities/biological/tail-rodent-orange.webp",
+  "system": {
+    "description": {
+      "value": "Long, thick, strong strands of hair. Craftsmen often use the hair to make wigs, painting brushes, and fishing line. Weavers can also create coarse fabrics and apparel.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Warhorse",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978751,
+    "modifiedTime": 1688174978751,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nRrKq30dNEG5Rseg",
+  "_key": "!items!nRrKq30dNEG5Rseg"
+}

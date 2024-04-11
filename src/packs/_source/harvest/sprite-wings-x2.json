@@ -1,0 +1,40 @@
+{
+  "name": "Sprite Wings (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "A sprite's dragonfly-like wings are a useful alchemical ingredient.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Sprite",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978222,
+    "modifiedTime": 1688174978222,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Y9XfFUyQGc0A77TW",
+  "_key": "!items!Y9XfFUyQGc0A77TW"
+}

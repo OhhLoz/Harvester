@@ -1,0 +1,40 @@
+{
+  "name": "Canoloth Chitinous Plates",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "A canoloth's body is covered in large chitinous plates. The chitin can be cut, treated and repurposed as armor or shields.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Canoloth",
+    "quantity": 1,
+    "weight": 12,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974448,
+    "modifiedTime": 1688174974448,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "5G3r8xlwWZpKop2t",
+  "_key": "!items!5G3r8xlwWZpKop2t"
+}

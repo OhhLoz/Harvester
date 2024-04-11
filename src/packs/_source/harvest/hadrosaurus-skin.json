@@ -1,0 +1,40 @@
+{
+  "name": "Hadrosaurus Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "The skin of a Hadrosaurus is a highly durable reptilian hide, making it desirable for heavy-duty items such as footwear and belts. It is also used in the production of other apparel, bags, upholstery, furniture, tents and more.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Hadrosaurus",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976371,
+    "modifiedTime": 1688174976371,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "DjE7gdGtjV3QRkqd",
+  "_key": "!items!DjE7gdGtjV3QRkqd"
+}

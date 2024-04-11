@@ -1,0 +1,40 @@
+{
+  "name": "Yeth Hound Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A yeth hound has a coat of short, dull, non reflective black fur. The hide can be harvested for its leather, but also has an arcane connection to the fey that created it. Spellcaster and artificers may be able to tap into the hide's power.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Yeth Hound",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 7,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978914,
+    "modifiedTime": 1688174978914,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "CL0WU82ePKpGa2aJ",
+  "_key": "!items!CL0WU82ePKpGa2aJ"
+}

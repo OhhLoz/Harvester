@@ -1,0 +1,40 @@
+{
+  "name": "Dragon Turtle Blood (20 barrel)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-red.webp",
+  "system": {
+    "description": {
+      "value": "A dragon turtle's blood is thick, red, and abundant in its huge carcass. Many sailors and superstitious commoners believe that dragon turtle blood can be used to bless and sanctify ships. Tar, that is used to insulate ships, is often mixed with giant turtle blood for added protection. Whether it is true or not has never been proven (since even seeing a single dragon turtle, much less killing one, is very rare). Value and weight are per barrel.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Dragon Turtle",
+    "quantity": 1,
+    "weight": 50,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975078,
+    "modifiedTime": 1688174975078,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "6aZ3tgQG7Cpa8aPg",
+  "_key": "!items!6aZ3tgQG7Cpa8aPg"
+}

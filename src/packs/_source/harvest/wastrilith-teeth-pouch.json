@@ -1,0 +1,40 @@
+{
+  "name": "Wastrilith Teeth (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A wastrilith's has a mouth full of steel-like shark teeth. The teeth can be fashioned into crafts, jewelry and small tools.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Wastrilith",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978764,
+    "modifiedTime": 1688174978764,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "NHrDmenZeUeutIFu",
+  "_key": "!items!NHrDmenZeUeutIFu"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Bone Devil Stinger",
+  "type": "loot",
+  "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+  "system": {
+    "description": {
+      "value": "A bone devil's stinger contains a strong poison. A skilled harvester can remove the stinger which is useful to alchemists and poisoners. Proficiency with the poisoner kit may be used for harvesting the stinger. On a successful check, the character harvests the creature's stinger that must be refined before producing 1 dose of Bone Devil Poison (see below). On a failed check, the character is unable to extract the poison gland. If the character fails the check by 5 or more, the character is subjected to the creature's sting (5d6 damage, or DC 14 Constitution save for half). Refining the Poison: Once the stinger is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 3 days and 400gp worth of material to create Bone Devil Poison (DC 18 Poisoner Kit or Alchemist Supplies check). Bone Devil Poison: Bone Devil Poison is slightly weaker than Wyvern Poison (see DMG p258). A creature hit with this poison must make a DC 14 Constitution saving throw. Failure results in 5d6 damage and the creature becomes poisoned for 1 minute. Success for half damage. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on success. This poison usually sells for 800gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Bone Devil",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 400,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974245,
+    "modifiedTime": 1688174974245,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Th2QzNG1jmxpSK65",
+  "_key": "!items!Th2QzNG1jmxpSK65"
+}

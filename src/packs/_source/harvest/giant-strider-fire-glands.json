@@ -1,0 +1,40 @@
+{
+  "name": "Giant Strider Fire Glands",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "The giant strider's fire glands are a bundle of sacs that contain various caustic chemicals. When these chemicals combine and are passed into the throat, it allows the giant strider to spew forth a burst of fire. Alchemists can pull some useful chemicals from these glands. Use: As an action, a creature can throw the bundle of glands up to 20 feet away. Upon impact, the glands explode. Any creature within 10 feet of the explosion must roll a DC 12 Dexterity saving throw. On a failed roll, the creature takes 3d6 fire damage, and half damage if saved.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Strider",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975915,
+    "modifiedTime": 1688174975915,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "0Px4xeN4cRvVC8Qo",
+  "_key": "!items!0Px4xeN4cRvVC8Qo"
+}

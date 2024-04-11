@@ -1,0 +1,40 @@
+{
+  "name": "Neogi Egg Sack",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "The large abdomen of an old master neogi is covered in large, round yellow sacs which house the embryos of neogi hatchlings. If one is careful, an egg sac can be removed intact. Once a single egg sac is removed, the tube that keeps all the sacs alive is cut, and the rest of the eggs wither immediately. A neogi egg sac is forbidden in many lands, since it is believed that a single egg will spawn a swarm of the creatures (untrue). However, spellcasters, researchers and people studying arachnids will certainly pay for such an item.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Neogi Master",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977318,
+    "modifiedTime": 1688174977318,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AUjpcxQaIVj7c1sy",
+  "_key": "!items!AUjpcxQaIVj7c1sy"
+}

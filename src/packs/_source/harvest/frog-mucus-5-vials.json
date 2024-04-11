@@ -1,0 +1,40 @@
+{
+  "name": "Frog Mucus (5 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The giant frog has an enormous gaping mouth, a long sticky tongue, and a large amount of thick mucus. Alchemists often use the mucus to make adhesives.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Frog",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975833,
+    "modifiedTime": 1688174975833,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "bwJb3xyjSiUbmBk4",
+  "_key": "!items!bwJb3xyjSiUbmBk4"
+}

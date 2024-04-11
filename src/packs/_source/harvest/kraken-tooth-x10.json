@@ -1,0 +1,40 @@
+{
+  "name": "Kraken Tooth (x10)",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+  "system": {
+    "description": {
+      "value": "A kraken's tooth resembles a sharks tooth, but can reach up to 2 feet long. The teeth are razor sharp, and extremely hard. The teeth are valued by weaponsmiths, collectors and ocean/sea cults.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Kraken",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976754,
+    "modifiedTime": 1688174976754,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "b0DiYNC8ds6qV98P",
+  "_key": "!items!b0DiYNC8ds6qV98P"
+}

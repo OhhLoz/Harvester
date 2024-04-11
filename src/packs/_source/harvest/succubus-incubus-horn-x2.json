@@ -1,0 +1,40 @@
+{
+  "name": "Succubus/Incubus Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "A succubus/incubus has two bony protrusions atop its head that tend to by only an inch or two long. The horns are used to focus the creature's powers of enchantment. The horns can be ground into a powder to be used as an aphrodisiac.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Incubus",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 40,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976616,
+    "modifiedTime": 1688174976616,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ed4Na9lS90jhi0tv",
+  "_key": "!items!ed4Na9lS90jhi0tv"
+}

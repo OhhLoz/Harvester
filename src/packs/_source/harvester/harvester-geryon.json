@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Geryon",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Geryon'.",
+  "results": [
+    {
+      "text": "Geryon Blood (9 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "9"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Geryon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.FRCi1IEzdVcBR6IG",
+          "brt-result-custom-name": "Geryon Blood vial",
+          "brt-result-original-name": "Geryon Blood (9 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "FRCi1IEzdVcBR6IG",
+      "_id": "LlJhEfcHVzaJemMh",
+      "_key": "!tables.results!m1MyVAwGpvhxZT9c.LlJhEfcHVzaJemMh"
+    },
+    {
+      "text": "Geryon's Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Geryon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.U2yacZ0sO9qw2vPy",
+          "brt-result-custom-name": "Geryon's Hide",
+          "brt-result-original-name": "Geryon's Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "U2yacZ0sO9qw2vPy",
+      "_id": "fsLcv95xueVF38rH",
+      "_key": "!tables.results!m1MyVAwGpvhxZT9c.fsLcv95xueVF38rH"
+    },
+    {
+      "text": "Geryon's Stinger",
+      "type": 2,
+      "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Geryon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.sO3gyRQe7ML9F0y1",
+          "brt-result-custom-name": "Geryon's Stinger",
+          "brt-result-original-name": "Geryon's Stinger",
+          "brt-result-original-icon": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp"
+        }
+      },
+      "documentId": "sO3gyRQe7ML9F0y1",
+      "_id": "ZQw7LczcrSvQ5png",
+      "_key": "!tables.results!m1MyVAwGpvhxZT9c.ZQw7LczcrSvQ5png"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Geryon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756565323,
+    "modifiedTime": 1696756756318,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "m1MyVAwGpvhxZT9c",
+  "sort": 0,
+  "_key": "!tables!m1MyVAwGpvhxZT9c"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Wastrilith Fins",
+  "type": "loot",
+  "img": "icons/commodities/biological/fin-red-green.webp",
+  "system": {
+    "description": {
+      "value": "A wastrilith's eel-like body is flowing with several long, silk-like fins that help the creature move through water. These fins can be treated by leatherworkers and weavers to produce a unique waterproof fabric.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Wastrilith",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978768,
+    "modifiedTime": 1688174978768,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "HJgpJORDaqagxnYN",
+  "_key": "!items!HJgpJORDaqagxnYN"
+}

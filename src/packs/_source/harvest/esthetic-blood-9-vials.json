@@ -1,0 +1,40 @@
+{
+  "name": "Esthetic Blood (9 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "Esthetic blood is translucent and bioluminescent. The blood is valued by alchemists, dyers and painters.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Esthetic",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975412,
+    "modifiedTime": 1688174975412,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "sWyE023zL0x7MccX",
+  "_key": "!items!sWyE023zL0x7MccX"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Korred Hair",
+  "type": "loot",
+  "img": "icons/commodities/materials/hair-tuft-gold.webp",
+  "system": {
+    "description": {
+      "value": "A korred has long, scraggly, dark hair infused with fey magic. If the hair is cut too short, its magic immediately fades. Weavers can clean and weave the hair into a soft, shimmering fabric. The hair can also be used to create a strong, silk-like rope.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Korred",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976744,
+    "modifiedTime": 1688174976744,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "89Yke0uZJDD4Gz2s",
+  "_key": "!items!89Yke0uZJDD4Gz2s"
+}

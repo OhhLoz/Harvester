@@ -1,0 +1,40 @@
+{
+  "name": "Boggle Tar (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A sticky, tar-like substance, with strong adhesive properties. Use: You may spend an action to coat your hands with this substance. For 1 hour, you have advantage on Strength (Athletics) checks made to grapple and any ability check made to maintain a hold on another creature, surface, or object. You can also climb difficult surfaces, including upside down on ceilings, without needing to make an ability check. Alternatively, you may spend an action to pour this oil on the ground, creating a 5 ft puddle for 1 hour. Any creature that enters that puddle or starts its turn there must make a Strength save (DC 11) or be restrained. On its turn, a creature can attempt a Strength check to free itself from the sticky puddle (DC 11). Success ends the effect and the creature must move into the nearest unoccupied space.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Boggle",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974223,
+    "modifiedTime": 1688174974223,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9UbJA9RZzDNzNuIQ",
+  "_key": "!items!9UbJA9RZzDNzNuIQ"
+}

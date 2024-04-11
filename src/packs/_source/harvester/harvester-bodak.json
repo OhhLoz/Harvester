@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Bodak",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Bodak'.",
+  "results": [
+    {
+      "text": "Mark of Orcus",
+      "type": 2,
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bodak",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.aTvKuy6gd2yCzyrJ",
+          "brt-result-custom-name": "Mark of Orcus",
+          "brt-result-original-name": "Mark of Orcus",
+          "brt-result-original-icon": "icons/magic/symbols/rune-sigil-black-pink.webp"
+        }
+      },
+      "documentId": "aTvKuy6gd2yCzyrJ",
+      "_id": "2dF9w5XpaUhVtD1Z",
+      "_key": "!tables.results!BLBveNr24m5zSzek.2dF9w5XpaUhVtD1Z"
+    },
+    {
+      "text": "Bodak Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Bodak",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xCLlWKrnyjGk5eoT",
+          "brt-result-custom-name": "Bodak Eye",
+          "brt-result-original-name": "Bodak Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "xCLlWKrnyjGk5eoT",
+      "_id": "Zfi1IjEGAkv8xsm5",
+      "_key": "!tables.results!BLBveNr24m5zSzek.Zfi1IjEGAkv8xsm5"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Bodak",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756575212,
+    "modifiedTime": 1696756755970,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "BLBveNr24m5zSzek",
+  "sort": 0,
+  "_key": "!tables!BLBveNr24m5zSzek"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Banshee",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Banshee'.",
+  "results": [
+    {
+      "text": "Banshee Ectoplasm",
+      "type": 2,
+      "img": "icons/commodities/materials/liquid-blue.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Banshee",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1hSQwbua2BmV8gP6",
+          "brt-result-custom-name": "Banshee Ectoplasm",
+          "brt-result-original-name": "Banshee Ectoplasm",
+          "brt-result-original-icon": "icons/commodities/materials/liquid-blue.webp"
+        }
+      },
+      "documentId": "1hSQwbua2BmV8gP6",
+      "_id": "M2kgu6TDc2g9FAQU",
+      "_key": "!tables.results!tCVWhnTdfCKn8MOx.M2kgu6TDc2g9FAQU"
+    },
+    {
+      "text": "Banshee Echo",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Banshee",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.B2rk4dj5whY5lvnN",
+          "brt-result-custom-name": "Banshee Echo",
+          "brt-result-original-name": "Banshee Echo",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "B2rk4dj5whY5lvnN",
+      "_id": "me8EYEfF5kO998RK",
+      "_key": "!tables.results!tCVWhnTdfCKn8MOx.me8EYEfF5kO998RK"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Banshee",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560644,
+    "modifiedTime": 1696756755935,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "tCVWhnTdfCKn8MOx",
+  "sort": 0,
+  "_key": "!tables!tCVWhnTdfCKn8MOx"
+}

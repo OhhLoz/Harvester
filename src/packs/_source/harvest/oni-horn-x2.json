@@ -1,0 +1,40 @@
+{
+  "name": "Oni Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "An oni has a pair of short ivory horns on its forehead, each a few inches long. The horns focus an oni's innate magical abilities, and hold a spark of power when harvested correctly.",
+      "chat": "20",
+      "unidentified": "Medicine"
+    },
+    "source": "Oni",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 60,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977496,
+    "modifiedTime": 1688174977496,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nrosWBr83HxnbquW",
+  "_key": "!items!nrosWBr83HxnbquW"
+}

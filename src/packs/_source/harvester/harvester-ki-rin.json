@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Ki-rin",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ki-rin'.",
+  "results": [
+    {
+      "text": "Ki-rin Hair",
+      "type": 2,
+      "img": "icons/commodities/materials/hair-tuft-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ki-rin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.5wvBPzdIJX4EtTyf",
+          "brt-result-custom-name": "Ki-rin Hair",
+          "brt-result-original-name": "Ki-rin Hair",
+          "brt-result-original-icon": "icons/commodities/materials/hair-tuft-gold.webp"
+        }
+      },
+      "documentId": "5wvBPzdIJX4EtTyf",
+      "_id": "ynSOqMKHFrW1H3O6",
+      "_key": "!tables.results!6vOcAuoXgKzT6Xlm.ynSOqMKHFrW1H3O6"
+    },
+    {
+      "text": "Ki-rin Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ki-rin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AwkDo7Jp7BqM1Vxf",
+          "brt-result-custom-name": "Ki-rin Blood vial",
+          "brt-result-original-name": "Ki-rin Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "AwkDo7Jp7BqM1Vxf",
+      "_id": "29e9Xd5EhVvehzR3",
+      "_key": "!tables.results!6vOcAuoXgKzT6Xlm.29e9Xd5EhVvehzR3"
+    },
+    {
+      "text": "Ki-rin Hoof (x4)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "4"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ki-rin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.HpFNo6RCaGw5B3lE",
+          "brt-result-custom-name": "Ki-rin Hoof",
+          "brt-result-original-name": "Ki-rin Hoof (x4)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "HpFNo6RCaGw5B3lE",
+      "_id": "zdIt1xMjRXj5Mi35",
+      "_key": "!tables.results!6vOcAuoXgKzT6Xlm.zdIt1xMjRXj5Mi35"
+    },
+    {
+      "text": "Ki-rin Scales (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ki-rin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.K6WCPRwEEZniJeAl",
+          "brt-result-custom-name": "Ki-rin Scales (large pouch)",
+          "brt-result-original-name": "Ki-rin Scales (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "K6WCPRwEEZniJeAl",
+      "_id": "qSPvWsaIv9cCR6I7",
+      "_key": "!tables.results!6vOcAuoXgKzT6Xlm.qSPvWsaIv9cCR6I7"
+    },
+    {
+      "text": "Ki-rin Horn",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Ki-rin",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.UGpwzlPrcvl8G17T",
+          "brt-result-custom-name": "Ki-rin Horn",
+          "brt-result-original-name": "Ki-rin Horn",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "UGpwzlPrcvl8G17T",
+      "_id": "NwyDuXYr1cnV5Hpf",
+      "_key": "!tables.results!6vOcAuoXgKzT6Xlm.NwyDuXYr1cnV5Hpf"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Ki-rin",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561856,
+    "modifiedTime": 1696756757150,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "6vOcAuoXgKzT6Xlm",
+  "sort": 0,
+  "_key": "!tables!6vOcAuoXgKzT6Xlm"
+}

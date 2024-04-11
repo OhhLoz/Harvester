@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Feyr",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Feyr'.",
+  "results": [
+    {
+      "text": "Feyr Tentacle (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Feyr",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.6jsvOk8QXbgsRskC",
+          "brt-result-custom-name": "Feyr Tentacle",
+          "brt-result-original-name": "Feyr Tentacle (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "6jsvOk8QXbgsRskC",
+      "_id": "LkHxux3eB2C4DYzw",
+      "_key": "!tables.results!dSQAZfQwLZQce8EQ.LkHxux3eB2C4DYzw"
+    },
+    {
+      "text": "Feyr Teeth (large bag)",
+      "type": 2,
+      "img": "icons/containers/bags/pack-canvas-white-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Feyr",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.91iHqfYKiRmb0lay",
+          "brt-result-custom-name": "Feyr Teeth (large bag)",
+          "brt-result-original-name": "Feyr Teeth (large bag)",
+          "brt-result-original-icon": "icons/containers/bags/pack-canvas-white-brown.webp"
+        }
+      },
+      "documentId": "91iHqfYKiRmb0lay",
+      "_id": "OodPx29it8a9wTg3",
+      "_key": "!tables.results!dSQAZfQwLZQce8EQ.OodPx29it8a9wTg3"
+    },
+    {
+      "text": "Feyr Saliva (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Feyr",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.EKE0v58s98egK6l4",
+          "brt-result-custom-name": "Feyr Saliva vial",
+          "brt-result-original-name": "Feyr Saliva (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "EKE0v58s98egK6l4",
+      "_id": "AIg7WGiZF4UjWPmv",
+      "_key": "!tables.results!dSQAZfQwLZQce8EQ.AIg7WGiZF4UjWPmv"
+    },
+    {
+      "text": "Nightmare Fuel (flask)",
+      "type": 2,
+      "img": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Feyr",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.xxG64eJMkLSUaCZa",
+          "brt-result-custom-name": "Nightmare Fuel (flask)",
+          "brt-result-original-name": "Nightmare Fuel (flask)",
+          "brt-result-original-icon": "icons/consumables/potions/potion-jar-corked-glowing-blue.webp"
+        }
+      },
+      "documentId": "xxG64eJMkLSUaCZa",
+      "_id": "CWkzPjCLEBi3vGr7",
+      "_key": "!tables.results!dSQAZfQwLZQce8EQ.CWkzPjCLEBi3vGr7"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Feyr",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562138,
+    "modifiedTime": 1696756756222,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dSQAZfQwLZQce8EQ",
+  "sort": 0,
+  "_key": "!tables!dSQAZfQwLZQce8EQ"
+}

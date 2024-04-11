@@ -1,0 +1,40 @@
+{
+  "name": "Armanite Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "The horns of an armanite are strong as steel. Like most horns, they can be reshaped into musical instruments or large drinking horns. They can also be ground into a fine dust, which can be refined and used to strengthen weapons and armor.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Armanite",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 75,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973803,
+    "modifiedTime": 1688174973803,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "cANSBbKBtshUYaEp",
+  "_key": "!items!cANSBbKBtshUYaEp"
+}

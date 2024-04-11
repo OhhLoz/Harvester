@@ -1,0 +1,40 @@
+{
+  "name": "Hooked Horror Hook (x2)",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "A hook horror's powerfully built arms end in wickedly curved hooked claws. It is possible to harvest the claws without fragmenting the bone. The hooked claws are often used by weaponsmiths and tool makers.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Hooked Horror",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976511,
+    "modifiedTime": 1688174976511,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "o4oDYehaD4SlhsUm",
+  "_key": "!items!o4oDYehaD4SlhsUm"
+}

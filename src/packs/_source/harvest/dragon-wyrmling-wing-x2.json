@@ -1,0 +1,40 @@
+{
+  "name": "Dragon Wyrmling Wing (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/wing-lizard-brown.webp",
+  "system": {
+    "description": {
+      "value": "The wings of a wyrmling provide an small amount of leather, which can be used to fashion apparel and light armor.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Dragon Wyrmling",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975097,
+    "modifiedTime": 1688174975097,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "L2qnigNdnq6nclnV",
+  "_key": "!items!L2qnigNdnq6nclnV"
+}

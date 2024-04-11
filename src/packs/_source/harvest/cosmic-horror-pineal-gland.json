@@ -1,0 +1,40 @@
+{
+  "name": "Cosmic Horror Pineal Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "A cosmic horror's pineal gland is believed to power the creature's powerful psychic whisper. The gland is a pea-shaped mound of soft, gray flesh, about the size of a basketball. The gland is prized by psionic researchers.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Cosmic Horror",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 1000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974718,
+    "modifiedTime": 1688174974718,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "K5sZi5Z6h7xeV2Is",
+  "_key": "!items!K5sZi5Z6h7xeV2Is"
+}

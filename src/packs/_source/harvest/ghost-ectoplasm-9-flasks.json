@@ -1,0 +1,40 @@
+{
+  "name": "Ghost Ectoplasm (9 flasks)",
+  "type": "loot",
+  "img": "icons/commodities/materials/liquid-blue.webp",
+  "system": {
+    "description": {
+      "value": "A ghost dragon leaves behind a thick, clear, extremely sticky substance with ties to the Ethereal Plane. The substance must be harvested quickly, and must be collected in an enchanted container, before it disperses. Requires an enchanted vial.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Ghost Dragon",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975762,
+    "modifiedTime": 1688174975762,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "h5fBYDHAS0O56iJc",
+  "_key": "!items!h5fBYDHAS0O56iJc"
+}

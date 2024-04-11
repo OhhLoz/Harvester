@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Narzugon",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Narzugon'.",
+  "results": [
+    {
+      "text": "Narzugon Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Narzugon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1sJqAZugTslG27u3",
+          "brt-result-custom-name": "Narzugon Heart",
+          "brt-result-original-name": "Narzugon Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "1sJqAZugTslG27u3",
+      "_id": "lK1FQB6YVPGzpi7O",
+      "_key": "!tables.results!89u7GMZvqDftUmEd.lK1FQB6YVPGzpi7O"
+    },
+    {
+      "text": "Narzugan Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Narzugon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4upPCHmtNlNOofgU",
+          "brt-result-custom-name": "Narzugan Blood vial",
+          "brt-result-original-name": "Narzugan Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "4upPCHmtNlNOofgU",
+      "_id": "rxwhcB3DjNzh4RcC",
+      "_key": "!tables.results!89u7GMZvqDftUmEd.rxwhcB3DjNzh4RcC"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Narzugon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560724,
+    "modifiedTime": 1696756758278,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "89u7GMZvqDftUmEd",
+  "sort": 0,
+  "_key": "!tables!89u7GMZvqDftUmEd"
+}

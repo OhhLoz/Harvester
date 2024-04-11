@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Elder Brain",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Elder Brain'.",
+  "results": [
+    {
+      "text": "Elder Brain Tentacle (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/tentacle-purple-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.QKHUnmQLGmCLmvNf",
+          "brt-result-custom-name": "Elder Brain Tentacle",
+          "brt-result-original-name": "Elder Brain Tentacle (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/tentacle-purple-white.webp"
+        }
+      },
+      "documentId": "QKHUnmQLGmCLmvNf",
+      "_id": "Bn6XzaaPwcb8ecoG",
+      "_key": "!tables.results!ND99uZXYxsBxIjQO.Bn6XzaaPwcb8ecoG"
+    },
+    {
+      "text": "Elder Brain Neural Core",
+      "type": 2,
+      "img": "icons/commodities/gems/pearl-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ZHWoT6U7jxYedOsh",
+          "brt-result-custom-name": "Elder Brain Neural Core",
+          "brt-result-original-name": "Elder Brain Neural Core",
+          "brt-result-original-icon": "icons/commodities/gems/pearl-brown-red.webp"
+        }
+      },
+      "documentId": "ZHWoT6U7jxYedOsh",
+      "_id": "uzQY0xa5hplgLmxq",
+      "_key": "!tables.results!ND99uZXYxsBxIjQO.uzQY0xa5hplgLmxq"
+    },
+    {
+      "text": "Elder Brain Fluid (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wHXSMPJzPAzQipcl",
+          "brt-result-custom-name": "Elder Brain Fluid vial",
+          "brt-result-original-name": "Elder Brain Fluid (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "wHXSMPJzPAzQipcl",
+      "_id": "lJvELEeMgXwjU5hM",
+      "_key": "!tables.results!ND99uZXYxsBxIjQO.lJvELEeMgXwjU5hM"
+    },
+    {
+      "text": "Elder Brain Pineal Gland",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.wvf48Z2e7d9twzxs",
+          "brt-result-custom-name": "Elder Brain Pineal Gland",
+          "brt-result-original-name": "Elder Brain Pineal Gland",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "wvf48Z2e7d9twzxs",
+      "_id": "Cl7GWhYFsTOSm2xL",
+      "_key": "!tables.results!ND99uZXYxsBxIjQO.Cl7GWhYFsTOSm2xL"
+    },
+    {
+      "text": "Elder Brain White Matter",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Elder Brain",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.yfE6MMxrcvOMPRZ6",
+          "brt-result-custom-name": "Elder Brain White Matter",
+          "brt-result-original-name": "Elder Brain White Matter",
+          "brt-result-original-icon": "icons/commodities/biological/organ-brain-pink-purple.webp"
+        }
+      },
+      "documentId": "yfE6MMxrcvOMPRZ6",
+      "_id": "uvY57Pnrf8EFBfT3",
+      "_key": "!tables.results!ND99uZXYxsBxIjQO.uvY57Pnrf8EFBfT3"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Elder Brain",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756568748,
+    "modifiedTime": 1696756756192,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ND99uZXYxsBxIjQO",
+  "sort": 0,
+  "_key": "!tables!ND99uZXYxsBxIjQO"
+}

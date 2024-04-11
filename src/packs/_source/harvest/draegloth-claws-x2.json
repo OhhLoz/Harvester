@@ -1,0 +1,40 @@
+{
+  "name": "Draegloth Claws (x2)",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "The claws on the end of a draegloths upper arms are razor sharp, and used for tearing apart prey. The claws can be used in jewelry and decorations. They can also be used to create and adorn weaponry.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Draegloth",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975060,
+    "modifiedTime": 1688174975060,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "bqFx9wgRKl6T6QD0",
+  "_key": "!items!bqFx9wgRKl6T6QD0"
+}

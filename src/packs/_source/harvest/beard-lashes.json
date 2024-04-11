@@ -1,0 +1,40 @@
+{
+  "name": "Beard Lashes",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The thick, wiry barbs of a bearded devil can be stretched, treated and cured by a skilled weaponsmiths. Local tailors and leatherworkers may be able to create more common items (strong threads, belts, sashes, etc.)",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Bearded Devil",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974075,
+    "modifiedTime": 1688174974075,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "MTQtH5G2SMfjsH1o",
+  "_key": "!items!MTQtH5G2SMfjsH1o"
+}

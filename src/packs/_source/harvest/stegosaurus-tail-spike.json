@@ -1,0 +1,40 @@
+{
+  "name": "Stegosaurus Tail Spike",
+  "type": "loot",
+  "img": "icons/commodities/bones/tooth-spiked-brown.webp",
+  "system": {
+    "description": {
+      "value": "The tail of a stegosaurus has several long, bone spikes. These spikes are hard as steel and can pierce most armor. The spike can be harvested and be used to various piercing weapons, spikes and pitons. Each spike can be several feet long.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Stegosaurus",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 8,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978282,
+    "modifiedTime": 1688174978282,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "hohNkSjt6FQNvQAK",
+  "_key": "!items!hohNkSjt6FQNvQAK"
+}

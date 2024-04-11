@@ -1,0 +1,40 @@
+{
+  "name": "Frost Giant Blood (7 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A frost giant's blood is a translucent red liquid that is extremely cold. It must be harvested quickly, as the blood hardens like ice when exposed to air. The blood has many alchemical and medicinal uses.",
+      "chat": "20",
+      "unidentified": "Medicine"
+    },
+    "source": "Frost Giant Everlasting One",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975662,
+    "modifiedTime": 1688174975662,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "gVw3o4HCwhN7tf9E",
+  "_key": "!items!gVw3o4HCwhN7tf9E"
+}

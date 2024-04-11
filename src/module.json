@@ -1,133 +1,166 @@
 {
-  "id": "harvester",
-  "title": "Better Harvesting & Looting",
-  "description": "A QoL module to improve the harvesting and looting experience.",
-  "version": "1.7.2",
-  "url": "https://github.com/OhhLoz/Harvester",
-  "authors": [
-    {
-      "name": "Loz",
-      "url": "https://github.com/OhhLoz"
-    }
-  ],
-  "compatibility": {
-    "minimum": "11",
-    "verified": "11.315"
-  },
-  "scripts": [],
-  "esmodules": ["module.js"],
-  "socket": true,
-  "persistentStorage": true,
-  "packs": [
-    {
-      "name": "harvest",
-      "label": "Harvest",
-      "path": "packs/harvest.db",
-      "system": "dnd5e",
-      "private": false,
-      "type": "Item",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "actions",
-      "label": "Actions",
-      "path": "packs/actions.db",
-      "system": "dnd5e",
-      "private": false,
-      "type": "Item",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "loot",
-      "label": "Loot",
-      "path": "packs/loot.db",
-      "system": "dnd5e",
-      "private": false,
-      "type": "RollTable",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "custom",
-      "label": "Custom",
-      "path": "storage/custom.db",
-      "system": "dnd5e",
-      "private": false,
-      "type": "Actor",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "custom-loot",
-      "label": "Custom Loot",
-      "path": "storage/custom-loot.db",
-      "system": "dnd5e",
-      "private": false,
-      "type": "RollTable",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    },
-    {
-      "name": "license",
-      "label": "License",
-      "path": "packs/license.db",
-      "system": "dnd5e",
-      "private": false,
-      "type": "JournalEntry",
-      "flags": {},
-      "ownership": {
-        "PLAYER": "OBSERVER",
-        "ASSISTANT": "OWNER"
-      }
-    }
-  ],
-  "packFolders": [
-    {
-      "name": "Better Harvesting and Looting",
-      "color": "#ffb38a",
-      "sorting": "a",
-      "packs": ["harvest", "actions", "loot", "custom", "custom-loot", "license"]
-    }
-  ],
-  "relationships": {
-    "systems": [
-      {
-        "id": "dnd5e",
-        "type": "system",
-        "compatibility": {
-          "minimum": "2.4.1"
+    "id": "harvester",
+    "title": "Better Harvesting & Looting",
+    "description": "A QoL module to improve the harvesting and looting experience.",
+    "version": "1.8.0",
+    "url": "https://github.com/OhhLoz/Harvester",
+    "authors": [
+        {
+            "name": "Loz",
+            "url": "https://github.com/OhhLoz"
+        },
+        {
+            "name": "p4535992",
+            "url": "https://github.com/p4535992",
+            "discord": "",
+            "twitter": "",
+            "patreon": "",
+            "github": "p4535992",
+            "ko-fi": "",
+            "reddit": "",
+            "email": ""
         }
-      }
     ],
-    "requires": [
-      {
-        "id": "socketlib",
-        "type": "module"
-      },
-      {
-        "id": "requestor",
-        "type": "module"
-      }
-    ]
-  },
-  "id": "harvester",
-  "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.7.2/module.json",
-  "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.7.2/harvester.zip"
+    "compatibility": {
+        "minimum": "11",
+        "verified": "11.315"
+    },
+    "scripts": [],
+    "esmodules": ["module.js"],
+    "socket": true,
+    "persistentStorage": true,
+    "packs": [
+        {
+            "name": "harvest",
+            "label": "Harvest",
+            "path": "packs/harvest",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "harvester",
+            "system": "dnd5e",
+            "flags": {}
+        },
+        {
+            "name": "actions",
+            "label": "Actions",
+            "path": "packs/actions",
+            "type": "Item",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "harvester",
+            "system": "dnd5e",
+            "flags": {}
+        },
+        {
+            "name": "loot",
+            "label": "Loot",
+            "path": "packs/loot",
+            "type": "RollTable",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "harvester",
+            "system": "dnd5e",
+            "flags": {}
+        },
+        {
+            "name": "harvester",
+            "label": "Harvester",
+            "path": "packs/harvester",
+            "type": "RollTable",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "harvester",
+            "system": "dnd5e",
+            "flags": {}
+        },
+        {
+            "name": "custom",
+            "label": "Custom",
+            "path": "storage/custom",
+            "type": "Actor",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "harvester",
+            "system": "dnd5e",
+            "flags": {}
+        },
+        {
+            "name": "custom-loot",
+            "label": "Custom Loot",
+            "path": "storage/custom-loot",
+            "type": "RollTable",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "harvester",
+            "system": "dnd5e",
+            "flags": {}
+        },
+        {
+            "name": "license",
+            "label": "License",
+            "path": "packs/license",
+            "type": "JournalEntry",
+            "ownership": {
+                "PLAYER": "OBSERVER",
+                "ASSISTANT": "OWNER"
+            },
+            "module": "harvester",
+            "system": "dnd5e",
+            "flags": {}
+        }
+    ],
+    "packFolders": [
+        {
+            "name": "Better Harvesting and Looting",
+            "color": "#ffb38a",
+            "sorting": "a",
+            "packs": ["harvest", "harvester", "actions", "loot", "custom", "custom-loot", "license"]
+        }
+    ],
+    "relationships": {
+        "systems": [
+            {
+                "id": "dnd5e",
+                "type": "system",
+                "compatibility": {
+                    "minimum": "2.4.1"
+                }
+            }
+        ],
+        "requires": [
+            {
+                "id": "socketlib",
+                "type": "module"
+            },
+            {
+                "id": "requestor",
+                "type": "module"
+            }
+        ],
+        "optional": [
+            {
+                "id": "better-rolltables",
+                "type": "module"
+            },
+            {
+                "id": "item-piles",
+                "type": "module"
+            }
+        ]
+    },
+    "manifest": "https://github.com/OhhLoz/Harvester/releases/download/v1.8.0/module.json",
+    "download": "https://github.com/OhhLoz/Harvester/releases/download/v1.8.0/harvester.zip"
 }

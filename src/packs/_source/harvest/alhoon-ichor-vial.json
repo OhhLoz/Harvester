@@ -1,0 +1,40 @@
+{
+  "name": "Alhoon Ichor (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The heart of an alhoon secretes a vile black ichor. The heart doesn't need to be harvested, but a sample of the ichor can be harvested before it dispersing into a misty vapor. The ichor is valued by necromancers, but can also be researched by other spellcasters and used in potions.",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Alhoon",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973586,
+    "modifiedTime": 1688174973586,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "iUO094AJexVgivOj",
+  "_key": "!items!iUO094AJexVgivOj"
+}

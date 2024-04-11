@@ -1,0 +1,40 @@
+{
+  "name": "Summer Eladrin Hair",
+  "type": "loot",
+  "img": "icons/commodities/materials/hair-tuft-gold.webp",
+  "system": {
+    "description": {
+      "value": "The hair of a summer eladrin is golden yellow, silky, and smells like peaches. The hair retains magic from the Feywild, and is often used is potions and elixirs. The hair can also be used as decorations and trinkets.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Summer Eladrin",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978370,
+    "modifiedTime": 1688174978370,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ADq35OVV7wXLEJcf",
+  "_key": "!items!ADq35OVV7wXLEJcf"
+}

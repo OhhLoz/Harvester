@@ -1,0 +1,40 @@
+{
+  "name": "Bone Dust (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A fine white powder with a chalk-like smell. Often prized by magic users.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Demilich",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 800,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974874,
+    "modifiedTime": 1688174974874,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "7p3S24N4vCIlDywi",
+  "_key": "!items!7p3S24N4vCIlDywi"
+}

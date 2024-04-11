@@ -1,0 +1,40 @@
+{
+  "name": "Moloch's Claws (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The sharp claws of a pit fiend are a deadly natural weapon. Weaponsmiths can use the item in crafting certain weapons. It can also be sold as a trophy, or used to make certain crafts.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Moloch",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 1600,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977150,
+    "modifiedTime": 1688174977150,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "XXhBL9lhuYJo3bZL",
+  "_key": "!items!XXhBL9lhuYJo3bZL"
+}

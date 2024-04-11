@@ -1,0 +1,40 @@
+{
+  "name": "Barlgura Fang (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/teeth-pointed-white.webp",
+  "system": {
+    "description": {
+      "value": "Two large fangs protrude from the lower jaw of the Balgura's mouth. The teeth can be crafted into daggers or hilts.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Barlgura",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 4,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974039,
+    "modifiedTime": 1688174974039,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rHjIpKOo8ZsdLDTA",
+  "_key": "!items!rHjIpKOo8ZsdLDTA"
+}

@@ -82,7 +82,7 @@ export default () => {
       // open: false,
       proxy: {
         // Serves static files from main Foundry server.
-        [`^(/${s_PACKAGE_ID}/(images|fonts|assets|lang|languages|packs|storage|styles|templates|style.css))`]:
+        [`^(/${s_PACKAGE_ID}/(images|fonts|assets|lang|languages|packs|styles|templates|style.css))`]:
           "http://127.0.0.1:30000",
 
         // All other paths besides package ID path are served from main Foundry server.
@@ -153,18 +153,14 @@ export default () => {
             dest: normalizePath(path.resolve(__dirname, `./dist/${s_MODULE_ID}/styles`)),
           },
           {
-            src: normalizePath(path.resolve(__dirname, './src/packs')) + '/[!.]*',
+            src: normalizePath(path.resolve(__dirname, './src/packs')) + '/[!.^(_?.*)]*', // + '/[!.^(_source)]*',
             dest: normalizePath(path.resolve(__dirname, `./dist/${s_MODULE_ID}/packs`)),
-          },
-          {
-            src: normalizePath(path.resolve(__dirname, './src/storage')) + '/[!.]*',
-            dest: normalizePath(path.resolve(__dirname, `./dist/${s_MODULE_ID}/storage`)),
           },
           {
             src: normalizePath(path.resolve(__dirname, './src/module.json')),
             dest: normalizePath(path.resolve(__dirname, `./dist/${s_MODULE_ID}/`)),
           },
-          {
+		      {
             src: normalizePath(path.resolve(__dirname, './src/scripts/libs')) + '/[!.]*',
             dest: normalizePath(path.resolve(__dirname, `./dist/${s_MODULE_ID}/scripts/libs`)),
           },

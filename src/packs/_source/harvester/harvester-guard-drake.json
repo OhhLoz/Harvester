@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Guard Drake",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Guard Drake'.",
+  "results": [
+    {
+      "text": "Guard Drake Scales (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Guard Drake",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.BCWENIt7FCsVNHQ2",
+          "brt-result-custom-name": "Guard Drake Scales (small pouch)",
+          "brt-result-original-name": "Guard Drake Scales (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "BCWENIt7FCsVNHQ2",
+      "_id": "2NLmRSmCcnReoUnR",
+      "_key": "!tables.results!Yh6Ms9WdYDX8IbSi.2NLmRSmCcnReoUnR"
+    },
+    {
+      "text": "Guard Drake Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Guard Drake",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.baroHXxjOhND2IAm",
+          "brt-result-custom-name": "Guard Drake Blood vial",
+          "brt-result-original-name": "Guard Drake Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "baroHXxjOhND2IAm",
+      "_id": "mypi4QEH4PrJPhCH",
+      "_key": "!tables.results!Yh6Ms9WdYDX8IbSi.mypi4QEH4PrJPhCH"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Guard Drake",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563804,
+    "modifiedTime": 1696756756736,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Yh6Ms9WdYDX8IbSi",
+  "sort": 0,
+  "_key": "!tables!Yh6Ms9WdYDX8IbSi"
+}

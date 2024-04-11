@@ -1,0 +1,40 @@
+{
+  "name": "Giant Vulture Feathers (large pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Vulture feathers are dark decorative plumage, that help the bird soar through the sky. The feathers are used in decorations, dusters, apparel and creating arrows and bolts.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Vulture",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 6,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975927,
+    "modifiedTime": 1688174975927,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "UiqYySR87ATdWd0e",
+  "_key": "!items!UiqYySR87ATdWd0e"
+}

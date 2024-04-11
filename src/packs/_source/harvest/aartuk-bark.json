@@ -1,0 +1,40 @@
+{
+  "name": "Aartuk Bark",
+  "type": "loot",
+  "img": "icons/commodities/wood/bark-beige.webp",
+  "system": {
+    "description": {
+      "value": "Aartuk bark is the hard, outer covering of the creature. The bark can be removed in small plates, which can then be crafted into wooden armor.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Aartuk Warrior",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973475,
+    "modifiedTime": 1688174973475,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "fazPMg3Fnus0zq07",
+  "_key": "!items!fazPMg3Fnus0zq07"
+}

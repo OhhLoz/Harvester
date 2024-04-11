@@ -1,0 +1,40 @@
+{
+  "name": "Megapede Eggs",
+  "type": "loot",
+  "img": "icons/consumables/eggs/egg-speckled-tan.webp",
+  "system": {
+    "description": {
+      "value": "Megepedes returning to their nest can sometimes be found carrying an egg, which is attached to it's back using its sticky saliva. The egg must be removed carefully, or it will break and be useless. Some civilizations forbid the selling of megapede eggs, since a hatched megapede will consume everything it can and become full size within weeks. However, some spellcasters and researchers will buy the egg.",
+      "chat": "25",
+      "unidentified": "Nature"
+    },
+    "source": "Megapede",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977019,
+    "modifiedTime": 1688174977019,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8e4FuK6k7LZEuSOR",
+  "_key": "!items!8e4FuK6k7LZEuSOR"
+}

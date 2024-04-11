@@ -1,0 +1,40 @@
+{
+  "name": "Satyr Hair (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A satyr typically has a full head of lush, dark hair. The hair can be used to brew strong liquors, and rejuvenation tonics.",
+      "chat": "5",
+      "unidentified": "Arcana"
+    },
+    "source": "Satyr",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978000,
+    "modifiedTime": 1688174978000,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "mJ4f1EvX37zvbaqA",
+  "_key": "!items!mJ4f1EvX37zvbaqA"
+}

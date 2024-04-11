@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Elephant",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Elephant'.",
+  "results": [
+    {
+      "text": "Elephant Tusk (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Elephant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.iGRkoE4sXIoY1fA8",
+          "brt-result-custom-name": "Elephant Tusk",
+          "brt-result-original-name": "Elephant Tusk (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-engraved-stripes-white.webp"
+        }
+      },
+      "documentId": "iGRkoE4sXIoY1fA8",
+      "_id": "dzNrFyRGOwkFEch0",
+      "_key": "!tables.results!dfUBekvHav5yJahN.dzNrFyRGOwkFEch0"
+    },
+    {
+      "text": "Elephant Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Elephant",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.vAW8K9SlXW54jkDe",
+          "brt-result-custom-name": "Elephant Skin",
+          "brt-result-original-name": "Elephant Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "vAW8K9SlXW54jkDe",
+      "_id": "qH7nD8j2wEamW6nV",
+      "_key": "!tables.results!dfUBekvHav5yJahN.qH7nD8j2wEamW6nV"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Elephant",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756580484,
+    "modifiedTime": 1696756756205,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dfUBekvHav5yJahN",
+  "sort": 0,
+  "_key": "!tables!dfUBekvHav5yJahN"
+}

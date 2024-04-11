@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Gibbering Mouther",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Gibbering Mouther'.",
+  "results": [
+    {
+      "text": "Gibbering Mouther Teeth (small pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gibbering Mouther",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.AwWuIhWnecQ8g40Q",
+          "brt-result-custom-name": "Gibbering Mouther Teeth (small pouch)",
+          "brt-result-original-name": "Gibbering Mouther Teeth (small pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "AwWuIhWnecQ8g40Q",
+      "_id": "IBu2SvLajPIOb4U3",
+      "_key": "!tables.results!YbeWuuHG89gouHGt.IBu2SvLajPIOb4U3"
+    },
+    {
+      "text": "Gibbering Mouther Saliva (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Gibbering Mouther",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LDAmSuyN4COCCnhp",
+          "brt-result-custom-name": "Gibbering Mouther Saliva (vial)",
+          "brt-result-original-name": "Gibbering Mouther Saliva (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "LDAmSuyN4COCCnhp",
+      "_id": "pNmL5XDUoslyZERi",
+      "_key": "!tables.results!YbeWuuHG89gouHGt.pNmL5XDUoslyZERi"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Gibbering Mouther",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563687,
+    "modifiedTime": 1696756756374,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "YbeWuuHG89gouHGt",
+  "sort": 0,
+  "_key": "!tables!YbeWuuHG89gouHGt"
+}

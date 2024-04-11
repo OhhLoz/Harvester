@@ -1,0 +1,40 @@
+{
+  "name": "Mummy Dust (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "Over time, the skin and bandages begin to dry and decay, creating a thin coating of dust on the creature. Combined with the magical aura of the mummy, this dust retains a touch of arcane power that can be used in potions and spells. Necromancers are especially interested in this item.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Mummy",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977206,
+    "modifiedTime": 1688174977206,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "zBu5SxUoPzwT6wB3",
+  "_key": "!items!zBu5SxUoPzwT6wB3"
+}

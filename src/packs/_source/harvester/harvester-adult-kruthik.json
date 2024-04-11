@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Adult Kruthik",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Adult Kruthik'.",
+  "results": [
+    {
+      "text": "Kruthik Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Kruthik",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.B9ueLXSucGUvevhx",
+          "brt-result-custom-name": "Kruthik Blood vial",
+          "brt-result-original-name": "Kruthik Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "B9ueLXSucGUvevhx",
+      "_id": "MvHEE3BjPsSkjRKg",
+      "_key": "!tables.results!9Mv4wKzIHraTjsEX.MvHEE3BjPsSkjRKg"
+    },
+    {
+      "text": "Kruthik Leg (x6)",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Adult Kruthik",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dakpjIFNFdGIaXgt",
+          "brt-result-custom-name": "Kruthik Leg",
+          "brt-result-original-name": "Kruthik Leg (x6)",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "dakpjIFNFdGIaXgt",
+      "_id": "kKmaobis5k1niv2a",
+      "_key": "!tables.results!9Mv4wKzIHraTjsEX.kKmaobis5k1niv2a"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Adult Kruthik",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563772,
+    "modifiedTime": 1696756755848,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9Mv4wKzIHraTjsEX",
+  "sort": 0,
+  "_key": "!tables!9Mv4wKzIHraTjsEX"
+}

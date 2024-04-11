@@ -1,0 +1,40 @@
+{
+  "name": "Yochlol Ooze (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A yochlol's yellowish ooze is a vile, poisonous substance. The ooze can be harvested and turned into Yochlol Poison. Proficiency with the poisoner kit may be used for harvesting this ooze. On a successful check, the character harvests the creature's ooze that must be refined before producing 1 dose of Yochlol Poison (see below). On a failed check, the character is unable to extract the ooze. If the character fails the check by 5 or more, the character is subjected to the ooze's poison. Refining the Poison: Once the ooze is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend an 2 days and 400gp worth of material to create Yochlol Poison (DC 17 Poisoner Kit or Alchemist Supplies check). Yochlol Poison: A creature successfully hit with Yochlol Poison must make a DC 15 Constitution saving throw, taking 6d6 poison damage on a failed save, or half that on a successful saving throw. Once applied, the poison retains potency for 1 minute before drying, or until a target is successfully hit. This poison usually sells for 1000gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "20",
+      "unidentified": "Arcana"
+    },
+    "source": "Yochlol",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978937,
+    "modifiedTime": 1688174978937,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "k4i7GzVxaFMzjaey",
+  "_key": "!items!k4i7GzVxaFMzjaey"
+}

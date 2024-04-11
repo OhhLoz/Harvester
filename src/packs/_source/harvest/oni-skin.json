@@ -1,0 +1,40 @@
+{
+  "name": "Oni Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "An oni has elastic, blue skin with little body hair. The skin is extremely flexible, making it valued by leatherworkers and tailors. The blue color also makes it unique and easily recognizable.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Oni",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 7,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977491,
+    "modifiedTime": 1688174977491,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "YYjTcRxtGe7h6MI8",
+  "_key": "!items!YYjTcRxtGe7h6MI8"
+}

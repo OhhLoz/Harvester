@@ -1,0 +1,40 @@
+{
+  "name": "Allosaurus Skin",
+  "type": "loot",
+  "img": "icons/commodities/leather/leather-bolt-grey.webp",
+  "system": {
+    "description": {
+      "value": "The skin of an allosaurus is a large reptilian hide. The skin is highly durable, making it desirable for heavy-duty items such as footwear and belts. It is also used in the production of other apparel, bags, upholstery, and furniture.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Allosaurus",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973610,
+    "modifiedTime": 1688174973610,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rF15RZGLfishg4CA",
+  "_key": "!items!rF15RZGLfishg4CA"
+}

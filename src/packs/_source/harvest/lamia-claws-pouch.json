@@ -1,0 +1,40 @@
+{
+  "name": "Lamia Claws (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A lamia's ability to persuade and charm is ingrained in the creatures very bones. The creatures claws become brittle immediately after death, making it difficult to harvest, but quickly harden again once removed. The claws can be used in jewelry and decorations, but larger claws may be used to make simple tools and small weapons.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Lamia",
+    "quantity": 1,
+    "weight": 9,
+    "price": {
+      "value": 15,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976814,
+    "modifiedTime": 1688174976814,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "MOXIXR1YoJnVd7SC",
+  "_key": "!items!MOXIXR1YoJnVd7SC"
+}

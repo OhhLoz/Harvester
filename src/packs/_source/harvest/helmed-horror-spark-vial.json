@@ -1,0 +1,40 @@
+{
+  "name": "Helmed Horror Spark (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "The arcane spark that animates a Helmed Horror dissipates quickly, but can be gathered using an enchanted vial. The essence is valued by artificers and magic users. Requires an enchanted vial.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Helmed Horror",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976433,
+    "modifiedTime": 1688174976433,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ydbyvJ6FzE83GQ6V",
+  "_key": "!items!ydbyvJ6FzE83GQ6V"
+}

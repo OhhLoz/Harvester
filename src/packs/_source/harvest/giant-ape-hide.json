@@ -1,0 +1,40 @@
+{
+  "name": "Giant Ape Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "A giant ape's hide can provide a good source of soft, black leather. Once removed from the corpse, typically with a skinning knife, the hide ranges from 8-10 feet long.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Ape",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 6,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975775,
+    "modifiedTime": 1688174975775,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "zWYvlZvrVVeZTFQu",
+  "_key": "!items!zWYvlZvrVVeZTFQu"
+}

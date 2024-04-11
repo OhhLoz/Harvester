@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Ogre Chain Brute",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Ogre Chain Brute'.",
+  "results": [
+    {
+      "text": "Ogre Fat (large pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Chain Brute",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.8kcijpZ0DxEQ1D1m",
+          "brt-result-custom-name": "Ogre Fat (large pouch)",
+          "brt-result-original-name": "Ogre Fat (large pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "8kcijpZ0DxEQ1D1m",
+      "_id": "IbNsW3nH0dDTjlCs",
+      "_key": "!tables.results!onYel62tvWr1NrSw.IbNsW3nH0dDTjlCs"
+    },
+    {
+      "text": "Ogre's Giant Chain",
+      "type": 2,
+      "img": "icons/commodities/metal/chain-steel.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Chain Brute",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.DCeY3AdKedx8PyAl",
+          "brt-result-custom-name": "Ogre's Giant Chain",
+          "brt-result-original-name": "Ogre's Giant Chain",
+          "brt-result-original-icon": "icons/commodities/metal/chain-steel.webp"
+        }
+      },
+      "documentId": "DCeY3AdKedx8PyAl",
+      "_id": "M81heL7uku1BpYyv",
+      "_key": "!tables.results!onYel62tvWr1NrSw.M81heL7uku1BpYyv"
+    },
+    {
+      "text": "Ogre Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Chain Brute",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.TfEcOSuORa79Qjb3",
+          "brt-result-custom-name": "Ogre Skin",
+          "brt-result-original-name": "Ogre Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "TfEcOSuORa79Qjb3",
+      "_id": "8XlDvsfA0weiuY4u",
+      "_key": "!tables.results!onYel62tvWr1NrSw.8XlDvsfA0weiuY4u"
+    },
+    {
+      "text": "Ogre Stomach",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-stomach.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Ogre Chain Brute",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gZW9g8LdSoBq2abD",
+          "brt-result-custom-name": "Ogre Stomach",
+          "brt-result-original-name": "Ogre Stomach",
+          "brt-result-original-icon": "icons/commodities/biological/organ-stomach.webp"
+        }
+      },
+      "documentId": "gZW9g8LdSoBq2abD",
+      "_id": "Jw8WeuS2Rik9SHei",
+      "_key": "!tables.results!onYel62tvWr1NrSw.Jw8WeuS2Rik9SHei"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Ogre Chain Brute",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756562845,
+    "modifiedTime": 1696756758317,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "onYel62tvWr1NrSw",
+  "sort": 0,
+  "_key": "!tables!onYel62tvWr1NrSw"
+}

@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Water Weird",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Water Weird'.",
+  "results": [
+    {
+      "text": "Elemental Water Essence (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Water Weird",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NmDZTyImFJx7unwp",
+          "brt-result-custom-name": "Elemental Water Essence (vial)",
+          "brt-result-original-name": "Elemental Water Essence (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "NmDZTyImFJx7unwp",
+      "_id": "PvFQf1JWKemmW6r6",
+      "_key": "!tables.results!3W1qBOPhi5W9l3iY.PvFQf1JWKemmW6r6"
+    },
+    {
+      "text": "Water Weird Fluid (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Water Weird",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.gyDt10mKkDqi6tmo",
+          "brt-result-custom-name": "Water Weird Fluid (vial)",
+          "brt-result-original-name": "Water Weird Fluid (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "gyDt10mKkDqi6tmo",
+      "_id": "I5Ud8jKUn9IAARZk",
+      "_key": "!tables.results!3W1qBOPhi5W9l3iY.I5Ud8jKUn9IAARZk"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Water Weird",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567893,
+    "modifiedTime": 1696756761147,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "3W1qBOPhi5W9l3iY",
+  "sort": 0,
+  "_key": "!tables!3W1qBOPhi5W9l3iY"
+}

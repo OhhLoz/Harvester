@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Cyclops",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Cyclops'.",
+  "results": [
+    {
+      "text": "Cyclops Eyelid",
+      "type": 2,
+      "img": "icons/creatures/abilities/paw-print-tan.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Cyclops",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.A9x1Y6fwK7VC60Ft",
+          "brt-result-custom-name": "Cyclops Eyelid",
+          "brt-result-original-name": "Cyclops Eyelid",
+          "brt-result-original-icon": "icons/creatures/abilities/paw-print-tan.webp"
+        }
+      },
+      "documentId": "A9x1Y6fwK7VC60Ft",
+      "_id": "s0wcxXlVrvfN1q4n",
+      "_key": "!tables.results!UVXK1ntQ9ySt2PQJ.s0wcxXlVrvfN1q4n"
+    },
+    {
+      "text": "Cyclops Heart",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "med",
+          "brt-source-value": "Cyclops",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PvaRGT7cWDENLIiK",
+          "brt-result-custom-name": "Cyclops Heart",
+          "brt-result-original-name": "Cyclops Heart",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-red.webp"
+        }
+      },
+      "documentId": "PvaRGT7cWDENLIiK",
+      "_id": "dYx8qI4Q1CgDAFSc",
+      "_key": "!tables.results!UVXK1ntQ9ySt2PQJ.dYx8qI4Q1CgDAFSc"
+    },
+    {
+      "text": "Cyclops Eye",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "med",
+          "brt-source-value": "Cyclops",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Z6XqPS6N1s7UwVkp",
+          "brt-result-custom-name": "Cyclops Eye",
+          "brt-result-original-name": "Cyclops Eye",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "Z6XqPS6N1s7UwVkp",
+      "_id": "dW4k1h456pzhMawW",
+      "_key": "!tables.results!UVXK1ntQ9ySt2PQJ.dW4k1h456pzhMawW"
+    },
+    {
+      "text": "Cyclops Toes",
+      "type": 2,
+      "img": "icons/commodities/biological/foot-black-grey.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "med",
+          "brt-source-value": "Cyclops",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.mxJR8qf6FWwSnQYH",
+          "brt-result-custom-name": "Cyclops Toes",
+          "brt-result-original-name": "Cyclops Toes",
+          "brt-result-original-icon": "icons/commodities/biological/foot-black-grey.webp"
+        }
+      },
+      "documentId": "mxJR8qf6FWwSnQYH",
+      "_id": "TrAG9HpewMgeFW6A",
+      "_key": "!tables.results!UVXK1ntQ9ySt2PQJ.TrAG9HpewMgeFW6A"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "med",
+      "brt-source-value": "Cyclops",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563270,
+    "modifiedTime": 1696756756066,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "UVXK1ntQ9ySt2PQJ",
+  "sort": 0,
+  "_key": "!tables!UVXK1ntQ9ySt2PQJ"
+}

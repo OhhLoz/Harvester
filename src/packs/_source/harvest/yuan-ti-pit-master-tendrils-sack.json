@@ -1,0 +1,40 @@
+{
+  "name": "Yuan-ti Pit Master Tendrils (sack)",
+  "type": "loot",
+  "img": "icons/containers/bags/sack-leather-tan.webp",
+  "system": {
+    "description": {
+      "value": "A yuan-ti pit master has arms made of snake-like tendrils, the result of a pact with Merrshaulk. The skin and meat of these tendrils are useless, but the flesh does contain magical energy that can be harnessed by adept spellcasters and artificers.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Yuan-ti Pit Master",
+    "quantity": 1,
+    "weight": 8,
+    "price": {
+      "value": 120,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174979068,
+    "modifiedTime": 1688174979068,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "8FdxQpxZJZOxKNE7",
+  "_key": "!items!8FdxQpxZJZOxKNE7"
+}

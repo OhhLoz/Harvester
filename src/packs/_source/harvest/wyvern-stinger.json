@@ -1,0 +1,40 @@
+{
+  "name": "Wyvern Stinger",
+  "type": "loot",
+  "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+  "system": {
+    "description": {
+      "value": "A wyvern has a long tail with a poisonous stinger on the end. The poison is difficult to remove, and the poison is extremely potent. Proficiency with the poisoner kit may be used for harvesting this stinger. On a successful check, the character harvests the creature's stinger that must be refined before producing 1 dose of Stinger Poison (see below). On a failed check, the character is unable to extract the stinger. If the character fails the check by 5 or more, the character is subjected to the creature's poison. Refining the Poison: Once the stinger is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 6 days and 600gp worth of material to create Wyvern Poison (DC 14 Poisoner Kit or Alchemist Supplies check). Wyvern Poison (Injury): A vial of Wyvern Poison (DMG p258) can coat up to 3 pieces of ammunition or 1 melee weapon for 1 minute. Applying the poison takes 1 action. Any creature successfully hit must make a DC 15 Constitution saving throw, taking 24 (7d6) poison damage on a failed save, or half as much damage on a successful one. This poison usually sells for 1200gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Wyvern",
+    "quantity": 1,
+    "weight": 7,
+    "price": {
+      "value": 600,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978861,
+    "modifiedTime": 1688174978861,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "sa5yZonP6XaksNQR",
+  "_key": "!items!sa5yZonP6XaksNQR"
+}

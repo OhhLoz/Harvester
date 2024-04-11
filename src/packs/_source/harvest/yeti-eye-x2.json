@@ -1,0 +1,40 @@
+{
+  "name": "Yeti Eye (x2)",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "A yeti's eyeball is a soft white orb with a light, vivid blue iris. It has the power to focus the surrounding air into a frigid surge of arcane energy. If an eyeball is harvested intact, an adept spellcaster or alchemist may be able to harness that energy into something useful.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Yeti",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978928,
+    "modifiedTime": 1688174978928,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "es7nyBZ8TZKbhX9S",
+  "_key": "!items!es7nyBZ8TZKbhX9S"
+}

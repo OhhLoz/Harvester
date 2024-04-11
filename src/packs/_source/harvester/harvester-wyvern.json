@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Wyvern",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Wyvern'.",
+  "results": [
+    {
+      "text": "Wyvern Skin",
+      "type": 2,
+      "img": "icons/commodities/leather/leather-bolt-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Wyvern",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.aGgGl7argZWrKt2S",
+          "brt-result-custom-name": "Wyvern Skin",
+          "brt-result-original-name": "Wyvern Skin",
+          "brt-result-original-icon": "icons/commodities/leather/leather-bolt-grey.webp"
+        }
+      },
+      "documentId": "aGgGl7argZWrKt2S",
+      "_id": "DpXUf2zcUD7xEyzH",
+      "_key": "!tables.results!Dv057mJfUaP5bjEO.DpXUf2zcUD7xEyzH"
+    },
+    {
+      "text": "Wyvern Claws/Teeth (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Wyvern",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.dpWYdcaEdUsqK0pt",
+          "brt-result-custom-name": "Wyvern Claws/Teeth (pouch)",
+          "brt-result-original-name": "Wyvern Claws/Teeth (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "dpWYdcaEdUsqK0pt",
+      "_id": "PHVH5zF0K0oxlsgh",
+      "_key": "!tables.results!Dv057mJfUaP5bjEO.PHVH5zF0K0oxlsgh"
+    },
+    {
+      "text": "Wyvern Stinger",
+      "type": 2,
+      "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Wyvern",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.sa5yZonP6XaksNQR",
+          "brt-result-custom-name": "Wyvern Stinger",
+          "brt-result-original-name": "Wyvern Stinger",
+          "brt-result-original-icon": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp"
+        }
+      },
+      "documentId": "sa5yZonP6XaksNQR",
+      "_id": "N0XzdMTwMVpBs5Lm",
+      "_key": "!tables.results!Dv057mJfUaP5bjEO.N0XzdMTwMVpBs5Lm"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Wyvern",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756575021,
+    "modifiedTime": 1696756762258,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Dv057mJfUaP5bjEO",
+  "sort": 0,
+  "_key": "!tables!Dv057mJfUaP5bjEO"
+}

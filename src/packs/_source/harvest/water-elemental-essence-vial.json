@@ -1,0 +1,40 @@
+{
+  "name": "Water Elemental Essence (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A marid may leave behind a trace amount of essence from the elemental plane of water. While invisible to the naked eye, a quick ritual can reveal its presence -- a small glowing ball of blue light. Requires an enchanted vial.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Marid",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976938,
+    "modifiedTime": 1688174976938,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Kbysv1HQveFpGGGd",
+  "_key": "!items!Kbysv1HQveFpGGGd"
+}

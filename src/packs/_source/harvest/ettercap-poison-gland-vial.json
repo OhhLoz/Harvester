@@ -1,0 +1,40 @@
+{
+  "name": "Ettercap Poison Gland (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "An ettercaps poison gland may be harvested in order to acquire the creatures poison. Proficiency with the poisoner kit may be used for harvesting this gland. On a successful check, the character harvests the creature's poison gland that must be refined before producing 1 dose of Ettercap Poison (see below). On a failed check, the character is unable to extract the poison gland. If the character fails the check by 5 or more, the character is subjected to the creature's poison. Refining the Poison: Once the gland is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 1 hour and 50gp worth of material to create Ettercap Poison (DC 12 Poisoner Kit or Alchemist Supplies check). Ettercap Poison (Injury): A creature can spend an action to coat 1 melee weapon, or 3 pieces of ammunition with this poison. The poison lasts for 1 minute, or until it successfully affects a target. A creature hit with a weapon coated with this poison must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. This poison usually sells for 100gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Ettercap",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975428,
+    "modifiedTime": 1688174975428,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "nIhD3XuAcIFQTb2u",
+  "_key": "!items!nIhD3XuAcIFQTb2u"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Kraken Pearl",
+  "type": "loot",
+  "img": "icons/commodities/gems/pearls-white.webp",
+  "system": {
+    "description": {
+      "value": "A kraken is a gargantuan devourer, swallowing tons of objects whole throughout the millennia. Some of the more valuable (and even magical) objects get caught in the creature's digestive tract, and are covered in a thick mucus that quickly hardens. Over time, the object is coated again and again, forming a glistening and hardened pearl. A fully-formed kraken's pearl can range from 2-3 feet in diameter. The beautiful sphere is prized by collectors, but also an object of great power (especially if the pearl is extremely old).",
+      "chat": "30",
+      "unidentified": "Nature"
+    },
+    "source": "Kraken",
+    "quantity": 1,
+    "weight": 25,
+    "price": {
+      "value": 30000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976774,
+    "modifiedTime": 1688174976774,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lWBcC5rcJK0q54vG",
+  "_key": "!items!lWBcC5rcJK0q54vG"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Lost Sorrowsworn Harpoon (x2)",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Each arm of a lost sorrowsworn ends in a sharp, pointed bone spike. These spikes may be used to craft some piercing weapons.",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Lonely Sorrowsworn",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976885,
+    "modifiedTime": 1688174976885,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ReP4T1ap79cLUcLA",
+  "_key": "!items!ReP4T1ap79cLUcLA"
+}

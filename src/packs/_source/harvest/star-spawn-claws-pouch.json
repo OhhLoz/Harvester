@@ -1,0 +1,40 @@
+{
+  "name": "Star Spawn Claws (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The black taloned claws of a star spawn resonate with psionic energy. The talons can be shaved down and used in potions and elixir.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Star Spawn Mangler",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 20,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978255,
+    "modifiedTime": 1688174978255,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ADcvzZEXYVUTCsjM",
+  "_key": "!items!ADcvzZEXYVUTCsjM"
+}

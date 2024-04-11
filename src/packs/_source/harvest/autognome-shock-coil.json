@@ -1,0 +1,40 @@
+{
+  "name": "Autognome Shock Coil",
+  "type": "loot",
+  "img": "icons/commodities/tech/coil-steel.webp",
+  "system": {
+    "description": {
+      "value": "A gold metal coil may be found within the torso of the autognome. This 3-inch spring-like strand of metal is used by the autognome to help generate an electrical charge.",
+      "chat": "15",
+      "unidentified": "Investigation"
+    },
+    "source": "Autognome",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973857,
+    "modifiedTime": 1688174973857,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "yeNZaJQ0MGlUhVPX",
+  "_key": "!items!yeNZaJQ0MGlUhVPX"
+}

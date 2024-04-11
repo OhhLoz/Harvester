@@ -1,0 +1,40 @@
+{
+  "name": "Space Hamster Claws/Teeth (small pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The claws of the space hamster, and sometimes the teeth, can be used in decorations and jewelry.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Space Hamster",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975897,
+    "modifiedTime": 1688174975897,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9dJjzdCBaB2Ej1ub",
+  "_key": "!items!9dJjzdCBaB2Ej1ub"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Duergar Hammerer Hammer",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A duergar hammerer has a large mechanical hammer attached to one of its arms. If successfully harvested, the hammer is in good condition and salvageable. The hammer is a useful tool or weapon that can be traded.",
+      "chat": "20",
+      "unidentified": "Medicine"
+    },
+    "source": "Duergar Hammerer",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975260,
+    "modifiedTime": 1688174975260,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "1Wp9JtTQKnWQi5qp",
+  "_key": "!items!1Wp9JtTQKnWQi5qp"
+}

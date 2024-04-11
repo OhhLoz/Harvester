@@ -1,0 +1,40 @@
+{
+  "name": "Ghast Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A ghast's blood is black and tar-like. It has value among the arcane community, especially with necromancers. Alchemists may also find it useful in their concoctions Use: A creature may spend 1 minute covering itself in ghast blood. Undead creatures with an Intelligence of less than 10 have disadvantage on Wisdom (Perception) checks to find the covered creature. This effect lasts for 1 hour or until the blood is washed off.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Ghast",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975746,
+    "modifiedTime": 1688174975746,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "zZvZn4GD6OieSjyr",
+  "_key": "!items!zZvZn4GD6OieSjyr"
+}

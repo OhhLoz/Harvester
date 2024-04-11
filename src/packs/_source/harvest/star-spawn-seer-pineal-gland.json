@@ -1,0 +1,40 @@
+{
+  "name": "Star Spawn Seer Pineal Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "A star spawn seer's pineal gland expands to twice its size when the entity takes over. This gland is believed to control the creatures psychic power. The gland may be used to create potions and elixirs that enhance psychic power.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Star Spawn Seer",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 250,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978261,
+    "modifiedTime": 1688174978261,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "KjeQ8OSFwFBoFzC2",
+  "_key": "!items!KjeQ8OSFwFBoFzC2"
+}

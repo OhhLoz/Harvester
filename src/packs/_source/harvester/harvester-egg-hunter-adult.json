@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Egg Hunter Adult",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Egg Hunter Adult'.",
+  "results": [
+    {
+      "text": "Egg Hunter Spores (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Egg Hunter Adult",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.1vHAbt903LZzr2UA",
+          "brt-result-custom-name": "Egg Hunter Spores (pouch)",
+          "brt-result-original-name": "Egg Hunter Spores (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "1vHAbt903LZzr2UA",
+      "_id": "VzY31Lbpy26lQpmk",
+      "_key": "!tables.results!xdW7knsOZd8srBHU.VzY31Lbpy26lQpmk"
+    },
+    {
+      "text": "Egg Hunter's Tooth",
+      "type": 2,
+      "img": "icons/commodities/bones/tooth-hollow-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Egg Hunter Adult",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.hqeRhUnE6sgtzOu2",
+          "brt-result-custom-name": "Egg Hunter's Tooth",
+          "brt-result-original-name": "Egg Hunter's Tooth",
+          "brt-result-original-icon": "icons/commodities/bones/tooth-hollow-brown.webp"
+        }
+      },
+      "documentId": "hqeRhUnE6sgtzOu2",
+      "_id": "NrlGZxbofTQVrZfj",
+      "_key": "!tables.results!xdW7knsOZd8srBHU.NrlGZxbofTQVrZfj"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Egg Hunter Adult",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560784,
+    "modifiedTime": 1696756756182,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "xdW7knsOZd8srBHU",
+  "sort": 0,
+  "_key": "!tables!xdW7knsOZd8srBHU"
+}

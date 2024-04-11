@@ -1,0 +1,40 @@
+{
+  "name": "Glabrezu Horn (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-simple-grey.webp",
+  "system": {
+    "description": {
+      "value": "The long horns on a glabrezu's forehead. While the horns can be fashioned into simple instruments and drinking tools, artificers and magic users can repurpose the horns into magical items.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Glabrezu",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976084,
+    "modifiedTime": 1688174976084,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "iba4vCldQpd1PMS8",
+  "_key": "!items!iba4vCldQpd1PMS8"
+}

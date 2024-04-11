@@ -1,0 +1,40 @@
+{
+  "name": "Aboleth Brain",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-brain-pink-purple.webp",
+  "system": {
+    "description": {
+      "value": "The aboleth's brain is prized by both alchemists and magic users.",
+      "chat": "25",
+      "unidentified": "Arcana"
+    },
+    "source": "Aboleth",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 1600,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973507,
+    "modifiedTime": 1688174973507,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "9anKz5IzGqqqfFNS",
+  "_key": "!items!9anKz5IzGqqqfFNS"
+}

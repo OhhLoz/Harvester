@@ -1,0 +1,40 @@
+{
+  "name": "Purple Worm Stinger",
+  "type": "loot",
+  "img": "icons/creatures/abilities/stinger-poison-scorpion-brown.webp",
+  "system": {
+    "description": {
+      "value": "The large stinger on a Purple Worm's tail contains a powerful venom. Proficiency with the poisoner kit may be used for harvesting this stinger. On a successful check, the character harvests the creature's stinger, which must be refined before producing 3 doses of Purple Worm Poison (see below). On a failed check, the character is unable to extract the stinger. If the character fails the check by 5 or more, the character is subjected to the creature's poison. Refining the Poison: Once the stinger is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 6 days and 1500gp worth of material to create 3 doses of Purple Worm Poison (DC 17 Poisoner Kit or Alchemist Supplies check). Purple Worm Poison (Injury): The poison can be used to coat up to 3 pieces of ammunition or one slashing/piercing weapon. Applying the poison takes 1 action. A creature subjected to this poison must succeed on a DC 19 Constitution saving throw, taking 42 (12d6) poison damage on a failed save, or half as much damage on a successful one. This poison usually sells for 2000gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "20",
+      "unidentified": "Nature"
+    },
+    "source": "Purple Worm",
+    "quantity": 1,
+    "weight": 40,
+    "price": {
+      "value": 2000,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977783,
+    "modifiedTime": 1688174977783,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "y5kG1tDRs9ZkUlTT",
+  "_key": "!items!y5kG1tDRs9ZkUlTT"
+}

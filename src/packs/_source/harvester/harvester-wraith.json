@@ -1,0 +1,65 @@
+{
+  "name": "Harvester | Wraith",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Wraith'.",
+  "results": [
+    {
+      "text": "Wraith Dust",
+      "type": 2,
+      "img": "icons/commodities/materials/bowl-powder-gold.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Wraith",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WJ6JYYO08SqIadV4",
+          "brt-result-custom-name": "Wraith Dust",
+          "brt-result-original-name": "Wraith Dust",
+          "brt-result-original-icon": "icons/commodities/materials/bowl-powder-gold.webp"
+        }
+      },
+      "documentId": "WJ6JYYO08SqIadV4",
+      "_id": "lzlbzGrnqXODbMnx",
+      "_key": "!tables.results!aA8TEAESx4w81v0C.lzlbzGrnqXODbMnx"
+    }
+  ],
+  "formula": "1d1",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Wraith",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 1
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756571437,
+    "modifiedTime": 1696756762255,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "aA8TEAESx4w81v0C",
+  "sort": 0,
+  "_key": "!tables!aA8TEAESx4w81v0C"
+}

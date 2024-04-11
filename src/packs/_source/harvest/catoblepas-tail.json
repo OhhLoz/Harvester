@@ -1,0 +1,40 @@
+{
+  "name": "Catoblepas Tail",
+  "type": "loot",
+  "img": "icons/commodities/biological/tail-rodent-orange.webp",
+  "system": {
+    "description": {
+      "value": "A thick skinned tail with a hard bulbous end. Weaponsmiths are able to treat and reinforce the tail to make whips and flails. Artificers and magic users may be able to enchant these items.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Catoblepas",
+    "quantity": 1,
+    "weight": 15,
+    "price": {
+      "value": 25,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974477,
+    "modifiedTime": 1688174974477,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "K0824BpEMhdRzn9Q",
+  "_key": "!items!K0824BpEMhdRzn9Q"
+}

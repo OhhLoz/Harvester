@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Griffon",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Griffon'.",
+  "results": [
+    {
+      "text": "Griffon Talon (x2)",
+      "type": 2,
+      "img": "icons/commodities/claws/claw-bird-pink.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Griffon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.4ILHd6GeVGZkgnot",
+          "brt-result-custom-name": "Griffon Talon",
+          "brt-result-original-name": "Griffon Talon (x2)",
+          "brt-result-original-icon": "icons/commodities/claws/claw-bird-pink.webp"
+        }
+      },
+      "documentId": "4ILHd6GeVGZkgnot",
+      "_id": "FLp6smi4FuRjT6Ps",
+      "_key": "!tables.results!FlJbODOtA1ld2rSL.FLp6smi4FuRjT6Ps"
+    },
+    {
+      "text": "Griffon Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Griffon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.7CnV1p9MaLU8ibYj",
+          "brt-result-custom-name": "Griffon Eye",
+          "brt-result-original-name": "Griffon Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "7CnV1p9MaLU8ibYj",
+      "_id": "vVwjhFP6AjBfMRqo",
+      "_key": "!tables.results!FlJbODOtA1ld2rSL.vVwjhFP6AjBfMRqo"
+    },
+    {
+      "text": "Griffon Feather (x10)",
+      "type": 2,
+      "img": "icons/commodities/materials/feather-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "10"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Griffon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LJywxt7XVZczfzGh",
+          "brt-result-custom-name": "Griffon Feather",
+          "brt-result-original-name": "Griffon Feather (x10)",
+          "brt-result-original-icon": "icons/commodities/materials/feather-white.webp"
+        }
+      },
+      "documentId": "LJywxt7XVZczfzGh",
+      "_id": "euwt9WOjwPwPQbAa",
+      "_key": "!tables.results!FlJbODOtA1ld2rSL.euwt9WOjwPwPQbAa"
+    },
+    {
+      "text": "Griffon Beak",
+      "type": 2,
+      "img": "icons/commodities/bones/beak-hooked-red.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "nat",
+          "brt-source-value": "Griffon",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.NlPolggGRFMAl3iW",
+          "brt-result-custom-name": "Griffon Beak",
+          "brt-result-original-name": "Griffon Beak",
+          "brt-result-original-icon": "icons/commodities/bones/beak-hooked-red.webp"
+        }
+      },
+      "documentId": "NlPolggGRFMAl3iW",
+      "_id": "d7cypW3OocYmLnQ3",
+      "_key": "!tables.results!FlJbODOtA1ld2rSL.d7cypW3OocYmLnQ3"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "nat",
+      "brt-source-value": "Griffon",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756561446,
+    "modifiedTime": 1696756756728,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FlJbODOtA1ld2rSL",
+  "sort": 0,
+  "_key": "!tables!FlJbODOtA1ld2rSL"
+}

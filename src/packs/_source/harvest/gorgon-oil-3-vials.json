@@ -1,0 +1,40 @@
+{
+  "name": "Gorgon Oil (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "A gorgon lubricates its iron plates with an oil that it secretes. This oil is valued by tinkerer and artificers.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Gorgon",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 3,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976152,
+    "modifiedTime": 1688174976152,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ZrDwNiGhM35LcgoV",
+  "_key": "!items!ZrDwNiGhM35LcgoV"
+}

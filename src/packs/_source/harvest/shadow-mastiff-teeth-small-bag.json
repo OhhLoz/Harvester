@@ -1,0 +1,40 @@
+{
+  "name": "Shadow Mastiff Teeth (small bag)",
+  "type": "loot",
+  "img": "icons/containers/bags/pack-canvas-white-brown.webp",
+  "system": {
+    "description": {
+      "value": "A shadow mastiff has dark, stout, pointy teeth. The teeth can be used to make serrated blades and saws, or can be used in jewelry and decorations. Some craftsmen can carve the teeth to make dark caltrops.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Shadow Mastiff Alpha",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978061,
+    "modifiedTime": 1688174978061,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "qRtI3Cho1e96ztYn",
+  "_key": "!items!qRtI3Cho1e96ztYn"
+}

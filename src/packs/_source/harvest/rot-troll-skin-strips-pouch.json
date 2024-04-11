@@ -1,0 +1,40 @@
+{
+  "name": "Rot Troll Skin Strips (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A rot troll's skin is in a constant state of flux. As it rots away, it is simultaneously regenerating. Samples of this skin can be harvested and sold to healers, alchemists and necromancers.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Rot Troll",
+    "quantity": 1,
+    "weight": 4,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977947,
+    "modifiedTime": 1688174977947,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FM5gFcGj2s7AuVJy",
+  "_key": "!items!FM5gFcGj2s7AuVJy"
+}

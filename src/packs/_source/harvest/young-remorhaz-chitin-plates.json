@@ -1,0 +1,40 @@
+{
+  "name": "Young Remorhaz Chitin Plates",
+  "type": "loot",
+  "img": "icons/commodities/biological/shell-tan.webp",
+  "system": {
+    "description": {
+      "value": "A young remorhaz has a segmented exoskeleton of large chitinous plates. The chitin can be cut, treated and repurposed as armor or shields.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Young Remorhaz",
+    "quantity": 1,
+    "weight": 30,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978977,
+    "modifiedTime": 1688174978977,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "ciijsxoJbTeOTSTh",
+  "_key": "!items!ciijsxoJbTeOTSTh"
+}

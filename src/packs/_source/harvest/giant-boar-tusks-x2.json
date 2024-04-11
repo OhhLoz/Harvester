@@ -1,0 +1,40 @@
+{
+  "name": "Giant Boar Tusks (x2)",
+  "type": "loot",
+  "img": "icons/commodities/bones/horn-engraved-stripes-white.webp",
+  "system": {
+    "description": {
+      "value": "A giant boar's tusks are 1 to 2 feet long. The tusks are used in trophies and decorations. Weaponsmiths can be carved into ivory weapons.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Giant Boar",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975790,
+    "modifiedTime": 1688174975790,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "jPb8iY0Psxlha1RG",
+  "_key": "!items!jPb8iY0Psxlha1RG"
+}

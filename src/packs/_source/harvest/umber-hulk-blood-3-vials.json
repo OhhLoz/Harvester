@@ -1,0 +1,40 @@
+{
+  "name": "Umber Hulk Blood (3 vials)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "An umber hulk's blood flows like a thick, reddish mud. The blood is rich in minerals, which can be separated using various alchemical processes.",
+      "chat": "5",
+      "unidentified": "Nature"
+    },
+    "source": "Umber Hulk",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978599,
+    "modifiedTime": 1688174978599,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "f5lr5hOFF8GQGahe",
+  "_key": "!items!f5lr5hOFF8GQGahe"
+}

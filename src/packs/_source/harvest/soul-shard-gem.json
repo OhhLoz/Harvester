@@ -1,0 +1,40 @@
+{
+  "name": "Soul Shard (gem)",
+  "type": "loot",
+  "img": "icons/commodities/gems/gem-faceted-round-white.webp",
+  "system": {
+    "description": {
+      "value": "A devourer, sent by Orcus with a hunger for souls, often imprisons victims in it's chest cavity as it slowly tortures the creatures soul. Using a gem, a harvester may be able to collect a collect a trace amount of the souls essence, creating a soul shard. A soul shard is highly valued in the magic community. A soul shard is a valuable currency in the Nine Hells. While not as valuable as a full soul, in the Nine Hells a soul shard is worth 10x value of the gem it is embedded in (but less valuable on the material plane). Use: A magic user can use a soul shard as a magic focus. In addition, the soul shard can be shattered (if a hard surface is available), causing 2d6 damage to every creature in a 30ft radius, including the caster.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Devourer",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 150,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974922,
+    "modifiedTime": 1688174974922,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "28dtJoNKyUU3J7fi",
+  "_key": "!items!28dtJoNKyUU3J7fi"
+}

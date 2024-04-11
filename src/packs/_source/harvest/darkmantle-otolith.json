@@ -1,0 +1,40 @@
+{
+  "name": "Darkmantle Otolith",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "The otolith is a cartilage structure in the darkmantle's head that it uses to sense gravity and movement. Some believe that the darkmantle's otolith can be used to create hearing devices.",
+      "chat": "15",
+      "unidentified": "Nature"
+    },
+    "source": "Darkmantle",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174974786,
+    "modifiedTime": 1688174974786,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "WD2Vnpwnomzm4nGk",
+  "_key": "!items!WD2Vnpwnomzm4nGk"
+}

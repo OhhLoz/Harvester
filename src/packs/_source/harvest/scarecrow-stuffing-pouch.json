@@ -1,0 +1,40 @@
+{
+  "name": "Scarecrow Stuffing (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "The stuffing in a scarecrow looks like ordinary straw, but each straw is touched with spiritual energy. It is often used in arcane rituals where the straw is burned.",
+      "chat": "5",
+      "unidentified": "Investigation"
+    },
+    "source": "Scarecrow",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 3,
+      "denomination": "sp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978011,
+    "modifiedTime": 1688174978011,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "AO7nwOFajrvjgrC8",
+  "_key": "!items!AO7nwOFajrvjgrC8"
+}

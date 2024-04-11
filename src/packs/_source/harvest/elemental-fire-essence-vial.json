@@ -1,0 +1,40 @@
+{
+  "name": "Elemental Fire Essence (vial)",
+  "type": "loot",
+  "img": "icons/consumables/potions/vial-cork-empty.webp",
+  "system": {
+    "description": {
+      "value": "When a fire elemental extinguishes, it often leaves behind burnt ash and soot. Some of this material contains traces of elemental energy that can be harnessed using a magical container. Requires an enchanted vial. Harvesting note: 20 DC if the fire elemental disperses into a pool of lava or a large area of burning fire over 10 ft in diameter.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Magmin",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 100,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976901,
+    "modifiedTime": 1688174976901,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rRVYrkkXVI4Uy7CF",
+  "_key": "!items!rRVYrkkXVI4Uy7CF"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Lock of Frost Giant Hair",
+  "type": "loot",
+  "img": "icons/commodities/materials/hair-tuft-gold.webp",
+  "system": {
+    "description": {
+      "value": "Long strands of incredibly cold hair, almost always covered in frost. The hair is often white with a blue sheen. The hair stays cold, even after the frost giant's death, making them extremely useful in lining bags to keep items cold. The hair is highly valued Highly valued among tailors, weavers and textile makers.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Frost Giant Everlasting One",
+    "quantity": 1,
+    "weight": 6,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975665,
+    "modifiedTime": 1688174975665,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "lU3S9FusTK5LpOcT",
+  "_key": "!items!lU3S9FusTK5LpOcT"
+}

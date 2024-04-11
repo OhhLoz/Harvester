@@ -1,0 +1,40 @@
+{
+  "name": "Duergar Despot Iron Fist",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "A duergar despot's iron fist is fused to its body and powered by the creature's psychic energy. When the creature dies, the fist has no more psionic power, but may be valuable to rare collectors, smiths and artificers.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Duergar Despot",
+    "quantity": 1,
+    "weight": 20,
+    "price": {
+      "value": 200,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174975254,
+    "modifiedTime": 1688174975254,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "jrUarF2uT3Pkyvy1",
+  "_key": "!items!jrUarF2uT3Pkyvy1"
+}

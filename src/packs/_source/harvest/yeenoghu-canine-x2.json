@@ -1,0 +1,40 @@
+{
+  "name": "Yeenoghu Canine (x2)",
+  "type": "loot",
+  "img": "icons/creatures/abilities/paw-print-tan.webp",
+  "system": {
+    "description": {
+      "value": "Yeenoghu has two long and sharp canines. The canines are pointy, dull-yellow bone, with redish stains. The strong bone can be used in decorations and jewelry. These large teeth can also be used to craft small piercing weapons. Alternatively, Yeenoghu's canine is a require material to create a powerful magic item, the Fang of Yeenoghu.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Yeenoghu",
+    "quantity": 1,
+    "weight": 10,
+    "price": {
+      "value": 500,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978901,
+    "modifiedTime": 1688174978901,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "HfJVAxti6smzskfb",
+  "_key": "!items!HfJVAxti6smzskfb"
+}

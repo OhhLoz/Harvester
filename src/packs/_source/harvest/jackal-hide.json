@@ -1,0 +1,40 @@
+{
+  "name": "Jackal Hide",
+  "type": "loot",
+  "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+  "system": {
+    "description": {
+      "value": "When a jackalwere dies, it transforms into its true form, indistinguishable from a normal jackal. As such, the small animal's skin is useful to leatherworkers. The skin can be used to make accessories, bags and small apparel items.",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Jackalwere",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 1,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976665,
+    "modifiedTime": 1688174976665,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "r3UV4vdxapUtuFYL",
+  "_key": "!items!r3UV4vdxapUtuFYL"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Nothic Claws (x2)",
+  "type": "loot",
+  "img": "icons/commodities/claws/claw-brown-black.webp",
+  "system": {
+    "description": {
+      "value": "Being a former spellcaster, with no knowledge of its past life, a torrent of magic has surged through the creature's fingers over the years. Now, these fingers end in long, sharp talons. The claw on each index fingers of a nothic retain a spark of the spellcaster's former power. The talons aren't very large, but are often used by spellcasters, especially divinators and seers. The talons are believed to help find magic items. Use: A spellcaster can spend an hour, and 100gp worth of materials (incense, rare herbs, special candles, etc.), to perform a ritual with one of the claws. At the end of the ritual, the claw will point to the nearest magical item, and have a slight magnetic pull in that direction (unfortunately, this includes items carried by the spellcaster and their party). The claw will continue to have a slight pull in that direction for the next 12 hours. If any magic items are stored within a lead container, the ritual will not detect those items. Once the ritual is cast, the same claw loses its power and cannot be effective in the ritual again.",
+      "chat": "10",
+      "unidentified": "Arcana"
+    },
+    "source": "Nothic",
+    "quantity": 1,
+    "weight": 2,
+    "price": {
+      "value": 5,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977381,
+    "modifiedTime": 1688174977381,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "rk1QECGdP4RjT8zQ",
+  "_key": "!items!rk1QECGdP4RjT8zQ"
+}

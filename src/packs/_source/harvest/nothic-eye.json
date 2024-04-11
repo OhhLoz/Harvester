@@ -1,0 +1,40 @@
+{
+  "name": "Nothic Eye",
+  "type": "loot",
+  "img": "icons/commodities/biological/eye-brown-red.webp",
+  "system": {
+    "description": {
+      "value": "The large eye of a nothic is a round white orb with a huge iris and pupil. The eye is swimming with arcane energy, prized by necromancers and divinators. The lens can be extracted and used by skilled artificers. Some spellcasters can preserve the eye into a solid orb, with a glass-like texture and use it as a scrying device.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Nothic",
+    "quantity": 1,
+    "weight": 7,
+    "price": {
+      "value": 30,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174977385,
+    "modifiedTime": 1688174977385,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Txwi4XdEteNAvLCy",
+  "_key": "!items!Txwi4XdEteNAvLCy"
+}

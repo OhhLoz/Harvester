@@ -1,0 +1,123 @@
+{
+  "name": "Harvester | Fraz-Urb'luu",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Fraz-Urb'luu'.",
+  "results": [
+    {
+      "text": "Fraz-Urb'luu's Head",
+      "type": 2,
+      "img": "icons/commodities/bones/skull-tusked-grey.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Fraz-Urb'luu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.0q81fSt69Tkz2Nme",
+          "brt-result-custom-name": "Fraz-Urb'luu's Head",
+          "brt-result-original-name": "Fraz-Urb'luu's Head",
+          "brt-result-original-icon": "icons/commodities/bones/skull-tusked-grey.webp"
+        }
+      },
+      "documentId": "0q81fSt69Tkz2Nme",
+      "_id": "kWSou8hwPoLtX3BZ",
+      "_key": "!tables.results!PkExVjSMYRqRCeCA.kWSou8hwPoLtX3BZ"
+    },
+    {
+      "text": "Fraz-Urb'luu's Hair (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Fraz-Urb'luu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ApdppAtsfryXSFPS",
+          "brt-result-custom-name": "Fraz-Urb'luu's Hair (pouch)",
+          "brt-result-original-name": "Fraz-Urb'luu's Hair (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "ApdppAtsfryXSFPS",
+      "_id": "UsakWgE01F6FRDdf",
+      "_key": "!tables.results!PkExVjSMYRqRCeCA.UsakWgE01F6FRDdf"
+    },
+    {
+      "text": "Fraz-Urb'luu's Hide",
+      "type": 2,
+      "img": "icons/commodities/leather/fur-pelt-off-white.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Fraz-Urb'luu",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Tt3THil3tz6JDNgv",
+          "brt-result-custom-name": "Fraz-Urb'luu's Hide",
+          "brt-result-original-name": "Fraz-Urb'luu's Hide",
+          "brt-result-original-icon": "icons/commodities/leather/fur-pelt-off-white.webp"
+        }
+      },
+      "documentId": "Tt3THil3tz6JDNgv",
+      "_id": "tSHnfPey42zvMMlq",
+      "_key": "!tables.results!PkExVjSMYRqRCeCA.tSHnfPey42zvMMlq"
+    }
+  ],
+  "formula": "1d3",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Fraz-Urb'luu",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 3
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756560446,
+    "modifiedTime": 1696756756296,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "PkExVjSMYRqRCeCA",
+  "sort": 0,
+  "_key": "!tables!PkExVjSMYRqRCeCA"
+}

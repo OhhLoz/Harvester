@@ -1,0 +1,94 @@
+{
+  "name": "Harvester | Psurlon Ringer",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Psurlon Ringer'.",
+  "results": [
+    {
+      "text": "Psurlon Hooves (x6)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "6"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Psurlon Ringer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.RVeAhmp13XnEnZwr",
+          "brt-result-custom-name": "Psurlon Hooves",
+          "brt-result-original-name": "Psurlon Hooves (x6)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "RVeAhmp13XnEnZwr",
+      "_id": "7yFSP9mGqj6o8O09",
+      "_key": "!tables.results!FKTuNzdFSbmpx5nr.7yFSP9mGqj6o8O09"
+    },
+    {
+      "text": "Psurlon Blood (vial)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Psurlon Ringer",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Ui3ejBpmyzLFLZE0",
+          "brt-result-custom-name": "Psurlon Blood (vial)",
+          "brt-result-original-name": "Psurlon Blood (vial)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "Ui3ejBpmyzLFLZE0",
+      "_id": "kDbvEerjIolMlckv",
+      "_key": "!tables.results!FKTuNzdFSbmpx5nr.kDbvEerjIolMlckv"
+    }
+  ],
+  "formula": "1d2",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Psurlon Ringer",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 2
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756569071,
+    "modifiedTime": 1696756759102,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "FKTuNzdFSbmpx5nr",
+  "sort": 0,
+  "_key": "!tables!FKTuNzdFSbmpx5nr"
+}

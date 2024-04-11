@@ -1,0 +1,152 @@
+{
+  "name": "Harvester | Solar",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Solar'.",
+  "results": [
+    {
+      "text": "Solar Ear (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/ear-grey-brown.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "5",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Solar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.Ar16AcuTjayZpqrq",
+          "brt-result-custom-name": "Solar Ear",
+          "brt-result-original-name": "Solar Ear (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/ear-grey-brown.webp"
+        }
+      },
+      "documentId": "Ar16AcuTjayZpqrq",
+      "_id": "szAmkEMGtShhEbsJ",
+      "_key": "!tables.results!01EzPZFN39EX7Mw0.szAmkEMGtShhEbsJ"
+    },
+    {
+      "text": "Solar Wing (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/wing-lizard-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Solar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.ThWwMu4VnRgfmhx6",
+          "brt-result-custom-name": "Solar Wing",
+          "brt-result-original-name": "Solar Wing (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/wing-lizard-brown.webp"
+        }
+      },
+      "documentId": "ThWwMu4VnRgfmhx6",
+      "_id": "LeS0mwj9J4HqOG1O",
+      "_key": "!tables.results!01EzPZFN39EX7Mw0.LeS0mwj9J4HqOG1O"
+    },
+    {
+      "text": "Solar Eye (x2)",
+      "type": 2,
+      "img": "icons/commodities/biological/eye-brown-red.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Solar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.WkoMI5SkPZLC9VZL",
+          "brt-result-custom-name": "Solar Eye",
+          "brt-result-original-name": "Solar Eye (x2)",
+          "brt-result-original-icon": "icons/commodities/biological/eye-brown-red.webp"
+        }
+      },
+      "documentId": "WkoMI5SkPZLC9VZL",
+      "_id": "uuOqE5IosCONtItR",
+      "_key": "!tables.results!01EzPZFN39EX7Mw0.uuOqE5IosCONtItR"
+    },
+    {
+      "text": "Solar Blood (3 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "3"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Solar",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.eOxYyyNR2v64OpCf",
+          "brt-result-custom-name": "Solar Blood vial",
+          "brt-result-original-name": "Solar Blood (3 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "eOxYyyNR2v64OpCf",
+      "_id": "N3Yezvn7fx9FzP6B",
+      "_key": "!tables.results!01EzPZFN39EX7Mw0.N3Yezvn7fx9FzP6B"
+    }
+  ],
+  "formula": "1d4",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Solar",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 4
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756563635,
+    "modifiedTime": 1696756759963,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "01EzPZFN39EX7Mw0",
+  "sort": 0,
+  "_key": "!tables!01EzPZFN39EX7Mw0"
+}

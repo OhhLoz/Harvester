@@ -1,0 +1,40 @@
+{
+  "name": "Alhoon Tentacle (x4)",
+  "type": "loot",
+  "img": "icons/commodities/biological/tentacle-purple-white.webp",
+  "system": {
+    "description": {
+      "value": "The flesh inside an alhoon's tentacles has long ago withered and rotted away, leaving behind a hollow shell. Without the alhoon's arcane power, the tentacles become rigid husks. The hard, dry tentacles must be harvested carefully, or they turn to dust. The husks can be ground down and used by alchemists, spellcasters and those studying lichdom.",
+      "chat": "15",
+      "unidentified": "Arcana"
+    },
+    "source": "Alhoon",
+    "quantity": 1,
+    "weight": 3,
+    "price": {
+      "value": 50,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174973582,
+    "modifiedTime": 1688174973582,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "W72Y21dBsa4dheQ5",
+  "_key": "!items!W72Y21dBsa4dheQ5"
+}

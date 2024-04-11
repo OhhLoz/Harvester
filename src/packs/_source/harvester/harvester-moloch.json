@@ -1,0 +1,181 @@
+{
+  "name": "Harvester | Moloch",
+  "description": "Rolltable created from the 'Harvest' compendium filter for the system source value 'Moloch'.",
+  "results": [
+    {
+      "text": "Moloch's Blood (5 vials)",
+      "type": 2,
+      "img": "icons/consumables/potions/vial-cork-empty.webp",
+      "weight": 1,
+      "range": [
+        1,
+        1
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "5"
+          },
+          "brt-dc-value": "10",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Moloch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.LiRsHoDpktO0KY0A",
+          "brt-result-custom-name": "Moloch's Blood vial",
+          "brt-result-original-name": "Moloch's Blood (5 vials)",
+          "brt-result-original-icon": "icons/consumables/potions/vial-cork-empty.webp"
+        }
+      },
+      "documentId": "LiRsHoDpktO0KY0A",
+      "_id": "agEdiQOGlNPC6JNd",
+      "_key": "!tables.results!Fx95NeydneucOTRj.agEdiQOGlNPC6JNd"
+    },
+    {
+      "text": "Moloch's Hooves (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/hooves-cloven-brown.webp",
+      "weight": 1,
+      "range": [
+        2,
+        2
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Moloch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.PvUJm8B4HF1qYiyw",
+          "brt-result-custom-name": "Moloch's Hooves",
+          "brt-result-original-name": "Moloch's Hooves (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/hooves-cloven-brown.webp"
+        }
+      },
+      "documentId": "PvUJm8B4HF1qYiyw",
+      "_id": "9azjjiFOHBXrIF6O",
+      "_key": "!tables.results!Fx95NeydneucOTRj.9azjjiFOHBXrIF6O"
+    },
+    {
+      "text": "Moloch's Horns (x2)",
+      "type": 2,
+      "img": "icons/commodities/bones/horn-simple-grey.webp",
+      "weight": 1,
+      "range": [
+        3,
+        3
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "2"
+          },
+          "brt-dc-value": "25",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Moloch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.SmlLNPJzrT9gTuQw",
+          "brt-result-custom-name": "Moloch's Horns",
+          "brt-result-original-name": "Moloch's Horns (x2)",
+          "brt-result-original-icon": "icons/commodities/bones/horn-simple-grey.webp"
+        }
+      },
+      "documentId": "SmlLNPJzrT9gTuQw",
+      "_id": "wxVfrysCY7f0I4bz",
+      "_key": "!tables.results!Fx95NeydneucOTRj.wxVfrysCY7f0I4bz"
+    },
+    {
+      "text": "Moloch's Claws (pouch)",
+      "type": 2,
+      "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+      "weight": 1,
+      "range": [
+        4,
+        4
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "15",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Moloch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.XXhBL9lhuYJo3bZL",
+          "brt-result-custom-name": "Moloch's Claws (pouch)",
+          "brt-result-original-name": "Moloch's Claws (pouch)",
+          "brt-result-original-icon": "icons/containers/bags/coinpouch-simple-leather-brown.webp"
+        }
+      },
+      "documentId": "XXhBL9lhuYJo3bZL",
+      "_id": "3BjfohiEVpRt1ecU",
+      "_key": "!tables.results!Fx95NeydneucOTRj.3BjfohiEVpRt1ecU"
+    },
+    {
+      "text": "Moloch's Gland of Despair",
+      "type": 2,
+      "img": "icons/commodities/biological/organ-heart-black.webp",
+      "weight": 1,
+      "range": [
+        5,
+        5
+      ],
+      "documentCollection": "harvester.harvest",
+      "drawn": false,
+      "flags": {
+        "better-rolltables": {
+          "brt-result-formula": {
+            "formula": "1"
+          },
+          "brt-dc-value": "20",
+          "brt-skill-value": "arc",
+          "brt-source-value": "Moloch",
+          "brt-result-uuid": "Compendium.harvester.harvest.Item.zp5tlDXJVXTUjTrP",
+          "brt-result-custom-name": "Moloch's Gland of Despair",
+          "brt-result-original-name": "Moloch's Gland of Despair",
+          "brt-result-original-icon": "icons/commodities/biological/organ-heart-black.webp"
+        }
+      },
+      "documentId": "zp5tlDXJVXTUjTrP",
+      "_id": "3Bn6y3prOg1WZcU3",
+      "_key": "!tables.results!Fx95NeydneucOTRj.3Bn6y3prOg1WZcU3"
+    }
+  ],
+  "formula": "1d5",
+  "flags": {
+    "better-rolltables": {
+      "table-type": "harvest",
+      "brt-dc-value": "0",
+      "brt-skill-value": "arc",
+      "brt-source-value": "Moloch",
+      "brt-distinct-result": true,
+      "brt-distinct-result-keep-rolling": false,
+      "loot-amount-key": 5
+    }
+  },
+  "img": "icons/svg/pawprint.svg",
+  "replacement": true,
+  "displayRoll": true,
+  "folder": null,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.3.1",
+    "coreVersion": "11.311",
+    "createdTime": 1696756567335,
+    "modifiedTime": 1696756757688,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "Fx95NeydneucOTRj",
+  "sort": 0,
+  "_key": "!tables!Fx95NeydneucOTRj"
+}

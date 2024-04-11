@@ -1,0 +1,40 @@
+{
+  "name": "Grung Poison Gland",
+  "type": "loot",
+  "img": "icons/commodities/biological/organ-heart-black.webp",
+  "system": {
+    "description": {
+      "value": "All grungs secrete a substance that is harmless to them but poisonous to other creatures. This oily, clear liquid is produced in a gland near its heart, that is pumped into its bloodstream. Proficiency with the poisoner kit can be used for harvesting this gland. On a successful check, the character harvests the gland. On a failed check, the character is unable to extract the gland. If the character fails the check by 5 or more, the character is subjected to the creature's poison. Refining the Poison: Once the gland is extracted, an alchemist (or someone proficient in the poisoner's kit) can spend 6 hours and 75gp worth of material to create Grung Poison (DC 13 Poisoner Kit or Alchemist Supplies check). Grung Poison (Contact): Grung poison is a contact poison, and has a similar (but lesser) effect as Drow Poison (DMG p258). A creature can spend an action to coat 1 melee weapon, or 3 pieces of ammunition with this poison. The poison lasts for 1 minute, or until it successfully affects a target. A creature touched with this poison must succeed on a DC 12 Constitution saving throw or be poisoned for 1 minute (a poisoned creature has disadvantage on attack rolls and ability checks). This poison usually sells for 150gp, but the poison is often considered an illicit good (and may not be sold to normal vendors).",
+      "chat": "10",
+      "unidentified": "Medicine"
+    },
+    "source": "Grung Elite Warrior",
+    "quantity": 1,
+    "weight": 1,
+    "price": {
+      "value": 2,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174976289,
+    "modifiedTime": 1688174976289,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "y1ugMlwhPfOvQ3Q1",
+  "_key": "!items!y1ugMlwhPfOvQ3Q1"
+}

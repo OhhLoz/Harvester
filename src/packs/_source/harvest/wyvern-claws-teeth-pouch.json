@@ -1,0 +1,40 @@
+{
+  "name": "Wyvern Claws/Teeth (pouch)",
+  "type": "loot",
+  "img": "icons/containers/bags/coinpouch-simple-leather-brown.webp",
+  "system": {
+    "description": {
+      "value": "A wyvern has sharp, dark, bone-like claws, and pointy, triangular teeth. Both are valued hunting trophies, often used to make jewelry and decorations. Alchemists can grind the items down to make a fine powder, useful in some potions.",
+      "chat": "10",
+      "unidentified": "Nature"
+    },
+    "source": "Wyvern",
+    "quantity": 1,
+    "weight": 5,
+    "price": {
+      "value": 10,
+      "denomination": "gp"
+    },
+    "attunement": 0,
+    "equipped": false,
+    "rarity": "",
+    "identified": true
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "dnd5e",
+    "systemVersion": "2.1.5",
+    "coreVersion": "10.291",
+    "createdTime": 1688174978856,
+    "modifiedTime": 1688174978856,
+    "lastModifiedBy": "packsbuilder0000"
+  },
+  "_id": "dpWYdcaEdUsqK0pt",
+  "_key": "!items!dpWYdcaEdUsqK0pt"
+}
