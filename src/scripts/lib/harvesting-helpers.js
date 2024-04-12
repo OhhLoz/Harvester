@@ -270,7 +270,7 @@ export class HarvestingHelpers {
                     messageData.whisper = game.users.filter((u) => u.isGM).map((u) => u._id);
                 }
 
-                harvesterMessage = `<h3>Harvesting</h3><ul>${harvesterMessage}</ul>`;
+                messageData.content = `${harvesterMessage}`;
 
                 Logger.debug(`HarvestingHelpers | FINAL | create the message`);
                 ChatMessage.create(messageData);

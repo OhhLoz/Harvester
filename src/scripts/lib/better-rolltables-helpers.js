@@ -16,6 +16,10 @@ export default class BetterRollTablesHelpers {
         if (game.modules.get("better-rolltables")?.active) {
             let isFound = false;
             let brtSourceReference = getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim() || "";
+            brtSourceReference = brtSourceReference.replaceAll("Loot | ", "");
+            brtSourceReference = brtSourceReference.replaceAll("Harvester | ", "");
+            brtSourceReference = brtSourceReference.replaceAll("Better ", "");
+            brtSourceReference = brtSourceReference.replaceAll(" RollTable", "");
             if (brtSourceReference && actionName === harvestAction.name) {
                 isFound = testWithRegex(sourceValue, brtSourceReference);
             } else if (brtSourceReference && actionName === lootAction.name) {
@@ -27,6 +31,8 @@ export default class BetterRollTablesHelpers {
                 let standardSourceReference = getProperty(doc, `name`)?.trim() || "";
                 standardSourceReference = standardSourceReference.replaceAll("Loot | ", "");
                 standardSourceReference = standardSourceReference.replaceAll("Harvester | ", "");
+                standardSourceReference = standardSourceReference.replaceAll("Better ", "");
+                standardSourceReference = standardSourceReference.replaceAll(" RollTable", "");
                 if (standardSourceReference && actionName === harvestAction.name) {
                     return testWithRegex(sourceValue, standardSourceReference);
                 } else if (standardSourceReference && actionName === lootAction.name) {
@@ -41,6 +47,8 @@ export default class BetterRollTablesHelpers {
             let standardSourceReference = getProperty(doc, `name`)?.trim() || "";
             standardSourceReference = standardSourceReference.replaceAll("Loot | ", "");
             standardSourceReference = standardSourceReference.replaceAll("Harvester | ", "");
+            standardSourceReference = standardSourceReference.replaceAll("Better ", "");
+            standardSourceReference = standardSourceReference.replaceAll(" RollTable", "");
             if (standardSourceReference && actionName === harvestAction.name) {
                 return testWithRegex(sourceValue, standardSourceReference);
             } else if (standardSourceReference && actionName === lootAction.name) {

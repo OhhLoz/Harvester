@@ -116,7 +116,18 @@ function getRegex(regex) {
  * @returns {boolean}
  */
 export function testWithRegex(stringToCheck, pattern = "") {
-    let patternTmp = pattern ? pattern : stringToCheck; // .match(/^([a-z0-9]{5,})$/);
+    if (game.settings.get(CONSTANTS.MODULE_ID, "enableExactMatchForSourceReference")) {
+        let t2 = stringToCheck?.toLowerCase()?.trim() === pattern?.toLowerCase()?.trim();
+        if (t2) {
+            Logger.info(
+                `testWithRegex | Regex found with enableExactMatchForSourceReference ${stringToCheck} <=> ${pattern}`,
+                false,
+            );
+        }
+        return t2;
+    }
+    let stringToCheckTmp = stringToCheck?.toLowerCase()?.trim();
+    let patternTmp = pattern ? pattern?.toLowerCase()?.trim() : stringToCheckTmp; // .match(/^([a-z0-9]{5,})$/);
     if (!validateRegex(patternTmp)) {
         let r = getRegex(patternTmp);
         patternTmp = r ? r : patternTmp;
@@ -126,12 +137,19 @@ export function testWithRegex(stringToCheck, pattern = "") {
     //     patternTmp = r ? r : patternTmp;
     // }
     try {
-        if (validateRegex(patternTmp)) {
-            let t1 = new RegExp(patternTmp).test(stringToCheck); // stringToCheck.match(patternTmp);
+        if (!validateRegex(patternTmp)) {
+            patternTmp = `/^${patternTmp}$/i`;
+            let t1 = new RegExp(stringToCheckTmp).test(patternTmp); //
             return t1;
         }
+        // stringToCheck.match(patternTmp);
+        let t1 = new RegExp(stringToCheckTmp).test(patternTmp); // stringToCheck.match(patternTmp);
+        if (t1) {
+            Logger.info(`testWithRegex | Regex found ${stringToCheck} <=> ${pattern}`, false);
+        }
+        return t1;
     } catch (e) {
-        Logger.error(`testWithRegex | Regex error ${stringToCheck} ${patternTmp}`, false, e);
+        Logger.error(`testWithRegex | Regex error ${stringToCheck} ${pattern}`, false, e);
         return false;
     }
 }

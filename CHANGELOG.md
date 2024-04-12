@@ -1,5 +1,5 @@
 
-### 1.8.2-3
+### 1.8.2-3-4
 
 - Try to fix https://github.com/OhhLoz/Harvester/issues/43
 

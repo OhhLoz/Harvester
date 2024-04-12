@@ -85,6 +85,16 @@ export function registerSettings() {
         default: false,
     });
 
+    game.settings.register(CONSTANTS.MODULE_ID, "enableExactMatchForSourceReference", {
+        name: "Enable exact match for source reference",
+        hint: 'By default we try to guess with some regex what you want for example if you loot a "Shadow Demon" it will positively validate a rolltable with "Shadow Demon Arcane", but not the reverse and will not validate "Shadow Demon Psych" with "Shadow Demon Arcane". IF YOU JUST WANT A EXACT MATCH enable this module settings.',
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false,
+    });
+
     game.settings.register(CONSTANTS.MODULE_ID, "harvestAddItemsMode", {
         name: "Harvesting: Add items harvest mode",
         hint: "ONLY WITH 'Item Piles' MODULE PRESENT AND ACTIVE. Harvest action considers three modes: 'Shared it or Keep it', 'Shared it', 'Keep it'",
