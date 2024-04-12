@@ -66,9 +66,19 @@ export function registerSettings() {
         default: true,
     });
 
+    game.settings.register(CONSTANTS.MODULE_ID, "enableExactMatchForSourceReference", {
+        name: "Enable exact match for source reference",
+        hint: 'By default we try to guess with some regex what you want for example if you loot a "Shadow Demon" it will positively validate a rolltable with "Shadow Demon Arcane", but not the reverse and will not validate "Shadow Demon Psych" with "Shadow Demon Arcane". IF YOU JUST WANT A EXACT MATCH enable this module settings.',
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false,
+    });
+
     game.settings.register(CONSTANTS.MODULE_ID, "requestorPopout", {
         name: "Requestor Popout",
-        hint: "W to create a popout of this message automatically for all users that can see it (true or false).",
+        hint: "ONLY WITH 'Requestor' MODULE PRESENT AND ACTIVE. Whether to create a popout of this message automatically for all users that can see it (true or false).",
         scope: "client",
         config: true,
         default: false,
@@ -78,16 +88,6 @@ export function registerSettings() {
     game.settings.register(CONSTANTS.MODULE_ID, "harvestRemoveExistingActorItems", {
         name: "Harvesting: Automatically remove Items with Item Piles from the targeted token",
         hint: "ONLY WITH 'Item Piles' MODULE PRESENT AND ACTIVE. This will enable to true the Item Piles setting 'removeExistingActorItems', for security reason is limited only to token target, so if you destroy a token on scene the original actor is no touched",
-        scope: "world",
-        config: true,
-        requiresReload: true,
-        type: Boolean,
-        default: false,
-    });
-
-    game.settings.register(CONSTANTS.MODULE_ID, "enableExactMatchForSourceReference", {
-        name: "Enable exact match for source reference",
-        hint: 'By default we try to guess with some regex what you want for example if you loot a "Shadow Demon" it will positively validate a rolltable with "Shadow Demon Arcane", but not the reverse and will not validate "Shadow Demon Psych" with "Shadow Demon Arcane". IF YOU JUST WANT A EXACT MATCH enable this module settings.',
         scope: "world",
         config: true,
         requiresReload: true,
@@ -174,6 +174,10 @@ export function registerSettings() {
     SETTINGS.allowAbilityChange = game.settings.get(CONSTANTS.MODULE_ID, "allowAbilityChange");
     SETTINGS.disableLoot = game.settings.get(CONSTANTS.MODULE_ID, "disableLoot");
     SETTINGS.forceSearchRollTableByName = game.settings.get(CONSTANTS.MODULE_ID, "forceSearchRollTableByName");
+    SETTINGS.enableExactMatchForSourceReference = game.settings.get(
+        CONSTANTS.MODULE_ID,
+        "enableExactMatchForSourceReference",
+    );
     SETTINGS.debug = game.settings.get(CONSTANTS.MODULE_ID, "debug");
 }
 
@@ -190,4 +194,5 @@ export const SETTINGS = {
     allowAbilityChange: false,
     disableLoot: false,
     forceSearchRollTableByName: true,
+    enableExactMatchForSourceReference: false,
 };
