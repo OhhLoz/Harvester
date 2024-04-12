@@ -121,11 +121,10 @@ export function testWithRegex(stringToCheck, pattern = "") {
         let r = getRegex(patternTmp);
         patternTmp = r ? r : patternTmp;
     }
-    if (!validateRegex(patternTmp)) {
-        // patternTmp = `/^${stringToCheck}$/i`;
-        let r = getRegex(`/^${stringToCheck}$/i`);
-        patternTmp = r ? r : patternTmp;
-    }
+    // if (!validateRegex(patternTmp)) {
+    //     let r = getRegex(`/^${stringToCheck}$/i`);
+    //     patternTmp = r ? r : patternTmp;
+    // }
     try {
         if (validateRegex(patternTmp)) {
             let t1 = new RegExp(patternTmp).test(stringToCheck); // stringToCheck.match(patternTmp);

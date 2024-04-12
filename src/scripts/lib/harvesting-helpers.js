@@ -66,7 +66,7 @@ export class HarvestingHelpers {
         } else {
             Logger.debug(`HarvestingHelpers | RollTablesMatched is not empty`);
             const rollTableChosenHarvester = rollTablesMatched[0];
-            Logger.info(`HarvestingHelpers | RollTablesMatched chosen ${rollTableChosenHarvester.name}`);
+            Logger.info(`HarvestingHelpers | RollTablesMatched chosen '${rollTableChosenHarvester.name}'`);
             let harvestMessage = targetedToken.name;
             if (harvestMessage !== actorName) {
                 harvestMessage += ` (${actorName})`;
@@ -160,7 +160,7 @@ export class HarvestingHelpers {
 
     static async handlePostRollHarvestAction(options) {
         Logger.debug(`HarvestingHelpers | START handlePostRollHarvestAction`);
-        const { actor, item, roll } = options;
+        const { token, character, actor, event, data, roll, skillRollTableUuid, skillDenomination, item } = options;
         if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
             Logger.debug(`HarvestingHelpers | NO '${CONSTANTS.SOURCE_REFERENCE_MODULE}' found it on item`, item);
             return;
@@ -199,18 +199,18 @@ export class HarvestingHelpers {
             return;
         }
 
-        if (!options?.skillRollTableUuid) {
+        if (!skillRollTableUuid) {
             Logger.warn(`HarvestingHelpers | Something go wrong the 'skillRollTableUuid' cannot be undefined`, true);
             return;
         }
-        if (!options?.skillDenomination) {
+        if (!skillDenomination) {
             Logger.warn(`HarvestingHelpers | Something go wrong the 'skillDenomination' cannot be undefined`, true);
             return;
         }
 
         let harvesterMessage = "";
         let matchedItems = [];
-        let skillDenomination = options?.skillDenomination;
+
         let rollTableChosenHarvester = await RetrieveHelpers.getRollTableAsync(options?.skillRollTableUuid);
 
         await harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);

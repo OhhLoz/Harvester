@@ -71,7 +71,7 @@ export class LootingHelpers {
         );
         Logger.debug(`LootingHelpers | Found RollTablesMatched (${rollTablesMatched?.length})`, rollTablesMatched);
         const rollTableChosenLoot = rollTablesMatched[0];
-        Logger.info(`LootingHelpers | RollTablesMatched chosen ${rollTableChosenLoot.name}`);
+        Logger.info(`LootingHelpers | RollTablesMatched chosen '${rollTableChosenLoot.name}'`);
 
         /* TODO add the source reference field on loot table too ??
         if (rollTableChosenLoot.description === "false") {
