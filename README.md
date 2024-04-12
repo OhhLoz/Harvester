@@ -49,6 +49,8 @@ This action allows the Harvesting action to be linked to a standard rolltable re
 
 In the standard Harvest Rolltable sheet, the "association" field is the name of the token monster with the name of the rolltable! So **"Name of The Monster" OR a regex === "NAme of the Rolltable"**.
 
+**IMPORTANT:** By default we try to guess with some regex what you want for example if you loot a `"Shadow Demon"` it will positively validate a rolltable with `"Shadow Demon Arcane"`, but not the reverse and will not validate `"Shadow Demon Psych"` with `"Shadow Demon Arcane"`.
+
 ```
 Example 1
 Name of the monster: Wolf
