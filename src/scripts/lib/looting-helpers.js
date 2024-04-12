@@ -70,12 +70,12 @@ export class LootingHelpers {
             lootAction.name || item.name,
         );
         Logger.debug(`LootingHelpers | Found RollTablesMatched (${rollTablesMatched?.length})`, rollTablesMatched);
-
-        const rollTableLoot = rollTablesMatched[0];
+        const rollTableChosenLoot = rollTablesMatched[0];
+        Logger.info(`LootingHelpers | RollTablesMatched chosen ${rollTableChosenLoot.name}`);
 
         /* TODO add the source reference field on loot table too ??
-        if (rollTableLoot.description === "false") {
-            Logger.warn(`Normal loot is been disabled for this roll table ${rollTableLoot.name}`, true);
+        if (rollTableChosenLoot.description === "false") {
+            Logger.warn(`Normal loot is been disabled for this roll table ${rollTableChosenLoot.name}`, true);
             Logger.warn(`normalLoot=${normalLoot} and SETTINGS.lootBeasts=${SETTINGS.lootBeasts}`);
             let messageData = { content: "", whisper: {} };
             if (SETTINGS.gmOnly) {
@@ -87,9 +87,9 @@ export class LootingHelpers {
         }
         */
         let matchedItems = [];
-        Logger.debug(`LootingHelpersHelpers | BRT is enable, and has a rollTable '${rollTableLoot.name}'`);
+        Logger.debug(`LootingHelpers | is enable, and has a rollTable '${rollTableChosenLoot.name}'`);
         matchedItems = await BetterRollTablesHelpers.retrieveResultsDataLootWithBetterRollTables(
-            rollTableLoot,
+            rollTableChosenLoot,
             actorName,
             item.name,
         );

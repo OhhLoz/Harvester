@@ -118,6 +118,7 @@ export default class BetterRollTablesHelpers {
     }
 
     static async retrieveItemsDataHarvestWithBetterRollTables(
+        tableHarvester,
         actorName,
         actionName,
         dcValue = null,
@@ -131,7 +132,7 @@ export default class BetterRollTablesHelpers {
             if (!skillDenom) {
                 skillDenom = "";
             }
-
+            /*
             const tablesChecked = BetterRollTablesHelpers.retrieveTablesHarvestWithBetterRollTables(
                 actorName,
                 actionName,
@@ -144,7 +145,9 @@ export default class BetterRollTablesHelpers {
                 return [];
             }
             const tableHarvester = tablesChecked[0];
+            */
             if (game.modules.get("better-rolltables")?.active) {
+                Logger.debug(`retrieveItemsDataHarvestWithBetterRollTables | BRT | START`);
                 returnArr = await game.modules.get("better-rolltables").api.retrieveItemsDataFromRollTableResult({
                     table: tableHarvester,
                     options: {
@@ -154,9 +157,11 @@ export default class BetterRollTablesHelpers {
                         displayChat: false,
                     },
                 });
+                Logger.debug(`retrieveItemsDataHarvestWithBetterRollTables | BRT | returnArr`, returnArr);
             } else {
+                Logger.debug(`retrieveItemsDataHarvestWithBetterRollTables | STANDARD | START`);
                 // let results = (await tableHarvester.drawMany(roll.total, { displayChat, recursive: true })).results;
-                let results = tableHarvester.results.contents || [];
+                let results = tableHarvester.results?.contents || [];
                 const rolledItems = [];
                 for (const rollData of results) {
                     let item;
@@ -170,7 +175,11 @@ export default class BetterRollTablesHelpers {
                     }
 
                     if (!item) {
-                        Logger.warn(`No item is been found with this reference`, false, rollData);
+                        Logger.warn(
+                            `retrieveItemsDataHarvestWithBetterRollTables | STANDARD | No item is been found with this reference`,
+                            false,
+                            rollData,
+                        );
                         continue;
                     }
 
@@ -182,29 +191,36 @@ export default class BetterRollTablesHelpers {
                 }
                 for (const item of rolledItems) {
                     if (item) {
-                        Logger.debug(`HarvestingHelpers | STANDARD check matchedItem`, item);
+                        Logger.debug(
+                            `retrieveItemsDataHarvestWithBetterRollTables | STANDARD | check matchedItem`,
+                            item,
+                        );
                         let itemDC = 0;
                         if (item.compendium.metadata.id === CONSTANTS.harvestCompendiumId) {
                             itemDC = parseInt(item.system.description.chat);
                         } else {
                             itemDC = retrieveItemSourceLabelDC(item);
                         }
-                        Logger.debug(`HarvestingHelpers | Item DC is '${itemDC}'`);
+                        Logger.debug(
+                            `retrieveItemsDataHarvestWithBetterRollTables | STANDARD | Item DC is '${itemDC}'`,
+                        );
                         if (itemDC <= dcValue) {
-                            Logger.debug(`HarvestingHelpers | STANDARD the item ${item.name} is been added as success`);
+                            Logger.debug(
+                                `retrieveItemsDataHarvestWithBetterRollTables | STANDARD | the item ${item.name} is been added as success`,
+                            );
                             const itemData = item instanceof Item ? item.toObject() : item;
                             if (!itemData.uuid) {
                                 foundry.utils.setProperty(itemData, `uuid`, item.uuid || null);
                             }
                             returnArr.push(item);
                         }
-                        Logger.debug(`HarvestingHelpers | STANDARD returnArr`, returnArr);
+                        Logger.debug(`retrieveItemsDataHarvestWithBetterRollTables | STANDARD | returnArr`, returnArr);
                     }
                 }
             }
         } else {
             Logger.warn(
-                `retrieveItemsDataHarvestWithBetterRollTables | BRT No rolltable found for action '${harvestAction.name}'`,
+                `retrieveItemsDataHarvestWithBetterRollTables | No rolltable found for action '${harvestAction.name}'`,
                 true,
             );
             return [];
@@ -233,7 +249,7 @@ export default class BetterRollTablesHelpers {
             }
         } else {
             Logger.warn(
-                `retrieveResultsDataLootWithBetterRollTables | BRT No rolltable found for action '${lootAction.name}'`,
+                `retrieveResultsDataLootWithBetterRollTables | No rolltable found for action '${lootAction.name}'`,
                 true,
             );
             return [];

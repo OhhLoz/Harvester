@@ -65,7 +65,8 @@ export class HarvestingHelpers {
             });
         } else {
             Logger.debug(`HarvestingHelpers | RollTablesMatched is not empty`);
-
+            const rollTableChosenHarvester = rollTablesMatched[0];
+            Logger.info(`HarvestingHelpers | RollTablesMatched chosen ${rollTableChosenHarvester.name}`);
             let harvestMessage = targetedToken.name;
             if (harvestMessage !== actorName) {
                 harvestMessage += ` (${actorName})`;
@@ -74,7 +75,7 @@ export class HarvestingHelpers {
             Logger.debug(`HarvestingHelpers | BRT is enable`);
             let skillCheckVerbose;
             if (game.modules.get("better-rolltables")?.active) {
-                skillCheckVerbose = getProperty(rollTablesMatched[0], `flags.better-rolltables.brt-skill-value`);
+                skillCheckVerbose = getProperty(rollTableChosenHarvester, `flags.better-rolltables.brt-skill-value`);
             } else {
                 // let skillDenomination = getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`); // TODO make this better
                 // let skillCheck = skillCheckVerbose ? skillCheckVerbose : "nat"; // TODO make this better maybe with requestor
@@ -84,9 +85,9 @@ export class HarvestingHelpers {
             }
             if (!skillCheckVerbose) {
                 Logger.warn(
-                    `ATTENTION: No 'flags.better-rolltables.brt-skill-value' is been setted on table '${rollTablesMatched[0]}'`,
+                    `HarvestingHelpers | ATTENTION: No 'flags.better-rolltables.brt-skill-value' is been setted on table '${rollTableChosenHarvester.name}'`,
                     true,
-                    rollTablesMatched[0],
+                    rollTableChosenHarvester,
                 );
                 return;
             }
@@ -95,6 +96,7 @@ export class HarvestingHelpers {
             const skillCheckVerboseList = [];
             for (const skill of skillCheckVerboseArr) {
                 skillCheckVerboseList.push({
+                    skillRollTableUuid: rollTableChosenHarvester.uuid,
                     skillDenomination: skill,
                     skillItem: item,
                     skillCallback: "handlePostRollHarvestAction",
@@ -122,6 +124,7 @@ export class HarvestingHelpers {
                         chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
                     },
                     {
+                        skillRollTableUuid: skillCheckVerboseTmp.skillRollTableUuid,
                         skillDenomination: skillCheckVerboseTmp.skillDenomination,
                         skillItem: skillCheckVerboseTmp.skillItem,
                         skillCallback: skillCheckVerboseTmp.skillCallback,
@@ -186,26 +189,39 @@ export class HarvestingHelpers {
         }
 
         if (!validateAction(controlledToken, targetedToken, item.name)) {
-            Logger.warn(`HarvestingHelpers | NO valid action is been found`, true);
+            Logger.warn(`HarvestingHelpers | NO valid action is been found on '${item.name}'`, true);
             return false;
         }
 
         let result = roll;
         if (!result) {
-            Logger.warn(`Something go wrong the result cannot be undefined`, true);
+            Logger.warn(`HarvestingHelpers | Something go wrong the 'result' cannot be undefined`, true);
             return;
         }
+
+        if (!options?.skillRollTableUuid) {
+            Logger.warn(`HarvestingHelpers | Something go wrong the 'skillRollTableUuid' cannot be undefined`, true);
+            return;
+        }
+        if (!options?.skillDenomination) {
+            Logger.warn(`HarvestingHelpers | Something go wrong the 'skillDenomination' cannot be undefined`, true);
+            return;
+        }
+
         let harvesterMessage = "";
         let matchedItems = [];
+        let skillDenomination = options?.skillDenomination;
+        let rollTableChosenHarvester = await RetrieveHelpers.getRollTableAsync(options?.skillRollTableUuid);
 
         await harvesterAndLootingSocket.executeAsGM(addEffect, targetedToken.id, harvestAction.name);
 
-        Logger.debug(`HarvestingHelpers | BRT is enable, and has a rollTable`);
+        Logger.debug(`HarvestingHelpers | is enable, and has a rollTable`);
         matchedItems = await BetterRollTablesHelpers.retrieveItemsDataHarvestWithBetterRollTables(
+            rollTableChosenHarvester,
             actorName,
             item.name,
             result.total,
-            getProperty(item, `flags.${CONSTANTS.MODULE_ID}.skillCheck`),
+            skillDenomination,
         );
 
         if (!matchedItems || matchedItems.length === 0) {
@@ -223,16 +239,16 @@ export class HarvestingHelpers {
             });
         } else {
             matchedItems.forEach((item) => {
-                Logger.debug(`HarvestingHelpers | BRT check matchedItem`, item);
+                Logger.debug(`HarvestingHelpers | check matchedItem`, item);
                 harvesterMessage += `<li>@UUID[${item.uuid}] x ${item.system?.quantity || 1}</li>`;
-                Logger.debug(`HarvestingHelpers | BRT the item ${item.name} is been added as success`);
-                Logger.debug(`HarvestingHelpers | BRT matchedItems`, matchedItems);
+                Logger.debug(`HarvestingHelpers | the item ${item.name} is been added as success`);
+                Logger.debug(`HarvestingHelpers | matchedItems`, matchedItems);
             });
 
             harvesterMessage = `<h3>Harvesting</h3><ul>${harvesterMessage}</ul>`;
 
             if (SETTINGS.autoAddItems) {
-                Logger.debug(`HarvestingHelpers | FINAL autoAddItems enable and matchedItems is not empty`);
+                Logger.debug(`HarvestingHelpers | FINAL | autoAddItems enable and matchedItems is not empty`);
                 // await HarvestingHelpers.addItemsToActorHarvesterOption(
                 //     controlledToken.actor.id,
                 //     targetedToken.id,
@@ -256,7 +272,7 @@ export class HarvestingHelpers {
 
                 harvesterMessage = `<h3>Harvesting</h3><ul>${harvesterMessage}</ul>`;
 
-                Logger.debug(`HarvestingHelpers | FINAL create the message`);
+                Logger.debug(`HarvestingHelpers | FINAL | create the message`);
                 ChatMessage.create(messageData);
             }
         }
@@ -269,12 +285,15 @@ export class HarvestingHelpers {
         if (game.modules.get("item-piles")?.active) {
             const targetedToken = RetrieveHelpers.getTokenSync(targetedTokenId);
             if (SETTINGS.harvestAddItemsMode === "ShareItOrKeepIt") {
-                Logger.debug(`SHARE IT OR KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+                Logger.debug(
+                    `HarvestingHelpers | SHARE IT OR KEEP IT | Add items with ITEMPILES to ${actor.name}`,
+                    itemsToAdd,
+                );
                 await RequestorHelpers.requestHarvestMessage(actor, undefined, userId, itemsToAdd, targetedToken, {
                     popout: game.settings.get(CONSTANTS.MODULE_ID, "requestorPopout"),
                 });
             } else if (SETTINGS.harvestAddItemsMode === "ShareIt") {
-                Logger.debug(`SHARE IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+                Logger.debug(`HarvestingHelpers | SHARE IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
                 // await warpgate.mutate(targetedToken.document, updates, {}, {}); // TODO NOT WORK...
                 await ItemPilesHelpers.unlinkToken(targetedToken);
                 await ItemPilesHelpers.addItems(targetedToken, itemsToAdd, {
@@ -289,10 +308,10 @@ export class HarvestingHelpers {
                 if (harvesterMessage) {
                     messageData.content = `${harvesterMessage}`;
                 }
-                Logger.debug(`HarvestingHelpers | FINAL create the message`);
+                Logger.debug(`HarvestingHelpers | SHARE IT | create the message`);
                 ChatMessage.create(messageData);
             } else if (SETTINGS.harvestAddItemsMode === "KeepIt") {
-                Logger.debug(`KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
+                Logger.debug(`HarvestingHelpers | KEEP IT | Add items with ITEMPILES to ${actor.name}`, itemsToAdd);
                 await ItemPilesHelpers.addItems(actor, itemsToAdd, {
                     mergeSimilarItems: true,
                 });
@@ -303,13 +322,13 @@ export class HarvestingHelpers {
                 if (harvesterMessage) {
                     messageData.content = `${harvesterMessage}`;
                 }
-                Logger.debug(`HarvestingHelpers | FINAL create the message`);
+                Logger.debug(`HarvestingHelpers | KEEP IT | create the message`);
                 ChatMessage.create(messageData);
             } else {
-                Logger.error(`Something went wrong with the harvester code`, true);
+                Logger.error(`HarvestingHelpers | KEEP IT | Something went wrong with the harvester code`, true);
             }
         } else {
-            Logger.debug(`KEEP IT | Add items with STANDARD to ${actor.name}`, itemsToAdd);
+            Logger.debug(`HarvestingHelpers | KEEP IT | Add items with STANDARD to ${actor.name}`, itemsToAdd);
             await addItemsToActor(actor, itemsToAdd);
             let messageData = { content: "", whisper: {} };
             if (SETTINGS.gmOnly) {
@@ -318,7 +337,7 @@ export class HarvestingHelpers {
             if (harvesterMessage) {
                 messageData.content = `${harvesterMessage}`;
             }
-            Logger.debug(`HarvestingHelpers | FINAL create the message`);
+            Logger.debug(`HarvestingHelpers | KEEP IT | create the message`);
             ChatMessage.create(messageData);
         }
     }

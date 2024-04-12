@@ -122,7 +122,7 @@ export class RequestorHelpers {
                 ? ChatMessage.getWhisperRecipients(actorSpeaker.name)
                 : game.users.filter((u) => messageWhisper?.includes(u.id)));
         const requestorPopout = popout;
-        Logger.debug(`START requestRollSkill`, {
+        Logger.debug(`RequestorHelpers | START requestRollSkill`, {
             chatTitle: chatTitle,
             chatDescription: chatDescription,
             chatButtonLabel: chatButtonLabel,
@@ -150,7 +150,14 @@ export class RequestorHelpers {
 
         const buttonData = [];
         for (const skillObj of skillDetails) {
-            const { skillDenomination, skillItem, skillCallback, skillChooseModifier, skillButtonLabel } = skillObj;
+            const {
+                skillRollTableUuid,
+                skillDenomination,
+                skillItem,
+                skillCallback,
+                skillChooseModifier,
+                skillButtonLabel,
+            } = skillObj;
 
             const requestorObj = {
                 label: skillButtonLabel,
@@ -181,6 +188,7 @@ export class RequestorHelpers {
                         event,
                         data: this,
                         roll: rollRef,
+                        skillRollTableUuid: skillRollTableUuidRef,
                         skillDenomination: skillDenominationRef,
                         item: skillItemRef,
                     };
@@ -190,6 +198,7 @@ export class RequestorHelpers {
                 },
                 scope: {
                     moduleIdRef: CONSTANTS.MODULE_ID,
+                    skillRollTableUuidRef: skillRollTableUuid,
                     skillDenominationRef: skillDenomination,
                     skillCallbackRef: skillCallback,
                     skillItemRef: skillItem,
@@ -228,6 +237,7 @@ export class RequestorHelpers {
             chatImg: undefined,
         },
         skillDetails = {
+            skillRollTableUuid: "",
             skillDenomination: "",
             skillItem: {},
             skillCallback: function () {},
@@ -253,6 +263,7 @@ export class RequestorHelpers {
 
         skillDetails = foundry.utils.mergeObject(
             {
+                skillRollTableUuid: "",
                 skillDenomination: "",
                 skillItem: {},
                 skillCallback: function () {},
@@ -271,7 +282,7 @@ export class RequestorHelpers {
         );
 
         const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
-        const { skillDenomination, skillItem, skillCallback, skillChooseModifier } = skillDetails;
+        const { skillRollTableUuid, skillDenomination, skillItem, skillCallback, skillChooseModifier } = skillDetails;
         const { limit, permission, popout } = optionsRequestor;
 
         const actorSpeaker = tokenUseForRequest?.actor ? tokenUseForRequest.actor : actorUseForRequest;
@@ -297,7 +308,7 @@ export class RequestorHelpers {
                 ? ChatMessage.getWhisperRecipients(actorSpeaker.name)
                 : game.users.filter((u) => messageWhisper?.includes(u.id)));
         const requestorPopout = popout;
-        Logger.debug(`START requestRollSkill`, {
+        Logger.debug(`RequestorHelpers | START requestRollSkill`, {
             chatTitle: chatTitle,
             chatDescription: chatDescription,
             chatButtonLabel: chatButtonLabel,
@@ -305,6 +316,7 @@ export class RequestorHelpers {
             chatSpeaker: chatSpeaker,
             chatImg: chatImg,
 
+            skillRollTableUuid: skillRollTableUuid,
             skillDenomination: skillDenomination,
             skillItem: skillItem,
             skillCallback: skillCallback,
@@ -362,6 +374,7 @@ export class RequestorHelpers {
                                   event,
                                   data: this,
                                   roll: rollRef,
+                                  skillRollTableUuid: skillRollTableUuidRef,
                                   skillDenomination: skillDenominationRef,
                                   item: skillItemRef,
                               };
@@ -371,6 +384,8 @@ export class RequestorHelpers {
                           },
                           scope: {
                               moduleIdRef: CONSTANTS.MODULE_ID,
+                              skillRollTableUuidRef: skillRollTableUuid,
+                              skillRollTableUuid: skillRollTableUuid,
                               skillDenominationRef: skillDenomination,
                               skillCallbackRef: skillCallback,
                               skillItemRef: skillItem,
@@ -452,7 +467,7 @@ export class RequestorHelpers {
                 : game.users.filter((u) => messageWhisper?.includes(u.id)));
         const requestorPopout = popout;
 
-        Logger.debug(`START requestEmptyMessage`, {
+        Logger.debug(`RequestorHelpers | START requestEmptyMessage`, {
             chatTitle: chatTitle,
             chatDescription: chatDescription,
             chatButtonLabel: chatButtonLabel,
@@ -561,7 +576,7 @@ export class RequestorHelpers {
                 : game.users.filter((u) => messageWhisper?.includes(u.id));
         const requestorPopout = popout;
 
-        Logger.debug(`START requestHarvestMessage`, {
+        Logger.debug(`RequestorHelpers | START requestHarvestMessage`, {
             popout: popout,
         });
 
@@ -597,7 +612,7 @@ export class RequestorHelpers {
                         game.modules
                             .get(moduleIdRef)
                             .api._Logger.warn(
-                                `KEEP IT | Add items with ITEMPILES to ${options.actor.name}`,
+                                `RequestorHelpers | KEEP IT | Add items with ITEMPILES to ${options.actor.name}`,
                                 false,
                                 options.itemsToAdd,
                             );
@@ -639,7 +654,7 @@ export class RequestorHelpers {
                         game.modules
                             .get(moduleIdRef)
                             .api._Logger.warn(
-                                `SHARE IT | Add items with ITEMPILES to ${options.actor.name}`,
+                                `RequestorHelpers | SHARE IT | Add items with ITEMPILES to ${options.actor.name}`,
                                 false,
                                 options.itemsToAdd,
                             );
