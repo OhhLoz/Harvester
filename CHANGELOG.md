@@ -1,3 +1,11 @@
+### 1.8.6
+
+- Fix: https://github.com/OhhLoz/Harvester/issues/46
+
+### 1.8.5
+
+- Fix: https://github.com/OhhLoz/Harvester/issues/44
+- Fix: https://github.com/OhhLoz/Harvester/issues/43
 
 ### 1.8.2-3-4
 

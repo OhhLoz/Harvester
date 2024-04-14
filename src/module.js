@@ -120,9 +120,30 @@ Hooks.on("createActor", async (actor, data, options, id) => {
         }
 
         Logger.debug(`CREATE ACTOR autoAddItems enable harvest action`);
-        await addItemsToActor(actor, [harvestAction]);
-        Logger.debug(`CREATE ACTOR autoAddItems disable loot`);
-        await addItemsToActor(actor, [lootAction]);
+
+        let hasHarvest = false;
+        let hasLoot = false;
+
+        actor.items.forEach((item) => {
+            if (item.name === harvestAction.name && checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
+                hasHarvest = true;
+                resetToDefault(item);
+            }
+            if (item.name === lootAction.name && checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
+                hasLoot = true;
+                resetToDefault(item);
+            }
+        });
+
+        if (!hasHarvest) {
+            await addItemsToActor(actor, [harvestAction]);
+        }
+        if (!hasLoot) {
+            if (!SETTINGS.disableLoot) {
+                Logger.debug(`createActor | autoAddItems disable loot`);
+                await addItemsToActor(actor, [lootAction]);
+            }
+        }
     } else {
         Logger.debug(`CREATE ACTOR Settings 'autoAddActionGroup=None' do nothing`);
     }
@@ -241,7 +262,10 @@ async function addActionToActors() {
             await addItemsToActor(actor, [harvestAction]);
         }
         if (!hasLoot) {
-            await addItemsToActor(actor, [lootAction]);
+            if (!SETTINGS.disableLoot) {
+                Logger.debug(`addActionToActors | autoAddItems disable loot`);
+                await addItemsToActor(actor, [lootAction]);
+            }
         }
     });
     Logger.log("harvester | ready() - Added Actions to All Actors specified in Settings");
