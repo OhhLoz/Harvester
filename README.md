@@ -47,9 +47,37 @@ This module uses the [Item Piles](https://github.com/fantasycalendar/FoundryVTT-
 
 This action allows the Harvesting action to be linked to a standard rolltable retrieve the result items.
 
-In the standard Harvest Rolltable sheet, the "association" field is the name of the token monster with the name of the rolltable! So **"Name of The Monster" OR a regex === "NAme of the Rolltable"**.
+In the standard Harvest Rolltable sheet, the "association" field is the name of the token monster with the name of the rolltable! So **"Name of The Monster" === "Name of the Rolltable" (case insensitive)**.
 
-**IMPORTANT:** By default we try to guess with some regex what you want for example if you loot a `"Shadow Demon"` it will positively validate a rolltable with `"Shadow Demon Arcane"`, but not the reverse and will not validate `"Shadow Demon Psych"` with `"Shadow Demon Arcane"`.
+If you have any doubt about the matching try out the api method and open a issue:
+
+`game.modules.get("harvester").api.testWithRegex("Shadow Demon", "Shadow Demon Arcane")) => boolean`
+
+The re are two module settings to add some preferences to the search of the term:
+
+
+- **Enable exact match for search on source reference:** By default we try to guess with some regex what you want for example (checkout the readme table). IF YOU JUST WANT A EXACT MATCH enable this module settings."
+- **Enable any suffix match for search on source reference:** By default we try to guess with some regex what you want for example (checkout the readme table). Usually 'Shadow Demon Witchguard' and 'Shadow Demon Servant' give the same results so to avoid the duplicate of the rolltables you can enables this module settings and create one RollTable 'Shadow Demon', this will convert the source reference  fomr 'Shadow Demon' to 'Shadow Demon(.*?)' for the regular expression check. If you already have set your regular expression DO NOT ENABLE THIS.
+
+**IMPORTANT:** By default we try to guess with some regex what you want for example if you loot a `"Shadow Demon"` it will positively validate a rolltable with `"Shadow Demon Arcane"`, but not the reverse and will not validate `"Shadow Demon Psych"` with `"Shadow Demon Arcane"`, here a table of examples:
+
+| Source        | Target        |    Result     |
+|---------------|---------------|---------------|
+|Shadow|Shadow Demon BBB|true |
+|Shadow Demon|Shadow Demon Arcane|false |
+|Shadow Demon Arcane|Shadow Demon Arcane|true |
+|Shadow Demon Arcane|Shadow Demon|true |
+|Shadow Demon BBB|Shadow Demon|true |
+|Shadow Demon BBB|Shadow Demon Arcane|false |
+|Shadow Demon Warrior|Shadow Demon Arcane|false |
+|Shadow Demon Guard|Shadow Demon Arcane|false |
+|Shadow Demon Cro|Shadow Demon|true |
+|Shadow Demon Witchdoctor|Shadow Demon|true |
+|Shadow Demon BBB|(.*?)Shadow Demon Arcane(.*?)|false |
+|Shadow Demon Arcane|(.*?)Shadow Demon Arcane(.*?)|true |
+|Shadow Demon|(.*?)Shadow Demon(.*?)|true |
+|Shadow Demon BBB|(.*?)Shadow Demon(.*?)|true |
+|Shadow Demon Arcane|(.*?)Shadow Demon(.*?)|true |
 
 ```
 Example 1

@@ -67,8 +67,18 @@ export function registerSettings() {
     });
 
     game.settings.register(CONSTANTS.MODULE_ID, "enableExactMatchForSourceReference", {
-        name: "Enable exact match for source reference",
-        hint: 'By default we try to guess with some regex what you want for example if you loot a "Shadow Demon" it will positively validate a rolltable with "Shadow Demon Arcane", but not the reverse and will not validate "Shadow Demon Psych" with "Shadow Demon Arcane". IF YOU JUST WANT A EXACT MATCH enable this module settings.',
+        name: "Enable exact match for search on source reference",
+        hint: "By default we try to guess with some regex what you want for example (checkout the readme table). IF YOU JUST WANT A EXACT MATCH enable this module settings.",
+        scope: "world",
+        config: true,
+        requiresReload: true,
+        type: Boolean,
+        default: false,
+    });
+
+    game.settings.register(CONSTANTS.MODULE_ID, "enableAnySuffixMatchForSourceReference", {
+        name: "Enable any suffix match for search on source reference",
+        hint: "By default we try to guess with some regex what you want for example (checkout the readme table). Usually 'Shadow Demon Witchguard' and 'Shadow Demon Servant' give the same results so to avoid the duplicate of the rolltables you can enables this module settings and create one RollTable 'Shadow Demon', this will convert the source reference  fomr 'Shadow Demon' to 'Shadow Demon(.*?)' for the regular expression check. If you already have set your regular expression DO NOT ENABLE THIS.",
         scope: "world",
         config: true,
         requiresReload: true,
@@ -178,6 +188,10 @@ export function registerSettings() {
         CONSTANTS.MODULE_ID,
         "enableExactMatchForSourceReference",
     );
+    SETTINGS.enableAnySuffixMatchForSourceReference = game.settings.get(
+        CONSTANTS.MODULE_ID,
+        "enableAnySuffixMatchForSourceReference",
+    );
     SETTINGS.debug = game.settings.get(CONSTANTS.MODULE_ID, "debug");
 }
 
@@ -195,4 +209,5 @@ export const SETTINGS = {
     disableLoot: false,
     forceSearchRollTableByName: true,
     enableExactMatchForSourceReference: false,
+    enableAnySuffixMatchForSourceReference: false,
 };

@@ -1,4 +1,5 @@
 import { CONSTANTS } from "../constants";
+import { SETTINGS } from "../settings";
 import Logger from "./Logger";
 import ItemPilesHelpers from "./item-piles-helpers";
 
@@ -53,54 +54,58 @@ export function formatDragon(actorName) {
 
 // ===========================
 
-/**
- * A little function that checks the validity of both types of regexes, strings or patterns.
- * The user will be able to test both test and /test/g for example.
- * @href https://stackoverflow.com/questions/17250815/how-to-check-if-the-input-string-is-a-valid-regular-expression
- * @param {string} pattern
- * @returns {boolean}
- */
-function validateRegex(pattern) {
-    let parts = pattern.split("/");
-    let regex = pattern;
-    let options = "";
-    if (parts.length > 1) {
-        regex = parts[1];
-        options = parts[2];
-    }
-    try {
-        new RegExp(regex, options);
-        return true;
-    } catch (e) {
-        Logger.error("validateRegex | Regex error", false, e);
-        return false;
-    }
-}
+// /**
+//  * A little function that checks the validity of both types of regexes, strings or patterns.
+//  * The user will be able to test both test and /test/g for example.
+//  * @href https://stackoverflow.com/questions/17250815/how-to-check-if-the-input-string-is-a-valid-regular-expression
+//  * @href https://stackoverflow.com/questions/874709/converting-user-input-string-to-regular-expression
+//  * @param {string} pattern
+//  * @returns {boolean}
+//  */
+// function validateRegex(pattern) {
+//     let p = foundry.utils.duplicate(pattern);
+//     let parts = p.split("/");
+//     let regex = p;
+//     let options = "";
+//     if (parts.length > 1) {
+//         regex = parts[1];
+//         options = parts[2];
+//     } else {
+//         return false;
+//     }
+//     try {
+//         new RegExp(regex, options);
+//         return true;
+//     } catch (e) {
+//         Logger.error("validateRegex | Regex error", false, e);
+//         return false;
+//     }
+// }
 
-/**
- * This function could handle the '/' char as a normal char in regex, and also consider escaping when is a common string.
- * It will always return an Regex, null if not a good regex string.
- * @href https://stackoverflow.com/questions/17250815/how-to-check-if-the-input-string-is-a-valid-regular-expression
- * @param {string} regex
- * @returns {RegExp|null}
- */
-function getRegex(regex) {
-    try {
-        regex = regex.trim();
-        let parts = regex.split("/");
-        if (regex[0] !== "/" || parts.length < 3) {
-            regex = regex.replace(/[.*+\-?^${}()|[\]\\]/g, "\\$&"); //escap common string
-            return new RegExp(regex);
-        }
-        const option = parts[parts.length - 1];
-        const lastIndex = regex.lastIndexOf("/");
-        regex = regex.substring(1, lastIndex);
-        return new RegExp(regex, option);
-    } catch (e) {
-        Logger.error("getRegex | Regex error", false, e);
-        return null;
-    }
-}
+// /**
+//  * This function could handle the '/' char as a normal char in regex, and also consider escaping when is a common string.
+//  * It will always return an Regex, null if not a good regex string.
+//  * @href https://stackoverflow.com/questions/17250815/how-to-check-if-the-input-string-is-a-valid-regular-expression
+//  * @param {string} regex
+//  * @returns {RegExp|null}
+//  */
+// function getRegex(regex) {
+//     try {
+//         regex = regex.trim();
+//         let parts = regex.split("/");
+//         if (regex[0] !== "/" || parts.length < 3) {
+//             regex = regex.replace(/[.*+\-?^${}()|[\]\\]/g, "\\$&"); //escap common string
+//             return new RegExp(regex);
+//         }
+//         const option = parts[parts.length - 1];
+//         const lastIndex = regex.lastIndexOf("/");
+//         regex = regex.substring(1, lastIndex);
+//         return new RegExp(regex, option);
+//     } catch (e) {
+//         Logger.error("getRegex | Regex error", false, e);
+//         return null;
+//     }
+// }
 
 /**
  * Here is a little function that checks the validity of both types of regexes, strings or patterns
@@ -116,40 +121,35 @@ function getRegex(regex) {
  * @returns {boolean}
  */
 export function testWithRegex(stringToCheck, pattern = "") {
-    if (game.settings.get(CONSTANTS.MODULE_ID, "enableExactMatchForSourceReference")) {
+    if (!pattern) {
+        return false;
+    }
+    if (SETTINGS.enableExactMatchForSourceReference) {
         let t2 = stringToCheck?.toLowerCase()?.trim() === pattern?.toLowerCase()?.trim();
         if (t2) {
-            Logger.info(
-                `testWithRegex | Regex found with enableExactMatchForSourceReference ${stringToCheck} <=> ${pattern}`,
+            Logger.debug(
+                `testWithRegex | Regex found with enableExactMatchForSourceReference ${stringToCheck} === ${pattern}`,
                 false,
             );
         }
         return t2;
     }
+
     let stringToCheckTmp = stringToCheck?.toLowerCase()?.trim();
-    let patternTmp = pattern ? pattern?.toLowerCase()?.trim() : stringToCheckTmp; // .match(/^([a-z0-9]{5,})$/);
-    if (!validateRegex(patternTmp)) {
-        let r = getRegex(patternTmp);
-        patternTmp = r ? r : patternTmp;
+    let patternTmp = pattern?.toLowerCase()?.trim();
+    if (SETTINGS.enableAnySuffixMatchForSourceReference && !patternTmp.endsWith(`(.*?)`)) {
+        patternTmp = `^${patternTmp}(.*?)$`;
+    } else {
+        patternTmp = `^${patternTmp}$`;
     }
-    // if (!validateRegex(patternTmp)) {
-    //     let r = getRegex(`/^${stringToCheck}$/i`);
-    //     patternTmp = r ? r : patternTmp;
-    // }
     try {
-        if (!validateRegex(patternTmp)) {
-            patternTmp = `/^${patternTmp}$/i`;
-            let t1 = new RegExp(stringToCheckTmp).test(patternTmp); //
-            return t1;
-        }
-        // stringToCheck.match(patternTmp);
-        let t1 = new RegExp(stringToCheckTmp).test(patternTmp); // stringToCheck.match(patternTmp);
+        let t1 = new RegExp(patternTmp).test(stringToCheckTmp); // stringToCheck.match(patternTmp);
         if (t1) {
-            Logger.info(`testWithRegex | Regex found ${stringToCheck} <=> ${pattern}`, false);
+            Logger.debug(`testWithRegex | Regex found ${stringToCheck} <=> ${pattern}`, false);
         }
         return t1;
     } catch (e) {
-        Logger.error(`testWithRegex | Regex error ${stringToCheck} ${pattern}`, false, e);
+        Logger.error(`testWithRegex | Regex error ${stringToCheck} <=> ${pattern}`, false, e);
         return false;
     }
 }

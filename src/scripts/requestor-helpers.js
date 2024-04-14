@@ -151,6 +151,8 @@ export class RequestorHelpers {
         const buttonData = [];
         for (const skillObj of skillDetails) {
             const {
+                skillControlledTokenUuid,
+                skillTargetedTokenUuid,
                 skillRollTableUuid,
                 skillDenomination,
                 skillItem,
@@ -188,6 +190,8 @@ export class RequestorHelpers {
                         event,
                         data: this,
                         roll: rollRef,
+                        skillControlledTokenUuid: skillControlledTokenUuidRef,
+                        skillTargetedTokenUuid: skillTargetedTokenUuidRef,
                         skillRollTableUuid: skillRollTableUuidRef,
                         skillDenomination: skillDenominationRef,
                         item: skillItemRef,
@@ -198,6 +202,8 @@ export class RequestorHelpers {
                 },
                 scope: {
                     moduleIdRef: CONSTANTS.MODULE_ID,
+                    skillControlledTokenUuidRef: skillControlledTokenUuid,
+                    skillTargetedTokenUuidRef: skillTargetedTokenUuid,
                     skillRollTableUuidRef: skillRollTableUuid,
                     skillDenominationRef: skillDenomination,
                     skillCallbackRef: skillCallback,
@@ -237,6 +243,8 @@ export class RequestorHelpers {
             chatImg: undefined,
         },
         skillDetails = {
+            skillControlledTokenUuid: "",
+            skillTargetedTokenUuid: "",
             skillRollTableUuid: "",
             skillDenomination: "",
             skillItem: {},
@@ -263,6 +271,8 @@ export class RequestorHelpers {
 
         skillDetails = foundry.utils.mergeObject(
             {
+                skillControlledTokenUuid: "",
+                skillTargetedTokenUuid: "",
                 skillRollTableUuid: "",
                 skillDenomination: "",
                 skillItem: {},
@@ -282,7 +292,15 @@ export class RequestorHelpers {
         );
 
         const { chatTitle, chatDescription, chatButtonLabel, chatWhisper, chatSpeaker, chatImg } = chatDetails;
-        const { skillRollTableUuid, skillDenomination, skillItem, skillCallback, skillChooseModifier } = skillDetails;
+        const {
+            skillControlledTokenUuid,
+            skillTargetedTokenUuid,
+            skillRollTableUuid,
+            skillDenomination,
+            skillItem,
+            skillCallback,
+            skillChooseModifier,
+        } = skillDetails;
         const { limit, permission, popout } = optionsRequestor;
 
         const actorSpeaker = tokenUseForRequest?.actor ? tokenUseForRequest.actor : actorUseForRequest;
@@ -316,6 +334,8 @@ export class RequestorHelpers {
             chatSpeaker: chatSpeaker,
             chatImg: chatImg,
 
+            skillControlledTokenUuid: skillControlledTokenUuid,
+            skillTargetedTokenUuid: skillTargetedTokenUuid,
             skillRollTableUuid: skillRollTableUuid,
             skillDenomination: skillDenomination,
             skillItem: skillItem,
@@ -374,6 +394,8 @@ export class RequestorHelpers {
                                   event,
                                   data: this,
                                   roll: rollRef,
+                                  skillControlledTokenUuid: skillControlledTokenUuidRef,
+                                  skillTargetedTokenUuid: skillTargetedTokenUuidRef,
                                   skillRollTableUuid: skillRollTableUuidRef,
                                   skillDenomination: skillDenominationRef,
                                   item: skillItemRef,
@@ -384,8 +406,9 @@ export class RequestorHelpers {
                           },
                           scope: {
                               moduleIdRef: CONSTANTS.MODULE_ID,
+                              skillControlledTokenUuidRef: skillControlledTokenUuid,
+                              skillTargetedTokenUuidRef: skillTargetedTokenUuid,
                               skillRollTableUuidRef: skillRollTableUuid,
-                              skillRollTableUuid: skillRollTableUuid,
                               skillDenominationRef: skillDenomination,
                               skillCallbackRef: skillCallback,
                               skillItemRef: skillItem,

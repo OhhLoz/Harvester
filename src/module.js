@@ -82,6 +82,12 @@ Hooks.on("ready", async function () {
         throw Logger.error(`Requires the 'requestor' module. Please ${word} it.`);
     }
 
+    if (game.modules.get("better-rolltables")?.active && SETTINGS.forceSearchRollTableByName) {
+        Logger.warn(
+            `Attention the module settings "Looting: Search RollTable by name if no 'Source reference is found with BRT" is enabled and with BRT present and acvtive`,
+        );
+    }
+
     if (game.users.activeGM?.id !== game.user.id) {
         return;
     }

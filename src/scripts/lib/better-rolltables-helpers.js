@@ -27,7 +27,7 @@ export default class BetterRollTablesHelpers {
             } else {
                 isFound = false;
             }
-            if (!isFound && SETTINGS.forceSearchRollTableByName) {
+            if (!isFound && SETTINGS.forceSearchRollTableByName && actionName === lootAction.name) {
                 let standardSourceReference = getProperty(doc, `name`)?.trim() || "";
                 standardSourceReference = standardSourceReference.replaceAll("Loot | ", "");
                 standardSourceReference = standardSourceReference.replaceAll("Harvester | ", "");

@@ -20,27 +20,26 @@ export class HarvestingHelpers {
 
         let targetedToken =
             canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
-        let targetedActor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
-        let controlledToken =
-            canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ??
-            canvas.tokens.controlled[0];
-        let controlActor = game.actors.get(controlledToken.actor?.id ?? controlledToken.document?.actorId);
-
         if (!targetedToken) {
             Logger.warn(`HarvestingHelpers | NO targeted token is been found`, true);
             return;
         }
 
+        let controlledToken =
+            canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ??
+            canvas.tokens.controlled[0];
+        if (!controlledToken) {
+            Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
+            return;
+        }
+
+        let controlActor = game.actors.get(controlledToken.actor?.id ?? controlledToken.document?.actorId);
+        let targetedActor = game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
         let actorName = SETTINGS.forceToUseAlwaysActorName
             ? targetedActor
                 ? targetedActor.name
                 : targetedToken.name
             : targetedToken.name;
-
-        if (!controlledToken) {
-            Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
-            return;
-        }
 
         let rollTablesMatched = [];
         Logger.debug(`HarvestingHelpers | Searching RollTablesMatched`);
@@ -96,9 +95,11 @@ export class HarvestingHelpers {
             const skillCheckVerboseList = [];
             for (const skill of skillCheckVerboseArr) {
                 skillCheckVerboseList.push({
+                    skillControlledTokenUuid: controlledToken.uuid || controlledToken.id,
+                    skillTargetedTokenUuid: targetedToken.uuid || targetedToken.id,
                     skillRollTableUuid: rollTableChosenHarvester.uuid,
                     skillDenomination: skill,
-                    skillItem: item,
+                    skillItem: item.uuid,
                     skillCallback: "handlePostRollHarvestAction",
                     skillChooseModifier: SETTINGS.allowAbilityChange,
                     skillButtonLabel: `Harvesting '${actorName}' with '${skill}'`,
@@ -124,6 +125,8 @@ export class HarvestingHelpers {
                         chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
                     },
                     {
+                        skillControlledTokenUuid: skillCheckVerboseTmp.skillControlledTokenUuid,
+                        skillTargetedTokenUuid: skillCheckVerboseTmp.skillTargetedTokenUuid,
                         skillRollTableUuid: skillCheckVerboseTmp.skillRollTableUuid,
                         skillDenomination: skillCheckVerboseTmp.skillDenomination,
                         skillItem: skillCheckVerboseTmp.skillItem,
@@ -155,41 +158,76 @@ export class HarvestingHelpers {
                 );
             }
         }
-        item.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
     }
 
     static async handlePostRollHarvestAction(options) {
         Logger.debug(`HarvestingHelpers | START handlePostRollHarvestAction`);
-        const { token, character, actor, event, data, roll, skillRollTableUuid, skillDenomination, item } = options;
-        if (!checkItemSourceLabel(item, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
-            Logger.debug(`HarvestingHelpers | NO '${CONSTANTS.SOURCE_REFERENCE_MODULE}' found it on item`, item);
+        const {
+            token,
+            character,
+            actor,
+            event,
+            data,
+            roll,
+            skillControlledTokenUuid,
+            skillTargetedTokenUuid,
+            skillRollTableUuid,
+            skillDenomination,
+            item,
+        } = options;
+
+        if (!item) {
+            Logger.warn(`HarvestingHelpers | Something go wrong the 'skillItem' cannot be undefined`, true);
             return;
         }
-        let targetedToken =
-            canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.targetId`)) ?? game.user.targets.first();
-        let targetedActor = await game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
-        let controlledToken =
-            canvas.tokens.get(getProperty(item, `flags.${CONSTANTS.MODULE_ID}.controlId`)) ??
-            canvas.tokens.controlled[0];
-
+        const itemTmp = await RetrieveHelpers.getItemAsync(item);
+        if (!itemTmp) {
+            Logger.warn(`HarvestingHelpers | Something go wrong the 'item' cannot be undefined`, true);
+            return;
+        }
+        if (!checkItemSourceLabel(itemTmp, CONSTANTS.SOURCE_REFERENCE_MODULE)) {
+            Logger.debug(`HarvestingHelpers | NO '${CONSTANTS.SOURCE_REFERENCE_MODULE}' found it on item`, itemTmp);
+            return;
+        }
+        if (!skillControlledTokenUuid) {
+            Logger.warn(
+                `HarvestingHelpers | Something go wrong the 'skillControlledTokenUuid' cannot be undefined`,
+                true,
+            );
+            return;
+        }
+        if (!skillTargetedTokenUuid) {
+            Logger.warn(
+                `HarvestingHelpers | Something go wrong the 'skillTargetedTokenUuid' cannot be undefined`,
+                true,
+            );
+            return;
+        }
+        let targetedToken = RetrieveHelpers.getTokenSync(skillTargetedTokenUuid);
         if (!targetedToken) {
             Logger.warn(`HarvestingHelpers | NO targeted token is been found`, true);
             return;
         }
 
+        let controlledToken = RetrieveHelpers.getTokenSync(skillControlledTokenUuid);
+        if (!controlledToken) {
+            Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
+            return;
+        }
+
+        // Reset flags
+        await itemTmp.setFlag(CONSTANTS.MODULE_ID, "controlId", "");
+        await itemTmp.setFlag(CONSTANTS.MODULE_ID, "targetId", "");
+
+        let targetedActor = await game.actors.get(targetedToken.actor?.id ?? targetedToken.document?.actorId);
         let actorName = SETTINGS.forceToUseAlwaysActorName
             ? targetedActor
                 ? targetedActor.name
                 : targetedToken.name
             : targetedToken.name;
 
-        if (!controlledToken) {
-            Logger.warn(`HarvestingHelpers | NO controlled token is been found`, true);
-            return;
-        }
-
-        if (!validateAction(controlledToken, targetedToken, item.name)) {
-            Logger.warn(`HarvestingHelpers | NO valid action is been found on '${item.name}'`, true);
+        if (!validateAction(controlledToken, targetedToken, itemTmp.name)) {
+            Logger.warn(`HarvestingHelpers | NO valid action is been found on '${itemTmp.name}'`, true);
             return false;
         }
 
@@ -219,24 +257,56 @@ export class HarvestingHelpers {
         matchedItems = await BetterRollTablesHelpers.retrieveItemsDataHarvestWithBetterRollTables(
             rollTableChosenHarvester,
             actorName,
-            item.name,
+            itemTmp.name,
             result.total,
             skillDenomination,
         );
 
         if (!matchedItems || matchedItems.length === 0) {
             Logger.debug(`HarvestingHelpers | MatchedItems is empty`);
-            Logger.debug(
-                `HarvestingHelpers | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
-            );
-            await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, game.user.id, {
-                chatTitle: "Harvesting valuable from corpses.",
-                chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
-                chatButtonLabel: undefined,
-                chatWhisper: undefined,
-                chatSpeaker: undefined,
-                chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
-            });
+            if (game.modules.get("better-rolltables")?.active) {
+                Logger.debug(
+                    `HarvestingHelpers | BRT | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
+                );
+                const minimalDC = await game.modules
+                    .get("better-rolltables")
+                    .api.retrieveMinDCOnTable(rollTableChosenHarvester);
+                const isDcEnough = result.total > minimalDC;
+                if (isDcEnough) {
+                    await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, game.user.id, {
+                        chatTitle: "Harvesting valuable from corpses.",
+                        chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
+                        chatButtonLabel: undefined,
+                        chatWhisper: undefined,
+                        chatSpeaker: undefined,
+                        chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
+                    });
+                } else {
+                    Logger.info(
+                        `The rolled dc '${result.total}' is not enough for this table '${rollTableChosenHarvester.name}' the minimal DC is '${minimalDC}'`,
+                    );
+                    await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, game.user.id, {
+                        chatTitle: "Harvesting valuable from corpses.",
+                        chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' try is best to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
+                        chatButtonLabel: undefined,
+                        chatWhisper: undefined,
+                        chatSpeaker: undefined,
+                        chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
+                    });
+                }
+            } else {
+                Logger.debug(
+                    `HarvestingHelpers | STANDARD | '${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
+                );
+                await RequestorHelpers.requestEmptyMessage(controlledToken.actor, undefined, game.user.id, {
+                    chatTitle: "Harvesting valuable from corpses.",
+                    chatDescription: `<h3>Harvesting</h3>'${controlledToken.name}' attempted to harvest resources from '${targetedToken.name}' but failed to find anything for this creature.`,
+                    chatButtonLabel: undefined,
+                    chatWhisper: undefined,
+                    chatSpeaker: undefined,
+                    chatImg: "icons/tools/cooking/knife-cleaver-steel-grey.webp",
+                });
+            }
         } else {
             matchedItems.forEach((item) => {
                 Logger.debug(`HarvestingHelpers | check matchedItem`, item);
