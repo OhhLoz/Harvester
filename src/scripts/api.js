@@ -55,8 +55,8 @@ const API = {
     // UTILITY
     // ===========================
 
-    testWithRegex(source, target) {
-        return testWithRegex(source, target);
+    testWithRegex(source, target, enableExactMatch, enableAnySuffixMatch) {
+        return testWithRegex(source, target, enableExactMatch, enableAnySuffixMatch);
     },
 };
 export default API;

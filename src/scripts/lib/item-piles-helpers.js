@@ -137,7 +137,7 @@ export default class ItemPilesHelpers {
      *
      * @param {string} currenciesS                               A string of currencies to convert (eg, "5gp 25sp")
      *
-     * @returns {Array<object>}                                 An array of object containing the data and quantity for each currency
+     * @returns {Array<Record<string,number>>}                                 An array of object containing the data and quantity for each currency
      */
     static retrieveCurrenciesSimpleFromString(currenciesS) {
         const c = ItemPilesHelpers.generateCurrenciesStringFromString(currenciesS);
@@ -521,8 +521,8 @@ export default class ItemPilesHelpers {
     let items = await ItemPilesHelpers.rollTable({
       tableUuid: table,
       formula: timesToRoll,
-      normalize: normalizeTable,
-      resetTable,
+      normalizeTable: normalizeTable,
+      resetTable: resetTable,
       displayChat,
       rollData,
       customCategory,
@@ -566,7 +566,7 @@ export default class ItemPilesHelpers {
 
     //     const formula = table.formula;
     //     const resetTable = !!options.resetTable; // true;
-    //     const normalize = !!options.normalize; // false;
+    //     const normalizeTable = !!options.normalizeTable; // false;
     //     const displayChat = options.displayChat;
     //     const rollData = options.roll;
     //     const customCategory = !!options.customCategory; // false
@@ -583,7 +583,7 @@ export default class ItemPilesHelpers {
     //             await table.reset();
     //         }
 
-    //         if (normalize) {
+    //         if (normalizeTable) {
     //             await table.update({
     //                 results: table.results.map((result) => ({
     //                     _id: result.id,
@@ -688,7 +688,7 @@ export default class ItemPilesHelpers {
     // static async _convertResultsToStackedItems(results, options = {}) {
     //     // const formula = options.formula;
     //     const resetTable = !!options.resetTable; // true;
-    //     const normalize = !!options.normalize; // false;
+    //     const normalizeTable = !!options.normalizeTable; // false;
     //     const displayChat = options.displayChat;
     //     const rollData = options.roll;
     //     const customCategory = !!options.customCategory; // false
@@ -713,7 +713,7 @@ export default class ItemPilesHelpers {
     //             `'item instanceof RollTable', It shouldn't never go here something go wrong with the code please contact the brt developer`
     //         );
     //         rolledItems.push(
-    //             ...(await ItemPilesHelpers.rollTable({ tableUuid: item.uuid, resetTable, normalize, displayChat }))
+    //             ...(await ItemPilesHelpers.rollTable({ tableUuid: item.uuid, resetTable, normalizeTable, displayChat }))
     //         );
     //         } else if (item instanceof Item) {
     //         const quantity = Math.max(ItemPilesHelpers.getItemQuantity(item) * rolledQuantity, 1);
@@ -743,7 +743,7 @@ export default class ItemPilesHelpers {
     //                 ...(await ItemPilesHelpers.rollTable({
     //                     tableUuid: itemTmp.uuid,
     //                     resetTable: resetTable,
-    //                     normalize: normalize,
+    //                     normalizeTable: normalizeTable,
     //                     displayChat: displayChat,
     //                 })),
     //             );
@@ -932,13 +932,15 @@ export default class ItemPilesHelpers {
      * @href https://github.com/trioderegion/fvtt-macros/blob/master/honeybadger-macros/tokens/single-loot-pile.js#L77
      * @param {Array<Token|TokenDocument} tokensTarget
      * @param {object} options	object	Options to pass to the function
-     * @param {boolean} options.applyDefaultImage little utility for lazy people apply a default image
-     * @param {boolean} options.applyDefaultLight little utility for lazy people apply a default light
-     * @param {boolean} options.isSinglePile little utility it need 'warpgate' module installed and active for merge all the token items in one big item piles
-     * @param {boolean} options.deleteTokens only if singlePile is true it will delete all tokens
+     * @param {boolean} [options.untouchedImage=""] little utility for lazy people apply a default image
+     * @param {boolean} [options.applyDefaultLight=false] little utility for lazy people apply a default light
+     * @param {boolean} [options.addCurrency=false] Add some random currency
+     * @param {boolean} [options.isSinglePile=false] little utility it need 'warpgate' module installed and active for merge all the token items in one big item piles
+     * @param {boolean} [options.deleteTokens=false] only if singlePile is true it will delete all tokens
+     * @param {boolean} [options.warpgatePermanent=false] Set the warpgate mutate setting to permanent
      * @param {object} tokenSettings Overriding settings that will update the tokens settings
      * @param {object} pileSettings Overriding settings to be put on the item piles’ settings - see pile flag defaults
-     * @returns {Promise<Array>} The uuids of the targets after they were turned into item piles
+     * @returns {Promise<string[]>} The uuids of the targets after they were turned into item piles
      */
     static async convertTokensToItemPiles(
         tokensTarget,
@@ -1115,11 +1117,12 @@ export default class ItemPilesHelpers {
      * @href https://github.com/trioderegion/fvtt-macros/blob/master/honeybadger-macros/tokens/single-loot-pile.js#L77
      * @param {Token|TokenDocument} tokenTarget
      * @param {object} options	object	Options to pass to the function
-     * @param {boolean} options.applyDefaultImage little utility for lazy people apply a default image
-     * @param {boolean} options.applyDefaultLight little utility for lazy people apply a default light
+     * @param {boolean} [options.untouchedImage=""] little utility for lazy people apply a default image
+     * @param {boolean} [options.applyDefaultLight=false] little utility for lazy people apply a default light
+     * @param {boolean} [options.addCurrency=false] Add some random currency
      * @param {object} tokenSettings Overriding settings that will update the tokens settings
      * @param {object} pileSettings Overriding settings to be put on the item piles’ settings - see pile flag defaults
-     * @returns {Promise<Array>} The uuids of the targets after they were turned into item piles
+     * @returns {Promise<string[]>} The uuids of the targets after they were turned into item piles
      */
     static async convertTokenToItemPilesContainer(
         tokenTarget,

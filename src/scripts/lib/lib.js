@@ -116,28 +116,27 @@ export function formatDragon(actorName) {
  * let t1 = a.test(s); // true
  * let t2 = b.test(s); // false
  * @href https://stackoverflow.com/questions/17250815/how-to-check-if-the-input-string-is-a-valid-regular-expression
- * @param {string} stringToCheck
- * @param {string} [pattern=""]
- * @returns {boolean}
+ * @param {string} stringToCheck The string passed to check
+ * @param {string} [pattern=""] The regular expression to use on the string passed.
+ * @param {boolean} [enableExactMatch=false] Enable Exact Match.
+ * @param {boolean} [enableAnySuffixMatch=false] Enable Any Suffix Match.
+ * @returns {boolean} The regular expression match the string passed.
  */
-export function testWithRegex(stringToCheck, pattern = "") {
+export function testWithRegex(stringToCheck, pattern = "", enableExactMatch = false, enableAnySuffixMatch = false) {
     if (!pattern) {
         return false;
     }
-    if (SETTINGS.enableExactMatchForSourceReference) {
+    if (enableExactMatch) {
         let t2 = stringToCheck?.toLowerCase()?.trim() === pattern?.toLowerCase()?.trim();
         if (t2) {
-            Logger.debug(
-                `testWithRegex | Regex found with enableExactMatchForSourceReference ${stringToCheck} === ${pattern}`,
-                false,
-            );
+            Logger.debug(`testWithRegex | Regex found with enableExactMatch ${stringToCheck} === ${pattern}`, false);
         }
         return t2;
     }
 
     let stringToCheckTmp = stringToCheck?.toLowerCase()?.trim();
     let patternTmp = pattern?.toLowerCase()?.trim();
-    if (SETTINGS.enableAnySuffixMatchForSourceReference && !patternTmp.endsWith(`(.*?)`)) {
+    if (enableAnySuffixMatch && !patternTmp.endsWith(`(.*?)`)) {
         patternTmp = `^${patternTmp}(.*?)$`;
     } else {
         patternTmp = `^${patternTmp}$`;

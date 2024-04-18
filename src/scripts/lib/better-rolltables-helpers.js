@@ -13,6 +13,9 @@ import { checkCompendium, formatDragon, retrieveItemSourceLabelDC, searchCompend
 
 export default class BetterRollTablesHelpers {
     static _testRegexTable(sourceValue, doc, actionName) {
+        const enableExactMatchForSourceReference = SETTINGS.enableExactMatchForSourceReference;
+        const enableAnySuffixMatchForSourceReference = SETTINGS.enableAnySuffixMatchForSourceReference;
+
         if (game.modules.get("better-rolltables")?.active) {
             let isFound = false;
             let brtSourceReference = getProperty(doc, `flags.better-rolltables.brt-source-value`)?.trim() || "";
@@ -21,9 +24,19 @@ export default class BetterRollTablesHelpers {
             brtSourceReference = brtSourceReference.replaceAll("Better ", "");
             brtSourceReference = brtSourceReference.replaceAll(" RollTable", "");
             if (brtSourceReference && actionName === harvestAction.name) {
-                isFound = testWithRegex(sourceValue, brtSourceReference);
+                isFound = testWithRegex(
+                    sourceValue,
+                    brtSourceReference,
+                    enableExactMatchForSourceReference,
+                    enableAnySuffixMatchForSourceReference,
+                );
             } else if (brtSourceReference && actionName === lootAction.name) {
-                isFound = testWithRegex(sourceValue, brtSourceReference);
+                isFound = testWithRegex(
+                    sourceValue,
+                    brtSourceReference,
+                    enableExactMatchForSourceReference,
+                    enableAnySuffixMatchForSourceReference,
+                );
             } else {
                 isFound = false;
             }
@@ -34,9 +47,19 @@ export default class BetterRollTablesHelpers {
                 standardSourceReference = standardSourceReference.replaceAll("Better ", "");
                 standardSourceReference = standardSourceReference.replaceAll(" RollTable", "");
                 if (standardSourceReference && actionName === harvestAction.name) {
-                    return testWithRegex(sourceValue, standardSourceReference);
+                    return testWithRegex(
+                        sourceValue,
+                        standardSourceReference,
+                        enableExactMatchForSourceReference,
+                        enableAnySuffixMatchForSourceReference,
+                    );
                 } else if (standardSourceReference && actionName === lootAction.name) {
-                    return testWithRegex(sourceValue, standardSourceReference);
+                    return testWithRegex(
+                        sourceValue,
+                        standardSourceReference,
+                        enableExactMatchForSourceReference,
+                        enableAnySuffixMatchForSourceReference,
+                    );
                 } else {
                     return false;
                 }
@@ -50,9 +73,19 @@ export default class BetterRollTablesHelpers {
             standardSourceReference = standardSourceReference.replaceAll("Better ", "");
             standardSourceReference = standardSourceReference.replaceAll(" RollTable", "");
             if (standardSourceReference && actionName === harvestAction.name) {
-                return testWithRegex(sourceValue, standardSourceReference);
+                return testWithRegex(
+                    sourceValue,
+                    standardSourceReference,
+                    enableExactMatchForSourceReference,
+                    enableAnySuffixMatchForSourceReference,
+                );
             } else if (standardSourceReference && actionName === lootAction.name) {
-                return testWithRegex(sourceValue, standardSourceReference);
+                return testWithRegex(
+                    sourceValue,
+                    standardSourceReference,
+                    enableExactMatchForSourceReference,
+                    enableAnySuffixMatchForSourceReference,
+                );
             } else {
                 return false;
             }
